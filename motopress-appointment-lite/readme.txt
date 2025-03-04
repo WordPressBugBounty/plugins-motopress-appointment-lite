@@ -108,6 +108,8 @@ With our appointment plugin for WordPress, you can create staff schedules of any
 * Implement buffer periods between appointments.
 * Set minimum and maximum advance reservation time frames.
 * Configure time for booking completion.
+* Create custom intervals for individual services for better timeslot flexibility.
+* Set services to a 24-hour duration to accept full-day reservations.
 
 #### Staff Schedule:
 
@@ -118,6 +120,7 @@ With our appointment plugin for WordPress, you can create staff schedules of any
 * Assign different permissions to staff members.
 * Customize appointment duration and service cost based on the staff member.
 * Сonnect Google Calendar (in PRO).
+* Make it easy to book the entire day, without a specific timeframe.
 
 #### Group Scheduling:
 
@@ -186,6 +189,8 @@ A range of premium extensions to help you better manage your appointment busines
 * [Twilio SMS](https://motopress.com/products/appointment-booking-twilio-sms/): Connect the Twilio service in several clicks to automate appointment reminders and other notifications via SMS.
 * [Google Analytics](https://motopress.com/products/appointment-booking-google-analytics/): Integrate the Google Analytics tools to track interactions and sales through the appointment scheduling plugin.
 * [Square Payments](https://motopress.com/products/appointment-booking-square-payments/): Add Square's payment processing options to scheduling appointments, allowing your clients to make card or gift card payments, even without a need for a Square account.
+* [Checkout Fields Editor](https://motopress.com/products/appointment-booking-checkout-fields/): Customize your appointment booking calendar forms with unique checkout options, add or delete fields.
+* [PDF Invoices](https://motopress.com/products/appointment-booking-invoices/): Send automated PDF invoices directly to your customers' email addresses for every confirmed booking.
 
 ## WordPress appointment scheduling plugin suitable for
 
@@ -200,6 +205,7 @@ WordPress appointments have never been easier. Our WordPress appointment schedul
 * [Tour and travel agencies](https://motopress.com/products/touriny/): Sell tours and packages of any duration to groups and individuals.
 * [Massage therapist](https://motopress.com/products/restline/): Integrate the MotoPress appointment scheduler plugin to use a powerful, centralized dashboard to manage your clients, payments, and reservations.
 * [Rental equipment companies](https://motopress.com/products/lorenty/): Rent out any equipment, including boats, bikes, or party rentals.
+* [Law firms](https://motopress.com/products/leolex/): Provide one-to-one and group consultations with powerful scheduling forms.
 
 Thanks to the automated appointment scheduling features, your clients will be able to self-book desired services for the needed time and date for one or many people, allowing you to cut down no-show rates without any expensive customer scheduling software.
 
