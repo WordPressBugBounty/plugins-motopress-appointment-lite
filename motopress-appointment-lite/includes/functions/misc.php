@@ -157,6 +157,7 @@ function mpa_create_fields( $fields, $prefix = 'public', $type = 'option', $id =
 	$instances = array();
 
 	foreach ( $fields as $name => $args ) {
+
 		$inputName = mpa_prefix( $name, $prefix );
 
 		// Get value
@@ -165,6 +166,14 @@ function mpa_create_fields( $fields, $prefix = 'public', $type = 'option', $id =
 		switch ( $type ) {
 			case 'option':
 				$value = get_option( $inputName, $value );
+
+				if ( isset( $args['type'] ) &&
+					\MotoPress\Appointment\Fields\Basic\TextField::TYPE === $args['type'] &&
+					isset( $args['encrypted'] ) &&
+					$args['encrypted']
+				) {
+					$value = \MotoPress\Appointment\Helpers\StringEncryptHelper::decryptString( $value );
+				}
 				break;
 
 			case 'postmeta':
@@ -174,7 +183,7 @@ function mpa_create_fields( $fields, $prefix = 'public', $type = 'option', $id =
 
 				$metaValues = get_post_meta( $id, $inputName ); // Yes, not single
 
-				if ( 1 == count( $metaValues ) ) {
+				if ( 1 === count( $metaValues ) ) {
 					$value = reset( $metaValues );
 				} elseif ( count( $metaValues ) > 1 ) {
 					$value = $metaValues;

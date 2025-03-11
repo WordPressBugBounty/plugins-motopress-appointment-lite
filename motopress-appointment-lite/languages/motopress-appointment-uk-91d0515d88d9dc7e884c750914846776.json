@@ -1,0 +1,597 @@
+{
+    "translation-revision-date": "2025-02-25 13:09",
+    "generator": "WP-CLI\/2.11.0",
+    "source": "assets\/js\/gutenberg-blocks.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "uk_UA",
+                "plural-forms": "nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));"
+            },
+            "Settings": [
+                "\u041d\u0430\u043b\u0430\u0448\u0442\u0443\u0432\u0430\u043d\u043d\u044f"
+            ],
+            "Price": [
+                "\u0426\u0456\u043d\u0430"
+            ],
+            "Services": [
+                "\u041f\u043e\u0441\u043b\u0443\u0433\u0438"
+            ],
+            "Service": [
+                "\u041f\u043e\u0441\u043b\u0443\u0433\u0430"
+            ],
+            "Employees": [
+                "\u041f\u0440\u0430\u0446\u0456\u0432\u043d\u0438\u043a\u0438"
+            ],
+            "Employee": [
+                "\u041f\u0440\u0430\u0446\u0456\u0432\u043d\u0438\u043a"
+            ],
+            "Location": [
+                "\u041c\u0456\u0441\u0446\u0435\u0437\u043d\u0430\u0445\u043e\u0434\u0436\u0435\u043d\u043d\u044f"
+            ],
+            "\u2014 Select \u2014": [
+                "\u2014 \u041e\u0431\u0435\u0440\u0456\u0442\u044c \u2014"
+            ],
+            "Form Width": [
+                ""
+            ],
+            "Example: 100%": [
+                ""
+            ],
+            "Primary Text Color": [
+                ""
+            ],
+            "Primary Background Color": [
+                ""
+            ],
+            "Secondary Text Color": [
+                ""
+            ],
+            "Secondary Background Color": [
+                ""
+            ],
+            "Buttons Padding": [
+                ""
+            ],
+            "Example: 5px 10px": [
+                ""
+            ],
+            "ID": [
+                "ID"
+            ],
+            "Appointment Form": [
+                "\u0424\u043e\u0440\u043c\u0430 \u0431\u0440\u043e\u043d\u044e\u0432\u0430\u043d\u043d\u044f"
+            ],
+            "\u2014 Unselected \u2014": [
+                "\u2014 \u041d\u0435 \u0432\u0438\u0431\u0440\u0430\u043d\u043e \u2014"
+            ],
+            "Form Title": [
+                "\u0417\u0430\u0433\u043e\u043b\u043e\u0432\u043e\u043a \u0444\u043e\u0440\u043c\u0438"
+            ],
+            "ID of the selected service.": [
+                "ID \u0432\u0438\u0431\u0440\u0430\u043d\u043e\u0433\u043e \u0441\u0435\u0440\u0432\u0456\u0441\u0443."
+            ],
+            "Show Category?": [
+                "\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u0438 \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u0457?"
+            ],
+            "Show the service category field in the form.": [
+                "\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u0438 \u043f\u043e\u043b\u0435 \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u0439 \u043f\u043e\u0441\u043b\u0443\u0433 \u0443 \u0444\u043e\u0440\u043c\u0456."
+            ],
+            "Show Service?": [
+                ""
+            ],
+            "Show the service field in the form.": [
+                ""
+            ],
+            "Show Location?": [
+                "\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u0438 \u043c\u0456\u0441\u0446\u0435\u0437\u043d\u0430\u0445\u043e\u0434\u0436\u0435\u043d\u043d\u044f?"
+            ],
+            "Show the location field in the form.": [
+                "\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u0438 \u043f\u043e\u043b\u0435 \u043c\u0456\u0441\u0446\u0435\u0437\u043d\u0430\u0445\u043e\u0434\u0436\u0435\u043d\u043d\u044f \u0443 \u0444\u043e\u0440\u043c\u0456."
+            ],
+            "Show Employee?": [
+                "\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u0438 \u043f\u0440\u0430\u0446\u0456\u0432\u043d\u0438\u043a\u0430?"
+            ],
+            "Show the employee field in the form.": [
+                "\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u0438 \u043f\u043e\u043b\u0435 \u043f\u0440\u0430\u0446\u0456\u0432\u043d\u0438\u043a\u0430 \u0443 \u0444\u043e\u0440\u043c\u0456."
+            ],
+            "Category Field Label": [
+                "\u041d\u0430\u0437\u0432\u0430 \u043f\u043e\u043b\u044f \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u0457"
+            ],
+            "Service Category": [
+                "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u044f \u043f\u043e\u0441\u043b\u0443\u0433\u0438"
+            ],
+            "Custom label for the service category field.": [
+                "\u041a\u043e\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0446\u044c\u043a\u0430 \u043d\u0430\u0437\u0432\u0430 \u0434\u043b\u044f \u043f\u043e\u043b\u044f \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u0457 \u043f\u043e\u0441\u043b\u0443\u0433\u0438."
+            ],
+            "Service Field Label": [
+                "\u041d\u0430\u0437\u0432\u0430 \u043f\u043e\u043b\u044f \u043f\u043e\u0441\u043b\u0443\u0433\u0438"
+            ],
+            "Custom label for the service field.": [
+                "\u041a\u043e\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0446\u044c\u043a\u0430 \u043d\u0430\u0437\u0432\u0430 \u0434\u043b\u044f \u043f\u043e\u043b\u044f \u043f\u043e\u0441\u043b\u0443\u0433\u0438."
+            ],
+            "Location Field Label": [
+                "\u041d\u0430\u0437\u0432\u0430 \u043f\u043e\u043b\u044f \u043c\u0456\u0441\u0446\u0435\u0437\u043d\u0430\u0445\u043e\u0434\u0436\u0435\u043d\u043d\u044f"
+            ],
+            "Custom label for the location field.": [
+                "\u041a\u043e\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0446\u044c\u043a\u0430 \u043d\u0430\u0437\u0432\u0430 \u0434\u043b\u044f \u043f\u043e\u043b\u044f \u043c\u0456\u0441\u0446\u0435\u0437\u043d\u0430\u0445\u043e\u0434\u0436\u0435\u043d\u043d\u044f."
+            ],
+            "Employee Field Label": [
+                "\u041d\u0430\u0437\u0432\u0430 \u043f\u043e\u043b\u044f \u043f\u0440\u0430\u0446\u0456\u0432\u043d\u0438\u043a\u0430"
+            ],
+            "Custom label for the employee field.": [
+                "\u041a\u043e\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0446\u044c\u043a\u0430 \u043d\u0430\u0437\u0432\u0430 \u0434\u043b\u044f \u043f\u043e\u043b\u044f \u0441\u043f\u0456\u0432\u0440\u043e\u0431\u0456\u0442\u043d\u0438\u043a\u0430."
+            ],
+            "Unselected Service": [
+                "\u041d\u0435 \u043e\u0431\u0440\u0430\u043d\u0430 \u043f\u043e\u0441\u043b\u0443\u0433\u0430"
+            ],
+            "Custom label for the unselected service field.": [
+                "\u041a\u043e\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0446\u044c\u043a\u0430 \u043d\u0430\u0437\u0432\u0430 \u0434\u043b\u044f \u043f\u043e\u043b\u044f \u043d\u0435 \u043e\u0431\u0440\u0430\u043d\u043e\u0457 \u043f\u043e\u0441\u043b\u0443\u0433\u0438."
+            ],
+            "Unselected Option": [
+                "\u041d\u0435\u0432\u0438\u0431\u0440\u0430\u043d\u0438\u0439 \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440"
+            ],
+            "\u2014 Any \u2014": [
+                "\u2014 \u0411\u0443\u0434\u044c-\u044f\u043a\u0435 \u2014"
+            ],
+            "Comma-separated slugs or IDs of tags that will be shown.": [
+                "\u0420\u043e\u0437\u0434\u0456\u043b\u0435\u043d\u0456 \u043a\u043e\u043c\u0430\u043c\u0438 \u0441\u043b\u0430\u0491\u0438 \u0430\u0431\u043e ID \u0442\u0435\u0433\u0456\u0432, \u044f\u043a\u0456 \u0431\u0443\u0434\u0443\u0442\u044c \u043f\u043e\u043a\u0430\u0437\u0430\u043d\u0456."
+            ],
+            "Slug of the selected service category.": [
+                "\u0421\u043b\u0430\u0433 \u0432\u0438\u0431\u0440\u0430\u043d\u043e\u0457 \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u0457 \u0441\u0435\u0440\u0432\u0456\u0441\u0443."
+            ],
+            "ID of the selected location.": [
+                "ID \u0432\u0438\u0431\u0440\u0430\u043d\u043e\u0433\u043e \u0440\u043e\u0437\u0442\u0430\u0448\u0443\u0432\u0430\u043d\u043d\u044f."
+            ],
+            "ID of the selected employee.": [
+                "ID \u0432\u0438\u0431\u0440\u0430\u043d\u043e\u0433\u043e \u0441\u043f\u0456\u0432\u0440\u043e\u0431\u0456\u0442\u043d\u0438\u043a\u0430."
+            ],
+            "Timepicker Columns Count": [
+                "\u041a\u0456\u043b\u044c\u043a\u0456\u0441\u0442\u044c \u0441\u0442\u043e\u0432\u043f\u0446\u0456\u0432 \u0432\u0438\u0431\u043e\u0440\u0443 \u0447\u0430\u0441\u0443"
+            ],
+            "Show End Time?": [
+                "\u041f\u043e\u043a\u0430\u0437\u0443\u0432\u0430\u0442\u0438 \u0447\u0430\u0441 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u043d\u044f?"
+            ],
+            "Show the time when the appointment ends.": [
+                "\u041f\u043e\u043a\u0430\u0437\u0443\u0432\u0430\u0442\u0438 \u0447\u0430\u0441, \u043a\u043e\u043b\u0438 \u0437\u0430\u0432\u0435\u0440\u0448\u0443\u0454\u0442\u044c\u0441\u044f \u0431\u0440\u043e\u043d\u044e\u0432\u0430\u043d\u043d\u044f \u0441\u0435\u0440\u0432\u0456\u0441\u0443."
+            ],
+            "Show 'Add to Your Calendar?' section.": [
+                ""
+            ],
+            "Allow customers to add an appointment to their own Google, Apple, Outlook, or Yahoo calendar.": [
+                ""
+            ],
+            "Employee Additional Information": [
+                "\u0414\u043e\u0434\u0430\u0442\u043a\u043e\u0432\u0430 \u0456\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u044f \u043f\u0440\u043e \u0441\u043f\u0456\u0432\u0440\u043e\u0431\u0456\u0442\u043d\u0438\u043a\u0430"
+            ],
+            "Post ID of an employee to display content from. Note: this parameter automatically uses the current post ID when a shortcode is inside the employee's post and is required otherwise.": [
+                "ID \u043f\u043e\u0441\u0442\u0430 \u043f\u0440\u0430\u0446\u0456\u0432\u043d\u0438\u043a\u0430 \u0437 \u044f\u043a\u043e\u0433\u043e \u0432\u0456\u0434\u043e\u0431\u0440\u0430\u0436\u0430\u0442\u0438 \u0432\u043c\u0456\u0441\u0442. \u041f\u0440\u0438\u043c\u0456\u0442\u043a\u0430: \u0446\u0435\u0439 \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440 \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u043d\u043e \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u043e\u0432\u0443\u0454 \u043f\u043e\u0442\u043e\u0447\u043d\u0438\u0439 ID, \u043a\u043e\u043b\u0438 \u0448\u043e\u0440\u0442\u043a\u043e\u0434 \u0437\u043d\u0430\u0445\u043e\u0434\u0438\u0442\u044c\u0441\u044f \u0432\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456 \u043f\u043e\u0441\u0442\u0430 \u043f\u0440\u0430\u0446\u0456\u0432\u043d\u0438\u043a\u0430 \u0456 \u043e\u0431\u043e\u0432'\u044f\u0437\u043a\u043e\u0432\u0438\u0439 \u0432 \u0456\u043d\u0448\u043e\u043c\u0443 \u0432\u0438\u043f\u0430\u0434\u043a\u0443."
+            ],
+            "Employee Contact Information": [
+                "\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u043d\u0430 \u0456\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u044f \u043f\u0440\u043e \u0441\u043f\u0456\u0432\u0440\u043e\u0431\u0456\u0442\u043d\u0438\u043a\u0430"
+            ],
+            "Employee Content": [
+                "\u0417\u043c\u0456\u0441\u0442 \u0441\u043f\u0456\u0432\u0440\u043e\u0431\u0456\u0442\u043d\u0438\u043a\u0430"
+            ],
+            "Employee Image": [
+                "\u0417\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u043d\u044f \u0441\u043f\u0456\u0432\u0440\u043e\u0431\u0456\u0442\u043d\u0438\u043a\u0430"
+            ],
+            "Employee Schedule": [
+                "\u0420\u043e\u0437\u043a\u043b\u0430\u0434 \u0441\u043f\u0456\u0432\u0440\u043e\u0431\u0456\u0442\u043d\u0438\u043a\u0430"
+            ],
+            "Employee Services List": [
+                "\u0421\u043f\u0438\u0441\u043e\u043a \u043f\u043e\u0441\u043b\u0443\u0433 \u0441\u043f\u0456\u0432\u0440\u043e\u0431\u0456\u0442\u043d\u0438\u043a\u0430"
+            ],
+            "Employees List": [
+                "\u0421\u043f\u0438\u0441\u043e\u043a \u0441\u043f\u0456\u0432\u0440\u043e\u0431\u0456\u0442\u043d\u0438\u043a\u0456\u0432"
+            ],
+            "Show featured image.": [
+                "\u0412\u0456\u0434\u043e\u0431\u0440\u0430\u0436\u0430\u0442\u0438 \u0433\u043e\u043b\u043e\u0432\u043d\u0435 \u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u043d\u044f."
+            ],
+            "Show post title.": [
+                "\u0412\u0456\u0434\u043e\u0431\u0440\u0430\u0436\u0430\u0442\u0438 \u0437\u0430\u0433\u043e\u043b\u043e\u0432\u043e\u043a."
+            ],
+            "Show post excerpt.": [
+                "\u0412\u0456\u0434\u043e\u0431\u0440\u0430\u0436\u0430\u0442\u0438 \u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0439 \u0437\u043c\u0456\u0441\u0442."
+            ],
+            "Show contact information.": [
+                "\u0412\u0456\u0434\u043e\u0431\u0440\u0430\u0436\u0430\u0442\u0438 \u043a\u043e\u043d\u0442\u0430\u043a\u0442\u043d\u0443 \u0456\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u044e."
+            ],
+            "Show social networks.": [
+                "\u0412\u0456\u0434\u043e\u0431\u0440\u0430\u0436\u0430\u0442\u0438 \u0441\u043e\u0446\u0456\u0430\u043b\u044c\u043d\u0456 \u043c\u0435\u0440\u0435\u0436\u0456."
+            ],
+            "Show additional information.": [
+                "\u0412\u0456\u0434\u043e\u0431\u0440\u0430\u0436\u0430\u0442\u0438 \u0434\u043e\u0434\u0430\u0442\u043a\u043e\u0432\u0443 \u0456\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u044e."
+            ],
+            "Comma-separated slugs or IDs of employees that will be shown.": [
+                "\u0420\u043e\u0437\u0434\u0456\u043b\u0435\u043d\u0456 \u043a\u043e\u043c\u0430\u043c\u0438 \u0441\u043b\u0430\u0491\u0438 \u0430\u0431\u043e ID \u0441\u043f\u0456\u0432\u0440\u043e\u0431\u0456\u0442\u043d\u0438\u043a\u0456\u0432 \u044f\u043a\u0456 \u0431\u0443\u0434\u0443\u0442\u044c \u043f\u043e\u043a\u0430\u0437\u0430\u043d\u0456."
+            ],
+            "Locations": [
+                "\u041c\u0456\u0441\u0446\u0435\u0437\u043d\u0430\u0445\u043e\u0434\u0436\u0435\u043d\u043d\u044f"
+            ],
+            "Comma-separated slugs or IDs of locations.": [
+                "\u0420\u043e\u0437\u0434\u0456\u043b\u0435\u043d\u0456 \u043a\u043e\u043c\u0430\u043c\u0438 \u0441\u043b\u0430\u0491\u0438 \u0430\u0431\u043e ID \u043c\u0456\u0441\u0446\u0435\u0437\u043d\u0430\u0445\u043e\u0434\u0436\u0435\u043d\u044c."
+            ],
+            "Posts Per Page": [
+                "\u041a\u0456\u043b\u044c\u043a\u0456\u0441\u0442\u044c \u043f\u043e\u0432\u0456\u0434\u043e\u043c\u043b\u0435\u043d\u044c \u043d\u0430 \u0441\u0442\u043e\u0440\u0456\u043d\u0446\u0456"
+            ],
+            "Columns Count": [
+                "\u041a\u0456\u043b\u044c\u043a\u0456\u0441\u0442\u044c \u0441\u0442\u043e\u0432\u043f\u0446\u0456\u0432"
+            ],
+            "The number of columns in the grid.": [
+                "\u041a\u0456\u043b\u044c\u043a\u0456\u0441\u0442\u044c \u0441\u0442\u043e\u0432\u043f\u0446\u0456\u0432 \u0443 \u0441\u0456\u0442\u0446\u0456."
+            ],
+            "Order By": [
+                "\u0421\u043e\u0440\u0442\u0443\u0432\u0430\u0442\u0438 \u0437\u0430"
+            ],
+            "No order": [
+                "\u0411\u0435\u0437 \u0441\u043e\u0440\u0442\u0443\u0432\u0430\u043d\u043d\u044f"
+            ],
+            "Post ID": [
+                "ID \u0437\u0430\u043f\u0438\u0441\u0443"
+            ],
+            "Post author": [
+                "\u0410\u0432\u0442\u043e\u0440 \u0437\u0430\u043f\u0438\u0441\u0443"
+            ],
+            "Post title": [
+                "\u0417\u0430\u0433\u043e\u043b\u043e\u0432\u043e\u043a \u0437\u0430\u043f\u0438\u0441\u0443"
+            ],
+            "Post name (post slug)": [
+                "\u041d\u0430\u0437\u0432\u0430 \u0437\u0430\u043f\u0438\u0441\u0443 (\u0441\u043b\u0430\u0433 \u0437\u0430\u043f\u0438\u0441\u0443)"
+            ],
+            "Post date": [
+                "\u0414\u0430\u0442\u0430 \u0437\u0430\u043f\u0438\u0441\u0443"
+            ],
+            "Last modified date": [
+                "\u0414\u0430\u0442\u0430 \u043e\u0441\u0442\u0430\u043d\u043d\u044c\u043e\u0457 \u0437\u043c\u0456\u043d\u0438"
+            ],
+            "Random order": [
+                "\u0412\u0438\u043f\u0430\u0434\u043a\u043e\u0432\u0438\u0439 \u043f\u043e\u0440\u044f\u0434\u043e\u043a"
+            ],
+            "Relevance": [
+                "\u0420\u0435\u043b\u0435\u0432\u0430\u043d\u0442\u043d\u0456\u0441\u0442\u044c"
+            ],
+            "Page order": [
+                "\u041f\u043e\u0441\u043b\u0456\u0434\u043e\u0432\u043d\u0456\u0441\u0442\u044c \u0441\u0442\u043e\u0440\u0456\u043d\u043e\u043a"
+            ],
+            "Page order and post title": [
+                "\u041f\u043e\u0440\u044f\u0434\u043e\u043a \u0441\u0442\u043e\u0440\u0456\u043d\u043e\u043a \u0456 \u043d\u0430\u0437\u0432\u0430"
+            ],
+            "Order": [
+                "\u041f\u043e\u0440\u044f\u0434\u043e\u043a"
+            ],
+            "DESC": [
+                "DESC"
+            ],
+            "ASC": [
+                "ASC"
+            ],
+            "Employee Social Networks": [
+                "\u0421\u043e\u0446\u0456\u0430\u043b\u044c\u043d\u0456 \u043c\u0435\u0440\u0435\u0436\u0456 \u0441\u043f\u0456\u0432\u0440\u043e\u0431\u0456\u0442\u043d\u0438\u043a\u0430"
+            ],
+            "Employee Title": [
+                "\u041d\u0430\u0437\u0432\u0430 \u0441\u043f\u0456\u0432\u0440\u043e\u0431\u0456\u0442\u043d\u0438\u043a\u0430"
+            ],
+            "Locations List": [
+                "\u0421\u043f\u0438\u0441\u043e\u043a \u043c\u0456\u0441\u0446\u0435\u0437\u043d\u0430\u0445\u043e\u0434\u0436\u0435\u043d\u044c"
+            ],
+            "Categories": [
+                "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u0457"
+            ],
+            "Comma-separated slugs or IDs of categories that will be shown.": [
+                "\u0420\u043e\u0437\u0434\u0456\u043b\u0435\u043d\u0456 \u043a\u043e\u043c\u0430\u043c\u0438 \u0441\u043b\u0430\u0491\u0438 \u0430\u0431\u043e ID \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u0439, \u044f\u043a\u0456 \u0431\u0443\u0434\u0443\u0442\u044c \u043f\u043e\u043a\u0430\u0437\u0430\u043d\u0456."
+            ],
+            "Service Categories": [
+                "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u0457 \u043f\u043e\u0441\u043b\u0443\u0433"
+            ],
+            "Show Services Count?": [
+                "\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u0438 \u043a\u0456\u043b\u044c\u043a\u0456\u0441\u0442\u044c \u043f\u043e\u0441\u043b\u0443\u0433?"
+            ],
+            "Show Description?": [
+                "\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u0438 \u043e\u043f\u0438\u0441?"
+            ],
+            "Parent": [
+                "\u0411\u0430\u0442\u044c\u043a\u0456\u0432\u0441\u044c\u043a\u0438\u0439 \u0435\u043b\u0435\u043c\u0435\u043d\u0442"
+            ],
+            "Parent term slug or ID to retrieve direct-child terms from.": [
+                "Slug \u0431\u0430\u0442\u044c\u043a\u0456\u0432\u0441\u044c\u043a\u043e\u0433\u043e \u0442\u0435\u0440\u043c\u0456\u043d\u0443 \u0430\u0431\u043e ID \u0434\u043b\u044f \u043e\u0442\u0440\u0438\u043c\u0430\u043d\u043d\u044f \u043f\u0440\u044f\u043c\u0438\u0445 \u0434\u043e\u0447\u0456\u0440\u043d\u0456\u0445 \u0442\u0435\u0440\u043c\u0456\u043d\u0456\u0432."
+            ],
+            "Exclude Categories": [
+                "\u0412\u0438\u043a\u043b\u044e\u0447\u0438\u0442\u0438 \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u0457"
+            ],
+            "Comma-separated slugs or IDs of categories that will not be shown.": [
+                "\u0420\u043e\u0437\u0434\u0456\u043b\u0435\u043d\u0456 \u043a\u043e\u043c\u0430\u043c\u0438 \u0441\u043b\u0430\u0491\u0438 \u0430\u0431\u043e ID \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u0439, \u044f\u043a\u0456 \u043d\u0435 \u0431\u0443\u0434\u0443\u0442\u044c \u043f\u043e\u043a\u0430\u0437\u0430\u043d\u0456."
+            ],
+            "Hide Empty": [
+                "\u0421\u0445\u043e\u0432\u0430\u0442\u0438 \u043f\u0443\u0441\u0442\u0456"
+            ],
+            "Depth": [
+                "\u0413\u043b\u0438\u0431\u0438\u043d\u0430"
+            ],
+            "Display depth of child categories.": [
+                "\u041f\u043e\u043a\u0430\u0437\u0443\u0432\u0430\u0442\u0438 \u0433\u043b\u0438\u0431\u0438\u043d\u0443 \u0434\u043e\u0447\u0456\u0440\u043d\u0456\u0445 \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u0439."
+            ],
+            "Number": [
+                "\u0427\u0438\u0441\u043b\u043e"
+            ],
+            "Maximum number of categories to show.": [
+                "\u041c\u0430\u043a\u0441\u0438\u043c\u0430\u043b\u044c\u043d\u0430 \u043a\u0456\u043b\u044c\u043a\u0456\u0441\u0442\u044c \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u0439 \u0434\u043b\u044f \u0432\u0456\u0434\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u043d\u044f."
+            ],
+            "Term name": [
+                "\u041d\u0430\u0437\u0432\u0430 \u0442\u0435\u0440\u043c\u0456\u043d\u0443"
+            ],
+            "Term slug": [
+                "\u0421\u043b\u0430\u0433 \u0442\u0435\u0440\u043c\u0456\u043d\u0443"
+            ],
+            "Term ID": [
+                "\u0406\u0434\u0435\u043d\u0442\u0438\u0444\u0456\u043a\u0430\u0442\u043e\u0440 \u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f"
+            ],
+            "Parent ID": [
+                "\u0411\u0430\u0442\u044c\u043a\u0456\u0432\u0441\u044c\u043a\u0438\u0439 ID"
+            ],
+            "Number of associated objects": [
+                "\u041a\u0456\u043b\u044c\u043a\u0456\u0441\u0442\u044c \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u0438\u0445 \u043e\u0431'\u0454\u043a\u0442\u0456\u0432"
+            ],
+            "Keep the order of \"IDs\" parameter": [
+                "\u0417\u0430\u043b\u0438\u0448\u0438\u0442\u0438 \u043f\u043e\u0440\u044f\u0434\u043e\u043a \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440\u0430 \"IDs\""
+            ],
+            "Term order": [
+                "\u041f\u043e\u0440\u044f\u0434\u043e\u043a \u0442\u0435\u0440\u043c\u0456\u043d\u0443"
+            ],
+            "Services List": [
+                "\u0421\u043f\u0438\u0441\u043e\u043a \u043f\u043e\u0441\u043b\u0443\u0433"
+            ],
+            "Show service price.": [
+                "\u041f\u043e\u043a\u0430\u0437\u0443\u0432\u0430\u0442\u0438 \u0432\u0430\u0440\u0442\u0456\u0441\u0442\u044c \u043f\u043e\u0441\u043b\u0443\u0433\u0438."
+            ],
+            "Show service duration.": [
+                "\u041f\u043e\u043a\u0430\u0437\u0443\u0432\u0430\u0442\u0438 \u0442\u0440\u0438\u0432\u0430\u043b\u0456\u0441\u0442\u044c \u043f\u043e\u0441\u043b\u0443\u0433\u0438."
+            ],
+            "Show service capacity.": [
+                "\u041f\u043e\u043a\u0430\u0437\u0443\u0432\u0430\u0442\u0438 \u043c\u0456\u0441\u0442\u043a\u0456\u0441\u0442\u044c \u043f\u043e\u0441\u043b\u0443\u0433\u0438."
+            ],
+            "Show service employees.": [
+                "\u041f\u043e\u043a\u0430\u0437\u0443\u0432\u0430\u0442\u0438 \u043f\u0440\u0430\u0446\u0456\u0432\u043d\u0438\u043a\u0456\u0432 \u043f\u043e\u0441\u043b\u0443\u0433\u0438."
+            ],
+            "Comma-separated slugs or IDs of services that will be shown.": [
+                "\u0420\u043e\u0437\u0434\u0456\u043b\u0435\u043d\u0456 \u043a\u043e\u043c\u0430\u043c\u0438 \u0441\u043b\u0430\u0491\u0438 \u0430\u0431\u043e ID \u043f\u043e\u0441\u043b\u0443\u0433 \u044f\u043a\u0456 \u0431\u0443\u0434\u0443\u0442\u044c \u043f\u043e\u043a\u0430\u0437\u0430\u043d\u0456."
+            ],
+            "Comma-separated slugs or IDs of employees that perform these services.": [
+                "\u0420\u043e\u0437\u0434\u0456\u043b\u0435\u043d\u0456 \u043a\u043e\u043c\u0430\u043c\u0438 \u0441\u043b\u0430\u0433\u0438 \u0430\u0431\u043e ID \u043f\u0440\u0430\u0446\u0456\u0432\u043d\u0438\u043a\u0456\u0432 \u044f\u043a\u0456 \u0432\u0438\u043a\u043e\u043d\u0443\u044e\u0442\u044c \u0446\u0456 \u043f\u043e\u0441\u043b\u0443\u0433\u0438."
+            ],
+            "Tags": [
+                "\u041f\u043e\u0437\u043d\u0430\u0447\u043a\u0438"
+            ],
+            "Custom label for the unselected service category, location and employee fields.": [
+                "\u0412\u043b\u0430\u0441\u043d\u0430 \u043d\u0430\u0437\u0432\u0430 \u043f\u043e\u043b\u044f \u0434\u043b\u044f \u043d\u0435\u0432\u0438\u0431\u0440\u0430\u043d\u043e\u0457 \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u0457 \u043f\u043e\u0441\u043b\u0443\u0433, \u0440\u043e\u0437\u0442\u0430\u0448\u0443\u0432\u0430\u043d\u043d\u044f \u0442\u0430 \u043f\u0440\u0430\u0446\u0456\u0432\u043d\u0438\u043a\u0430."
+            ],
+            "These options only affect what you see on the front end.": [
+                ""
+            ],
+            "Hide terms not assigned to any posts.": [
+                "\u041f\u0440\u0438\u0445\u043e\u0432\u0430\u0442\u0438 \u0442\u0435\u0440\u043c\u0456\u043d\u0438, \u043d\u0435 \u043f\u0440\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u0456 \u0436\u043e\u0434\u043d\u0438\u043c \u043f\u0443\u0431\u043b\u0456\u043a\u0430\u0446\u0456\u044f\u043c."
+            ],
+            "Left to pay": [
+                ""
+            ],
+            "Clients": [
+                "\u041a\u043b\u0456\u0454\u043d\u0442\u0438"
+            ],
+            "All day": [
+                "\u0423\u0432\u0435\u0441\u044c \u0434\u0435\u043d\u044c"
+            ],
+            "Remove": [
+                "\u0412\u0438\u0434\u0430\u043b\u0438\u0442\u0438"
+            ],
+            "Zero price\u0004Free": [
+                "\u0412\u0456\u043b\u044c\u043d\u0435"
+            ],
+            "Bancontact": [
+                "Bancontact"
+            ],
+            "iDEAL": [
+                "iDEAL"
+            ],
+            "Giropay": [
+                "Giropay"
+            ],
+            "SEPA Direct Debit": [
+                "SEPA Direct Debit"
+            ],
+            "SOFORT": [
+                "SOFORT"
+            ],
+            "The number of columns in the timepicker.": [
+                "\u041a\u0456\u043b\u044c\u043a\u0456\u0441\u0442\u044c \u0441\u0442\u043e\u0432\u043f\u0446\u0456\u0432 \u0443 \u0432\u0438\u0431\u043e\u0440\u0456 \u0447\u0430\u0441\u0443."
+            ],
+            "Making a reservation...": [
+                "\u0417\u0434\u0456\u0439\u0441\u043d\u0435\u043d\u043d\u044f \u0431\u0440\u043e\u043d\u044e\u0432\u0430\u043d\u043d\u044f..."
+            ],
+            "Sun": [
+                "\u041d\u0434"
+            ],
+            "Mon": [
+                "\u041f\u043d"
+            ],
+            "Tue": [
+                "\u0412\u0442"
+            ],
+            "Wed": [
+                "\u0421\u0440"
+            ],
+            "Thu": [
+                "\u0427\u0442"
+            ],
+            "Fri": [
+                "\u041f\u0442"
+            ],
+            "Sat": [
+                "\u0421\u0431"
+            ],
+            "Sunday": [
+                "\u041d\u0435\u0434\u0456\u043b\u044f"
+            ],
+            "Monday": [
+                "\u041f\u043e\u043d\u0435\u0434\u0456\u043b\u043e\u043a"
+            ],
+            "Tuesday": [
+                "\u0412\u0456\u0432\u0442\u043e\u0440\u043e\u043a"
+            ],
+            "Wednesday": [
+                "\u0421\u0435\u0440\u0435\u0434\u0430"
+            ],
+            "Thursday": [
+                "\u0427\u0435\u0442\u0432\u0435\u0440"
+            ],
+            "Friday": [
+                "\u041f\u2019\u044f\u0442\u043d\u0438\u0446\u044f"
+            ],
+            "Saturday": [
+                "\u0421\u0443\u0431\u043e\u0442\u0430"
+            ],
+            "Jan": [
+                "\u0421\u0456\u0447"
+            ],
+            "Feb": [
+                "\u041b\u044e\u0442"
+            ],
+            "Mar": [
+                "\u0411\u0435\u0440"
+            ],
+            "Apr": [
+                "\u041a\u0432\u0456\u0442"
+            ],
+            "Month (short)\u0004May": [
+                "\u0422\u0440\u0430"
+            ],
+            "Jun": [
+                "\u0427\u0435\u0440"
+            ],
+            "Jul": [
+                "\u041b\u0438\u043f"
+            ],
+            "Aug": [
+                "\u0421\u0435\u0440"
+            ],
+            "Sep": [
+                "\u0412\u0435\u0440"
+            ],
+            "Oct": [
+                "\u0416\u043e\u0432"
+            ],
+            "Nov": [
+                "\u041b\u0438\u0441"
+            ],
+            "Dec": [
+                "\u0413\u0440\u0443"
+            ],
+            "January": [
+                "\u0421\u0456\u0447\u0435\u043d\u044c"
+            ],
+            "February": [
+                "\u041b\u044e\u0442\u0438\u0439"
+            ],
+            "March": [
+                "\u0411\u0435\u0440\u0435\u0437\u0435\u043d\u044c"
+            ],
+            "April": [
+                "\u041a\u0432\u0456\u0442\u0435\u043d\u044c"
+            ],
+            "Month\u0004May": [
+                "\u0422\u0440\u0430\u0432\u0435\u043d\u044c"
+            ],
+            "June": [
+                "\u0427\u0435\u0440\u0432\u0435\u043d\u044c"
+            ],
+            "July": [
+                "\u041b\u0438\u043f\u0435\u043d\u044c"
+            ],
+            "August": [
+                "\u0421\u0435\u0440\u043f\u0435\u043d\u044c"
+            ],
+            "September": [
+                "\u0412\u0435\u0440\u0435\u0441\u0435\u043d\u044c"
+            ],
+            "October": [
+                "\u0416\u043e\u0432\u0442\u0435\u043d\u044c"
+            ],
+            "November": [
+                "\u041b\u0438\u0441\u0442\u043e\u043f\u0430\u0434"
+            ],
+            "December": [
+                "\u0413\u0440\u0443\u0434\u0435\u043d\u044c"
+            ],
+            "Phone number is invalid.": [
+                ""
+            ],
+            "You will be redirected to a secure page to complete the payment.": [
+                "\u0412\u0438 \u0431\u0443\u0434\u0435\u0442\u0435 \u043f\u0435\u0440\u0435\u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0456 \u043d\u0430 \u0431\u0435\u0437\u043f\u0435\u0447\u043d\u0443 \u0441\u0442\u043e\u0440\u0456\u043d\u043a\u0443 \u0434\u043b\u044f \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u043d\u044f \u043e\u043f\u043b\u0430\u0442\u0438."
+            ],
+            "Subtotal": [
+                "\u041f\u0440\u043e\u043c\u0456\u0436\u043d\u0438\u0439 \u043f\u0456\u0434\u0441\u0443\u043c\u043e\u043a"
+            ],
+            "Coupon: %s": [
+                "\u041a\u0443\u043f\u043e\u043d: %s"
+            ],
+            "Total": [
+                "\u0417\u0430\u0433\u0430\u043b\u043e\u043c"
+            ],
+            "Deposit": [
+                "\u0417\u0430\u0432\u0434\u0430\u0442\u043e\u043a"
+            ],
+            "Paying now": [
+                ""
+            ],
+            "Coupon code is empty.": [
+                "\u041f\u0443\u0441\u0442\u0438\u0439 \u043a\u043e\u0434 \u043a\u0443\u043f\u043e\u043d\u0443."
+            ],
+            "Coupon code applied successfully.": [
+                "\u041a\u0443\u043f\u043e\u043d \u0431\u0443\u043b\u043e \u0443\u0441\u043f\u0456\u0448\u043d\u043e \u0437\u0430\u0441\u0442\u043e\u0441\u043e\u0432\u0430\u043d\u043e."
+            ],
+            "Sorry, your booking is not eligible for this coupon.": [
+                "\u041d\u0430 \u0436\u0430\u043b\u044c, \u0432\u0430\u0448\u0435 \u0431\u0440\u043e\u043d\u044e\u0432\u0430\u043d\u043d\u044f \u043d\u0435 \u043f\u0456\u0434\u0445\u043e\u0434\u0438\u0442\u044c \u0434\u043b\u044f \u0446\u044c\u043e\u0433\u043e \u043a\u0443\u043f\u043e\u043d\u0430."
+            ],
+            "By providing your IBAN and confirming this payment, you authorise (A) %s and Stripe, our payment service provider, to send instructions to your bank to debit your account and (B) your bank to debit your account in accordance with those instructions. You are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited.": [
+                "\u041d\u0430\u0434\u0430\u044e\u0447\u0438 \u0432\u0430\u0448 IBAN \u0442\u0430 \u043f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0436\u0443\u044e\u0447\u0438 \u0446\u0435\u0439 \u043f\u043b\u0430\u0442\u0456\u0436, \u0432\u0438 \u0430\u0432\u0442\u043e\u0440\u0438\u0437\u0443\u0454\u0442\u0435 (A) %s \u0442\u0430 Stripe, \u043d\u0430\u0448\u043e\u0433\u043e \u043f\u0440\u043e\u0432\u0430\u0439\u0434\u0435\u0440\u0430 \u043e\u043d\u043b\u0430\u0439\u043d-\u043f\u043b\u0430\u0442\u0435\u0436\u0456\u0432, \u043d\u0430\u0434\u0456\u0441\u043b\u0430\u0442\u0438 \u0440\u043e\u0437\u043f\u043e\u0440\u044f\u0434\u0436\u0435\u043d\u043d\u044f \u0432\u0430\u0448\u043e\u043c\u0443 \u0431\u0430\u043d\u043a\u0443 \u0441\u043f\u0438\u0441\u0430\u0442\u0438 \u0437 \u0432\u0430\u0448\u043e\u0433\u043e \u0440\u0430\u0445\u0443\u043d\u043a\u0443 \u0456 (B) \u0432\u0430\u0448 \u0431\u0430\u043d\u043a \u0441\u043f\u0438\u0448\u0435 \u0437 \u0432\u0430\u0448\u043e\u0433\u043e \u0440\u0430\u0445\u0443\u043d\u043a\u0443 \u0443 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u043e\u0441\u0442\u0456 \u0434\u043e \u0446\u044c\u043e\u0433\u043e \u0440\u043e\u0437\u043f\u043e\u0440\u044f\u0434\u0436\u0435\u043d\u043d\u044f. \u0412\u0438 \u043c\u0430\u0454\u0442\u0435 \u043f\u0440\u0430\u0432\u043e \u043d\u0430 \u043f\u043e\u0432\u0435\u0440\u043d\u0435\u043d\u043d\u044f \u043a\u043e\u0448\u0442\u0456\u0432 \u0432\u0456\u0434 \u0432\u0430\u0448\u043e\u0433\u043e \u0431\u0430\u043d\u043a\u0443 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u043e \u0434\u043e \u043f\u0440\u0430\u0432\u0438\u043b \u0442\u0430 \u0443\u043c\u043e\u0432 \u0443\u0433\u043e\u0434\u0438 \u0437 \u0432\u0430\u0448\u0438\u043c \u0431\u0430\u043d\u043a\u043e\u043c. \u0417\u0430\u043f\u0438\u0442 \u043d\u0430 \u043f\u043e\u0432\u0435\u0440\u043d\u0435\u043d\u043d\u044f \u043c\u0430\u0454 \u0431\u0443\u0442\u0438 \u0437\u0440\u043e\u0431\u043b\u0435\u043d\u043e \u043f\u0440\u043e\u0442\u044f\u0433\u043e\u043c 8 \u0442\u0438\u0436\u043d\u0456\u0432 \u0432\u0456\u0434 \u0434\u0430\u0442\u0438 \u0441\u043f\u0438\u0441\u0430\u043d\u043d\u044f \u0437 \u0432\u0430\u0448\u043e\u0433\u043e \u0440\u0430\u0445\u0443\u043d\u043a\u0443."
+            ],
+            "Credit or debit card": [
+                "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430 \u0430\u0431\u043e \u0434\u0435\u0431\u0435\u0442\u043e\u0432\u0430 \u043a\u0430\u0440\u0442\u043a\u0430"
+            ],
+            "or": [
+                "\u0430\u0431\u043e"
+            ],
+            "Select iDEAL Bank": [
+                "\u041e\u0431\u0440\u0430\u0442\u0438 iDEAL Bank"
+            ],
+            "IBAN": [
+                "IBAN"
+            ],
+            "Payment methods": [
+                ""
+            ],
+            "Card": [
+                "\u041a\u0430\u0440\u0442\u043a\u0430"
+            ],
+            "Sorry, but we were unable to allocate time slots for the date you selected.": [
+                "\u0412\u0438\u0431\u0430\u0447\u0442\u0435, \u0430\u043b\u0435 \u043c\u0438 \u043d\u0435 \u0437\u043c\u043e\u0433\u043b\u0438 \u0432\u0438\u0434\u0456\u043b\u0438\u0442\u0438 \u0447\u0430\u0441 \u043d\u0430 \u0432\u0438\u0431\u0440\u0430\u043d\u0443 \u0432\u0430\u043c\u0438 \u0434\u0430\u0442\u0443."
+            ],
+            "Sorry, there are no services, employees or locations to book.": [
+                "\u041d\u0430 \u0436\u0430\u043b\u044c, \u043d\u0435\u043c\u0430\u0454 \u043f\u043e\u0441\u043b\u0443\u0433, \u043f\u0440\u0430\u0446\u0456\u0432\u043d\u0438\u043a\u0456\u0432 \u0447\u0438 \u043c\u0456\u0441\u0446\u0435\u0437\u043d\u0430\u0445\u043e\u0434\u0436\u0435\u043d\u044c \u0434\u043b\u044f \u0431\u0440\u043e\u043d\u044e\u0432\u0430\u043d\u043d\u044f."
+            ],
+            "To enable this option, you need to check the '%s' box.": [
+                ""
+            ],
+            "To enable booking for the specific service only, select the service below first, then uncheck the 'Service' box here.": [
+                ""
+            ],
+            "Colors": [
+                ""
+            ],
+            "appointment": [
+                "\u0431\u0440\u043e\u043d\u044e\u0432\u0430\u043d\u043d\u044f"
+            ]
+        }
+    }
+}

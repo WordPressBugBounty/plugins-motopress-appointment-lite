@@ -1,6 +1,6 @@
 {
-    "translation-revision-date": "2022-01-10 22:04",
-    "generator": "WP-CLI\/2.10.0",
+    "translation-revision-date": "2025-02-25 13:09",
+    "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/gutenberg-blocks.js",
     "domain": "messages",
     "locale_data": {
@@ -28,14 +28,38 @@
             "Employee": [
                 ""
             ],
-            "Clients": [
-                ""
-            ],
             "Location": [
-                ""
+                "\u041c\u0435\u0441\u0442\u043e"
             ],
             "\u2014 Select \u2014": [
                 "\u2014 \u0412\u044b\u0431\u0440\u0430\u0442\u044c \u2014"
+            ],
+            "Form Width": [
+                ""
+            ],
+            "Example: 100%": [
+                ""
+            ],
+            "Primary Text Color": [
+                ""
+            ],
+            "Primary Background Color": [
+                ""
+            ],
+            "Secondary Text Color": [
+                ""
+            ],
+            "Secondary Background Color": [
+                ""
+            ],
+            "Buttons Padding": [
+                ""
+            ],
+            "Example: 5px 10px": [
+                ""
+            ],
+            "ID": [
+                "ID"
             ],
             "Appointment Form": [
                 ""
@@ -46,10 +70,19 @@
             "Form Title": [
                 ""
             ],
+            "ID of the selected service.": [
+                ""
+            ],
             "Show Category?": [
                 ""
             ],
             "Show the service category field in the form.": [
+                ""
+            ],
+            "Show Service?": [
+                ""
+            ],
+            "Show the service field in the form.": [
                 ""
             ],
             "Show Location?": [
@@ -109,9 +142,6 @@
             "Slug of the selected service category.": [
                 ""
             ],
-            "ID of the selected service.": [
-                ""
-            ],
             "ID of the selected location.": [
                 ""
             ],
@@ -127,11 +157,14 @@
             "Show the time when the appointment ends.": [
                 ""
             ],
-            "Employee Additional Information": [
+            "Show 'Add to Your Calendar?' section.": [
                 ""
             ],
-            "ID": [
-                "ID"
+            "Allow customers to add an appointment to their own Google, Apple, Outlook, or Yahoo calendar.": [
+                ""
+            ],
+            "Employee Additional Information": [
+                ""
             ],
             "Post ID of an employee to display content from. Note: this parameter automatically uses the current post ID when a shortcode is inside the employee's post and is required otherwise.": [
                 ""
@@ -176,7 +209,7 @@
                 ""
             ],
             "Locations": [
-                ""
+                "\u041c\u0435\u0441\u0442\u0430"
             ],
             "Comma-separated slugs or IDs of locations.": [
                 ""
@@ -334,8 +367,20 @@
             "Custom label for the unselected service category, location and employee fields.": [
                 ""
             ],
+            "These options only affect what you see on the front end.": [
+                ""
+            ],
             "Hide terms not assigned to any posts.": [
                 ""
+            ],
+            "Left to pay": [
+                ""
+            ],
+            "Clients": [
+                ""
+            ],
+            "All day": [
+                "\u0412\u0435\u0441\u044c \u0434\u0435\u043d\u044c"
             ],
             "Remove": [
                 "\u0423\u0434\u0430\u043b\u0438\u0442\u044c"
@@ -344,27 +389,24 @@
                 "\u0421\u0432\u043e\u0431\u043e\u0434\u043d\u043e"
             ],
             "Bancontact": [
-                ""
+                "Bancontact"
             ],
             "iDEAL": [
-                ""
+                "iDEAL"
             ],
             "Giropay": [
-                ""
+                "Giropay"
             ],
             "SEPA Direct Debit": [
-                ""
+                "SEPA Direct Debit"
             ],
             "SOFORT": [
-                ""
+                "SOFORT"
             ],
             "The number of columns in the timepicker.": [
                 ""
             ],
             "Making a reservation...": [
-                ""
-            ],
-            "appointment": [
                 ""
             ],
             "Sun": [
@@ -481,44 +523,29 @@
             "December": [
                 ""
             ],
-            "Total": [
-                "\u0412\u0441\u0435\u0433\u043e"
-            ],
-            "Card": [
-                "\u041a\u0430\u0440\u0442\u0430"
-            ],
-            "Credit or debit card": [
-                "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f \u0438\u043b\u0438 \u0434\u0435\u0431\u0435\u0442\u043e\u0432\u0430\u044f \u043a\u0430\u0440\u0442\u0430"
-            ],
-            "Select iDEAL Bank": [
-                "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 iDEAL Bank"
-            ],
-            "IBAN": [
+            "Phone number is invalid.": [
                 ""
             ],
             "You will be redirected to a secure page to complete the payment.": [
                 "\u0412\u0430\u0441 \u0431\u0443\u0434\u0435\u0442 \u043f\u0435\u0440\u0435\u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043e \u043d\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043d\u043d\u0443\u044e \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0443 \u0434\u043b\u044f \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u043f\u043b\u0430\u0442\u0435\u0436\u0430."
             ],
-            "Sorry, there are no services, employees or locations to book.": [
-                ""
+            "Subtotal": [
+                "\u041f\u0440\u043e\u043c\u0435\u0436\u0443\u0442\u043e\u0447\u043d\u044b\u0439 \u0438\u0442\u043e\u0433"
             ],
-            "Sorry, but we were unable to allocate time slots for the date you selected.": [
-                ""
+            "Coupon: %s": [
+                "\u041a\u0443\u043f\u043e\u043d \u043d\u0430 \u0441\u043a\u0438\u0434\u043a\u0443: %s"
             ],
-            "Show Service?": [
-                ""
+            "Total": [
+                "\u0412\u0441\u0435\u0433\u043e"
             ],
-            "Show the service field in the form.": [
-                ""
+            "Deposit": [
+                "\u0417\u0430\u0434\u0430\u0442\u043e\u043a"
             ],
-            "Left to pay": [
-                ""
-            ],
-            "Phone number is invalid.": [
+            "Paying now": [
                 ""
             ],
             "Coupon code is empty.": [
-                ""
+                "\u0421\u043a\u0438\u0434\u043e\u0447\u043d\u044b\u0439 \u043a\u0443\u043f\u043e\u043d \u043f\u0443\u0441\u0442\u043e\u0439."
             ],
             "Coupon code applied successfully.": [
                 ""
@@ -529,7 +556,28 @@
             "By providing your IBAN and confirming this payment, you authorise (A) %s and Stripe, our payment service provider, to send instructions to your bank to debit your account and (B) your bank to debit your account in accordance with those instructions. You are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited.": [
                 ""
             ],
+            "Credit or debit card": [
+                "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f \u0438\u043b\u0438 \u0434\u0435\u0431\u0435\u0442\u043e\u0432\u0430\u044f \u043a\u0430\u0440\u0442\u0430"
+            ],
             "or": [
+                "\u0438\u043b\u0438"
+            ],
+            "Select iDEAL Bank": [
+                "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 iDEAL Bank"
+            ],
+            "IBAN": [
+                "IBAN"
+            ],
+            "Payment methods": [
+                ""
+            ],
+            "Card": [
+                "\u041a\u0430\u0440\u0442\u0430"
+            ],
+            "Sorry, but we were unable to allocate time slots for the date you selected.": [
+                ""
+            ],
+            "Sorry, there are no services, employees or locations to book.": [
                 ""
             ],
             "To enable this option, you need to check the '%s' box.": [
@@ -538,58 +586,10 @@
             "To enable booking for the specific service only, select the service below first, then uncheck the 'Service' box here.": [
                 ""
             ],
-            "Subtotal": [
-                ""
-            ],
-            "Coupon: %s": [
-                ""
-            ],
-            "Deposit": [
-                ""
-            ],
-            "Paying now": [
-                ""
-            ],
-            "Form Width": [
-                ""
-            ],
-            "Example: 100%": [
-                ""
-            ],
-            "Primary Text Color": [
-                ""
-            ],
-            "Primary Background Color": [
-                ""
-            ],
-            "Secondary Text Color": [
-                ""
-            ],
-            "Secondary Background Color": [
-                ""
-            ],
-            "Buttons Padding": [
-                ""
-            ],
-            "Example: 5px 10px": [
-                ""
-            ],
-            "Show 'Add to Your Calendar?' section.": [
-                ""
-            ],
-            "Allow customers to add an appointment to their own Google, Apple, Outlook, or Yahoo calendar.": [
-                ""
-            ],
-            "These options only affect what you see on the front end.": [
-                ""
-            ],
             "Colors": [
                 ""
             ],
-            "Payment methods": [
-                ""
-            ],
-            "All day": [
+            "appointment": [
                 ""
             ]
         }

@@ -178,8 +178,8 @@ class CustomerAccountShortcode extends AbstractShortcode {
 
 		$slug = $this->getAccountURL();
 
-		if ( strstr( $referrer, $slug ) ) {
-			$redirectTo = add_query_arg( array( 'username' => $username, ), $referrer );
+		if ( ! empty( $slug ) && strstr( $referrer, $slug ) ) {
+			$redirectTo = add_query_arg( array( 'username' => $username ), $referrer );
 			wp_safe_redirect( $redirectTo );
 			exit;
 		}

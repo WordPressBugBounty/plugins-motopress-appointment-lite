@@ -3,9 +3,9 @@ Contributors: MotoPress
 Donate link: https://motopress.com/
 Tags: appointment, booking, calendar, reservation, schedule, scheduling, online booking system, reservation calendar, booking calendar, booking system, appointment booking, group booking, tickets
 Requires at least: 5.3
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 2.1.2
+Stable tag: 2.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -191,6 +191,7 @@ A range of premium extensions to help you better manage your appointment busines
 * [Square Payments](https://motopress.com/products/appointment-booking-square-payments/): Add Square's payment processing options to scheduling appointments, allowing your clients to make card or gift card payments, even without a need for a Square account.
 * [Checkout Fields Editor](https://motopress.com/products/appointment-booking-checkout-fields/): Customize your appointment booking calendar forms with unique checkout options, add or delete fields.
 * [PDF Invoices](https://motopress.com/products/appointment-booking-invoices/): Send automated PDF invoices directly to your customers' email addresses for every confirmed booking.
+* [Video Conferencing](https://motopress.com/products/appointment-booking-video-conferencing/): Automatically generate online meeting details and send them to the customer.
 
 ## WordPress appointment scheduling plugin suitable for
 
@@ -303,6 +304,11 @@ MotoPress Appointment Booking Lite plugin is distributed under the terms of the 
 
 == Changelog ==
 
+= 2.2.0, Mar 11 2025 =
+* Added compatibility with the Video Conferencing addon.
+* Enhanced integration with Google Calendar for managing grouped reservations.
+* Minor payment gateway API improvements.
+
 = 2.1.2, Sep 27 2024 =
 * Fixed an issue where the [reservation_details] tag didn't work in emails with data from the Checkout Fields add-on.
 
@@ -316,28 +322,6 @@ MotoPress Appointment Booking Lite plugin is distributed under the terms of the 
 
 = 2.0.0, Jul 16 2024 =
 * Significantly improved group booking functionality to allow multiple independent people to book the same appointment slot as long as there are vacant places available.
-
-= 1.24.0, Jun 26 2024 =
-* Added the ability to create custom time steps for services that override the default time step settings.
-* Added the ability to set services to a 24-hour duration to accept full-day reservations.
-* Added the booking coupon code email tag to display the applied coupon code in emails.
-* Added the ability to resend customer confirmation email for any booking.
-* Added Reservation Received and Failed Transaction pages to redirect the customer to after their payment is placed on the external payment platform.
-* Improved the look of analytics charts.
-* Improved time period selection when setting up workdays and custom workdays in the schedule settings.
-* Fixed an issue with disabling and enabling the service category when creating the appointment booking form shortcode.
-* Fixed an issue with free reservations.
-* Fixed an issue with the terms and conditions checkbox in the appointment booking form.
-* Fixed an issue with reservation of services that have only a custom work day schedule.
-* Fixed an issue that prevented selecting a new service category if a service from another category was already chosen.
-* Fixed an issue where time slots were not generated sequentially.
-* Fixed an issue with activating/deactivating the license in the plugin settings.
-* Fixed an issue with the calculation of the maximum advance reservation rule.
-* Fixed an issue where the last time slot was not displayed in the appointment booking form.
-* Fixed an issue with WeChat payments in Stripe.
-* Fixed an issue where the payment method of Stripe payment was empty.
-* Fixed an issue with the date localization in emails, an appointment booking form, and the admin calendar according to your WordPress locale and date/time format settings.
-* Fixed an issue where payment instructions for direct bank transfer payments were not displayed in the emails.
 
 --------
 

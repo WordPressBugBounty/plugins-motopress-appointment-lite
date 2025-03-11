@@ -62,7 +62,7 @@ class FieldsFactory {
 		$type  = isset( $args['type'] ) ? $args['type'] : 'unknown';
 		$class = static::getClass( $type );
 
-		if ( is_null( $value ) && isset( $args['value'] ) ) {
+		if ( isset( $args['value'] ) ) {
 			$value = $args['value'];
 		}
 
@@ -95,7 +95,7 @@ class FieldsFactory {
 			'employee-user',
 			'time-period',
 			'trigger-period',
-			'container'
+			'container',
 		);
 
 		$displayFields = array( 'payment-details' );

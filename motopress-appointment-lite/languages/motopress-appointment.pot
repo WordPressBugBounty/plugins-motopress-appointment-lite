@@ -1,17 +1,17 @@
-# Copyright (C) 2024 MotoPress
+# Copyright (C) 2025 MotoPress
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Appointment Booking Lite 2.1.2\n"
+"Project-Id-Version: Appointment Booking Lite 2.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/motopress-appointment-production-lite\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-09-26T13:00:10+03:00\n"
+"POT-Creation-Date: 2025-02-25T14:18:00+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.10.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: motopress-appointment\n"
 
 #. Plugin Name of the plugin
@@ -41,7 +41,7 @@ msgstr ""
 
 #: includes/admin-pages/custom/AnalyticsPage.php:28
 #: includes/admin-pages/custom/AnalyticsPage.php:32
-#: assets/js/analytics-page.js:46643
+#: assets/js/analytics-page.js:46627
 msgid "Analytics"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgstr ""
 
 #: includes/admin-pages/custom/CalendarPage.php:31
 #: includes/admin-pages/custom/CalendarPage.php:38
-#: assets/js/calendar-page.js:48913
+#: assets/js/calendar-page.js:45550
 msgid "Calendar"
 msgstr ""
 
@@ -74,7 +74,7 @@ msgstr ""
 #: templates/shortcodes/booking/sections/checkout-form-fields.php:25
 #: templates/shortcodes/booking/step-checkout.php:32
 #: templates/shortcodes/customer-account/account.php:16
-#: templates/shortcodes/template-parts/booking-details.php:90
+#: templates/shortcodes/template-parts/booking-details.php:93
 msgid "Name"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgstr ""
 #: templates/shortcodes/booking/sections/checkout-form-fields.php:39
 #: templates/shortcodes/booking/step-checkout.php:39
 #: templates/shortcodes/customer-account/account.php:20
-#: templates/shortcodes/template-parts/booking-details.php:94
+#: templates/shortcodes/template-parts/booking-details.php:97
 msgid "Email"
 msgstr ""
 
@@ -93,7 +93,7 @@ msgstr ""
 #: includes/metaboxes/booking/BookingCustomerMetabox.php:49
 #: templates/shortcodes/booking/sections/checkout-form-fields.php:53
 #: templates/shortcodes/customer-account/account.php:24
-#: templates/shortcodes/template-parts/booking-details.php:98
+#: templates/shortcodes/template-parts/booking-details.php:101
 msgid "Phone"
 msgstr ""
 
@@ -168,16 +168,16 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
-#: includes/admin-pages/custom/SettingsPage.php:197
+#: includes/admin-pages/custom/SettingsPage.php:199
 msgid "Settings saved."
 msgstr ""
 
-#: includes/admin-pages/custom/SettingsPage.php:263
+#: includes/admin-pages/custom/SettingsPage.php:265
 msgid "Save Changes"
 msgstr ""
 
-#: includes/admin-pages/custom/SettingsPage.php:395
-#: includes/admin-pages/custom/SettingsPage.php:404
+#: includes/admin-pages/custom/SettingsPage.php:400
+#: includes/admin-pages/custom/SettingsPage.php:409
 #: includes/elementor/widgets/AppointmentFormWidget.php:41
 #: includes/elementor/widgets/EmployeeAdditionalInfoWidget.php:35
 #: includes/elementor/widgets/EmployeeContactsWidget.php:35
@@ -357,16 +357,16 @@ msgstr ""
 #: templates/private/fields/payment-details.php:28
 #: templates/shortcodes/customer-account/bookings.php:18
 #: templates/shortcodes/customer-account/bookings.php:41
-#: assets/js/calendar-page.js:41477
+#: assets/js/calendar-page.js:38104
 msgid "Status"
 msgstr ""
 
 #: includes/admin-pages/manage/ManageBookingsPage.php:579
 #: includes/admin-pages/manage/ManageNotificationsPage.php:214
 #: includes/list-tables/emails/CustomerEmailsListTable.php:32
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:82
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:86
 #: templates/private/pages/customer-edit.php:20
-#: assets/js/calendar-page.js:41489
+#: assets/js/calendar-page.js:38116
 msgid "Customer"
 msgstr ""
 
@@ -394,8 +394,8 @@ msgstr ""
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:60
 #: includes/post-types/ServicePostType.php:46
 #: includes/post-types/ServicePostType.php:84
-#: assets/js/analytics-page.js:33425
-#: assets/js/calendar-page.js:48758
+#: assets/js/analytics-page.js:33409
+#: assets/js/calendar-page.js:45395
 #: assets/js/gutenberg-blocks.js:12334
 msgid "Services"
 msgstr ""
@@ -418,7 +418,7 @@ msgstr ""
 #: includes/widgets/AppointmentFormWidget.php:214
 #: templates/shortcodes/booking/step-admin-cart.php:33
 #: templates/shortcodes/booking/step-service-form.php:102
-#: assets/js/calendar-page.js:41556
+#: assets/js/calendar-page.js:38183
 #: assets/js/edit-post.js:8907
 #: assets/js/gutenberg-blocks.js:3197
 #: assets/js/gutenberg-blocks.js:3244
@@ -437,8 +437,8 @@ msgstr ""
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:66
 #: includes/post-types/EmployeePostType.php:23
 #: includes/post-types/EmployeePostType.php:52
-#: assets/js/analytics-page.js:33464
-#: assets/js/calendar-page.js:48797
+#: assets/js/analytics-page.js:33448
+#: assets/js/calendar-page.js:45434
 #: assets/js/gutenberg-blocks.js:11430
 #: assets/js/gutenberg-blocks.js:12343
 msgid "Employees"
@@ -467,7 +467,7 @@ msgstr ""
 #: templates/shortcodes/booking/step-admin-cart.php:34
 #: templates/shortcodes/booking/step-cart.php:55
 #: templates/shortcodes/booking/step-service-form.php:167
-#: assets/js/calendar-page.js:41547
+#: assets/js/calendar-page.js:38174
 #: assets/js/gutenberg-blocks.js:3264
 #: assets/js/gutenberg-blocks.js:3308
 msgid "Employee"
@@ -476,7 +476,7 @@ msgstr ""
 #: includes/admin-pages/manage/ManageBookingsPage.php:583
 #: includes/crons/ExportBookingsCron.php:358
 #: templates/shortcodes/booking/step-admin-cart.php:38
-#: assets/js/calendar-page.js:41537
+#: assets/js/calendar-page.js:38164
 msgid "Time"
 msgstr ""
 
@@ -592,7 +592,7 @@ msgstr ""
 #: includes/metaboxes/payment/PaymentDetailsMetabox.php:77
 #: includes/metaboxes/service/ServiceDepositMetabox.php:44
 #: templates/private/fields/payment-details.php:29
-#: templates/shortcodes/template-parts/booking-details.php:120
+#: templates/shortcodes/template-parts/booking-details.php:123
 msgid "Amount"
 msgstr ""
 
@@ -600,14 +600,14 @@ msgstr ""
 #: includes/post-types/BookingPostType.php:87
 #: templates/shortcodes/customer-account/bookings.php:17
 #: templates/shortcodes/customer-account/bookings.php:35
-#: templates/shortcodes/template-parts/booking-details.php:74
-#: assets/js/calendar-page.js:41467
+#: templates/shortcodes/template-parts/booking-details.php:77
+#: assets/js/calendar-page.js:38094
 msgid "Booking"
 msgstr ""
 
 #: includes/admin-pages/manage/ManagePaymentsPage.php:63
 #: includes/metaboxes/payment/PaymentDetailsMetabox.php:89
-#: assets/js/analytics-page.js:46509
+#: assets/js/analytics-page.js:46493
 msgid "Payment Gateway"
 msgstr ""
 
@@ -642,7 +642,7 @@ msgstr ""
 #: templates/shortcodes/booking/step-admin-cart.php:35
 #: templates/shortcodes/booking/step-cart.php:39
 #: templates/shortcodes/booking/step-service-form.php:134
-#: assets/js/calendar-page.js:41565
+#: assets/js/calendar-page.js:38192
 #: assets/js/gutenberg-blocks.js:3254
 #: assets/js/gutenberg-blocks.js:3300
 msgid "Location"
@@ -2355,7 +2355,7 @@ msgstr ""
 #: includes/crons/ExportBookingsCron.php:367
 #: includes/post-types/PaymentPostType.php:80
 #: includes/post-types/PaymentPostType.php:109
-#: assets/js/analytics-page.js:46693
+#: assets/js/analytics-page.js:46677
 msgid "Payments"
 msgstr ""
 
@@ -2679,66 +2679,53 @@ msgstr ""
 msgid "Page to redirect the customer to on failed transaction."
 msgstr ""
 
-#. translators: %s is the current website URL
-#: includes/bundles/SettingsBundle.php:500
-msgid "Set this redirect URL in <a href=\"https://console.developers.google.com/\">Google Developers Console</a>: %s"
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:513
-msgid "Client ID"
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:520
-msgid "Client Secret"
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:547
+#: includes/bundles/SettingsBundle.php:523
 msgid "Default Form Styles"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:548
+#: includes/bundles/SettingsBundle.php:524
 msgid "These default styles apply to all booking forms, but you can customize each one separately."
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:552
+#: includes/bundles/SettingsBundle.php:528
 msgid "Calendar Theme"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:554
+#: includes/bundles/SettingsBundle.php:530
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:42
 #: templates/private/pages/shortcodes-list.php:26
 msgid "Default"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:555
+#: includes/bundles/SettingsBundle.php:531
 msgid "Dark"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:556
+#: includes/bundles/SettingsBundle.php:532
 msgid "Material Blue"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:557
+#: includes/bundles/SettingsBundle.php:533
 msgid "Material Green"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:558
+#: includes/bundles/SettingsBundle.php:534
 msgid "Material Red"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:559
+#: includes/bundles/SettingsBundle.php:535
 msgid "Material Orange"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:560
+#: includes/bundles/SettingsBundle.php:536
 msgid "Airbnb"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:561
+#: includes/bundles/SettingsBundle.php:537
 msgid "Confetti"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:571
+#: includes/bundles/SettingsBundle.php:547
 #: includes/divi/modules/AppointmentFormModule.php:210
 #: includes/elementor/widgets/AppointmentFormWidget.php:296
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:23
@@ -2747,14 +2734,14 @@ msgstr ""
 msgid "Form Width"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:573
+#: includes/bundles/SettingsBundle.php:549
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:24
 #: includes/widgets/AppointmentFormWidget.php:263
 #: assets/js/gutenberg-blocks.js:3373
 msgid "Example: 100%"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:577
+#: includes/bundles/SettingsBundle.php:553
 #: includes/divi/modules/AppointmentFormModule.php:186
 #: includes/elementor/widgets/AppointmentFormWidget.php:316
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:28
@@ -2763,7 +2750,7 @@ msgstr ""
 msgid "Primary Text Color"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:582
+#: includes/bundles/SettingsBundle.php:558
 #: includes/divi/modules/AppointmentFormModule.php:192
 #: includes/elementor/widgets/AppointmentFormWidget.php:327
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:33
@@ -2772,7 +2759,7 @@ msgstr ""
 msgid "Primary Background Color"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:587
+#: includes/bundles/SettingsBundle.php:563
 #: includes/divi/modules/AppointmentFormModule.php:198
 #: includes/elementor/widgets/AppointmentFormWidget.php:338
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:38
@@ -2781,7 +2768,7 @@ msgstr ""
 msgid "Secondary Text Color"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:592
+#: includes/bundles/SettingsBundle.php:568
 #: includes/divi/modules/AppointmentFormModule.php:204
 #: includes/elementor/widgets/AppointmentFormWidget.php:349
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:43
@@ -2790,7 +2777,7 @@ msgstr ""
 msgid "Secondary Background Color"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:597
+#: includes/bundles/SettingsBundle.php:573
 #: includes/divi/modules/AppointmentFormModule.php:218
 #: includes/elementor/widgets/AppointmentFormWidget.php:360
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:48
@@ -2799,7 +2786,7 @@ msgstr ""
 msgid "Buttons Padding"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:598
+#: includes/bundles/SettingsBundle.php:574
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:49
 #: includes/widgets/AppointmentFormWidget.php:288
 #: assets/js/gutenberg-blocks.js:3382
@@ -2872,9 +2859,9 @@ msgstr ""
 
 #: includes/crons/ExportBookingsCron.php:357
 #: templates/shortcodes/booking/step-admin-cart.php:37
-#: templates/shortcodes/template-parts/booking-details.php:78
-#: templates/shortcodes/template-parts/booking-details.php:112
-#: assets/js/calendar-page.js:41530
+#: templates/shortcodes/template-parts/booking-details.php:81
+#: templates/shortcodes/template-parts/booking-details.php:115
+#: assets/js/calendar-page.js:38157
 msgid "Date"
 msgstr ""
 
@@ -2899,7 +2886,7 @@ msgstr ""
 #: includes/metaboxes/booking/BookingPriceMetabox.php:45
 #: templates/shortcodes/customer-account/bookings.php:20
 #: templates/shortcodes/customer-account/bookings.php:63
-#: templates/shortcodes/template-parts/booking-details.php:82
+#: templates/shortcodes/template-parts/booking-details.php:85
 msgid "Total Price"
 msgstr ""
 
@@ -2907,7 +2894,7 @@ msgstr ""
 #: templates/private/fields/payment-details.php:66
 #: templates/shortcodes/customer-account/bookings.php:21
 #: templates/shortcodes/customer-account/bookings.php:67
-#: templates/shortcodes/template-parts/booking-details.php:86
+#: templates/shortcodes/template-parts/booking-details.php:89
 msgid "Total Paid"
 msgstr ""
 
@@ -3443,8 +3430,8 @@ msgstr ""
 #: includes/metaboxes/shortcode/LocationsListMetabox.php:56
 #: includes/post-types/LocationPostType.php:39
 #: includes/post-types/LocationPostType.php:77
-#: assets/js/analytics-page.js:33445
-#: assets/js/calendar-page.js:48778
+#: assets/js/analytics-page.js:33429
+#: assets/js/calendar-page.js:45415
 #: assets/js/gutenberg-blocks.js:11439
 #: assets/js/gutenberg-blocks.js:11701
 msgid "Locations"
@@ -4117,17 +4104,17 @@ msgid "Other Recipients"
 msgstr ""
 
 #: includes/emails/AbstractEmail.php:325
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:98
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:94
 msgid "You can use multiple comma-separated email addresses."
 msgstr ""
 
 #: includes/emails/AbstractEmail.php:331
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:135
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:131
 msgid "Subject"
 msgstr ""
 
 #: includes/emails/AbstractEmail.php:338
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:146
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:142
 msgid "Header"
 msgstr ""
 
@@ -4316,7 +4303,7 @@ msgid "Already paid"
 msgstr ""
 
 #: includes/emails/tags/booking/BookingCouponDiscountTag.php:17
-#: assets/js/analytics-page.js:46575
+#: assets/js/analytics-page.js:46559
 msgid "Amount of Discount by Coupon Code"
 msgstr ""
 
@@ -4555,7 +4542,7 @@ msgstr ""
 #: templates/shortcodes/booking/step-admin-cart.php:39
 #: templates/shortcodes/booking/step-cart.php:48
 #: templates/shortcodes/template-parts/booking-details.php:35
-#: assets/js/calendar-page.js:41438
+#: assets/js/calendar-page.js:38065
 #: assets/js/divi-modules.js:2840
 #: assets/js/edit-post.js:4290
 #: assets/js/elementor-widgets.js:2840
@@ -4620,7 +4607,7 @@ msgstr ""
 #: includes/fields/complex/TimetableField.php:217
 #: includes/fields/complex/TimetableField.php:313
 #: includes/structures/TimePeriod.php:294
-#: assets/js/calendar-page.js:41520
+#: assets/js/calendar-page.js:38147
 #: assets/js/divi-modules.js:3551
 #: assets/js/edit-post.js:2095
 #: assets/js/edit-post.js:4822
@@ -4822,18 +4809,18 @@ msgid "Capacity"
 msgstr ""
 
 #. Translators: %d: Booking ID.
-#: includes/functions/misc.php:393
+#: includes/functions/misc.php:402
 msgctxt "Product name for payment gateway"
 msgid "Booking #%d"
 msgstr ""
 
-#: includes/functions/misc.php:395
+#: includes/functions/misc.php:404
 msgctxt "Product name for payment gateway (no booking ID)"
 msgid "Service booking"
 msgstr ""
 
 #: includes/functions/plugin.php:109
-#: includes/Plugin.php:482
+#: includes/Plugin.php:476
 msgid "Appointment Booking"
 msgstr ""
 
@@ -5005,7 +4992,7 @@ msgstr ""
 #: includes/post-types/BookingPostType.php:78
 #: includes/post-types/BookingPostType.php:116
 #: templates/shortcodes/customer-account/menu.php:14
-#: assets/js/calendar-page.js:41509
+#: assets/js/calendar-page.js:38136
 msgid "Bookings"
 msgstr ""
 
@@ -5032,7 +5019,7 @@ msgid "Content Type"
 msgstr ""
 
 #: includes/list-tables/payments/PaymentsListTable.php:31
-#: templates/shortcodes/template-parts/booking-details.php:116
+#: templates/shortcodes/template-parts/booking-details.php:119
 msgid "Method"
 msgstr ""
 
@@ -5204,15 +5191,15 @@ msgstr ""
 msgid "Employee Google Calendar"
 msgstr ""
 
-#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:75
+#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:73
 msgid "Connected"
 msgstr ""
 
-#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:79
+#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:77
 msgid "Disconnect Calendar"
 msgstr ""
 
-#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:87
+#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:85
 msgid "Connect to Calendar"
 msgstr ""
 
@@ -5246,28 +5233,28 @@ msgstr ""
 msgid "Time at which the notification must be sent (only for daily ones)."
 msgstr ""
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:84
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:82
 msgid "Custom Contacts"
 msgstr ""
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:97
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:93
 msgid "Custom Email Addresses"
 msgstr ""
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:108
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:104
 msgid "Custom Phone Numbers"
 msgstr ""
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:109
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:105
 msgid "You can use multiple comma-separated phone numbers in international format."
 msgstr ""
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:119
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:157
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:115
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:153
 msgid "Message"
 msgstr ""
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:123
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:119
 msgid "{service_name} on {reservation_date} at {start_time} has been booked. {employee_name} is waiting for you at {location_name}"
 msgstr ""
 
@@ -5335,7 +5322,7 @@ msgid "Schedule Settings"
 msgstr ""
 
 #: includes/metaboxes/schedule/ScheduleTimetableMetabox.php:44
-#: assets/js/calendar-page.js:48836
+#: assets/js/calendar-page.js:45473
 msgid "Timetable"
 msgstr ""
 
@@ -5629,15 +5616,15 @@ msgstr ""
 msgid "Manual Payment"
 msgstr ""
 
-#: includes/payments/gateways/PayPalPaymentGateway.php:81
+#: includes/payments/gateways/PayPalPaymentGateway.php:83
 msgid "PayPal"
 msgstr ""
 
-#: includes/payments/gateways/PayPalPaymentGateway.php:85
+#: includes/payments/gateways/PayPalPaymentGateway.php:87
 msgid "Pay by PayPal"
 msgstr ""
 
-#: includes/payments/gateways/PayPalPaymentGateway.php:116
+#: includes/payments/gateways/PayPalPaymentGateway.php:118
 msgid "Something went wrong, please try again."
 msgstr ""
 
@@ -5735,7 +5722,7 @@ msgid "Edit Booking"
 msgstr ""
 
 #: includes/post-types/BookingPostType.php:112
-#: assets/js/calendar-page.js:41663
+#: assets/js/calendar-page.js:38290
 msgid "View Booking"
 msgstr ""
 
@@ -5753,7 +5740,7 @@ msgstr ""
 
 #: includes/post-types/CouponPostType.php:53
 #: includes/post-types/CouponPostType.php:85
-#: assets/js/analytics-page.js:46688
+#: assets/js/analytics-page.js:46672
 msgid "Coupons"
 msgstr ""
 
@@ -5975,7 +5962,7 @@ msgid "Payment #%d"
 msgstr ""
 
 #: includes/post-types/PaymentPostType.php:89
-#: templates/shortcodes/template-parts/booking-details.php:108
+#: templates/shortcodes/template-parts/booking-details.php:111
 msgid "Payment"
 msgstr ""
 
@@ -6014,7 +6001,7 @@ msgstr ""
 
 #: includes/post-types/ReservationPostType.php:26
 #: includes/post-types/ReservationPostType.php:47
-#: assets/js/analytics-page.js:46683
+#: assets/js/analytics-page.js:46667
 msgid "Reservations"
 msgstr ""
 
@@ -6780,8 +6767,8 @@ msgid "Service Notice %d"
 msgstr ""
 
 #: templates/emails/notification/default-notification.php:35
-#: assets/js/calendar-page.js:41673
-#: assets/js/calendar-page.js:41683
+#: assets/js/calendar-page.js:38300
+#: assets/js/calendar-page.js:38310
 msgid "Reservation details"
 msgstr ""
 
@@ -6852,11 +6839,11 @@ msgstr ""
 msgid "Extend the functionality of Appointment Booking with preferred add-ons."
 msgstr ""
 
-#: templates/private/pages/extensions-list.php:49
+#: templates/private/pages/extensions-list.php:50
 msgid "Get this Extension"
 msgstr ""
 
-#: templates/private/pages/extensions-list.php:57
+#: templates/private/pages/extensions-list.php:58
 msgid "No extensions found."
 msgstr ""
 
@@ -6966,7 +6953,7 @@ msgstr ""
 #: templates/shortcodes/booking/step-checkout.php:126
 #: templates/shortcodes/booking/step-period.php:68
 #: templates/shortcodes/booking/step-service-form.php:192
-#: assets/js/calendar-page.js:48830
+#: assets/js/calendar-page.js:45467
 msgid "Next"
 msgstr ""
 
@@ -7035,198 +7022,198 @@ msgstr ""
 msgid "No categories matching criteria."
 msgstr ""
 
-#: assets/js/analytics-page.js:16172
+#: assets/js/analytics-page.js:16170
 msgid "By year"
 msgstr ""
 
-#: assets/js/analytics-page.js:16178
+#: assets/js/analytics-page.js:16176
 msgid "By quarter"
 msgstr ""
 
-#: assets/js/analytics-page.js:16184
+#: assets/js/analytics-page.js:16182
 msgid "By month"
 msgstr ""
 
-#: assets/js/analytics-page.js:16190
+#: assets/js/analytics-page.js:16188
 msgid "By week"
 msgstr ""
 
-#: assets/js/analytics-page.js:16196
+#: assets/js/analytics-page.js:16194
 msgid "By day"
 msgstr ""
 
-#: assets/js/analytics-page.js:16202
+#: assets/js/analytics-page.js:16200
 msgid "By hour"
 msgstr ""
 
-#: assets/js/analytics-page.js:16214
-#: assets/js/calendar-page.js:48832
+#: assets/js/analytics-page.js:16212
+#: assets/js/calendar-page.js:45469
 msgid "Today"
 msgstr ""
 
-#: assets/js/analytics-page.js:16217
+#: assets/js/analytics-page.js:16215
 msgid "Yesterday"
 msgstr ""
 
-#: assets/js/analytics-page.js:16220
+#: assets/js/analytics-page.js:16218
 msgid "Last week"
 msgstr ""
 
-#: assets/js/analytics-page.js:16223
+#: assets/js/analytics-page.js:16221
 msgid "Last month"
 msgstr ""
 
-#: assets/js/analytics-page.js:16226
+#: assets/js/analytics-page.js:16224
 msgid "Last quarter"
 msgstr ""
 
-#: assets/js/analytics-page.js:16229
+#: assets/js/analytics-page.js:16227
 msgid "This Year"
 msgstr ""
 
-#: assets/js/analytics-page.js:16252
-#: assets/js/analytics-page.js:16300
+#: assets/js/analytics-page.js:16250
+#: assets/js/analytics-page.js:16298
+#: assets/js/analytics-page.js:16299
 #: assets/js/analytics-page.js:16301
-#: assets/js/analytics-page.js:16303
-#: assets/js/analytics-page.js:16306
+#: assets/js/analytics-page.js:16304
 msgid "Custom range"
 msgstr ""
 
-#: assets/js/analytics-page.js:33434
-#: assets/js/analytics-page.js:33454
-#: assets/js/analytics-page.js:33474
-#: assets/js/analytics-page.js:33489
-#: assets/js/calendar-page.js:48767
-#: assets/js/calendar-page.js:48787
-#: assets/js/calendar-page.js:48807
-#: assets/js/calendar-page.js:48822
+#: assets/js/analytics-page.js:33418
+#: assets/js/analytics-page.js:33438
+#: assets/js/analytics-page.js:33458
+#: assets/js/analytics-page.js:33473
+#: assets/js/calendar-page.js:45404
+#: assets/js/calendar-page.js:45424
+#: assets/js/calendar-page.js:45444
+#: assets/js/calendar-page.js:45459
 msgid "All"
 msgstr ""
 
-#: assets/js/analytics-page.js:33482
-#: assets/js/calendar-page.js:48815
+#: assets/js/analytics-page.js:33466
+#: assets/js/calendar-page.js:45452
 msgid "Statuses"
 msgstr ""
 
-#: assets/js/analytics-page.js:45720
+#: assets/js/analytics-page.js:45704
 msgid "No data for the selected date range"
 msgstr ""
 
-#: assets/js/analytics-page.js:46271
-#: assets/js/analytics-page.js:46291
-#: assets/js/analytics-page.js:46311
-#: assets/js/analytics-page.js:46331
-#: assets/js/analytics-page.js:46508
+#: assets/js/analytics-page.js:46255
+#: assets/js/analytics-page.js:46275
+#: assets/js/analytics-page.js:46295
+#: assets/js/analytics-page.js:46315
+#: assets/js/analytics-page.js:46492
 msgid "Total Revenue"
 msgstr ""
 
-#: assets/js/analytics-page.js:46272
-#: assets/js/analytics-page.js:46292
-#: assets/js/analytics-page.js:46312
-#: assets/js/analytics-page.js:46332
-#: assets/js/analytics-page.js:46678
+#: assets/js/analytics-page.js:46256
+#: assets/js/analytics-page.js:46276
+#: assets/js/analytics-page.js:46296
+#: assets/js/analytics-page.js:46316
+#: assets/js/analytics-page.js:46662
 msgid "Revenue"
 msgstr ""
 
-#: assets/js/analytics-page.js:46351
-#: assets/js/analytics-page.js:46370
-#: assets/js/analytics-page.js:46389
-#: assets/js/analytics-page.js:46408
+#: assets/js/analytics-page.js:46335
+#: assets/js/analytics-page.js:46354
+#: assets/js/analytics-page.js:46373
+#: assets/js/analytics-page.js:46392
 msgid "Total Number of Reservations"
 msgstr ""
 
-#: assets/js/analytics-page.js:46352
-#: assets/js/analytics-page.js:46371
-#: assets/js/analytics-page.js:46390
-#: assets/js/analytics-page.js:46409
+#: assets/js/analytics-page.js:46336
+#: assets/js/analytics-page.js:46355
+#: assets/js/analytics-page.js:46374
+#: assets/js/analytics-page.js:46393
 msgid "Number of Reservations"
 msgstr ""
 
-#: assets/js/analytics-page.js:46428
-#: assets/js/analytics-page.js:46468
-#: assets/js/analytics-page.js:46566
+#: assets/js/analytics-page.js:46412
+#: assets/js/analytics-page.js:46452
+#: assets/js/analytics-page.js:46550
 msgid "Total Number of Coupons Used"
 msgstr ""
 
-#: assets/js/analytics-page.js:46429
-#: assets/js/analytics-page.js:46469
+#: assets/js/analytics-page.js:46413
+#: assets/js/analytics-page.js:46453
 msgid "Coupons Usage"
 msgstr ""
 
-#: assets/js/analytics-page.js:46447
-#: assets/js/analytics-page.js:46488
-#: assets/js/analytics-page.js:46569
+#: assets/js/analytics-page.js:46431
+#: assets/js/analytics-page.js:46472
+#: assets/js/analytics-page.js:46553
 msgid "Total Discount Amount"
 msgstr ""
 
-#: assets/js/analytics-page.js:46448
-#: assets/js/analytics-page.js:46489
+#: assets/js/analytics-page.js:46432
+#: assets/js/analytics-page.js:46473
 msgid "Amount of Discounts"
 msgstr ""
 
-#: assets/js/analytics-page.js:46528
-#: assets/js/analytics-page.js:46581
+#: assets/js/analytics-page.js:46512
+#: assets/js/analytics-page.js:46565
 msgid "Total Number of Payments"
 msgstr ""
 
-#: assets/js/analytics-page.js:46529
+#: assets/js/analytics-page.js:46513
 msgid "Number of Payments"
 msgstr ""
 
-#: assets/js/analytics-page.js:46536
-#: assets/js/analytics-page.js:46551
+#: assets/js/analytics-page.js:46520
+#: assets/js/analytics-page.js:46535
 msgid "Total Overview"
 msgstr ""
 
-#: assets/js/analytics-page.js:46539
-#: assets/js/analytics-page.js:46554
+#: assets/js/analytics-page.js:46523
+#: assets/js/analytics-page.js:46538
 msgid "By Services"
 msgstr ""
 
-#: assets/js/analytics-page.js:46542
-#: assets/js/analytics-page.js:46557
+#: assets/js/analytics-page.js:46526
+#: assets/js/analytics-page.js:46541
 msgid "By Employees"
 msgstr ""
 
-#: assets/js/analytics-page.js:46545
-#: assets/js/analytics-page.js:46560
+#: assets/js/analytics-page.js:46529
+#: assets/js/analytics-page.js:46544
 msgid "By Locations"
 msgstr ""
 
-#: assets/js/analytics-page.js:46572
+#: assets/js/analytics-page.js:46556
 msgid "Number of Coupons Used by Coupon Code"
 msgstr ""
 
-#: assets/js/analytics-page.js:46584
+#: assets/js/analytics-page.js:46568
 msgid "Amount by Payment Gateway"
 msgstr ""
 
-#: assets/js/calendar-page.js:41666
+#: assets/js/calendar-page.js:38293
 msgid "View Bookings"
 msgstr ""
 
-#: assets/js/calendar-page.js:48831
+#: assets/js/calendar-page.js:45468
 msgid "Previous"
 msgstr ""
 
-#: assets/js/calendar-page.js:48833
+#: assets/js/calendar-page.js:45470
 msgid "Month"
 msgstr ""
 
-#: assets/js/calendar-page.js:48834
+#: assets/js/calendar-page.js:45471
 msgid "Week"
 msgstr ""
 
-#: assets/js/calendar-page.js:48835
+#: assets/js/calendar-page.js:45472
 msgid "Day"
 msgstr ""
 
-#: assets/js/calendar-page.js:48837
+#: assets/js/calendar-page.js:45474
 msgid "There are no events in this range."
 msgstr ""
 
 #. Translators: %d: Count of hide calendar events.
-#: assets/js/calendar-page.js:48840
+#: assets/js/calendar-page.js:45477
 msgid "+%d more"
 msgstr ""
 

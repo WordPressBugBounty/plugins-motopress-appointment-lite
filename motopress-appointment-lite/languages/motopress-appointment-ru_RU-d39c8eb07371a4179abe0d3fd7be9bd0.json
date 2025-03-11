@@ -1,6 +1,6 @@
 {
-    "translation-revision-date": "2022-01-10 22:04",
-    "generator": "WP-CLI\/2.10.0",
+    "translation-revision-date": "2025-02-25 13:09",
+    "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/edit-post.js",
     "domain": "messages",
     "locale_data": {
@@ -13,14 +13,17 @@
             "Service": [
                 "\u0423\u0441\u043b\u0443\u0433\u0430"
             ],
-            "Clients": [
-                ""
-            ],
             "\u2014 Select \u2014": [
                 "\u2014 \u0412\u044b\u0431\u0440\u0430\u0442\u044c \u2014"
             ],
             "\u2014 Any \u2014": [
                 "\u2014 \u041b\u044e\u0431\u043e\u0439 \u2014"
+            ],
+            "Clients": [
+                ""
+            ],
+            "All day": [
+                "\u0412\u0435\u0441\u044c \u0434\u0435\u043d\u044c"
             ],
             "Remove": [
                 "\u0423\u0434\u0430\u043b\u0438\u0442\u044c"
@@ -145,19 +148,16 @@
             "December": [
                 ""
             ],
-            "Sorry, but we were unable to allocate time slots for the date you selected.": [
+            "Phone number is invalid.": [
                 ""
             ],
-            "Phone number is invalid.": [
+            "Sorry, but we were unable to allocate time slots for the date you selected.": [
                 ""
             ],
             "To enable this option, you need to check the '%s' box.": [
                 ""
             ],
             "To enable booking for the specific service only, select the service below first, then uncheck the 'Service' box here.": [
-                ""
-            ],
-            "All day": [
                 ""
             ]
         }

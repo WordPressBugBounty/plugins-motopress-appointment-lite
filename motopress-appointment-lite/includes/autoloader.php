@@ -16,6 +16,7 @@ $mpaCustomPathList = array(
 	\MotoPress\Appointment\Plugin\PluginPatch_1_18_0::class => 'includes/plugin/patches/PluginPatch_1_18_0.php',
 	\MotoPress\Appointment\Plugin\PluginPatch_1_20_0::class => 'includes/plugin/patches/PluginPatch_1_20_0.php',
 	\MotoPress\Appointment\Plugin\PluginPatch_1_23_1::class => 'includes/plugin/patches/PluginPatch_1_23_1.php',
+	\MotoPress\Appointment\Plugin\PluginPatch_2_2_0::class => 'includes/plugin/patches/PluginPatch_2_2_0.php',
 
 	\MotoPress\Appointment\Handlers\AbstractNotificationSender::class => 'includes/handlers/notification/AbstractNotificationSender.php',
 	\MotoPress\Appointment\Handlers\EmailNotificationSender::class => 'includes/handlers/notification/EmailNotificationSender.php',

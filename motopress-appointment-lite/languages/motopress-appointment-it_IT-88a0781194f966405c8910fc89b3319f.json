@@ -1,6 +1,6 @@
 {
-    "translation-revision-date": "2022-07-07 14:03",
-    "generator": "WP-CLI\/2.10.0",
+    "translation-revision-date": "2025-02-25 13:09",
+    "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/public.js",
     "domain": "messages",
     "locale_data": {
@@ -10,8 +10,14 @@
                 "lang": "it_IT",
                 "plural-forms": "nplurals=2; plural=(n != 1);"
             },
+            "Left to pay": [
+                ""
+            ],
             "Clients": [
                 "Clienti"
+            ],
+            "All day": [
+                "Tutto il giorno"
             ],
             "Remove": [
                 "Rimuovere"
@@ -151,17 +157,44 @@
             "December": [
                 "Dicembre"
             ],
+            "Phone number is invalid.": [
+                ""
+            ],
+            "You will be redirected to a secure page to complete the payment.": [
+                "Sarai reindirizzato ad una pagina sicura per completare il pagamento."
+            ],
+            "Subtotal": [
+                "Subtotale"
+            ],
+            "Coupon: %s": [
+                "Codice: %s"
+            ],
             "Total": [
                 "Totale"
             ],
-            "Card": [
-                "Carta"
+            "Deposit": [
+                "Deposito"
+            ],
+            "Paying now": [
+                ""
+            ],
+            "Coupon code is empty.": [
+                "Codice sconto vuoto."
+            ],
+            "Coupon code applied successfully.": [
+                "Codice coupon applicato con successo."
+            ],
+            "Sorry, your booking is not eligible for this coupon.": [
+                "Ci dispiace, la tua prenotazione non \u00e8 idonea per questo coupon."
             ],
             "By providing your IBAN and confirming this payment, you authorise (A) %s and Stripe, our payment service provider, to send instructions to your bank to debit your account and (B) your bank to debit your account in accordance with those instructions. You are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited.": [
-                ""
+                "Fornendo il tuo IBAN e confermando questo pagamento, autorizzi (A) %s e Stripe, il nostro fornitore di servizi di pagamento, a inviare istruzioni alla tua banca per addebitare il tuo conto e (B) la tua banca ad addebitare il tuo conto in conformit\u00e0 con tali istruzioni. Hai diritto a un rimborso dalla tua banca in base ai termini e alle condizioni del tuo accordo con la tua banca. Un rimborso deve essere richiesto entro 8 settimane dalla data in cui il tuo conto \u00e8 stato addebitato."
             ],
             "Credit or debit card": [
                 "Carta di credito o di debito"
+            ],
+            "or": [
+                "o"
             ],
             "Select iDEAL Bank": [
                 "Seleziona iDEAL Bank"
@@ -169,50 +202,17 @@
             "IBAN": [
                 "IBAN"
             ],
-            "You will be redirected to a secure page to complete the payment.": [
-                "Sarai reindirizzato ad una pagina sicura per completare il pagamento."
+            "Payment methods": [
+                ""
             ],
-            "Sorry, there are no services, employees or locations to book.": [
-                "Siamo spiacenti, non ci sono servizi, dipendenti o luoghi da prenotare."
+            "Card": [
+                "Carta"
             ],
             "Sorry, but we were unable to allocate time slots for the date you selected.": [
                 "Siamo spiacenti, ma non siamo stati in grado di assegnare le fasce orarie per la data selezionata."
             ],
-            "Coupon code is empty.": [
-                ""
-            ],
-            "Coupon code applied successfully.": [
-                ""
-            ],
-            "Sorry, your booking is not eligible for this coupon.": [
-                ""
-            ],
-            "Left to pay": [
-                ""
-            ],
-            "Phone number is invalid.": [
-                ""
-            ],
-            "or": [
-                ""
-            ],
-            "Subtotal": [
-                ""
-            ],
-            "Coupon: %s": [
-                ""
-            ],
-            "Deposit": [
-                ""
-            ],
-            "Paying now": [
-                ""
-            ],
-            "Payment methods": [
-                ""
-            ],
-            "All day": [
-                ""
+            "Sorry, there are no services, employees or locations to book.": [
+                "Siamo spiacenti, non ci sono servizi, dipendenti o luoghi da prenotare."
             ]
         }
     }

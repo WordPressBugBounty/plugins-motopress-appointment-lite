@@ -1,6 +1,6 @@
 {
-    "translation-revision-date": "2022-01-10 22:04",
-    "generator": "WP-CLI\/2.10.0",
+    "translation-revision-date": "2025-02-25 13:09",
+    "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/analytics-page.js",
     "domain": "messages",
     "locale_data": {
@@ -10,6 +10,9 @@
                 "lang": "es_ES",
                 "plural-forms": "nplurals=2; plural=(n != 1);"
             },
+            "Analytics": [
+                ""
+            ],
             "Services": [
                 "Servicios"
             ],
@@ -25,38 +28,14 @@
             "Locations": [
                 "Ubicaciones"
             ],
-            "Reservations": [
-                "Reservas"
+            "Amount of Discount by Coupon Code": [
+                ""
             ],
             "Coupons": [
-                ""
+                "Cupones"
             ],
-            "Today": [
-                ""
-            ],
-            "Analytics": [
-                ""
-            ],
-            "All": [
-                ""
-            ],
-            "Statuses": [
-                ""
-            ],
-            "Yesterday": [
-                ""
-            ],
-            "Last week": [
-                ""
-            ],
-            "Last month": [
-                ""
-            ],
-            "Last quarter": [
-                ""
-            ],
-            "Custom range": [
-                ""
+            "Reservations": [
+                "Reservas"
             ],
             "By year": [
                 ""
@@ -76,8 +55,32 @@
             "By hour": [
                 ""
             ],
+            "Today": [
+                "Hoy"
+            ],
+            "Yesterday": [
+                "Ayer"
+            ],
+            "Last week": [
+                "Semana pasada"
+            ],
+            "Last month": [
+                "El mes pasado"
+            ],
+            "Last quarter": [
+                "El trimestre pasado"
+            ],
             "This Year": [
                 ""
+            ],
+            "Custom range": [
+                ""
+            ],
+            "All": [
+                "Todo"
+            ],
+            "Statuses": [
+                "Estados"
             ],
             "No data for the selected date range": [
                 ""
@@ -125,9 +128,6 @@
                 ""
             ],
             "Number of Coupons Used by Coupon Code": [
-                ""
-            ],
-            "Amount of Discount by Coupon Code": [
                 ""
             ],
             "Amount by Payment Gateway": [

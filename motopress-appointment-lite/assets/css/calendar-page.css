@@ -751,6 +751,14 @@ button.rbc-input::-moz-focus-inner {
   margin-left: 10px;
 }
 
+@media (max-width: 767px) {
+  .rbc-toolbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
 .rbc-event, .rbc-day-slot .rbc-background-event {
   border: none;
   -webkit-box-sizing: border-box;

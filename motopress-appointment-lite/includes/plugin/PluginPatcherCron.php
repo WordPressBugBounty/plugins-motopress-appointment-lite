@@ -22,6 +22,7 @@ class PluginPatcherCron extends AbstractTaskChainCron {
 		PluginPatch_1_18_0::class,
 		PluginPatch_1_20_0::class,
 		PluginPatch_1_23_1::class,
+		PluginPatch_2_2_0::class,
 	);
 
 	public function __construct() {

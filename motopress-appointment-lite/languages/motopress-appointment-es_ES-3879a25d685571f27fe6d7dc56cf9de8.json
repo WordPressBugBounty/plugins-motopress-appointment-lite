@@ -1,6 +1,6 @@
 {
-    "translation-revision-date": "2022-01-10 22:04",
-    "generator": "WP-CLI\/2.10.0",
+    "translation-revision-date": "2025-02-25 13:09",
+    "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/elementor-widgets.js",
     "domain": "messages",
     "locale_data": {
@@ -10,8 +10,14 @@
                 "lang": "es_ES",
                 "plural-forms": "nplurals=2; plural=(n != 1);"
             },
+            "Left to pay": [
+                ""
+            ],
             "Clients": [
                 "Clientes"
+            ],
+            "All day": [
+                "Todo el d\u00eda"
             ],
             "Remove": [
                 "Eliminar"
@@ -151,14 +157,44 @@
             "December": [
                 "Diciembre"
             ],
+            "Phone number is invalid.": [
+                ""
+            ],
+            "You will be redirected to a secure page to complete the payment.": [
+                "Ser\u00e1s redirigido a una p\u00e1gina segura para completar el pago."
+            ],
+            "Subtotal": [
+                "Subtotal"
+            ],
+            "Coupon: %s": [
+                "Cup\u00f3n: %s"
+            ],
             "Total": [
                 "Total"
             ],
-            "Card": [
-                "Tarjeta"
+            "Deposit": [
+                "Dep\u00f3sito"
+            ],
+            "Paying now": [
+                ""
+            ],
+            "Coupon code is empty.": [
+                "El c\u00f3digo del cup\u00f3n est\u00e1 vacio."
+            ],
+            "Coupon code applied successfully.": [
+                "C\u00f3digo de cup\u00f3n aplicado con \u00e9xito."
+            ],
+            "Sorry, your booking is not eligible for this coupon.": [
+                "Lo sentimos, su reserva no es elegible para este cup\u00f3n."
+            ],
+            "By providing your IBAN and confirming this payment, you authorise (A) %s and Stripe, our payment service provider, to send instructions to your bank to debit your account and (B) your bank to debit your account in accordance with those instructions. You are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited.": [
+                "Al proporcionar su IBAN y confirmar este pago, usted autoriza (A) %s y Stripe, nuestro proveedor de servicios de pago, a enviar instrucciones a su banco para que cargue el importe en su cuenta y (B) a su banco para que cargue el importe en su cuenta de acuerdo con dichas instrucciones. Usted tiene derecho a un reembolso de su banco en virtud de los t\u00e9rminos y condiciones de su acuerdo con su banco. El reembolso debe reclamarse en un plazo de 8 semanas a partir de la fecha en que se haya hecho el cargo en su cuenta."
             ],
             "Credit or debit card": [
                 "Tarjeta de cr\u00e9dito o d\u00e9bito"
+            ],
+            "or": [
+                "o"
             ],
             "Select iDEAL Bank": [
                 "Seleccionar banco iDEAL"
@@ -166,53 +202,17 @@
             "IBAN": [
                 "IBAN"
             ],
-            "You will be redirected to a secure page to complete the payment.": [
-                "Ser\u00e1s redirigido a una p\u00e1gina segura para completar el pago."
+            "Payment methods": [
+                ""
             ],
-            "Sorry, there are no services, employees or locations to book.": [
-                "Lo sentimos, no hay servicios, empleados o ubicaciones para reservar."
+            "Card": [
+                "Tarjeta"
             ],
             "Sorry, but we were unable to allocate time slots for the date you selected.": [
                 "Lo sentimos, pero no hemos podido asignar franjas horarias para la fecha que ha seleccionado."
             ],
-            "Left to pay": [
-                ""
-            ],
-            "Phone number is invalid.": [
-                ""
-            ],
-            "Coupon code is empty.": [
-                ""
-            ],
-            "Coupon code applied successfully.": [
-                ""
-            ],
-            "Sorry, your booking is not eligible for this coupon.": [
-                ""
-            ],
-            "By providing your IBAN and confirming this payment, you authorise (A) %s and Stripe, our payment service provider, to send instructions to your bank to debit your account and (B) your bank to debit your account in accordance with those instructions. You are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited.": [
-                ""
-            ],
-            "or": [
-                ""
-            ],
-            "Subtotal": [
-                ""
-            ],
-            "Coupon: %s": [
-                ""
-            ],
-            "Deposit": [
-                ""
-            ],
-            "Paying now": [
-                ""
-            ],
-            "Payment methods": [
-                ""
-            ],
-            "All day": [
-                ""
+            "Sorry, there are no services, employees or locations to book.": [
+                "Lo sentimos, no hay servicios, empleados o ubicaciones para reservar."
             ]
         }
     }

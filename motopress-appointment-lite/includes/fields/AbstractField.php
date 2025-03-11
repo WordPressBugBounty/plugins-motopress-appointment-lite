@@ -260,12 +260,12 @@ abstract class AbstractField {
 	}
 
 	/**
-	 * @param mixed $default
+	 * @param mixed $defaultValue
 	 *
 	 * @since 1.0
 	 */
-	public function setDefault( $default ) {
-		$this->default = $default;
+	public function setDefault( $defaultValue ) {
+		$this->default = $defaultValue;
 	}
 
 	/**

@@ -70,7 +70,9 @@ class PayPalPaymentGateway extends AbstractPaymentGateway {
 		parent::__construct();
 
 		$this->paypalClientId = $this->getOption( 'client_id', $this->paypalClientId );
-		$this->paypalSecret   = $this->getOption( 'secret', $this->paypalSecret );
+		$this->paypalSecret   = \MotoPress\Appointment\Helpers\StringEncryptHelper::decryptString(
+			$this->getOption( 'secret', $this->paypalSecret )
+		);
 	}
 
 	public function getId(): string {

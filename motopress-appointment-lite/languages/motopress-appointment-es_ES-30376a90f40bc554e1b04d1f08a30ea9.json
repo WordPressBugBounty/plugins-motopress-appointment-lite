@@ -1,6 +1,6 @@
 {
-    "translation-revision-date": "2022-01-10 22:04",
-    "generator": "WP-CLI\/2.10.0",
+    "translation-revision-date": "2025-02-25 13:09",
+    "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/widgets-manage-page.js",
     "domain": "messages",
     "locale_data": {
@@ -13,14 +13,17 @@
             "Service": [
                 "Servicio"
             ],
-            "Clients": [
-                "Clientes"
-            ],
             "\u2014 Select \u2014": [
                 "\u2014 Elegir \u2014"
             ],
             "\u2014 Any \u2014": [
                 "\u2014 Cualquiera \u2014"
+            ],
+            "Clients": [
+                "Clientes"
+            ],
+            "All day": [
+                "Todo el d\u00eda"
             ],
             "Sun": [
                 "Dom"
@@ -143,9 +146,6 @@
                 ""
             ],
             "To enable booking for the specific service only, select the service below first, then uncheck the 'Service' box here.": [
-                ""
-            ],
-            "All day": [
                 ""
             ]
         }

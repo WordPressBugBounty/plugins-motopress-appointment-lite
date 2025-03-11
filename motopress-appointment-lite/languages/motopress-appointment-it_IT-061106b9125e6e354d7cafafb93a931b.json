@@ -1,6 +1,6 @@
 {
-    "translation-revision-date": "2022-07-07 14:03",
-    "generator": "WP-CLI\/2.10.0",
+    "translation-revision-date": "2025-02-25 13:09",
+    "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/calendar-page.js",
     "domain": "messages",
     "locale_data": {
@@ -34,41 +34,53 @@
             "Time": [
                 "Ora"
             ],
-            "Clients": [
-                "Clienti"
-            ],
             "Booking": [
                 "Prenotazione"
             ],
             "Location": [
                 "Localit\u00e0"
             ],
+            "Date": [
+                "Data"
+            ],
             "Locations": [
                 "Posizioni"
             ],
-            "Reservation details": [
-                "Informazioni sulla prenotazione"
+            "Clients": [
+                "Clienti"
             ],
-            "Timetable": [
-                "Orario"
+            "All day": [
+                "Tutto il giorno"
             ],
             "Bookings": [
                 "Prenotazioni"
             ],
+            "Timetable": [
+                "Orario"
+            ],
             "View Booking": [
                 "Visualizza Prenotazione"
             ],
-            "Date": [
-                "Data"
+            "Reservation details": [
+                "Informazioni sulla prenotazione"
             ],
             "Next": [
                 "Successivo"
             ],
-            "Previous": [
-                ""
-            ],
             "Today": [
                 "Oggi"
+            ],
+            "All": [
+                "Tutti i"
+            ],
+            "Statuses": [
+                "Stati"
+            ],
+            "View Bookings": [
+                ""
+            ],
+            "Previous": [
+                "Precedente"
             ],
             "Month": [
                 "Mese"
@@ -80,22 +92,10 @@
                 "Giorno"
             ],
             "There are no events in this range.": [
-                ""
+                "Non ci sono eventi in questo intervallo."
             ],
             "+%d more": [
-                ""
-            ],
-            "All": [
-                ""
-            ],
-            "Statuses": [
-                ""
-            ],
-            "All day": [
-                ""
-            ],
-            "View Bookings": [
-                ""
+                "+%d in pi\u00f9"
             ]
         }
     }

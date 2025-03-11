@@ -64,6 +64,9 @@
 							</div>
 						<?php endif; ?>
 					</div>
+					<?php
+						do_action( 'mpa_booking_details_reservation_before_end', $reservation );
+					?>
 				</div>
 			<?php endforeach; ?>
 		<?php endif; ?>

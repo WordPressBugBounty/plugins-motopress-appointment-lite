@@ -155,8 +155,6 @@ class Plugin {
 	 * @since 1.0
 	 */
 	public function load() {
-		// Load translations
-		$this->loadTextdomain();
 
 		// Register global items (admin and frontend)
 		$this->emailsDispatcher->load();
@@ -179,18 +177,14 @@ class Plugin {
 	}
 
 	/**
-	 * @since 1.2.1
-	 */
-	public function loadTextdomain() {
-		load_plugin_textdomain( 'motopress-appointment', false, mpa_languages_dir() );
-	}
-
-	/**
 	 * @access protected
 	 *
 	 * @since 1.0
 	 */
 	public function init() {
+
+		load_plugin_textdomain( 'motopress-appointment', false, $this->getPluginPath() );
+
 		$this->initOnce();
 
 		// Register admin-only items
@@ -391,7 +385,7 @@ class Plugin {
 		 * @param int $limit Max number of site IDs to get.
 		 */
 		$limit   = apply_filters( 'mpa_multisite_limit', 100 );
-		$blogIds = $wpdb->get_col( sprintf( "SELECT blog_id FROM $wpdb->blogs LIMIT %d", $limit ) );
+		$blogIds = $wpdb->get_col( sprintf( "SELECT blog_id FROM $wpdb->blogs LIMIT %d", absint( $limit ) ) );
 		foreach ( $blogIds as $blogId ) {
 			switch_to_blog( $blogId );
 

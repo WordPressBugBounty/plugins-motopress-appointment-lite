@@ -64,19 +64,19 @@ class SettingsBundle {
 	}
 
 	/**
-	 * 	Return array of all available subtabs(sections) for all tabs.
+	 * Return array of all available subtabs(sections) for all tabs.
 	 *
 	 * @return array
 	 */
 
 	public function getTabsSections(): array {
 		return array(
-			'misc' => array(
-				'styles' => __( 'Styles', 'motopress-appointment' )
+			'misc'         => array(
+				'styles' => __( 'Styles', 'motopress-appointment' ),
 			),
 			'integrations' => array(
-				'google_cal_sync' => __( 'Google Calendar Sync', 'motopress-appointment' )
-			)
+				'google_cal_sync' => __( 'Google Calendar Sync', 'motopress-appointment' ),
+			),
 		);
 	}
 
@@ -137,7 +137,7 @@ class SettingsBundle {
 
 		return array(
 			// General setting
-			'default_time_step'               => array(
+			'default_time_step'              => array(
 				'type'        => 'number',
 				'label'       => esc_html__( 'Default Time Step', 'motopress-appointment' ),
 				'description' => esc_html__( 'Default length of the time slot step, which is used for the appointment durations.', 'motopress-appointment' ),
@@ -145,7 +145,7 @@ class SettingsBundle {
 				'default'     => 30,
 				'size'        => 'small',
 			),
-			'confirmation_mode'               => array(
+			'confirmation_mode'              => array(
 				'type'    => 'radio',
 				'label'   => esc_html__( 'Confirmation Mode', 'motopress-appointment' ),
 				'options' => array(
@@ -155,25 +155,25 @@ class SettingsBundle {
 				),
 				'default' => 'auto',
 			),
-			'terms_page_id_for_acceptance'    => array(
+			'terms_page_id_for_acceptance'   => array(
 				'type'        => 'page-select',
 				'label'       => esc_html__( 'Terms & Conditions', 'motopress-appointment' ),
 				'description' => esc_html__( 'If you set a "Terms" page, the customer\'s consent is required at checkout.', 'motopress-appointment' ),
 				'size'        => 'regular',
 			),
-			'allow_multibooking'              => array(
+			'allow_multibooking'             => array(
 				'type'    => 'checkbox',
 				'label'   => esc_html__( 'Allow Multibooking', 'motopress-appointment' ),
 				'label2'  => esc_html__( 'Allow clients to book more than one service at a time.', 'motopress-appointment' ),
 				'default' => false,
 			),
-			'allow_coupons'                   => array(
+			'allow_coupons'                  => array(
 				'type'    => 'checkbox',
 				'label'   => esc_html__( 'Allow Coupons', 'motopress-appointment' ),
 				'label2'  => esc_html__( 'Enable the use of coupons.', 'motopress-appointment' ),
 				'default' => false,
 			),
-			'user_can_cancel_booking'         => array(
+			'user_can_cancel_booking'        => array(
 				'type'        => 'checkbox',
 				'label'       => esc_html__( 'Booking Cancelation', 'motopress-appointment' ),
 				'label2'      => esc_html__( 'Customer can cancel a booking via the link provided inside their email.', 'motopress-appointment' ),
@@ -184,13 +184,13 @@ class SettingsBundle {
 				),
 				'default'     => false,
 			),
-			'booking_cancellation_page'       => array(
+			'booking_cancellation_page'      => array(
 				'type'        => 'page-select',
 				'label'       => esc_html__( 'Booking Cancelation Page', 'motopress-appointment' ),
 				'description' => esc_html__( 'Page where the customer can confirm their booking cancelation. Requires [mpa_booking_details] and [mpa_direct_link_booking_cancellation_link] shortcodes.', 'motopress-appointment' ),
 				'size'        => 'regular',
 			),
-			'booking_cancelled_page'          => array(
+			'booking_cancelled_page'         => array(
 				'type'        => 'page-select',
 				'label'       => esc_html__( 'Booking Canceled Page', 'motopress-appointment' ),
 				'description' => esc_html__( 'Page to redirect the customer to after their booking is canceled.', 'motopress-appointment' ),
@@ -214,50 +214,50 @@ class SettingsBundle {
 				'type'        => 'page-select',
 				'label'       => esc_html__( 'Customer Account Page', 'motopress-appointment' ),
 				'description' => esc_html__( 'A page where customers can log in to view their own bookings.', 'motopress-appointment' ) .
-				                 // translators: %s shortcode name
-				                 ' ' . sprintf( esc_html__( 'Use the %s shortcode on this page.', 'motopress-appointment' ), '[mpa_customer_account]' ),
+								// translators: %s shortcode name
+								' ' . sprintf( esc_html__( 'Use the %s shortcode on this page.', 'motopress-appointment' ), '[mpa_customer_account]' ),
 				'size'        => 'regular',
 			),
 
 			// Misc group
-			'misc_settings'                   => array(
+			'misc_settings'                  => array(
 				'type'  => 'group',
 				'label' => esc_html__( 'Misc', 'motopress-appointment' ),
 			),
-			'country'                         => array(
+			'country'                        => array(
 				'type'    => 'select',
 				'label'   => esc_html__( 'Default Country of Residence', 'motopress-appointment' ),
-				'options' => array( '' => esc_html__( '— Select —', 'motopress-appointment' ) )
-				             + mpapp()->bundles()->countries()->getCountries(),
+				'options' => array( '' => esc_html__( '— Select —', 'motopress-appointment' ) ) +
+					mpapp()->bundles()->countries()->getCountries(),
 				'size'    => 'regular',
 			),
-			'currency'                        => array(
+			'currency'                       => array(
 				'type'    => 'select',
 				'label'   => esc_html__( 'Currency', 'motopress-appointment' ),
 				'options' => mpapp()->bundles()->currencies()->getCurrencies(),
 				'default' => 'EUR',
 				'size'    => 'regular',
 			),
-			'currency_position'               => array(
+			'currency_position'              => array(
 				'type'    => 'select',
 				'label'   => esc_html__( 'Currency Position', 'motopress-appointment' ),
 				'options' => mpapp()->bundles()->currencies()->getPositions(),
 				'default' => 'before',
 				'size'    => 'regular',
 			),
-			'decimal_separator'               => array(
+			'decimal_separator'              => array(
 				'type'    => 'text',
 				'label'   => esc_html__( 'Decimal Separator', 'motopress-appointment' ),
 				'default' => '.',
 				'size'    => 'small',
 			),
-			'thousand_separator'              => array(
+			'thousand_separator'             => array(
 				'type'    => 'text',
 				'label'   => esc_html__( 'Thousand Separator', 'motopress-appointment' ),
 				'default' => ',',
 				'size'    => 'small',
 			),
-			'number_of_decimals'              => array(
+			'number_of_decimals'             => array(
 				'type'    => 'number',
 				'label'   => esc_html__( 'Number of Decimals', 'motopress-appointment' ),
 				'default' => 2,
@@ -394,11 +394,11 @@ class SettingsBundle {
 		$notificationSettings += array(
 			'sms_notifications_group'    => array(
 				'type'  => 'group',
-				'label' => esc_html__( 'SMS notifications', 'motopress-appointment' ),
+				'label' => __( 'SMS notifications', 'motopress-appointment' ),
 			),
 			'sms_notification_sender_id' => array(
 				'type'        => 'select',
-				'label'       => esc_html__( 'SMS Sender', 'motopress-appointment' ),
+				'label'       => __( 'SMS Sender', 'motopress-appointment' ),
 				'description' => sprintf(
 					wp_kses_post(
 					// translators: %s - is a URL to the plugin's Extensions menu page
@@ -411,10 +411,10 @@ class SettingsBundle {
 				'size'        => 'regular',
 			),
 			'admin_phone'                => array(
-				'type'                   => 'phone',
-				'label'                  => esc_html__( 'Admin Phone Number', 'motopress-appointment' ),
-				'description'            => esc_html__( "It is used to send test SMS notifications as well as regular notifications with the Admin's number included in the recipients list.", 'motopress-appointment' ),
-				'size'                   => 'regular',
+				'type'        => 'phone',
+				'label'       => __( 'Admin Phone Number', 'motopress-appointment' ),
+				'description' => __( "It is used to send test SMS notifications as well as regular notifications with the Admin's number included in the recipients list.", 'motopress-appointment' ),
+				'size'        => 'regular',
 			),
 		);
 
@@ -436,7 +436,7 @@ class SettingsBundle {
 			// Payment gateways group
 			'payment_gateways_group'  => array(
 				'type'  => 'group',
-				'label' => esc_html__( 'Payment Methods', 'motopress-appointment' ),
+				'label' => __( 'Payment Methods', 'motopress-appointment' ),
 			),
 			'payment_gateways'        => array(
 				'type'       => 'list-table',
@@ -446,20 +446,20 @@ class SettingsBundle {
 			// General group
 			'general_settings_group'  => array(
 				'type'  => 'group',
-				'label' => esc_html__( 'General Settings', 'motopress-appointment' ),
+				'label' => __( 'General Settings', 'motopress-appointment' ),
 			),
 			'default_payment_gateway' => array(
 				'type'        => 'select',
-				'label'       => esc_html__( 'Default Method', 'motopress-appointment' ),
-				'description' => esc_html__( 'Payment method that is pre-selected on checkout by default.', 'motopress-appointment' ),
+				'label'       => __( 'Default Method', 'motopress-appointment' ),
+				'description' => __( 'Payment method that is pre-selected on checkout by default.', 'motopress-appointment' ),
 				'options'     => $selectableGateways,
 				'default'     => '',
 				'size'        => 'regular',
 			),
 			'pending_payment_time'    => array(
 				'type'        => 'number',
-				'label'       => esc_html__( 'Time to Complete Payment', 'motopress-appointment' ),
-				'description' => esc_html__( 'Period of time in minutes the user is given to complete payment. Unpaid bookings become Abandoned and the timeslot status changes to Available.', 'motopress-appointment' ),
+				'label'       => __( 'Time to Complete Payment', 'motopress-appointment' ),
+				'description' => __( 'Period of time in minutes the user is given to complete payment. Unpaid bookings become Abandoned and the timeslot status changes to Available.', 'motopress-appointment' ),
 				'min'         => 5,
 				'default'     => 60,
 				'size'        => 'small',
@@ -467,20 +467,20 @@ class SettingsBundle {
 
 			'payment_pages_group'     => array(
 				'type'        => 'group',
-				'label'       => esc_html__( 'Pages', 'motopress-appointment' ),
-				'description' => esc_html__( 'Required only for payment methods that handle payments on their own pages.', 'motopress-appointment' ),
+				'label'       => __( 'Pages', 'motopress-appointment' ),
+				'description' => __( 'Required only for payment methods that handle payments on their own pages.', 'motopress-appointment' ),
 			),
 			'payment_success_page'    => array(
 				'type'        => 'page-select',
-				'label'       => esc_html__( 'Reservation Received Page', 'motopress-appointment' ),
-				'description' => esc_html__( 'Page to redirect the customer to after their payment is placed on the external payment platform. Requires the [mpa_reservation_received] shortcode.', 'motopress-appointment' ),
+				'label'       => __( 'Reservation Received Page', 'motopress-appointment' ),
+				'description' => __( 'Page to redirect the customer to after their payment is placed on the external payment platform. Requires the [mpa_reservation_received] shortcode.', 'motopress-appointment' ),
 				'size'        => 'regular',
 
 			),
 			'payment_failed_page'     => array(
 				'type'        => 'page-select',
-				'label'       => esc_html__( 'Failed Transaction Page', 'motopress-appointment' ),
-				'description' => esc_html__( 'Page to redirect the customer to on failed transaction.', 'motopress-appointment' ),
+				'label'       => __( 'Failed Transaction Page', 'motopress-appointment' ),
+				'description' => __( 'Page to redirect the customer to on failed transaction.', 'motopress-appointment' ),
 				'size'        => 'regular',
 			),
 		);
@@ -518,63 +518,63 @@ class SettingsBundle {
 		// Check getTabsSections method.
 
 		return array(
-			'from_styles_group'    => array(
+			'from_styles_group'   => array(
 				'type'        => 'group',
 				'label'       => __( 'Default Form Styles', 'motopress-appointment' ),
-				'description' => __( 'These default styles apply to all booking forms, but you can customize each one separately.', 'motopress-appointment' )
+				'description' => __( 'These default styles apply to all booking forms, but you can customize each one separately.', 'motopress-appointment' ),
 			),
 			'form_calendar_theme' => array(
-				'type'        => 'select',
-				'label'       => esc_html__( 'Calendar Theme', 'motopress-appointment' ),
-				'options'     => array(
-					''                  => esc_html__( 'Default', 'motopress-appointment' ),
-					'dark'              => esc_html__( 'Dark', 'motopress-appointment' ),
-					'material_blue'     => esc_html__( 'Material Blue', 'motopress-appointment' ),
-					'material_green'    => esc_html__( 'Material Green', 'motopress-appointment' ),
-					'material_red'      => esc_html__( 'Material Red', 'motopress-appointment' ),
-					'material_orange'   => esc_html__( 'Material Orange', 'motopress-appointment' ),
-					'airbnb'            => esc_html__( 'Airbnb', 'motopress-appointment' ),
-					'confetti'          => esc_html__( 'Confetti', 'motopress-appointment' ),
+				'type'    => 'select',
+				'label'   => __( 'Calendar Theme', 'motopress-appointment' ),
+				'options' => array(
+					''                => __( 'Default', 'motopress-appointment' ),
+					'dark'            => __( 'Dark', 'motopress-appointment' ),
+					'material_blue'   => __( 'Material Blue', 'motopress-appointment' ),
+					'material_green'  => __( 'Material Green', 'motopress-appointment' ),
+					'material_red'    => __( 'Material Red', 'motopress-appointment' ),
+					'material_orange' => __( 'Material Orange', 'motopress-appointment' ),
+					'airbnb'          => __( 'Airbnb', 'motopress-appointment' ),
+					'confetti'        => __( 'Confetti', 'motopress-appointment' ),
 				),
-				'default'     => '',
-				'size'        => 'regular',
+				'default' => '',
+				'size'    => 'regular',
 			),
-			'form_styles' => array(
-				'type'      => 'container',
-				'fields'    => array(
-					'form_width'            => array(
-						'type'          => 'text',
-						'label'         => esc_html__( 'Form Width', 'motopress-appointment' ),
-						'placeholder'   => '50%',
-						'description'   => __( 'Example: 100%', 'motopress-appointment' )
+			'form_styles'         => array(
+				'type'   => 'container',
+				'fields' => array(
+					'form_width'         => array(
+						'type'        => 'text',
+						'label'       => __( 'Form Width', 'motopress-appointment' ),
+						'placeholder' => '50%',
+						'description' => __( 'Example: 100%', 'motopress-appointment' ),
 					),
-					'primary_color'         => array(
-						'type'              => 'color-picker',
-						'label'             => esc_html__( 'Primary Text Color', 'motopress-appointment' ),
-						'colorpicker_type'  => 'component'
+					'primary_color'      => array(
+						'type'             => 'color-picker',
+						'label'            => __( 'Primary Text Color', 'motopress-appointment' ),
+						'colorpicker_type' => 'component',
 					),
-					'primary_bg_color'      => array(
-						'type'              => 'color-picker',
-						'label'             => esc_html__( 'Primary Background Color', 'motopress-appointment' ),
-						'colorpicker_type'  => 'component'
+					'primary_bg_color'   => array(
+						'type'             => 'color-picker',
+						'label'            => __( 'Primary Background Color', 'motopress-appointment' ),
+						'colorpicker_type' => 'component',
 					),
-					'secondary_color'       => array(
-						'type'              => 'color-picker',
-						'label'             => esc_html__( 'Secondary Text Color', 'motopress-appointment' ),
-						'colorpicker_type'  => 'component'
+					'secondary_color'    => array(
+						'type'             => 'color-picker',
+						'label'            => __( 'Secondary Text Color', 'motopress-appointment' ),
+						'colorpicker_type' => 'component',
 					),
-					'secondary_bg_color'    => array(
-						'type'              => 'color-picker',
-						'label'             => esc_html__( 'Secondary Background Color', 'motopress-appointment' ),
-						'colorpicker_type'  => 'component'
+					'secondary_bg_color' => array(
+						'type'             => 'color-picker',
+						'label'            => __( 'Secondary Background Color', 'motopress-appointment' ),
+						'colorpicker_type' => 'component',
 					),
-					'buttons_padding'      => array(
-						'type'          => 'text',
-						'label'         => esc_html__( 'Buttons Padding', 'motopress-appointment' ),
-						'description'   => __( 'Example: 5px 10px', 'motopress-appointment' )
+					'buttons_padding'    => array(
+						'type'        => 'text',
+						'label'       => __( 'Buttons Padding', 'motopress-appointment' ),
+						'description' => __( 'Example: 5px 10px', 'motopress-appointment' ),
 					),
-				)
-			)
+				),
+			),
 		);
 	}
 }

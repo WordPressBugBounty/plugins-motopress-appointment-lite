@@ -1,6 +1,6 @@
 {
-    "translation-revision-date": "2022-01-10 22:04",
-    "generator": "WP-CLI\/2.10.0",
+    "translation-revision-date": "2025-02-25 13:09",
+    "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/divi-modules.js",
     "domain": "messages",
     "locale_data": {
@@ -10,8 +10,14 @@
                 "lang": "ru_RU",
                 "plural-forms": "nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));"
             },
+            "Left to pay": [
+                ""
+            ],
             "Clients": [
                 ""
+            ],
+            "All day": [
+                "\u0412\u0435\u0441\u044c \u0434\u0435\u043d\u044c"
             ],
             "Remove": [
                 "\u0423\u0434\u0430\u043b\u0438\u0442\u044c"
@@ -20,19 +26,19 @@
                 "\u0421\u0432\u043e\u0431\u043e\u0434\u043d\u043e"
             ],
             "Bancontact": [
-                ""
+                "Bancontact"
             ],
             "iDEAL": [
-                ""
+                "iDEAL"
             ],
             "Giropay": [
-                ""
+                "Giropay"
             ],
             "SEPA Direct Debit": [
-                ""
+                "SEPA Direct Debit"
             ],
             "SOFORT": [
-                ""
+                "SOFORT"
             ],
             "Making a reservation...": [
                 ""
@@ -151,38 +157,29 @@
             "December": [
                 ""
             ],
-            "Total": [
-                "\u0412\u0441\u0435\u0433\u043e"
-            ],
-            "Card": [
-                "\u041a\u0430\u0440\u0442\u0430"
-            ],
-            "Credit or debit card": [
-                "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f \u0438\u043b\u0438 \u0434\u0435\u0431\u0435\u0442\u043e\u0432\u0430\u044f \u043a\u0430\u0440\u0442\u0430"
-            ],
-            "Select iDEAL Bank": [
-                "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 iDEAL Bank"
-            ],
-            "IBAN": [
+            "Phone number is invalid.": [
                 ""
             ],
             "You will be redirected to a secure page to complete the payment.": [
                 "\u0412\u0430\u0441 \u0431\u0443\u0434\u0435\u0442 \u043f\u0435\u0440\u0435\u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043e \u043d\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043d\u043d\u0443\u044e \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0443 \u0434\u043b\u044f \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u043f\u043b\u0430\u0442\u0435\u0436\u0430."
             ],
-            "Sorry, there are no services, employees or locations to book.": [
-                ""
+            "Subtotal": [
+                "\u041f\u0440\u043e\u043c\u0435\u0436\u0443\u0442\u043e\u0447\u043d\u044b\u0439 \u0438\u0442\u043e\u0433"
             ],
-            "Sorry, but we were unable to allocate time slots for the date you selected.": [
-                ""
+            "Coupon: %s": [
+                "\u041a\u0443\u043f\u043e\u043d \u043d\u0430 \u0441\u043a\u0438\u0434\u043a\u0443: %s"
             ],
-            "Left to pay": [
-                ""
+            "Total": [
+                "\u0412\u0441\u0435\u0433\u043e"
             ],
-            "Phone number is invalid.": [
+            "Deposit": [
+                "\u0417\u0430\u0434\u0430\u0442\u043e\u043a"
+            ],
+            "Paying now": [
                 ""
             ],
             "Coupon code is empty.": [
-                ""
+                "\u0421\u043a\u0438\u0434\u043e\u0447\u043d\u044b\u0439 \u043a\u0443\u043f\u043e\u043d \u043f\u0443\u0441\u0442\u043e\u0439."
             ],
             "Coupon code applied successfully.": [
                 ""
@@ -193,25 +190,28 @@
             "By providing your IBAN and confirming this payment, you authorise (A) %s and Stripe, our payment service provider, to send instructions to your bank to debit your account and (B) your bank to debit your account in accordance with those instructions. You are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited.": [
                 ""
             ],
+            "Credit or debit card": [
+                "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f \u0438\u043b\u0438 \u0434\u0435\u0431\u0435\u0442\u043e\u0432\u0430\u044f \u043a\u0430\u0440\u0442\u0430"
+            ],
             "or": [
-                ""
+                "\u0438\u043b\u0438"
             ],
-            "Subtotal": [
-                ""
+            "Select iDEAL Bank": [
+                "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 iDEAL Bank"
             ],
-            "Coupon: %s": [
-                ""
-            ],
-            "Deposit": [
-                ""
-            ],
-            "Paying now": [
-                ""
+            "IBAN": [
+                "IBAN"
             ],
             "Payment methods": [
                 ""
             ],
-            "All day": [
+            "Card": [
+                "\u041a\u0430\u0440\u0442\u0430"
+            ],
+            "Sorry, but we were unable to allocate time slots for the date you selected.": [
+                ""
+            ],
+            "Sorry, there are no services, employees or locations to book.": [
                 ""
             ]
         }

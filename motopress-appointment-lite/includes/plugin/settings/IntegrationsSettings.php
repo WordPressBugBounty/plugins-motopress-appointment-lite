@@ -23,6 +23,9 @@ trait IntegrationsSettings {
 	 * @since 1.10.0
 	 */
 	public function getGoogleCalendarClientSecret(): string {
-		return get_option( 'mpa_google_calendar_client_secret', '' );
+
+		return \MotoPress\Appointment\Helpers\StringEncryptHelper::decryptString(
+			get_option( 'mpa_google_calendar_client_secret', '' )
+		);
 	}
 }

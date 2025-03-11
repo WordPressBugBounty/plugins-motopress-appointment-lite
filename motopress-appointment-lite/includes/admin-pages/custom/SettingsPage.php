@@ -59,7 +59,7 @@ class SettingsPage extends AbstractCustomPage {
 	 */
 	public function enqueueScripts() {
 
-		if ( in_array( $this->getCurrentTab(), array( 'email', 'misc' ) )  ) {
+		if ( in_array( $this->getCurrentTab(), array( 'email', 'misc' ), true ) ) {
 
 			mpapp()->assets()->enqueueBundle( 'spectrum' ); // For colorpicker
 		}
@@ -133,6 +133,7 @@ class SettingsPage extends AbstractCustomPage {
 	 */
 	protected function canSave() {
 
+		// phpcs:ignore
 		if ( ! isset( $_POST['mpa_save_settings'] ) ) {
 			return false;
 		}
@@ -164,11 +165,12 @@ class SettingsPage extends AbstractCustomPage {
 
 		foreach ( $this->fields as $optionName => $field ) {
 
+			// phpcs:ignore
 			if ( ! isset( $_POST[ $optionName ] ) ) {
 				continue;
 			}
 
-			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+			// phpcs:ignore
 			$field->setValue( wp_unslash( $_POST[ $optionName ] ), 'validate' );
 			$newValue = $field->getValue( 'save' );
 
@@ -250,7 +252,7 @@ class SettingsPage extends AbstractCustomPage {
 
 		$output = '';
 
-		$currentTabSlug = $this->getCurrentTab();
+		$currentTabSlug     = $this->getCurrentTab();
 		$currentTabSections = $this->getTabSections( $currentTabSlug );
 
 		$output      = '<form action="' . esc_url( $this->getUrl() ) . '" method="POST">';
@@ -316,8 +318,10 @@ class SettingsPage extends AbstractCustomPage {
 
 		if ( is_null( $this->currentTab ) ) {
 
+			// phpcs:ignore
 			if ( isset( $_GET['tab'] ) ) {
 
+				// phpcs:ignore
 				$currentTab = wp_strip_all_tags( wp_unslash( $_GET['tab'] ) );
 
 			} else {
@@ -370,13 +374,14 @@ class SettingsPage extends AbstractCustomPage {
 	}
 
 	/**
-	 * 	Return array of subtabs(sections) for provided tab slug.
+	 * Return array of subtabs(sections) for provided tab slug.
 	 *
 	 * @param string $tabSlug
 	 * @return array
 	 */
 	public function getTabSections( $tabSlug ) {
-		$sections = array();
+
+		$sections    = array();
 		$tabSections = mpapp()->bundles()->settings()->getTabsSections();
 
 		if ( array_key_exists( $tabSlug, $tabSections ) ) {
@@ -417,7 +422,7 @@ class SettingsPage extends AbstractCustomPage {
 		// Add tab and section to URL
 		if ( $this->isCurrentPage() ) {
 
-			$currentTab = $this->getCurrentTab(); // Not empty ('')
+			$currentTab = $this->getCurrentTab();
 
 			if ( 'general' !== $currentTab ) {
 

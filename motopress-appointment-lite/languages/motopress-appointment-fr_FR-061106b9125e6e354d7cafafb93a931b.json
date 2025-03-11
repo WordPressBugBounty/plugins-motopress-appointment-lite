@@ -1,6 +1,6 @@
 {
-    "translation-revision-date": "2022-01-10 22:04",
-    "generator": "WP-CLI\/2.10.0",
+    "translation-revision-date": "2025-02-25 13:09",
+    "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/calendar-page.js",
     "domain": "messages",
     "locale_data": {
@@ -10,6 +10,9 @@
                 "lang": "fr_FR",
                 "plural-forms": "nplurals=2; plural=(n > 1);"
             },
+            "Calendar": [
+                "Calendrier"
+            ],
             "Status": [
                 "\u00c9tat"
             ],
@@ -31,71 +34,68 @@
             "Time": [
                 "dur\u00e9e"
             ],
-            "Clients": [
-                "Clients"
-            ],
             "Booking": [
                 "R\u00e9servation"
             ],
             "Location": [
                 "Localisation"
             ],
+            "Date": [
+                "Date"
+            ],
             "Locations": [
                 "Emplacements"
             ],
-            "Reservation details": [
-                "D\u00e9tails de la r\u00e9servation"
+            "Clients": [
+                "Clients"
             ],
-            "Timetable": [
-                "Horaire"
+            "All day": [
+                "Toute la journ\u00e9e"
             ],
             "Bookings": [
                 "R\u00e9servations"
             ],
+            "Timetable": [
+                "Horaire"
+            ],
             "View Booking": [
                 "Voir r\u00e9servation"
             ],
-            "Date": [
-                "Date"
+            "Reservation details": [
+                "D\u00e9tails de la r\u00e9servation"
             ],
             "Next": [
                 "Suivant"
             ],
-            "Calendar": [
-                ""
-            ],
-            "Previous": [
-                ""
-            ],
             "Today": [
-                ""
-            ],
-            "Month": [
-                ""
-            ],
-            "Week": [
-                ""
-            ],
-            "Day": [
-                ""
-            ],
-            "There are no events in this range.": [
-                ""
-            ],
-            "+%d more": [
-                ""
+                "Aujourd\u2019hui"
             ],
             "All": [
-                ""
+                "Tout"
             ],
             "Statuses": [
-                ""
-            ],
-            "All day": [
-                ""
+                "Statuts"
             ],
             "View Bookings": [
                 ""
+            ],
+            "Previous": [
+                "Pr\u00e9c\u00e9dent"
+            ],
+            "Month": [
+                "Mois"
+            ],
+            "Week": [
+                "Semaine"
+            ],
+            "Day": [
+                "Jour"
+            ],
+            "There are no events in this range.": [
+                "Il n'y a pas d'\u00e9v\u00e9nements dans cette plage."
+            ],
+            "+%d more": [
+                "+%d de plus"
             ]
         }
     }

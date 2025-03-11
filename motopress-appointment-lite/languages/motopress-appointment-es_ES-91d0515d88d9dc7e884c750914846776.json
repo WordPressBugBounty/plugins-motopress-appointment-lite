@@ -1,6 +1,6 @@
 {
-    "translation-revision-date": "2022-01-10 22:04",
-    "generator": "WP-CLI\/2.10.0",
+    "translation-revision-date": "2025-02-25 13:09",
+    "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/gutenberg-blocks.js",
     "domain": "messages",
     "locale_data": {
@@ -28,14 +28,38 @@
             "Employee": [
                 "Empleado"
             ],
-            "Clients": [
-                "Clientes"
-            ],
             "Location": [
                 "Ubicaci\u00f3n"
             ],
             "\u2014 Select \u2014": [
                 "\u2014 Elegir \u2014"
+            ],
+            "Form Width": [
+                ""
+            ],
+            "Example: 100%": [
+                ""
+            ],
+            "Primary Text Color": [
+                ""
+            ],
+            "Primary Background Color": [
+                ""
+            ],
+            "Secondary Text Color": [
+                ""
+            ],
+            "Secondary Background Color": [
+                ""
+            ],
+            "Buttons Padding": [
+                ""
+            ],
+            "Example: 5px 10px": [
+                ""
+            ],
+            "ID": [
+                "Identidad"
             ],
             "Appointment Form": [
                 "Formulario de cita"
@@ -46,11 +70,20 @@
             "Form Title": [
                 "T\u00edtulo del formulario"
             ],
+            "ID of the selected service.": [
+                "ID del servicio seleccionado."
+            ],
             "Show Category?": [
                 "\u00bfMostrar categor\u00eda?"
             ],
             "Show the service category field in the form.": [
                 "Mostrar el campo de la categor\u00eda de servicio en el formulario."
+            ],
+            "Show Service?": [
+                ""
+            ],
+            "Show the service field in the form.": [
+                ""
             ],
             "Show Location?": [
                 "\u00bfMostrar Ubicaci\u00f3n?"
@@ -109,9 +142,6 @@
             "Slug of the selected service category.": [
                 "Slug de la categor\u00eda de servicio seleccionada."
             ],
-            "ID of the selected service.": [
-                "ID del servicio seleccionado."
-            ],
             "ID of the selected location.": [
                 "ID de la ubicaci\u00f3n seleccionada."
             ],
@@ -127,11 +157,14 @@
             "Show the time when the appointment ends.": [
                 "Mostrar la hora en que termina la cita."
             ],
+            "Show 'Add to Your Calendar?' section.": [
+                ""
+            ],
+            "Allow customers to add an appointment to their own Google, Apple, Outlook, or Yahoo calendar.": [
+                ""
+            ],
             "Employee Additional Information": [
                 "Informaci\u00f3n adicional del empleado"
-            ],
-            "ID": [
-                "Identidad"
             ],
             "Post ID of an employee to display content from. Note: this parameter automatically uses the current post ID when a shortcode is inside the employee's post and is required otherwise.": [
                 "ID del mensaje de un empleado para mostrar el contenido. Nota: esta configuraci\u00f3n utiliza autom\u00e1ticamente el ID del mensaje actual cuando hay un shortcode en el mensaje del empleado y es necesaria en caso contrario."
@@ -334,8 +367,20 @@
             "Custom label for the unselected service category, location and employee fields.": [
                 "Etiqueta personalizada para los campos de categor\u00eda de servicio, ubicaci\u00f3n y empleado no seleccionados."
             ],
+            "These options only affect what you see on the front end.": [
+                ""
+            ],
             "Hide terms not assigned to any posts.": [
                 "Ocultar t\u00e9rminos no asignados a ning\u00fan mensaje."
+            ],
+            "Left to pay": [
+                ""
+            ],
+            "Clients": [
+                "Clientes"
+            ],
+            "All day": [
+                "Todo el d\u00eda"
             ],
             "Remove": [
                 "Eliminar"
@@ -363,9 +408,6 @@
             ],
             "Making a reservation...": [
                 "Hacer una reserva..."
-            ],
-            "appointment": [
-                "cita"
             ],
             "Sun": [
                 "Dom"
@@ -481,14 +523,44 @@
             "December": [
                 "Diciembre"
             ],
+            "Phone number is invalid.": [
+                ""
+            ],
+            "You will be redirected to a secure page to complete the payment.": [
+                "Ser\u00e1s redirigido a una p\u00e1gina segura para completar el pago."
+            ],
+            "Subtotal": [
+                "Subtotal"
+            ],
+            "Coupon: %s": [
+                "Cup\u00f3n: %s"
+            ],
             "Total": [
                 "Total"
             ],
-            "Card": [
-                "Tarjeta"
+            "Deposit": [
+                "Dep\u00f3sito"
+            ],
+            "Paying now": [
+                ""
+            ],
+            "Coupon code is empty.": [
+                "El c\u00f3digo del cup\u00f3n est\u00e1 vacio."
+            ],
+            "Coupon code applied successfully.": [
+                "C\u00f3digo de cup\u00f3n aplicado con \u00e9xito."
+            ],
+            "Sorry, your booking is not eligible for this coupon.": [
+                "Lo sentimos, su reserva no es elegible para este cup\u00f3n."
+            ],
+            "By providing your IBAN and confirming this payment, you authorise (A) %s and Stripe, our payment service provider, to send instructions to your bank to debit your account and (B) your bank to debit your account in accordance with those instructions. You are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited.": [
+                "Al proporcionar su IBAN y confirmar este pago, usted autoriza (A) %s y Stripe, nuestro proveedor de servicios de pago, a enviar instrucciones a su banco para que cargue el importe en su cuenta y (B) a su banco para que cargue el importe en su cuenta de acuerdo con dichas instrucciones. Usted tiene derecho a un reembolso de su banco en virtud de los t\u00e9rminos y condiciones de su acuerdo con su banco. El reembolso debe reclamarse en un plazo de 8 semanas a partir de la fecha en que se haya hecho el cargo en su cuenta."
             ],
             "Credit or debit card": [
                 "Tarjeta de cr\u00e9dito o d\u00e9bito"
+            ],
+            "or": [
+                "o"
             ],
             "Select iDEAL Bank": [
                 "Seleccionar banco iDEAL"
@@ -496,41 +568,17 @@
             "IBAN": [
                 "IBAN"
             ],
-            "You will be redirected to a secure page to complete the payment.": [
-                "Ser\u00e1s redirigido a una p\u00e1gina segura para completar el pago."
+            "Payment methods": [
+                ""
             ],
-            "Sorry, there are no services, employees or locations to book.": [
-                "Lo sentimos, no hay servicios, empleados o ubicaciones para reservar."
+            "Card": [
+                "Tarjeta"
             ],
             "Sorry, but we were unable to allocate time slots for the date you selected.": [
                 "Lo sentimos, pero no hemos podido asignar franjas horarias para la fecha que ha seleccionado."
             ],
-            "Show Service?": [
-                ""
-            ],
-            "Show the service field in the form.": [
-                ""
-            ],
-            "Left to pay": [
-                ""
-            ],
-            "Phone number is invalid.": [
-                ""
-            ],
-            "Coupon code is empty.": [
-                ""
-            ],
-            "Coupon code applied successfully.": [
-                ""
-            ],
-            "Sorry, your booking is not eligible for this coupon.": [
-                ""
-            ],
-            "By providing your IBAN and confirming this payment, you authorise (A) %s and Stripe, our payment service provider, to send instructions to your bank to debit your account and (B) your bank to debit your account in accordance with those instructions. You are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited.": [
-                ""
-            ],
-            "or": [
-                ""
+            "Sorry, there are no services, employees or locations to book.": [
+                "Lo sentimos, no hay servicios, empleados o ubicaciones para reservar."
             ],
             "To enable this option, you need to check the '%s' box.": [
                 ""
@@ -538,59 +586,11 @@
             "To enable booking for the specific service only, select the service below first, then uncheck the 'Service' box here.": [
                 ""
             ],
-            "Subtotal": [
-                ""
-            ],
-            "Coupon: %s": [
-                ""
-            ],
-            "Deposit": [
-                ""
-            ],
-            "Paying now": [
-                ""
-            ],
-            "Form Width": [
-                ""
-            ],
-            "Example: 100%": [
-                ""
-            ],
-            "Primary Text Color": [
-                ""
-            ],
-            "Primary Background Color": [
-                ""
-            ],
-            "Secondary Text Color": [
-                ""
-            ],
-            "Secondary Background Color": [
-                ""
-            ],
-            "Buttons Padding": [
-                ""
-            ],
-            "Example: 5px 10px": [
-                ""
-            ],
-            "Show 'Add to Your Calendar?' section.": [
-                ""
-            ],
-            "Allow customers to add an appointment to their own Google, Apple, Outlook, or Yahoo calendar.": [
-                ""
-            ],
-            "These options only affect what you see on the front end.": [
-                ""
-            ],
             "Colors": [
                 ""
             ],
-            "Payment methods": [
-                ""
-            ],
-            "All day": [
-                ""
+            "appointment": [
+                "cita"
             ]
         }
     }

@@ -1,6 +1,6 @@
 {
-    "translation-revision-date": "2022-01-10 22:04",
-    "generator": "WP-CLI\/2.10.0",
+    "translation-revision-date": "2025-02-25 13:09",
+    "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/gutenberg-blocks.js",
     "domain": "messages",
     "locale_data": {
@@ -28,14 +28,38 @@
             "Employee": [
                 "Employ\u00e9"
             ],
-            "Clients": [
-                "Clients"
-            ],
             "Location": [
                 "Localisation"
             ],
             "\u2014 Select \u2014": [
                 "\u2014 S\u00e9lectionner \u2014"
+            ],
+            "Form Width": [
+                ""
+            ],
+            "Example: 100%": [
+                ""
+            ],
+            "Primary Text Color": [
+                ""
+            ],
+            "Primary Background Color": [
+                ""
+            ],
+            "Secondary Text Color": [
+                ""
+            ],
+            "Secondary Background Color": [
+                ""
+            ],
+            "Buttons Padding": [
+                ""
+            ],
+            "Example: 5px 10px": [
+                ""
+            ],
+            "ID": [
+                "ID"
             ],
             "Appointment Form": [
                 "Formulaire de rendez-vous"
@@ -46,11 +70,20 @@
             "Form Title": [
                 "Titre du formulaire"
             ],
+            "ID of the selected service.": [
+                "ID du service s\u00e9lectionn\u00e9."
+            ],
             "Show Category?": [
                 "Afficher la cat\u00e9gorie ?"
             ],
             "Show the service category field in the form.": [
                 "Afficher le champ de la cat\u00e9gorie de service dans le formulaire."
+            ],
+            "Show Service?": [
+                ""
+            ],
+            "Show the service field in the form.": [
+                ""
             ],
             "Show Location?": [
                 "Afficher l'emplacement ?"
@@ -109,9 +142,6 @@
             "Slug of the selected service category.": [
                 "Slug de la cat\u00e9gorie de service s\u00e9lectionn\u00e9e."
             ],
-            "ID of the selected service.": [
-                "ID du service s\u00e9lectionn\u00e9."
-            ],
             "ID of the selected location.": [
                 "ID de l'emplacement s\u00e9lectionn\u00e9."
             ],
@@ -127,11 +157,14 @@
             "Show the time when the appointment ends.": [
                 "Montrer l'heure \u00e0 laquelle le rendez-vous se termine."
             ],
+            "Show 'Add to Your Calendar?' section.": [
+                ""
+            ],
+            "Allow customers to add an appointment to their own Google, Apple, Outlook, or Yahoo calendar.": [
+                ""
+            ],
             "Employee Additional Information": [
                 "Informations suppl\u00e9mentaires sur l'employ\u00e9"
-            ],
-            "ID": [
-                "ID"
             ],
             "Post ID of an employee to display content from. Note: this parameter automatically uses the current post ID when a shortcode is inside the employee's post and is required otherwise.": [
                 "Post ID d'un employ\u00e9 \u00e0 partir duquel afficher le contenu. Remarque\u00a0: ce param\u00e8tre utilise automatiquement l'ID du poste actuel lorsqu'un shortcode se trouve dans le message de l'employ\u00e9 et est requis dans le cas contraire."
@@ -334,8 +367,20 @@
             "Custom label for the unselected service category, location and employee fields.": [
                 "Libell\u00e9 personnalis\u00e9 pour la cat\u00e9gorie de service, l'emplacement et les champs employ\u00e9s non s\u00e9lectionn\u00e9s."
             ],
+            "These options only affect what you see on the front end.": [
+                ""
+            ],
             "Hide terms not assigned to any posts.": [
                 "Occulter les termes non assign\u00e9s \u00e0 aucune publication."
+            ],
+            "Left to pay": [
+                ""
+            ],
+            "Clients": [
+                "Clients"
+            ],
+            "All day": [
+                "Toute la journ\u00e9e"
             ],
             "Remove": [
                 "Supprimer"
@@ -363,9 +408,6 @@
             ],
             "Making a reservation...": [
                 "Faire une r\u00e9servation..."
-            ],
-            "appointment": [
-                "rendez-vous"
             ],
             "Sun": [
                 "Dim"
@@ -481,14 +523,44 @@
             "December": [
                 "D\u00e9cembre"
             ],
+            "Phone number is invalid.": [
+                ""
+            ],
+            "You will be redirected to a secure page to complete the payment.": [
+                "Vous allez \u00eatre redirig\u00e9 vers une page s\u00e9curis\u00e9e pour terminer le paiement."
+            ],
+            "Subtotal": [
+                "Sous-total"
+            ],
+            "Coupon: %s": [
+                "Coupon : %s"
+            ],
             "Total": [
                 "Total"
             ],
-            "Card": [
-                "Carte"
+            "Deposit": [
+                "Acompte"
+            ],
+            "Paying now": [
+                ""
+            ],
+            "Coupon code is empty.": [
+                "Le code de coupon est vide."
+            ],
+            "Coupon code applied successfully.": [
+                "Code de coupon appliqu\u00e9 avec succ\u00e8s."
+            ],
+            "Sorry, your booking is not eligible for this coupon.": [
+                "D\u00e9sol\u00e9, votre r\u00e9servation n'est pas \u00e9ligible pour ce coupon."
+            ],
+            "By providing your IBAN and confirming this payment, you authorise (A) %s and Stripe, our payment service provider, to send instructions to your bank to debit your account and (B) your bank to debit your account in accordance with those instructions. You are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited.": [
+                "En fournissant votre IBAN et en confirmant ce paiement, vous autorisez (A) %s et Stripe, notre prestataire de services de paiement, \u00e0 envoyer des instructions \u00e0 votre banque pour d\u00e9biter votre compte et (B) votre banque \u00e0 d\u00e9biter votre compte conform\u00e9ment \u00e0 ces instructions. Vous avez droit \u00e0 un remboursement de votre banque selon les termes et conditions de votre accord avec votre banque. Un remboursement doit \u00eatre r\u00e9clam\u00e9 dans les 8 semaines suivant la date \u00e0 laquelle votre compte a \u00e9t\u00e9 d\u00e9bit\u00e9."
             ],
             "Credit or debit card": [
                 "Carte de cr\u00e9dit ou de d\u00e9bit"
+            ],
+            "or": [
+                "ou"
             ],
             "Select iDEAL Bank": [
                 "S\u00e9lectionnez iDEAL Bank"
@@ -496,41 +568,17 @@
             "IBAN": [
                 "IBAN"
             ],
-            "You will be redirected to a secure page to complete the payment.": [
-                "Vous allez \u00eatre redirig\u00e9 vers une page s\u00e9curis\u00e9e pour terminer le paiement."
+            "Payment methods": [
+                ""
             ],
-            "Sorry, there are no services, employees or locations to book.": [
-                "D\u00e9sol\u00e9, il n'y a pas de services, d'employ\u00e9s ou d'endroits \u00e0 r\u00e9server."
+            "Card": [
+                "Carte"
             ],
             "Sorry, but we were unable to allocate time slots for the date you selected.": [
                 "D\u00e9sol\u00e9, mais nous n'avons pas pu attribuer de cr\u00e9neaux horaires pour la date que vous avez s\u00e9lectionn\u00e9e."
             ],
-            "Show Service?": [
-                ""
-            ],
-            "Show the service field in the form.": [
-                ""
-            ],
-            "Left to pay": [
-                ""
-            ],
-            "Phone number is invalid.": [
-                ""
-            ],
-            "Coupon code is empty.": [
-                ""
-            ],
-            "Coupon code applied successfully.": [
-                ""
-            ],
-            "Sorry, your booking is not eligible for this coupon.": [
-                ""
-            ],
-            "By providing your IBAN and confirming this payment, you authorise (A) %s and Stripe, our payment service provider, to send instructions to your bank to debit your account and (B) your bank to debit your account in accordance with those instructions. You are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited.": [
-                ""
-            ],
-            "or": [
-                ""
+            "Sorry, there are no services, employees or locations to book.": [
+                "D\u00e9sol\u00e9, il n'y a pas de services, d'employ\u00e9s ou d'endroits \u00e0 r\u00e9server."
             ],
             "To enable this option, you need to check the '%s' box.": [
                 ""
@@ -538,59 +586,11 @@
             "To enable booking for the specific service only, select the service below first, then uncheck the 'Service' box here.": [
                 ""
             ],
-            "Subtotal": [
-                ""
-            ],
-            "Coupon: %s": [
-                ""
-            ],
-            "Deposit": [
-                ""
-            ],
-            "Paying now": [
-                ""
-            ],
-            "Form Width": [
-                ""
-            ],
-            "Example: 100%": [
-                ""
-            ],
-            "Primary Text Color": [
-                ""
-            ],
-            "Primary Background Color": [
-                ""
-            ],
-            "Secondary Text Color": [
-                ""
-            ],
-            "Secondary Background Color": [
-                ""
-            ],
-            "Buttons Padding": [
-                ""
-            ],
-            "Example: 5px 10px": [
-                ""
-            ],
-            "Show 'Add to Your Calendar?' section.": [
-                ""
-            ],
-            "Allow customers to add an appointment to their own Google, Apple, Outlook, or Yahoo calendar.": [
-                ""
-            ],
-            "These options only affect what you see on the front end.": [
-                ""
-            ],
             "Colors": [
                 ""
             ],
-            "Payment methods": [
-                ""
-            ],
-            "All day": [
-                ""
+            "appointment": [
+                "rendez-vous"
             ]
         }
     }

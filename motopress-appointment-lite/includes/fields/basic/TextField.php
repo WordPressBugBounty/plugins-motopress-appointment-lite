@@ -38,6 +38,11 @@ class TextField extends AbstractField {
 	public $pattern = '';
 
 	/**
+	 * @var bool
+	 */
+	protected $isEncrypted = false;
+
+	/**
 	 * @return array
 	 *
 	 * @since 1.1.0
@@ -47,7 +52,12 @@ class TextField extends AbstractField {
 			'placeholder' => 'placeholder',
 			'required'    => 'required',
 			'pattern'     => 'pattern',
+			'encrypted'   => 'isEncrypted',
 		);
+	}
+
+	public function isEncrypted(): bool {
+		return $this->isEncrypted;
 	}
 
 	/**
@@ -57,11 +67,30 @@ class TextField extends AbstractField {
 	 * @since 1.0
 	 */
 	protected function validateValue( $value ) {
+
 		if ( '' === $value ) {
 			return $this->default;
 		} else {
 			return sanitize_text_field( $value );
 		}
+	}
+
+	/**
+	 * @param string $context Optional. 'internal' by default. Variants:
+	 *     'internal' - for internal use (in the functions of the plugin);
+	 *     'save'     - prepare the value for the database.
+	 * @return mixed
+	 */
+	public function getValue( $context = 'internal' ) {
+
+		$value = parent::getValue( $context );
+
+		if ( 'save' === $context && $this->isEncrypted() ) {
+
+			$value = \MotoPress\Appointment\Helpers\StringEncryptHelper::encryptString( $value );
+		}
+
+		return $value;
 	}
 
 	/**
@@ -102,6 +131,7 @@ class TextField extends AbstractField {
 	 * @since 1.0
 	 */
 	protected function inputAtts() {
+
 		$atts = parent::inputAtts() + array(
 			'type'  => 'text',
 			'value' => $this->value,
