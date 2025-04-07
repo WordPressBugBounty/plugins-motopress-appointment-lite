@@ -44,7 +44,9 @@ class SettingsRestController extends AbstractRestController {
 		 *
 		 * @since 1.2.1
 		 */
-		$flatpickrLocale = apply_filters( 'mpa_flatpickr_l10n', mpapp()->i18n()->getCurrentLanguage() );
+		$wpLocale = apply_filters( 'mpa_flatpickr_l10n', mpapp()->i18n()->getCurrentLanguage() );
+
+		$flatpickrLocale = mpa_wp2flatpickr_l10n( $wpLocale );
 
 		// Add language data
 		$settings['flatpickr_locale'] = mpa_is_flatpickr_l10n( $flatpickrLocale ) ? $flatpickrLocale : 'en';

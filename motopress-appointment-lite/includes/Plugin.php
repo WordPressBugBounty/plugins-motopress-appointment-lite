@@ -11,6 +11,7 @@ use MotoPress\Appointment\Handlers\GoogleCalendarSyncHandler;
 use MotoPress\Appointment\Handlers\NotificationHandler;
 use MotoPress\Appointment\PostTypes\Logs\CustomCommentsFix;
 use MotoPress\Appointment\DirectLinkActions\DirectLinkActions;
+use MotoPress\Appointment\Handlers\WizardHandler;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -164,6 +165,7 @@ class Plugin {
 
 		// Register admin-only items
 		if ( is_admin() ) {
+			WizardHandler::getInstance();
 			$this->registries['pages']->registerCustomPages();
 
 			new AdminMetaboxHandler();

@@ -5,7 +5,7 @@ Tags: appointment, booking, calendar, reservation, schedule, scheduling, online 
 Requires at least: 5.3
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 2.2.0
+Stable tag: 2.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -303,6 +303,10 @@ MotoPress Appointment Booking Lite plugin, Copyright (C) 2020, MotoPress https:/
 MotoPress Appointment Booking Lite plugin is distributed under the terms of the GNU GPL.
 
 == Changelog ==
+
+= 2.3.0, Apr 1 2025 =
+* Added a convenient plugin setup wizard to simplify onboarding.
+* Fixed calendar translations in some languages.
 
 = 2.2.0, Mar 11 2025 =
 * Added compatibility with the Video Conferencing addon.

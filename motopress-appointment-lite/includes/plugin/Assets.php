@@ -106,15 +106,17 @@ class Assets {
 		 *
 		 * @since 1.2.1
 		 */
-		$language = apply_filters( 'mpa_flatpickr_l10n', $language );
+		$wpLanguage = apply_filters( 'mpa_flatpickr_l10n', $language );
 
-		if ( ! mpa_is_flatpickr_l10n( $language ) ) {
+		$flatpickrLanguage = mpa_wp2flatpickr_l10n( $wpLanguage );
+
+		if ( ! mpa_is_flatpickr_l10n( $flatpickrLanguage ) ) {
 			return;
 		}
 
 		// Add l10n script
 		$version = \MotoPress\Appointment\FLATPICKR_VERSION;
-		$l10nUrl = mpa_filter_asset( "assets/js/flatpickr-{$version}/dist/l10n/{$language}.js" );
+		$l10nUrl = mpa_filter_asset( "assets/js/flatpickr-{$version}/dist/l10n/{$flatpickrLanguage}.js" );
 
 		$this->scripts['flatpickr-l10n'] = array( $l10nUrl, array(), $version );
 

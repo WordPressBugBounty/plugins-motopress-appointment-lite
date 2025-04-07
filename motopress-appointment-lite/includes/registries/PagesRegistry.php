@@ -2,11 +2,11 @@
 
 namespace MotoPress\Appointment\Registries;
 
-use MotoPress\Appointment\AdminPages\Custom as CustomPages;
-use MotoPress\Appointment\AdminPages\Edit   as EditPages;
-use MotoPress\Appointment\AdminPages\Manage as ManagePages;
-use MotoPress\Appointment\Handlers\SecurityHandler;
 use MotoPress\Appointment\PostTypes;
+use MotoPress\Appointment\Handlers\SecurityHandler;
+use MotoPress\Appointment\AdminPages\Edit as EditPages;
+use MotoPress\Appointment\AdminPages\Custom as CustomPages;
+use MotoPress\Appointment\AdminPages\Manage as ManagePages;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -155,11 +155,14 @@ class PagesRegistry {
 	 */
 	public function customers() {
 		if ( ! isset( $this->customPages['customers'] ) ) {
-			$this->customPages['customers'] = new CustomPages\CustomersPage( 'customers', [
-				'parent_menu' => $this->appointmentMenu()->getId(),
-				'capability'  => SecurityHandler::CAPABILITY_LIST_CUSTOMERS,
-				'position'    => 9,
-			] );
+			$this->customPages['customers'] = new CustomPages\CustomersPage(
+				'customers',
+				array(
+					'parent_menu' => $this->appointmentMenu()->getId(),
+					'capability'  => SecurityHandler::CAPABILITY_LIST_CUSTOMERS,
+					'position'    => 9,
+				)
+			);
 		}
 
 		return $this->customPages['customers'];
@@ -195,8 +198,8 @@ class PagesRegistry {
 			$this->managePages['manageEmployees'] = new ManagePages\ManageEmployeesPage( PostTypes\EmployeePostType::POST_TYPE );
 		}
 
-        return $this->managePages['manageEmployees'];
-    }
+		return $this->managePages['manageEmployees'];
+	}
 
 	/**
 	 * @return ManagePages\ManageSchedulesPage
@@ -407,6 +410,27 @@ class PagesRegistry {
 	}
 
 	/**
+	 * @since 2.3.0
+	 *
+	 * @return CustomPages\WizardPage
+	 */
+	public function wizard() {
+
+		if ( ! isset( $this->customPages['wizard'] ) ) {
+			$this->customPages['wizard'] = new CustomPages\WizardPage(
+				'wizard',
+				array(
+					// hidden
+					'parent_menu' => 'none',
+					'capability'  => 'manage_options',
+				)
+			);
+		}
+
+		return $this->customPages['wizard'];
+	}
+
+	/**
 	 * @since 1.0
 	 */
 	public function registerCustomPages() {
@@ -418,6 +442,7 @@ class PagesRegistry {
 		$this->calendar();
 		$this->customers();
 		$this->analytics();
+		$this->wizard();
 
 		// @LITE-CODE-START
 		if ( class_exists( '\MotoPress\Appointment\AdminPages\Custom\UpgradeToPremiumPage' ) ) {
@@ -427,7 +452,7 @@ class PagesRegistry {
 				array(
 					'parent_menu' => $this->appointmentMenu()->getId(),
 					'capability'  => 'read_mpa_bookings',
-					//'position'  => 0,
+					//'position'    => 0,
 				)
 			);
 		}

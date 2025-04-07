@@ -20,7 +20,7 @@ msgstr ""
 "X-Crowdin-File-ID: 46\n"
 
 #: includes/functions/plugin.php:109
-#: includes/Plugin.php:476
+#: includes/Plugin.php:478
 msgid "Appointment Booking"
 msgstr ""
 
@@ -125,6 +125,9 @@ msgstr "Пожалуйста, укажите правильный ID клиен�
 
 #: includes/admin-pages/custom/CustomersPage.php:274
 #: includes/admin-pages/custom/CustomersPage.php:352
+#: includes/handlers/WizardHandler.php:196
+#: includes/handlers/WizardHandler.php:200
+#: includes/handlers/WizardHandler.php:204
 #: includes/repositories/CustomerRepository.php:440
 #: includes/shortcodes/CustomerAccountShortcode.php:364
 msgid "You do not have permission to do this action."
@@ -197,6 +200,7 @@ msgstr "Сохранить изменения"
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:35
 #: includes/elementor/widgets/ServicesListWidget.php:35
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:26
+#: templates/private/pages/wizard.php:12
 #: assets/js/gutenberg-blocks.js:3186
 #: assets/js/gutenberg-blocks.js:11379
 #: assets/js/gutenberg-blocks.js:11674
@@ -318,6 +322,7 @@ msgstr "Услуги"
 #: includes/widgets/AppointmentFormWidget.php:171
 #: includes/widgets/AppointmentFormWidget.php:172
 #: includes/widgets/AppointmentFormWidget.php:214
+#: templates/private/pages/wizard.php:11
 #: templates/shortcodes/booking/step-admin-cart.php:33
 #: templates/shortcodes/booking/step-service-form.php:102
 #: assets/js/calendar-page.js:38183
@@ -366,6 +371,7 @@ msgstr ""
 #: includes/widgets/AppointmentFormWidget.php:184
 #: includes/widgets/AppointmentFormWidget.php:226
 #: templates/private/fields/service-variations-field.php:35
+#: templates/private/pages/wizard.php:10
 #: templates/shortcodes/booking/step-admin-cart.php:34
 #: templates/shortcodes/booking/step-cart.php:55
 #: templates/shortcodes/booking/step-service-form.php:167
@@ -543,6 +549,7 @@ msgstr "ID транзакции"
 #: includes/widgets/AppointmentFormWidget.php:177
 #: includes/widgets/AppointmentFormWidget.php:178
 #: includes/widgets/AppointmentFormWidget.php:220
+#: templates/private/pages/wizard.php:9
 #: templates/shortcodes/booking/step-admin-cart.php:35
 #: templates/shortcodes/booking/step-cart.php:39
 #: templates/shortcodes/booking/step-service-form.php:134
@@ -568,7 +575,7 @@ msgstr ""
 #: includes/admin-pages/manage/ManageShortcodesPage.php:34
 #: includes/metaboxes/shortcode/ShortcodeExampleMetabox.php:31
 #: includes/post-types/ShortcodePostType.php:32
-#: templates/private/pages/shortcodes-list.php:23
+#: templates/private/pages/shortcodes-list.php:27
 msgid "Shortcode"
 msgstr "Шорткод"
 
@@ -1589,655 +1596,655 @@ msgstr "Слева с пробелом"
 msgid "After with space"
 msgstr "Справа с пробелом"
 
-#: includes/bundles/CurrenciesBundle.php:283
+#: includes/bundles/CurrenciesBundle.php:290
 msgid "Euro"
 msgstr "Евро"
 
-#: includes/bundles/CurrenciesBundle.php:284
+#: includes/bundles/CurrenciesBundle.php:291
 msgid "United States (US) dollar"
 msgstr "Доллар США"
 
-#: includes/bundles/CurrenciesBundle.php:285
+#: includes/bundles/CurrenciesBundle.php:292
 msgid "Pound sterling"
 msgstr "Фунт стерлингов"
 
-#: includes/bundles/CurrenciesBundle.php:286
+#: includes/bundles/CurrenciesBundle.php:293
 msgid "United Arab Emirates dirham"
 msgstr "Дирхам ОАЭ"
 
-#: includes/bundles/CurrenciesBundle.php:287
+#: includes/bundles/CurrenciesBundle.php:294
 msgid "Afghan afghani"
 msgstr "Афганский афгани"
 
-#: includes/bundles/CurrenciesBundle.php:288
+#: includes/bundles/CurrenciesBundle.php:295
 msgid "Albanian lek"
 msgstr "Албанский лек"
 
-#: includes/bundles/CurrenciesBundle.php:289
+#: includes/bundles/CurrenciesBundle.php:296
 msgid "Armenian dram"
 msgstr "Армянский драм"
 
-#: includes/bundles/CurrenciesBundle.php:290
+#: includes/bundles/CurrenciesBundle.php:297
 msgid "Netherlands Antillean guilder"
 msgstr "Нидерландский антильский гульден"
 
-#: includes/bundles/CurrenciesBundle.php:291
+#: includes/bundles/CurrenciesBundle.php:298
 msgid "Angolan kwanza"
 msgstr "Ангольская кванза"
 
-#: includes/bundles/CurrenciesBundle.php:292
+#: includes/bundles/CurrenciesBundle.php:299
 msgid "Argentine peso"
 msgstr "Аргентинский песо"
 
-#: includes/bundles/CurrenciesBundle.php:293
+#: includes/bundles/CurrenciesBundle.php:300
 msgid "Australian dollar"
 msgstr "Австралийский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:294
+#: includes/bundles/CurrenciesBundle.php:301
 msgid "Aruban florin"
 msgstr "Арубанский флорин"
 
-#: includes/bundles/CurrenciesBundle.php:295
+#: includes/bundles/CurrenciesBundle.php:302
 msgid "Azerbaijani manat"
 msgstr "Азербайджанский манат"
 
-#: includes/bundles/CurrenciesBundle.php:296
+#: includes/bundles/CurrenciesBundle.php:303
 msgid "Bosnia and Herzegovina convertible mark"
 msgstr "Конвертируемая марка Боснии и Герцеговины"
 
-#: includes/bundles/CurrenciesBundle.php:297
+#: includes/bundles/CurrenciesBundle.php:304
 msgid "Barbadian dollar"
 msgstr "Барбадосский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:298
+#: includes/bundles/CurrenciesBundle.php:305
 msgid "Bangladeshi taka"
 msgstr "Бангладешская така"
 
-#: includes/bundles/CurrenciesBundle.php:299
+#: includes/bundles/CurrenciesBundle.php:306
 msgid "Bulgarian lev"
 msgstr "Болгарский лев"
 
-#: includes/bundles/CurrenciesBundle.php:300
+#: includes/bundles/CurrenciesBundle.php:307
 msgid "Bahraini dinar"
 msgstr "Бахрейнский динар"
 
-#: includes/bundles/CurrenciesBundle.php:301
+#: includes/bundles/CurrenciesBundle.php:308
 msgid "Burundian franc"
 msgstr "Бурундийский франк"
 
-#: includes/bundles/CurrenciesBundle.php:302
+#: includes/bundles/CurrenciesBundle.php:309
 msgid "Bermudian dollar"
 msgstr "Бермудский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:303
+#: includes/bundles/CurrenciesBundle.php:310
 msgid "Brunei dollar"
 msgstr "Брунейский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:304
+#: includes/bundles/CurrenciesBundle.php:311
 msgid "Bolivian boliviano"
 msgstr "Боливийский боливиано"
 
-#: includes/bundles/CurrenciesBundle.php:305
+#: includes/bundles/CurrenciesBundle.php:312
 msgid "Brazilian real"
 msgstr "Бразильский реал"
 
-#: includes/bundles/CurrenciesBundle.php:306
+#: includes/bundles/CurrenciesBundle.php:313
 msgid "Bahamian dollar"
 msgstr "Багамский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:307
+#: includes/bundles/CurrenciesBundle.php:314
 msgid "Bitcoin"
 msgstr "Биткойн"
 
-#: includes/bundles/CurrenciesBundle.php:308
+#: includes/bundles/CurrenciesBundle.php:315
 msgid "Bhutanese ngultrum"
 msgstr "Бутанский нгултрум"
 
-#: includes/bundles/CurrenciesBundle.php:309
+#: includes/bundles/CurrenciesBundle.php:316
 msgid "Botswana pula"
 msgstr "Ботсванская пула"
 
-#: includes/bundles/CurrenciesBundle.php:310
+#: includes/bundles/CurrenciesBundle.php:317
 msgid "Belarusian ruble (old)"
 msgstr "Белорусский рубль (старый)"
 
-#: includes/bundles/CurrenciesBundle.php:311
+#: includes/bundles/CurrenciesBundle.php:318
 msgid "Belarusian ruble"
 msgstr "Белорусский рубль"
 
-#: includes/bundles/CurrenciesBundle.php:312
+#: includes/bundles/CurrenciesBundle.php:319
 msgid "Belize dollar"
 msgstr "Белизский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:313
+#: includes/bundles/CurrenciesBundle.php:320
 msgid "Canadian dollar"
 msgstr "Канадский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:314
+#: includes/bundles/CurrenciesBundle.php:321
 msgid "Congolese franc"
 msgstr "Конголезский франк"
 
-#: includes/bundles/CurrenciesBundle.php:315
+#: includes/bundles/CurrenciesBundle.php:322
 msgid "Swiss franc"
 msgstr "Швейцарский франк"
 
-#: includes/bundles/CurrenciesBundle.php:316
+#: includes/bundles/CurrenciesBundle.php:323
 msgid "Chilean peso"
 msgstr "Чилийский песо"
 
-#: includes/bundles/CurrenciesBundle.php:317
+#: includes/bundles/CurrenciesBundle.php:324
 msgid "Chinese yuan"
 msgstr "Китайский юань"
 
-#: includes/bundles/CurrenciesBundle.php:318
+#: includes/bundles/CurrenciesBundle.php:325
 msgid "Colombian peso"
 msgstr "Колумбийский песо"
 
-#: includes/bundles/CurrenciesBundle.php:319
+#: includes/bundles/CurrenciesBundle.php:326
 msgid "Costa Rican col&oacute;n"
 msgstr "Коста-риканский колон"
 
-#: includes/bundles/CurrenciesBundle.php:320
+#: includes/bundles/CurrenciesBundle.php:327
 msgid "Cuban convertible peso"
 msgstr "Кубинское конвертируемое песо"
 
-#: includes/bundles/CurrenciesBundle.php:321
+#: includes/bundles/CurrenciesBundle.php:328
 msgid "Cuban peso"
 msgstr "Кубинский песо"
 
-#: includes/bundles/CurrenciesBundle.php:322
+#: includes/bundles/CurrenciesBundle.php:329
 msgid "Cape Verdean escudo"
 msgstr "Эскудо Кабо-Верде"
 
-#: includes/bundles/CurrenciesBundle.php:323
+#: includes/bundles/CurrenciesBundle.php:330
 msgid "Czech koruna"
 msgstr "Чешская крона"
 
-#: includes/bundles/CurrenciesBundle.php:324
+#: includes/bundles/CurrenciesBundle.php:331
 msgid "Djiboutian franc"
 msgstr "Франк Джибути"
 
-#: includes/bundles/CurrenciesBundle.php:325
+#: includes/bundles/CurrenciesBundle.php:332
 msgid "Danish krone"
 msgstr "Датская крона"
 
-#: includes/bundles/CurrenciesBundle.php:326
+#: includes/bundles/CurrenciesBundle.php:333
 msgid "Dominican peso"
 msgstr "Доминиканский песо"
 
-#: includes/bundles/CurrenciesBundle.php:327
+#: includes/bundles/CurrenciesBundle.php:334
 msgid "Algerian dinar"
 msgstr "Алжирский динар"
 
-#: includes/bundles/CurrenciesBundle.php:328
+#: includes/bundles/CurrenciesBundle.php:335
 msgid "Egyptian pound"
 msgstr "Египетский фунт"
 
-#: includes/bundles/CurrenciesBundle.php:329
+#: includes/bundles/CurrenciesBundle.php:336
 msgid "Eritrean nakfa"
 msgstr "Эритрейская накфа"
 
-#: includes/bundles/CurrenciesBundle.php:330
+#: includes/bundles/CurrenciesBundle.php:337
 msgid "Ethiopian birr"
 msgstr "Эфиопский быр"
 
-#: includes/bundles/CurrenciesBundle.php:331
+#: includes/bundles/CurrenciesBundle.php:338
 msgid "Fijian dollar"
 msgstr "Фиджийский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:332
+#: includes/bundles/CurrenciesBundle.php:339
 msgid "Falkland Islands pound"
 msgstr "Фунт Фолклендских островов"
 
-#: includes/bundles/CurrenciesBundle.php:333
+#: includes/bundles/CurrenciesBundle.php:340
 msgid "Georgian lari"
 msgstr "Грузинский лари"
 
-#: includes/bundles/CurrenciesBundle.php:334
+#: includes/bundles/CurrenciesBundle.php:341
 msgid "Guernsey pound"
 msgstr "Гернсийский фунт"
 
-#: includes/bundles/CurrenciesBundle.php:335
+#: includes/bundles/CurrenciesBundle.php:342
 msgid "Ghana cedi"
 msgstr "Ганский седи"
 
-#: includes/bundles/CurrenciesBundle.php:336
+#: includes/bundles/CurrenciesBundle.php:343
 msgid "Gibraltar pound"
 msgstr "Гибралтарский фунт"
 
-#: includes/bundles/CurrenciesBundle.php:337
+#: includes/bundles/CurrenciesBundle.php:344
 msgid "Gambian dalasi"
 msgstr "Гамбийский даласи"
 
-#: includes/bundles/CurrenciesBundle.php:338
+#: includes/bundles/CurrenciesBundle.php:345
 msgid "Guinean franc"
 msgstr "Гвинейский франк"
 
-#: includes/bundles/CurrenciesBundle.php:339
+#: includes/bundles/CurrenciesBundle.php:346
 msgid "Guatemalan quetzal"
 msgstr "Гватемальский кетсаль"
 
-#: includes/bundles/CurrenciesBundle.php:340
+#: includes/bundles/CurrenciesBundle.php:347
 msgid "Guyanese dollar"
 msgstr "Гайанский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:341
+#: includes/bundles/CurrenciesBundle.php:348
 msgid "Hong Kong dollar"
 msgstr "Гонконгский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:342
+#: includes/bundles/CurrenciesBundle.php:349
 msgid "Honduran lempira"
 msgstr "Гондурасская лемпира"
 
-#: includes/bundles/CurrenciesBundle.php:343
+#: includes/bundles/CurrenciesBundle.php:350
 msgid "Croatian kuna"
 msgstr "Хорватская куна"
 
-#: includes/bundles/CurrenciesBundle.php:344
+#: includes/bundles/CurrenciesBundle.php:351
 msgid "Haitian gourde"
 msgstr "Гаитянский гурд"
 
-#: includes/bundles/CurrenciesBundle.php:345
+#: includes/bundles/CurrenciesBundle.php:352
 msgid "Hungarian forint"
 msgstr "Венгерский форинт"
 
-#: includes/bundles/CurrenciesBundle.php:346
+#: includes/bundles/CurrenciesBundle.php:353
 msgid "Indonesian rupiah"
 msgstr "Индонезийская рупия"
 
-#: includes/bundles/CurrenciesBundle.php:347
+#: includes/bundles/CurrenciesBundle.php:354
 msgid "Israeli new shekel"
 msgstr "Новый израильский шекель"
 
-#: includes/bundles/CurrenciesBundle.php:348
+#: includes/bundles/CurrenciesBundle.php:355
 msgid "Manx pound"
 msgstr "Фунт Острова Мэн"
 
-#: includes/bundles/CurrenciesBundle.php:349
+#: includes/bundles/CurrenciesBundle.php:356
 msgid "Indian rupee"
 msgstr "Индийская рупия"
 
-#: includes/bundles/CurrenciesBundle.php:350
+#: includes/bundles/CurrenciesBundle.php:357
 msgid "Iraqi dinar"
 msgstr "Иракский динар"
 
-#: includes/bundles/CurrenciesBundle.php:351
+#: includes/bundles/CurrenciesBundle.php:358
 msgid "Iranian rial"
 msgstr "Иранский риал"
 
-#: includes/bundles/CurrenciesBundle.php:352
+#: includes/bundles/CurrenciesBundle.php:359
 msgid "Iranian toman"
 msgstr "Персидский туман"
 
-#: includes/bundles/CurrenciesBundle.php:353
+#: includes/bundles/CurrenciesBundle.php:360
 msgid "Icelandic kr&oacute;na"
 msgstr "Исландская крона"
 
-#: includes/bundles/CurrenciesBundle.php:354
+#: includes/bundles/CurrenciesBundle.php:361
 msgid "Jersey pound"
 msgstr "Джерсийский фунт"
 
-#: includes/bundles/CurrenciesBundle.php:355
+#: includes/bundles/CurrenciesBundle.php:362
 msgid "Jamaican dollar"
 msgstr "Ямайский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:356
+#: includes/bundles/CurrenciesBundle.php:363
 msgid "Jordanian dinar"
 msgstr "Иорданский динар"
 
-#: includes/bundles/CurrenciesBundle.php:357
+#: includes/bundles/CurrenciesBundle.php:364
 msgid "Japanese yen"
 msgstr "Японская иена"
 
-#: includes/bundles/CurrenciesBundle.php:358
+#: includes/bundles/CurrenciesBundle.php:365
 msgid "Kenyan shilling"
 msgstr "Кенийский шиллинг"
 
-#: includes/bundles/CurrenciesBundle.php:359
+#: includes/bundles/CurrenciesBundle.php:366
 msgid "Kyrgyzstani som"
 msgstr "Киргизский сом"
 
-#: includes/bundles/CurrenciesBundle.php:360
+#: includes/bundles/CurrenciesBundle.php:367
 msgid "Cambodian riel"
 msgstr "Камбоджийский риель"
 
-#: includes/bundles/CurrenciesBundle.php:361
+#: includes/bundles/CurrenciesBundle.php:368
 msgid "Comorian franc"
 msgstr "Коморский франк"
 
-#: includes/bundles/CurrenciesBundle.php:362
+#: includes/bundles/CurrenciesBundle.php:369
 msgid "North Korean won"
 msgstr "Северокорейская вона"
 
-#: includes/bundles/CurrenciesBundle.php:363
+#: includes/bundles/CurrenciesBundle.php:370
 msgid "South Korean won"
 msgstr "Южнокорейская вона"
 
-#: includes/bundles/CurrenciesBundle.php:364
+#: includes/bundles/CurrenciesBundle.php:371
 msgid "Kuwaiti dinar"
 msgstr "Кувейтский динар"
 
-#: includes/bundles/CurrenciesBundle.php:365
+#: includes/bundles/CurrenciesBundle.php:372
 msgid "Cayman Islands dollar"
 msgstr "Доллар Каймановых островов"
 
-#: includes/bundles/CurrenciesBundle.php:366
+#: includes/bundles/CurrenciesBundle.php:373
 msgid "Kazakhstani tenge"
 msgstr "Казахстанский тенге"
 
-#: includes/bundles/CurrenciesBundle.php:367
+#: includes/bundles/CurrenciesBundle.php:374
 msgid "Lao kip"
 msgstr "Лаосский кип"
 
-#: includes/bundles/CurrenciesBundle.php:368
+#: includes/bundles/CurrenciesBundle.php:375
 msgid "Lebanese pound"
 msgstr "Ливанский фунт"
 
-#: includes/bundles/CurrenciesBundle.php:369
+#: includes/bundles/CurrenciesBundle.php:376
 msgid "Sri Lankan rupee"
 msgstr "Шри-Ланкийская рупия"
 
-#: includes/bundles/CurrenciesBundle.php:370
+#: includes/bundles/CurrenciesBundle.php:377
 msgid "Liberian dollar"
 msgstr "Доллар Либерии"
 
-#: includes/bundles/CurrenciesBundle.php:371
+#: includes/bundles/CurrenciesBundle.php:378
 msgid "Lesotho loti"
 msgstr "Лоти Лесото"
 
-#: includes/bundles/CurrenciesBundle.php:372
+#: includes/bundles/CurrenciesBundle.php:379
 msgid "Libyan dinar"
 msgstr "Ливийский динар"
 
-#: includes/bundles/CurrenciesBundle.php:373
+#: includes/bundles/CurrenciesBundle.php:380
 msgid "Moroccan dirham"
 msgstr "Марокканский дирхам"
 
-#: includes/bundles/CurrenciesBundle.php:374
+#: includes/bundles/CurrenciesBundle.php:381
 msgid "Moldovan leu"
 msgstr "Молдавский лей"
 
-#: includes/bundles/CurrenciesBundle.php:375
+#: includes/bundles/CurrenciesBundle.php:382
 msgid "Malagasy ariary"
 msgstr "Малагасийский ариари"
 
-#: includes/bundles/CurrenciesBundle.php:376
+#: includes/bundles/CurrenciesBundle.php:383
 msgid "Macedonian denar"
 msgstr "Македонский денар"
 
-#: includes/bundles/CurrenciesBundle.php:377
+#: includes/bundles/CurrenciesBundle.php:384
 msgid "Burmese kyat"
 msgstr "Бирманский кять"
 
-#: includes/bundles/CurrenciesBundle.php:378
+#: includes/bundles/CurrenciesBundle.php:385
 msgid "Mongolian t&ouml;gr&ouml;g"
 msgstr "Монгольский тугрик"
 
-#: includes/bundles/CurrenciesBundle.php:379
+#: includes/bundles/CurrenciesBundle.php:386
 msgid "Macanese pataca"
 msgstr "Патака Макао"
 
-#: includes/bundles/CurrenciesBundle.php:380
+#: includes/bundles/CurrenciesBundle.php:387
 msgid "Mauritanian ouguiya"
 msgstr "Мавританская угия"
 
-#: includes/bundles/CurrenciesBundle.php:381
+#: includes/bundles/CurrenciesBundle.php:388
 msgid "Mauritian rupee"
 msgstr "Маврикийская рупия"
 
-#: includes/bundles/CurrenciesBundle.php:382
+#: includes/bundles/CurrenciesBundle.php:389
 msgid "Maldivian rufiyaa"
 msgstr "Мальдивская руфия"
 
-#: includes/bundles/CurrenciesBundle.php:383
+#: includes/bundles/CurrenciesBundle.php:390
 msgid "Malawian kwacha"
 msgstr "Малавийская квача"
 
-#: includes/bundles/CurrenciesBundle.php:384
+#: includes/bundles/CurrenciesBundle.php:391
 msgid "Mexican peso"
 msgstr "Мексиканское песо"
 
-#: includes/bundles/CurrenciesBundle.php:385
+#: includes/bundles/CurrenciesBundle.php:392
 msgid "Malaysian ringgit"
 msgstr "Малайзийский ринггит"
 
-#: includes/bundles/CurrenciesBundle.php:386
+#: includes/bundles/CurrenciesBundle.php:393
 msgid "Mozambican metical"
 msgstr "Мозамбикский метикал"
 
-#: includes/bundles/CurrenciesBundle.php:387
+#: includes/bundles/CurrenciesBundle.php:394
 msgid "Namibian dollar"
 msgstr "Намибийский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:388
+#: includes/bundles/CurrenciesBundle.php:395
 msgid "Nigerian naira"
 msgstr "Нигерийская найра"
 
-#: includes/bundles/CurrenciesBundle.php:389
+#: includes/bundles/CurrenciesBundle.php:396
 msgid "Nicaraguan c&oacute;rdoba"
 msgstr "Никарагуанская кордоба"
 
-#: includes/bundles/CurrenciesBundle.php:390
+#: includes/bundles/CurrenciesBundle.php:397
 msgid "Norwegian krone"
 msgstr "Норвежская крона"
 
-#: includes/bundles/CurrenciesBundle.php:391
+#: includes/bundles/CurrenciesBundle.php:398
 msgid "Nepalese rupee"
 msgstr "Непальская рупия"
 
-#: includes/bundles/CurrenciesBundle.php:392
+#: includes/bundles/CurrenciesBundle.php:399
 msgid "New Zealand dollar"
 msgstr "Новозеландский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:393
+#: includes/bundles/CurrenciesBundle.php:400
 msgid "Omani rial"
 msgstr "Оманский риал"
 
-#: includes/bundles/CurrenciesBundle.php:394
+#: includes/bundles/CurrenciesBundle.php:401
 msgid "Panamanian balboa"
 msgstr "Панамский бальбоа"
 
-#: includes/bundles/CurrenciesBundle.php:395
+#: includes/bundles/CurrenciesBundle.php:402
 msgid "Sol"
 msgstr "Соль"
 
-#: includes/bundles/CurrenciesBundle.php:396
+#: includes/bundles/CurrenciesBundle.php:403
 msgid "Papua New Guinean kina"
 msgstr "Кина Папуа - Новой Гвинеи"
 
-#: includes/bundles/CurrenciesBundle.php:397
+#: includes/bundles/CurrenciesBundle.php:404
 msgid "Philippine peso"
 msgstr "Филиппинское песо"
 
-#: includes/bundles/CurrenciesBundle.php:398
+#: includes/bundles/CurrenciesBundle.php:405
 msgid "Pakistani rupee"
 msgstr "Пакистанская рупия"
 
-#: includes/bundles/CurrenciesBundle.php:399
+#: includes/bundles/CurrenciesBundle.php:406
 msgid "Polish z&#x142;oty"
 msgstr "Польский злотый"
 
-#: includes/bundles/CurrenciesBundle.php:400
+#: includes/bundles/CurrenciesBundle.php:407
 msgid "Transnistrian ruble"
 msgstr "Приднестровский рубль"
 
-#: includes/bundles/CurrenciesBundle.php:401
+#: includes/bundles/CurrenciesBundle.php:408
 msgid "Paraguayan guaran&iacute;"
 msgstr "Парагвайский гуарани"
 
-#: includes/bundles/CurrenciesBundle.php:402
+#: includes/bundles/CurrenciesBundle.php:409
 msgid "Qatari riyal"
 msgstr "Катарский риал"
 
-#: includes/bundles/CurrenciesBundle.php:403
+#: includes/bundles/CurrenciesBundle.php:410
 msgid "Romanian leu"
 msgstr "Румынский лей"
 
-#: includes/bundles/CurrenciesBundle.php:404
+#: includes/bundles/CurrenciesBundle.php:411
 msgid "Serbian dinar"
 msgstr "Сербский динар"
 
-#: includes/bundles/CurrenciesBundle.php:405
+#: includes/bundles/CurrenciesBundle.php:412
 msgid "Russian ruble"
 msgstr "Российский рубль"
 
-#: includes/bundles/CurrenciesBundle.php:406
+#: includes/bundles/CurrenciesBundle.php:413
 msgid "Rwandan franc"
 msgstr "Руандийский франк"
 
-#: includes/bundles/CurrenciesBundle.php:407
+#: includes/bundles/CurrenciesBundle.php:414
 msgid "Saudi riyal"
 msgstr "Саудовский риял"
 
-#: includes/bundles/CurrenciesBundle.php:408
+#: includes/bundles/CurrenciesBundle.php:415
 msgid "Solomon Islands dollar"
 msgstr "Доллар Соломоновых Островов"
 
-#: includes/bundles/CurrenciesBundle.php:409
+#: includes/bundles/CurrenciesBundle.php:416
 msgid "Seychellois rupee"
 msgstr "Сейшельская рупия"
 
-#: includes/bundles/CurrenciesBundle.php:410
+#: includes/bundles/CurrenciesBundle.php:417
 msgid "Sudanese pound"
 msgstr "Суданский фунт"
 
-#: includes/bundles/CurrenciesBundle.php:411
+#: includes/bundles/CurrenciesBundle.php:418
 msgid "Swedish krona"
 msgstr "Шведская крона"
 
-#: includes/bundles/CurrenciesBundle.php:412
+#: includes/bundles/CurrenciesBundle.php:419
 msgid "Singapore dollar"
 msgstr "Сингапурский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:413
+#: includes/bundles/CurrenciesBundle.php:420
 msgid "Saint Helena pound"
 msgstr "Фунт Святой Елены"
 
-#: includes/bundles/CurrenciesBundle.php:414
+#: includes/bundles/CurrenciesBundle.php:421
 msgid "Sierra Leonean leone"
 msgstr "Сьерра-Леонский леоне"
 
-#: includes/bundles/CurrenciesBundle.php:415
+#: includes/bundles/CurrenciesBundle.php:422
 msgid "Somali shilling"
 msgstr "Сомалийский шиллинг"
 
-#: includes/bundles/CurrenciesBundle.php:416
+#: includes/bundles/CurrenciesBundle.php:423
 msgid "Surinamese dollar"
 msgstr "Суринамский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:417
+#: includes/bundles/CurrenciesBundle.php:424
 msgid "South Sudanese pound"
 msgstr "Южносуданский фунт"
 
-#: includes/bundles/CurrenciesBundle.php:418
+#: includes/bundles/CurrenciesBundle.php:425
 msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe dobra"
 msgstr "Добра Сан-Томе и Принсипи"
 
-#: includes/bundles/CurrenciesBundle.php:419
+#: includes/bundles/CurrenciesBundle.php:426
 msgid "Syrian pound"
 msgstr "Сирийский фунт"
 
-#: includes/bundles/CurrenciesBundle.php:420
+#: includes/bundles/CurrenciesBundle.php:427
 msgid "Swazi lilangeni"
 msgstr "Свазилендский лилангени"
 
-#: includes/bundles/CurrenciesBundle.php:421
+#: includes/bundles/CurrenciesBundle.php:428
 msgid "Thai baht"
 msgstr "Тайский бат"
 
-#: includes/bundles/CurrenciesBundle.php:422
+#: includes/bundles/CurrenciesBundle.php:429
 msgid "Tajikistani somoni"
 msgstr "Таджикский сомони"
 
-#: includes/bundles/CurrenciesBundle.php:423
+#: includes/bundles/CurrenciesBundle.php:430
 msgid "Turkmenistan manat"
 msgstr "Туркменский манат"
 
-#: includes/bundles/CurrenciesBundle.php:424
+#: includes/bundles/CurrenciesBundle.php:431
 msgid "Tunisian dinar"
 msgstr "Тунисский динар"
 
-#: includes/bundles/CurrenciesBundle.php:425
+#: includes/bundles/CurrenciesBundle.php:432
 msgid "Tongan pa&#x2bb;anga"
 msgstr "Тонганская паанга"
 
-#: includes/bundles/CurrenciesBundle.php:426
+#: includes/bundles/CurrenciesBundle.php:433
 msgid "Turkish lira"
 msgstr "Турецкая лира"
 
-#: includes/bundles/CurrenciesBundle.php:427
+#: includes/bundles/CurrenciesBundle.php:434
 msgid "Trinidad and Tobago dollar"
 msgstr "Доллар Тринидада и Тобаго"
 
-#: includes/bundles/CurrenciesBundle.php:428
+#: includes/bundles/CurrenciesBundle.php:435
 msgid "New Taiwan dollar"
 msgstr "Новый тайваньский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:429
+#: includes/bundles/CurrenciesBundle.php:436
 msgid "Tanzanian shilling"
 msgstr "Танзанийский шиллинг"
 
-#: includes/bundles/CurrenciesBundle.php:430
+#: includes/bundles/CurrenciesBundle.php:437
 msgid "Ukrainian hryvnia"
 msgstr "Украинская гривна"
 
-#: includes/bundles/CurrenciesBundle.php:431
+#: includes/bundles/CurrenciesBundle.php:438
 msgid "Ugandan shilling"
 msgstr "Угандийский шиллинг"
 
-#: includes/bundles/CurrenciesBundle.php:432
+#: includes/bundles/CurrenciesBundle.php:439
 msgid "Uruguayan peso"
 msgstr "Уругвайское песо"
 
-#: includes/bundles/CurrenciesBundle.php:433
+#: includes/bundles/CurrenciesBundle.php:440
 msgid "Uzbekistani som"
 msgstr "Узбекский сум"
 
-#: includes/bundles/CurrenciesBundle.php:434
+#: includes/bundles/CurrenciesBundle.php:441
 msgid "Venezuelan bol&iacute;var"
 msgstr "Венесуэльский боливар"
 
-#: includes/bundles/CurrenciesBundle.php:435
+#: includes/bundles/CurrenciesBundle.php:442
 msgid "Bol&iacute;var soberano"
 msgstr "Боливар Соберано"
 
-#: includes/bundles/CurrenciesBundle.php:436
+#: includes/bundles/CurrenciesBundle.php:443
 msgid "Vietnamese &#x111;&#x1ed3;ng"
 msgstr "Вьетнамский донг"
 
-#: includes/bundles/CurrenciesBundle.php:437
+#: includes/bundles/CurrenciesBundle.php:444
 msgid "Vanuatu vatu"
 msgstr "Вануатский вату"
 
-#: includes/bundles/CurrenciesBundle.php:438
+#: includes/bundles/CurrenciesBundle.php:445
 msgid "Samoan t&#x101;l&#x101;"
 msgstr "Самоанская тала"
 
-#: includes/bundles/CurrenciesBundle.php:439
+#: includes/bundles/CurrenciesBundle.php:446
 msgid "Central African CFA franc"
 msgstr "Центральноафриканский франк КФА"
 
-#: includes/bundles/CurrenciesBundle.php:440
+#: includes/bundles/CurrenciesBundle.php:447
 msgid "East Caribbean dollar"
 msgstr "Восточнокарибский доллар"
 
-#: includes/bundles/CurrenciesBundle.php:441
+#: includes/bundles/CurrenciesBundle.php:448
 msgid "West African CFA franc"
 msgstr "Франк КФА Западной Африки"
 
-#: includes/bundles/CurrenciesBundle.php:442
+#: includes/bundles/CurrenciesBundle.php:449
 msgid "CFP franc"
 msgstr "Французский тихоокеанский франк"
 
-#: includes/bundles/CurrenciesBundle.php:443
+#: includes/bundles/CurrenciesBundle.php:450
 msgid "Yemeni rial"
 msgstr "Йеменский риал"
 
-#: includes/bundles/CurrenciesBundle.php:444
+#: includes/bundles/CurrenciesBundle.php:451
 msgid "South African rand"
 msgstr "Южноафриканский ранд"
 
-#: includes/bundles/CurrenciesBundle.php:445
+#: includes/bundles/CurrenciesBundle.php:452
 msgid "Zambian kwacha"
 msgstr "Замбийская квача"
 
@@ -2297,18 +2304,22 @@ msgid "Default length of the time slot step, which is used for the appointment d
 msgstr ""
 
 #: includes/bundles/SettingsBundle.php:150
+#: includes/handlers/WizardHandler.php:592
 msgid "Confirmation Mode"
 msgstr "Режим подтверждения бронирования"
 
 #: includes/bundles/SettingsBundle.php:152
+#: includes/handlers/WizardHandler.php:594
 msgid "Confirm automatically"
 msgstr ""
 
 #: includes/bundles/SettingsBundle.php:153
+#: includes/handlers/WizardHandler.php:595
 msgid "By admin manually"
 msgstr "Администратором вручную"
 
 #: includes/bundles/SettingsBundle.php:154
+#: includes/handlers/WizardHandler.php:596
 msgid "Confirmation upon payment"
 msgstr "Подтверждение после оплаты"
 
@@ -2424,11 +2435,13 @@ msgid "— Select —"
 msgstr "— Выбрать —"
 
 #: includes/bundles/SettingsBundle.php:236
+#: includes/handlers/WizardHandler.php:569
 #: includes/metaboxes/payment/PaymentDetailsMetabox.php:82
 msgid "Currency"
 msgstr "Валюта"
 
 #: includes/bundles/SettingsBundle.php:243
+#: includes/handlers/WizardHandler.php:579
 msgid "Currency Position"
 msgstr "Расположение иконки валюты"
 
@@ -2540,6 +2553,7 @@ msgid "Payment Methods"
 msgstr "Способы оплаты"
 
 #: includes/bundles/SettingsBundle.php:449
+#: includes/handlers/WizardHandler.php:613
 msgid "General Settings"
 msgstr "Общие настройки"
 
@@ -2597,7 +2611,7 @@ msgstr "Тема календаря"
 
 #: includes/bundles/SettingsBundle.php:530
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:42
-#: templates/private/pages/shortcodes-list.php:26
+#: templates/private/pages/shortcodes-list.php:30
 msgid "Default"
 msgstr "По умолчанию"
 
@@ -2758,6 +2772,7 @@ msgstr ""
 
 #: includes/crons/ExportBookingsCron.php:356
 #: includes/emails/tags/employee/EmployeeNameTag.php:19
+#: includes/handlers/WizardHandler.php:488
 msgid "Employee name"
 msgstr ""
 
@@ -2775,6 +2790,7 @@ msgid "Number of clients"
 msgstr ""
 
 #: includes/crons/ExportBookingsCron.php:361
+#: includes/handlers/WizardHandler.php:522
 msgid "Service price"
 msgstr ""
 
@@ -3987,6 +4003,7 @@ msgstr ""
 #: includes/emails/AbstractEmail.php:313
 #: includes/emails/template-parts/AbstractTemplatePart.php:78
 #: includes/payments/gateways/AbstractPaymentGateway.php:205
+#: templates/private/pages/wizard.php:68
 #: templates/shortcodes/booking/step-booking.php:33
 #: templates/shortcodes/booking/step-checkout.php:123
 #: templates/shortcodes/booking/step-payment.php:106
@@ -4291,6 +4308,7 @@ msgid "Location link"
 msgstr ""
 
 #: includes/emails/tags/location/LocationNameTag.php:19
+#: includes/handlers/WizardHandler.php:462
 msgid "Location name"
 msgstr ""
 
@@ -4367,6 +4385,7 @@ msgid "Service link"
 msgstr ""
 
 #: includes/emails/tags/service/ServiceNameTag.php:19
+#: includes/handlers/WizardHandler.php:514
 msgid "Service name"
 msgstr ""
 
@@ -5000,7 +5019,7 @@ msgstr ""
 #: includes/metaboxes/coupon/CouponSettingsMetabox.php:34
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:50
 #: includes/payments/gateways/AbstractPaymentGateway.php:237
-#: templates/private/pages/shortcodes-list.php:25
+#: templates/private/pages/shortcodes-list.php:29
 msgid "Description"
 msgstr "Описание"
 
@@ -6908,15 +6927,15 @@ msgstr "Получить это расширение."
 msgid "No extensions found."
 msgstr "Расширения не найдены. "
 
-#: templates/private/pages/shortcodes-list.php:24
+#: templates/private/pages/shortcodes-list.php:28
 msgid "Parameter"
 msgstr ""
 
-#: templates/private/pages/shortcodes-list.php:55
+#: templates/private/pages/shortcodes-list.php:59
 msgid "Required."
 msgstr "Обязательно для заполнения."
 
-#: templates/private/pages/shortcodes-list.php:86
+#: templates/private/pages/shortcodes-list.php:90
 msgid "empty string"
 msgstr "Пустая строка"
 
@@ -7887,4 +7906,116 @@ msgstr ""
 #. Plugin Name of the plugin
 #: motopress-appointment.php
 msgid "Appointment Booking Lite"
+msgstr ""
+
+#: includes/admin-pages/custom/WizardPage.php:69
+#: includes/admin-pages/custom/WizardPage.php:76
+msgid "Wizard"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:77
+#: templates/private/pages/shortcodes-list.php:21
+msgid "Set up your Appointment Booking plugin in just a few simple steps! This wizard will guide you through adding your first service with the necessary settings. You can add unlimited services, staff members, and locations later."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:79
+#: templates/private/pages/shortcodes-list.php:21
+msgid "Run Wizard"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:80
+msgid "Skip"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:217
+msgid "Failed to create a location."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:222
+msgid "Failed to create an employee."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:229
+msgid "Failed to create a service."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:442
+msgid "Welcome to MotoPress Appointment Booking!"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:443
+msgid "It's great to have you here with us! We'll be guiding you through the setup process to help you get started easily."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:468
+msgid "Where does an appointment take place?"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:469
+msgid "A location is where an appointment takes place, such as a city, area, building, room, or online. Adding a location is required, though you can choose to hide it in the booking form later."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:494
+msgid "Who provides a service?"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:495
+msgid "An employee is the service provider responsible for the appointment, typically listed by name. Adding an employee is required, though you can choose to hide it in the booking form later."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:497
+msgid "A schedule for this employee is generated automatically and can be edited later in the Schedules menu."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:531
+msgid "Describe your service"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:532
+msgid "A service is the specific offering provided during an appointment. It can be a haircut, consultation, medical checkup, training session, or any other activity booked by a customer."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:605
+msgid "Booking Page"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:606
+msgid "Create a draft website page with an appointment booking form."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:614
+msgid "Define some key configurations for your appointment booking system. The Confirmation Mode option specifies how booking requests are approved."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:629
+msgid "Setup Complete – Ready to Go!"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:630
+msgid "Your appointment system is set up with default settings and ready for bookings. You can now also add more services, employees, locations, and customize settings and schedules."
+msgstr ""
+
+#. translators: %1$s is Placeholder for the draft page link.
+#: includes/handlers/WizardHandler.php:632
+msgid "Your draft page with the form: %1$s"
+msgstr ""
+
+#: templates/private/pages/wizard.php:8
+msgid "Welcome"
+msgstr ""
+
+#: templates/private/pages/wizard.php:13
+msgid "Complete"
+msgstr ""
+
+#: templates/private/pages/wizard.php:71
+msgid "Continue"
+msgstr ""
+
+#: templates/private/pages/wizard.php:74
+msgid "Finish Setup"
+msgstr ""
+
+#: templates/private/pages/wizard.php:84
+msgid "Skip Wizard"
 msgstr ""

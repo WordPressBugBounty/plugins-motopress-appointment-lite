@@ -240,7 +240,14 @@ class CurrenciesBundle {
 	 */
 	public function getSymbols() {
 		if ( empty( $this->symbols ) ) {
-			$this->symbols = $this->symbolsList();
+			$symbols = $this->symbolsList();
+
+			/**
+			 * @param array $symbols [Currency code => Currency symbol]
+			 */
+			$symbols = apply_filters( 'mpa_currency_symbols', $symbols );
+
+			$this->symbols = $symbols;
 		}
 
 		return $this->symbols;

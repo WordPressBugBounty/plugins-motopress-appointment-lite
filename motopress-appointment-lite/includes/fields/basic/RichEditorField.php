@@ -51,7 +51,7 @@ class RichEditorField extends TextareaField {
 				'media_buttons' => true,
 				'textarea_name' => $this->inputName,
 				'textarea_rows' => $this->rows,
-				'editor_clas'   => $this->class,
+				'editor_class'  => $this->class,
 				'tinymce'       => array(
 					'toolbar1' => 'bold,italic,strikethrough,bullist,numlist,blockquote,hr,alignleft,aligncenter,alignright,link,unlink,spellchecker,wp_adv',
 				),

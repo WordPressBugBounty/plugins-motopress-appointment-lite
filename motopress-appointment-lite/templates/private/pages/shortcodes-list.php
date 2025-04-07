@@ -17,6 +17,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <div id="shortcodes-wrap">
 	<h1 class="wp-heading-inline"><?php esc_html_e( 'Shortcodes', 'motopress-appointment' ); ?></h1>
+	<div class="notice">
+		<p><?php esc_html_e( 'Set up your Appointment Booking plugin in just a few simple steps! This wizard will guide you through adding your first service with the necessary settings. You can add unlimited services, staff members, and locations later.', 'motopress-appointment' ); ?> <a href="<?php echo esc_url( admin_url( 'admin.php?page=mpa_wizard' ) ); ?>" ><?php esc_html_e( 'Run Wizard', 'motopress-appointment' ); ?></a></p>
+
+	</div>
 	<table class="widefat striped">
 		<thead>
 			<tr>
