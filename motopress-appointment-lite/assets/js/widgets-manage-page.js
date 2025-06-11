@@ -2231,6 +2231,71 @@
 	}
 
 	/**
+	 * 
+	 * @since 2.4.0
+	 */
+	function mpa_filter_service_category_tree_by_slugs(tree, allowedSlugs) {
+	  const result = [];
+	  for (const category of tree) {
+	    const match = allowedSlugs.includes(category.slug);
+	    const children = Array.isArray(category.children) ? category.children : [];
+	    const filteredChildren = children.length ? mpa_filter_service_category_tree_by_slugs(children, allowedSlugs) : [];
+	    if (match || filteredChildren.length > 0) {
+	      result.push({
+	        ...category,
+	        children: filteredChildren
+	      });
+	    }
+	  }
+	  return result;
+	}
+
+	/**
+	 * 
+	 * @since 2.4.0
+	 */
+	function mpa_extract_slugs_from_service_category_tree(tree) {
+	  let result = [];
+	  for (const category of tree) {
+	    if (category.slug) {
+	      result.push(category.slug);
+	    }
+	    if (Array.isArray(category.children)) {
+	      result = result.concat(mpa_extract_slugs_from_service_category_tree(category.children));
+	    }
+	  }
+	  return result;
+	}
+
+	/**
+	 * 
+	 * @since 2.4.0
+	 */
+	function mpa_flatten_service_category_tree(tree, indexes = [], allowed = null, level = 0) {
+	  const result = [];
+	  const indexMap = new Map(indexes.map((slug, idx) => [slug, idx]));
+	  const sortedTree = [...tree].sort((a, b) => {
+	    var _indexMap$get, _indexMap$get2;
+	    const idxA = (_indexMap$get = indexMap.get(a.slug)) !== null && _indexMap$get !== void 0 ? _indexMap$get : Number.MAX_SAFE_INTEGER;
+	    const idxB = (_indexMap$get2 = indexMap.get(b.slug)) !== null && _indexMap$get2 !== void 0 ? _indexMap$get2 : Number.MAX_SAFE_INTEGER;
+	    return idxA - idxB;
+	  });
+	  for (const category of sortedTree) {
+	    if (Array.isArray(allowed) && !allowed.includes(category.slug)) {
+	      continue;
+	    }
+	    result.push({
+	      id: category.slug,
+	      name: '&nbsp;&nbsp;'.repeat(level) + category.name
+	    });
+	    if (Array.isArray(category.children)) {
+	      result.push(...mpa_flatten_service_category_tree(category.children, indexes, allowed, level + 1));
+	    }
+	  }
+	  return result;
+	}
+
+	/**
 	 * @since 1.4.0
 	 *
 	 * @param {*} value
@@ -2329,6 +2394,18 @@
 	     * @access protected
 	     */
 	    this.readyPromise = null;
+
+	    /**
+	     * @since 2.4.0 add ordering
+	     * @var {Array} serviceIndexes indexes
+	     * @var {Array} categoryIndexes indexes
+	     * @var {Array} employeeIndexes indexes
+	     * @var {Array} locationIndexes indexes
+	     */
+	    this.serviceIndexes = [];
+	    this.categoryIndexes = [];
+	    this.employeeIndexes = [];
+	    this.locationIndexes = [];
 	  }
 
 	  /**
@@ -2337,19 +2414,40 @@
 	  constructor() {
 	    this.setupProperties();
 	  }
-
-	  /**
-	   * @since 2.0.0
-	   *
-	   * @param {Boolean} forceReload
-	   * @return {Promise}
-	   */
 	  load(forceReload = false) {
-	    this.readyPromise = mpa_extract_available_services(forceReload).then(availability => {
-	      this.setAvailability(availability);
+	    this.readyPromise = mpa_extract_available_services(forceReload).then(response => {
+	      const {
+	        services,
+	        services_order,
+	        categories_order,
+	        employees_order,
+	        locations_order,
+	        categories_tree
+	      } = response;
+	      this.setServiceIndexes(services_order || []);
+	      this.setCategoryIndexes(categories_order || []);
+	      this.setEmployeeIndexes(employees_order || []);
+	      this.setLocationIndexes(locations_order || []);
+	      this.setServiceCategoriesTree(categories_tree || {});
+	      this.setAvailability(services);
 	      return this;
 	    });
 	    return this.readyPromise;
+	  }
+	  setServiceCategoriesTree(tree) {
+	    this.categories_tree = tree;
+	  }
+	  setServiceIndexes(indexes) {
+	    this.serviceIndexes = indexes;
+	  }
+	  setCategoryIndexes(indexes) {
+	    this.categoryIndexes = indexes;
+	  }
+	  setEmployeeIndexes(indexes) {
+	    this.employeeIndexes = indexes;
+	  }
+	  setLocationIndexes(indexes) {
+	    this.locationIndexes = indexes;
 	  }
 
 	  /**
@@ -2456,6 +2554,14 @@
 	   */
 	  getServiceCategories(serviceId) {
 	    return this.availability[serviceId].categories;
+	  }
+
+	  /**
+	   * @since 2.4.0
+	   * @return {Object}
+	   */
+	  getServiceCategoriesTree() {
+	    return this.categories_tree || {};
 	  }
 
 	  /**
@@ -2788,33 +2894,24 @@
 	}
 
 	/**
-	 * @param {Object} options
-	 * @param {*} selected
-	 * @return {String}
-	 *
-	 * @since 1.0
-	 */
-	function mpa_tmpl_select_options(options, selected) {
-	  let output = '';
-	  for (let value in options) {
-	    output += mpa_tmpl_select_option(value, options[value], value == selected);
-	  }
-	  return output;
-	}
-
-	/**
-	 * @param {Object} $select jQuery element.
+	 * @param {jQuery} $select
 	 * @param {Object} emptyOptions '— Select —'/'— Any —' value.
-	 * @param {Object} allowedOptions All other values.
-	 * @param {*} selected Selected option value.
-	 *
-	 * @since 1.19.0
+	 * @param {Array} allowedOptions [{ id: 195, name: 'Service A' }, ...]
+	 * @param {*} selected
+	 * 
+	* @since 1.19.0
+	* @since 2.4.0 add ordering
 	 */
 	function update_select_options($select, emptyOptions, allowedOptions, selected) {
-	  let emptyOptionsHtml = mpa_tmpl_select_options(emptyOptions, selected);
-	  let allowedOptionsHtml = mpa_tmpl_select_options(allowedOptions, selected);
-	  let optionsHtml = emptyOptionsHtml + allowedOptionsHtml;
-	  $select.empty().append(optionsHtml).val(selected);
+	  let optionsHtml = '';
+	  const selectedStr = String(selected);
+	  for (const [value, label] of Object.entries(emptyOptions)) {
+	    optionsHtml += mpa_tmpl_select_option(value, label, value === selectedStr);
+	  }
+	  for (let option of allowedOptions) {
+	    optionsHtml += mpa_tmpl_select_option(String(option.id), option.name, String(option.id) === selectedStr);
+	  }
+	  $select.empty().append(optionsHtml).val(selectedStr);
 	}
 
 	/**
@@ -3027,22 +3124,53 @@
 	    const selectedCategory = this.availability.isAvailableServiceCategory(categorySlug) ? categorySlug : '';
 	    const selectedLocation = this.availability.isAvailableLocation(locationId) ? locationId : 0;
 	    const selectedEmployee = this.availability.isAvailableEmployee(employeeId) ? employeeId : 0;
-	    const availableServiceCategories = this.availability.getAvailableServiceCategories();
+	    const availableServiceCategories = selectedService !== 0 ? this.availability.getServiceCategories(selectedService) : this.availability.getAvailableServiceCategories();
 	    const availableServices = this.availability.getAvailableServices(selectedCategory, selectedLocation, selectedEmployee);
 	    const availableLocations = this.availability.getAvailableLocations(selectedService, selectedEmployee);
 	    const availableEmployees = this.availability.getAvailableEmployees(selectedService, selectedLocation);
+	    const fullCategoryTree = Object.values(this.availability.getServiceCategoriesTree());
+	    const attachedSlugs = Object.keys(availableServiceCategories);
+	    let allowedSlugs;
+	    if (selectedService !== 0) {
+	      const filteredTree = mpa_filter_service_category_tree_by_slugs(fullCategoryTree, attachedSlugs);
+	      allowedSlugs = mpa_extract_slugs_from_service_category_tree(filteredTree);
+	    } else {
+	      allowedSlugs = null; // show all
+	    }
+
+	    const categoriesOrderedArray = mpa_flatten_service_category_tree(fullCategoryTree, this.availability.categoryIndexes, allowedSlugs);
+	    const servicesOrderedArray = this.availability.serviceIndexes.filter(id => availableServices.hasOwnProperty(id)).map(id => ({
+	      id,
+	      name: availableServices[id]
+	    }));
+	    const locationsOrderedArray = this.availability.locationIndexes.filter(id => availableLocations.hasOwnProperty(id)).map(id => ({
+	      id,
+	      name: availableLocations[id]
+	    }));
+	    const employeesOrderedArray = this.availability.employeeIndexes.filter(id => availableEmployees.hasOwnProperty(id)).map(id => ({
+	      id,
+	      name: availableEmployees[id]
+	    }));
+
+	    // categories 
 	    update_select_options(this.$defaultCategory, {
 	      '': unselectedOptionText
-	    }, availableServiceCategories, availableServiceCategories.hasOwnProperty(selectedCategory) ? selectedCategory : '');
+	    }, categoriesOrderedArray, availableServiceCategories.hasOwnProperty(selectedCategory) ? selectedCategory : '');
+
+	    // services
 	    update_select_options(this.$defaultService, {
-	      0: unselectedServiceText
-	    }, availableServices, availableServices.hasOwnProperty(selectedService) ? selectedService : 0);
+	      '': unselectedServiceText
+	    }, servicesOrderedArray, availableServices.hasOwnProperty(selectedService) ? selectedService : '');
+
+	    // locations
 	    update_select_options(this.$defaultLocation, {
-	      0: unselectedOptionText
-	    }, availableLocations, availableLocations.hasOwnProperty(selectedLocation) ? selectedLocation : 0);
+	      '': unselectedOptionText
+	    }, locationsOrderedArray, availableLocations.hasOwnProperty(selectedLocation) ? selectedLocation : '');
+
+	    // employees
 	    update_select_options(this.$defaultEmployee, {
-	      0: unselectedOptionText
-	    }, availableEmployees, availableEmployees.hasOwnProperty(selectedEmployee) ? selectedEmployee : 0);
+	      '': unselectedOptionText
+	    }, employeesOrderedArray, availableEmployees.hasOwnProperty(selectedEmployee) ? selectedEmployee : '');
 	  }
 	  initColorPicker() {
 	    const $fields = this.$widget.find('.mpa-color-picker-ctrl');

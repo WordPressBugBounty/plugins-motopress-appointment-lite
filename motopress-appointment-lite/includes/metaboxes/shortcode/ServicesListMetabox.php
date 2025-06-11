@@ -53,7 +53,7 @@ class ServicesListMetabox extends AbstractShortcodeMetabox {
 					'capacity'  => esc_html__( 'Capacity', 'motopress-appointment' ),
 					'employees' => esc_html__( 'Employees', 'motopress-appointment' ),
 				),
-				'value'       => array( 'image', 'title', 'excerpt', 'price', 'duration', 'capacity', 'employees' ),
+				'default'     => array( 'image', 'title', 'excerpt', 'price', 'duration', 'capacity', 'employees' ),
 			),
 			'services'       => array(
 				'type'        => 'text',

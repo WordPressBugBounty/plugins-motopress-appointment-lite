@@ -161,6 +161,17 @@ class ManageBookingsPage extends ManagePostsPage {
 				}
 			}
 		);
+
+		add_filter( 'post_row_actions',
+			function( $actions, $post ) {
+				if ( $post->post_type == mpapp()->postTypes()->booking()->getPostType() ) {
+					unset( $actions['inline hide-if-no-js'] );
+				}
+				return $actions;
+			},
+			10,
+			2
+		);
 	}
 
 	protected function enqueueScripts() {
@@ -575,14 +586,15 @@ class ManageBookingsPage extends ManagePostsPage {
 		$isMultibooking = mpapp()->settings()->isMultibookingEnabled();
 
 		return array(
-			'status'    => esc_html__( 'Status', 'motopress-appointment' ),
-			'customer'  => esc_html__( 'Customer', 'motopress-appointment' ),
-			'price'     => esc_html__( 'Price', 'motopress-appointment' ),
-			'services'  => $isMultibooking ? esc_html__( 'Services', 'motopress-appointment' ) : esc_html__( 'Service', 'motopress-appointment' ),
-			'employees' => $isMultibooking ? esc_html__( 'Employees', 'motopress-appointment' ) : esc_html__( 'Employee', 'motopress-appointment' ),
-			'time'      => esc_html__( 'Time', 'motopress-appointment' ),
-			'quantity'  => esc_html__( 'Quantity', 'motopress-appointment' ),
-			'mpa_date'  => esc_html__( 'Date' ),
+			'id'           => esc_html__( 'ID', 'motopress-appointment' ),
+			'services'     => $isMultibooking ? esc_html__( 'Services', 'motopress-appointment' ) : esc_html__( 'Service', 'motopress-appointment' ),
+			'service_date' => esc_html__( 'Date', 'motopress-appointment' ),
+			'service_time' => esc_html__( 'Time', 'motopress-appointment' ),
+			'employees'    => $isMultibooking ? esc_html__( 'Employees', 'motopress-appointment' ) : esc_html__( 'Employee', 'motopress-appointment' ),
+			'price'        => esc_html__( 'Price', 'motopress-appointment' ),
+			'status'       => esc_html__( 'Status', 'motopress-appointment' ),
+			'customer'     => esc_html__( 'Customer', 'motopress-appointment' ),
+			'mpa_date'     => esc_html__( 'Date' ),
 		);
 	}
 
@@ -594,7 +606,20 @@ class ManageBookingsPage extends ManagePostsPage {
 
 		$columns = parent::filterColumns( $columns );
 
-		unset( $columns['date'] );
+		if ( isset( $columns['title'] ) ) {
+			unset( $columns['title'] );
+		}
+
+		if ( isset( $columns['date'] ) ) {
+			unset( $columns['date'] );
+		}
+
+		return $columns;
+	}
+
+	public function filterSortableColumns( $columns ) {
+
+		$columns['id'] = 'ID';
 
 		return $columns;
 	}
@@ -606,6 +631,10 @@ class ManageBookingsPage extends ManagePostsPage {
 	protected function displayValue( $columnName, $booking ) {
 
 		switch ( $columnName ) {
+
+			case 'id':
+				printf( '<a href="%s"><strong>' . esc_html( '#%s' ) . '</strong></a>', esc_url( get_edit_post_link( $booking->getId() ) ), esc_html( $booking->getId() ) );
+				break;
 
 			case 'status':
 				// phpcs:ignore
@@ -637,14 +666,14 @@ class ManageBookingsPage extends ManagePostsPage {
 
 				if ( $customerEmail ) {
 
-					$customerInfo[] = '<a href="mailto:' . esc_attr( $customerEmail ) . '">' . $customerEmail . '</a>';
+					$customerInfo[] = '<a href="mailto:' . esc_attr( $customerEmail ) . '">' . esc_html( $customerEmail ) . '</a>';
 				}
 
 				$customerPhone = $booking->getCustomerPhone();
 
 				if ( $customerPhone ) {
 
-					$customerInfo[] = '<a href="tel:' . esc_attr( $customerPhone ) . '">' . $customerPhone . '</a>';
+					$customerInfo[] = '<a href="tel:' . esc_attr( $customerPhone ) . '">' . esc_html( $customerPhone ) . '</a>';
 				}
 
 				if ( ! empty( $customerInfo ) ) {
@@ -683,7 +712,13 @@ class ManageBookingsPage extends ManagePostsPage {
 					function ( $reservation ) {
 
 						$serviceName = get_the_title( $reservation->getServiceId() );
-						return $serviceName ? $serviceName : mpa_tmpl_placeholder();
+						$quantity = $reservation->getCapacity();
+
+						return sprintf(
+							( ( $quantity > 1 ) ? '%1$s &times; %2$s' : '%2$s' ),
+							$quantity ? $quantity : mpa_tmpl_placeholder(),
+							$serviceName ? $serviceName : mpa_tmpl_placeholder()
+						);
 					},
 					$booking->getReservations()
 				);
@@ -719,15 +754,12 @@ class ManageBookingsPage extends ManagePostsPage {
 
 				break;
 
-			case 'time':
+			case 'service_date':
 				// Pull dates
 				$dates = array_map(
 					function ( $reservation ) {
 
-						$date = mpa_format_date( $reservation->getDate() );
-						$time = $reservation->getServiceTime()->toString();
-
-						return "{$date}, {$time}";
+						return mpa_format_date( $reservation->getDate() );
 					},
 					$booking->getReservations()
 				);
@@ -735,6 +767,26 @@ class ManageBookingsPage extends ManagePostsPage {
 				if ( ! empty( $dates ) ) {
 					// phpcs:ignore
 					echo implode( '<br>', $dates );
+				} else {
+					// phpcs:ignore
+					echo mpa_tmpl_placeholder();
+				}
+
+				break;
+
+			case 'service_time':
+				// Pull times
+				$times = array_map(
+					function ( $reservation ) {
+
+						return $reservation->getServiceTime()->toString();
+					},
+					$booking->getReservations()
+				);
+
+				if ( ! empty( $times ) ) {
+					// phpcs:ignore
+					echo implode( '<br>', $times );
 				} else {
 					// phpcs:ignore
 					echo mpa_tmpl_placeholder();
@@ -762,7 +814,7 @@ class ManageBookingsPage extends ManagePostsPage {
 
 			case 'mpa_date':
 				?>
-				<abbr title="<?php echo esc_attr( get_the_date( mpapp()->settings()->getDateFormat(), $booking->getId() ) ); ?>">
+				<abbr title="<?php echo esc_attr( get_the_date( mpapp()->settings()->getPostDateTimeFormat(), $booking->getId() ) ); ?>">
 					<?php echo get_the_date( 'Y/m/d', $booking->getId() ); ?>
 				</abbr>
 				<?php

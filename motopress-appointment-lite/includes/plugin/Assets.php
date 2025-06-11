@@ -59,6 +59,9 @@ class Assets {
 	 * @since 1.0
 	 */
 	protected function addActions() {
+		// The Booking Form plugin uses newer versions of libraries like
+		// Flatpickr, which it registers with priority 5 and thus replaces the
+		// Appointment Booking library versions
 		add_action( 'init', array( $this, 'initAssets' ), 15 );
 		add_action( 'init', array( $this, 'registerAssets' ), 15 );
 		add_action( 'wp_print_scripts', array( $this, 'enqueueAllLocalizeData' ) );

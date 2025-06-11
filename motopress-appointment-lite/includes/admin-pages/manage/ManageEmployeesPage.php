@@ -145,8 +145,20 @@ class ManageEmployeesPage extends ManagePostsPage {
 	 */
 	protected function customColumns() {
 		return array(
-			'contacts' => __( 'Contacts', 'motopress-appointment' ),
-			'services' => __( 'Services', 'motopress-appointment' ),
+			'contacts'   => __( 'Contacts', 'motopress-appointment' ),
+			'services'   => __( 'Services', 'motopress-appointment' ),
+			'menu_order' => __( 'Order', 'motopress-appointment' ),
+		);
+	}
+
+	/**
+	 * @return array
+	 *
+	 * @since 2.4.0
+	 */
+	protected function customSortableColumns() {
+		return array(
+			'menu_order' => 'menu_order',
 		);
 	}
 
@@ -159,6 +171,12 @@ class ManageEmployeesPage extends ManagePostsPage {
 	protected function displayValue( $columnName, $entity ) {
 
 		switch ( $columnName ) {
+
+			// @since 2.4.0
+			case 'menu_order':
+				echo esc_html( get_post_field( 'menu_order', $entity->getId() ) );
+				break;
+
 			case 'contacts':
 				$contacts = array();
 

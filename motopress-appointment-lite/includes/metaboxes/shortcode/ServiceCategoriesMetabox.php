@@ -49,7 +49,7 @@ class ServiceCategoriesMetabox extends AbstractShortcodeMetabox {
 					'count'       => esc_html__( 'Services count', 'motopress-appointment' ),
 					'description' => esc_html__( 'Description', 'motopress-appointment' ),
 				),
-				'value'       => array( 'image', 'count', 'description' ),
+				'default'     => array( 'image', 'count', 'description' ),
 			),
 			'parent'             => array(
 				'type'        => 'text',

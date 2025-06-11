@@ -49,7 +49,7 @@ class LocationsListMetabox extends AbstractShortcodeMetabox {
 					'title'   => esc_html__( 'Post title', 'motopress-appointment' ),
 					'excerpt' => esc_html__( 'Excerpt', 'motopress-appointment' ),
 				),
-				'value'       => array( 'image', 'title', 'excerpt' ),
+				'default'    => array( 'image', 'title', 'excerpt' ),
 			),
 			'locations'      => array(
 				'type'        => 'text',

@@ -60,7 +60,7 @@ class ChecklistField extends AbstractField {
 	protected function validateValue( $value ) {
 
 		if ( '' === $value ) {
-			return $this->default;
+			return array();
 		}
 
 		$values = is_array( $value ) ? $value : array( $value );

@@ -2466,6 +2466,71 @@
 	}
 
 	/**
+	 * 
+	 * @since 2.4.0
+	 */
+	function mpa_filter_service_category_tree_by_slugs(tree, allowedSlugs) {
+	  const result = [];
+	  for (const category of tree) {
+	    const match = allowedSlugs.includes(category.slug);
+	    const children = Array.isArray(category.children) ? category.children : [];
+	    const filteredChildren = children.length ? mpa_filter_service_category_tree_by_slugs(children, allowedSlugs) : [];
+	    if (match || filteredChildren.length > 0) {
+	      result.push({
+	        ...category,
+	        children: filteredChildren
+	      });
+	    }
+	  }
+	  return result;
+	}
+
+	/**
+	 * 
+	 * @since 2.4.0
+	 */
+	function mpa_extract_slugs_from_service_category_tree(tree) {
+	  let result = [];
+	  for (const category of tree) {
+	    if (category.slug) {
+	      result.push(category.slug);
+	    }
+	    if (Array.isArray(category.children)) {
+	      result = result.concat(mpa_extract_slugs_from_service_category_tree(category.children));
+	    }
+	  }
+	  return result;
+	}
+
+	/**
+	 * 
+	 * @since 2.4.0
+	 */
+	function mpa_flatten_service_category_tree(tree, indexes = [], allowed = null, level = 0) {
+	  const result = [];
+	  const indexMap = new Map(indexes.map((slug, idx) => [slug, idx]));
+	  const sortedTree = [...tree].sort((a, b) => {
+	    var _indexMap$get, _indexMap$get2;
+	    const idxA = (_indexMap$get = indexMap.get(a.slug)) !== null && _indexMap$get !== void 0 ? _indexMap$get : Number.MAX_SAFE_INTEGER;
+	    const idxB = (_indexMap$get2 = indexMap.get(b.slug)) !== null && _indexMap$get2 !== void 0 ? _indexMap$get2 : Number.MAX_SAFE_INTEGER;
+	    return idxA - idxB;
+	  });
+	  for (const category of sortedTree) {
+	    if (Array.isArray(allowed) && !allowed.includes(category.slug)) {
+	      continue;
+	    }
+	    result.push({
+	      id: category.slug,
+	      name: '&nbsp;&nbsp;'.repeat(level) + category.name
+	    });
+	    if (Array.isArray(category.children)) {
+	      result.push(...mpa_flatten_service_category_tree(category.children, indexes, allowed, level + 1));
+	    }
+	  }
+	  return result;
+	}
+
+	/**
 	 * @since 1.4.0
 	 *
 	 * @param {*} value
@@ -2609,6 +2674,18 @@
 	     * @access protected
 	     */
 	    this.readyPromise = null;
+
+	    /**
+	     * @since 2.4.0 add ordering
+	     * @var {Array} serviceIndexes indexes
+	     * @var {Array} categoryIndexes indexes
+	     * @var {Array} employeeIndexes indexes
+	     * @var {Array} locationIndexes indexes
+	     */
+	    this.serviceIndexes = [];
+	    this.categoryIndexes = [];
+	    this.employeeIndexes = [];
+	    this.locationIndexes = [];
 	  }
 
 	  /**
@@ -2617,19 +2694,40 @@
 	  constructor() {
 	    this.setupProperties();
 	  }
-
-	  /**
-	   * @since 2.0.0
-	   *
-	   * @param {Boolean} forceReload
-	   * @return {Promise}
-	   */
 	  load(forceReload = false) {
-	    this.readyPromise = mpa_extract_available_services(forceReload).then(availability => {
-	      this.setAvailability(availability);
+	    this.readyPromise = mpa_extract_available_services(forceReload).then(response => {
+	      const {
+	        services,
+	        services_order,
+	        categories_order,
+	        employees_order,
+	        locations_order,
+	        categories_tree
+	      } = response;
+	      this.setServiceIndexes(services_order || []);
+	      this.setCategoryIndexes(categories_order || []);
+	      this.setEmployeeIndexes(employees_order || []);
+	      this.setLocationIndexes(locations_order || []);
+	      this.setServiceCategoriesTree(categories_tree || {});
+	      this.setAvailability(services);
 	      return this;
 	    });
 	    return this.readyPromise;
+	  }
+	  setServiceCategoriesTree(tree) {
+	    this.categories_tree = tree;
+	  }
+	  setServiceIndexes(indexes) {
+	    this.serviceIndexes = indexes;
+	  }
+	  setCategoryIndexes(indexes) {
+	    this.categoryIndexes = indexes;
+	  }
+	  setEmployeeIndexes(indexes) {
+	    this.employeeIndexes = indexes;
+	  }
+	  setLocationIndexes(indexes) {
+	    this.locationIndexes = indexes;
 	  }
 
 	  /**
@@ -2736,6 +2834,14 @@
 	   */
 	  getServiceCategories(serviceId) {
 	    return this.availability[serviceId].categories;
+	  }
+
+	  /**
+	   * @since 2.4.0
+	   * @return {Object}
+	   */
+	  getServiceCategoriesTree() {
+	    return this.categories_tree || {};
 	  }
 
 	  /**
@@ -4325,7 +4431,7 @@
 	/**
 	 * @since 1.0
 	 */
-	class Map {
+	let Map$1 = class Map {
 	  /**
 	   * @param {Object|Null} values Optional. Starting values. Null by default.
 	   *
@@ -4667,7 +4773,7 @@
 	  getLength() {
 	    return this.length;
 	  }
-	}
+	};
 
 	/**
 	 * @since 1.0
@@ -4682,7 +4788,7 @@
 	     * @since 1.0
 	     * @var {Map}
 	     */
-	    this.items = new Map();
+	    this.items = new Map$1();
 
 	    /**
 	     * @since 1.4.0 (Replaced the property <code>selectedItem</code>)
@@ -5111,7 +5217,7 @@
 	   */
 	  constructor(cart) {
 	    this.cart = cart;
-	    this.steps = new Map();
+	    this.steps = new Map$1();
 	    this.currentStep = null;
 	    this.currentStepId = '';
 	  }
@@ -5838,7 +5944,18 @@
 	      // However, without using external libraries, it's impossible to calculate the correct timezone offset for daylight/standard time.
 	      icsComponents.push('BEGIN:VTIMEZONE', 'TZID:' + timezone, 'END:VTIMEZONE');
 	    }
-	    icsComponents.push('BEGIN:VEVENT', 'DTSTAMP:' + this.formatDateToCalendar(new Date()), 'UID:' + uid, 'DTSTART' + (this.isTimezoneProvideByIANA(timezone) ? ';TZID=' + timezone + ':' : ':') + formattedStartDate, 'DTEND' + (this.isTimezoneProvideByIANA(timezone) ? ';TZID=' + timezone + ':' : ':') + formattedEndDate, 'SUMMARY:' + summary, 'DESCRIPTION:' + description, 'LOCATION:' + location, 'END:VEVENT');
+	    let veventData = {
+	      dtstamp: 'DTSTAMP:' + this.formatDateToCalendar(new Date()),
+	      uid: 'UID:' + uid,
+	      dtstart: 'DTSTART' + (this.isTimezoneProvideByIANA(timezone) ? ';TZID=' + timezone + ':' : ':') + formattedStartDate,
+	      dtend: 'DTEND' + (this.isTimezoneProvideByIANA(timezone) ? ';TZID=' + timezone + ':' : ':') + formattedEndDate,
+	      summary: 'SUMMARY:' + summary,
+	      description: 'DESCRIPTION:' + description,
+	      location: 'LOCATION:' + location
+	    };
+	    veventData = wp.hooks.applyFilters('mpa_prepare_vevent_data', veventData);
+	    let vevent = Object.values(veventData);
+	    icsComponents.push('BEGIN:VEVENT', ...vevent, 'END:VEVENT');
 	    icsComponents.push('END:VCALENDAR');
 	    const icsData = icsComponents.join('\n');
 	    const blob = new Blob([icsData], {
@@ -5942,9 +6059,9 @@
 	      $newItem.find('.reservation-title').html(titleHtml);
 	      $newItem.find('.reservation-date').html(mpa_format_date(cartItem.date));
 	      $newItem.find('.reservation-time').html(cartItem.time.toString());
-	      const ICSDownloadUrl = AddToCalendar.createICSURL(cartItem.getItemId(), cartItem.time.startTime, cartItem.time.endTime, title, summary, cartItem.location.name);
-	      const googleCalendarURL = AddToCalendar.createGoogleCalendarURL(cartItem.time.startTime, cartItem.time.endTime, title, summary, cartItem.location.name);
-	      const yahooCalendarURL = AddToCalendar.createYahooCalendarURL(cartItem.time.startTime, cartItem.time.endTime, title, summary, cartItem.location.name);
+	      const ICSDownloadUrl = AddToCalendar.createICSURL(cartItem.getItemId(), cartItem.time.startTime, cartItem.time.endTime, title, summary, wp.hooks.applyFilters('mpa_booking_cart_item_location_ics', cartItem.location.name, cartItem));
+	      const googleCalendarURL = AddToCalendar.createGoogleCalendarURL(cartItem.time.startTime, cartItem.time.endTime, title, summary, wp.hooks.applyFilters('mpa_booking_cart_item_location_google', cartItem.location.name, cartItem));
+	      const yahooCalendarURL = AddToCalendar.createYahooCalendarURL(cartItem.time.startTime, cartItem.time.endTime, title, summary, wp.hooks.applyFilters('mpa_booking_cart_item_location_yahoo', cartItem.location.name, cartItem));
 	      this.assignURL($newItem.find('.mpa-add-to-calendar-link--google'), googleCalendarURL);
 	      this.assignURL($newItem.find('.mpa-add-to-calendar-link--apple'), ICSDownloadUrl);
 	      this.assignURL($newItem.find('.mpa-add-to-calendar-link--outlook'), ICSDownloadUrl);
@@ -6055,6 +6172,7 @@
 	      }
 	      this.isPosted = this.isBooked = true;
 	      this.cart.paymentDetails.booking_id = response.booking_id;
+	      wp.hooks.doAction('mpa_booking_cart_response', response, this.cart);
 	      this.setMessage(response.message);
 	      if (this.bookingDetails) {
 	        this.bookingDetails.initBookingCart();
@@ -6493,18 +6611,24 @@
 	}
 
 	/**
-	 * @param {Object} $select jQuery element.
+	 * @param {jQuery} $select
 	 * @param {Object} emptyOptions '— Select —'/'— Any —' value.
-	 * @param {Object} allowedOptions All other values.
-	 * @param {*} selected Selected option value.
-	 *
-	 * @since 1.19.0
+	 * @param {Array} allowedOptions [{ id: 195, name: 'Service A' }, ...]
+	 * @param {*} selected
+	 * 
+	* @since 1.19.0
+	* @since 2.4.0 add ordering
 	 */
 	function update_select_options($select, emptyOptions, allowedOptions, selected) {
-	  let emptyOptionsHtml = mpa_tmpl_select_options(emptyOptions, selected);
-	  let allowedOptionsHtml = mpa_tmpl_select_options(allowedOptions, selected);
-	  let optionsHtml = emptyOptionsHtml + allowedOptionsHtml;
-	  $select.empty().append(optionsHtml).val(selected);
+	  let optionsHtml = '';
+	  const selectedStr = String(selected);
+	  for (const [value, label] of Object.entries(emptyOptions)) {
+	    optionsHtml += mpa_tmpl_select_option(value, label, value === selectedStr);
+	  }
+	  for (let option of allowedOptions) {
+	    optionsHtml += mpa_tmpl_select_option(String(option.id), option.name, String(option.id) === selectedStr);
+	  }
+	  $select.empty().append(optionsHtml).val(selectedStr);
 	}
 
 	/**
@@ -7604,7 +7728,7 @@
 	     * @since 1.5.0
 	     * @var {Map} Key - method name ('card', 'ideal'), value - {$nav, $fields}.
 	     */
-	    this.paymentMethods = new Map();
+	    this.paymentMethods = new Map$1();
 
 	    /**
 	     * @since 1.5.0
@@ -10903,53 +11027,68 @@
 	    // Always enable submit button to allow validation messages
 	    this.$buttonNext.prop('disabled', false);
 	  }
-
-	  /**
-	   * @since 1.19.0
-	   * @access protected
-	   */
 	  renderCategorySelect() {
 	    this.preventUpdate = true;
+	    const categoryTree = Object.values(this.availabilityService.getServiceCategoriesTree());
+	    const orderedIndexes = this.availabilityService.categoryIndexes.map(String);
+	    let allowedSlugs;
+	    const serviceId = parseInt(this.serviceId, 10);
+	    if (serviceId > 0) {
+	      const categorySlugMap = this.availabilityService.getServiceCategories(serviceId);
+	      const attachedSlugs = Object.keys(categorySlugMap);
+	      const filteredTree = mpa_filter_service_category_tree_by_slugs(categoryTree, attachedSlugs);
+	      allowedSlugs = mpa_extract_slugs_from_service_category_tree(filteredTree);
+	    } else {
+	      allowedSlugs = null; // show all
+	    }
+
+	    const flattened = mpa_flatten_service_category_tree(categoryTree, orderedIndexes, allowedSlugs);
+	    const selected = this.category || '';
 	    update_select_options(this.$categoriesSelect, {
 	      '': this.unselectedOptionText
-	    }, this.availabilityService.getAvailableServiceCategories(), this.category || '');
+	    }, flattened, selected);
 	    this.preventUpdate = false;
 	  }
-
-	  /**
-	   * @since 1.19.0
-	   * @access protected
-	   */
 	  renderServiceSelect() {
 	    this.preventUpdate = true;
-	    let availableServices = this.availabilityService.getAvailableServices(this.category, this.locationId, this.employeeId);
+	    const availableServices = this.availabilityService.getAvailableServices(this.category, this.locationId, this.employeeId);
+	    const serviceOrder = this.availabilityService.serviceIndexes;
+	    const orderedArray = serviceOrder.filter(id => availableServices.hasOwnProperty(id)).map(id => ({
+	      id,
+	      name: availableServices[id]
+	    }));
+	    const selected = this.serviceId === 0 ? '' : String(this.serviceId);
 	    update_select_options(this.$servicesSelect, {
 	      '': this.unselectedServiceText
-	    }, availableServices, this.serviceId in availableServices ? this.serviceId : '');
+	    }, orderedArray, selected);
 	    this.preventUpdate = false;
 	  }
-
-	  /**
-	   * @since 1.19.0
-	   * @access protected
-	   */
 	  renderEmployeeSelect() {
 	    this.preventUpdate = true;
+	    const employees = this.availabilityService.getAvailableEmployees(this.serviceId, this.locationId);
+	    const order = this.availabilityService.employeeIndexes;
+	    const orderedArray = order.filter(id => employees.hasOwnProperty(id)).map(id => ({
+	      id,
+	      name: employees[id]
+	    }));
+	    const selected = this.employeeId === 0 ? '0' : String(this.employeeId);
 	    update_select_options(this.$employeesSelect, {
 	      0: this.unselectedOptionText
-	    }, this.availabilityService.getAvailableEmployees(this.serviceId, this.locationId), this.employeeId);
+	    }, orderedArray, selected);
 	    this.preventUpdate = false;
 	  }
-
-	  /**
-	   * @since 1.19.0
-	   * @access protected
-	   */
 	  renderLocationSelect() {
 	    this.preventUpdate = true;
+	    const locations = this.availabilityService.getAvailableLocations(this.serviceId, this.employeeId);
+	    const order = this.availabilityService.locationIndexes;
+	    const orderedArray = order.filter(id => locations.hasOwnProperty(id)).map(id => ({
+	      id,
+	      name: locations[id]
+	    }));
+	    const selected = this.locationId === 0 ? '0' : String(this.locationId);
 	    update_select_options(this.$locationsSelect, {
 	      0: this.unselectedOptionText
-	    }, this.availabilityService.getAvailableLocations(this.serviceId, this.employeeId), this.locationId);
+	    }, orderedArray, selected);
 	    this.preventUpdate = false;
 	  }
 	  show() {
@@ -12079,6 +12218,9 @@
 	      }, {
 	        value: 'term_order',
 	        label: wp_i18n.__('Term order', 'motopress-appointment')
+	      }, {
+	        value: 'service_category_order',
+	        label: wp_i18n.__('Page order', 'motopress-appointment')
 	      }]
 	    }), orderby !== 'none' && wp.element.createElement(SelectControl$1, {
 	      label: wp_i18n.__('Order', 'motopress-appointment'),

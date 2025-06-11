@@ -442,3 +442,22 @@ function mpa_generate_css( $selectors, $variables ) {
 
 	return $css;
 }
+
+/**
+ * Outputs a debug marker for the plugin version in the HTML markup.
+ */
+function mpa_print_version_comment() {
+
+	if ( ! is_front_page() ) {
+
+		return;
+	}
+
+	echo "\n" . sprintf(
+		'<!-- This site uses %1$s plugin by %2$s %3$s - %4$s -->',
+		esc_html( mpapp()->getName() ),
+		esc_html( mpapp()->getAuthor() ),
+		esc_html( 'v' . mpapp()->getVersion() ),
+		esc_url( mpapp()->getPluginStoreUri() )
+	) . "\n";
+}

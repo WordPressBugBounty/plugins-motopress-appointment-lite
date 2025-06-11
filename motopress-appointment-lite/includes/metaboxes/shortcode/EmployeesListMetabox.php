@@ -52,7 +52,7 @@ class EmployeesListMetabox extends AbstractShortcodeMetabox {
 					'social_networks' => esc_html__( 'Social Networks', 'motopress-appointment' ),
 					'additional_info' => esc_html__( 'Additional Information', 'motopress-appointment' ),
 				),
-				'value'       => array( 'image', 'title', 'excerpt', 'contacts', 'social_networks', 'additional_info' ),
+				'default'     => array( 'image', 'title', 'excerpt', 'contacts', 'social_networks', 'additional_info' ),
 			),
 			'employees'      => array(
 				'type'        => 'text',

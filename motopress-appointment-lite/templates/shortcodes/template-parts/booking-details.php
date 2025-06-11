@@ -11,15 +11,31 @@
 	<div class="mpa-booking-details-section booking-reservations">
 		<?php if ( count( $booking->getReservations() ) ) : ?>
 			<?php foreach ( $booking->getReservations() as $reservation ) : ?>
+				<?php
+					$reservation_data = apply_filters(
+						'mpa_booking_details_prepare_reservation_data',
+						array(
+							'reservation_id' => $reservation->getId(),
+							'start_time'     => $reservation->getServiceTime()->getStartTime()->format( DateTime::ATOM ),
+							'end_time'       => $reservation->getServiceTime()->getEndTime()->format( DateTime::ATOM ),
+							'service_name'   => get_the_title( $reservation->getServiceId() ),
+							'employee_name'  => $reservation->getEmployee()->getName(),
+							'location_name'  => $reservation->getLocation()->getName(),
+							'capacity'       => $reservation->getCapacity(),
+							'quantity_label' => $reservation->getService()->getQuantityLabel(),
+						),
+						$reservation
+					);
+				?>
 				<div class="reservation"
-					data-reservation-id="<?php echo esc_attr( $reservation->getId() ); ?>"
-					data-start-time="<?php echo esc_attr( $reservation->getServiceTime()->getStartTime()->format( DateTime::ATOM ) ); ?>"
-					data-end-time="<?php echo esc_attr( $reservation->getServiceTime()->getEndTime()->format( DateTime::ATOM ) ); ?>"
-					data-service-name="<?php echo esc_html( get_the_title( $reservation->getServiceId() ) ); ?>"
-					data-employee-name="<?php echo esc_attr( $reservation->getEmployee()->getName() ); ?>"
-					data-location-name="<?php echo esc_attr( $reservation->getLocation()->getName() ); ?>"
-					data-capacity="<?php echo esc_attr( $reservation->getCapacity() ); ?>"
-					data-quantity-label="<?php echo esc_attr( $reservation->getService()->getQuantityLabel() ); ?>"
+						data-reservation-id="<?php echo esc_attr( $reservation_data['reservation_id'] ); ?>"
+						data-start-time="<?php echo esc_attr( $reservation_data['start_time'] ); ?>"
+						data-end-time="<?php echo esc_attr( $reservation_data['end_time'] ); ?>"
+						data-service-name="<?php echo esc_html( $reservation_data['service_name'] ); ?>"
+						data-employee-name="<?php echo esc_attr( $reservation_data['employee_name'] ); ?>"
+						data-location-name="<?php echo esc_attr( $reservation_data['location_name'] ); ?>"
+						data-capacity="<?php echo esc_attr( $reservation_data['capacity'] ); ?>"
+						data-quantity-label="<?php echo esc_attr( $reservation_data['quantity_label'] ); ?>"
 				>
 					<div class="mpa-booking-details-section-row">
 						<span class="cell reservation-title value">
@@ -41,11 +57,13 @@
 							<?php } ?>
 						</span>
 						<div class="cell reservation-full-date value">
-							<?php echo sprintf(
+							<?php
+							printf(
 								'%s &middot; %s',
 								'<span class="reservation-date">' . esc_html( mpa_format_date( $reservation->getDate() ) ) . '</span>',
 								'<span class="reservation-time">' . esc_html( $reservation->getServiceTime()->toString() ) . '</span>'
-							); ?>
+							);
+							?>
 						</div>
 					</div>
 

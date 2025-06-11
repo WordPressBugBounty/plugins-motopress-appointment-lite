@@ -184,6 +184,9 @@ function mpa_get_employee( $id = 0, $forceReload = false ) {
  * @since 1.0
  */
 function mpa_get_employees( $args = array( 'fields' => array( 'id' => 'name' ) ) ) {
+	$args += array(
+		'orderby' => 'menu_order ID',
+	);
 	return mpapp()->repositories()->employee()->findAll( $args );
 }
 
@@ -293,6 +296,9 @@ function mpa_get_location( $id = 0, $forceReload = false ) {
  * @since 1.0
  */
 function mpa_get_locations( $args = array( 'fields' => array( 'id' => 'name' ) ) ) {
+	$args += array(
+		'orderby' => 'menu_order ID',
+	);
 	return mpapp()->repositories()->location()->findAll( $args );
 }
 
@@ -356,6 +362,9 @@ function mpa_get_service( $id = 0, $forceReload = false ) {
  * @since 1.0
  */
 function mpa_get_services( $args = array( 'fields' => array( 'id' => 'title' ) ) ) {
+	$args += array(
+		'orderby' => 'menu_order ID',
+	);
 	return mpapp()->repositories()->service()->findAll( $args );
 }
 
@@ -422,14 +431,192 @@ function mpa_get_service_attributes( $service, $args = array() ) {
  * @param string|array $fields Optional. 'all', field name or key-value pair.
  *     ['slug' => 'name'] by default.
  * @param array $args Optional.
- * @return WP_Term[]|array
+ * @return WP_Term[]|string[]|array
  *
  * @since 1.0
+ * @since 2.4.0
  */
 function mpa_get_service_categories( $serviceId = 0, $fields = array( 'slug' => 'name' ), $args = array() ) {
-	$taxonomy = MotoPress\Appointment\PostTypes\ServicePostType::CATEGORY_NAME;
+	$taxonomy = \MotoPress\Appointment\PostTypes\ServicePostType::CATEGORY_NAME;
+	$metaKey  = \MotoPress\Appointment\PostTypes\ServicePostType::SERVICE_CATEGORY_ORDER_META;
 
-	return mpa_get_terms( $serviceId, $taxonomy, $fields, $args );
+	$orderby = $args['orderby'] ?? 'name'; // Default order by name
+	$order   = $args['order'] ?? 'ASC';
+
+	// custom sorting by category order and name
+	$isCustomOrder = 'service_category_order' === $orderby;
+
+	if ( $isCustomOrder ) {
+		$args['meta_key'] = $metaKey;
+		$args['orderby']  = 'none';
+	}
+
+	$args['order'] = $order;
+
+	// get terms
+	$terms = mpa_get_terms( $serviceId, $taxonomy, 'all', $args );
+
+	if ( empty( $terms ) ) {
+		return array();
+	}
+
+	// custom sort if requested
+	if ( $isCustomOrder ) {
+		$terms = mpa_sort_terms_by_order_and_name( $terms, $metaKey, $order );
+	}
+
+	// Format output after optional custom sorting, based on the requested $fields structure
+	if ( 'all' === $fields ) {
+		return $terms;
+	}
+
+	if ( is_string( $fields ) ) {
+		return wp_list_pluck( $terms, $fields );
+	}
+
+	if ( is_array( $fields ) ) {
+		list( $key, $value ) = mpa_first_pair( $fields );
+		return wp_list_pluck( $terms, $value, $key );
+	}
+
+	return $terms;
+}
+
+/**
+ * Sort terms by a custom meta value and then by name.
+ *
+ * @param array $terms
+ * @param string $metaKey
+ * @param string $order
+ * @return array
+ *
+ * @since 2.4.0
+ */
+function mpa_sort_terms_by_order_and_name( array $terms, string $metaKey, string $order = 'ASC' ): array {
+	if ( empty( $terms ) ) {
+		return array();
+	}
+
+	$isDescending = strtoupper( $order ) === 'DESC';
+
+	// Prepare meta values for each term ID
+	$metaValuesByTermId = array();
+	foreach ( $terms as $term ) {
+		$metaValuesByTermId[ $term->term_id ] = (int) get_term_meta( $term->term_id, $metaKey, true );
+	}
+
+	// Sort terms by custom meta value, using name as a fallback when values are equal
+	usort(
+		$terms,
+		function ( $termA, $termB ) use ( $metaValuesByTermId, $isDescending ) {
+			$orderA = $metaValuesByTermId[ $termA->term_id ] ?? 0;
+			$orderB = $metaValuesByTermId[ $termB->term_id ] ?? 0;
+
+			$result = $orderA <=> $orderB;
+
+			if ( 0 === $result ) {
+				$result = strcasecmp( $termA->name, $termB->name );
+			}
+
+			return $isDescending ? -$result : $result;
+		}
+	);
+
+	return $terms;
+}
+
+/**
+ * Get the hierarchical tree of service categories.
+ *
+ * @return array
+ *
+ * @since 2.4.0
+ */
+function mpa_get_service_categories_tree(): array {
+	$taxonomy = \MotoPress\Appointment\PostTypes\ServicePostType::CATEGORY_NAME;
+
+	$terms = get_terms(
+		array(
+			'taxonomy' => $taxonomy,
+		)
+	);
+
+	$tree = array();
+
+	// Create array of categories indexed by term_id
+	foreach ( $terms as $term ) {
+		$tree[ $term->term_id ] = array(
+			'id'       => $term->term_id,
+			'slug'     => $term->slug,
+			'name'     => $term->name,
+			'parent'   => $term->parent,
+			'children' => array(),
+		);
+	}
+
+	// Link children to their respective parent nodes
+	foreach ( $tree as $id => &$category ) {
+		if ( $category['parent'] && isset( $tree[ $category['parent'] ] ) ) {
+			$tree[ $category['parent'] ]['children'][] = &$category;
+		}
+	}
+	unset( $category );
+
+	// Return the full hierarchical tree, starting from top-level categories
+	$topLevel = array();
+	foreach ( $tree as $id => $category ) {
+		if ( 0 === $category['parent'] ) {
+			$topLevel[] = $category;
+		}
+	}
+
+	return $topLevel;
+}
+
+/**
+ * Flattens a hierarchical category tree into a one-dimensional array with visual indentation.
+ *
+ * @param array $tree
+ * @param array $order
+ * @param integer $level
+ * @return array
+ *
+ * @since 2.4.0
+ */
+function mpa_flatten_service_categories_tree( array $tree, array $order = array(), int $level = 0 ): array {
+	$result = array();
+
+	usort(
+		$tree,
+		function( $a, $b ) use ( $order ) {
+			$indexA = array_search( $a['slug'], $order, true );
+			$indexB = array_search( $b['slug'], $order, true );
+
+			$indexA = false !== $indexA ? $indexA : PHP_INT_MAX;
+			$indexB = false !== $indexB ? $indexB : PHP_INT_MAX;
+
+			return $indexA - $indexB;
+		}
+	);
+
+	foreach ( $tree as $node ) {
+		// Add indentation based on nesting level (for visual hierarchy in flat list)
+		$indent = str_repeat( '&nbsp;&nbsp;', $level );
+
+		$result[] = array(
+			'slug'  => $node['slug'],
+			'label' => $indent . $node['name'],
+		);
+
+		if ( ! empty( $node['children'] ) ) {
+			$result = array_merge(
+				$result,
+				mpa_flatten_service_categories_tree( $node['children'], $order, $level + 1 )
+			);
+		}
+	}
+
+	return $result;
 }
 
 /**
@@ -520,6 +707,7 @@ function mpa_get_service_category_total_count( $term ) {
  * @since 1.0
  */
 function mpa_extract_available_services() {
+
 	// Filter services without employees; or services, which employees doesn't
 	// have a schedule or working locations
 	$bookableServices = array();
@@ -548,17 +736,21 @@ function mpa_extract_available_services() {
 		return $bookableServices;
 	}
 
-	$schedulesByEmployeeId = array_reduce( $schedules, function ( $carry, $schedule ) {
-		$employeeId = $schedule->getEmployeeId();
+	$schedulesByEmployeeId = array_reduce(
+		$schedules,
+		function ( $carry, $schedule ) {
+			$employeeId = $schedule->getEmployeeId();
 
-		if ( ! $employeeId ) {
+			if ( ! $employeeId ) {
+				return $carry;
+			}
+
+			$carry[ $employeeId ] = $schedule;
+
 			return $carry;
-		}
-
-		$carry[ $employeeId ] = $schedule;
-
-		return $carry;
-	}, [] );
+		},
+		array()
+	);
 
 	$employeesArgs = array(
 		'post_status' => array(
@@ -572,13 +764,17 @@ function mpa_extract_available_services() {
 		return $bookableServices;
 	}
 
-	$employeesById = array_reduce( $employees, function ( $carry, $employee ) {
-		$employeeId = $employee->getId();
+	$employeesById = array_reduce(
+		$employees,
+		function ( $carry, $employee ) {
+			$employeeId = $employee->getId();
 
-		$carry[ $employeeId ] = $employee;
+			$carry[ $employeeId ] = $employee;
 
-		return $carry;
-	}, [] );
+			return $carry;
+		},
+		array()
+	);
 
 	$locationsArgs = array(
 		'post_status' => array(
@@ -592,13 +788,17 @@ function mpa_extract_available_services() {
 		return $bookableServices;
 	}
 
-	$locationsById = array_reduce( $locations, function ( $carry, $location ) {
-		$locationId = $location->getId();
+	$locationsById = array_reduce(
+		$locations,
+		function ( $carry, $location ) {
+			$locationId = $location->getId();
 
-		$carry[ $locationId ] = $location;
+			$carry[ $locationId ] = $location;
 
-		return $carry;
-	}, [] );
+			return $carry;
+		},
+		array()
+	);
 
 	foreach ( $services as $service ) {
 		$serviceEmployees = array();
@@ -625,23 +825,27 @@ function mpa_extract_available_services() {
 			$schedule          = $schedulesByEmployeeId[ $employeeId ];
 			$scheduleTimetable = $schedule->getTimetable();
 
-			$employeeLocations = array_reduce( $scheduleTimetable, function ( $carry, $day ) use ( $locationsById ) {
-				$dayLocations = wp_list_pluck( $day, 'location' );
-				foreach ( $dayLocations as $locationId ) {
-					if ( array_key_exists( $locationId, $carry ) ) {
-						continue;
+			$employeeLocations = array_reduce(
+				$scheduleTimetable,
+				function ( $carry, $day ) use ( $locationsById ) {
+					$dayLocations = wp_list_pluck( $day, 'location' );
+					foreach ( $dayLocations as $locationId ) {
+						if ( array_key_exists( $locationId, $carry ) ) {
+							continue;
+						}
+
+						if ( ! array_key_exists( $locationId, $locationsById ) ) {
+							continue;
+						}
+
+						$location             = $locationsById[ $locationId ];
+						$carry[ $locationId ] = $location->getName();
 					}
 
-					if ( ! array_key_exists( $locationId, $locationsById ) ) {
-						continue;
-					}
-
-					$location             = $locationsById[ $locationId ];
-					$carry[ $locationId ] = $location->getName();
-				}
-
-				return $carry;
-			}, [] );
+					return $carry;
+				},
+				array()
+			);
 
 			// add main Schedule location to the list if Schedule has custom working days
 			if ( ! empty( $schedule->getCustomWorkdays() ) &&
@@ -682,7 +886,84 @@ function mpa_extract_available_services() {
 		);
 	}
 
-	return $bookableServices;
+	// сollect ordered indexes
+
+	// Categories ordered
+	$orderedCategories = mpa_get_service_categories( 0, 'all', array( 'orderby' => 'service_category_order' ) );
+
+	$categoryIndexes = array();
+	if ( ! is_wp_error( $orderedCategories ) ) {
+		foreach ( $orderedCategories as $cat ) {
+			$categoryIndexes[] = $cat->slug;
+		}
+	}
+	if ( ! in_array( 'uncategorized', $categoryIndexes, true ) ) {
+		$categoryIndexes[] = 'uncategorized';
+	}
+
+	// Services ordered
+	$servicesIndexes = array_map(
+		function ( $service ) {
+			return $service->getId();
+		},
+		$services
+	);
+
+	// Locations and employees used in services
+	$usedInServicesEmployeeIds = array();
+	$usedInServicesLocationIds = array();
+
+	foreach ( $bookableServices as $serviceData ) {
+		foreach ( $serviceData['employees'] as $employeeId => $employeeData ) {
+			if ( ! in_array( $employeeId, $usedInServicesEmployeeIds, true ) ) {
+				$usedInServicesEmployeeIds[] = $employeeId;
+			}
+			foreach ( array_keys( $employeeData['locations'] ) as $locationId ) {
+				if ( ! in_array( $locationId, $usedInServicesLocationIds, true ) ) {
+					$usedInServicesLocationIds[] = $locationId;
+				}
+			}
+		}
+	}
+
+	// Employees ordered
+	$employeesIndexes = array_values(
+		array_filter(
+			array_map(
+				function ( $employee ) {
+					return $employee->getId();
+				},
+				$employees
+			),
+			function ( $id ) use ( $usedInServicesEmployeeIds ) {
+				return in_array( $id, $usedInServicesEmployeeIds, true );
+			}
+		)
+	);
+
+	// Locations ordered
+	$locationsIndexes = array_values(
+		array_filter(
+			array_map(
+				function ( $location ) {
+					return $location->getId();
+				},
+				$locations
+			),
+			function ( $id ) use ( $usedInServicesLocationIds ) {
+				return in_array( $id, $usedInServicesLocationIds, true );
+			}
+		)
+	);
+
+	return array(
+		'services'         => $bookableServices,
+		'services_order'   => $servicesIndexes,
+		'employees_order'  => $employeesIndexes,
+		'locations_order'  => $locationsIndexes,
+		'categories_order' => $categoryIndexes,
+		'categories_tree'  => mpa_get_service_categories_tree(),
+	);
 }
 
 /**

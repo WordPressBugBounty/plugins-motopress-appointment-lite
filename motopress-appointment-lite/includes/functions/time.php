@@ -72,7 +72,7 @@ function mpa_minutes_to_duration( $minutes ) {
 function mpa_parse_to_minutes( $timeString ) {
 	$time = explode( ':', $timeString ); // ['08', '20']
 
-	$hours   = (int) $time[0];   // 8
+	$hours   = (int) $time[0]; // 8
 	$minutes = (int) $time[1]; // 20
 
 	$offset = $hours * 60 + $minutes; // 500

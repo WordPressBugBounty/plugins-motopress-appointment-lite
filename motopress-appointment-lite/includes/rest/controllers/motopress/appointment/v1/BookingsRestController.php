@@ -157,7 +157,15 @@ class BookingsRestController extends AbstractRestController {
 			$message = esc_html__( 'Your reservation request has been received and is waiting for our confirmation. Thank you!', 'motopress-appointment' );
 		}
 
-		return rest_ensure_response( array( 'message' => $message, 'booking_id' => $booking->getID() ) );
+		$response_data = apply_filters(
+			'mpa_pre_rest_response_data_create_booking',
+			array(
+				'message'    => $message,
+				'booking_id' => $booking->getID(),
+			)
+		);
+
+		return rest_ensure_response( $response_data );
 	}
 
 

@@ -21,6 +21,17 @@ class ManagePaymentsPage extends ManagePostsPage {
 		parent::addActions();
 
 		add_filter( 'posts_search', array( $this, 'searchByBookingId' ) );
+
+		add_filter( 'post_row_actions',
+			function( $actions, $post ) {
+				if ( $post->post_type == mpapp()->postTypes()->payment()->getPostType() ) {
+					unset( $actions['inline hide-if-no-js'] );
+				}
+				return $actions;
+			},
+			10,
+			2
+		);
 	}
 
 	/**
@@ -57,6 +68,7 @@ class ManagePaymentsPage extends ManagePostsPage {
 	 */
 	protected function customColumns() {
 		return array(
+			'id'             => esc_html__( 'ID', 'motopress-appointment' ),
 			'status'         => esc_html__( 'Status', 'motopress-appointment' ),
 			'amount'         => esc_html__( 'Amount', 'motopress-appointment' ),
 			'booking'        => esc_html__( 'Booking', 'motopress-appointment' ),
@@ -75,7 +87,13 @@ class ManagePaymentsPage extends ManagePostsPage {
 
 		$columns = parent::filterColumns( $columns );
 
-		unset( $columns['date'] );
+		if ( isset( $columns['title'] ) ) {
+			unset( $columns['title'] );
+		}
+
+		if ( isset( $columns['date'] ) ) {
+			unset( $columns['date'] );
+		}
 
 		return $columns;
 	}
@@ -96,7 +114,13 @@ class ManagePaymentsPage extends ManagePostsPage {
 	 * @param Payment $payment
 	 */
 	protected function displayValue( $columnName, $payment ) {
+
 		switch ( $columnName ) {
+
+			case 'id':
+				printf( '<a href="%s"><strong>' . esc_html( '#%s' ) . '</strong></a>', esc_url( get_edit_post_link( $payment->getId() ) ), esc_html( $payment->getId() ) );
+				break;
+
 			case 'status':
 				$paymentStatuses = mpapp()->postTypes()->payment()->statuses();
 				echo '<span class="column-status-' . esc_attr( $payment->getStatus() ) . '">' . $paymentStatuses->getLabel( $payment->getStatus() ) . '</span>';
@@ -129,7 +153,7 @@ class ManagePaymentsPage extends ManagePostsPage {
 
 			case 'mpa_date':
 				?>
-				<abbr title="<?php echo esc_attr( get_the_date( mpapp()->settings()->getDateFormat(), $payment->getId() ) ); ?>">
+				<abbr title="<?php echo esc_attr( get_the_date( mpapp()->settings()->getPostDateTimeFormat(), $payment->getId() ) ); ?>">
 					<?php echo get_the_date( 'Y/m/d', $payment->getId() ); ?>
 				</abbr>
 				<?php

@@ -92,14 +92,6 @@ class WizardHandler {
 		add_action( 'wp_ajax_mpa_skip_wizard', array( $this, 'mpaSkipWizardHandler' ) );
 	}
 
-	public function shouldRegisterWizardPage( $shouldRegister ) {
-
-		if ( $this->isWizardCompleted() && $this->isAppointmentServiceAvailable() ) {
-			return false;
-		}
-		return $shouldRegister;
-	}
-
 	/**
 	 *
 	 * @return boolean
@@ -204,10 +196,14 @@ class WizardHandler {
 			wp_send_json_error( esc_html__( 'You do not have permission to do this action.', 'motopress-appointment' ) );
 		}
 
-		$location_name      = sanitize_text_field( $_POST['location_name'] );
-		$employee_name      = sanitize_text_field( $_POST['employee_name'] );
-		$service_name       = sanitize_text_field( $_POST['service_name'] );
-		$service_price      = floatval( $_POST['service_price'] );
+		$location_name = sanitize_text_field( $_POST['location_name'] );
+		$employee_name = sanitize_text_field( $_POST['employee_name'] );
+		$service_name  = sanitize_text_field( $_POST['service_name'] );
+
+		$service_price = floatval( $_POST['service_price'] );
+		// if negative, set price to 0
+		$service_price = max( 0, $service_price );
+
 		$should_create_page = rest_sanitize_boolean( $_POST['should_create_form_page'] );
 
 		try {

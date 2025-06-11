@@ -13,9 +13,6 @@
             "Calendar": [
                 "Calendrier"
             ],
-            "Status": [
-                "\u00c9tat"
-            ],
             "Customer": [
                 "Client"
             ],
@@ -30,9 +27,6 @@
             ],
             "Employee": [
                 "Employ\u00e9"
-            ],
-            "Time": [
-                "dur\u00e9e"
             ],
             "Booking": [
                 "R\u00e9servation"

@@ -140,6 +140,8 @@ class Plugin {
 		add_action( 'init', array( $this, 'init' ), 15 );
 		add_action( 'admin_init', array( $this, 'initAutoUpdater' ), 15 );
 
+		add_action( 'wp_head', 'mpa_print_version_comment', 1 );
+
 		add_action(
 			'admin_notices',
 			function() {
@@ -475,7 +477,16 @@ class Plugin {
 	}
 
 	public function getName(): string {
-		return __( 'Appointment Booking', 'motopress-appointment' );
+		return isset( $this->pluginData['Name'] ) ? $this->pluginData['Name'] :
+			__( 'Appointment Booking', 'motopress-appointment' );
+	}
+
+	public function getAuthor(): string {
+		return isset( $this->pluginData['Author'] ) ? $this->pluginData['Author'] : 'MotoPress';
+	}
+
+	public function getPluginStoreUri(): string {
+		return isset( $this->pluginData['PluginURI'] ) ? $this->pluginData['PluginURI'] : '';
 	}
 
 	/**

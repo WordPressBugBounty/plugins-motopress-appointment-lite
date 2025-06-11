@@ -100,7 +100,7 @@ function mpa_get_terms( $postId, $taxonomy, $fields = array( 'slug' => 'name' ),
 	}
 
 	// Query terms
-	if ( 0 == $postId ) {
+	if ( 0 === $postId ) {
 		$args += array(
 			'taxonomy'   => $taxonomy,
 			'hide_empty' => false,
@@ -115,7 +115,7 @@ function mpa_get_terms( $postId, $taxonomy, $fields = array( 'slug' => 'name' ),
 	if ( is_wp_error( $terms ) ) {
 		$terms = array();
 	} elseif ( is_string( $fields ) ) {
-		if ( 'all' != $fields ) {
+		if ( 'all' !== $fields ) {
 			$terms = wp_list_pluck( $terms, $fields );
 		}
 	} else {

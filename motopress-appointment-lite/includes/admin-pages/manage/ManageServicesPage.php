@@ -20,8 +20,20 @@ class ManageServicesPage extends ManagePostsPage {
 	 */
 	protected function customColumns() {
 		return array(
-			'price'    => esc_html__( 'Price', 'motopress-appointment' ),
-			'duration' => esc_html__( 'Duration', 'motopress-appointment' ),
+			'price'      => esc_html__( 'Price', 'motopress-appointment' ),
+			'duration'   => esc_html__( 'Duration', 'motopress-appointment' ),
+			'menu_order' => esc_html__( 'Order', 'motopress-appointment' ),
+		);
+	}
+
+	/**
+	 * @return array
+	 *
+	 * @since 2.4.0
+	 */
+	protected function customSortableColumns() {
+		return array(
+			'menu_order' => 'menu_order',
 		);
 	}
 
@@ -38,6 +50,10 @@ class ManageServicesPage extends ManagePostsPage {
 				break;
 			case 'duration':
 				echo mpa_minutes_to_duration( $entity->getDuration() );
+				break;
+			// @since 2.4.0
+			case 'menu_order':
+				echo esc_html( get_post_field( 'menu_order', $entity->getId() ) );
 				break;
 		}
 	}

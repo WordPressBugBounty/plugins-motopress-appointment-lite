@@ -24,6 +24,35 @@ class AppointmentFormModule extends AbstractShortcodeModule {
 
 		$unselectedId = array( 0 => esc_html__( '— Unselected —', 'motopress-appointment' ) );
 
+		// collect services for the select field
+		$servicesRaw = mpa_get_services();
+		$services    = array();
+		foreach ( $servicesRaw as $id => $title ) {
+			$services[ 'id_' . $id ] = $title;
+		}
+
+		$categoryTree    = mpa_get_service_categories_tree();
+		$categoriesOrder = array_keys( mpa_get_service_categories( 0, array( 'slug' => 'name' ), array( 'orderby' => 'service_category_order' ) ) );
+
+		$categories = array();
+		foreach ( mpa_flatten_service_categories_tree( $categoryTree, $categoriesOrder ) as $cat ) {
+			$categories[ 'slug_' . $cat['slug'] ] = $cat['label'];
+		}
+
+		// collect locations for the select field
+		$locationsRaw = mpa_get_locations();
+		$locations    = array();
+		foreach ( $locationsRaw as $id => $title ) {
+			$locations[ 'id_' . $id ] = $title;
+		}
+
+		// collect employees for the select field
+		$employeesRaw = mpa_get_employees();
+		$employees    = array();
+		foreach ( $employeesRaw as $id => $title ) {
+			$employees[ 'id_' . $id ] = $title;
+		}
+
 		return array(
 			'form_title'               => array(
 				'label'           => esc_html__( 'Form Title', 'motopress-appointment' ),
@@ -36,7 +65,7 @@ class AppointmentFormModule extends AbstractShortcodeModule {
 				'description'     => esc_html__( 'ID of the selected service.', 'motopress-appointment' ),
 				'type'            => 'select',
 				'option_category' => 'basic_option',
-				'options'         => $unselectedId + mpa_get_services(),
+				'options'         => $unselectedId + $services,
 				'default'         => 0,
 			),
 			'show_category'            => array(
@@ -130,7 +159,7 @@ class AppointmentFormModule extends AbstractShortcodeModule {
 				'description'     => esc_html__( 'Slug of the selected service category.', 'motopress-appointment' ),
 				'type'            => 'select',
 				'option_category' => 'basic_option',
-				'options'         => $unselectedId + mpa_get_service_categories(),
+				'options'         => $unselectedId + $categories,
 				'default'         => '',
 			),
 			'default_location'         => array(
@@ -138,7 +167,7 @@ class AppointmentFormModule extends AbstractShortcodeModule {
 				'description'     => esc_html__( 'ID of the selected location.', 'motopress-appointment' ),
 				'type'            => 'select',
 				'option_category' => 'basic_option',
-				'options'         => $unselectedId + mpa_get_locations(),
+				'options'         => $unselectedId + $locations,
 				'default'         => 0,
 			),
 			'default_employee'         => array(
@@ -146,7 +175,7 @@ class AppointmentFormModule extends AbstractShortcodeModule {
 				'description'     => esc_html__( 'ID of the selected employee.', 'motopress-appointment' ),
 				'type'            => 'select',
 				'option_category' => 'basic_option',
-				'options'         => $unselectedId + mpa_get_employees(),
+				'options'         => $unselectedId + $employees,
 				'default'         => 0,
 			),
 			'timepicker_columns'       => array(
@@ -246,6 +275,24 @@ class AppointmentFormModule extends AbstractShortcodeModule {
 			$padding = array_slice($padding, 0, 4);
 
 			$props['buttons_padding'] = implode(' ', $padding);
+		}
+
+		// transform string-based keys (used to preserve select option order in divi for services, locations, employees and categories)
+		// back into their original numeric or slug values for internal processing like choosing default.
+		if ( ! empty( $props['default_service'] ) && strpos( $props['default_service'], 'id_' ) === 0 ) {
+			$props['default_service'] = (int) str_replace( 'id_', '', $props['default_service'] );
+		}
+
+		if ( ! empty( $props['default_location'] ) && strpos( $props['default_location'], 'id_' ) === 0 ) {
+			$props['default_location'] = (int) str_replace( 'id_', '', $props['default_location'] );
+		}
+
+		if ( ! empty( $props['default_employee'] ) && strpos( $props['default_employee'], 'id_' ) === 0 ) {
+			$props['default_employee'] = (int) str_replace( 'id_', '', $props['default_employee'] );
+		}
+
+		if ( ! empty( $props['default_category'] ) && strpos( $props['default_category'], 'slug_' ) === 0 ) {
+			$props['default_category'] = str_replace( 'slug_', '', $props['default_category'] );
 		}
 
 		return $props;

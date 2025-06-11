@@ -2,6 +2,8 @@
 
 namespace MotoPress\Appointment\Shortcodes;
 
+use MotoPress\Appointment\PostTypes\ServicePostType;
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }

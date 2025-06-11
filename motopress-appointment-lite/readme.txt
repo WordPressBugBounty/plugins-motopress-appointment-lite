@@ -5,7 +5,7 @@ Tags: appointment, booking, calendar, reservation, schedule, scheduling, online 
 Requires at least: 5.3
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 2.3.0
+Stable tag: 2.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -147,8 +147,8 @@ Extract booking records for analysis, identify your best performing services, ne
 This WordPress appointment booking plugin ships with dedicated blocks that allow you to hide or show the booking calendar fields and change field labels in the visual interfaces of all popular WordPress page builders:
 
 * The block editor: add the Appointment form block and turn on/off the needed settings in the right-hand block panel.
-* Elementor: add the dedicated [Elementor booking widget](https://motopress.com/blog/link-appointment-booking-calendar-in-elementor/) to any section and customize the form fields and labels in the widget settings panel.
-* Divi: add the [Divi booking module](https://motopress.com/blog/divi-booking-plugin-for-appointment-scheduling/) and pick which fields and with what text must appear in the appointment scheduling wizard.
+* Elementor: add the dedicated [Elementor booking widget](https://motopress.com/blog/link-appointment-booking-calendar-in-elementor/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite) to any section and customize the form fields and labels in the widget settings panel.
+* Divi: add the [Divi booking module](https://motopress.com/blog/divi-booking-plugin-for-appointment-scheduling/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite) and pick which fields and with what text must appear in the appointment scheduling wizard.
 
 Our WordPress scheduler plugin adds a mobile-friendly, customizable booking form to your site, which works as an intuitive step-by-step wizard for your clients. Having configured the plugin settings, you can add this form as a shortcode, WordPress block, Elementor widget, or Divi module to any WordPress theme.
 
@@ -157,6 +157,8 @@ We also provide dedicated listing blocks for the employee, service, service cate
 You can optionally work with all these WordPress appointment plugin content blocks via traditional WordPress shortcodes.
 
 ### Customizable Appointment Scheduling Forms
+
+[WordPress booking plugins](https://motopress.com/products/category/wordpress-booking-plugins/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite) from MotoPress cater to various needs and businesses.
 
 Booking forms are fully customizable: select from pre-styled calendar themes, customize colors, paddings, the appointment duration display, field labels, and more! Apply any customization changes via different page builders, including Elementor, Divi, or the block editor.
 
@@ -185,34 +187,36 @@ Multi-location, staff management, employee scheduling, and more WordPress bookin
 
 A range of premium extensions to help you better manage your appointment business with the MotoPress Appointment Booking Lite plugin:
 
-* [WooCommerce](https://motopress.com/products/appointment-booking-woocommerce-payments/): Smoothly integrate the WooCommerce plugin to connect any payment gateway and accept online appointment reservations.
-* [Twilio SMS](https://motopress.com/products/appointment-booking-twilio-sms/): Connect the Twilio service in several clicks to automate appointment reminders and other notifications via SMS.
-* [Google Analytics](https://motopress.com/products/appointment-booking-google-analytics/): Integrate the Google Analytics tools to track interactions and sales through the appointment scheduling plugin.
-* [Square Payments](https://motopress.com/products/appointment-booking-square-payments/): Add Square's payment processing options to scheduling appointments, allowing your clients to make card or gift card payments, even without a need for a Square account.
-* [Checkout Fields Editor](https://motopress.com/products/appointment-booking-checkout-fields/): Customize your appointment booking calendar forms with unique checkout options, add or delete fields.
-* [PDF Invoices](https://motopress.com/products/appointment-booking-invoices/): Send automated PDF invoices directly to your customers' email addresses for every confirmed booking.
-* [Video Conferencing](https://motopress.com/products/appointment-booking-video-conferencing/): Automatically generate online meeting details and send them to the customer.
+* [WooCommerce](https://motopress.com/products/appointment-booking-woocommerce-payments/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Smoothly integrate the WooCommerce plugin to connect any payment gateway and accept online appointment reservations.
+* [Twilio SMS](https://motopress.com/products/appointment-booking-twilio-sms/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Connect the Twilio service in several clicks to automate appointment reminders and other notifications via SMS.
+* [Google Analytics](https://motopress.com/products/appointment-booking-google-analytics/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Integrate the Google Analytics tools to track interactions and sales through the appointment scheduling plugin.
+* [Square Payments](https://motopress.com/products/appointment-booking-square-payments/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Add Square's payment processing options to scheduling appointments, allowing your clients to make card or gift card payments, even without a need for a Square account.
+* [Checkout Fields Editor](https://motopress.com/products/appointment-booking-checkout-fields/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Customize your appointment booking calendar forms with unique checkout options, add or delete fields.
+* [PDF Invoices](https://motopress.com/products/appointment-booking-invoices/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Send automated PDF invoices directly to your customers' email addresses for every confirmed booking.
+* [Video Conferencing](https://motopress.com/products/appointment-booking-video-conferencing/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Automatically generate online meeting details and send them to the customer.
 
 ## WordPress appointment scheduling plugin suitable for
 
 WordPress appointments have never been easier. Our WordPress appointment scheduling plugin is made for client-focused small businesses that work with appointments, classes, and sessions.
 
-* [Schools and tutors](https://motopress.com/products/edme/): Sell one-to-one lessons or group classes for your individual practice or tutoring centers.
-* [Medicare centers and doctors](https://motopress.com/products/medmix/): Enable self-booking for your patients in one or multiple clinics.
-* [Sports institutions and health instructors](https://motopress.com/products/coachzee/): Save time by automating coaching sessions or training.
-* [Beauty salons and hairdressers](https://motopress.com/products/lotus-spa/): Sell unlimited services and appointments on WordPress and allow clients to book multiple ones during one transaction.
-* [Yoga studios](https://motopress.com/products/yogamo/): Add and customize a yoga lessons booking widget.
-* [Photographers](https://motopress.com/products/pixetty/): Allow clients to self-book photo shots and appointments with you.
-* [Tour and travel agencies](https://motopress.com/products/touriny/): Sell tours and packages of any duration to groups and individuals.
-* [Massage therapist](https://motopress.com/products/restline/): Integrate the MotoPress appointment scheduler plugin to use a powerful, centralized dashboard to manage your clients, payments, and reservations.
-* [Rental equipment companies](https://motopress.com/products/lorenty/): Rent out any equipment, including boats, bikes, or party rentals.
-* [Law firms](https://motopress.com/products/leolex/): Provide one-to-one and group consultations with powerful scheduling forms.
+* [Schools and tutors](https://motopress.com/products/edme/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Sell one-to-one lessons or group classes for your individual practice or tutoring centers.
+* [Medicare centers and doctors](https://motopress.com/products/medmix/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Enable self-booking for your patients in one or multiple clinics.
+* [Sports institutions and health instructors](https://motopress.com/products/coachzee/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Save time by automating coaching sessions or training.
+* [Beauty salons and hairdressers](https://motopress.com/products/lotus-spa/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Sell unlimited services and appointments on WordPress and allow clients to book multiple ones during one transaction.
+* [Yoga studios](https://motopress.com/products/yogamo/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Add and customize a yoga lessons booking widget.
+* [Photographers](https://motopress.com/products/pixetty/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Allow clients to self-book photo shots and appointments with you.
+* [Tour and travel agencies](https://motopress.com/products/touriny/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Sell tours and packages of any duration to groups and individuals.
+* [Massage therapist](https://motopress.com/products/restline/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Integrate the MotoPress appointment scheduler plugin to use a powerful, centralized dashboard to manage your clients, payments, and reservations.
+* [Rental equipment companies](https://motopress.com/products/lorenty/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Rent out any equipment, including boats, bikes, or party rentals.
+* [Law firms](https://motopress.com/products/leolex/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite): Provide one-to-one and group consultations with powerful scheduling forms.
 
 Thanks to the automated appointment scheduling features, your clients will be able to self-book desired services for the needed time and date for one or many people, allowing you to cut down no-show rates without any expensive customer scheduling software.
 
+Explore our [WordPress booking themes](https://motopress.com/products/category/wordpress-booking-themes/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite) with hand-crafted designs and powerful functionalities.
+
 ## Appointment Booking PRO
 
-[Upgrade to PRO](https://motopress.com/products/appointment-booking/) to get the following capabilities:
+[Upgrade to PRO](https://motopress.com/products/appointment-booking/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite) to get the following capabilities:
 
 * Add more payment gateways: Direct Bank Transfer, Stripe (Bancontact, iDEAL, Giropay, SEPA Direct Debit, and SOFORT, Apple Pay, Google Pay), PayPal.
 * Sync website bookings to employee's Google Calendars.
@@ -221,7 +225,7 @@ Thanks to the automated appointment scheduling features, your clients will be ab
 
 ## Appointment Booking Themes
 
-Check out our [Appointment WordPress Themes](https://motopress.com/products/category/appointment-wordpress-themes/) where the Pro version of the [WordPress Appointment Booking Plugin](https://motopress.com/products/appointment-booking/) is included for free.
+Check out our [Appointment WordPress Themes](https://motopress.com/products/category/appointment-wordpress-themes/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite) where the Pro version of the [WordPress Appointment Booking Plugin](https://motopress.com/products/appointment-booking/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite) is included for free.
 
 ## Video playlist
 
@@ -231,7 +235,7 @@ We’ve created a video playlist dedicated to specific features and updates of t
 
 ## Booking solution for vacation rental
 
-If you want to automate bookings for your rental properties, check out MotoPress [Hotel Booking](https://wordpress.org/plugins/motopress-hotel-booking-lite/) plugin.
+If you want to automate bookings for your rental properties, check out MotoPress [Hotel Booking](https://wordpress.org/plugins/motopress-hotel-booking-lite/) plugin. Also, use [WordPress calendar plugins](https://motopress.com/products/category/wordpress-calendar-plugins/?utm_source=wp-org&utm_medium=textlink&utm_campaign=appointment-booking-lite) to show your availability and booked slots.
 
 == Frequently Asked Questions ==
 
@@ -304,6 +308,15 @@ MotoPress Appointment Booking Lite plugin is distributed under the terms of the 
 
 == Changelog ==
 
+= 2.4.0, Jun 10 2025 =
+* Added the ability to reorder services, categories, locations, and employees.
+* Added support for video conference links in customer calendars via the Video Conferencing addon.
+* Updated the Service Category dropdown to display categories hierarchically.
+* Fixed an issue where the Show Items shortcode parameter did not save proper values.
+* Fixed an issue where the agenda view in the admin calendar displayed an incorrect date range.
+* Fixed an issue where the payment ID and amount were missing on the payment details page in the dashboard.
+* Minor bug fixes and improvements.
+
 = 2.3.0, Apr 1 2025 =
 * Added a convenient plugin setup wizard to simplify onboarding.
 * Fixed calendar translations in some languages.
@@ -312,20 +325,6 @@ MotoPress Appointment Booking Lite plugin is distributed under the terms of the 
 * Added compatibility with the Video Conferencing addon.
 * Enhanced integration with Google Calendar for managing grouped reservations.
 * Minor payment gateway API improvements.
-
-= 2.1.2, Sep 27 2024 =
-* Fixed an issue where the [reservation_details] tag didn't work in emails with data from the Checkout Fields add-on.
-
-= 2.1.1, Sep 17 2024 =
-* Fixed an issue where buffer times were not being generated accurately for appointments, resulting in incorrect service availability display in the calendars.
-
-= 2.1.0, Jul 18 2024 =
-* Added the ability for admins to search bookings by customer name, email, and phone in the bookings list.
-* Added the 'All day' checkbox to the employee schedule editing interface, eliminating the need to specify start and end times.
-* Fixed minor issues and made small improvements.
-
-= 2.0.0, Jul 16 2024 =
-* Significantly improved group booking functionality to allow multiple independent people to book the same appointment slot as long as there are vacant places available.
 
 --------
 

@@ -57,7 +57,7 @@ class AppointmentFormMetabox extends AbstractShortcodeMetabox {
 					'location' => esc_html__( 'Location', 'motopress-appointment' ),
 					'employee' => esc_html__( 'Employee', 'motopress-appointment' ),
 				),
-				'value'       => array( 'category', 'service', 'location', 'employee' ),
+				'default'     => array( 'category', 'service', 'location', 'employee' ),
 			),
 		);
 	}

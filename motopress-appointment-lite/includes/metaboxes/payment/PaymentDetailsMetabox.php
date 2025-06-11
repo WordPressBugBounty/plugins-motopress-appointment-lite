@@ -68,14 +68,14 @@ class PaymentDetailsMetabox extends AbstractChildFieldsMetabox {
 
 		return array(
 			'booking_id'     => array(
-				'type'  => 'text',
-				'label' => esc_html__( 'Booking ID', 'motopress-appointment' ),
-				'value' => $defaultBookingId,
+				'type'    => 'text',
+				'label'   => esc_html__( 'Booking ID', 'motopress-appointment' ),
+				'default' => $defaultBookingId,
 			),
 			'amount'         => array(
-				'type'  => 'price',
-				'label' => esc_html__( 'Amount', 'motopress-appointment' ),
-				'value' => $defaultAmount,
+				'type'    => 'price',
+				'label'   => esc_html__( 'Amount', 'motopress-appointment' ),
+				'default' => $defaultAmount,
 			),
 			'currency'       => array(
 				'type'    => 'select',
@@ -88,8 +88,7 @@ class PaymentDetailsMetabox extends AbstractChildFieldsMetabox {
 				'type'    => 'select',
 				'label'   => esc_html__( 'Payment Gateway', 'motopress-appointment' ),
 				'options' => array( '' => esc_html__( '— Select —', 'motopress-appointment' ) ) + $gateways,
-				'default' => '',
-				'value'   => $defaultGatewayId,
+				'default' => $defaultGatewayId,
 				'size'    => 'regular',
 			),
 			'gateway_mode'   => array(

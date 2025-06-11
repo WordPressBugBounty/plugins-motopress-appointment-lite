@@ -35,6 +35,36 @@ class AppointmentFormWidget extends AbstractAppointmentWidget {
 	protected function register_controls() {
 		$unselectedId = array( 0 => esc_html__( '— Unselected —', 'motopress-appointment' ) );
 
+		// collect services for the select field
+		$servicesRaw = mpa_get_services();
+		$services    = array();
+		foreach ( $servicesRaw as $id => $title ) {
+			$services[ 'id_' . $id ] = $title;
+		}
+
+		// collect services categories for the select field
+		$categoryTree    = mpa_get_service_categories_tree();
+		$categoriesOrder = array_keys( mpa_get_service_categories( 0, array( 'slug' => 'name' ), array( 'orderby' => 'service_category_order' ) ) );
+
+		$categories = array();
+		foreach ( mpa_flatten_service_categories_tree( $categoryTree, $categoriesOrder ) as $cat ) {
+			$categories[ 'slug_' . $cat['slug'] ] = $cat['label'];
+		}
+
+		// collect locations for the select field
+		$locationsRaw = mpa_get_locations();
+		$locations    = array();
+		foreach ( $locationsRaw as $id => $title ) {
+			$locations[ 'id_' . $id ] = $title;
+		}
+
+		// collect employees for the select field
+		$employeesRaw = mpa_get_employees();
+		$employees    = array();
+		foreach ( $employeesRaw as $id => $title ) {
+			$employees[ 'id_' . $id ] = $title;
+		}
+
 		$this->start_controls_section(
 			'section_content',
 			array(
@@ -59,7 +89,7 @@ class AppointmentFormWidget extends AbstractAppointmentWidget {
 					'description' => esc_html__( 'ID of the selected service.', 'motopress-appointment' ),
 					'type'        => Controls_Manager::SELECT,
 					'default'     => 0,
-					'options'     => $unselectedId + mpa_get_services(),
+					'options'     => $unselectedId + $services,
 				)
 			);
 
@@ -180,7 +210,7 @@ class AppointmentFormWidget extends AbstractAppointmentWidget {
 					'description' => esc_html__( 'Slug of the selected service category.', 'motopress-appointment' ),
 					'type'        => Controls_Manager::SELECT,
 					'default'     => 0,
-					'options'     => $unselectedId + mpa_get_service_categories(),
+					'options'     => $unselectedId + $categories,
 					'separator'   => 'before',
 				)
 			);
@@ -192,7 +222,7 @@ class AppointmentFormWidget extends AbstractAppointmentWidget {
 					'description' => esc_html__( 'ID of the selected location.', 'motopress-appointment' ),
 					'type'        => Controls_Manager::SELECT,
 					'default'     => 0,
-					'options'     => $unselectedId + mpa_get_locations(),
+					'options'     => $unselectedId + $locations,
 				)
 			);
 
@@ -203,7 +233,7 @@ class AppointmentFormWidget extends AbstractAppointmentWidget {
 					'description' => esc_html__( 'ID of the selected employee.', 'motopress-appointment' ),
 					'type'        => Controls_Manager::SELECT,
 					'default'     => 0,
-					'options'     => $unselectedId + mpa_get_employees(),
+					'options'     => $unselectedId + $employees,
 					'separator'   => 'after',
 				)
 			);
@@ -390,6 +420,24 @@ class AppointmentFormWidget extends AbstractAppointmentWidget {
 		}
 
 		$attributes['buttons_padding'] = $btn_paddings;
+
+		// transform string-based keys (used to preserve select option order in Elementor for services, locations, employees and categories)
+		// back into their original numeric or slug values for internal processing like choosing default.
+		if ( ! empty( $attributes['default_service'] ) && strpos( $attributes['default_service'], 'id_' ) === 0 ) {
+			$attributes['default_service'] = (int) str_replace( 'id_', '', $attributes['default_service'] );
+		}
+
+		if ( ! empty( $attributes['default_location'] ) && strpos( $attributes['default_location'], 'id_' ) === 0 ) {
+			$attributes['default_location'] = (int) str_replace( 'id_', '', $attributes['default_location'] );
+		}
+
+		if ( ! empty( $attributes['default_employee'] ) && strpos( $attributes['default_employee'], 'id_' ) === 0 ) {
+			$attributes['default_employee'] = (int) str_replace( 'id_', '', $attributes['default_employee'] );
+		}
+
+		if ( ! empty( $attributes['default_category'] ) && strpos( $attributes['default_category'], 'slug_' ) === 0 ) {
+			$attributes['default_category'] = str_replace( 'slug_', '', $attributes['default_category'] );
+		}
 
 		return $attributes;
 	}

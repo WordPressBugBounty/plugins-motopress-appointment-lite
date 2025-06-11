@@ -33,17 +33,19 @@ class ShortcodeTermsOrderMetabox extends AbstractShortcodeMetabox {
 	 * @return array
 	 *
 	 * @since 1.2
+	 * @since 2.4.0 added the service_category_order
 	 */
 	protected function theFields() {
 		$orderOptions = array(
-			'none'       => esc_html__( 'No order', 'motopress-appointment' ),
-			'name'       => esc_html__( 'Term name', 'motopress-appointment' ),
-			'slug'       => esc_html__( 'Term slug', 'motopress-appointment' ),
-			'term_id'    => esc_html__( 'Term ID', 'motopress-appointment' ),
-			'parent'     => esc_html__( 'Parent ID', 'motopress-appointment' ),
-			'count'      => esc_html__( 'Number of associated objects', 'motopress-appointment' ),
-			'include'    => esc_html__( 'Keep the order of "IDs" parameter', 'motopress-appointment' ),
-			'term_order' => esc_html__( 'Term order', 'motopress-appointment' ),
+			'none'                   => esc_html__( 'No order', 'motopress-appointment' ),
+			'name'                   => esc_html__( 'Term name', 'motopress-appointment' ),
+			'slug'                   => esc_html__( 'Term slug', 'motopress-appointment' ),
+			'term_id'                => esc_html__( 'Term ID', 'motopress-appointment' ),
+			'parent'                 => esc_html__( 'Parent ID', 'motopress-appointment' ),
+			'count'                  => esc_html__( 'Number of associated objects', 'motopress-appointment' ),
+			'include'                => esc_html__( 'Keep the order of "IDs" parameter', 'motopress-appointment' ),
+			'term_order'             => esc_html__( 'Term order', 'motopress-appointment' ),
+			'service_category_order' => esc_html__( 'Page order', 'motopress-appointment' ),
 		);
 
 		return array(

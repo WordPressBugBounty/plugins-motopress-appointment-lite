@@ -1,3 +1,17 @@
+= 2.1.2, Sep 27 2024 =
+* Fixed an issue where the [reservation_details] tag didn't work in emails with data from the Checkout Fields add-on.
+
+= 2.1.1, Sep 17 2024 =
+* Fixed an issue where buffer times were not being generated accurately for appointments, resulting in incorrect service availability display in the calendars.
+
+= 2.1.0, Jul 18 2024 =
+* Added the ability for admins to search bookings by customer name, email, and phone in the bookings list.
+* Added the 'All day' checkbox to the employee schedule editing interface, eliminating the need to specify start and end times.
+* Fixed minor issues and made small improvements.
+
+= 2.0.0, Jul 16 2024 =
+* Significantly improved group booking functionality to allow multiple independent people to book the same appointment slot as long as there are vacant places available.
+
 = 1.24.0, Jun 26 2024 =
 * Added the ability to create custom time steps for services that override the default time step settings.
 * Added the ability to set services to a 24-hour duration to accept full-day reservations.

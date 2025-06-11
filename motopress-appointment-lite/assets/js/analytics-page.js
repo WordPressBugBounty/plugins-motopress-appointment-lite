@@ -33223,22 +33223,12 @@
 	    }, wp.element.createElement("div", {
 	      className: "mpa-multiselect-option-dot",
 	      style: {
-	        backgroundColor: color
+	        backgroundColor: color,
+	        borderColor: chroma(color).darken().css()
 	      }
 	    }), wp.element.createElement("div", {
 	      className: "mpa-multiselect-option-title"
-	    }, props.children), wp.element.createElement("div", {
-	      className: "mpa-multiselect-option-hover"
-	    }, wp.element.createElement("svg", {
-	      width: "8",
-	      height: "12",
-	      viewBox: "0 0 8 12",
-	      fill: "none",
-	      xmlns: "http://www.w3.org/2000/svg"
-	    }, wp.element.createElement("path", {
-	      d: "M5.707 0L0 5.707L5.707 11.414L7.121 10L2.828 5.707L7.121 1.414L5.707 0Z",
-	      fill: "#C1C0C0"
-	    })))));
+	    }, props.children)));
 	  };
 	  const multiselectStyles = {
 	    groupHeading: (styles, {
@@ -33421,6 +33411,7 @@
 	    components: {
 	      Option: OptionWithDot
 	    }
+	    //menuIsOpen={true}
 	  })), wp.element.createElement("div", {
 	    className: "mpa-multiselect mpa-select-input-filters__item"
 	  }, wp.element.createElement(Form$1.Label, {
@@ -33438,9 +33429,7 @@
 	    placeholder: __('All', 'motopress-appointment'),
 	    styles: multiselectStyles,
 	    onChange: onChangeLocationsFilterHandler
-	  }))), wp.element.createElement("div", {
-	    className: "mpa-select-input-filters mpa-filters__row"
-	  }, wp.element.createElement("div", {
+	  })), wp.element.createElement("div", {
 	    className: "mpa-multiselect mpa-select-input-filters__item"
 	  }, wp.element.createElement(Form$1.Label, {
 	    htmlFor: "mpa-employees-filter",

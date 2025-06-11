@@ -241,6 +241,19 @@ class PagesRegistry {
 	}
 
 	/**
+	 * @return ManagePages\ManageServiceCategoriesPage
+	 *
+	 * @since 2.4.0
+	 */
+	public function manageServiceCategories() {
+		if ( ! isset( $this->managePages['manageServiceCategories'] ) ) {
+			$this->managePages['manageServiceCategories'] = new ManagePages\ManageServiceCategoriesPage();
+		}
+
+		return $this->managePages['manageServiceCategories'];
+	}
+
+	/**
 	 * @return ManagePages\ManageBookingsPage
 	 *
 	 * @since 1.0
@@ -467,6 +480,7 @@ class PagesRegistry {
 		$this->manageSchedules();
 		$this->manageLocations();
 		$this->manageServices();
+		$this->manageServiceCategories();
 		$this->manageBookings();
 		$this->managePayments();
 		$this->manageNotifications();

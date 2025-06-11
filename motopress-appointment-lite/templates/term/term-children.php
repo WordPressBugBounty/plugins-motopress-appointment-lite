@@ -48,7 +48,20 @@ $listArgs = array(
  */
 $listArgs = apply_filters( "{$template_name}_list_categories_args", $listArgs, $term, $template_args );
 
-?>
-<ul>
-	<?php wp_list_categories( $listArgs ); ?>
-</ul>
+// Render service categories with custom ordering or default wp_list_categories
+if ( 'mpa_service_categories' === $template_name && 'service_category_order' === $orderby ) {
+	$categories_order = $template_args['order'] ?? 'ASC';
+
+	mpa_tmpl_render_sorted_service_subcategories(
+		$term->term_id,
+		$term->taxonomy,
+		$depth,
+		$hide_empty,
+		$categories_order,
+		$show_count,
+	);
+} else {
+	echo '<ul>';
+		wp_list_categories( $listArgs );
+	echo '</ul>';
+}

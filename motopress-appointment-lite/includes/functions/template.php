@@ -442,12 +442,12 @@ function mpa_tmpl_page_select( $args = array() ) {
  * @since 1.18.0
  */
 function mpa_tmpl_user_select( $args = array() ) {
-	$args += [
+	$args += array(
 		'echo'              => false,
 		'show'              => 'display_name_with_login',
 		'show_option_none'  => esc_html__( '— Select —', 'motopress-appointment' ),
 		'option_none_value' => '',
-	];
+	);
 
 	/**
 	 * @param array $args
@@ -797,4 +797,72 @@ function mpa_tmpl_id( $string, $allowUnderscore = false ) {
  */
 function mpa_tmpl_preloader(): string {
 	return '<span class="mpa-preloader"></span>';
+}
+
+/**
+ * @since 2.4.0
+ */
+function mpa_tmpl_render_sorted_service_subcategories( $parent_id, $taxonomy, $depth = PHP_INT_MAX, $hide_empty = true, $order = 'ASC', $show_count = false ) {
+	$terms = get_terms(
+		array(
+			'taxonomy'   => $taxonomy,
+			'parent'     => $parent_id,
+			'hide_empty' => $hide_empty,
+		)
+	);
+
+	if ( empty( $terms ) || is_wp_error( $terms ) ) {
+		return;
+	}
+
+	$meta_key    = \MotoPress\Appointment\PostTypes\ServicePostType::SERVICE_CATEGORY_ORDER_META;
+	$term_orders = array();
+
+	foreach ( $terms as $term ) {
+		$term_orders[ $term->term_id ] = (int) get_term_meta( $term->term_id, $meta_key, true );
+	}
+
+	$sortDesc = strtoupper( $order ) === 'DESC';
+
+	usort(
+		$terms,
+		function ( $a, $b ) use ( $term_orders, $sortDesc ) {
+			$valA = $term_orders[ $a->term_id ] ?? 0;
+			$valB = $term_orders[ $b->term_id ] ?? 0;
+
+			$comparison = $valA <=> $valB;
+			if ( 0 === $comparison ) {
+				$comparison = strcasecmp( $a->name, $b->name );
+			}
+
+			return $sortDesc ? -$comparison : $comparison;
+		}
+	);
+
+	echo '<ul>';
+	foreach ( $terms as $term ) {
+		echo '<li>';
+
+		// Term link + count
+		echo '<a href="' . esc_url( get_term_link( $term ) ) . '">' . esc_html( $term->name ) . '</a>';
+		if ( $show_count && isset( $term->count ) && $term->count > 0 ) {
+			echo ' (' . intval( $term->count ) . ')';
+		}
+
+		// call for child terms
+		if ( $depth > 1 ) {
+			mpa_tmpl_render_sorted_service_subcategories(
+				$term->term_id,
+				$taxonomy,
+				$depth - 1,
+				$hide_empty,
+				$order,
+				$show_count,
+				$show_description,
+			);
+		}
+
+		echo '</li>';
+	}
+	echo '</ul>';
 }

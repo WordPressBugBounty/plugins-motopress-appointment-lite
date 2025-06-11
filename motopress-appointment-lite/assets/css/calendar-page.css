@@ -1378,9 +1378,10 @@ button.rbc-input::-moz-focus-inner {
 .mpa-select-input-filters {
   display: flex;
   justify-content: space-between;
+  gap: 15px;
 }
 .mpa-select-input-filters__item {
-  width: calc(50% - 10px);
+  flex: 1;
 }
 @media (max-width: 768px) {
   .mpa-select-input-filters {
@@ -1393,70 +1394,50 @@ button.rbc-input::-moz-focus-inner {
 
 .mpa-multiselect-input {
   margin-top: 3px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 .mpa-multiselect-input__menu {
   z-index: 100 !important;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
-  border-radius: 8px !important;
-  border: 1px solid #d5d5d5 !important;
   overflow: hidden !important;
-}
-.mpa-multiselect-input__menu-list {
-  padding: 0 !important;
-}
-.mpa-multiselect-input__menu-list > .mpa-multiselect-input__option:last-child {
-  border-bottom: none !important;
 }
 .mpa-multiselect-input__group {
   padding: 0 !important;
 }
 .mpa-multiselect-input__group-heading {
-  font-weight: 600 !important;
   font-size: 12px !important;
-  line-height: 14px !important;
-  padding-top: 13px !important;
-  padding-bottom: 13px !important;
+  line-height: 1.4 !important;
   margin: 0 !important;
-  color: #6d6d6d !important;
-  background-color: #ececee !important;
-  border-bottom: 1px solid #d5d5d5 !important;
+  text-transform: none !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400 !important;
+  color: #777 !important;
+  padding-top: 8px;
 }
-.mpa-multiselect-input__group:last-child .mpa-multiselect-input__option:last-child {
-  border-bottom: none !important;
+.mpa-multiselect-input__input {
+  box-shadow: none !important;
+  min-height: initial !important;
 }
-.mpa-multiselect-input__option {
-  color: #2d3439 !important;
-  font-size: 13px !important;
-  line-height: 15px !important;
-  padding-top: 12px !important;
-  padding-bottom: 12px !important;
-  border-bottom: 1px solid #d5d5d5 !important;
+.mpa-multiselect-input__indicator {
+  padding: 4px !important;
 }
 
+.mpa-multiselect-with-dot:hover {
+  background: rgb(240, 240, 240);
+}
 .mpa-multiselect-with-dot .mpa-multiselect-option {
   display: flex;
   align-items: center;
 }
 .mpa-multiselect-with-dot .mpa-multiselect-option-dot {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   margin-right: 10px;
   border-radius: 100%;
-}
-.mpa-multiselect-with-dot .mpa-multiselect-option-title {
-  transition: 0.2s;
-}
-.mpa-multiselect-with-dot .mpa-multiselect-option-hover {
-  display: none;
-  margin-left: auto;
-}
-.mpa-multiselect-with-dot:hover .mpa-multiselect-option-hover {
-  display: flex;
-}
-.mpa-multiselect-with-dot:hover .mpa-multiselect-option-title {
-  padding-left: 5px;
-  color: #737373;
+  border: 1px solid #ddd;
 }
 
 .mpa-modal_with-footer .components-modal__content {
@@ -1478,16 +1459,22 @@ button.rbc-input::-moz-focus-inner {
   z-index: 10;
 }
 
+.mpa-calendar .rbc-calendar {
+  min-height: 768px;
+}
+.mpa-calendar .rbc-toolbar button {
+  font-size: 14px;
+}
 .mpa-calendar .rbc-toolbar button:active, .mpa-calendar .rbc-toolbar button:focus {
   background: #fff;
   box-shadow: none;
   border: 1px solid #ccc;
 }
 .mpa-calendar .rbc-toolbar button:hover, .mpa-calendar .rbc-toolbar button.rbc-active {
-  color: #373a3c;
-  background-color: #d4d4d4;
+  color: inherit;
+  background-color: rgb(230, 230, 230);
   box-shadow: none;
-  border-color: #8c8c8c;
+  border-color: #ccc;
 }
 
 .mpa-event-details__item {
@@ -1517,6 +1504,14 @@ button.rbc-input::-moz-focus-inner {
 
 .rbc-month-view, .rbc-time-view, .rbc-agenda-view {
   background: #fff;
+  border: 0;
+}
+
+.rbc-month-view .rbc-month-row {
+  border-top: 0;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 0 1px 1px;
 }
 
 .rbc-agenda-view .rbc-agenda-table tbody > tr > td {
@@ -1527,6 +1522,39 @@ button.rbc-input::-moz-focus-inner {
 .rbc-agenda-view .rbc-agenda-table .rbc-agenda-event-cell-details table tr td {
   padding: 0.25em;
   border: 0;
+}
+
+.rbc-today {
+  background: transparent;
+}
+
+.rbc-header.rbc-today {
+  font-weight: bold;
+}
+
+.rbc-off-range-bg {
+  background: transparent;
+}
+
+.mpa-calendar .rbc-header {
+  border: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.rbc-month-view .rbc-header {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 7px;
+  text-align: right;
+}
+
+.mpa-calendar .rbc-month-view .rbc-date-cell {
+  font-size: 14px;
+  padding: 6px;
+}
+
+.rbc-time-view .rbc-header + .rbc-header {
+  border-left: 1px solid #ddd;
 }
 
 .rbc-btn-group button {
@@ -1572,9 +1600,6 @@ button.rbc-input::-moz-focus-inner {
   white-space: nowrap;
 }
 
-.rbc-day-slot .rbc-events-container {
-  margin-right: 0;
-}
 .rbc-day-slot .rbc-event-content {
   line-height: inherit;
 }
@@ -1588,7 +1613,7 @@ button.rbc-input::-moz-focus-inner {
   flex: 1 0 0;
 }
 .mpa-calendar-content .mpa-timegrid-container .rbc-event {
-  border-radius: 0px;
+  border-radius: 3px;
 }
 .mpa-calendar-content .mpa-timegrid-container .rbc-event:hover::after {
   content: "";
@@ -1597,7 +1622,7 @@ button.rbc-input::-moz-focus-inner {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(0, 0, 0, 0.02);
 }
 .mpa-calendar-content .mpa-timegrid-container__month .rbc-event,
 .mpa-calendar-content .mpa-timegrid-container .rbc-time-header .rbc-event {
@@ -1615,6 +1640,48 @@ button.rbc-input::-moz-focus-inner {
 .mpa-calendar-content .mpa-timegrid-container__week .rbc-time-content .rbc-event:hover {
   width: 100% !important;
   left: 0 !important;
+}
+
+.rbc-current-time-indicator {
+  background: #ea4335;
+  height: 2px;
+}
+.rbc-current-time-indicator:before {
+  background: #ea4335;
+  border-radius: 50%;
+  content: "";
+  height: 12px;
+  margin-top: -5px;
+  left: -6px;
+  pointer-events: none;
+  position: absolute;
+  width: 12px;
+}
+
+.rbc-toolbar {
+  position: sticky;
+  top: 32px;
+  background: #fff;
+  z-index: 99;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.rbc-time-header {
+  position: sticky;
+  top: 88px;
+  z-index: 98;
+}
+.rbc-time-header-content {
+  background: #ffffff;
+}
+
+.rbc-month-header {
+  position: sticky;
+  top: 88px;
+  z-index: 98;
+  background: #ffffff;
 }
 
 .mpa-preloader {
@@ -1660,6 +1727,9 @@ button.rbc-input::-moz-focus-inner {
   100% {
     transform: rotate(360deg);
   }
+}
+.appointments_page_mpa_calendar {
+  background: #fff;
 }
 .appointments_page_mpa_calendar .modal-header button {
   cursor: pointer;

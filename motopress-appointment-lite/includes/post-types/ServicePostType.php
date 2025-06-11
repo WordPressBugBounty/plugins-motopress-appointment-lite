@@ -23,7 +23,11 @@ class ServicePostType extends AbstractBlockEditorPostType {
 	/** @since 1.0 */
 	const TAG_NAME = 'mpa_service_tag';
 
-	use PostTypeCategory, PostTypeTag;
+	/** @since 2.4.0 */
+	public const SERVICE_CATEGORY_ORDER_META = '_mpa_service_category_order';
+
+	use PostTypeCategory;
+	use PostTypeTag;
 
 	/**
 	 * @since 1.0
@@ -33,8 +37,37 @@ class ServicePostType extends AbstractBlockEditorPostType {
 
 		add_action( 'init', array( $this, 'registerCategory' ), 5 );
 		add_action( 'init', array( $this, 'registerTag' ), 5 );
+		add_action( 'init', array( $this, 'maybeFillEmptyServiceCategoryOrders' ), 15 );
 
 		add_action( 'admin_menu', array( $this, 'addTaxonomiesToMenu' ), 15 );
+
+		add_filter( 'parent_file', array( $this, 'parent_file' ), 10, 1 );
+	}
+
+
+	/**
+	 * Fills empty service category order meta with zero.
+	 *
+	 *  @since 2.4.0
+	 */
+	public function maybeFillEmptyServiceCategoryOrders() {
+
+		$terms = mpa_get_terms(
+			0,
+			self::CATEGORY_NAME,
+			'all',
+			array(
+				'hide_empty' => false,
+			)
+		);
+
+		foreach ( $terms as $term ) {
+			$meta = get_term_meta( $term->term_id, self::SERVICE_CATEGORY_ORDER_META, true );
+
+			if ( '' === $meta ) {
+				update_term_meta( $term->term_id, self::SERVICE_CATEGORY_ORDER_META, 0 );
+			}
+		}
 	}
 
 	/**
@@ -220,6 +253,28 @@ class ServicePostType extends AbstractBlockEditorPostType {
 			array( esc_html__( 'Service Tags', 'motopress-appointment' ), 'manage_categories', $tagsSlug ),
 		);
 
-		array_splice( $submenu[ $menuId ], 4, 0, $taxonomyMenuItems );
+		array_splice( $submenu[ $menuId ], 7, 0, $taxonomyMenuItems );
+	}
+
+	/**
+	 * Set correct active/current menu and submenu in the WordPress Admin menu
+	 */
+	public function parent_file( $parent_file ) {
+
+		global $submenu_file, $current_screen;
+
+		if ( $current_screen->taxonomy == self::CATEGORY_NAME || $current_screen->taxonomy == self::TAG_NAME ) {
+
+			$submenu_file = 'edit-tags.php?post_type=' . self::POST_TYPE . '&amp;taxonomy=' . self::CATEGORY_NAME;
+			$parent_file  = mpapp()->pages()->appointmentMenu()->getId();
+		}
+
+		if ( $current_screen->taxonomy == self::TAG_NAME ) {
+
+			$submenu_file = 'edit-tags.php?post_type=' . self::POST_TYPE . '&amp;taxonomy=' . self::TAG_NAME;
+			$parent_file  = mpapp()->pages()->appointmentMenu()->getId();
+		}
+
+		return $parent_file;
 	}
 }
