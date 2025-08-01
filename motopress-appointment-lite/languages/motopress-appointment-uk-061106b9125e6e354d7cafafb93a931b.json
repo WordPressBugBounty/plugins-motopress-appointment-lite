@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2025-02-25 13:09",
+    "translation-revision-date": "2025-07-08 11:46",
     "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/calendar-page.js",
     "domain": "messages",
@@ -71,7 +71,7 @@
                 "\u0421\u0442\u0430\u0442\u0443\u0441\u0438"
             ],
             "View Bookings": [
-                ""
+                "\u041f\u0435\u0440\u0435\u0433\u043b\u044f\u043d\u0443\u0442\u0438 \u0417\u0430\u043c\u043e\u0432\u043b\u0435\u043d\u043d\u044f"
             ],
             "Previous": [
                 "\u041f\u043e\u043f\u0435\u0440\u0435\u0434\u043d\u0456\u0439"

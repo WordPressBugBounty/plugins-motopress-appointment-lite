@@ -45,8 +45,11 @@ class PaymentsRegistry {
 			2
 		);
 
+		/**
+		* @since 2.4.1 action 'mpa_registered_payment_gateways' changed to 'init'
+		*/
 		add_action(
-			'plugins_loaded',
+			'init',
 			function() {
 				$this->payments = apply_filters(
 					'mpa_registered_payment_gateways',
@@ -61,7 +64,7 @@ class PaymentsRegistry {
 					)
 				);
 			},
-			900 // load payment gateways after Appointment Booking Plugin and its addons!
+			9
 		);
 	}
 

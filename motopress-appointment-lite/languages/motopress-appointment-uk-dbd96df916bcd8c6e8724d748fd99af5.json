@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2025-02-25 13:09",
+    "translation-revision-date": "2025-07-08 11:46",
     "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/settings-page.js",
     "domain": "messages",
@@ -125,7 +125,7 @@
                 "\u0413\u0440\u0443\u0434\u0435\u043d\u044c"
             ],
             "Phone number is invalid.": [
-                ""
+                "\u041d\u043e\u043c\u0435\u0440 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0443 \u043d\u0435\u0434\u0456\u0439\u0441\u043d\u0438\u0439."
             ]
         }
     }

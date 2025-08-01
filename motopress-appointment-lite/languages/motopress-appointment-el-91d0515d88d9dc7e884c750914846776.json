@@ -1,0 +1,597 @@
+{
+    "translation-revision-date": "2025-07-08 11:39",
+    "generator": "WP-CLI\/2.11.0",
+    "source": "assets\/js\/gutenberg-blocks.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "el_GR",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Settings": [
+                "\u03a1\u03c5\u03b8\u03bc\u03af\u03c3\u03b5\u03b9\u03c2"
+            ],
+            "Price": [
+                "\u03a4\u03b9\u03bc\u03ae"
+            ],
+            "Services": [
+                "\u03a5\u03c0\u03b7\u03c1\u03b5\u03c3\u03af\u03b5\u03c2"
+            ],
+            "Service": [
+                "\u03a5\u03c0\u03b7\u03c1\u03b5\u03c3\u03af\u03b1"
+            ],
+            "Employees": [
+                "\u03a5\u03c0\u03ac\u03bb\u03bb\u03b7\u03bb\u03bf\u03b9"
+            ],
+            "Employee": [
+                "\u03a5\u03c0\u03ac\u03bb\u03bb\u03b7\u03bb\u03bf\u03c2"
+            ],
+            "Location": [
+                "\u03a4\u03bf\u03c0\u03bf\u03b8\u03b5\u03c3\u03af\u03b1"
+            ],
+            "\u2014 Select \u2014": [
+                "\u2014 \u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u2014"
+            ],
+            "Form Width": [
+                ""
+            ],
+            "Example: 100%": [
+                ""
+            ],
+            "Primary Text Color": [
+                ""
+            ],
+            "Primary Background Color": [
+                ""
+            ],
+            "Secondary Text Color": [
+                ""
+            ],
+            "Secondary Background Color": [
+                ""
+            ],
+            "Buttons Padding": [
+                ""
+            ],
+            "Example: 5px 10px": [
+                ""
+            ],
+            "ID": [
+                "\u0391\u03bd\u03b1\u03b3\u03bd\u03c9\u03c1\u03b9\u03c3\u03c4\u03b9\u03ba\u03cc ID"
+            ],
+            "Appointment Form": [
+                "\u03a6\u03cc\u03c1\u03bc\u03b1 \u03a1\u03b1\u03bd\u03c4\u03b5\u03b2\u03bf\u03cd"
+            ],
+            "\u2014 Unselected \u2014": [
+                "\u2014 \u039c\u03b7 \u0395\u03c0\u03b9\u03bb\u03b5\u03b3\u03bc\u03ad\u03bd\u03bf \u2014"
+            ],
+            "Form Title": [
+                "\u03a4\u03af\u03c4\u03bb\u03bf\u03c2 \u03a6\u03cc\u03c1\u03bc\u03b1\u03c2"
+            ],
+            "ID of the selected service.": [
+                "ID \u03c4\u03b7\u03c2 \u03b5\u03c0\u03b9\u03bb\u03b5\u03b3\u03bc\u03ad\u03bd\u03b7\u03c2 \u03c5\u03c0\u03b7\u03c1\u03b5\u03c3\u03af\u03b1\u03c2."
+            ],
+            "Show Category?": [
+                "\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u039a\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b1\u03c2;"
+            ],
+            "Show the service category field in the form.": [
+                "\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03c4\u03bf\u03c5 \u03c0\u03b5\u03b4\u03af\u03bf\u03c5 \u03ba\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b1\u03c2 \u03c5\u03c0\u03b7\u03c1\u03b5\u03c3\u03af\u03b1\u03c2 \u03c3\u03c4\u03b7 \u03c6\u03cc\u03c1\u03bc\u03b1."
+            ],
+            "Show Service?": [
+                ""
+            ],
+            "Show the service field in the form.": [
+                ""
+            ],
+            "Show Location?": [
+                "\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03a4\u03bf\u03c0\u03bf\u03b8\u03b5\u03c3\u03af\u03b1\u03c2;"
+            ],
+            "Show the location field in the form.": [
+                "\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03c4\u03bf\u03c5 \u03c0\u03b5\u03b4\u03af\u03bf\u03c5 \u03c4\u03bf\u03c0\u03bf\u03b8\u03b5\u03c3\u03af\u03b1\u03c2 \u03c3\u03c4\u03b7 \u03c6\u03cc\u03c1\u03bc\u03b1."
+            ],
+            "Show Employee?": [
+                "\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u0395\u03c1\u03b3\u03b1\u03b6\u03bf\u03bc\u03ad\u03bd\u03bf\u03c5;"
+            ],
+            "Show the employee field in the form.": [
+                "\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03c4\u03bf\u03c5 \u03c0\u03b5\u03b4\u03af\u03bf\u03c5 \u03b5\u03c1\u03b3\u03b1\u03b6\u03cc\u03bc\u03b5\u03bd\u03bf\u03c5 \u03c3\u03c4\u03b7 \u03c6\u03cc\u03c1\u03bc\u03b1."
+            ],
+            "Category Field Label": [
+                "\u0395\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03a0\u03b5\u03b4\u03af\u03bf\u03c5 \u039a\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b1\u03c2"
+            ],
+            "Service Category": [
+                "\u039a\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b1 \u03a5\u03c0\u03b7\u03c1\u03b5\u03c3\u03af\u03b1\u03c2"
+            ],
+            "Custom label for the service category field.": [
+                "\u03a0\u03c1\u03bf\u03c3\u03b1\u03c1\u03bc\u03bf\u03c3\u03bc\u03ad\u03bd\u03b7 \u03b5\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03b3\u03b9\u03b1 \u03c4\u03bf \u03c0\u03b5\u03b4\u03af\u03bf \u03ba\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b1\u03c2 \u03c5\u03c0\u03b7\u03c1\u03b5\u03c3\u03af\u03b1\u03c2."
+            ],
+            "Service Field Label": [
+                "\u0395\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03a0\u03b5\u03b4\u03af\u03bf\u03c5 \u03a5\u03c0\u03b7\u03c1\u03b5\u03c3\u03b9\u03ce\u03bd"
+            ],
+            "Custom label for the service field.": [
+                "\u03a0\u03c1\u03bf\u03c3\u03b1\u03c1\u03bc\u03bf\u03c3\u03bc\u03ad\u03bd\u03b7 \u03b5\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03b3\u03b9\u03b1 \u03c4\u03bf \u03c0\u03b5\u03b4\u03af\u03bf \u03c5\u03c0\u03b7\u03c1\u03b5\u03c3\u03af\u03b1\u03c2."
+            ],
+            "Location Field Label": [
+                "\u0395\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03a0\u03b5\u03b4\u03af\u03bf\u03c5 \u03a4\u03bf\u03c0\u03bf\u03b8\u03b5\u03c3\u03af\u03b1\u03c2"
+            ],
+            "Custom label for the location field.": [
+                "\u03a0\u03c1\u03bf\u03c3\u03b1\u03c1\u03bc\u03bf\u03c3\u03bc\u03ad\u03bd\u03b7 \u03b5\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03b3\u03b9\u03b1 \u03c4\u03bf \u03c0\u03b5\u03b4\u03af\u03bf \u03c4\u03bf\u03c0\u03bf\u03b8\u03b5\u03c3\u03af\u03b1\u03c2."
+            ],
+            "Employee Field Label": [
+                "\u0395\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03a0\u03b5\u03b4\u03af\u03bf\u03c5 \u03a5\u03c0\u03b1\u03bb\u03bb\u03ae\u03bb\u03bf\u03c5"
+            ],
+            "Custom label for the employee field.": [
+                "\u03a0\u03c1\u03bf\u03c3\u03b1\u03c1\u03bc\u03bf\u03c3\u03bc\u03ad\u03bd\u03b7 \u03b5\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03b3\u03b9\u03b1 \u03c4\u03bf \u03c0\u03b5\u03b4\u03af\u03bf \u03c4\u03c9\u03bd \u03b5\u03c1\u03b3\u03b1\u03b6\u03bf\u03bc\u03ad\u03bd\u03c9\u03bd."
+            ],
+            "Unselected Service": [
+                "\u039c\u03b7 \u0395\u03c0\u03b9\u03bb\u03b5\u03b3\u03bc\u03ad\u03bd\u03b7 \u03a5\u03c0\u03b7\u03c1\u03b5\u03c3\u03af\u03b1"
+            ],
+            "Custom label for the unselected service field.": [
+                "\u03a0\u03c1\u03bf\u03c3\u03b1\u03c1\u03bc\u03bf\u03c3\u03bc\u03ad\u03bd\u03b7 \u03b5\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03b3\u03b9\u03b1 \u03c4\u03bf \u03bc\u03b7 \u03b5\u03c0\u03b9\u03bb\u03b5\u03b3\u03bc\u03ad\u03bd\u03bf \u03c0\u03b5\u03b4\u03af\u03bf \u03c5\u03c0\u03b7\u03c1\u03b5\u03c3\u03af\u03b1\u03c2."
+            ],
+            "Unselected Option": [
+                "\u039c\u03b7 \u0395\u03c0\u03b9\u03bb\u03b5\u03b3\u03bc\u03ad\u03bd\u03b7 \u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae"
+            ],
+            "\u2014 Any \u2014": [
+                "\u2014 \u039f\u03c0\u03bf\u03b9\u03b1\u03b4\u03ae\u03c0\u03bf\u03c4\u03b5 \u2014"
+            ],
+            "Comma-separated slugs or IDs of tags that will be shown.": [
+                "Slugs \u03ae ID \u03c7\u03c9\u03c1\u03b9\u03c3\u03bc\u03ad\u03bd\u03b1 \u03bc\u03b5 \u03ba\u03cc\u03bc\u03bc\u03b1 \u03c0\u03bf\u03c5 \u03b8\u03b1 \u03b5\u03bc\u03c6\u03b1\u03bd\u03b9\u03c3\u03c4\u03bf\u03cd\u03bd."
+            ],
+            "Slug of the selected service category.": [
+                "Slug \u03c4\u03b7\u03c2 \u03b5\u03c0\u03b9\u03bb\u03b5\u03b3\u03bc\u03ad\u03bd\u03b7\u03c2 \u03ba\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b1\u03c2 \u03c5\u03c0\u03b7\u03c1\u03b5\u03c3\u03b9\u03ce\u03bd."
+            ],
+            "ID of the selected location.": [
+                "ID \u03c4\u03b7\u03c2 \u03b5\u03c0\u03b9\u03bb\u03b5\u03b3\u03bc\u03ad\u03bd\u03b7\u03c2 \u03c4\u03bf\u03c0\u03bf\u03b8\u03b5\u03c3\u03af\u03b1\u03c2."
+            ],
+            "ID of the selected employee.": [
+                "ID \u03c4\u03bf\u03c5 \u03b5\u03c0\u03b9\u03bb\u03b5\u03b3\u03bc\u03ad\u03bd\u03bf\u03c5 \u03c5\u03c0\u03b1\u03bb\u03bb\u03ae\u03bb\u03bf\u03c5."
+            ],
+            "Timepicker Columns Count": [
+                "\u0391\u03c1\u03af\u03b8\u03bc\u03b7\u03c3\u03b7 \u03a3\u03c4\u03b7\u03bb\u03ce\u03bd \u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae\u03c2 \u03a7\u03c1\u03cc\u03bd\u03bf\u03c5"
+            ],
+            "Show End Time?": [
+                "\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u038f\u03c1\u03b1\u03c2 \u039b\u03ae\u03be\u03b7\u03c2;"
+            ],
+            "Show the time when the appointment ends.": [
+                "\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03c4\u03bf\u03c5 \u03c7\u03c1\u03cc\u03bd\u03bf\u03c5 \u03bb\u03ae\u03be\u03b7\u03c2 \u03c4\u03bf\u03c5 \u03c1\u03b1\u03bd\u03c4\u03b5\u03b2\u03bf\u03cd."
+            ],
+            "Show 'Add to Your Calendar?' section.": [
+                ""
+            ],
+            "Allow customers to add an appointment to their own Google, Apple, Outlook, or Yahoo calendar.": [
+                ""
+            ],
+            "Employee Additional Information": [
+                "\u03a0\u03c1\u03cc\u03c3\u03b8\u03b5\u03c4\u03b5\u03c2 \u03a0\u03bb\u03b7\u03c1\u03bf\u03c6\u03bf\u03c1\u03af\u03b5\u03c2 \u0395\u03c1\u03b3\u03b1\u03b6\u03bf\u03bc\u03ad\u03bd\u03c9\u03bd"
+            ],
+            "Post ID of an employee to display content from. Note: this parameter automatically uses the current post ID when a shortcode is inside the employee's post and is required otherwise.": [
+                "\u0391\u03bd\u03b1\u03c1\u03c4\u03ae\u03c3\u03c4\u03b5 \u03c4\u03bf ID \u03b5\u03bd\u03cc\u03c2 \u03c5\u03c0\u03b1\u03bb\u03bb\u03ae\u03bb\u03bf\u03c5 \u03b3\u03b9\u03b1 \u03c0\u03c1\u03bf\u03b2\u03bf\u03bb\u03ae \u03c0\u03b5\u03c1\u03b9\u03b5\u03c7\u03bf\u03bc\u03ad\u03bd\u03bf\u03c5. \u03a3\u03b7\u03bc\u03b5\u03af\u03c9\u03c3\u03b7: \u03b1\u03c5\u03c4\u03ae \u03b7 \u03c0\u03b1\u03c1\u03ac\u03bc\u03b5\u03c4\u03c1\u03bf\u03c2 \u03c7\u03c1\u03b7\u03c3\u03b9\u03bc\u03bf\u03c0\u03bf\u03b9\u03b5\u03af \u03b1\u03c5\u03c4\u03cc\u03bc\u03b1\u03c4\u03b1 \u03c4\u03bf \u03c4\u03c1\u03ad\u03c7\u03bf\u03bd \u03b1\u03bd\u03b1\u03b3\u03bd\u03c9\u03c1\u03b9\u03c3\u03c4\u03b9\u03ba\u03cc \u03b4\u03b7\u03bc\u03bf\u03c3\u03af\u03b5\u03c5\u03c3\u03b7\u03c2 \u03cc\u03c4\u03b1\u03bd \u03ad\u03bd\u03b1 shortcode \u03b2\u03c1\u03af\u03c3\u03ba\u03b5\u03c4\u03b1\u03b9 \u03bc\u03ad\u03c3\u03b1 \u03c3\u03c4\u03b7 \u03b8\u03ad\u03c3\u03b7 \u03c4\u03bf\u03c5 \u03b5\u03c1\u03b3\u03b1\u03b6\u03bf\u03bc\u03ad\u03bd\u03bf\u03c5 \u03ba\u03b1\u03b9 \u03b1\u03c0\u03b1\u03b9\u03c4\u03b5\u03af\u03c4\u03b1\u03b9 \u03b4\u03b9\u03b1\u03c6\u03bf\u03c1\u03b5\u03c4\u03b9\u03ba\u03ac."
+            ],
+            "Employee Contact Information": [
+                "\u03a3\u03c4\u03bf\u03b9\u03c7\u03b5\u03af\u03b1 \u0395\u03c0\u03b9\u03ba\u03bf\u03b9\u03bd\u03c9\u03bd\u03af\u03b1\u03c2 \u0395\u03c1\u03b3\u03b1\u03b6\u03bf\u03bc\u03ad\u03bd\u03bf\u03c5"
+            ],
+            "Employee Content": [
+                "\u03a0\u03b5\u03c1\u03b9\u03b5\u03c7\u03cc\u03bc\u03b5\u03bd\u03bf \u03a5\u03c0\u03b1\u03bb\u03bb\u03ae\u03bb\u03c9\u03bd"
+            ],
+            "Employee Image": [
+                "\u0395\u03b9\u03ba\u03cc\u03bd\u03b1 \u03a5\u03c0\u03ac\u03bb\u03bb\u03b7\u03bb\u03bf\u03c5"
+            ],
+            "Employee Schedule": [
+                ""
+            ],
+            "Employee Services List": [
+                ""
+            ],
+            "Employees List": [
+                ""
+            ],
+            "Show featured image.": [
+                ""
+            ],
+            "Show post title.": [
+                ""
+            ],
+            "Show post excerpt.": [
+                ""
+            ],
+            "Show contact information.": [
+                ""
+            ],
+            "Show social networks.": [
+                ""
+            ],
+            "Show additional information.": [
+                ""
+            ],
+            "Comma-separated slugs or IDs of employees that will be shown.": [
+                ""
+            ],
+            "Locations": [
+                "\u03a4\u03bf\u03c0\u03bf\u03b8\u03b5\u03c3\u03af\u03b5\u03c2"
+            ],
+            "Comma-separated slugs or IDs of locations.": [
+                ""
+            ],
+            "Posts Per Page": [
+                ""
+            ],
+            "Columns Count": [
+                ""
+            ],
+            "The number of columns in the grid.": [
+                ""
+            ],
+            "Order By": [
+                ""
+            ],
+            "No order": [
+                ""
+            ],
+            "Post ID": [
+                ""
+            ],
+            "Post author": [
+                ""
+            ],
+            "Post title": [
+                "\u03a4\u03af\u03c4\u03bb\u03bf\u03c2 \u0386\u03c1\u03b8\u03c1\u03bf\u03c5"
+            ],
+            "Post name (post slug)": [
+                ""
+            ],
+            "Post date": [
+                ""
+            ],
+            "Last modified date": [
+                ""
+            ],
+            "Random order": [
+                ""
+            ],
+            "Relevance": [
+                ""
+            ],
+            "Page order": [
+                "\u0394\u03b9\u03ac\u03c4\u03b1\u03be\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03c9\u03bd"
+            ],
+            "Page order and post title": [
+                ""
+            ],
+            "Order": [
+                ""
+            ],
+            "DESC": [
+                ""
+            ],
+            "ASC": [
+                ""
+            ],
+            "Employee Social Networks": [
+                ""
+            ],
+            "Employee Title": [
+                ""
+            ],
+            "Locations List": [
+                ""
+            ],
+            "Categories": [
+                "K\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b5\u03c2"
+            ],
+            "Comma-separated slugs or IDs of categories that will be shown.": [
+                ""
+            ],
+            "Service Categories": [
+                ""
+            ],
+            "Show Services Count?": [
+                ""
+            ],
+            "Show Description?": [
+                ""
+            ],
+            "Parent": [
+                ""
+            ],
+            "Parent term slug or ID to retrieve direct-child terms from.": [
+                ""
+            ],
+            "Exclude Categories": [
+                ""
+            ],
+            "Comma-separated slugs or IDs of categories that will not be shown.": [
+                ""
+            ],
+            "Hide Empty": [
+                ""
+            ],
+            "Depth": [
+                "\u0392\u03ac\u03b8\u03bf\u03c2"
+            ],
+            "Display depth of child categories.": [
+                "\u0392\u03ac\u03b8\u03bf\u03c2 \u03b5\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7\u03c2 \u03c4\u03c9\u03bd \u03ba\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03b9\u03ce\u03bd \u03c0\u03b1\u03b9\u03b4\u03b9\u03ce\u03bd."
+            ],
+            "Number": [
+                "\u0391\u03c1\u03b9\u03b8\u03bc\u03cc\u03c2"
+            ],
+            "Maximum number of categories to show.": [
+                "\u039c\u03ad\u03b3\u03b9\u03c3\u03c4\u03bf\u03c2 \u03b1\u03c1\u03b9\u03b8\u03bc\u03cc\u03c2 \u03ba\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03b9\u03ce\u03bd \u03c0\u03bf\u03c5 \u03b8\u03b1 \u03b5\u03bc\u03c6\u03b1\u03bd\u03af\u03b6\u03bf\u03bd\u03c4\u03b1\u03b9."
+            ],
+            "Term name": [
+                "\u038c\u03bd\u03bf\u03bc\u03b1 \u03cc\u03c1\u03bf\u03c5"
+            ],
+            "Term slug": [
+                "\u038c\u03c1\u03bf\u03c2 slug"
+            ],
+            "Term ID": [
+                "\u038c\u03c1\u03bf\u03c2 ID"
+            ],
+            "Parent ID": [
+                "\u0393\u03bf\u03bd\u03b9\u03ba\u03cc ID"
+            ],
+            "Number of associated objects": [
+                "\u0391\u03c1\u03b9\u03b8\u03bc\u03cc\u03c2 \u03c3\u03c5\u03c3\u03c7\u03b5\u03c4\u03b9\u03b6\u03cc\u03bc\u03b5\u03bd\u03c9\u03bd \u03b1\u03bd\u03c4\u03b9\u03ba\u03b5\u03b9\u03bc\u03ad\u03bd\u03c9\u03bd"
+            ],
+            "Keep the order of \"IDs\" parameter": [
+                "\u039a\u03c1\u03b1\u03c4\u03ae\u03c3\u03c4\u03b5 \u03c4\u03b7 \u03c3\u03b5\u03b9\u03c1\u03ac \u03c4\u03b7\u03c2 \u03c0\u03b1\u03c1\u03b1\u03bc\u03ad\u03c4\u03c1\u03bf\u03c5 \"IDs\""
+            ],
+            "Term order": [
+                "\u03a3\u03b5\u03b9\u03c1\u03ac \u03c4\u03b1\u03be\u03b9\u03bd\u03cc\u03bc\u03b7\u03c3\u03b7\u03c2"
+            ],
+            "Services List": [
+                "\u039b\u03af\u03c3\u03c4\u03b1 \u03a5\u03c0\u03b7\u03c1\u03b5\u03c3\u03b9\u03ce\u03bd"
+            ],
+            "Show service price.": [
+                "\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03c4\u03b9\u03bc\u03ae\u03c2 \u03c5\u03c0\u03b7\u03c1\u03b5\u03c3\u03af\u03b1\u03c2."
+            ],
+            "Show service duration.": [
+                "\u0394\u03b9\u03ac\u03c1\u03ba\u03b5\u03b9\u03b1 \u03c5\u03c0\u03b7\u03c1\u03b5\u03c3\u03af\u03b1\u03c2."
+            ],
+            "Show service capacity.": [
+                "\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03c7\u03c9\u03c1\u03b7\u03c4\u03b9\u03ba\u03cc\u03c4\u03b7\u03c4\u03b1\u03c2 \u03c5\u03c0\u03b7\u03c1\u03b5\u03c3\u03af\u03b1\u03c2."
+            ],
+            "Show service employees.": [
+                "\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03c5\u03c0\u03b1\u03bb\u03bb\u03ae\u03bb\u03c9\u03bd \u03c5\u03c0\u03b7\u03c1\u03b5\u03c3\u03b9\u03ce\u03bd."
+            ],
+            "Comma-separated slugs or IDs of services that will be shown.": [
+                "Slugs \u03ae ID \u03c7\u03c9\u03c1\u03b9\u03c3\u03bc\u03ad\u03bd\u03b1 \u03bc\u03b5 \u03ba\u03cc\u03bc\u03bc\u03b1 \u03c0\u03bf\u03c5 \u03b8\u03b1 \u03b5\u03bc\u03c6\u03b1\u03bd\u03b9\u03c3\u03c4\u03bf\u03cd\u03bd."
+            ],
+            "Comma-separated slugs or IDs of employees that perform these services.": [
+                "Slugs \u03ae ID \u03c5\u03c0\u03b1\u03bb\u03bb\u03ae\u03bb\u03c9\u03bd \u03c0\u03bf\u03c5 \u03b5\u03ba\u03c4\u03b5\u03bb\u03bf\u03cd\u03bd \u03c4\u03b9\u03c2 \u03c5\u03c0\u03b7\u03c1\u03b5\u03c3\u03af\u03b5\u03c2."
+            ],
+            "Tags": [
+                "\u0395\u03c4\u03b9\u03ba\u03ad\u03c4\u03b5\u03c2"
+            ],
+            "Custom label for the unselected service category, location and employee fields.": [
+                "\u03a0\u03c1\u03bf\u03c3\u03b1\u03c1\u03bc\u03bf\u03c3\u03bc\u03ad\u03bd\u03b7 \u03b5\u03c4\u03b9\u03ba\u03ad\u03c4\u03b1 \u03b3\u03b9\u03b1 \u03c4\u03b7\u03bd \u03bc\u03b7 \u03b5\u03c0\u03b9\u03bb\u03b5\u03b3\u03bc\u03ad\u03bd\u03b7 \u03ba\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b1 \u03c5\u03c0\u03b7\u03c1\u03b5\u03c3\u03b9\u03ce\u03bd, \u03c4\u03bf\u03c0\u03bf\u03b8\u03b5\u03c3\u03af\u03b1 \u03ba\u03b1\u03b9 \u03c0\u03b5\u03b4\u03af\u03b1 \u03b5\u03c1\u03b3\u03b1\u03b6\u03bf\u03bc\u03ad\u03bd\u03c9\u03bd."
+            ],
+            "These options only affect what you see on the front end.": [
+                ""
+            ],
+            "Hide terms not assigned to any posts.": [
+                "\u0391\u03c0\u03cc\u03ba\u03c1\u03c5\u03c8\u03b7 \u03cc\u03c1\u03c9\u03bd \u03c0\u03bf\u03c5 \u03b4\u03b5\u03bd \u03ad\u03c7\u03bf\u03c5\u03bd \u03b1\u03bd\u03b1\u03c4\u03b5\u03b8\u03b5\u03af \u03c3\u03b5 \u03ba\u03b1\u03bc\u03af\u03b1 \u03b1\u03bd\u03ac\u03c1\u03c4\u03b7\u03c3\u03b7."
+            ],
+            "Left to pay": [
+                ""
+            ],
+            "Clients": [
+                "\u03a0\u03b5\u03bb\u03ac\u03c4\u03b5\u03c2"
+            ],
+            "All day": [
+                "\u038c\u03bb\u03b7 \u03bc\u03ad\u03c1\u03b1"
+            ],
+            "Remove": [
+                "\u0391\u03c6\u03b1\u03af\u03c1\u03b5\u03c3\u03b7"
+            ],
+            "Zero price\u0004Free": [
+                "\u0394\u03c9\u03c1\u03b5\u03ac\u03bd"
+            ],
+            "Bancontact": [
+                ""
+            ],
+            "iDEAL": [
+                ""
+            ],
+            "Giropay": [
+                ""
+            ],
+            "SEPA Direct Debit": [
+                ""
+            ],
+            "SOFORT": [
+                ""
+            ],
+            "The number of columns in the timepicker.": [
+                "\u039f \u03b1\u03c1\u03b9\u03b8\u03bc\u03cc\u03c2 \u03c4\u03c9\u03bd \u03c3\u03c4\u03b7\u03bb\u03ce\u03bd \u03c3\u03c4\u03bf\u03bd \u03b5\u03c0\u03b9\u03bb\u03bf\u03b3\u03ad\u03b1 \u03c7\u03c1\u03cc\u03bd\u03bf\u03c5."
+            ],
+            "Making a reservation...": [
+                ""
+            ],
+            "Sun": [
+                "\u039a\u03c5\u03c1"
+            ],
+            "Mon": [
+                "\u0394\u03b5\u03c5"
+            ],
+            "Tue": [
+                "\u03a4\u03c1\u03af"
+            ],
+            "Wed": [
+                "\u03a4\u03b5\u03c4"
+            ],
+            "Thu": [
+                "\u03a0\u03ad\u03bc"
+            ],
+            "Fri": [
+                "\u03a0\u03b1\u03c1"
+            ],
+            "Sat": [
+                "\u03a3\u03ac\u03b2"
+            ],
+            "Sunday": [
+                "\u039a\u03c5\u03c1\u03b9\u03b1\u03ba\u03ae"
+            ],
+            "Monday": [
+                "\u0394\u03b5\u03c5\u03c4\u03ad\u03c1\u03b1"
+            ],
+            "Tuesday": [
+                "\u03a4\u03c1\u03af\u03c4\u03b7"
+            ],
+            "Wednesday": [
+                "\u03a4\u03b5\u03c4\u03ac\u03c1\u03c4\u03b7"
+            ],
+            "Thursday": [
+                "\u03a0\u03ad\u03bc\u03c0\u03c4\u03b7"
+            ],
+            "Friday": [
+                "\u03a0\u03b1\u03c1\u03b1\u03c3\u03ba\u03b5\u03c5\u03ae"
+            ],
+            "Saturday": [
+                "\u03a3\u03ac\u03b2\u03b2\u03b1\u03c4\u03bf"
+            ],
+            "Jan": [
+                "\u0399\u03b1\u03bd"
+            ],
+            "Feb": [
+                "\u03a6\u03b5\u03b2"
+            ],
+            "Mar": [
+                "\u039c\u03b1\u03c1"
+            ],
+            "Apr": [
+                "\u0391\u03c0\u03c1"
+            ],
+            "Month (short)\u0004May": [
+                "\u039c\u03ac\u03b9\u03bf\u03c2"
+            ],
+            "Jun": [
+                "\u0399\u03bf\u03c5\u03bd"
+            ],
+            "Jul": [
+                "\u0399\u03bf\u03c5\u03bb"
+            ],
+            "Aug": [
+                "\u0391\u03c5\u03b3"
+            ],
+            "Sep": [
+                "\u03a3\u03b5\u03c0\u03c4"
+            ],
+            "Oct": [
+                "\u039f\u03ba\u03c4"
+            ],
+            "Nov": [
+                "\u039d\u03bf\u03b5"
+            ],
+            "Dec": [
+                "\u0394\u03b5\u03ba"
+            ],
+            "January": [
+                "\u0399\u03b1\u03bd\u03bf\u03c5\u03ac\u03c1\u03b9\u03bf\u03c2"
+            ],
+            "February": [
+                "\u03a6\u03b5\u03b2\u03c1\u03bf\u03c5\u03ac\u03c1\u03b9\u03bf\u03c2"
+            ],
+            "March": [
+                "\u039c\u03ac\u03c1\u03c4\u03b9\u03bf\u03c2"
+            ],
+            "April": [
+                "\u0391\u03c0\u03c1\u03af\u03bb\u03b9\u03bf\u03c2"
+            ],
+            "Month\u0004May": [
+                "\u039c\u03ac\u03b9\u03bf\u03c2"
+            ],
+            "June": [
+                ""
+            ],
+            "July": [
+                ""
+            ],
+            "August": [
+                ""
+            ],
+            "September": [
+                ""
+            ],
+            "October": [
+                ""
+            ],
+            "November": [
+                ""
+            ],
+            "December": [
+                ""
+            ],
+            "Phone number is invalid.": [
+                ""
+            ],
+            "You will be redirected to a secure page to complete the payment.": [
+                ""
+            ],
+            "Subtotal": [
+                ""
+            ],
+            "Coupon: %s": [
+                ""
+            ],
+            "Total": [
+                "\u03a3\u03cd\u03bd\u03bf\u03bb\u03bf"
+            ],
+            "Deposit": [
+                "\u039a\u03b1\u03c4\u03ac\u03b8\u03b5\u03c3\u03b7"
+            ],
+            "Paying now": [
+                ""
+            ],
+            "Coupon code is empty.": [
+                ""
+            ],
+            "Coupon code applied successfully.": [
+                ""
+            ],
+            "Sorry, your booking is not eligible for this coupon.": [
+                ""
+            ],
+            "By providing your IBAN and confirming this payment, you authorise (A) %s and Stripe, our payment service provider, to send instructions to your bank to debit your account and (B) your bank to debit your account in accordance with those instructions. You are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited.": [
+                ""
+            ],
+            "Credit or debit card": [
+                ""
+            ],
+            "or": [
+                "\u03ae"
+            ],
+            "Select iDEAL Bank": [
+                ""
+            ],
+            "IBAN": [
+                ""
+            ],
+            "Payment methods": [
+                ""
+            ],
+            "Card": [
+                ""
+            ],
+            "Sorry, but we were unable to allocate time slots for the date you selected.": [
+                ""
+            ],
+            "Sorry, there are no services, employees or locations to book.": [
+                ""
+            ],
+            "To enable this option, you need to check the '%s' box.": [
+                ""
+            ],
+            "To enable booking for the specific service only, select the service below first, then uncheck the 'Service' box here.": [
+                ""
+            ],
+            "Colors": [
+                ""
+            ],
+            "appointment": [
+                ""
+            ]
+        }
+    }
+}

@@ -114,8 +114,7 @@ class Plugin {
 		}
 
 		// Setup registries
-		$this->registries['postTypes'] = new Registries\PostTypesRegistry();
-		$this->registries['postTypes']->registerAll();
+		$this->registries['postTypes']    = new Registries\PostTypesRegistry();
 		$this->registries['bundles']      = new Registries\BundlesRegistry();
 		$this->registries['emails']       = new Registries\EmailsRegistry();
 		$this->registries['pages']        = new Registries\PagesRegistry();
@@ -126,7 +125,7 @@ class Plugin {
 		$this->registries['templates']    = new Registries\TemplatesRegistry();
 		$this->registries['widgets']      = new Registries\WidgetsRegistry();
 
-		// must be after port type registration!
+		// must be after post type registration!
 		new SecurityHandler();
 		new CronsHandler();
 		new AjaxHandler();
@@ -137,7 +136,20 @@ class Plugin {
 
 		// Use priority 5/15, so addons can safely load/init on default priority
 		add_action( 'plugins_loaded', array( $this, 'load' ), 15 );
-		add_action( 'init', array( $this, 'init' ), 15 );
+
+		add_action(
+			'init',
+			function () {
+				load_plugin_textdomain(
+					'motopress-appointment',
+					false,
+					mpa_languages_dir()
+				);
+			},
+			-1
+		);
+
+		add_action( 'init', array( $this, 'init' ), 5 );
 		add_action( 'admin_init', array( $this, 'initAutoUpdater' ), 15 );
 
 		add_action( 'wp_head', 'mpa_print_version_comment', 1 );
@@ -162,14 +174,9 @@ class Plugin {
 		// Register global items (admin and frontend)
 		$this->emailsDispatcher->load();
 
-		$this->registries['shortcodes']->registerAll();
-		$this->registries['widgets']->registerAll();
-
 		// Register admin-only items
 		if ( is_admin() ) {
 			WizardHandler::getInstance();
-			$this->registries['pages']->registerCustomPages();
-
 			new AdminMetaboxHandler();
 		}
 
@@ -180,23 +187,24 @@ class Plugin {
 		do_action( 'mpa_plugin_loaded', $this );
 	}
 
-	/**
-	 * @access protected
-	 *
-	 * @since 1.0
-	 */
 	public function init() {
 
-		load_plugin_textdomain( 'motopress-appointment', false, $this->getPluginPath() );
+		// Register post types
+		$this->registries['postTypes']->registerAll();
 
-		$this->initOnce();
+		// Register shortcodes and widgets
+		$this->registries['shortcodes']->registerAll();
+		$this->registries['widgets']->registerAll();
 
-		// Register admin-only items
 		if ( is_admin() ) {
+			$this->registries['pages']->registerCustomPages();
 			$this->registries['pages']->registerManagePostsPages();
 			$this->registries['pages']->registerEditPostPages();
 		}
 
+		$this->initOnce();
+
+		//Page builders
 		new Elementor\Init();
 		new Divi\Init();
 		new Gutenberg\Init();

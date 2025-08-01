@@ -19,8 +19,8 @@ msgstr ""
 "X-Crowdin-File: motopress-appointment.pot\n"
 "X-Crowdin-File-ID: 46\n"
 
-#: includes/functions/plugin.php:109
-#: includes/Plugin.php:481
+#: includes/functions/plugin.php:106
+#: includes/Plugin.php:489
 msgid "Appointment Booking"
 msgstr ""
 

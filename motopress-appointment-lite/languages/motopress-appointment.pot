@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Appointment Booking Lite 2.4.0\n"
+"Project-Id-Version: Appointment Booking Lite 2.4.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/motopress-appointment-production-lite\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-06-07T16:26:12+00:00\n"
+"POT-Creation-Date: 2025-07-30T08:31:48+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: motopress-appointment\n"
@@ -4893,8 +4893,8 @@ msgctxt "Product name for payment gateway (no booking ID)"
 msgid "Service booking"
 msgstr ""
 
-#: includes/functions/plugin.php:109
-#: includes/Plugin.php:481
+#: includes/functions/plugin.php:106
+#: includes/Plugin.php:489
 msgid "Appointment Booking"
 msgstr ""
 

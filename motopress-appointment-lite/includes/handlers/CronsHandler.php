@@ -35,7 +35,7 @@ class CronsHandler {
 
 		// add cron action hooks
 		add_action(
-			'plugins_loaded',
+			'init',
 			function() {
 
 				foreach ( static::CRON_CLASSES as $cronClass ) {

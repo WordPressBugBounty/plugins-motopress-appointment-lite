@@ -40,7 +40,7 @@ class SecurityHandler {
 
 		// Updates roles and their capabilities if security version in database not equals to the current version in code.
 		if ( ! $this->isSecurityVersionUpToDate() ) {
-			add_action( 'plugins_loaded', array( $this, 'registeringAppointmentRolesAndCapabilities' ) );
+			add_action( 'init', array( $this, 'registeringAppointmentRolesAndCapabilities' ) );
 		}
 
 		add_action( 'admin_init', array( $this, 'applyCapabilities' ) );

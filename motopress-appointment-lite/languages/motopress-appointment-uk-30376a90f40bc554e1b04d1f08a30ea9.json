@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2025-02-25 13:09",
+    "translation-revision-date": "2025-07-08 11:46",
     "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/widgets-manage-page.js",
     "domain": "messages",
@@ -140,10 +140,10 @@
                 "\u0413\u0440\u0443\u0434\u0435\u043d\u044c"
             ],
             "Phone number is invalid.": [
-                ""
+                "\u041d\u043e\u043c\u0435\u0440 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0443 \u043d\u0435\u0434\u0456\u0439\u0441\u043d\u0438\u0439."
             ],
             "To enable this option, you need to check the '%s' box.": [
-                ""
+                "\u0429\u043e\u0431 \u0443\u0432\u0456\u043c\u043a\u043d\u0443\u0442\u0438 \u0446\u044e \u043e\u043f\u0446\u0456\u044e, \u0432\u0430\u043c \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u043e \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0438 \u043f\u0440\u0430\u043f\u043e\u0440\u0435\u0446\u044c \"%s\"."
             ],
             "To enable booking for the specific service only, select the service below first, then uncheck the 'Service' box here.": [
                 ""

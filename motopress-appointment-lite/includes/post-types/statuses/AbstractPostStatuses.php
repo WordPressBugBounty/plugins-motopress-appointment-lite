@@ -66,9 +66,10 @@ abstract class AbstractPostStatuses {
 
 	/**
 	 * @since 1.0
+	 * @since 2.4.1 registerStatuses priority changed to 10.
 	 */
 	protected function addActions() {
-		add_action( 'init', array( $this, 'registerStatuses' ), 5 );
+		add_action( 'init', array( $this, 'registerStatuses' ), 10 );
 		add_action( 'transition_post_status', array( $this, 'transitionStatus' ), 10, 3 );
 	}
 

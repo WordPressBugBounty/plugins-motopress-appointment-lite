@@ -35,7 +35,7 @@ class EmployeeGoogleCalendarMetabox extends CustomMetabox {
 
 			GoogleCalendarSyncHandler::disconnectGoogleCalendarFromEmployee( $postId );
 
-			wp_redirect( admin_url( 'post.php?action=edit&post=' . $postId ) );
+			wp_safe_redirect( admin_url( 'post.php?action=edit&post=' . $postId ) );
 			exit;
 		}
 	}

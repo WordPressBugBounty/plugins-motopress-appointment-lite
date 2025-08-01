@@ -7,8 +7,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-02-18T07:23:43+00:00\n"
-"PO-Revision-Date: 2025-02-25 13:09\n"
+"POT-Creation-Date: 2025-04-01T09:52:49+00:00\n"
+"PO-Revision-Date: 2025-07-08 11:54\n"
 "Language: de_DE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: motopress-appointment\n"
@@ -19,8 +19,8 @@ msgstr ""
 "X-Crowdin-File: motopress-appointment.pot\n"
 "X-Crowdin-File-ID: 46\n"
 
-#: includes/functions/plugin.php:109
-#: includes/Plugin.php:481
+#: includes/functions/plugin.php:106
+#: includes/Plugin.php:489
 msgid "Appointment Booking"
 msgstr ""
 
@@ -216,6 +216,11 @@ msgstr "Änderungen speichern"
 #: assets/js/gutenberg-blocks.js:13559
 msgid "Settings"
 msgstr "Einstellungen"
+
+#: includes/admin-pages/custom/WizardPage.php:69
+#: includes/admin-pages/custom/WizardPage.php:76
+msgid "Wizard"
+msgstr ""
 
 #: includes/admin-pages/edit/EditCouponPage.php:28
 #: includes/crons/ExportBookingsCron.php:363
@@ -472,7 +477,7 @@ msgstr ""
 #: includes/admin-pages/manage/ManageNotificationsPage.php:206
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:79
 msgid "Admin"
-msgstr ""
+msgstr "Admin"
 
 #: includes/admin-pages/manage/ManageNotificationsPage.php:243
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:50
@@ -482,7 +487,7 @@ msgstr ""
 #: includes/admin-pages/manage/ManageNotificationsPage.php:247
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:49
 msgid "Booking placed"
-msgstr ""
+msgstr "Buchung vorgenommen"
 
 #: includes/admin-pages/manage/ManageNotificationsPage.php:251
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:51
@@ -2252,7 +2257,7 @@ msgstr "E-Mails"
 #: includes/post-types/NotificationPostType.php:37
 #: includes/post-types/NotificationPostType.php:69
 msgid "Notifications"
-msgstr ""
+msgstr "Benachrichtigungen"
 
 #: includes/bundles/SettingsBundle.php:47
 #: includes/crons/ExportBookingsCron.php:367
@@ -4867,6 +4872,93 @@ msgstr "Terminmitarbeiter"
 msgid "Appointment Customer"
 msgstr ""
 
+#: includes/handlers/WizardHandler.php:77
+#: templates/private/pages/shortcodes-list.php:21
+msgid "Set up your Appointment Booking plugin in just a few simple steps! This wizard will guide you through adding your first service with the necessary settings. You can add unlimited services, staff members, and locations later."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:79
+#: templates/private/pages/shortcodes-list.php:21
+msgid "Run Wizard"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:80
+msgid "Skip"
+msgstr "Überspringen"
+
+#: includes/handlers/WizardHandler.php:213
+msgid "Failed to create a location."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:218
+msgid "Failed to create an employee."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:225
+msgid "Failed to create a service."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:438
+msgid "Welcome to MotoPress Appointment Booking!"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:439
+msgid "It's great to have you here with us! We'll be guiding you through the setup process to help you get started easily."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:464
+msgid "Where does an appointment take place?"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:465
+msgid "A location is where an appointment takes place, such as a city, area, building, room, or online. Adding a location is required, though you can choose to hide it in the booking form later."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:490
+msgid "Who provides a service?"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:491
+msgid "An employee is the service provider responsible for the appointment, typically listed by name. Adding an employee is required, though you can choose to hide it in the booking form later."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:493
+msgid "A schedule for this employee is generated automatically and can be edited later in the Schedules menu."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:527
+msgid "Describe your service"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:528
+msgid "A service is the specific offering provided during an appointment. It can be a haircut, consultation, medical checkup, training session, or any other activity booked by a customer."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:601
+msgid "Booking Page"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:602
+msgid "Create a draft website page with an appointment booking form."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:610
+msgid "Define some key configurations for your appointment booking system. The Confirmation Mode option specifies how booking requests are approved."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:625
+msgid "Setup Complete – Ready to Go!"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:626
+msgid "Your appointment system is set up with default settings and ready for bookings. You can now also add more services, employees, locations, and customize settings and schedules."
+msgstr ""
+
+#. translators: %1$s is Placeholder for the draft page link.
+#: includes/handlers/WizardHandler.php:628
+msgid "Your draft page with the form: %1$s"
+msgstr ""
+
 #: includes/helpers/EmailTagsHelper.php:18
 msgid "General tags"
 msgstr "Allgemeine Tags"
@@ -5167,7 +5259,7 @@ msgstr ""
 
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:47
 msgid "Trigger Event"
-msgstr ""
+msgstr "Event auslösen"
 
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:52
 msgid "Before/after appointment"
@@ -5191,7 +5283,7 @@ msgstr ""
 
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:97
 msgid "Custom Email Addresses"
-msgstr ""
+msgstr "Benutzerdefinierte E-Mail-Adressen"
 
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:108
 msgid "Custom Phone Numbers"
@@ -5216,7 +5308,7 @@ msgstr ""
 
 #: includes/metaboxes/notification/TestNotificationMetabox.php:30
 msgid "Save this notification and send it to the administrator."
-msgstr ""
+msgstr "Speichern Sie diese Benachrichtigung und senden Sie sie an den Administrator."
 
 #. translators: %1$s, %2$s, %2$s - urls for admin pages
 #: includes/metaboxes/notification/TestNotificationMetabox.php:37
@@ -5225,7 +5317,7 @@ msgstr ""
 
 #: includes/metaboxes/notification/TestNotificationMetabox.php:46
 msgid "Send Test Notification"
-msgstr ""
+msgstr "Testbenachrichtigung senden"
 
 #. translators: %s is integer id of the notification
 #: includes/metaboxes/notification/TestNotificationMetabox.php:64
@@ -5911,7 +6003,7 @@ msgstr "Keine Kategorien gefunden."
 
 #: includes/post-types/NotificationPostType.php:44
 msgid "Notification"
-msgstr ""
+msgstr "Benachrichtigung"
 
 #: includes/post-types/NotificationPostType.php:51
 msgid "This is where you can add new notifications."
@@ -5924,7 +6016,7 @@ msgstr "Neu hinzufügen"
 
 #: includes/post-types/NotificationPostType.php:62
 msgid "Add New Notification"
-msgstr ""
+msgstr "Neue Benachrichtigung hinzufügen"
 
 #: includes/post-types/NotificationPostType.php:63
 msgid "New Notification"
@@ -6628,7 +6720,7 @@ msgstr "%s anzeigen"
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:94
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:183
 msgid "Go Premium"
-msgstr ""
+msgstr "Zu Premium wechseln"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:85
 msgid "Upgrade to Appointment Booking Premium"
@@ -6637,7 +6729,7 @@ msgstr ""
 #. translators: %1$s - <a ... link to demo website>, %2$s - </a>, %3$s - <strong>, %4$s - </strong>
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:103
 msgid "Want to see and test the PRO features first-hand on the backend? %3$s %1$s Start a free trial %2$s with the PRO plugin version. %4$s"
-msgstr ""
+msgstr "Möchten Sie die PRO-Funktionen aus erster Hand im Backend sehen und testen? %3$s %1$s Starten Sie eine kostenlose Testversion %2$s mit der PRO-Plugin-Version. %4$s"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:116
 msgid "Take full advantage of Appointment Booking with the premium plugin version. Compare the features:"
@@ -6645,23 +6737,23 @@ msgstr ""
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:123
 msgid "Lite Version"
-msgstr ""
+msgstr "Lite-Version"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:124
 msgid "Pro Version"
-msgstr ""
+msgstr "Pro-Version"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:130
 msgid "Technical support"
-msgstr ""
+msgstr "Technischer Support"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:131
 msgid "Priority support via live chat, email, and ticket system."
-msgstr ""
+msgstr "Vorrangiger Support via Live-Chat, E-Mail und Ticket-System."
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:133
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:134
 msgid "Email, tickets system (we even login to your WordPress to help)"
@@ -6669,11 +6761,11 @@ msgstr ""
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:138
 msgid "Built-in payment gateways"
-msgstr ""
+msgstr "Integrierte Zahlungsdienste"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:139
 msgid "Already integrated payment gateways for secure online payments and bookings."
-msgstr ""
+msgstr "Bereits integrierte Zahlungs-Gateways für sichere Online-Zahlungen und Buchungen."
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:142
 msgid "Direct Bank Transfer, Stripe, Apple Pay, Google Pay, PayPal, more on the way"
@@ -6772,7 +6864,7 @@ msgstr ""
 #: templates/emails/customer/customer-new-booking-email.php:21
 #: templates/emails/customer/customer-pending-booking-email.php:21
 msgid "Total price"
-msgstr ""
+msgstr "Gesamtpreis"
 
 #: templates/emails/admin/admin-cancelled-booking-email.php:14
 msgid "Booking is canceled by the customer."
@@ -6962,6 +7054,26 @@ msgstr "Erforderlich."
 #: templates/private/pages/shortcodes-list.php:90
 msgid "empty string"
 msgstr "Leere Reihe"
+
+#: templates/private/pages/wizard.php:8
+msgid "Welcome"
+msgstr "Herzlich willkommen"
+
+#: templates/private/pages/wizard.php:13
+msgid "Complete"
+msgstr ""
+
+#: templates/private/pages/wizard.php:71
+msgid "Continue"
+msgstr "Weiter"
+
+#: templates/private/pages/wizard.php:74
+msgid "Finish Setup"
+msgstr ""
+
+#: templates/private/pages/wizard.php:84
+msgid "Skip Wizard"
+msgstr ""
 
 #. Translators: %d: Just a number.
 #: templates/service/employees.php:78
@@ -7930,116 +8042,4 @@ msgstr "Termin"
 #. Plugin Name of the plugin
 #: motopress-appointment.php
 msgid "Appointment Booking Lite"
-msgstr ""
-
-#: includes/admin-pages/custom/WizardPage.php:69
-#: includes/admin-pages/custom/WizardPage.php:76
-msgid "Wizard"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:77
-#: templates/private/pages/shortcodes-list.php:21
-msgid "Set up your Appointment Booking plugin in just a few simple steps! This wizard will guide you through adding your first service with the necessary settings. You can add unlimited services, staff members, and locations later."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:79
-#: templates/private/pages/shortcodes-list.php:21
-msgid "Run Wizard"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:80
-msgid "Skip"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:213
-msgid "Failed to create a location."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:218
-msgid "Failed to create an employee."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:225
-msgid "Failed to create a service."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:438
-msgid "Welcome to MotoPress Appointment Booking!"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:439
-msgid "It's great to have you here with us! We'll be guiding you through the setup process to help you get started easily."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:464
-msgid "Where does an appointment take place?"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:465
-msgid "A location is where an appointment takes place, such as a city, area, building, room, or online. Adding a location is required, though you can choose to hide it in the booking form later."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:490
-msgid "Who provides a service?"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:491
-msgid "An employee is the service provider responsible for the appointment, typically listed by name. Adding an employee is required, though you can choose to hide it in the booking form later."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:493
-msgid "A schedule for this employee is generated automatically and can be edited later in the Schedules menu."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:527
-msgid "Describe your service"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:528
-msgid "A service is the specific offering provided during an appointment. It can be a haircut, consultation, medical checkup, training session, or any other activity booked by a customer."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:601
-msgid "Booking Page"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:602
-msgid "Create a draft website page with an appointment booking form."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:610
-msgid "Define some key configurations for your appointment booking system. The Confirmation Mode option specifies how booking requests are approved."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:625
-msgid "Setup Complete – Ready to Go!"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:626
-msgid "Your appointment system is set up with default settings and ready for bookings. You can now also add more services, employees, locations, and customize settings and schedules."
-msgstr ""
-
-#. translators: %1$s is Placeholder for the draft page link.
-#: includes/handlers/WizardHandler.php:628
-msgid "Your draft page with the form: %1$s"
-msgstr ""
-
-#: templates/private/pages/wizard.php:8
-msgid "Welcome"
-msgstr ""
-
-#: templates/private/pages/wizard.php:13
-msgid "Complete"
-msgstr ""
-
-#: templates/private/pages/wizard.php:71
-msgid "Continue"
-msgstr ""
-
-#: templates/private/pages/wizard.php:74
-msgid "Finish Setup"
-msgstr ""
-
-#: templates/private/pages/wizard.php:84
-msgid "Skip Wizard"
 msgstr ""

@@ -36,8 +36,11 @@ class NotificationHandler {
 
 	public function __construct() {
 
+		/**
+		 * @since 2.4.1 plugins_loaded changed to 'init'
+		*/
 		add_action(
-			'plugins_loaded',
+			'init',
 			function() {
 
 				$this->allRegisteredNotificationSenders = apply_filters(
@@ -52,11 +55,10 @@ class NotificationHandler {
 				$this->activeNotificationSenders[ Notification::TYPE_ID_EMAIL ] = $this->allRegisteredNotificationSenders[ EmailNotificationSender::getSenderId() ];
 
 				if ( ! empty( $smsSenderId ) && ! empty( $this->allRegisteredNotificationSenders[ $smsSenderId ] ) ) {
-
 					$this->activeNotificationSenders[ Notification::TYPE_ID_SMS ] = $this->allRegisteredNotificationSenders[ $smsSenderId ];
 				}
 			},
-			100
+			9
 		);
 
 		// Use a priority of 15 to send notifications after the default status mails

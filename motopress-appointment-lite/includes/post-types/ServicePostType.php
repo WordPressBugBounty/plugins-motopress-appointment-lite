@@ -35,8 +35,8 @@ class ServicePostType extends AbstractBlockEditorPostType {
 	protected function addActions() {
 		parent::addActions();
 
-		add_action( 'init', array( $this, 'registerCategory' ), 5 );
-		add_action( 'init', array( $this, 'registerTag' ), 5 );
+		add_action( 'init', array( $this, 'registerCategory' ), 10 );
+		add_action( 'init', array( $this, 'registerTag' ), 10 );
 		add_action( 'init', array( $this, 'maybeFillEmptyServiceCategoryOrders' ), 15 );
 
 		add_action( 'admin_menu', array( $this, 'addTaxonomiesToMenu' ), 15 );

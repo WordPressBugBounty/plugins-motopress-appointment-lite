@@ -1,11 +1,11 @@
-=== WordPress Appointment Booking Plugin ===
+=== MotoPress Appointment Booking ===
 Contributors: MotoPress
 Donate link: https://motopress.com/
 Tags: appointment, booking, calendar, reservation, schedule, scheduling, online booking system, reservation calendar, booking calendar, booking system, appointment booking, group booking, tickets
 Requires at least: 5.3
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 2.4.0
+Stable tag: 2.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -296,6 +296,10 @@ Sure, the MotoPress Appointment Booking plugin comes with an advanced and easy-t
 
 Yes, you can ask questions on the forum on a free version, but if you need priority technical support, it’s included only with the PRO version of the plugin.
 
+= How can I override the MotoPress Appointment plugin's template files in my WordPress theme? =
+
+You can copy template files from /wp-content/motopress-appointment/templates/ folder to /wp-content/your-theme/motopress/appointment/ to override them.
+
 == Installation ==
 
 1. Upload the Appointment Booking plugin to the /wp-content/plugins/ directory.
@@ -303,10 +307,13 @@ Yes, you can ask questions on the forum on a free version, but if you need prior
 
 == Copyright ==
 
-MotoPress Appointment Booking Lite plugin, Copyright (C) 2020, MotoPress https://motopress.com/
-MotoPress Appointment Booking Lite plugin is distributed under the terms of the GNU GPL.
+MotoPress Appointment Booking plugin, Copyright (C) 2020, MotoPress https://motopress.com/
+MotoPress Appointment Booking plugin is distributed under the terms of the GNU GPL.
 
 == Changelog ==
+
+= 2.4.1, Jul 30 2025 =
+* Improved compatibility with WordPress 6.8, addressing the _load_textdomain_just_in_time notice.
 
 = 2.4.0, Jun 10 2025 =
 * Added the ability to reorder services, categories, locations, and employees.

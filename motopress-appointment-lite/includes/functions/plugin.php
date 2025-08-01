@@ -54,9 +54,6 @@ function mpa_url_to( $file, $pluginUrl = MotoPress\Appointment\PLUGIN_URL ) {
  * @param 'relative'|'absolute' $path Optional. 'relative' by default (that
  *     suits well textdomain functions, like load_plugin_textdomain()).
  * @return string Path to languages/ directory (with trailing slash).
- *
- * @since 1.2.1
- * @deprecated use mpapp()->getPluginPath()
  */
 function mpa_languages_dir( $path = 'relative' ) {
 

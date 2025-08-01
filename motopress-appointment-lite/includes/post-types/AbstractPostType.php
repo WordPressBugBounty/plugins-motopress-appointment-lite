@@ -32,9 +32,10 @@ abstract class AbstractPostType {
 
 	/**
 	 * @since 1.0
+	 * @since 2.4.1 'register' priority changed to 10.
 	 */
 	protected function addActions() {
-		add_action( 'init', array( $this, 'register' ), 5 );
+		add_action( 'init', array( $this, 'register' ), 10 );
 	}
 
 	/**

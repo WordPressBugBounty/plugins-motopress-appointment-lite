@@ -7,8 +7,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-02-18T07:23:43+00:00\n"
-"PO-Revision-Date: 2025-02-25 13:09\n"
+"POT-Creation-Date: 2025-04-01T09:52:49+00:00\n"
+"PO-Revision-Date: 2025-07-08 11:46\n"
 "Language: uk_UA\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: motopress-appointment\n"
@@ -19,8 +19,8 @@ msgstr ""
 "X-Crowdin-File: motopress-appointment.pot\n"
 "X-Crowdin-File-ID: 46\n"
 
-#: includes/functions/plugin.php:109
-#: includes/Plugin.php:481
+#: includes/functions/plugin.php:106
+#: includes/Plugin.php:489
 msgid "Appointment Booking"
 msgstr ""
 
@@ -48,7 +48,7 @@ msgstr ""
 #: includes/admin-pages/custom/AnalyticsPage.php:32
 #: assets/js/analytics-page.js:46616
 msgid "Analytics"
-msgstr ""
+msgstr "Аналітика"
 
 #: includes/admin-pages/custom/AppointmentMenuPage.php:29
 #: includes/admin-pages/custom/AppointmentMenuPage.php:38
@@ -114,7 +114,7 @@ msgstr "Остання активність"
 
 #: includes/admin-pages/custom/CustomersPage.php:166
 msgid "The client has been successfully deleted."
-msgstr ""
+msgstr "Клієнта успішно видалено."
 
 #: includes/admin-pages/custom/CustomersPage.php:250
 #: includes/admin-pages/custom/CustomersPage.php:270
@@ -142,15 +142,15 @@ msgstr "Запит не пройшов перевірку безпеки. Буд
 
 #: includes/admin-pages/custom/CustomersPage.php:284
 msgid "Please, provide a valid email address."
-msgstr ""
+msgstr "Будь ласка, зазначте дійсну e-mail адресу."
 
 #: includes/admin-pages/custom/CustomersPage.php:289
 msgid "This email is already registered. Please choose another one."
-msgstr ""
+msgstr "Ця електронна адреса вже зареєстрована, будь ласка, виберіть іншу."
 
 #: includes/admin-pages/custom/CustomersPage.php:294
 msgid "This phone is already registered. Please choose another one."
-msgstr ""
+msgstr "Цей телефон вже зареєстрований. Виберіть інший."
 
 #: includes/admin-pages/custom/CustomersPage.php:334
 msgid "Customer data updated."
@@ -217,6 +217,11 @@ msgstr "Зберегти зміни"
 msgid "Settings"
 msgstr "Налаштування"
 
+#: includes/admin-pages/custom/WizardPage.php:69
+#: includes/admin-pages/custom/WizardPage.php:76
+msgid "Wizard"
+msgstr ""
+
 #: includes/admin-pages/edit/EditCouponPage.php:28
 #: includes/crons/ExportBookingsCron.php:363
 #: includes/emails/tags/booking/BookingCouponCodeTag.php:17
@@ -226,11 +231,11 @@ msgstr "Код купону"
 
 #: includes/admin-pages/manage/ManageBookingsPage.php:76
 msgid "Booking export file does not exist."
-msgstr ""
+msgstr "Файл експорту бронювання не існує."
 
 #: includes/admin-pages/manage/ManageBookingsPage.php:237
 msgid "Filtered bookings for customer"
-msgstr ""
+msgstr "Відфільтровані бронювання для клієнта"
 
 #: includes/admin-pages/manage/ManageBookingsPage.php:468
 msgid "Scheduled For"
@@ -238,15 +243,15 @@ msgstr ""
 
 #: includes/admin-pages/manage/ManageBookingsPage.php:486
 msgid "All Services"
-msgstr ""
+msgstr "Всі послуги"
 
 #: includes/admin-pages/manage/ManageBookingsPage.php:511
 msgid "All Employees"
-msgstr ""
+msgstr "Всі працівники"
 
 #: includes/admin-pages/manage/ManageBookingsPage.php:536
 msgid "All Locations"
-msgstr ""
+msgstr "Всі розташування"
 
 #: includes/admin-pages/manage/ManageBookingsPage.php:573
 msgid "Export"
@@ -254,7 +259,7 @@ msgstr "Експорт"
 
 #: includes/admin-pages/manage/ManageBookingsPage.php:574
 msgid "Cancel Export"
-msgstr ""
+msgstr "Скасувати експорт"
 
 #: includes/admin-pages/manage/ManageBookingsPage.php:595
 #: includes/admin-pages/manage/ManageNotificationsPage.php:156
@@ -412,24 +417,24 @@ msgstr "Копія %s"
 
 #: includes/admin-pages/manage/ManageEmployeesPage.php:148
 msgid "Contacts"
-msgstr ""
+msgstr "Контакти"
 
 #: includes/admin-pages/manage/ManageNotificationsPage.php:78
 msgid "Last execution — just now. Sending notifications..."
-msgstr ""
+msgstr "Останнє виконання - щойно. Відправлення сповіщень.."
 
 #. translators: %s: Last execution time, like "3:08 pm, July 21, 2022".
 #: includes/admin-pages/manage/ManageNotificationsPage.php:92
 msgid "Last execution was at %s. No new notifications were sent."
-msgstr ""
+msgstr "Останнє виконання відбулося о %s. Нових сповіщень не було надіслано."
 
 #. Translators: %d: Number of notifications.
 #: includes/admin-pages/manage/ManageNotificationsPage.php:99
 msgid "%d notification"
 msgid_plural "%d notifications"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%d сповіщення"
+msgstr[1] "%d сповіщення"
+msgstr[2] "%d сповіщень"
 msgstr[3] ""
 
 #. Translators: 1: Last execution time, like "3:08 pm, July 21, 2022", 2: Number of notifications
@@ -440,16 +445,16 @@ msgstr ""
 #. Translators: %s: Next execution time, like "3:08 pm, July 21, 2022".
 #: includes/admin-pages/manage/ManageNotificationsPage.php:118
 msgid "Next execution is scheduled for — %s."
-msgstr ""
+msgstr "Наступне виконання заплановано на - %s."
 
 #: includes/admin-pages/manage/ManageNotificationsPage.php:122
 msgid "Failed to schedule next execution in your WordPress installation."
-msgstr ""
+msgstr "Не вдалося запланувати наступне виконання у вашій інсталяції WordPress."
 
 #. Translators: %s: Cron task, like "*/15 * * * * ...".
 #: includes/admin-pages/manage/ManageNotificationsPage.php:140
 msgid "You can set up a real cron task in your server admin panel: %s"
-msgstr ""
+msgstr "Ви можете налаштувати справжнє завдання cron в адмінпанелі вашого сервера: %s"
 
 #: includes/admin-pages/manage/ManageNotificationsPage.php:155
 #: includes/metaboxes/coupon/CouponSettingsMetabox.php:40
@@ -465,31 +470,31 @@ msgstr "Отримувачі"
 
 #: includes/admin-pages/manage/ManageNotificationsPage.php:158
 msgid "Condition"
-msgstr ""
+msgstr "Стан"
 
 #: includes/admin-pages/manage/ManageNotificationsPage.php:196
 msgid "The message will not be sent! Please set the SMS provider in settings."
-msgstr ""
+msgstr "Повідомлення не буде надіслано! Встановіть SMS-провайдера в налаштуваннях."
 
 #: includes/admin-pages/manage/ManageNotificationsPage.php:206
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:79
 msgid "Admin"
-msgstr ""
+msgstr "Адмін"
 
 #: includes/admin-pages/manage/ManageNotificationsPage.php:243
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:50
 msgid "Booking canceled"
-msgstr ""
+msgstr "Бронювання скасовано"
 
 #: includes/admin-pages/manage/ManageNotificationsPage.php:247
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:49
 msgid "Booking placed"
-msgstr ""
+msgstr "Бронювання здійснено"
 
 #: includes/admin-pages/manage/ManageNotificationsPage.php:251
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:51
 msgid "Payment completed"
-msgstr ""
+msgstr "Оплату завершено"
 
 #: includes/admin-pages/manage/ManagePaymentsPage.php:73
 #: includes/metaboxes/coupon/CouponSettingsMetabox.php:49
@@ -556,7 +561,7 @@ msgstr "Місцезнаходження"
 #: includes/admin-pages/manage/ManageSchedulesPage.php:160
 #: includes/metaboxes/schedule/ScheduleSettingsMetabox.php:52
 msgid "This schedule will not work until you set the main location for it."
-msgstr ""
+msgstr "Цей розклад не працюватиме, доки ви не встановите для нього основне розміщення."
 
 #: includes/admin-pages/manage/ManageServicesPage.php:24
 #: includes/functions/entity.php:406
@@ -2254,7 +2259,7 @@ msgstr "Електронна пошта"
 #: includes/post-types/NotificationPostType.php:37
 #: includes/post-types/NotificationPostType.php:69
 msgid "Notifications"
-msgstr ""
+msgstr "Сповіщення"
 
 #: includes/bundles/SettingsBundle.php:47
 #: includes/crons/ExportBookingsCron.php:367
@@ -2295,7 +2300,7 @@ msgstr "Крок часу за замовчуванням"
 
 #: includes/bundles/SettingsBundle.php:143
 msgid "Default length of the time slot step, which is used for the appointment durations."
-msgstr ""
+msgstr "Початкова довжина кроку часового інтервалу, який використовується для тривалості зустрічей."
 
 #: includes/bundles/SettingsBundle.php:150
 #: includes/handlers/WizardHandler.php:588
@@ -2352,7 +2357,7 @@ msgstr ""
 #. translators: %s is the {cancelation_details} tag
 #: includes/bundles/SettingsBundle.php:182
 msgid "A customer cancelation email template must contain the %s tag."
-msgstr ""
+msgstr "Шаблон email про скасування клієнта повинен містити тег %s."
 
 #: includes/bundles/SettingsBundle.php:189
 #: includes/direct-link-actions/pages/BookingCancellationPage.php:86
@@ -2370,7 +2375,7 @@ msgstr "Сторінка скасованого бронювання"
 
 #: includes/bundles/SettingsBundle.php:196
 msgid "Page to redirect the customer to after their booking is canceled."
-msgstr ""
+msgstr "Сторінка, на яку буде перенаправлено клієнта після скасування бронювання."
 
 #: includes/bundles/SettingsBundle.php:203
 #: includes/emails/customer/CustomerAccountCreationEmail.php:69
@@ -2383,23 +2388,23 @@ msgstr "Дозволити кліэнтам створювати акаунт п
 
 #: includes/bundles/SettingsBundle.php:206
 msgid "Do not create automatically"
-msgstr ""
+msgstr "Не створювати автоматично"
 
 #: includes/bundles/SettingsBundle.php:207
 msgid "Enable customers to opt in"
-msgstr ""
+msgstr "Дозвольте клієнтам обирати"
 
 #: includes/bundles/SettingsBundle.php:208
 msgid "Create automatically"
-msgstr ""
+msgstr "Створити автоматично"
 
 #: includes/bundles/SettingsBundle.php:215
 msgid "Customer Account Page"
-msgstr ""
+msgstr "Сторінка облікового запису клієнта"
 
 #: includes/bundles/SettingsBundle.php:216
 msgid "A page where customers can log in to view their own bookings."
-msgstr ""
+msgstr "Сторінка, на якій клієнти можуть увійти, щоб переглянути власні бронювання."
 
 #. translators: %s shortcode name
 #: includes/bundles/SettingsBundle.php:218
@@ -2519,15 +2524,15 @@ msgstr "Колір тексту тіла"
 
 #: includes/bundles/SettingsBundle.php:380
 msgid "Email notifications"
-msgstr ""
+msgstr "Email-сповіщення"
 
 #: includes/bundles/SettingsBundle.php:397
 msgid "SMS notifications"
-msgstr ""
+msgstr "SMS-сповіщення"
 
 #: includes/bundles/SettingsBundle.php:401
 msgid "SMS Sender"
-msgstr ""
+msgstr "Відправник SMS"
 
 #. translators: %s - is a URL to the plugin's Extensions menu page
 #: includes/bundles/SettingsBundle.php:405
@@ -2536,7 +2541,7 @@ msgstr ""
 
 #: includes/bundles/SettingsBundle.php:415
 msgid "Admin Phone Number"
-msgstr ""
+msgstr "Номер телефону адміна"
 
 #: includes/bundles/SettingsBundle.php:416
 msgid "It is used to send test SMS notifications as well as regular notifications with the Admin's number included in the recipients list."
@@ -2581,7 +2586,7 @@ msgstr "Сторінка \"Бронювання отримане\""
 
 #: includes/bundles/SettingsBundle.php:476
 msgid "Page to redirect the customer to after their payment is placed on the external payment platform. Requires the [mpa_reservation_received] shortcode."
-msgstr ""
+msgstr "Сторінка, на яку буде перенаправлено власника після того, як його платіж буде розміщено на зовнішній платіжній платформі. Потрібен короткий код [mpa_reservation_received]."
 
 #: includes/bundles/SettingsBundle.php:482
 msgid "Failed Transaction Page"
@@ -2589,7 +2594,7 @@ msgstr "Сторінка невдалої транзакції"
 
 #: includes/bundles/SettingsBundle.php:483
 msgid "Page to redirect the customer to on failed transaction."
-msgstr ""
+msgstr "Сторінка, на яку перенаправлятиметься клієнт у разі невдалої транзакції."
 
 #. translators: %s is the link to Google Developers Console
 #: includes/bundles/SettingsBundle.php:500
@@ -2640,7 +2645,7 @@ msgstr ""
 
 #: includes/bundles/SettingsBundle.php:567
 msgid "These default styles apply to all booking forms, but you can customize each one separately."
-msgstr ""
+msgstr "Ці стилі за замовчуванням застосовуються до всіх форм бронювання, але ви можете налаштувати кожен з них окремо."
 
 #: includes/bundles/SettingsBundle.php:571
 msgid "Calendar Theme"
@@ -2654,23 +2659,23 @@ msgstr "За замовчуванням"
 
 #: includes/bundles/SettingsBundle.php:574
 msgid "Dark"
-msgstr ""
+msgstr "Темна"
 
 #: includes/bundles/SettingsBundle.php:575
 msgid "Material Blue"
-msgstr ""
+msgstr "Синій матеріал"
 
 #: includes/bundles/SettingsBundle.php:576
 msgid "Material Green"
-msgstr ""
+msgstr "Зелений матеріал"
 
 #: includes/bundles/SettingsBundle.php:577
 msgid "Material Red"
-msgstr ""
+msgstr "Червоний матеріал"
 
 #: includes/bundles/SettingsBundle.php:578
 msgid "Material Orange"
-msgstr ""
+msgstr "Матеріал Помаранчевий"
 
 #: includes/bundles/SettingsBundle.php:579
 msgid "Airbnb"
@@ -2678,7 +2683,7 @@ msgstr ""
 
 #: includes/bundles/SettingsBundle.php:580
 msgid "Confetti"
-msgstr ""
+msgstr "Конфетті"
 
 #: includes/bundles/SettingsBundle.php:590
 #: includes/divi/modules/AppointmentFormModule.php:239
@@ -2687,14 +2692,14 @@ msgstr ""
 #: includes/widgets/AppointmentFormWidget.php:262
 #: assets/js/gutenberg-blocks.js:3478
 msgid "Form Width"
-msgstr ""
+msgstr "Ширина форми"
 
 #: includes/bundles/SettingsBundle.php:592
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:24
 #: includes/widgets/AppointmentFormWidget.php:263
 #: assets/js/gutenberg-blocks.js:3479
 msgid "Example: 100%"
-msgstr ""
+msgstr "Приклад: 100%"
 
 #: includes/bundles/SettingsBundle.php:596
 #: includes/divi/modules/AppointmentFormModule.php:215
@@ -2703,7 +2708,7 @@ msgstr ""
 #: includes/widgets/AppointmentFormWidget.php:267
 #: assets/js/gutenberg-blocks.js:3451
 msgid "Primary Text Color"
-msgstr ""
+msgstr "Основний колір тексту"
 
 #: includes/bundles/SettingsBundle.php:601
 #: includes/divi/modules/AppointmentFormModule.php:221
@@ -2712,7 +2717,7 @@ msgstr ""
 #: includes/widgets/AppointmentFormWidget.php:272
 #: assets/js/gutenberg-blocks.js:3459
 msgid "Primary Background Color"
-msgstr ""
+msgstr "Основний колір фону"
 
 #: includes/bundles/SettingsBundle.php:606
 #: includes/divi/modules/AppointmentFormModule.php:227
@@ -2721,7 +2726,7 @@ msgstr ""
 #: includes/widgets/AppointmentFormWidget.php:277
 #: assets/js/gutenberg-blocks.js:3467
 msgid "Secondary Text Color"
-msgstr ""
+msgstr "Колір другорядного тексту"
 
 #: includes/bundles/SettingsBundle.php:611
 #: includes/divi/modules/AppointmentFormModule.php:233
@@ -2730,7 +2735,7 @@ msgstr ""
 #: includes/widgets/AppointmentFormWidget.php:282
 #: assets/js/gutenberg-blocks.js:3475
 msgid "Secondary Background Color"
-msgstr ""
+msgstr "Вторинний колір фону"
 
 #: includes/bundles/SettingsBundle.php:616
 #: includes/divi/modules/AppointmentFormModule.php:247
@@ -2739,14 +2744,14 @@ msgstr ""
 #: includes/widgets/AppointmentFormWidget.php:287
 #: assets/js/gutenberg-blocks.js:3487
 msgid "Buttons Padding"
-msgstr ""
+msgstr "Внутрішній відступ кнопки"
 
 #: includes/bundles/SettingsBundle.php:617
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:49
 #: includes/widgets/AppointmentFormWidget.php:288
 #: assets/js/gutenberg-blocks.js:3488
 msgid "Example: 5px 10px"
-msgstr ""
+msgstr "Приклад: 5px 10px"
 
 #: includes/crons/AbandonPendingPaymentCron.php:40
 msgid "The customer didn't complete the payment in time."
@@ -2784,7 +2789,7 @@ msgstr "ID"
 
 #: includes/crons/ExportBookingsCron.php:348
 msgid "Booking status"
-msgstr ""
+msgstr "Статус бронювання"
 
 #: includes/crons/ExportBookingsCron.php:349
 #: includes/emails/tags/booking/BookingCustomerNameTag.php:19
@@ -2807,7 +2812,7 @@ msgstr "Телефон клієнта"
 #: includes/crons/ExportBookingsCron.php:352
 #: includes/emails/tags/booking/BookingCustomerNotesTag.php:19
 msgid "Customer notes"
-msgstr ""
+msgstr "Нотатки клієнта"
 
 #: includes/crons/ExportBookingsCron.php:356
 #: includes/emails/tags/employee/EmployeeNameTag.php:19
@@ -2827,20 +2832,20 @@ msgstr "Дата"
 #: includes/crons/ExportBookingsCron.php:359
 #: includes/emails/tags/reservation/ReservationClientsNumberTag.php:19
 msgid "Number of clients"
-msgstr ""
+msgstr "Кількість клієнтів"
 
 #: includes/crons/ExportBookingsCron.php:361
 #: includes/handlers/WizardHandler.php:518
 msgid "Service price"
-msgstr ""
+msgstr "Вартість послуги"
 
 #: includes/crons/ExportBookingsCron.php:362
 msgid "Service subtotal"
-msgstr ""
+msgstr "Проміжний підсумок послуги"
 
 #: includes/crons/ExportBookingsCron.php:364
 msgid "Coupon discount"
-msgstr ""
+msgstr "Купон на знижку"
 
 #: includes/crons/ExportBookingsCron.php:365
 #: includes/metaboxes/booking/BookingPriceMetabox.php:45
@@ -2869,7 +2874,7 @@ msgstr "Скасування бронювання неможливе з якої
 
 #: includes/direct-link-actions/pages/BookingCancelledPage.php:69
 msgid "Your appointment has been successfully canceled."
-msgstr ""
+msgstr "Ваша зустріч успішно скасована."
 
 #: includes/direct-link-actions/pages/FailedTransactionPage.php:50
 msgid "Transaction Failed"
@@ -3001,13 +3006,13 @@ msgstr "Ні"
 #: assets/js/gutenberg-blocks.js:3267
 #: assets/js/gutenberg-blocks.js:3274
 msgid "Show Service?"
-msgstr ""
+msgstr "Показати послугу?"
 
 #: includes/divi/modules/AppointmentFormModule.php:84
 #: includes/shortcodes/AppointmentFormShortcode.php:53
 #: assets/js/gutenberg-blocks.js:3275
 msgid "Show the service field in the form."
-msgstr ""
+msgstr "Показати поле послуги у формі."
 
 #: includes/divi/modules/AppointmentFormModule.php:94
 #: includes/elementor/widgets/AppointmentFormWidget.php:121
@@ -3204,7 +3209,7 @@ msgstr "Показувати час, коли завершується брон�
 #: includes/widgets/AppointmentFormWidget.php:251
 #: assets/js/gutenberg-blocks.js:3329
 msgid "Show 'Add to Your Calendar?' section."
-msgstr ""
+msgstr "Показати розділ \"Додати до календаря?\"."
 
 #: includes/divi/modules/AppointmentFormModule.php:205
 #: includes/elementor/widgets/AppointmentFormWidget.php:269
@@ -3220,11 +3225,11 @@ msgstr ""
 #: includes/divi/modules/AppointmentFormModule.php:240
 #: includes/divi/modules/AppointmentFormModule.php:248
 msgid "This option only affects what you see on the front end."
-msgstr ""
+msgstr "Ця опція впливає тільки на те, що ви бачите на зовнішній частині сайту."
 
 #: includes/divi/modules/AppointmentFormModule.php:262
 msgid "Appointment Form Styles"
-msgstr ""
+msgstr "Стилі форми призначення"
 
 #: includes/divi/modules/EmployeeAdditionalInfoModule.php:20
 #: includes/elementor/widgets/EmployeeAdditionalInfoWidget.php:24
@@ -4036,12 +4041,12 @@ msgstr "Додаткові CSS класи. Розділяйте кілька к�
 
 #: includes/elementor/widgets/AppointmentFormWidget.php:309
 msgid "Style"
-msgstr ""
+msgstr "Стиль"
 
 #: includes/elementor/widgets/AppointmentFormWidget.php:318
 #: assets/js/gutenberg-blocks.js:3441
 msgid "These options only affect what you see on the front end."
-msgstr ""
+msgstr "Ці параметри впливають тільки на те, що ви бачите на зовнішній частині сайту."
 
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:105
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:75
@@ -4232,7 +4237,7 @@ msgstr "\"%s\" лист надісланий клієнту."
 #. Translators: %s: Notification post title.
 #: includes/emails/EmailsDispatcher.php:403
 msgid "Notification \"%s\" was sent."
-msgstr ""
+msgstr "Сповіщення \"%s\" було надіслано."
 
 #. Translators: %s: Email name, like "New Booking Email".
 #: includes/emails/EmailsDispatcher.php:409
@@ -4252,7 +4257,7 @@ msgstr "\"%s\" не вдалося надіслати клієнту."
 #. Translators: %s: Notification post title.
 #: includes/emails/EmailsDispatcher.php:426
 msgid "Notification \"%s\" sending failed."
-msgstr ""
+msgstr "Не вдалося відправити сповіщення \"%s\"."
 
 #. Translators: %s: Email name, like "New Booking Email".
 #: includes/emails/EmailsDispatcher.php:432
@@ -4265,18 +4270,18 @@ msgstr "Застарілий."
 
 #: includes/emails/tags/action/BookingCancelLinkTag.php:21
 msgid "Booking cancel link"
-msgstr ""
+msgstr "Посилання скасування бронювання"
 
 #: includes/emails/tags/booking/BookingAlreadyPaidTag.php:19
 #: templates/emails/admin/admin-approved-booking-email.php:28
 #: templates/emails/customer/customer-approved-payment-email.php:23
 msgid "Already paid"
-msgstr ""
+msgstr "Вже оплачено"
 
 #: includes/emails/tags/booking/BookingCouponDiscountTag.php:17
 #: assets/js/analytics-page.js:46548
 msgid "Amount of Discount by Coupon Code"
-msgstr ""
+msgstr "Розмір знижки за кодом купона"
 
 #: includes/emails/tags/booking/BookingDateTag.php:19
 msgid "Booking date"
@@ -4311,7 +4316,7 @@ msgstr "Посилання на сторінку Мій акаунт"
 
 #: includes/emails/tags/customer/CustomerAccountLoginTag.php:19
 msgid "Customer account login"
-msgstr ""
+msgstr "Вхід в обліковий запис клієнта"
 
 #: includes/emails/tags/customer/CustomerAccountPasswordTag.php:21
 msgid "Customer account password"
@@ -4319,7 +4324,7 @@ msgstr ""
 
 #: includes/emails/tags/employee/EmployeeBioTag.php:19
 msgid "Employee description"
-msgstr ""
+msgstr "Опис працівника"
 
 #: includes/emails/tags/employee/EmployeeIdTag.php:19
 msgid "Employee ID"
@@ -4327,7 +4332,7 @@ msgstr "ID співробітника"
 
 #: includes/emails/tags/employee/EmployeeLinkTag.php:19
 msgid "Employee link"
-msgstr ""
+msgstr "Посилання працівника"
 
 #: includes/emails/tags/general/AppointmentTag.php:21
 msgid "The plugin name"
@@ -4355,7 +4360,7 @@ msgstr "ID місцезнаходження"
 
 #: includes/emails/tags/location/LocationLinkTag.php:19
 msgid "Location link"
-msgstr ""
+msgstr "Посилання розміщення"
 
 #: includes/emails/tags/location/LocationNameTag.php:19
 #: includes/handlers/WizardHandler.php:458
@@ -4364,11 +4369,11 @@ msgstr "Назва місцезнаходження"
 
 #: includes/emails/tags/payment/PaymentAmountTag.php:19
 msgid "Payment amount"
-msgstr ""
+msgstr "Сума платежу"
 
 #: includes/emails/tags/payment/PaymentEditLinkTag.php:19
 msgid "Payment edit link"
-msgstr ""
+msgstr "Посилання для редагування платежу"
 
 #: includes/emails/tags/payment/PaymentIdTag.php:19
 #: templates/emails/template-parts/admin-payment-details.php:13
@@ -4378,13 +4383,13 @@ msgstr "ID оплати"
 
 #: includes/emails/tags/payment/PaymentInstructionsTag.php:22
 msgid "Payment gateway instructions"
-msgstr ""
+msgstr "Інструкції щодо платіжного шлюзу"
 
 #: includes/emails/tags/payment/PaymentMethodTag.php:19
 #: templates/emails/template-parts/admin-payment-details.php:14
 #: templates/emails/template-parts/customer-payment-details.php:13
 msgid "Payment method"
-msgstr ""
+msgstr "Спосіб оплати"
 
 #: includes/emails/tags/reservation/ReservationBufferTimeTag.php:19
 msgid "Reservation time (with buffer time)"
@@ -4432,7 +4437,7 @@ msgstr "ID послуги"
 
 #: includes/emails/tags/service/ServiceLinkTag.php:19
 msgid "Service link"
-msgstr ""
+msgstr "Посилання послуги"
 
 #: includes/emails/tags/service/ServiceNameTag.php:19
 #: includes/handlers/WizardHandler.php:510
@@ -4445,19 +4450,19 @@ msgstr "Назва послуги"
 #: includes/metaboxes/service/ServiceNoticesMetabox.php:30
 #: includes/metaboxes/service/ServiceNoticesMetabox.php:37
 msgid "Notification notice %d"
-msgstr ""
+msgstr "Повідомлення про сповіщення %d"
 
 #: includes/emails/tags/template-part/AbstractBookingPaymentsTag.php:19
 msgid "Booking payments"
-msgstr ""
+msgstr "Платежі за бронювання"
 
 #: includes/emails/tags/template-part/AbstractReservationsDetailsTag.php:23
 msgid "Reservations details"
-msgstr ""
+msgstr "Подробиці резервування"
 
 #: includes/emails/tags/template-part/CancelationDetailsTag.php:22
 msgid "Cancelation Details"
-msgstr ""
+msgstr "Подробиці скасування"
 
 #: includes/emails/template-parts/AbstractTemplatePart.php:83
 msgid "Template Content"
@@ -4465,7 +4470,7 @@ msgstr "Вміст шаблону"
 
 #: includes/emails/template-parts/AdminPaymentDetailsTemplatePart.php:28
 msgid "Admin Payment Details"
-msgstr ""
+msgstr "Платіжні реквізити адміна"
 
 #: includes/emails/template-parts/AdminPaymentDetailsTemplatePart.php:35
 msgid "Used for the {booking_payments} tag in admin emails."
@@ -4489,7 +4494,7 @@ msgstr ""
 
 #: includes/emails/template-parts/CustomerPaymentDetailsTemplatePart.php:28
 msgid "Customer Payment Details"
-msgstr ""
+msgstr "Платіжні реквізити клієнта"
 
 #: includes/emails/template-parts/CustomerPaymentDetailsTemplatePart.php:35
 msgid "Used for the {booking_payments} tag in customer emails."
@@ -4541,7 +4546,7 @@ msgstr "Видалити зображення"
 #: includes/fields/basic/MultiplePhoneField.php:46
 #: includes/fields/basic/PhoneField.php:48
 msgid "Phone number %s is invalid."
-msgstr ""
+msgstr "Номер телефону %s є недійсним."
 
 #: includes/fields/complex/AttributesField.php:77
 msgid "Label"
@@ -4756,9 +4761,9 @@ msgstr[3] "дня(ів)"
 #: includes/fields/complex/TriggerPeriodField.php:84
 msgid "hour"
 msgid_plural "hours"
-msgstr[0] ""
+msgstr[0] "година"
 msgstr[1] "години"
-msgstr[2] "години"
+msgstr[2] "годин"
 msgstr[3] "години"
 
 #: includes/fields/complex/TriggerPeriodField.php:168
@@ -4834,12 +4839,12 @@ msgstr "Авточернетка"
 
 #: includes/handlers/notification/AbstractSMSNotificationSender.php:40
 msgid "Could not send test SMS notification because there is no Admin phone in the notification settings."
-msgstr ""
+msgstr "Не вдалося відправити тестове SMS-повідомлення, оскільки в налаштуваннях сповіщень не вказано телефон адміністратора."
 
 #. translators: %1$d is a notification id and %2$d is a reservation id
 #: includes/handlers/notification/AbstractSMSNotificationSender.php:54
 msgid "Could not send an SMS notification [id = %1$d] because the recipient's list is empty for reservation [id = %2$d]."
-msgstr ""
+msgstr "Не вдалося відправити SMS-сповіщення [id = %1$d], оскільки у списку одержувачів для резервування [id = %2$d] порожньо."
 
 #. translators: %1$s is the title of the notification, %2$s is a receiver key such as admin, customer, etc.
 #: includes/handlers/notification/AbstractSMSNotificationSender.php:110
@@ -4857,11 +4862,11 @@ msgstr ""
 
 #: includes/handlers/notification/EmailNotificationSender.php:41
 msgid "It is used as the sender email for notifications."
-msgstr ""
+msgstr "Використовується як email відправника для сповіщень."
 
 #: includes/handlers/notification/EmailNotificationSender.php:49
 msgid "It is used as the sender name for notifications."
-msgstr ""
+msgstr "Використовується як ім'я відправника для сповіщень."
 
 #: includes/handlers/SecurityHandler.php:229
 msgid "Appointment Manager"
@@ -4873,6 +4878,93 @@ msgstr "Співробітник зустрічі"
 
 #: includes/handlers/SecurityHandler.php:273
 msgid "Appointment Customer"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:77
+#: templates/private/pages/shortcodes-list.php:21
+msgid "Set up your Appointment Booking plugin in just a few simple steps! This wizard will guide you through adding your first service with the necessary settings. You can add unlimited services, staff members, and locations later."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:79
+#: templates/private/pages/shortcodes-list.php:21
+msgid "Run Wizard"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:80
+msgid "Skip"
+msgstr "Пропустити"
+
+#: includes/handlers/WizardHandler.php:213
+msgid "Failed to create a location."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:218
+msgid "Failed to create an employee."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:225
+msgid "Failed to create a service."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:438
+msgid "Welcome to MotoPress Appointment Booking!"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:439
+msgid "It's great to have you here with us! We'll be guiding you through the setup process to help you get started easily."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:464
+msgid "Where does an appointment take place?"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:465
+msgid "A location is where an appointment takes place, such as a city, area, building, room, or online. Adding a location is required, though you can choose to hide it in the booking form later."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:490
+msgid "Who provides a service?"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:491
+msgid "An employee is the service provider responsible for the appointment, typically listed by name. Adding an employee is required, though you can choose to hide it in the booking form later."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:493
+msgid "A schedule for this employee is generated automatically and can be edited later in the Schedules menu."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:527
+msgid "Describe your service"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:528
+msgid "A service is the specific offering provided during an appointment. It can be a haircut, consultation, medical checkup, training session, or any other activity booked by a customer."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:601
+msgid "Booking Page"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:602
+msgid "Create a draft website page with an appointment booking form."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:610
+msgid "Define some key configurations for your appointment booking system. The Confirmation Mode option specifies how booking requests are approved."
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:625
+msgid "Setup Complete – Ready to Go!"
+msgstr ""
+
+#: includes/handlers/WizardHandler.php:626
+msgid "Your appointment system is set up with default settings and ready for bookings. You can now also add more services, employees, locations, and customize settings and schedules."
+msgstr ""
+
+#. translators: %1$s is Placeholder for the draft page link.
+#: includes/handlers/WizardHandler.php:628
+msgid "Your draft page with the form: %1$s"
 msgstr ""
 
 #: includes/helpers/EmailTagsHelper.php:18
@@ -4937,12 +5029,12 @@ msgstr "Керувати"
 
 #: includes/list-tables/CustomersListTable.php:143
 msgid "Edit Customer"
-msgstr ""
+msgstr "Редагувати клієнта"
 
 #: includes/list-tables/CustomersListTable.php:148
 #: templates/private/pages/customer-edit.php:50
 msgid "Edit User"
-msgstr ""
+msgstr "Редагувати користувача"
 
 #: includes/list-tables/CustomersListTable.php:152
 msgid "Delete"
@@ -5039,24 +5131,24 @@ msgstr "Бронювання #%d"
 #: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:118
 #: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:278
 msgid "Sorry, the selected time slot is already booked."
-msgstr ""
+msgstr "Обраний часовий проміжок вже заброньовано."
 
 #: includes/metaboxes/booking/BookingStatusMetabox.php:51
 msgid "Can't update a status of this booking because the time is already booked."
-msgstr ""
+msgstr "Неможливо оновити статус цього бронювання, оскільки час вже заброньовано."
 
 #: includes/metaboxes/booking/ResendBookingConfirmationEmailMetabox.php:19
 #: includes/metaboxes/booking/ResendBookingConfirmationEmailMetabox.php:63
 msgid "Resend Confirmation Email"
-msgstr ""
+msgstr "Повторно відправити email підтвердження"
 
 #: includes/metaboxes/booking/ResendBookingConfirmationEmailMetabox.php:33
 msgid "Confirmation email has been sent to the customer."
-msgstr ""
+msgstr "Підтвердження email відправлено клієнту."
 
 #: includes/metaboxes/booking/ResendBookingConfirmationEmailMetabox.php:54
 msgid "Send a copy of the booking confirmation email to the customer's email address."
-msgstr ""
+msgstr "Надішліть копію підтвердження бронювання email на email-адресу клієнта."
 
 #: includes/metaboxes/booking/ResendBookingConfirmationEmailMetabox.php:58
 msgid "It is not possible to send a booking confirmation email because the booking is not confirmed or the customer's email address is unknown."
@@ -5136,16 +5228,16 @@ msgstr "Обліковий запис користувача WordPress спів�
 
 #: includes/metaboxes/employee/EmployeeContactsMetabox.php:53
 msgid "Employee Phone Number"
-msgstr ""
+msgstr "Номер телефону працівника"
 
 #: includes/metaboxes/employee/EmployeeContactsMetabox.php:54
 msgid "This phone number can be used for sending SMS notifications."
-msgstr ""
+msgstr "Цей номер телефону може бути використаний для надсилання SMS-повідомлень."
 
 #. translators: %s is the employee's name
 #: includes/metaboxes/employee/EmployeeContactsMetabox.php:96
 msgid "Invalid user email because another employee ( %s ) already has it!"
-msgstr ""
+msgstr "Невірний email користувача, тому що інший працівник (%s) вже має його!"
 
 #: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:54
 msgid "Employee Google Calendar"
@@ -5171,15 +5263,15 @@ msgstr "Соціальні мережі"
 
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:38
 msgid "Notification Type"
-msgstr ""
+msgstr "Тип сповіщення"
 
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:47
 msgid "Trigger Event"
-msgstr ""
+msgstr "Тригер події"
 
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:52
 msgid "Before/after appointment"
-msgstr ""
+msgstr "До/після призначення"
 
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:58
 msgid "Trigger Details"
@@ -5187,27 +5279,27 @@ msgstr ""
 
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:67
 msgid "Sending Time"
-msgstr ""
+msgstr "Час надсилання"
 
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:68
 msgid "Time at which the notification must be sent (only for daily ones)."
-msgstr ""
+msgstr "Час, в який має бути надіслано сповіщення (тільки для щоденних)."
 
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:84
 msgid "Custom Contacts"
-msgstr ""
+msgstr "Власні контакти"
 
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:97
 msgid "Custom Email Addresses"
-msgstr ""
+msgstr "Власні email-адреси"
 
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:108
 msgid "Custom Phone Numbers"
-msgstr ""
+msgstr "Власні телефонні номери"
 
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:109
 msgid "You can use multiple comma-separated phone numbers in international format."
-msgstr ""
+msgstr "Ви можете використовувати кілька телефонних номерів у міжнародному форматі, розділених комами."
 
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:119
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:157
@@ -5224,7 +5316,7 @@ msgstr ""
 
 #: includes/metaboxes/notification/TestNotificationMetabox.php:30
 msgid "Save this notification and send it to the administrator."
-msgstr ""
+msgstr "Збережіть це сповіщення та надішліть його адміну."
 
 #. translators: %1$s, %2$s, %2$s - urls for admin pages
 #: includes/metaboxes/notification/TestNotificationMetabox.php:37
@@ -5233,12 +5325,12 @@ msgstr ""
 
 #: includes/metaboxes/notification/TestNotificationMetabox.php:46
 msgid "Send Test Notification"
-msgstr ""
+msgstr "Надіслати тестове сповіщення"
 
 #. translators: %s is integer id of the notification
 #: includes/metaboxes/notification/TestNotificationMetabox.php:64
 msgid "Could not send a notification [id = %s] because it was not found."
-msgstr ""
+msgstr "Не вдалося відправити сповіщення [id = %s], оскільки його не знайдено."
 
 #: includes/metaboxes/notification/TestNotificationMetabox.php:71
 msgid "Could not send a test notification because there are no confirmed bookings."
@@ -5288,7 +5380,7 @@ msgstr "Розклад"
 
 #: includes/metaboxes/service/ServiceDepositMetabox.php:58
 msgid "Deposit Settings"
-msgstr ""
+msgstr "Налаштування депозиту"
 
 #: includes/metaboxes/service/ServiceNoticesMetabox.php:45
 msgid "Notification Notices"
@@ -5304,7 +5396,7 @@ msgstr "Правоохоронці"
 
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:58
 msgid "Service Time Interval"
-msgstr ""
+msgstr "Інтервал часу обслуговування"
 
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:59
 msgid "This setting allows you to divide the day into time slots used for generating time intervals for a service. Use it if you want to override the global time slot length set in Settings > General > Default Time Step. Use Default to apply global settings."
@@ -5336,19 +5428,19 @@ msgstr "Мінімальний період до призначення, кол�
 
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:95
 msgid "Advanced Scheduling Window"
-msgstr ""
+msgstr "Вікно розширеного розкладу"
 
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:96
 msgid "The maximum amount of time in advance before the appointment that is allowed for making a booking."
-msgstr ""
+msgstr "Максимальний час заздалегідь до зустрічі, за який можна зробити бронювання."
 
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:103
 msgid "Group Booking"
-msgstr ""
+msgstr "Групове бронювання"
 
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:107
 msgid "Group Reservations"
-msgstr ""
+msgstr "Групове резервування"
 
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:108
 msgid "Allow multiple people to book the same appointment slot as long as there are vacant places available."
@@ -5361,7 +5453,7 @@ msgstr "Мінімальна місткість"
 
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:114
 msgid "Minimum quantity of bookable items or spots per employee."
-msgstr ""
+msgstr "Мін. кількість елементів для бронювання на одного працівника."
 
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:121
 #: templates/private/fields/service-variations-field.php:39
@@ -5370,7 +5462,7 @@ msgstr "Максимальна місткість"
 
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:122
 msgid "Maximum quantity of bookable items or spots per employee."
-msgstr ""
+msgstr "Макс. кількість елементів для бронювання на одного працівника."
 
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:129
 msgid "Multiply Price"
@@ -5386,11 +5478,11 @@ msgstr ""
 
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:136
 msgid "Your custom name for bookable items or spots (in plural, e.g., 'places', 'clients', 'tickets')."
-msgstr ""
+msgstr "Ваше власне ім'я для позицій або місць, які можна забронювати (у множині, наприклад, \"місця\", \"клієнти\", \"квитки\")."
 
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:142
 msgid "Appearance"
-msgstr ""
+msgstr "Вигляд"
 
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:146
 msgid "Color"
@@ -5421,7 +5513,7 @@ msgstr "Показати елементи"
 
 #: includes/metaboxes/shortcode/AppointmentFormMetabox.php:53
 msgid "Show or hide form fields."
-msgstr ""
+msgstr "Показати або приховати поля форми."
 
 #: includes/metaboxes/shortcode/AppointmentFormTimepicker.php:29
 #: includes/widgets/AppointmentFormWidget.php:233
@@ -5672,7 +5764,7 @@ msgstr ""
 #. Translators: %s: Stripe Payment Intent ID.
 #: includes/payments/gateways/webhooks/StripeWebhooksListener.php:184
 msgid "Webhook received. Payment intent %s succeeded."
-msgstr ""
+msgstr "Вебхук отримано. Платіжний намір %s виконано успішно."
 
 #. Translators: %s: Stripe Charge ID.
 #: includes/payments/gateways/webhooks/StripeWebhooksListener.php:206
@@ -5700,11 +5792,11 @@ msgstr ""
 
 #: includes/plugin/settings/NotificationSettings.php:64
 msgid "Notification from {site_title}"
-msgstr ""
+msgstr "Сповіщення від {site_title}"
 
 #: includes/plugin/settings/NotificationSettings.php:68
 msgid "Notification for your booking #{booking_id}"
-msgstr ""
+msgstr "Сповіщення про бронювання #{booking_id}"
 
 #: includes/post-types/BookingPostType.php:96
 msgctxt "Add new booking"
@@ -5919,11 +6011,11 @@ msgstr "Категорій не знайдено."
 
 #: includes/post-types/NotificationPostType.php:44
 msgid "Notification"
-msgstr ""
+msgstr "Сповіщення"
 
 #: includes/post-types/NotificationPostType.php:51
 msgid "This is where you can add new notifications."
-msgstr ""
+msgstr "Тут ви можете додавати нові сповіщення."
 
 #: includes/post-types/NotificationPostType.php:61
 msgctxt "Add new notification"
@@ -5932,27 +6024,27 @@ msgstr "Додати новий"
 
 #: includes/post-types/NotificationPostType.php:62
 msgid "Add New Notification"
-msgstr ""
+msgstr "Додати нове сповіщення"
 
 #: includes/post-types/NotificationPostType.php:63
 msgid "New Notification"
-msgstr ""
+msgstr "Нове сповіщення"
 
 #: includes/post-types/NotificationPostType.php:64
 msgid "Edit Notification"
-msgstr ""
+msgstr "Редагувати сповіщення"
 
 #: includes/post-types/NotificationPostType.php:65
 msgid "View Notification"
-msgstr ""
+msgstr "Переглянути сповіщення"
 
 #: includes/post-types/NotificationPostType.php:66
 msgid "Search Notification"
-msgstr ""
+msgstr "Сповіщення про пошук"
 
 #: includes/post-types/NotificationPostType.php:67
 msgid "No notification found"
-msgstr ""
+msgstr "Сповіщень не знайдено"
 
 #: includes/post-types/NotificationPostType.php:68
 msgid "No notifications found in Trash"
@@ -6401,7 +6493,7 @@ msgstr "Бронювання скасовано, оскільки платіж �
 
 #: includes/repositories/CustomerRepository.php:444
 msgid "You cannot delete a customer if they have bookings."
-msgstr ""
+msgstr "Ви не можете видалити клієнта, якщо у нього є бронювання."
 
 #. Translators: %d: Reservation ID.
 #: includes/repositories/ReservationRepository.php:132
@@ -6417,7 +6509,7 @@ msgstr "Вибачте! В даний момент не вдалося зроб�
 
 #: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:155
 msgid "You've successfully made a booking. Thank you!"
-msgstr ""
+msgstr "Ви успішно оформили бронювання. Дякуємо!"
 
 #: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:157
 msgid "Your reservation request has been received and is waiting for our confirmation. Thank you!"
@@ -6467,7 +6559,7 @@ msgstr "Будь ласка, введіть дійсне ім'я користу�
 
 #: includes/rest/controllers/motopress/appointment/v1/CustomersRestController.php:70
 msgid "An account with this username already exists. Please choose another."
-msgstr ""
+msgstr "Обліковий запис з таким ім'ям користувача вже існує. Будь ласка, виберіть інший."
 
 #: includes/rest/controllers/motopress/appointment/v1/CustomersRestController.php:78
 msgid "Please enter an account password."
@@ -6475,15 +6567,15 @@ msgstr "Будь ласка, введіть пароль акаунта."
 
 #: includes/rest/controllers/motopress/appointment/v1/CustomersRestController.php:166
 msgid "An error has occurred. The customer account has not been created."
-msgstr ""
+msgstr "Виникла помилка. Обліковий запис клієнта не створено."
 
 #: includes/rest/controllers/motopress/appointment/v1/CustomersRestController.php:171
 msgid "It is forbidden to create new accounts."
-msgstr ""
+msgstr "Створювати нові акаунти заборонено."
 
 #: includes/rest/controllers/motopress/appointment/v1/CustomersRestController.php:193
 msgid "This email address is already registered."
-msgstr ""
+msgstr "Цю адресу електронної пошти вже зареєстровано."
 
 #: includes/rest/controllers/motopress/appointment/v1/CustomersRestController.php:194
 #: includes/rest/controllers/motopress/appointment/v1/CustomersRestController.php:216
@@ -6492,7 +6584,7 @@ msgstr ""
 
 #: includes/rest/controllers/motopress/appointment/v1/CustomersRestController.php:215
 msgid "This phone is already registered."
-msgstr ""
+msgstr "Цей телефон вже зареєстрований."
 
 #: includes/rest/controllers/motopress/appointment/v1/PaymentsRestController.php:114
 msgid "Payment details have not been passed."
@@ -6586,31 +6678,31 @@ msgstr "Кількість стовпців у виборі часу."
 
 #: includes/shortcodes/AppointmentFormShortcode.php:143
 msgid "Form width."
-msgstr ""
+msgstr "Ширина форми."
 
 #: includes/shortcodes/AppointmentFormShortcode.php:148
 msgid "Primary text color."
-msgstr ""
+msgstr "Основний колір тексту."
 
 #: includes/shortcodes/AppointmentFormShortcode.php:153
 msgid "Primary background color."
-msgstr ""
+msgstr "Основний колір фону."
 
 #: includes/shortcodes/AppointmentFormShortcode.php:158
 msgid "Secondary text color."
-msgstr ""
+msgstr "Додатковий колір тексту."
 
 #: includes/shortcodes/AppointmentFormShortcode.php:163
 msgid "Secondary background color."
-msgstr ""
+msgstr "Додатковий колір фону."
 
 #: includes/shortcodes/AppointmentFormShortcode.php:168
 msgid "Buttons padding."
-msgstr ""
+msgstr "Внутрішній відступ кнопок."
 
 #: includes/shortcodes/BookingCancellationLinkShortcode.php:31
 msgid "Booking cancelation link"
-msgstr ""
+msgstr "Посилання для скасування бронювання"
 
 #: includes/shortcodes/BookingCancellationLinkShortcode.php:55
 msgid "Cancel Booking"
@@ -6622,7 +6714,7 @@ msgstr "Деталі бронювання"
 
 #: includes/shortcodes/CustomerAccountShortcode.php:196
 msgid "Invalid Username or Email Address."
-msgstr ""
+msgstr "Невірне Ім'я користувача або email-адреса."
 
 #: includes/shortcodes/CustomerAccountShortcode.php:217
 msgid "Customer Account"
@@ -6654,16 +6746,16 @@ msgstr "Відобразити %s"
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:94
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:183
 msgid "Go Premium"
-msgstr ""
+msgstr "До Преміум"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:85
 msgid "Upgrade to Appointment Booking Premium"
-msgstr ""
+msgstr "Оновлення до Appointment Booking Premium"
 
 #. translators: %1$s - <a ... link to demo website>, %2$s - </a>, %3$s - <strong>, %4$s - </strong>
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:103
 msgid "Want to see and test the PRO features first-hand on the backend? %3$s %1$s Start a free trial %2$s with the PRO plugin version. %4$s"
-msgstr ""
+msgstr "Хочете побачити та протестувати PRO функції на бекенді? %3$s %1$s Розпочніть безкоштовну пробну версію %2$s з PRO версією плагіна. %4$s"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:116
 msgid "Take full advantage of Appointment Booking with the premium plugin version. Compare the features:"
@@ -6671,35 +6763,35 @@ msgstr ""
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:123
 msgid "Lite Version"
-msgstr ""
+msgstr "Версія Lite"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:124
 msgid "Pro Version"
-msgstr ""
+msgstr "Версія PRO"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:130
 msgid "Technical support"
-msgstr ""
+msgstr "Технічна підтримка"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:131
 msgid "Priority support via live chat, email, and ticket system."
-msgstr ""
+msgstr "Пріоритетна підтримка у чаті, листуванні та системі тікетів."
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:133
 msgid "FAQ"
-msgstr ""
+msgstr "Часті запитання"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:134
 msgid "Email, tickets system (we even login to your WordPress to help)"
-msgstr ""
+msgstr "Електронна пошта, система заявок (ми навіть зайдемо у ваш WordPress, щоб допомогти)"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:138
 msgid "Built-in payment gateways"
-msgstr ""
+msgstr "Вбудовані способи оплати"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:139
 msgid "Already integrated payment gateways for secure online payments and bookings."
-msgstr ""
+msgstr "Попередньо вбудовані способи оплати для безпечних платежів та бронювань онлайн."
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:142
 msgid "Direct Bank Transfer, Stripe, Apple Pay, Google Pay, PayPal, more on the way"
@@ -6707,7 +6799,7 @@ msgstr ""
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:146
 msgid "Extendable with Appointment Booking addons"
-msgstr ""
+msgstr "Розширюється за допомогою доповнень для бронювання зустрічей"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:147
 msgid "The facility to connect any extra free or premium Appointment Booking extension."
@@ -6715,7 +6807,7 @@ msgstr ""
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:154
 msgid "Bookings synchronization to Google Calendar"
-msgstr ""
+msgstr "Синхронізація бронювань з календарем Google"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:155
 msgid "Sync website bookings to employee's Google Calendar for automatic schedule updates and notifications."
@@ -6723,7 +6815,7 @@ msgstr ""
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:162
 msgid "Adding bookings manually by site admins"
-msgstr ""
+msgstr "Можливість додавання бронювання вручну адміністратором сайту"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:163
 msgid "Register new customers manually via the site admin dashboard."
@@ -6731,11 +6823,11 @@ msgstr ""
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:170
 msgid "Reminders and notifications"
-msgstr ""
+msgstr "Нагадування та сповіщення"
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:171
 msgid "Send automated reminders and other notifications before and after the appointment."
-msgstr ""
+msgstr "Надсилайте автоматичні нагадування та інші сповіщення до і після зустрічі."
 
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:173
 msgid "Admin, Employee and Custom Email Addresses"
@@ -6757,7 +6849,7 @@ msgstr ""
 
 #: includes/functions.php:115
 msgid "Upgrade"
-msgstr ""
+msgstr "Оновлення"
 
 #: templates/emails/admin/admin-approved-booking-email.php:12
 #: templates/emails/admin/admin-cancelled-booking-email.php:12
@@ -6788,7 +6880,7 @@ msgstr "Клієнт:"
 #: templates/emails/admin/admin-approved-booking-email.php:26
 #: templates/emails/customer/customer-approved-payment-email.php:21
 msgid "Cost and payment information"
-msgstr ""
+msgstr "Інформація про вартість та оплату"
 
 #: templates/emails/admin/admin-approved-booking-email.php:27
 #: templates/emails/admin/admin-new-booking-email.php:25
@@ -6798,11 +6890,11 @@ msgstr ""
 #: templates/emails/customer/customer-new-booking-email.php:21
 #: templates/emails/customer/customer-pending-booking-email.php:21
 msgid "Total price"
-msgstr ""
+msgstr "Загальна ціна"
 
 #: templates/emails/admin/admin-cancelled-booking-email.php:14
 msgid "Booking is canceled by the customer."
-msgstr ""
+msgstr "Бронювання скасовується клієнтом."
 
 #: templates/emails/admin/admin-cancelled-booking-email.php:18
 #: templates/emails/customer/customer-cancelled-booking-email.php:16
@@ -6837,15 +6929,15 @@ msgstr "Деталі вашого акаунта"
 
 #: templates/emails/customer/customer-account-creation-email.php:18
 msgid "Login: {customer_account_login}"
-msgstr ""
+msgstr "Увійти: {customer_account_login}"
 
 #: templates/emails/customer/customer-account-creation-email.php:20
 msgid "Password: {customer_account_password}"
-msgstr ""
+msgstr "Пароль: {customer_account_password}"
 
 #: templates/emails/customer/customer-account-creation-email.php:22
 msgid "Log in here"
-msgstr ""
+msgstr "Увійдіть тут"
 
 #: templates/emails/customer/customer-account-creation-email.php:24
 #: templates/emails/notification/default-notification.php:39
@@ -6884,11 +6976,11 @@ msgstr "Залишайтеся на зв'язку."
 #. Translators: %s: Customer name.
 #: templates/emails/notification/default-notification.php:15
 msgid "Dear %s,"
-msgstr ""
+msgstr "Вітаємо %s,"
 
 #: templates/emails/notification/default-notification.php:20
 msgid "For your information:"
-msgstr ""
+msgstr "До Вашого відома:"
 
 #. Translators: %d: "Notice 1", "Notice 2" etc.
 #: templates/emails/notification/default-notification.php:24
@@ -6909,7 +7001,7 @@ msgstr "{service_name} з {employee_name} на {reservation_date} з {start_buff
 
 #: templates/emails/template-parts/admin-payment-details.php:15
 msgid "Edit payment"
-msgstr ""
+msgstr "Редагувати платіж"
 
 #: templates/emails/template-parts/cancellation-details.php:11
 msgid "Click the link below to cancel your booking."
@@ -6967,7 +7059,7 @@ msgstr "Створити"
 
 #: templates/private/pages/extensions-list.php:18
 msgid "Extend the functionality of Appointment Booking with preferred add-ons."
-msgstr ""
+msgstr "Розширюйте функціональність бронювання зустрічей за допомогою бажаних доповнень."
 
 #: templates/private/pages/extensions-list.php:50
 msgid "Get this Extension"
@@ -6989,6 +7081,26 @@ msgstr "Обов’язкове."
 msgid "empty string"
 msgstr "пустий рядок"
 
+#: templates/private/pages/wizard.php:8
+msgid "Welcome"
+msgstr "Вітаємо"
+
+#: templates/private/pages/wizard.php:13
+msgid "Complete"
+msgstr ""
+
+#: templates/private/pages/wizard.php:71
+msgid "Continue"
+msgstr "Продовжити"
+
+#: templates/private/pages/wizard.php:74
+msgid "Finish Setup"
+msgstr ""
+
+#: templates/private/pages/wizard.php:84
+msgid "Skip Wizard"
+msgstr ""
+
 #. Translators: %d: Just a number.
 #: templates/service/employees.php:78
 msgid "+%d"
@@ -7002,12 +7114,12 @@ msgstr "Редагувати"
 #. translators: %s is the Terms page link.
 #: templates/shortcodes/booking/sections/accept-terms.php:23
 msgid "I've read and accept the <a class=\"mpa-terms-and-conditions-link\" href=\"%s\" target=\"_blank\"> terms &amp; conditions</a>"
-msgstr ""
+msgstr "Я прочитав і приймаю <a class=\"mpa-terms-and-conditions-link\" href=\"%s\" target=\"_blank\"> умови та положення</a>"
 
 #: templates/shortcodes/booking/sections/booking-details-section.php:16
 #: templates/shortcodes/template-parts/booking-details.php:72
 msgid "Add to your calendar: "
-msgstr ""
+msgstr "Додати до календаря: "
 
 #: templates/shortcodes/booking/sections/booking-details-section.php:19
 #: templates/shortcodes/template-parts/booking-details.php:75
@@ -7035,7 +7147,7 @@ msgstr "Застосувати"
 
 #: templates/shortcodes/booking/sections/deposit-section.php:27
 msgid "I want to pay the total price now"
-msgstr ""
+msgstr "Я хочу заплатити повну вартість зараз"
 
 #: templates/shortcodes/booking/sections/order-details-section.php:14
 msgid "Your Order"
@@ -7097,7 +7209,7 @@ msgstr "Створити акаунт?"
 
 #: templates/shortcodes/booking/step-checkout.php:100
 msgid "Information about access to your account will be sent by email."
-msgstr ""
+msgstr "Інформація про доступ до вашого облікового запису буде надіслана email."
 
 #: templates/shortcodes/booking/step-checkout.php:126
 #: templates/shortcodes/booking/step-payment.php:109
@@ -7118,7 +7230,7 @@ msgstr "Загалом бронювань"
 
 #: templates/shortcodes/customer-account/bookings.php:10
 msgid "No booking has been made yet."
-msgstr ""
+msgstr "Бронювання ще не здійснено."
 
 #: templates/shortcodes/customer-account/bookings.php:71
 msgid "Actions"
@@ -7154,27 +7266,27 @@ msgstr "Не знайдено категорій, що відповідають 
 
 #: assets/js/analytics-page.js:16170
 msgid "By year"
-msgstr ""
+msgstr "За роком"
 
 #: assets/js/analytics-page.js:16176
 msgid "By quarter"
-msgstr ""
+msgstr "За кварталом"
 
 #: assets/js/analytics-page.js:16182
 msgid "By month"
-msgstr ""
+msgstr "За місяцем"
 
 #: assets/js/analytics-page.js:16188
 msgid "By week"
-msgstr ""
+msgstr "За тижнем"
 
 #: assets/js/analytics-page.js:16194
 msgid "By day"
-msgstr ""
+msgstr "За днем"
 
 #: assets/js/analytics-page.js:16200
 msgid "By hour"
-msgstr ""
+msgstr "За годиною"
 
 #: assets/js/analytics-page.js:16212
 #: assets/js/calendar-page.js:45449
@@ -7199,7 +7311,7 @@ msgstr "Минулого кварталу"
 
 #: assets/js/analytics-page.js:16227
 msgid "This Year"
-msgstr ""
+msgstr "Цього року"
 
 #: assets/js/analytics-page.js:16250
 #: assets/js/analytics-page.js:16298
@@ -7207,7 +7319,7 @@ msgstr ""
 #: assets/js/analytics-page.js:16301
 #: assets/js/analytics-page.js:16304
 msgid "Custom range"
-msgstr ""
+msgstr "Власний діапазон"
 
 #: assets/js/analytics-page.js:33408
 #: assets/js/analytics-page.js:33429
@@ -7227,7 +7339,7 @@ msgstr "Статуси"
 
 #: assets/js/analytics-page.js:45693
 msgid "No data for the selected date range"
-msgstr ""
+msgstr "Немає даних для обраного діапазону дат"
 
 #: assets/js/analytics-page.js:46244
 #: assets/js/analytics-page.js:46264
@@ -7235,7 +7347,7 @@ msgstr ""
 #: assets/js/analytics-page.js:46304
 #: assets/js/analytics-page.js:46481
 msgid "Total Revenue"
-msgstr ""
+msgstr "Загальний дохід"
 
 #: assets/js/analytics-page.js:46245
 #: assets/js/analytics-page.js:46265
@@ -7243,52 +7355,52 @@ msgstr ""
 #: assets/js/analytics-page.js:46305
 #: assets/js/analytics-page.js:46651
 msgid "Revenue"
-msgstr ""
+msgstr "Дохід"
 
 #: assets/js/analytics-page.js:46324
 #: assets/js/analytics-page.js:46343
 #: assets/js/analytics-page.js:46362
 #: assets/js/analytics-page.js:46381
 msgid "Total Number of Reservations"
-msgstr ""
+msgstr "Загальна кількість резервувань"
 
 #: assets/js/analytics-page.js:46325
 #: assets/js/analytics-page.js:46344
 #: assets/js/analytics-page.js:46363
 #: assets/js/analytics-page.js:46382
 msgid "Number of Reservations"
-msgstr ""
+msgstr "Кількість бронювань"
 
 #: assets/js/analytics-page.js:46401
 #: assets/js/analytics-page.js:46441
 #: assets/js/analytics-page.js:46539
 msgid "Total Number of Coupons Used"
-msgstr ""
+msgstr "Загальна кількість використаних купонів"
 
 #: assets/js/analytics-page.js:46402
 #: assets/js/analytics-page.js:46442
 msgid "Coupons Usage"
-msgstr ""
+msgstr "Використання купонів"
 
 #: assets/js/analytics-page.js:46420
 #: assets/js/analytics-page.js:46461
 #: assets/js/analytics-page.js:46542
 msgid "Total Discount Amount"
-msgstr ""
+msgstr "Загальна сума знижки"
 
 #: assets/js/analytics-page.js:46421
 #: assets/js/analytics-page.js:46462
 msgid "Amount of Discounts"
-msgstr ""
+msgstr "Розмір знижки"
 
 #: assets/js/analytics-page.js:46501
 #: assets/js/analytics-page.js:46554
 msgid "Total Number of Payments"
-msgstr ""
+msgstr "Загальна кількість платежів"
 
 #: assets/js/analytics-page.js:46502
 msgid "Number of Payments"
-msgstr ""
+msgstr "Кількість платежів"
 
 #: assets/js/analytics-page.js:46509
 #: assets/js/analytics-page.js:46524
@@ -7298,7 +7410,7 @@ msgstr ""
 #: assets/js/analytics-page.js:46512
 #: assets/js/analytics-page.js:46527
 msgid "By Services"
-msgstr ""
+msgstr "За послугами"
 
 #: assets/js/analytics-page.js:46515
 #: assets/js/analytics-page.js:46530
@@ -7308,19 +7420,19 @@ msgstr ""
 #: assets/js/analytics-page.js:46518
 #: assets/js/analytics-page.js:46533
 msgid "By Locations"
-msgstr ""
+msgstr "За розташуванням"
 
 #: assets/js/analytics-page.js:46545
 msgid "Number of Coupons Used by Coupon Code"
-msgstr ""
+msgstr "Кількість використаних купонів за кодом купона"
 
 #: assets/js/analytics-page.js:46557
 msgid "Amount by Payment Gateway"
-msgstr ""
+msgstr "Сума за платіжним шлюзом"
 
 #: assets/js/calendar-page.js:38284
 msgid "View Bookings"
-msgstr ""
+msgstr "Переглянути Замовлення"
 
 #: assets/js/calendar-page.js:45448
 msgid "Previous"
@@ -7777,7 +7889,7 @@ msgstr "Грудень"
 #: assets/js/settings-page.js:685
 #: assets/js/widgets-manage-page.js:2958
 msgid "Phone number is invalid."
-msgstr ""
+msgstr "Номер телефону недійсний."
 
 #: assets/js/divi-modules.js:5774
 #: assets/js/divi-modules.js:7658
@@ -7832,7 +7944,7 @@ msgstr "Завдаток"
 #: assets/js/gutenberg-blocks.js:6474
 #: assets/js/public.js:6035
 msgid "Paying now"
-msgstr ""
+msgstr "Оплатити зараз"
 
 #: assets/js/divi-modules.js:6573
 #: assets/js/elementor-widgets.js:6573
@@ -7896,7 +8008,7 @@ msgstr "IBAN"
 #: assets/js/gutenberg-blocks.js:8346
 #: assets/js/public.js:7907
 msgid "Payment methods"
-msgstr ""
+msgstr "Способи оплати"
 
 #: assets/js/divi-modules.js:8119
 #: assets/js/elementor-widgets.js:8119
@@ -7925,7 +8037,7 @@ msgstr "На жаль, немає послуг, працівників чи мі
 #: assets/js/gutenberg-blocks.js:3267
 #: assets/js/widgets-manage-page.js:3023
 msgid "To enable this option, you need to check the '%s' box."
-msgstr ""
+msgstr "Щоб увімкнути цю опцію, вам потрібно встановити прапорець \"%s\"."
 
 #: assets/js/edit-post.js:9035
 #: assets/js/gutenberg-blocks.js:3285
@@ -7935,7 +8047,7 @@ msgstr ""
 
 #: assets/js/gutenberg-blocks.js:3443
 msgid "Colors"
-msgstr ""
+msgstr "Кольори"
 
 #: assets/js/gutenberg-blocks.js:11412
 #: assets/js/gutenberg-blocks.js:11722
@@ -7956,116 +8068,4 @@ msgstr "бронювання"
 #. Plugin Name of the plugin
 #: motopress-appointment.php
 msgid "Appointment Booking Lite"
-msgstr ""
-
-#: includes/admin-pages/custom/WizardPage.php:69
-#: includes/admin-pages/custom/WizardPage.php:76
-msgid "Wizard"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:77
-#: templates/private/pages/shortcodes-list.php:21
-msgid "Set up your Appointment Booking plugin in just a few simple steps! This wizard will guide you through adding your first service with the necessary settings. You can add unlimited services, staff members, and locations later."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:79
-#: templates/private/pages/shortcodes-list.php:21
-msgid "Run Wizard"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:80
-msgid "Skip"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:213
-msgid "Failed to create a location."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:218
-msgid "Failed to create an employee."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:225
-msgid "Failed to create a service."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:438
-msgid "Welcome to MotoPress Appointment Booking!"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:439
-msgid "It's great to have you here with us! We'll be guiding you through the setup process to help you get started easily."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:464
-msgid "Where does an appointment take place?"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:465
-msgid "A location is where an appointment takes place, such as a city, area, building, room, or online. Adding a location is required, though you can choose to hide it in the booking form later."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:490
-msgid "Who provides a service?"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:491
-msgid "An employee is the service provider responsible for the appointment, typically listed by name. Adding an employee is required, though you can choose to hide it in the booking form later."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:493
-msgid "A schedule for this employee is generated automatically and can be edited later in the Schedules menu."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:527
-msgid "Describe your service"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:528
-msgid "A service is the specific offering provided during an appointment. It can be a haircut, consultation, medical checkup, training session, or any other activity booked by a customer."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:601
-msgid "Booking Page"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:602
-msgid "Create a draft website page with an appointment booking form."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:610
-msgid "Define some key configurations for your appointment booking system. The Confirmation Mode option specifies how booking requests are approved."
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:625
-msgid "Setup Complete – Ready to Go!"
-msgstr ""
-
-#: includes/handlers/WizardHandler.php:626
-msgid "Your appointment system is set up with default settings and ready for bookings. You can now also add more services, employees, locations, and customize settings and schedules."
-msgstr ""
-
-#. translators: %1$s is Placeholder for the draft page link.
-#: includes/handlers/WizardHandler.php:628
-msgid "Your draft page with the form: %1$s"
-msgstr ""
-
-#: templates/private/pages/wizard.php:8
-msgid "Welcome"
-msgstr ""
-
-#: templates/private/pages/wizard.php:13
-msgid "Complete"
-msgstr ""
-
-#: templates/private/pages/wizard.php:71
-msgid "Continue"
-msgstr ""
-
-#: templates/private/pages/wizard.php:74
-msgid "Finish Setup"
-msgstr ""
-
-#: templates/private/pages/wizard.php:84
-msgid "Skip Wizard"
 msgstr ""
