@@ -20,7 +20,7 @@ msgstr ""
 "X-Crowdin-File-ID: 46\n"
 
 #: includes/functions/plugin.php:106
-#: includes/Plugin.php:489
+#: includes/Plugin.php:497
 msgid "Appointment Booking"
 msgstr ""
 

@@ -5,7 +5,7 @@ Tags: appointment, booking, calendar, reservation, schedule, scheduling, online 
 Requires at least: 5.3
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 2.4.1
+Stable tag: 2.4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,6 +51,9 @@ Enjoy a responsive booking calendar with clickable dates - your clients choose a
 
 * Within the appointment scheduling form for all services at once.
 * Separate availability and booking calendars for each service individually.
+
+### Plugin Setup Wizard for Quick Start
+We've packed our booking system with the Appointment Booking Setup Wizard, prompted instantly after the plugin activation. It helps you create a booking form in a few steps and start accepting your first reservations right away.
 
 ### Booking Management
 
@@ -311,6 +314,9 @@ MotoPress Appointment Booking plugin, Copyright (C) 2020, MotoPress https://moto
 MotoPress Appointment Booking plugin is distributed under the terms of the GNU GPL.
 
 == Changelog ==
+
+= 2.4.2, Sep 18 2025 =
+* Bug fix: fixed an issue where the appointment form was not working in the WordPress Legacy widget.
 
 = 2.4.1, Jul 30 2025 =
 * Improved compatibility with WordPress 6.8, addressing the _load_textdomain_just_in_time notice.

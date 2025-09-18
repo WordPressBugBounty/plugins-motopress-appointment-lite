@@ -149,6 +149,15 @@ class Plugin {
 			-1
 		);
 
+		// Register widgets
+		add_action(
+			'init',
+			function () {
+				$this->registries['widgets']->registerAll();
+			},
+			0
+		);
+
 		add_action( 'init', array( $this, 'init' ), 5 );
 		add_action( 'admin_init', array( $this, 'initAutoUpdater' ), 15 );
 
@@ -192,9 +201,8 @@ class Plugin {
 		// Register post types
 		$this->registries['postTypes']->registerAll();
 
-		// Register shortcodes and widgets
+		// Register shortcodes
 		$this->registries['shortcodes']->registerAll();
-		$this->registries['widgets']->registerAll();
 
 		if ( is_admin() ) {
 			$this->registries['pages']->registerCustomPages();
