@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2025-07-08 11:54",
+    "translation-revision-date": "2025-12-05 14:10",
     "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/calendar-page.js",
     "domain": "messages",
@@ -13,14 +13,14 @@
             "Calendar": [
                 "Kalender"
             ],
-            "Customer": [
-                "Kunde"
-            ],
             "Services": [
                 "Dienstleistungen"
             ],
             "Service": [
                 "Service"
+            ],
+            "Date": [
+                "Datum"
             ],
             "Employees": [
                 "Mitarbeiter"
@@ -28,14 +28,14 @@
             "Employee": [
                 "Mitarbeiter"
             ],
+            "Customer": [
+                "Kunde"
+            ],
             "Booking": [
                 "Buchung"
             ],
             "Location": [
                 "Standort \/ Filiale"
-            ],
-            "Date": [
-                "Datum"
             ],
             "Locations": [
                 "Standorte"

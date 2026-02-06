@@ -2,6 +2,8 @@
 
 namespace MotoPress\Appointment\Bundles;
 
+use MotoPress\Appointment\Libraries\Umpirsky\UmpirskyHelper;
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -280,177 +282,33 @@ class CurrenciesBundle {
 		return absint( $amount * ( 10 ** $currencyDecimals ) );
 	}
 
+
 	/**
 	 * @return array [Currency code => Currency label]
-	 *
 	 * @since 1.0
+	 * @since 2.4.3 updated to get list from lib.
 	 */
-	protected function currenciesList() {
-		return array(
-			'EUR' => esc_html__( 'Euro', 'motopress-appointment' ),
-			'USD' => esc_html__( 'United States (US) dollar', 'motopress-appointment' ),
-			'GBP' => esc_html__( 'Pound sterling', 'motopress-appointment' ),
-			'AED' => esc_html__( 'United Arab Emirates dirham', 'motopress-appointment' ),
-			'AFN' => esc_html__( 'Afghan afghani', 'motopress-appointment' ),
-			'ALL' => esc_html__( 'Albanian lek', 'motopress-appointment' ),
-			'AMD' => esc_html__( 'Armenian dram', 'motopress-appointment' ),
-			'ANG' => esc_html__( 'Netherlands Antillean guilder', 'motopress-appointment' ),
-			'AOA' => esc_html__( 'Angolan kwanza', 'motopress-appointment' ),
-			'ARS' => esc_html__( 'Argentine peso', 'motopress-appointment' ),
-			'AUD' => esc_html__( 'Australian dollar', 'motopress-appointment' ),
-			'AWG' => esc_html__( 'Aruban florin', 'motopress-appointment' ),
-			'AZN' => esc_html__( 'Azerbaijani manat', 'motopress-appointment' ),
-			'BAM' => esc_html__( 'Bosnia and Herzegovina convertible mark', 'motopress-appointment' ),
-			'BBD' => esc_html__( 'Barbadian dollar', 'motopress-appointment' ),
-			'BDT' => esc_html__( 'Bangladeshi taka', 'motopress-appointment' ),
-			'BGN' => esc_html__( 'Bulgarian lev', 'motopress-appointment' ),
-			'BHD' => esc_html__( 'Bahraini dinar', 'motopress-appointment' ),
-			'BIF' => esc_html__( 'Burundian franc', 'motopress-appointment' ),
-			'BMD' => esc_html__( 'Bermudian dollar', 'motopress-appointment' ),
-			'BND' => esc_html__( 'Brunei dollar', 'motopress-appointment' ),
-			'BOB' => esc_html__( 'Bolivian boliviano', 'motopress-appointment' ),
-			'BRL' => esc_html__( 'Brazilian real', 'motopress-appointment' ),
-			'BSD' => esc_html__( 'Bahamian dollar', 'motopress-appointment' ),
-			'BTC' => esc_html__( 'Bitcoin', 'motopress-appointment' ),
-			'BTN' => esc_html__( 'Bhutanese ngultrum', 'motopress-appointment' ),
-			'BWP' => esc_html__( 'Botswana pula', 'motopress-appointment' ),
-			'BYR' => esc_html__( 'Belarusian ruble (old)', 'motopress-appointment' ),
-			'BYN' => esc_html__( 'Belarusian ruble', 'motopress-appointment' ),
-			'BZD' => esc_html__( 'Belize dollar', 'motopress-appointment' ),
-			'CAD' => esc_html__( 'Canadian dollar', 'motopress-appointment' ),
-			'CDF' => esc_html__( 'Congolese franc', 'motopress-appointment' ),
-			'CHF' => esc_html__( 'Swiss franc', 'motopress-appointment' ),
-			'CLP' => esc_html__( 'Chilean peso', 'motopress-appointment' ),
-			'CNY' => esc_html__( 'Chinese yuan', 'motopress-appointment' ),
-			'COP' => esc_html__( 'Colombian peso', 'motopress-appointment' ),
-			'CRC' => esc_html__( 'Costa Rican col&oacute;n', 'motopress-appointment' ),
-			'CUC' => esc_html__( 'Cuban convertible peso', 'motopress-appointment' ),
-			'CUP' => esc_html__( 'Cuban peso', 'motopress-appointment' ),
-			'CVE' => esc_html__( 'Cape Verdean escudo', 'motopress-appointment' ),
-			'CZK' => esc_html__( 'Czech koruna', 'motopress-appointment' ),
-			'DJF' => esc_html__( 'Djiboutian franc', 'motopress-appointment' ),
-			'DKK' => esc_html__( 'Danish krone', 'motopress-appointment' ),
-			'DOP' => esc_html__( 'Dominican peso', 'motopress-appointment' ),
-			'DZD' => esc_html__( 'Algerian dinar', 'motopress-appointment' ),
-			'EGP' => esc_html__( 'Egyptian pound', 'motopress-appointment' ),
-			'ERN' => esc_html__( 'Eritrean nakfa', 'motopress-appointment' ),
-			'ETB' => esc_html__( 'Ethiopian birr', 'motopress-appointment' ),
-			'FJD' => esc_html__( 'Fijian dollar', 'motopress-appointment' ),
-			'FKP' => esc_html__( 'Falkland Islands pound', 'motopress-appointment' ),
-			'GEL' => esc_html__( 'Georgian lari', 'motopress-appointment' ),
-			'GGP' => esc_html__( 'Guernsey pound', 'motopress-appointment' ),
-			'GHS' => esc_html__( 'Ghana cedi', 'motopress-appointment' ),
-			'GIP' => esc_html__( 'Gibraltar pound', 'motopress-appointment' ),
-			'GMD' => esc_html__( 'Gambian dalasi', 'motopress-appointment' ),
-			'GNF' => esc_html__( 'Guinean franc', 'motopress-appointment' ),
-			'GTQ' => esc_html__( 'Guatemalan quetzal', 'motopress-appointment' ),
-			'GYD' => esc_html__( 'Guyanese dollar', 'motopress-appointment' ),
-			'HKD' => esc_html__( 'Hong Kong dollar', 'motopress-appointment' ),
-			'HNL' => esc_html__( 'Honduran lempira', 'motopress-appointment' ),
-			'HRK' => esc_html__( 'Croatian kuna', 'motopress-appointment' ),
-			'HTG' => esc_html__( 'Haitian gourde', 'motopress-appointment' ),
-			'HUF' => esc_html__( 'Hungarian forint', 'motopress-appointment' ),
-			'IDR' => esc_html__( 'Indonesian rupiah', 'motopress-appointment' ),
-			'ILS' => esc_html__( 'Israeli new shekel', 'motopress-appointment' ),
-			'IMP' => esc_html__( 'Manx pound', 'motopress-appointment' ),
-			'INR' => esc_html__( 'Indian rupee', 'motopress-appointment' ),
-			'IQD' => esc_html__( 'Iraqi dinar', 'motopress-appointment' ),
-			'IRR' => esc_html__( 'Iranian rial', 'motopress-appointment' ),
-			'IRT' => esc_html__( 'Iranian toman', 'motopress-appointment' ),
-			'ISK' => esc_html__( 'Icelandic kr&oacute;na', 'motopress-appointment' ),
-			'JEP' => esc_html__( 'Jersey pound', 'motopress-appointment' ),
-			'JMD' => esc_html__( 'Jamaican dollar', 'motopress-appointment' ),
-			'JOD' => esc_html__( 'Jordanian dinar', 'motopress-appointment' ),
-			'JPY' => esc_html__( 'Japanese yen', 'motopress-appointment' ),
-			'KES' => esc_html__( 'Kenyan shilling', 'motopress-appointment' ),
-			'KGS' => esc_html__( 'Kyrgyzstani som', 'motopress-appointment' ),
-			'KHR' => esc_html__( 'Cambodian riel', 'motopress-appointment' ),
-			'KMF' => esc_html__( 'Comorian franc', 'motopress-appointment' ),
-			'KPW' => esc_html__( 'North Korean won', 'motopress-appointment' ),
-			'KRW' => esc_html__( 'South Korean won', 'motopress-appointment' ),
-			'KWD' => esc_html__( 'Kuwaiti dinar', 'motopress-appointment' ),
-			'KYD' => esc_html__( 'Cayman Islands dollar', 'motopress-appointment' ),
-			'KZT' => esc_html__( 'Kazakhstani tenge', 'motopress-appointment' ),
-			'LAK' => esc_html__( 'Lao kip', 'motopress-appointment' ),
-			'LBP' => esc_html__( 'Lebanese pound', 'motopress-appointment' ),
-			'LKR' => esc_html__( 'Sri Lankan rupee', 'motopress-appointment' ),
-			'LRD' => esc_html__( 'Liberian dollar', 'motopress-appointment' ),
-			'LSL' => esc_html__( 'Lesotho loti', 'motopress-appointment' ),
-			'LYD' => esc_html__( 'Libyan dinar', 'motopress-appointment' ),
-			'MAD' => esc_html__( 'Moroccan dirham', 'motopress-appointment' ),
-			'MDL' => esc_html__( 'Moldovan leu', 'motopress-appointment' ),
-			'MGA' => esc_html__( 'Malagasy ariary', 'motopress-appointment' ),
-			'MKD' => esc_html__( 'Macedonian denar', 'motopress-appointment' ),
-			'MMK' => esc_html__( 'Burmese kyat', 'motopress-appointment' ),
-			'MNT' => esc_html__( 'Mongolian t&ouml;gr&ouml;g', 'motopress-appointment' ),
-			'MOP' => esc_html__( 'Macanese pataca', 'motopress-appointment' ),
-			'MRO' => esc_html__( 'Mauritanian ouguiya', 'motopress-appointment' ),
-			'MUR' => esc_html__( 'Mauritian rupee', 'motopress-appointment' ),
-			'MVR' => esc_html__( 'Maldivian rufiyaa', 'motopress-appointment' ),
-			'MWK' => esc_html__( 'Malawian kwacha', 'motopress-appointment' ),
-			'MXN' => esc_html__( 'Mexican peso', 'motopress-appointment' ),
-			'MYR' => esc_html__( 'Malaysian ringgit', 'motopress-appointment' ),
-			'MZN' => esc_html__( 'Mozambican metical', 'motopress-appointment' ),
-			'NAD' => esc_html__( 'Namibian dollar', 'motopress-appointment' ),
-			'NGN' => esc_html__( 'Nigerian naira', 'motopress-appointment' ),
-			'NIO' => esc_html__( 'Nicaraguan c&oacute;rdoba', 'motopress-appointment' ),
-			'NOK' => esc_html__( 'Norwegian krone', 'motopress-appointment' ),
-			'NPR' => esc_html__( 'Nepalese rupee', 'motopress-appointment' ),
-			'NZD' => esc_html__( 'New Zealand dollar', 'motopress-appointment' ),
-			'OMR' => esc_html__( 'Omani rial', 'motopress-appointment' ),
-			'PAB' => esc_html__( 'Panamanian balboa', 'motopress-appointment' ),
-			'PEN' => esc_html__( 'Sol', 'motopress-appointment' ),
-			'PGK' => esc_html__( 'Papua New Guinean kina', 'motopress-appointment' ),
-			'PHP' => esc_html__( 'Philippine peso', 'motopress-appointment' ),
-			'PKR' => esc_html__( 'Pakistani rupee', 'motopress-appointment' ),
-			'PLN' => esc_html__( 'Polish z&#x142;oty', 'motopress-appointment' ),
-			'PRB' => esc_html__( 'Transnistrian ruble', 'motopress-appointment' ),
-			'PYG' => esc_html__( 'Paraguayan guaran&iacute;', 'motopress-appointment' ),
-			'QAR' => esc_html__( 'Qatari riyal', 'motopress-appointment' ),
-			'RON' => esc_html__( 'Romanian leu', 'motopress-appointment' ),
-			'RSD' => esc_html__( 'Serbian dinar', 'motopress-appointment' ),
-			'RUB' => esc_html__( 'Russian ruble', 'motopress-appointment' ),
-			'RWF' => esc_html__( 'Rwandan franc', 'motopress-appointment' ),
-			'SAR' => esc_html__( 'Saudi riyal', 'motopress-appointment' ),
-			'SBD' => esc_html__( 'Solomon Islands dollar', 'motopress-appointment' ),
-			'SCR' => esc_html__( 'Seychellois rupee', 'motopress-appointment' ),
-			'SDG' => esc_html__( 'Sudanese pound', 'motopress-appointment' ),
-			'SEK' => esc_html__( 'Swedish krona', 'motopress-appointment' ),
-			'SGD' => esc_html__( 'Singapore dollar', 'motopress-appointment' ),
-			'SHP' => esc_html__( 'Saint Helena pound', 'motopress-appointment' ),
-			'SLL' => esc_html__( 'Sierra Leonean leone', 'motopress-appointment' ),
-			'SOS' => esc_html__( 'Somali shilling', 'motopress-appointment' ),
-			'SRD' => esc_html__( 'Surinamese dollar', 'motopress-appointment' ),
-			'SSP' => esc_html__( 'South Sudanese pound', 'motopress-appointment' ),
-			'STD' => esc_html__( 'S&atilde;o Tom&eacute; and Pr&iacute;ncipe dobra', 'motopress-appointment' ),
-			'SYP' => esc_html__( 'Syrian pound', 'motopress-appointment' ),
-			'SZL' => esc_html__( 'Swazi lilangeni', 'motopress-appointment' ),
-			'THB' => esc_html__( 'Thai baht', 'motopress-appointment' ),
-			'TJS' => esc_html__( 'Tajikistani somoni', 'motopress-appointment' ),
-			'TMT' => esc_html__( 'Turkmenistan manat', 'motopress-appointment' ),
-			'TND' => esc_html__( 'Tunisian dinar', 'motopress-appointment' ),
-			'TOP' => esc_html__( 'Tongan pa&#x2bb;anga', 'motopress-appointment' ),
-			'TRY' => esc_html__( 'Turkish lira', 'motopress-appointment' ),
-			'TTD' => esc_html__( 'Trinidad and Tobago dollar', 'motopress-appointment' ),
-			'TWD' => esc_html__( 'New Taiwan dollar', 'motopress-appointment' ),
-			'TZS' => esc_html__( 'Tanzanian shilling', 'motopress-appointment' ),
-			'UAH' => esc_html__( 'Ukrainian hryvnia', 'motopress-appointment' ),
-			'UGX' => esc_html__( 'Ugandan shilling', 'motopress-appointment' ),
-			'UYU' => esc_html__( 'Uruguayan peso', 'motopress-appointment' ),
-			'UZS' => esc_html__( 'Uzbekistani som', 'motopress-appointment' ),
-			'VEF' => esc_html__( 'Venezuelan bol&iacute;var', 'motopress-appointment' ),
-			'VES' => esc_html__( 'Bol&iacute;var soberano', 'motopress-appointment' ),
-			'VND' => esc_html__( 'Vietnamese &#x111;&#x1ed3;ng', 'motopress-appointment' ),
-			'VUV' => esc_html__( 'Vanuatu vatu', 'motopress-appointment' ),
-			'WST' => esc_html__( 'Samoan t&#x101;l&#x101;', 'motopress-appointment' ),
-			'XAF' => esc_html__( 'Central African CFA franc', 'motopress-appointment' ),
-			'XCD' => esc_html__( 'East Caribbean dollar', 'motopress-appointment' ),
-			'XOF' => esc_html__( 'West African CFA franc', 'motopress-appointment' ),
-			'XPF' => esc_html__( 'CFP franc', 'motopress-appointment' ),
-			'YER' => esc_html__( 'Yemeni rial', 'motopress-appointment' ),
-			'ZAR' => esc_html__( 'South African rand', 'motopress-appointment' ),
-			'ZMW' => esc_html__( 'Zambian kwacha', 'motopress-appointment' ),
+	protected static function currenciesList(): array {
+
+		$currency_list    = UmpirskyHelper::getCurrencyList();
+		$currency_symbols = static::symbolsList();
+
+		$currencies = array(
+			// Prioritize EUR, USD and GBP currencies:
+			// [EUR, USD, GBP, ... all other currencies]
+			'EUR' => 'Euro',
+			'USD' => 'US Dollar',
+			'GBP' => 'British Pound',
 		);
+
+		// Collect only those currencies that have a symbol defined.
+		foreach ( $currency_list as $code => $label ) {
+			if ( array_key_exists( $code, $currency_symbols ) ) {
+				$currencies[ $code ] = $label;
+			}
+		}
+
+		return $currencies;
 	}
 
 	/**
@@ -458,7 +316,7 @@ class CurrenciesBundle {
 	 *
 	 * @since 1.0
 	 */
-	protected function symbolsList() {
+	protected static function symbolsList() {
 		return array(
 			'AED' => '&#x62f;.&#x625;',
 			'AFN' => '&#x60b;',

@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2025-07-08 11:46",
+    "translation-revision-date": "2025-12-05 14:10",
     "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/public.js",
     "domain": "messages",
@@ -11,7 +11,7 @@
                 "plural-forms": "nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));"
             },
             "Left to pay": [
-                ""
+                "\u0417\u0430\u043b\u0438\u0448\u0438\u043b\u043e\u0441\u044c \u0441\u043f\u043b\u0430\u0442\u0438\u0442\u0438"
             ],
             "Clients": [
                 "\u041a\u043b\u0456\u0454\u043d\u0442\u0438"

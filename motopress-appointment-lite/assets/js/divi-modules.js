@@ -8860,10 +8860,11 @@
 
 	  /**
 	   * @since 1.6.0
+	   * @since 2.4.3 Updated: hiding 'Reserve' button only when total price > 0 to avoid hiding it for free services.
 	   */
 	  enable() {
 	    super.enable();
-	    if (this.isEnabled) {
+	    if (this.isEnabled && this.cart.getTotalPrice() > 0) {
 	      this.$mountWrapper.closest('form').find('.mpa-button-next').hide();
 	    }
 	  }

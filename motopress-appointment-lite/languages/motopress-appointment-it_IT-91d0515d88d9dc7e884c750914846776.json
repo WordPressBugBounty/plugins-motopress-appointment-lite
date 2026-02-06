@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2025-07-08 11:48",
+    "translation-revision-date": "2025-12-05 14:10",
     "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/gutenberg-blocks.js",
     "domain": "messages",
@@ -13,8 +13,8 @@
             "Settings": [
                 "Impostazioni"
             ],
-            "Price": [
-                "Prezzo"
+            "ID": [
+                "ID"
             ],
             "Services": [
                 "Servizi"
@@ -27,6 +27,12 @@
             ],
             "Employee": [
                 "Dipendente"
+            ],
+            "Price": [
+                "Prezzo"
+            ],
+            "Order": [
+                "Ordine"
             ],
             "Location": [
                 "Localit\u00e0"
@@ -57,9 +63,6 @@
             ],
             "Example: 5px 10px": [
                 ""
-            ],
-            "ID": [
-                "ID"
             ],
             "Appointment Form": [
                 "Modulo per gli appuntamenti"
@@ -259,9 +262,6 @@
             "Page order and post title": [
                 "Ordine della pagina e titolo del post"
             ],
-            "Order": [
-                "Ordine"
-            ],
             "DESC": [
                 "DESC"
             ],
@@ -374,7 +374,7 @@
                 "Nascondi i termini non ancora assegnati ad alcun post."
             ],
             "Left to pay": [
-                ""
+                "Da pagare"
             ],
             "Clients": [
                 "Clienti"

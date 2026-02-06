@@ -113,6 +113,8 @@ class Plugin {
 			$this->assets = new Plugin\Assets();
 		}
 
+		new Libraries\Umpirsky\UmpirskyHelper();
+
 		// Setup registries
 		$this->registries['postTypes']    = new Registries\PostTypesRegistry();
 		$this->registries['bundles']      = new Registries\BundlesRegistry();

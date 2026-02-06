@@ -20,7 +20,7 @@ msgstr ""
 "X-Crowdin-File-ID: 46\n"
 
 #: includes/functions/plugin.php:106
-#: includes/Plugin.php:497
+#: includes/Plugin.php:499
 msgid "Appointment Booking"
 msgstr ""
 
@@ -202,18 +202,18 @@ msgstr "Сохранить изменения"
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:26
 #: templates/private/pages/wizard.php:12
 #: assets/js/gutenberg-blocks.js:3292
-#: assets/js/gutenberg-blocks.js:11518
-#: assets/js/gutenberg-blocks.js:11813
-#: assets/js/gutenberg-blocks.js:12099
-#: assets/js/gutenberg-blocks.js:12417
-#: assets/js/gutenberg-blocks.js:12698
-#: assets/js/gutenberg-blocks.js:12821
-#: assets/js/gutenberg-blocks.js:12944
-#: assets/js/gutenberg-blocks.js:13067
-#: assets/js/gutenberg-blocks.js:13190
-#: assets/js/gutenberg-blocks.js:13313
-#: assets/js/gutenberg-blocks.js:13436
-#: assets/js/gutenberg-blocks.js:13559
+#: assets/js/gutenberg-blocks.js:11519
+#: assets/js/gutenberg-blocks.js:11814
+#: assets/js/gutenberg-blocks.js:12100
+#: assets/js/gutenberg-blocks.js:12418
+#: assets/js/gutenberg-blocks.js:12699
+#: assets/js/gutenberg-blocks.js:12822
+#: assets/js/gutenberg-blocks.js:12945
+#: assets/js/gutenberg-blocks.js:13068
+#: assets/js/gutenberg-blocks.js:13191
+#: assets/js/gutenberg-blocks.js:13314
+#: assets/js/gutenberg-blocks.js:13437
+#: assets/js/gutenberg-blocks.js:13560
 msgid "Settings"
 msgstr "Настройки"
 
@@ -269,7 +269,7 @@ msgstr "Статус"
 #: includes/admin-pages/manage/ManageBookingsPage.php:596
 #: includes/admin-pages/manage/ManageNotificationsPage.php:214
 #: includes/list-tables/emails/CustomerEmailsListTable.php:32
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:82
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:86
 #: templates/private/pages/customer-edit.php:20
 #: assets/js/calendar-page.js:38114
 msgid "Customer"
@@ -287,7 +287,7 @@ msgstr "Клиент"
 #: templates/service/price.php:19
 #: templates/shortcodes/booking/step-admin-cart.php:36
 #: templates/shortcodes/booking/step-cart.php:64
-#: assets/js/gutenberg-blocks.js:12571
+#: assets/js/gutenberg-blocks.js:12572
 msgid "Price"
 msgstr "Цена"
 
@@ -301,7 +301,7 @@ msgstr "Цена"
 #: includes/post-types/ServicePostType.php:117
 #: assets/js/analytics-page.js:33399
 #: assets/js/calendar-page.js:45376
-#: assets/js/gutenberg-blocks.js:12476
+#: assets/js/gutenberg-blocks.js:12477
 msgid "Services"
 msgstr "Услуги"
 
@@ -345,8 +345,8 @@ msgstr "Услуга"
 #: includes/post-types/EmployeePostType.php:52
 #: assets/js/analytics-page.js:33437
 #: assets/js/calendar-page.js:45414
-#: assets/js/gutenberg-blocks.js:11569
-#: assets/js/gutenberg-blocks.js:12485
+#: assets/js/gutenberg-blocks.js:11570
+#: assets/js/gutenberg-blocks.js:12486
 msgid "Employees"
 msgstr ""
 
@@ -578,1669 +578,21 @@ msgstr "Шорткод"
 msgid "Add New"
 msgstr "Добавить новый"
 
-#: includes/bundles/CountriesBundle.php:77
-msgid "Afghanistan"
-msgstr "Афганистан"
-
-#: includes/bundles/CountriesBundle.php:78
-msgid "&#197;land Islands"
-msgstr "Аландские острова"
-
-#: includes/bundles/CountriesBundle.php:79
-msgid "Albania"
-msgstr "Албания"
-
-#: includes/bundles/CountriesBundle.php:80
-msgid "Algeria"
-msgstr "Алжир"
-
-#: includes/bundles/CountriesBundle.php:81
-msgid "American Samoa"
-msgstr "Американское Самоа"
-
-#: includes/bundles/CountriesBundle.php:82
-msgid "Andorra"
-msgstr "Андорра"
-
-#: includes/bundles/CountriesBundle.php:83
-msgid "Angola"
-msgstr "Ангола"
-
-#: includes/bundles/CountriesBundle.php:84
-msgid "Anguilla"
-msgstr "Ангилья"
-
-#: includes/bundles/CountriesBundle.php:85
-msgid "Antarctica"
-msgstr "Антарктида"
-
-#: includes/bundles/CountriesBundle.php:86
-msgid "Antigua and Barbuda"
-msgstr "Антигуа и Барбуда"
-
-#: includes/bundles/CountriesBundle.php:87
-msgid "Argentina"
-msgstr "Аргентина"
-
-#: includes/bundles/CountriesBundle.php:88
-msgid "Armenia"
-msgstr "Армения"
-
-#: includes/bundles/CountriesBundle.php:89
-msgid "Aruba"
-msgstr "Аруба"
-
-#: includes/bundles/CountriesBundle.php:90
-msgid "Australia"
-msgstr "Австралия"
-
-#: includes/bundles/CountriesBundle.php:91
-msgid "Austria"
-msgstr "Австрия"
-
-#: includes/bundles/CountriesBundle.php:92
-msgid "Azerbaijan"
-msgstr "Азербайджан"
-
-#: includes/bundles/CountriesBundle.php:93
-msgid "Bahamas"
-msgstr "Багамские Острова"
-
-#: includes/bundles/CountriesBundle.php:94
-msgid "Bahrain"
-msgstr "Бахрейн"
-
-#: includes/bundles/CountriesBundle.php:95
-msgid "Bangladesh"
-msgstr "Бангладеш"
-
-#: includes/bundles/CountriesBundle.php:96
-msgid "Barbados"
-msgstr "Барбадос"
-
-#: includes/bundles/CountriesBundle.php:97
-msgid "Belarus"
-msgstr "Беларусь"
-
-#: includes/bundles/CountriesBundle.php:98
-msgid "Belgium"
-msgstr "Бельгия"
-
-#: includes/bundles/CountriesBundle.php:99
-msgid "Belau"
-msgstr "Палау"
-
-#: includes/bundles/CountriesBundle.php:100
-msgid "Belize"
-msgstr "Белиз"
-
-#: includes/bundles/CountriesBundle.php:101
-msgid "Benin"
-msgstr "Бенин"
-
-#: includes/bundles/CountriesBundle.php:102
-msgid "Bermuda"
-msgstr "Бермудские Острова"
-
-#: includes/bundles/CountriesBundle.php:103
-msgid "Bhutan"
-msgstr "Бутан"
-
-#: includes/bundles/CountriesBundle.php:104
-msgid "Bolivia"
-msgstr "Боливия"
-
-#: includes/bundles/CountriesBundle.php:105
-msgid "Bonaire, Saint Eustatius and Saba"
-msgstr "Бонэйр, Синт-Эстатиус и Саба"
-
-#: includes/bundles/CountriesBundle.php:106
-msgid "Bosnia and Herzegovina"
-msgstr "Босния и Герцеговина"
-
-#: includes/bundles/CountriesBundle.php:107
-msgid "Botswana"
-msgstr "Ботсвана"
-
-#: includes/bundles/CountriesBundle.php:108
-msgid "Bouvet Island"
-msgstr "Остров Буве"
-
-#: includes/bundles/CountriesBundle.php:109
-msgid "Brazil"
-msgstr "Бразилия"
-
-#: includes/bundles/CountriesBundle.php:110
-msgid "British Indian Ocean Territory"
-msgstr "Британская территория Индийского океана"
-
-#: includes/bundles/CountriesBundle.php:111
-msgid "British Virgin Islands"
-msgstr "Британские Виргинские Острова"
-
-#: includes/bundles/CountriesBundle.php:112
-msgid "Brunei"
-msgstr "Бруней"
-
-#: includes/bundles/CountriesBundle.php:113
-msgid "Bulgaria"
-msgstr "Болгария"
-
-#: includes/bundles/CountriesBundle.php:114
-msgid "Burkina Faso"
-msgstr "Буркина-Фасо"
-
-#: includes/bundles/CountriesBundle.php:115
-msgid "Burundi"
-msgstr "Бурунди"
-
-#: includes/bundles/CountriesBundle.php:116
-msgid "Cambodia"
-msgstr "Камбоджа"
-
-#: includes/bundles/CountriesBundle.php:117
-msgid "Cameroon"
-msgstr "Камерун"
-
-#: includes/bundles/CountriesBundle.php:118
-msgid "Canada"
-msgstr "Канада"
-
-#: includes/bundles/CountriesBundle.php:119
-msgid "Cape Verde"
-msgstr "Кабо-Верде"
-
-#: includes/bundles/CountriesBundle.php:120
-msgid "Cayman Islands"
-msgstr "Каймановы Острова"
-
-#: includes/bundles/CountriesBundle.php:121
-msgid "Central African Republic"
-msgstr "Центральноафриканская Республика"
-
-#: includes/bundles/CountriesBundle.php:122
-msgid "Chad"
-msgstr "Чад"
-
-#: includes/bundles/CountriesBundle.php:123
-msgid "Chile"
-msgstr "Чили"
-
-#: includes/bundles/CountriesBundle.php:124
-msgid "China"
-msgstr "Китай"
-
-#: includes/bundles/CountriesBundle.php:125
-msgid "Christmas Island"
-msgstr "Остров Рождества"
-
-#: includes/bundles/CountriesBundle.php:126
-msgid "Cocos (Keeling) Islands"
-msgstr "Кокосовые острова (Килинг)"
-
-#: includes/bundles/CountriesBundle.php:127
-msgid "Colombia"
-msgstr "Колумбия"
-
-#: includes/bundles/CountriesBundle.php:128
-msgid "Comoros"
-msgstr "Коморы"
-
-#: includes/bundles/CountriesBundle.php:129
-msgid "Congo (Brazzaville)"
-msgstr "Конго (Браззавиль)"
-
-#: includes/bundles/CountriesBundle.php:130
-msgid "Congo (Kinshasa)"
-msgstr "Конго (Киншаса)"
-
-#: includes/bundles/CountriesBundle.php:131
-msgid "Cook Islands"
-msgstr "Острова Кука"
-
-#: includes/bundles/CountriesBundle.php:132
-msgid "Costa Rica"
-msgstr "Коста-Рика"
-
-#: includes/bundles/CountriesBundle.php:133
-msgid "Croatia"
-msgstr "Хорватия"
-
-#: includes/bundles/CountriesBundle.php:134
-msgid "Cuba"
-msgstr "Куба"
-
-#: includes/bundles/CountriesBundle.php:135
-msgid "Cura&ccedil;ao"
-msgstr "Кюрасао"
-
-#: includes/bundles/CountriesBundle.php:136
-msgid "Cyprus"
-msgstr "Кипр"
-
-#: includes/bundles/CountriesBundle.php:137
-msgid "Czech Republic"
-msgstr "Чешская Республика"
-
-#: includes/bundles/CountriesBundle.php:138
-msgid "Denmark"
-msgstr "Дания"
-
-#: includes/bundles/CountriesBundle.php:139
-msgid "Djibouti"
-msgstr "Джибути"
-
-#: includes/bundles/CountriesBundle.php:140
-msgid "Dominica"
-msgstr "Доминика"
-
-#: includes/bundles/CountriesBundle.php:141
-msgid "Dominican Republic"
-msgstr "Доминиканская Республика"
-
-#: includes/bundles/CountriesBundle.php:142
-msgid "Ecuador"
-msgstr "Эквадор"
-
-#: includes/bundles/CountriesBundle.php:143
-msgid "Egypt"
-msgstr "Египет"
-
-#: includes/bundles/CountriesBundle.php:144
-msgid "El Salvador"
-msgstr "Сальвадор"
-
-#: includes/bundles/CountriesBundle.php:145
-msgid "Equatorial Guinea"
-msgstr "Экваториальная Гвинея"
-
-#: includes/bundles/CountriesBundle.php:146
-msgid "Eritrea"
-msgstr "Эритрея"
-
-#: includes/bundles/CountriesBundle.php:147
-msgid "Estonia"
-msgstr "Эстония"
-
-#: includes/bundles/CountriesBundle.php:148
-msgid "Ethiopia"
-msgstr "Эфиопия"
-
-#: includes/bundles/CountriesBundle.php:149
-msgid "Falkland Islands"
-msgstr "Фолклендские острова"
-
-#: includes/bundles/CountriesBundle.php:150
-msgid "Faroe Islands"
-msgstr "Фарерские острова"
-
-#: includes/bundles/CountriesBundle.php:151
-msgid "Fiji"
-msgstr "Фиджи"
-
-#: includes/bundles/CountriesBundle.php:152
-msgid "Finland"
-msgstr "Финляндия"
-
-#: includes/bundles/CountriesBundle.php:153
-msgid "France"
-msgstr "Франция"
-
-#: includes/bundles/CountriesBundle.php:154
-msgid "French Guiana"
-msgstr "Гвиана"
-
-#: includes/bundles/CountriesBundle.php:155
-msgid "French Polynesia"
-msgstr "Французская Полинезия"
-
-#: includes/bundles/CountriesBundle.php:156
-msgid "French Southern Territories"
-msgstr "Южные Французские Территории"
-
-#: includes/bundles/CountriesBundle.php:157
-msgid "Gabon"
-msgstr "Габон"
-
-#: includes/bundles/CountriesBundle.php:158
-msgid "Gambia"
-msgstr "Гамбия"
-
-#: includes/bundles/CountriesBundle.php:159
-msgid "Georgia"
-msgstr "Грузия"
-
-#: includes/bundles/CountriesBundle.php:160
-msgid "Germany"
-msgstr "Германия"
-
-#: includes/bundles/CountriesBundle.php:161
-msgid "Ghana"
-msgstr "Гана"
-
-#: includes/bundles/CountriesBundle.php:162
-msgid "Gibraltar"
-msgstr "Гибралтар"
-
-#: includes/bundles/CountriesBundle.php:163
-msgid "Greece"
-msgstr "Греция"
-
-#: includes/bundles/CountriesBundle.php:164
-msgid "Greenland"
-msgstr "Гренландия"
-
-#: includes/bundles/CountriesBundle.php:165
-msgid "Grenada"
-msgstr "Гренада"
-
-#: includes/bundles/CountriesBundle.php:166
-msgid "Guadeloupe"
-msgstr "Гваделупа"
-
-#: includes/bundles/CountriesBundle.php:167
-msgid "Guam"
-msgstr "Гуам"
-
-#: includes/bundles/CountriesBundle.php:168
-msgid "Guatemala"
-msgstr "Гватемала"
-
-#: includes/bundles/CountriesBundle.php:169
-msgid "Guernsey"
-msgstr "Гернси"
-
-#: includes/bundles/CountriesBundle.php:170
-msgid "Guinea"
-msgstr "Гвинея"
-
-#: includes/bundles/CountriesBundle.php:171
-msgid "Guinea-Bissau"
-msgstr "Гвинея-Бисау"
-
-#: includes/bundles/CountriesBundle.php:172
-msgid "Guyana"
-msgstr "Гайана"
-
-#: includes/bundles/CountriesBundle.php:173
-msgid "Haiti"
-msgstr "Гаити"
-
-#: includes/bundles/CountriesBundle.php:174
-msgid "Heard Island and McDonald Islands"
-msgstr "Остров Херд и острова Макдональд"
-
-#: includes/bundles/CountriesBundle.php:175
-msgid "Honduras"
-msgstr "Гондурас"
-
-#: includes/bundles/CountriesBundle.php:176
-msgid "Hong Kong"
-msgstr "Гонконг"
-
-#: includes/bundles/CountriesBundle.php:177
-msgid "Hungary"
-msgstr "Венгрия"
-
-#: includes/bundles/CountriesBundle.php:178
-msgid "Iceland"
-msgstr "Исландия"
-
-#: includes/bundles/CountriesBundle.php:179
-msgid "India"
-msgstr "Индия"
-
-#: includes/bundles/CountriesBundle.php:180
-msgid "Indonesia"
-msgstr "Индонезия"
-
-#: includes/bundles/CountriesBundle.php:181
-msgid "Iran"
-msgstr "Иран"
-
-#: includes/bundles/CountriesBundle.php:182
-msgid "Iraq"
-msgstr "Ирак"
-
-#: includes/bundles/CountriesBundle.php:183
-msgid "Ireland"
-msgstr "Ирландия"
-
-#: includes/bundles/CountriesBundle.php:184
-msgid "Isle of Man"
-msgstr "Остров Мэн"
-
-#: includes/bundles/CountriesBundle.php:185
-msgid "Israel"
-msgstr "Израиль"
-
-#: includes/bundles/CountriesBundle.php:186
-msgid "Italy"
-msgstr "Италия"
-
-#: includes/bundles/CountriesBundle.php:187
-msgid "Ivory Coast"
-msgstr "Кот-д'Ивуар"
-
-#: includes/bundles/CountriesBundle.php:188
-msgid "Jamaica"
-msgstr "Ямайка"
-
-#: includes/bundles/CountriesBundle.php:189
-msgid "Japan"
-msgstr "Япония"
-
-#: includes/bundles/CountriesBundle.php:190
-msgid "Jersey"
-msgstr "Джерси"
-
-#: includes/bundles/CountriesBundle.php:191
-msgid "Jordan"
-msgstr "Иордан"
-
-#: includes/bundles/CountriesBundle.php:192
-msgid "Kazakhstan"
-msgstr "Казахстан"
-
-#: includes/bundles/CountriesBundle.php:193
-msgid "Kenya"
-msgstr "Кения"
-
-#: includes/bundles/CountriesBundle.php:194
-msgid "Kiribati"
-msgstr "Кирибати"
-
-#: includes/bundles/CountriesBundle.php:195
-msgid "Kuwait"
-msgstr "Кувейт"
-
-#: includes/bundles/CountriesBundle.php:196
-msgid "Kyrgyzstan"
-msgstr "Кыргызстан"
-
-#: includes/bundles/CountriesBundle.php:197
-msgid "Laos"
-msgstr "Лаос"
-
-#: includes/bundles/CountriesBundle.php:198
-msgid "Latvia"
-msgstr "Латвия"
-
-#: includes/bundles/CountriesBundle.php:199
-msgid "Lebanon"
-msgstr "Ливан"
-
-#: includes/bundles/CountriesBundle.php:200
-msgid "Lesotho"
-msgstr "Лесото"
-
-#: includes/bundles/CountriesBundle.php:201
-msgid "Liberia"
-msgstr "Либерия"
-
-#: includes/bundles/CountriesBundle.php:202
-msgid "Libya"
-msgstr "Ливия"
-
-#: includes/bundles/CountriesBundle.php:203
-msgid "Liechtenstein"
-msgstr "Лихтенштейн"
-
-#: includes/bundles/CountriesBundle.php:204
-msgid "Lithuania"
-msgstr "Литва"
-
-#: includes/bundles/CountriesBundle.php:205
-msgid "Luxembourg"
-msgstr "Люксембург"
-
-#: includes/bundles/CountriesBundle.php:206
-msgid "Macao S.A.R., China"
-msgstr "Специальный административный район Макао"
-
-#: includes/bundles/CountriesBundle.php:207
-msgid "Macedonia"
-msgstr "Македония"
-
-#: includes/bundles/CountriesBundle.php:208
-msgid "Madagascar"
-msgstr "Мадагаскар"
-
-#: includes/bundles/CountriesBundle.php:209
-msgid "Malawi"
-msgstr "Малави"
-
-#: includes/bundles/CountriesBundle.php:210
-msgid "Malaysia"
-msgstr "Малайзия"
-
-#: includes/bundles/CountriesBundle.php:211
-msgid "Maldives"
-msgstr "Мальдивы"
-
-#: includes/bundles/CountriesBundle.php:212
-msgid "Mali"
-msgstr "Мали"
-
-#: includes/bundles/CountriesBundle.php:213
-msgid "Malta"
-msgstr "Мальта"
-
-#: includes/bundles/CountriesBundle.php:214
-msgid "Marshall Islands"
-msgstr "Маршалловы острова"
-
-#: includes/bundles/CountriesBundle.php:215
-msgid "Martinique"
-msgstr "Мартиника"
-
-#: includes/bundles/CountriesBundle.php:216
-msgid "Mauritania"
-msgstr "Мавритания"
-
-#: includes/bundles/CountriesBundle.php:217
-msgid "Mauritius"
-msgstr "Маврикий"
-
-#: includes/bundles/CountriesBundle.php:218
-msgid "Mayotte"
-msgstr "Майотта"
-
-#: includes/bundles/CountriesBundle.php:219
-msgid "Mexico"
-msgstr "Мексика"
-
-#: includes/bundles/CountriesBundle.php:220
-msgid "Micronesia"
-msgstr "Микронезия"
-
-#: includes/bundles/CountriesBundle.php:221
-msgid "Moldova"
-msgstr "Молдова"
-
-#: includes/bundles/CountriesBundle.php:222
-msgid "Monaco"
-msgstr "Монако"
-
-#: includes/bundles/CountriesBundle.php:223
-msgid "Mongolia"
-msgstr "Монголия"
-
-#: includes/bundles/CountriesBundle.php:224
-msgid "Montenegro"
-msgstr "Черногория"
-
-#: includes/bundles/CountriesBundle.php:225
-msgid "Montserrat"
-msgstr "Монтсеррат"
-
-#: includes/bundles/CountriesBundle.php:226
-msgid "Morocco"
-msgstr "Марокко"
-
-#: includes/bundles/CountriesBundle.php:227
-msgid "Mozambique"
-msgstr "Мозамбик"
-
-#: includes/bundles/CountriesBundle.php:228
-msgid "Myanmar"
-msgstr "Мьянма"
-
-#: includes/bundles/CountriesBundle.php:229
-msgid "Namibia"
-msgstr "Намибия"
-
-#: includes/bundles/CountriesBundle.php:230
-msgid "Nauru"
-msgstr "Науру"
-
-#: includes/bundles/CountriesBundle.php:231
-msgid "Nepal"
-msgstr "Непал"
-
-#: includes/bundles/CountriesBundle.php:232
-msgid "Netherlands"
-msgstr "Нидерланды"
-
-#: includes/bundles/CountriesBundle.php:233
-msgid "New Caledonia"
-msgstr "Новая Каледония"
-
-#: includes/bundles/CountriesBundle.php:234
-msgid "New Zealand"
-msgstr "Новая Зеландия"
-
-#: includes/bundles/CountriesBundle.php:235
-msgid "Nicaragua"
-msgstr "Никарагуа"
-
-#: includes/bundles/CountriesBundle.php:236
-msgid "Niger"
-msgstr "Нигер"
-
-#: includes/bundles/CountriesBundle.php:237
-msgid "Nigeria"
-msgstr "Нигерия"
-
-#: includes/bundles/CountriesBundle.php:238
-msgid "Niue"
-msgstr "Ниуэ"
-
-#: includes/bundles/CountriesBundle.php:239
-msgid "Norfolk Island"
-msgstr "Остров Норфолк"
-
-#: includes/bundles/CountriesBundle.php:240
-msgid "Northern Mariana Islands"
-msgstr "Северные Марианские Острова"
-
-#: includes/bundles/CountriesBundle.php:241
-msgid "North Korea"
-msgstr "Северная Корея"
-
-#: includes/bundles/CountriesBundle.php:242
-msgid "Norway"
-msgstr "Норвегия"
-
-#: includes/bundles/CountriesBundle.php:243
-msgid "Oman"
-msgstr "Оман"
-
-#: includes/bundles/CountriesBundle.php:244
-msgid "Pakistan"
-msgstr "Пакистан"
-
-#: includes/bundles/CountriesBundle.php:245
-msgid "Palestinian Territory"
-msgstr "Палестинские территории"
-
-#: includes/bundles/CountriesBundle.php:246
-msgid "Panama"
-msgstr "Панама"
-
-#: includes/bundles/CountriesBundle.php:247
-msgid "Papua New Guinea"
-msgstr "Папуа — Новая Гвинея"
-
-#: includes/bundles/CountriesBundle.php:248
-msgid "Paraguay"
-msgstr "Парагвай"
-
-#: includes/bundles/CountriesBundle.php:249
-msgid "Peru"
-msgstr "Перу"
-
-#: includes/bundles/CountriesBundle.php:250
-msgid "Philippines"
-msgstr "Филиппины"
-
-#: includes/bundles/CountriesBundle.php:251
-msgid "Pitcairn"
-msgstr "Острова Питкэрн"
-
-#: includes/bundles/CountriesBundle.php:252
-msgid "Poland"
-msgstr "Польша"
-
-#: includes/bundles/CountriesBundle.php:253
-msgid "Portugal"
-msgstr "Португалия"
-
-#: includes/bundles/CountriesBundle.php:254
-msgid "Puerto Rico"
-msgstr "Пуэрто-Рико"
-
-#: includes/bundles/CountriesBundle.php:255
-msgid "Qatar"
-msgstr "Катар"
-
-#: includes/bundles/CountriesBundle.php:256
-msgid "Reunion"
-msgstr "Реюньон"
-
-#: includes/bundles/CountriesBundle.php:257
-msgid "Romania"
-msgstr "Румыния"
-
-#: includes/bundles/CountriesBundle.php:258
-msgid "Russia"
-msgstr "Россия"
-
-#: includes/bundles/CountriesBundle.php:259
-msgid "Rwanda"
-msgstr "Руанда"
-
-#: includes/bundles/CountriesBundle.php:260
-msgid "Saint Barth&eacute;lemy"
-msgstr "Сен-Бартелеми"
-
-#: includes/bundles/CountriesBundle.php:261
-msgid "Saint Helena"
-msgstr "Остров Святой Елены"
-
-#: includes/bundles/CountriesBundle.php:262
-msgid "Saint Kitts and Nevis"
-msgstr "Сент-Китс и Невис"
-
-#: includes/bundles/CountriesBundle.php:263
-msgid "Saint Lucia"
-msgstr "Сент-Люсия"
-
-#: includes/bundles/CountriesBundle.php:264
-msgid "Saint Martin (French part)"
-msgstr "Сен-Мартен (французская часть)"
-
-#: includes/bundles/CountriesBundle.php:265
-msgid "Saint Martin (Dutch part)"
-msgstr "Сен-Мартен (голландская часть)"
-
-#: includes/bundles/CountriesBundle.php:266
-msgid "Saint Pierre and Miquelon"
-msgstr "Сен-Пьер и Микелон"
-
-#: includes/bundles/CountriesBundle.php:267
-msgid "Saint Vincent and the Grenadines"
-msgstr "Сент-Винсент и Гренадины"
-
-#: includes/bundles/CountriesBundle.php:268
-msgid "San Marino"
-msgstr "Сан-Марино"
-
-#: includes/bundles/CountriesBundle.php:269
-msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe"
-msgstr "Сан-Томе и Принсипи"
-
-#: includes/bundles/CountriesBundle.php:270
-msgid "Saudi Arabia"
-msgstr "Саудовская Аравия"
-
-#: includes/bundles/CountriesBundle.php:271
-msgid "Senegal"
-msgstr "Сенегал"
-
-#: includes/bundles/CountriesBundle.php:272
-msgid "Serbia"
-msgstr "Сербия"
-
-#: includes/bundles/CountriesBundle.php:273
-msgid "Seychelles"
-msgstr "Сейшельские Острова"
-
-#: includes/bundles/CountriesBundle.php:274
-msgid "Sierra Leone"
-msgstr "Сьерра-Леоне"
-
-#: includes/bundles/CountriesBundle.php:275
-msgid "Singapore"
-msgstr "Сингапур"
-
-#: includes/bundles/CountriesBundle.php:276
-msgid "Slovakia"
-msgstr "Словакия"
-
-#: includes/bundles/CountriesBundle.php:277
-msgid "Slovenia"
-msgstr "Словения"
-
-#: includes/bundles/CountriesBundle.php:278
-msgid "Solomon Islands"
-msgstr "Соломоновы Острова"
-
-#: includes/bundles/CountriesBundle.php:279
-msgid "Somalia"
-msgstr "Сомали"
-
-#: includes/bundles/CountriesBundle.php:280
-msgid "South Africa"
-msgstr "Южно-Африканская Республика"
-
-#: includes/bundles/CountriesBundle.php:281
-msgid "South Georgia/Sandwich Islands"
-msgstr "Южная Георгия и Южные Сандвичевы Острова"
-
-#: includes/bundles/CountriesBundle.php:282
-msgid "South Korea"
-msgstr "Южная Корея"
-
-#: includes/bundles/CountriesBundle.php:283
-msgid "South Sudan"
-msgstr "Южный Судан"
-
-#: includes/bundles/CountriesBundle.php:284
-msgid "Spain"
-msgstr "Испания"
-
-#: includes/bundles/CountriesBundle.php:285
-msgid "Sri Lanka"
-msgstr "Шри-Ланка"
-
-#: includes/bundles/CountriesBundle.php:286
-msgid "Sudan"
-msgstr "Судан"
-
-#: includes/bundles/CountriesBundle.php:287
-msgid "Suriname"
-msgstr "Суринам"
-
-#: includes/bundles/CountriesBundle.php:288
-msgid "Svalbard and Jan Mayen"
-msgstr "Шпицберген и Ян-Майен"
-
-#: includes/bundles/CountriesBundle.php:289
-msgid "Swaziland"
-msgstr "Свазиленд"
-
-#: includes/bundles/CountriesBundle.php:290
-msgid "Sweden"
-msgstr "Швеция"
-
-#: includes/bundles/CountriesBundle.php:291
-msgid "Switzerland"
-msgstr "Швейцария"
-
-#: includes/bundles/CountriesBundle.php:292
-msgid "Syria"
-msgstr "Сирия"
-
-#: includes/bundles/CountriesBundle.php:293
-msgid "Taiwan"
-msgstr "Тайвань"
-
-#: includes/bundles/CountriesBundle.php:294
-msgid "Tajikistan"
-msgstr "Таджикистан"
-
-#: includes/bundles/CountriesBundle.php:295
-msgid "Tanzania"
-msgstr "Танзания"
-
-#: includes/bundles/CountriesBundle.php:296
-msgid "Thailand"
-msgstr "Таиланд"
-
-#: includes/bundles/CountriesBundle.php:297
-msgid "Timor-Leste"
-msgstr "Тимор-Лесте"
-
-#: includes/bundles/CountriesBundle.php:298
-msgid "Togo"
-msgstr "Того"
-
-#: includes/bundles/CountriesBundle.php:299
-msgid "Tokelau"
-msgstr "Токелау"
-
-#: includes/bundles/CountriesBundle.php:300
-msgid "Tonga"
-msgstr "Тонга"
-
-#: includes/bundles/CountriesBundle.php:301
-msgid "Trinidad and Tobago"
-msgstr "Тринидад и Тобаго"
-
-#: includes/bundles/CountriesBundle.php:302
-msgid "Tunisia"
-msgstr "Тунис"
-
-#: includes/bundles/CountriesBundle.php:303
-msgid "Turkey"
-msgstr "Турция"
-
-#: includes/bundles/CountriesBundle.php:304
-msgid "Turkmenistan"
-msgstr "Туркменистан"
-
-#: includes/bundles/CountriesBundle.php:305
-msgid "Turks and Caicos Islands"
-msgstr "Теркс и Кайкос"
-
-#: includes/bundles/CountriesBundle.php:306
-msgid "Tuvalu"
-msgstr "Тувалу"
-
-#: includes/bundles/CountriesBundle.php:307
-msgid "Uganda"
-msgstr "Уганда"
-
-#: includes/bundles/CountriesBundle.php:308
-msgid "Ukraine"
-msgstr "Украина"
-
-#: includes/bundles/CountriesBundle.php:309
-msgid "United Arab Emirates"
-msgstr "Объединенные Арабские Эмираты"
-
-#: includes/bundles/CountriesBundle.php:310
-msgid "United Kingdom (UK)"
-msgstr "Великобритания"
-
-#: includes/bundles/CountriesBundle.php:311
-msgid "United States (US)"
-msgstr "Соединенные Штаты Америки"
-
-#: includes/bundles/CountriesBundle.php:312
-msgid "United States (US) Minor Outlying Islands"
-msgstr "Внешние малые острова США"
-
-#: includes/bundles/CountriesBundle.php:313
-msgid "United States (US) Virgin Islands"
-msgstr "Виргинские Острова (США)"
-
-#: includes/bundles/CountriesBundle.php:314
-msgid "Uruguay"
-msgstr "Уругвай"
-
-#: includes/bundles/CountriesBundle.php:315
-msgid "Uzbekistan"
-msgstr "Узбекистан"
-
-#: includes/bundles/CountriesBundle.php:316
-msgid "Vanuatu"
-msgstr "Вануату"
-
-#: includes/bundles/CountriesBundle.php:317
-msgid "Vatican"
-msgstr "Ватикан"
-
-#: includes/bundles/CountriesBundle.php:318
-msgid "Venezuela"
-msgstr "Венесуэла"
-
-#: includes/bundles/CountriesBundle.php:319
-msgid "Vietnam"
-msgstr "Вьетнам"
-
-#: includes/bundles/CountriesBundle.php:320
-msgid "Wallis and Futuna"
-msgstr "Уоллис и Футуна"
-
-#: includes/bundles/CountriesBundle.php:321
-msgid "Western Sahara"
-msgstr "Западная Сахара"
-
-#: includes/bundles/CountriesBundle.php:322
-msgid "Samoa"
-msgstr "Самоа"
-
-#: includes/bundles/CountriesBundle.php:323
-msgid "Yemen"
-msgstr "Йемен"
-
-#: includes/bundles/CountriesBundle.php:324
-msgid "Zambia"
-msgstr "Замбия"
-
-#: includes/bundles/CountriesBundle.php:325
-msgid "Zimbabwe"
-msgstr "Зимбабве"
-
-#: includes/bundles/CurrenciesBundle.php:229
+#: includes/bundles/CurrenciesBundle.php:231
 msgid "Before"
 msgstr "Перед"
 
-#: includes/bundles/CurrenciesBundle.php:230
+#: includes/bundles/CurrenciesBundle.php:232
 msgid "After"
 msgstr "После"
 
-#: includes/bundles/CurrenciesBundle.php:231
+#: includes/bundles/CurrenciesBundle.php:233
 msgid "Before with space"
 msgstr "Слева с пробелом"
 
-#: includes/bundles/CurrenciesBundle.php:232
+#: includes/bundles/CurrenciesBundle.php:234
 msgid "After with space"
 msgstr "Справа с пробелом"
-
-#: includes/bundles/CurrenciesBundle.php:290
-msgid "Euro"
-msgstr "Евро"
-
-#: includes/bundles/CurrenciesBundle.php:291
-msgid "United States (US) dollar"
-msgstr "Доллар США"
-
-#: includes/bundles/CurrenciesBundle.php:292
-msgid "Pound sterling"
-msgstr "Фунт стерлингов"
-
-#: includes/bundles/CurrenciesBundle.php:293
-msgid "United Arab Emirates dirham"
-msgstr "Дирхам ОАЭ"
-
-#: includes/bundles/CurrenciesBundle.php:294
-msgid "Afghan afghani"
-msgstr "Афганский афгани"
-
-#: includes/bundles/CurrenciesBundle.php:295
-msgid "Albanian lek"
-msgstr "Албанский лек"
-
-#: includes/bundles/CurrenciesBundle.php:296
-msgid "Armenian dram"
-msgstr "Армянский драм"
-
-#: includes/bundles/CurrenciesBundle.php:297
-msgid "Netherlands Antillean guilder"
-msgstr "Нидерландский антильский гульден"
-
-#: includes/bundles/CurrenciesBundle.php:298
-msgid "Angolan kwanza"
-msgstr "Ангольская кванза"
-
-#: includes/bundles/CurrenciesBundle.php:299
-msgid "Argentine peso"
-msgstr "Аргентинский песо"
-
-#: includes/bundles/CurrenciesBundle.php:300
-msgid "Australian dollar"
-msgstr "Австралийский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:301
-msgid "Aruban florin"
-msgstr "Арубанский флорин"
-
-#: includes/bundles/CurrenciesBundle.php:302
-msgid "Azerbaijani manat"
-msgstr "Азербайджанский манат"
-
-#: includes/bundles/CurrenciesBundle.php:303
-msgid "Bosnia and Herzegovina convertible mark"
-msgstr "Конвертируемая марка Боснии и Герцеговины"
-
-#: includes/bundles/CurrenciesBundle.php:304
-msgid "Barbadian dollar"
-msgstr "Барбадосский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:305
-msgid "Bangladeshi taka"
-msgstr "Бангладешская така"
-
-#: includes/bundles/CurrenciesBundle.php:306
-msgid "Bulgarian lev"
-msgstr "Болгарский лев"
-
-#: includes/bundles/CurrenciesBundle.php:307
-msgid "Bahraini dinar"
-msgstr "Бахрейнский динар"
-
-#: includes/bundles/CurrenciesBundle.php:308
-msgid "Burundian franc"
-msgstr "Бурундийский франк"
-
-#: includes/bundles/CurrenciesBundle.php:309
-msgid "Bermudian dollar"
-msgstr "Бермудский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:310
-msgid "Brunei dollar"
-msgstr "Брунейский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:311
-msgid "Bolivian boliviano"
-msgstr "Боливийский боливиано"
-
-#: includes/bundles/CurrenciesBundle.php:312
-msgid "Brazilian real"
-msgstr "Бразильский реал"
-
-#: includes/bundles/CurrenciesBundle.php:313
-msgid "Bahamian dollar"
-msgstr "Багамский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:314
-msgid "Bitcoin"
-msgstr "Биткойн"
-
-#: includes/bundles/CurrenciesBundle.php:315
-msgid "Bhutanese ngultrum"
-msgstr "Бутанский нгултрум"
-
-#: includes/bundles/CurrenciesBundle.php:316
-msgid "Botswana pula"
-msgstr "Ботсванская пула"
-
-#: includes/bundles/CurrenciesBundle.php:317
-msgid "Belarusian ruble (old)"
-msgstr "Белорусский рубль (старый)"
-
-#: includes/bundles/CurrenciesBundle.php:318
-msgid "Belarusian ruble"
-msgstr "Белорусский рубль"
-
-#: includes/bundles/CurrenciesBundle.php:319
-msgid "Belize dollar"
-msgstr "Белизский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:320
-msgid "Canadian dollar"
-msgstr "Канадский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:321
-msgid "Congolese franc"
-msgstr "Конголезский франк"
-
-#: includes/bundles/CurrenciesBundle.php:322
-msgid "Swiss franc"
-msgstr "Швейцарский франк"
-
-#: includes/bundles/CurrenciesBundle.php:323
-msgid "Chilean peso"
-msgstr "Чилийский песо"
-
-#: includes/bundles/CurrenciesBundle.php:324
-msgid "Chinese yuan"
-msgstr "Китайский юань"
-
-#: includes/bundles/CurrenciesBundle.php:325
-msgid "Colombian peso"
-msgstr "Колумбийский песо"
-
-#: includes/bundles/CurrenciesBundle.php:326
-msgid "Costa Rican col&oacute;n"
-msgstr "Коста-риканский колон"
-
-#: includes/bundles/CurrenciesBundle.php:327
-msgid "Cuban convertible peso"
-msgstr "Кубинское конвертируемое песо"
-
-#: includes/bundles/CurrenciesBundle.php:328
-msgid "Cuban peso"
-msgstr "Кубинский песо"
-
-#: includes/bundles/CurrenciesBundle.php:329
-msgid "Cape Verdean escudo"
-msgstr "Эскудо Кабо-Верде"
-
-#: includes/bundles/CurrenciesBundle.php:330
-msgid "Czech koruna"
-msgstr "Чешская крона"
-
-#: includes/bundles/CurrenciesBundle.php:331
-msgid "Djiboutian franc"
-msgstr "Франк Джибути"
-
-#: includes/bundles/CurrenciesBundle.php:332
-msgid "Danish krone"
-msgstr "Датская крона"
-
-#: includes/bundles/CurrenciesBundle.php:333
-msgid "Dominican peso"
-msgstr "Доминиканский песо"
-
-#: includes/bundles/CurrenciesBundle.php:334
-msgid "Algerian dinar"
-msgstr "Алжирский динар"
-
-#: includes/bundles/CurrenciesBundle.php:335
-msgid "Egyptian pound"
-msgstr "Египетский фунт"
-
-#: includes/bundles/CurrenciesBundle.php:336
-msgid "Eritrean nakfa"
-msgstr "Эритрейская накфа"
-
-#: includes/bundles/CurrenciesBundle.php:337
-msgid "Ethiopian birr"
-msgstr "Эфиопский быр"
-
-#: includes/bundles/CurrenciesBundle.php:338
-msgid "Fijian dollar"
-msgstr "Фиджийский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:339
-msgid "Falkland Islands pound"
-msgstr "Фунт Фолклендских островов"
-
-#: includes/bundles/CurrenciesBundle.php:340
-msgid "Georgian lari"
-msgstr "Грузинский лари"
-
-#: includes/bundles/CurrenciesBundle.php:341
-msgid "Guernsey pound"
-msgstr "Гернсийский фунт"
-
-#: includes/bundles/CurrenciesBundle.php:342
-msgid "Ghana cedi"
-msgstr "Ганский седи"
-
-#: includes/bundles/CurrenciesBundle.php:343
-msgid "Gibraltar pound"
-msgstr "Гибралтарский фунт"
-
-#: includes/bundles/CurrenciesBundle.php:344
-msgid "Gambian dalasi"
-msgstr "Гамбийский даласи"
-
-#: includes/bundles/CurrenciesBundle.php:345
-msgid "Guinean franc"
-msgstr "Гвинейский франк"
-
-#: includes/bundles/CurrenciesBundle.php:346
-msgid "Guatemalan quetzal"
-msgstr "Гватемальский кетсаль"
-
-#: includes/bundles/CurrenciesBundle.php:347
-msgid "Guyanese dollar"
-msgstr "Гайанский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:348
-msgid "Hong Kong dollar"
-msgstr "Гонконгский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:349
-msgid "Honduran lempira"
-msgstr "Гондурасская лемпира"
-
-#: includes/bundles/CurrenciesBundle.php:350
-msgid "Croatian kuna"
-msgstr "Хорватская куна"
-
-#: includes/bundles/CurrenciesBundle.php:351
-msgid "Haitian gourde"
-msgstr "Гаитянский гурд"
-
-#: includes/bundles/CurrenciesBundle.php:352
-msgid "Hungarian forint"
-msgstr "Венгерский форинт"
-
-#: includes/bundles/CurrenciesBundle.php:353
-msgid "Indonesian rupiah"
-msgstr "Индонезийская рупия"
-
-#: includes/bundles/CurrenciesBundle.php:354
-msgid "Israeli new shekel"
-msgstr "Новый израильский шекель"
-
-#: includes/bundles/CurrenciesBundle.php:355
-msgid "Manx pound"
-msgstr "Фунт Острова Мэн"
-
-#: includes/bundles/CurrenciesBundle.php:356
-msgid "Indian rupee"
-msgstr "Индийская рупия"
-
-#: includes/bundles/CurrenciesBundle.php:357
-msgid "Iraqi dinar"
-msgstr "Иракский динар"
-
-#: includes/bundles/CurrenciesBundle.php:358
-msgid "Iranian rial"
-msgstr "Иранский риал"
-
-#: includes/bundles/CurrenciesBundle.php:359
-msgid "Iranian toman"
-msgstr "Персидский туман"
-
-#: includes/bundles/CurrenciesBundle.php:360
-msgid "Icelandic kr&oacute;na"
-msgstr "Исландская крона"
-
-#: includes/bundles/CurrenciesBundle.php:361
-msgid "Jersey pound"
-msgstr "Джерсийский фунт"
-
-#: includes/bundles/CurrenciesBundle.php:362
-msgid "Jamaican dollar"
-msgstr "Ямайский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:363
-msgid "Jordanian dinar"
-msgstr "Иорданский динар"
-
-#: includes/bundles/CurrenciesBundle.php:364
-msgid "Japanese yen"
-msgstr "Японская иена"
-
-#: includes/bundles/CurrenciesBundle.php:365
-msgid "Kenyan shilling"
-msgstr "Кенийский шиллинг"
-
-#: includes/bundles/CurrenciesBundle.php:366
-msgid "Kyrgyzstani som"
-msgstr "Киргизский сом"
-
-#: includes/bundles/CurrenciesBundle.php:367
-msgid "Cambodian riel"
-msgstr "Камбоджийский риель"
-
-#: includes/bundles/CurrenciesBundle.php:368
-msgid "Comorian franc"
-msgstr "Коморский франк"
-
-#: includes/bundles/CurrenciesBundle.php:369
-msgid "North Korean won"
-msgstr "Северокорейская вона"
-
-#: includes/bundles/CurrenciesBundle.php:370
-msgid "South Korean won"
-msgstr "Южнокорейская вона"
-
-#: includes/bundles/CurrenciesBundle.php:371
-msgid "Kuwaiti dinar"
-msgstr "Кувейтский динар"
-
-#: includes/bundles/CurrenciesBundle.php:372
-msgid "Cayman Islands dollar"
-msgstr "Доллар Каймановых островов"
-
-#: includes/bundles/CurrenciesBundle.php:373
-msgid "Kazakhstani tenge"
-msgstr "Казахстанский тенге"
-
-#: includes/bundles/CurrenciesBundle.php:374
-msgid "Lao kip"
-msgstr "Лаосский кип"
-
-#: includes/bundles/CurrenciesBundle.php:375
-msgid "Lebanese pound"
-msgstr "Ливанский фунт"
-
-#: includes/bundles/CurrenciesBundle.php:376
-msgid "Sri Lankan rupee"
-msgstr "Шри-Ланкийская рупия"
-
-#: includes/bundles/CurrenciesBundle.php:377
-msgid "Liberian dollar"
-msgstr "Доллар Либерии"
-
-#: includes/bundles/CurrenciesBundle.php:378
-msgid "Lesotho loti"
-msgstr "Лоти Лесото"
-
-#: includes/bundles/CurrenciesBundle.php:379
-msgid "Libyan dinar"
-msgstr "Ливийский динар"
-
-#: includes/bundles/CurrenciesBundle.php:380
-msgid "Moroccan dirham"
-msgstr "Марокканский дирхам"
-
-#: includes/bundles/CurrenciesBundle.php:381
-msgid "Moldovan leu"
-msgstr "Молдавский лей"
-
-#: includes/bundles/CurrenciesBundle.php:382
-msgid "Malagasy ariary"
-msgstr "Малагасийский ариари"
-
-#: includes/bundles/CurrenciesBundle.php:383
-msgid "Macedonian denar"
-msgstr "Македонский денар"
-
-#: includes/bundles/CurrenciesBundle.php:384
-msgid "Burmese kyat"
-msgstr "Бирманский кять"
-
-#: includes/bundles/CurrenciesBundle.php:385
-msgid "Mongolian t&ouml;gr&ouml;g"
-msgstr "Монгольский тугрик"
-
-#: includes/bundles/CurrenciesBundle.php:386
-msgid "Macanese pataca"
-msgstr "Патака Макао"
-
-#: includes/bundles/CurrenciesBundle.php:387
-msgid "Mauritanian ouguiya"
-msgstr "Мавританская угия"
-
-#: includes/bundles/CurrenciesBundle.php:388
-msgid "Mauritian rupee"
-msgstr "Маврикийская рупия"
-
-#: includes/bundles/CurrenciesBundle.php:389
-msgid "Maldivian rufiyaa"
-msgstr "Мальдивская руфия"
-
-#: includes/bundles/CurrenciesBundle.php:390
-msgid "Malawian kwacha"
-msgstr "Малавийская квача"
-
-#: includes/bundles/CurrenciesBundle.php:391
-msgid "Mexican peso"
-msgstr "Мексиканское песо"
-
-#: includes/bundles/CurrenciesBundle.php:392
-msgid "Malaysian ringgit"
-msgstr "Малайзийский ринггит"
-
-#: includes/bundles/CurrenciesBundle.php:393
-msgid "Mozambican metical"
-msgstr "Мозамбикский метикал"
-
-#: includes/bundles/CurrenciesBundle.php:394
-msgid "Namibian dollar"
-msgstr "Намибийский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:395
-msgid "Nigerian naira"
-msgstr "Нигерийская найра"
-
-#: includes/bundles/CurrenciesBundle.php:396
-msgid "Nicaraguan c&oacute;rdoba"
-msgstr "Никарагуанская кордоба"
-
-#: includes/bundles/CurrenciesBundle.php:397
-msgid "Norwegian krone"
-msgstr "Норвежская крона"
-
-#: includes/bundles/CurrenciesBundle.php:398
-msgid "Nepalese rupee"
-msgstr "Непальская рупия"
-
-#: includes/bundles/CurrenciesBundle.php:399
-msgid "New Zealand dollar"
-msgstr "Новозеландский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:400
-msgid "Omani rial"
-msgstr "Оманский риал"
-
-#: includes/bundles/CurrenciesBundle.php:401
-msgid "Panamanian balboa"
-msgstr "Панамский бальбоа"
-
-#: includes/bundles/CurrenciesBundle.php:402
-msgid "Sol"
-msgstr "Соль"
-
-#: includes/bundles/CurrenciesBundle.php:403
-msgid "Papua New Guinean kina"
-msgstr "Кина Папуа - Новой Гвинеи"
-
-#: includes/bundles/CurrenciesBundle.php:404
-msgid "Philippine peso"
-msgstr "Филиппинское песо"
-
-#: includes/bundles/CurrenciesBundle.php:405
-msgid "Pakistani rupee"
-msgstr "Пакистанская рупия"
-
-#: includes/bundles/CurrenciesBundle.php:406
-msgid "Polish z&#x142;oty"
-msgstr "Польский злотый"
-
-#: includes/bundles/CurrenciesBundle.php:407
-msgid "Transnistrian ruble"
-msgstr "Приднестровский рубль"
-
-#: includes/bundles/CurrenciesBundle.php:408
-msgid "Paraguayan guaran&iacute;"
-msgstr "Парагвайский гуарани"
-
-#: includes/bundles/CurrenciesBundle.php:409
-msgid "Qatari riyal"
-msgstr "Катарский риал"
-
-#: includes/bundles/CurrenciesBundle.php:410
-msgid "Romanian leu"
-msgstr "Румынский лей"
-
-#: includes/bundles/CurrenciesBundle.php:411
-msgid "Serbian dinar"
-msgstr "Сербский динар"
-
-#: includes/bundles/CurrenciesBundle.php:412
-msgid "Russian ruble"
-msgstr "Российский рубль"
-
-#: includes/bundles/CurrenciesBundle.php:413
-msgid "Rwandan franc"
-msgstr "Руандийский франк"
-
-#: includes/bundles/CurrenciesBundle.php:414
-msgid "Saudi riyal"
-msgstr "Саудовский риял"
-
-#: includes/bundles/CurrenciesBundle.php:415
-msgid "Solomon Islands dollar"
-msgstr "Доллар Соломоновых Островов"
-
-#: includes/bundles/CurrenciesBundle.php:416
-msgid "Seychellois rupee"
-msgstr "Сейшельская рупия"
-
-#: includes/bundles/CurrenciesBundle.php:417
-msgid "Sudanese pound"
-msgstr "Суданский фунт"
-
-#: includes/bundles/CurrenciesBundle.php:418
-msgid "Swedish krona"
-msgstr "Шведская крона"
-
-#: includes/bundles/CurrenciesBundle.php:419
-msgid "Singapore dollar"
-msgstr "Сингапурский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:420
-msgid "Saint Helena pound"
-msgstr "Фунт Святой Елены"
-
-#: includes/bundles/CurrenciesBundle.php:421
-msgid "Sierra Leonean leone"
-msgstr "Сьерра-Леонский леоне"
-
-#: includes/bundles/CurrenciesBundle.php:422
-msgid "Somali shilling"
-msgstr "Сомалийский шиллинг"
-
-#: includes/bundles/CurrenciesBundle.php:423
-msgid "Surinamese dollar"
-msgstr "Суринамский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:424
-msgid "South Sudanese pound"
-msgstr "Южносуданский фунт"
-
-#: includes/bundles/CurrenciesBundle.php:425
-msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe dobra"
-msgstr "Добра Сан-Томе и Принсипи"
-
-#: includes/bundles/CurrenciesBundle.php:426
-msgid "Syrian pound"
-msgstr "Сирийский фунт"
-
-#: includes/bundles/CurrenciesBundle.php:427
-msgid "Swazi lilangeni"
-msgstr "Свазилендский лилангени"
-
-#: includes/bundles/CurrenciesBundle.php:428
-msgid "Thai baht"
-msgstr "Тайский бат"
-
-#: includes/bundles/CurrenciesBundle.php:429
-msgid "Tajikistani somoni"
-msgstr "Таджикский сомони"
-
-#: includes/bundles/CurrenciesBundle.php:430
-msgid "Turkmenistan manat"
-msgstr "Туркменский манат"
-
-#: includes/bundles/CurrenciesBundle.php:431
-msgid "Tunisian dinar"
-msgstr "Тунисский динар"
-
-#: includes/bundles/CurrenciesBundle.php:432
-msgid "Tongan pa&#x2bb;anga"
-msgstr "Тонганская паанга"
-
-#: includes/bundles/CurrenciesBundle.php:433
-msgid "Turkish lira"
-msgstr "Турецкая лира"
-
-#: includes/bundles/CurrenciesBundle.php:434
-msgid "Trinidad and Tobago dollar"
-msgstr "Доллар Тринидада и Тобаго"
-
-#: includes/bundles/CurrenciesBundle.php:435
-msgid "New Taiwan dollar"
-msgstr "Новый тайваньский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:436
-msgid "Tanzanian shilling"
-msgstr "Танзанийский шиллинг"
-
-#: includes/bundles/CurrenciesBundle.php:437
-msgid "Ukrainian hryvnia"
-msgstr "Украинская гривна"
-
-#: includes/bundles/CurrenciesBundle.php:438
-msgid "Ugandan shilling"
-msgstr "Угандийский шиллинг"
-
-#: includes/bundles/CurrenciesBundle.php:439
-msgid "Uruguayan peso"
-msgstr "Уругвайское песо"
-
-#: includes/bundles/CurrenciesBundle.php:440
-msgid "Uzbekistani som"
-msgstr "Узбекский сум"
-
-#: includes/bundles/CurrenciesBundle.php:441
-msgid "Venezuelan bol&iacute;var"
-msgstr "Венесуэльский боливар"
-
-#: includes/bundles/CurrenciesBundle.php:442
-msgid "Bol&iacute;var soberano"
-msgstr "Боливар Соберано"
-
-#: includes/bundles/CurrenciesBundle.php:443
-msgid "Vietnamese &#x111;&#x1ed3;ng"
-msgstr "Вьетнамский донг"
-
-#: includes/bundles/CurrenciesBundle.php:444
-msgid "Vanuatu vatu"
-msgstr "Вануатский вату"
-
-#: includes/bundles/CurrenciesBundle.php:445
-msgid "Samoan t&#x101;l&#x101;"
-msgstr "Самоанская тала"
-
-#: includes/bundles/CurrenciesBundle.php:446
-msgid "Central African CFA franc"
-msgstr "Центральноафриканский франк КФА"
-
-#: includes/bundles/CurrenciesBundle.php:447
-msgid "East Caribbean dollar"
-msgstr "Восточнокарибский доллар"
-
-#: includes/bundles/CurrenciesBundle.php:448
-msgid "West African CFA franc"
-msgstr "Франк КФА Западной Африки"
-
-#: includes/bundles/CurrenciesBundle.php:449
-msgid "CFP franc"
-msgstr "Французский тихоокеанский франк"
-
-#: includes/bundles/CurrenciesBundle.php:450
-msgid "Yemeni rial"
-msgstr "Йеменский риал"
-
-#: includes/bundles/CurrenciesBundle.php:451
-msgid "South African rand"
-msgstr "Южноафриканский ранд"
-
-#: includes/bundles/CurrenciesBundle.php:452
-msgid "Zambian kwacha"
-msgstr "Замбийская квача"
 
 #: includes/bundles/SettingsBundle.php:44
 msgid "General"
@@ -2591,96 +943,53 @@ msgstr "Страница неудачной оплаты"
 msgid "Page to redirect the customer to on failed transaction."
 msgstr ""
 
-#. translators: %s is the link to Google Developers Console
-#: includes/bundles/SettingsBundle.php:500
-msgid "Locate the Client's credentials in the %s."
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:505
-msgid "Open Google Developer Console and select or create a project."
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:506
-msgid "Enable the Google Calendar API for the project."
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:507
-msgid "Create OAuth credentials for \"user data\"."
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:508
-msgid "Set \"OAuth client ID\" as the credential type and choose \"Web application\"."
-msgstr ""
-
-#. translators: %s is the URL
-#: includes/bundles/SettingsBundle.php:511
-msgid "Add %s to the \"Authorized redirect URIs\"."
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:513
-msgid "Get your Client ID and Client Secret."
-msgstr ""
-
-#. translators: %1$s and %2$s are HTML anchor tags
-#: includes/bundles/SettingsBundle.php:517
-msgid "For more detailed instructions, %1$s visit our documentation %2$s."
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:531
-msgid "Client ID"
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:538
-msgid "Client Secret"
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:566
+#: includes/bundles/SettingsBundle.php:523
 msgid "Default Form Styles"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:567
+#: includes/bundles/SettingsBundle.php:524
 msgid "These default styles apply to all booking forms, but you can customize each one separately."
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:571
+#: includes/bundles/SettingsBundle.php:528
 msgid "Calendar Theme"
 msgstr "Тема календаря"
 
-#: includes/bundles/SettingsBundle.php:573
+#: includes/bundles/SettingsBundle.php:530
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:42
 #: templates/private/pages/shortcodes-list.php:30
 msgid "Default"
 msgstr "По умолчанию"
 
-#: includes/bundles/SettingsBundle.php:574
+#: includes/bundles/SettingsBundle.php:531
 msgid "Dark"
 msgstr "Тёмный"
 
-#: includes/bundles/SettingsBundle.php:575
+#: includes/bundles/SettingsBundle.php:532
 msgid "Material Blue"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:576
+#: includes/bundles/SettingsBundle.php:533
 msgid "Material Green"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:577
+#: includes/bundles/SettingsBundle.php:534
 msgid "Material Red"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:578
+#: includes/bundles/SettingsBundle.php:535
 msgid "Material Orange"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:579
+#: includes/bundles/SettingsBundle.php:536
 msgid "Airbnb"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:580
+#: includes/bundles/SettingsBundle.php:537
 msgid "Confetti"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:590
+#: includes/bundles/SettingsBundle.php:547
 #: includes/divi/modules/AppointmentFormModule.php:239
 #: includes/elementor/widgets/AppointmentFormWidget.php:326
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:23
@@ -2689,14 +998,14 @@ msgstr ""
 msgid "Form Width"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:592
+#: includes/bundles/SettingsBundle.php:549
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:24
 #: includes/widgets/AppointmentFormWidget.php:263
 #: assets/js/gutenberg-blocks.js:3479
 msgid "Example: 100%"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:596
+#: includes/bundles/SettingsBundle.php:553
 #: includes/divi/modules/AppointmentFormModule.php:215
 #: includes/elementor/widgets/AppointmentFormWidget.php:346
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:28
@@ -2705,7 +1014,7 @@ msgstr ""
 msgid "Primary Text Color"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:601
+#: includes/bundles/SettingsBundle.php:558
 #: includes/divi/modules/AppointmentFormModule.php:221
 #: includes/elementor/widgets/AppointmentFormWidget.php:357
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:33
@@ -2714,7 +1023,7 @@ msgstr ""
 msgid "Primary Background Color"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:606
+#: includes/bundles/SettingsBundle.php:563
 #: includes/divi/modules/AppointmentFormModule.php:227
 #: includes/elementor/widgets/AppointmentFormWidget.php:368
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:38
@@ -2723,7 +1032,7 @@ msgstr ""
 msgid "Secondary Text Color"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:611
+#: includes/bundles/SettingsBundle.php:568
 #: includes/divi/modules/AppointmentFormModule.php:233
 #: includes/elementor/widgets/AppointmentFormWidget.php:379
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:43
@@ -2732,7 +1041,7 @@ msgstr ""
 msgid "Secondary Background Color"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:616
+#: includes/bundles/SettingsBundle.php:573
 #: includes/divi/modules/AppointmentFormModule.php:247
 #: includes/elementor/widgets/AppointmentFormWidget.php:390
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:48
@@ -2741,7 +1050,7 @@ msgstr ""
 msgid "Buttons Padding"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:617
+#: includes/bundles/SettingsBundle.php:574
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:49
 #: includes/widgets/AppointmentFormWidget.php:288
 #: assets/js/gutenberg-blocks.js:3488
@@ -2771,14 +1080,14 @@ msgstr ""
 #: includes/elementor/widgets/EmployeeServicesListWidget.php:43
 #: includes/elementor/widgets/EmployeeSocialNetworksWidget.php:44
 #: includes/elementor/widgets/EmployeeTitleWidget.php:44
-#: assets/js/gutenberg-blocks.js:12701
-#: assets/js/gutenberg-blocks.js:12824
-#: assets/js/gutenberg-blocks.js:12947
-#: assets/js/gutenberg-blocks.js:13070
-#: assets/js/gutenberg-blocks.js:13193
-#: assets/js/gutenberg-blocks.js:13316
-#: assets/js/gutenberg-blocks.js:13439
-#: assets/js/gutenberg-blocks.js:13562
+#: assets/js/gutenberg-blocks.js:12702
+#: assets/js/gutenberg-blocks.js:12825
+#: assets/js/gutenberg-blocks.js:12948
+#: assets/js/gutenberg-blocks.js:13071
+#: assets/js/gutenberg-blocks.js:13194
+#: assets/js/gutenberg-blocks.js:13317
+#: assets/js/gutenberg-blocks.js:13440
+#: assets/js/gutenberg-blocks.js:13563
 msgid "ID"
 msgstr "ID"
 
@@ -2890,7 +1199,7 @@ msgstr "Бронирование получено"
 #: includes/shortcodes/AppointmentFormShortcode.php:32
 #: includes/widgets/AppointmentFormWidget.php:32
 #: includes/widgets/AppointmentFormWidget.php:139
-#: assets/js/gutenberg-blocks.js:11370
+#: assets/js/gutenberg-blocks.js:11371
 msgid "Appointment Form"
 msgstr ""
 
@@ -3152,7 +1461,7 @@ msgstr "— Любой —"
 #: includes/elementor/widgets/ServicesListWidget.php:146
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:79
 #: includes/shortcodes/ServicesListShortcode.php:91
-#: assets/js/gutenberg-blocks.js:12504
+#: assets/js/gutenberg-blocks.js:12505
 msgid "Comma-separated slugs or IDs of tags that will be shown."
 msgstr ""
 
@@ -3229,7 +1538,7 @@ msgstr ""
 #: includes/divi/modules/EmployeeAdditionalInfoModule.php:20
 #: includes/elementor/widgets/EmployeeAdditionalInfoWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeAdditionalInfoShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13616
+#: assets/js/gutenberg-blocks.js:13617
 msgid "Employee Additional Information"
 msgstr ""
 
@@ -3250,49 +1559,49 @@ msgstr ""
 #: includes/elementor/widgets/EmployeeSocialNetworksWidget.php:47
 #: includes/elementor/widgets/EmployeeTitleWidget.php:47
 #: includes/shortcodes/single-employee/AbstractSingleEmployeeShortcode.php:25
-#: assets/js/gutenberg-blocks.js:12702
-#: assets/js/gutenberg-blocks.js:12825
-#: assets/js/gutenberg-blocks.js:12948
-#: assets/js/gutenberg-blocks.js:13071
-#: assets/js/gutenberg-blocks.js:13194
-#: assets/js/gutenberg-blocks.js:13317
-#: assets/js/gutenberg-blocks.js:13440
-#: assets/js/gutenberg-blocks.js:13563
+#: assets/js/gutenberg-blocks.js:12703
+#: assets/js/gutenberg-blocks.js:12826
+#: assets/js/gutenberg-blocks.js:12949
+#: assets/js/gutenberg-blocks.js:13072
+#: assets/js/gutenberg-blocks.js:13195
+#: assets/js/gutenberg-blocks.js:13318
+#: assets/js/gutenberg-blocks.js:13441
+#: assets/js/gutenberg-blocks.js:13564
 msgid "Post ID of an employee to display content from. Note: this parameter automatically uses the current post ID when a shortcode is inside the employee's post and is required otherwise."
 msgstr ""
 
 #: includes/divi/modules/EmployeeContactsModule.php:20
 #: includes/elementor/widgets/EmployeeContactsWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeContactsShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13370
+#: assets/js/gutenberg-blocks.js:13371
 msgid "Employee Contact Information"
 msgstr ""
 
 #: includes/divi/modules/EmployeeContentModule.php:20
 #: includes/elementor/widgets/EmployeeContentWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeContentShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13247
+#: assets/js/gutenberg-blocks.js:13248
 msgid "Employee Content"
 msgstr ""
 
 #: includes/divi/modules/EmployeeImageModule.php:20
 #: includes/elementor/widgets/EmployeeImageWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeImageShortcode.php:29
-#: assets/js/gutenberg-blocks.js:12755
+#: assets/js/gutenberg-blocks.js:12756
 msgid "Employee Image"
 msgstr ""
 
 #: includes/divi/modules/EmployeeScheduleModule.php:20
 #: includes/elementor/widgets/EmployeeScheduleWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeScheduleShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13124
+#: assets/js/gutenberg-blocks.js:13125
 msgid "Employee Schedule"
 msgstr ""
 
 #: includes/divi/modules/EmployeeServicesListModule.php:20
 #: includes/elementor/widgets/EmployeeServicesListWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeServicesListShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13001
+#: assets/js/gutenberg-blocks.js:13002
 msgid "Employee Services List"
 msgstr ""
 
@@ -3300,7 +1609,7 @@ msgstr ""
 #: includes/elementor/widgets/EmployeesListWidget.php:25
 #: includes/metaboxes/shortcode/EmployeesListMetabox.php:29
 #: includes/shortcodes/EmployeesListShortcode.php:29
-#: assets/js/gutenberg-blocks.js:11704
+#: assets/js/gutenberg-blocks.js:11705
 msgid "Employees List"
 msgstr ""
 
@@ -3316,10 +1625,10 @@ msgstr ""
 #: includes/shortcodes/LocationsListShortcode.php:41
 #: includes/shortcodes/ServiceCategoriesShortcode.php:43
 #: includes/shortcodes/ServicesListShortcode.php:41
-#: assets/js/gutenberg-blocks.js:11521
-#: assets/js/gutenberg-blocks.js:11816
-#: assets/js/gutenberg-blocks.js:12102
-#: assets/js/gutenberg-blocks.js:12420
+#: assets/js/gutenberg-blocks.js:11522
+#: assets/js/gutenberg-blocks.js:11817
+#: assets/js/gutenberg-blocks.js:12103
+#: assets/js/gutenberg-blocks.js:12421
 msgid "Show featured image."
 msgstr ""
 
@@ -3332,9 +1641,9 @@ msgstr ""
 #: includes/shortcodes/EmployeesListShortcode.php:46
 #: includes/shortcodes/LocationsListShortcode.php:46
 #: includes/shortcodes/ServicesListShortcode.php:46
-#: assets/js/gutenberg-blocks.js:11529
-#: assets/js/gutenberg-blocks.js:11824
-#: assets/js/gutenberg-blocks.js:12428
+#: assets/js/gutenberg-blocks.js:11530
+#: assets/js/gutenberg-blocks.js:11825
+#: assets/js/gutenberg-blocks.js:12429
 msgid "Show post title."
 msgstr ""
 
@@ -3347,30 +1656,30 @@ msgstr ""
 #: includes/shortcodes/EmployeesListShortcode.php:51
 #: includes/shortcodes/LocationsListShortcode.php:51
 #: includes/shortcodes/ServicesListShortcode.php:51
-#: assets/js/gutenberg-blocks.js:11537
-#: assets/js/gutenberg-blocks.js:11832
-#: assets/js/gutenberg-blocks.js:12436
+#: assets/js/gutenberg-blocks.js:11538
+#: assets/js/gutenberg-blocks.js:11833
+#: assets/js/gutenberg-blocks.js:12437
 msgid "Show post excerpt."
 msgstr ""
 
 #: includes/divi/modules/EmployeesListModule.php:57
 #: includes/elementor/widgets/EmployeesListWidget.php:74
 #: includes/shortcodes/EmployeesListShortcode.php:56
-#: assets/js/gutenberg-blocks.js:11545
+#: assets/js/gutenberg-blocks.js:11546
 msgid "Show contact information."
 msgstr ""
 
 #: includes/divi/modules/EmployeesListModule.php:67
 #: includes/elementor/widgets/EmployeesListWidget.php:84
 #: includes/shortcodes/EmployeesListShortcode.php:61
-#: assets/js/gutenberg-blocks.js:11553
+#: assets/js/gutenberg-blocks.js:11554
 msgid "Show social networks."
 msgstr ""
 
 #: includes/divi/modules/EmployeesListModule.php:77
 #: includes/elementor/widgets/EmployeesListWidget.php:94
 #: includes/shortcodes/EmployeesListShortcode.php:66
-#: assets/js/gutenberg-blocks.js:11561
+#: assets/js/gutenberg-blocks.js:11562
 msgid "Show additional information."
 msgstr ""
 
@@ -3378,7 +1687,7 @@ msgstr ""
 #: includes/elementor/widgets/EmployeesListWidget.php:107
 #: includes/metaboxes/shortcode/EmployeesListMetabox.php:60
 #: includes/shortcodes/EmployeesListShortcode.php:71
-#: assets/js/gutenberg-blocks.js:11570
+#: assets/js/gutenberg-blocks.js:11571
 msgid "Comma-separated slugs or IDs of employees that will be shown."
 msgstr ""
 
@@ -3392,8 +1701,8 @@ msgstr ""
 #: includes/post-types/LocationPostType.php:77
 #: assets/js/analytics-page.js:33420
 #: assets/js/calendar-page.js:45397
-#: assets/js/gutenberg-blocks.js:11578
-#: assets/js/gutenberg-blocks.js:11840
+#: assets/js/gutenberg-blocks.js:11579
+#: assets/js/gutenberg-blocks.js:11841
 msgid "Locations"
 msgstr "Места"
 
@@ -3401,8 +1710,8 @@ msgstr "Места"
 #: includes/elementor/widgets/EmployeesListWidget.php:117
 #: includes/metaboxes/shortcode/EmployeesListMetabox.php:66
 #: includes/shortcodes/EmployeesListShortcode.php:76
-#: assets/js/gutenberg-blocks.js:11579
-#: assets/js/gutenberg-blocks.js:11841
+#: assets/js/gutenberg-blocks.js:11580
+#: assets/js/gutenberg-blocks.js:11842
 msgid "Comma-separated slugs or IDs of locations."
 msgstr ""
 
@@ -3415,9 +1724,9 @@ msgstr ""
 #: includes/metaboxes/shortcode/EmployeesListMetabox.php:71
 #: includes/metaboxes/shortcode/LocationsListMetabox.php:68
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:84
-#: assets/js/gutenberg-blocks.js:11587
-#: assets/js/gutenberg-blocks.js:11858
-#: assets/js/gutenberg-blocks.js:12512
+#: assets/js/gutenberg-blocks.js:11588
+#: assets/js/gutenberg-blocks.js:11859
+#: assets/js/gutenberg-blocks.js:12513
 msgid "Posts Per Page"
 msgstr ""
 
@@ -3435,10 +1744,10 @@ msgstr ""
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:96
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:91
 #: includes/widgets/AppointmentFormWidget.php:237
-#: assets/js/gutenberg-blocks.js:11596
-#: assets/js/gutenberg-blocks.js:11867
-#: assets/js/gutenberg-blocks.js:12182
-#: assets/js/gutenberg-blocks.js:12521
+#: assets/js/gutenberg-blocks.js:11597
+#: assets/js/gutenberg-blocks.js:11868
+#: assets/js/gutenberg-blocks.js:12183
+#: assets/js/gutenberg-blocks.js:12522
 msgid "Columns Count"
 msgstr "Количество столбцов"
 
@@ -3456,10 +1765,10 @@ msgstr "Количество столбцов"
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:92
 #: includes/shortcodes/AbstractPostsListShortcode.php:29
 #: includes/shortcodes/AbstractTermsListShortcode.php:30
-#: assets/js/gutenberg-blocks.js:11597
-#: assets/js/gutenberg-blocks.js:11868
-#: assets/js/gutenberg-blocks.js:12183
-#: assets/js/gutenberg-blocks.js:12522
+#: assets/js/gutenberg-blocks.js:11598
+#: assets/js/gutenberg-blocks.js:11869
+#: assets/js/gutenberg-blocks.js:12184
+#: assets/js/gutenberg-blocks.js:12523
 msgid "The number of columns in the grid."
 msgstr ""
 
@@ -3473,10 +1782,10 @@ msgstr ""
 #: includes/elementor/widgets/ServicesListWidget.php:178
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:59
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:54
-#: assets/js/gutenberg-blocks.js:11606
-#: assets/js/gutenberg-blocks.js:11877
-#: assets/js/gutenberg-blocks.js:12192
-#: assets/js/gutenberg-blocks.js:12531
+#: assets/js/gutenberg-blocks.js:11607
+#: assets/js/gutenberg-blocks.js:11878
+#: assets/js/gutenberg-blocks.js:12193
+#: assets/js/gutenberg-blocks.js:12532
 msgid "Order By"
 msgstr "Упорядочить по"
 
@@ -3490,10 +1799,10 @@ msgstr "Упорядочить по"
 #: includes/elementor/widgets/ServicesListWidget.php:182
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:39
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:40
-#: assets/js/gutenberg-blocks.js:11613
-#: assets/js/gutenberg-blocks.js:11884
-#: assets/js/gutenberg-blocks.js:12199
-#: assets/js/gutenberg-blocks.js:12538
+#: assets/js/gutenberg-blocks.js:11614
+#: assets/js/gutenberg-blocks.js:11885
+#: assets/js/gutenberg-blocks.js:12200
+#: assets/js/gutenberg-blocks.js:12539
 msgid "No order"
 msgstr "Без сортировки"
 
@@ -3504,9 +1813,9 @@ msgstr "Без сортировки"
 #: includes/elementor/widgets/LocationsListWidget.php:124
 #: includes/elementor/widgets/ServicesListWidget.php:183
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:40
-#: assets/js/gutenberg-blocks.js:11616
-#: assets/js/gutenberg-blocks.js:11887
-#: assets/js/gutenberg-blocks.js:12541
+#: assets/js/gutenberg-blocks.js:11617
+#: assets/js/gutenberg-blocks.js:11888
+#: assets/js/gutenberg-blocks.js:12542
 msgid "Post ID"
 msgstr "ID записи"
 
@@ -3517,9 +1826,9 @@ msgstr "ID записи"
 #: includes/elementor/widgets/LocationsListWidget.php:125
 #: includes/elementor/widgets/ServicesListWidget.php:184
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:41
-#: assets/js/gutenberg-blocks.js:11619
-#: assets/js/gutenberg-blocks.js:11890
-#: assets/js/gutenberg-blocks.js:12544
+#: assets/js/gutenberg-blocks.js:11620
+#: assets/js/gutenberg-blocks.js:11891
+#: assets/js/gutenberg-blocks.js:12545
 msgid "Post author"
 msgstr "Автор записи"
 
@@ -3533,9 +1842,9 @@ msgstr "Автор записи"
 #: includes/metaboxes/shortcode/LocationsListMetabox.php:49
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:49
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:42
-#: assets/js/gutenberg-blocks.js:11622
-#: assets/js/gutenberg-blocks.js:11893
-#: assets/js/gutenberg-blocks.js:12547
+#: assets/js/gutenberg-blocks.js:11623
+#: assets/js/gutenberg-blocks.js:11894
+#: assets/js/gutenberg-blocks.js:12548
 msgid "Post title"
 msgstr "Название заголовка"
 
@@ -3546,9 +1855,9 @@ msgstr "Название заголовка"
 #: includes/elementor/widgets/LocationsListWidget.php:127
 #: includes/elementor/widgets/ServicesListWidget.php:186
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:43
-#: assets/js/gutenberg-blocks.js:11625
-#: assets/js/gutenberg-blocks.js:11896
-#: assets/js/gutenberg-blocks.js:12550
+#: assets/js/gutenberg-blocks.js:11626
+#: assets/js/gutenberg-blocks.js:11897
+#: assets/js/gutenberg-blocks.js:12551
 msgid "Post name (post slug)"
 msgstr "Имя записи (слаг записи)"
 
@@ -3559,9 +1868,9 @@ msgstr "Имя записи (слаг записи)"
 #: includes/elementor/widgets/LocationsListWidget.php:128
 #: includes/elementor/widgets/ServicesListWidget.php:187
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:44
-#: assets/js/gutenberg-blocks.js:11628
-#: assets/js/gutenberg-blocks.js:11899
-#: assets/js/gutenberg-blocks.js:12553
+#: assets/js/gutenberg-blocks.js:11629
+#: assets/js/gutenberg-blocks.js:11900
+#: assets/js/gutenberg-blocks.js:12554
 msgid "Post date"
 msgstr "Дата записи"
 
@@ -3572,9 +1881,9 @@ msgstr "Дата записи"
 #: includes/elementor/widgets/LocationsListWidget.php:129
 #: includes/elementor/widgets/ServicesListWidget.php:188
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:45
-#: assets/js/gutenberg-blocks.js:11631
-#: assets/js/gutenberg-blocks.js:11902
-#: assets/js/gutenberg-blocks.js:12556
+#: assets/js/gutenberg-blocks.js:11632
+#: assets/js/gutenberg-blocks.js:11903
+#: assets/js/gutenberg-blocks.js:12557
 msgid "Last modified date"
 msgstr "Дата последнего изменения"
 
@@ -3585,9 +1894,9 @@ msgstr "Дата последнего изменения"
 #: includes/elementor/widgets/LocationsListWidget.php:130
 #: includes/elementor/widgets/ServicesListWidget.php:189
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:46
-#: assets/js/gutenberg-blocks.js:11634
-#: assets/js/gutenberg-blocks.js:11905
-#: assets/js/gutenberg-blocks.js:12559
+#: assets/js/gutenberg-blocks.js:11635
+#: assets/js/gutenberg-blocks.js:11906
+#: assets/js/gutenberg-blocks.js:12560
 msgid "Random order"
 msgstr "Случайный порядок"
 
@@ -3598,9 +1907,9 @@ msgstr "Случайный порядок"
 #: includes/elementor/widgets/LocationsListWidget.php:131
 #: includes/elementor/widgets/ServicesListWidget.php:190
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:47
-#: assets/js/gutenberg-blocks.js:11637
-#: assets/js/gutenberg-blocks.js:11908
-#: assets/js/gutenberg-blocks.js:12562
+#: assets/js/gutenberg-blocks.js:11638
+#: assets/js/gutenberg-blocks.js:11909
+#: assets/js/gutenberg-blocks.js:12563
 msgid "Relevance"
 msgstr "Релевантность"
 
@@ -3614,10 +1923,10 @@ msgstr "Релевантность"
 #: includes/elementor/widgets/ServicesListWidget.php:191
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:48
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:48
-#: assets/js/gutenberg-blocks.js:11640
-#: assets/js/gutenberg-blocks.js:11911
-#: assets/js/gutenberg-blocks.js:12223
-#: assets/js/gutenberg-blocks.js:12565
+#: assets/js/gutenberg-blocks.js:11641
+#: assets/js/gutenberg-blocks.js:11912
+#: assets/js/gutenberg-blocks.js:12224
+#: assets/js/gutenberg-blocks.js:12566
 msgid "Page order"
 msgstr "Порядок страницы"
 
@@ -3628,9 +1937,9 @@ msgstr "Порядок страницы"
 #: includes/elementor/widgets/LocationsListWidget.php:133
 #: includes/elementor/widgets/ServicesListWidget.php:192
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:49
-#: assets/js/gutenberg-blocks.js:11643
-#: assets/js/gutenberg-blocks.js:11914
-#: assets/js/gutenberg-blocks.js:12568
+#: assets/js/gutenberg-blocks.js:11644
+#: assets/js/gutenberg-blocks.js:11915
+#: assets/js/gutenberg-blocks.js:12569
 msgid "Page order and post title"
 msgstr ""
 
@@ -3650,10 +1959,10 @@ msgstr ""
 #: includes/elementor/widgets/ServicesListWidget.php:202
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:67
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:62
-#: assets/js/gutenberg-blocks.js:11646
-#: assets/js/gutenberg-blocks.js:11917
-#: assets/js/gutenberg-blocks.js:12226
-#: assets/js/gutenberg-blocks.js:12574
+#: assets/js/gutenberg-blocks.js:11647
+#: assets/js/gutenberg-blocks.js:11918
+#: assets/js/gutenberg-blocks.js:12227
+#: assets/js/gutenberg-blocks.js:12575
 msgid "Order"
 msgstr "Порядок"
 
@@ -3665,10 +1974,10 @@ msgstr "Порядок"
 #: includes/elementor/widgets/LocationsListWidget.php:146
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:178
 #: includes/elementor/widgets/ServicesListWidget.php:206
-#: assets/js/gutenberg-blocks.js:11653
-#: assets/js/gutenberg-blocks.js:11924
-#: assets/js/gutenberg-blocks.js:12233
-#: assets/js/gutenberg-blocks.js:12581
+#: assets/js/gutenberg-blocks.js:11654
+#: assets/js/gutenberg-blocks.js:11925
+#: assets/js/gutenberg-blocks.js:12234
+#: assets/js/gutenberg-blocks.js:12582
 msgid "DESC"
 msgstr ""
 
@@ -3682,24 +1991,24 @@ msgstr ""
 #: includes/elementor/widgets/ServicesListWidget.php:207
 #: includes/shortcodes/AbstractPostsListShortcode.php:42
 #: includes/shortcodes/AbstractTermsListShortcode.php:43
-#: assets/js/gutenberg-blocks.js:11656
-#: assets/js/gutenberg-blocks.js:11927
-#: assets/js/gutenberg-blocks.js:12236
-#: assets/js/gutenberg-blocks.js:12584
+#: assets/js/gutenberg-blocks.js:11657
+#: assets/js/gutenberg-blocks.js:11928
+#: assets/js/gutenberg-blocks.js:12237
+#: assets/js/gutenberg-blocks.js:12585
 msgid "ASC"
 msgstr ""
 
 #: includes/divi/modules/EmployeeSocialNetworksModule.php:20
 #: includes/elementor/widgets/EmployeeSocialNetworksWidget.php:25
 #: includes/shortcodes/single-employee/EmployeeSocialNetworksShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13493
+#: assets/js/gutenberg-blocks.js:13494
 msgid "Employee Social Networks"
 msgstr ""
 
 #: includes/divi/modules/EmployeeTitleModule.php:20
 #: includes/elementor/widgets/EmployeeTitleWidget.php:25
 #: includes/shortcodes/single-employee/EmployeeTitleShortcode.php:29
-#: assets/js/gutenberg-blocks.js:12878
+#: assets/js/gutenberg-blocks.js:12879
 msgid "Employee Title"
 msgstr ""
 
@@ -3707,7 +2016,7 @@ msgstr ""
 #: includes/elementor/widgets/LocationsListWidget.php:25
 #: includes/metaboxes/shortcode/LocationsListMetabox.php:29
 #: includes/shortcodes/LocationsListShortcode.php:29
-#: assets/js/gutenberg-blocks.js:11975
+#: assets/js/gutenberg-blocks.js:11976
 msgid "Locations List"
 msgstr ""
 
@@ -3729,9 +2038,9 @@ msgstr ""
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:72
 #: includes/post-types/LocationPostType.php:124
 #: includes/post-types/ServicePostType.php:164
-#: assets/js/gutenberg-blocks.js:11849
-#: assets/js/gutenberg-blocks.js:12135
-#: assets/js/gutenberg-blocks.js:12494
+#: assets/js/gutenberg-blocks.js:11850
+#: assets/js/gutenberg-blocks.js:12136
+#: assets/js/gutenberg-blocks.js:12495
 msgid "Categories"
 msgstr "Категории"
 
@@ -3747,9 +2056,9 @@ msgstr "Категории"
 #: includes/shortcodes/LocationsListShortcode.php:61
 #: includes/shortcodes/ServiceCategoriesShortcode.php:64
 #: includes/shortcodes/ServicesListShortcode.php:86
-#: assets/js/gutenberg-blocks.js:11850
-#: assets/js/gutenberg-blocks.js:12136
-#: assets/js/gutenberg-blocks.js:12495
+#: assets/js/gutenberg-blocks.js:11851
+#: assets/js/gutenberg-blocks.js:12137
+#: assets/js/gutenberg-blocks.js:12496
 msgid "Comma-separated slugs or IDs of categories that will be shown."
 msgstr ""
 
@@ -3759,26 +2068,26 @@ msgstr ""
 #: includes/post-types/ServicePostType.php:149
 #: includes/post-types/ServicePostType.php:252
 #: includes/shortcodes/ServiceCategoriesShortcode.php:31
-#: assets/js/gutenberg-blocks.js:12284
+#: assets/js/gutenberg-blocks.js:12285
 msgid "Service Categories"
 msgstr ""
 
 #: includes/divi/modules/ServiceCategoriesModule.php:37
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:53
-#: assets/js/gutenberg-blocks.js:12110
+#: assets/js/gutenberg-blocks.js:12111
 msgid "Show Services Count?"
 msgstr ""
 
 #: includes/divi/modules/ServiceCategoriesModule.php:47
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:63
-#: assets/js/gutenberg-blocks.js:12118
+#: assets/js/gutenberg-blocks.js:12119
 msgid "Show Description?"
 msgstr ""
 
 #: includes/divi/modules/ServiceCategoriesModule.php:57
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:73
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:56
-#: assets/js/gutenberg-blocks.js:12126
+#: assets/js/gutenberg-blocks.js:12127
 msgid "Parent"
 msgstr ""
 
@@ -3786,14 +2095,14 @@ msgstr ""
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:76
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:57
 #: includes/shortcodes/ServiceCategoriesShortcode.php:58
-#: assets/js/gutenberg-blocks.js:12127
+#: assets/js/gutenberg-blocks.js:12128
 msgid "Parent term slug or ID to retrieve direct-child terms from."
 msgstr ""
 
 #: includes/divi/modules/ServiceCategoriesModule.php:69
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:93
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:68
-#: assets/js/gutenberg-blocks.js:12144
+#: assets/js/gutenberg-blocks.js:12145
 msgid "Exclude Categories"
 msgstr ""
 
@@ -3801,21 +2110,21 @@ msgstr ""
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:96
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:69
 #: includes/shortcodes/ServiceCategoriesShortcode.php:69
-#: assets/js/gutenberg-blocks.js:12145
+#: assets/js/gutenberg-blocks.js:12146
 msgid "Comma-separated slugs or IDs of categories that will not be shown."
 msgstr ""
 
 #: includes/divi/modules/ServiceCategoriesModule.php:75
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:103
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:74
-#: assets/js/gutenberg-blocks.js:12153
+#: assets/js/gutenberg-blocks.js:12154
 msgid "Hide Empty"
 msgstr ""
 
 #: includes/divi/modules/ServiceCategoriesModule.php:85
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:114
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:80
-#: assets/js/gutenberg-blocks.js:12162
+#: assets/js/gutenberg-blocks.js:12163
 msgid "Depth"
 msgstr ""
 
@@ -3823,14 +2132,14 @@ msgstr ""
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:115
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:81
 #: includes/shortcodes/ServiceCategoriesShortcode.php:79
-#: assets/js/gutenberg-blocks.js:12163
+#: assets/js/gutenberg-blocks.js:12164
 msgid "Display depth of child categories."
 msgstr ""
 
 #: includes/divi/modules/ServiceCategoriesModule.php:97
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:127
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:88
-#: assets/js/gutenberg-blocks.js:12172
+#: assets/js/gutenberg-blocks.js:12173
 msgid "Number"
 msgstr ""
 
@@ -3838,56 +2147,56 @@ msgstr ""
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:128
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:89
 #: includes/shortcodes/AbstractTermsListShortcode.php:24
-#: assets/js/gutenberg-blocks.js:12173
+#: assets/js/gutenberg-blocks.js:12174
 msgid "Maximum number of categories to show."
 msgstr ""
 
 #: includes/divi/modules/ServiceCategoriesModule.php:126
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:158
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:41
-#: assets/js/gutenberg-blocks.js:12202
+#: assets/js/gutenberg-blocks.js:12203
 msgid "Term name"
 msgstr ""
 
 #: includes/divi/modules/ServiceCategoriesModule.php:127
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:159
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:42
-#: assets/js/gutenberg-blocks.js:12205
+#: assets/js/gutenberg-blocks.js:12206
 msgid "Term slug"
 msgstr ""
 
 #: includes/divi/modules/ServiceCategoriesModule.php:128
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:160
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:43
-#: assets/js/gutenberg-blocks.js:12208
+#: assets/js/gutenberg-blocks.js:12209
 msgid "Term ID"
 msgstr "ID термина"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:129
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:161
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:44
-#: assets/js/gutenberg-blocks.js:12211
+#: assets/js/gutenberg-blocks.js:12212
 msgid "Parent ID"
 msgstr "Родительский ID"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:130
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:162
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:45
-#: assets/js/gutenberg-blocks.js:12214
+#: assets/js/gutenberg-blocks.js:12215
 msgid "Number of associated objects"
 msgstr ""
 
 #: includes/divi/modules/ServiceCategoriesModule.php:131
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:163
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:46
-#: assets/js/gutenberg-blocks.js:12217
+#: assets/js/gutenberg-blocks.js:12218
 msgid "Keep the order of \"IDs\" parameter"
 msgstr ""
 
 #: includes/divi/modules/ServiceCategoriesModule.php:132
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:164
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:47
-#: assets/js/gutenberg-blocks.js:12220
+#: assets/js/gutenberg-blocks.js:12221
 msgid "Term order"
 msgstr ""
 
@@ -3895,35 +2204,35 @@ msgstr ""
 #: includes/elementor/widgets/ServicesListWidget.php:24
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:29
 #: includes/shortcodes/ServicesListShortcode.php:29
-#: assets/js/gutenberg-blocks.js:12632
+#: assets/js/gutenberg-blocks.js:12633
 msgid "Services List"
 msgstr ""
 
 #: includes/divi/modules/ServicesListModule.php:57
 #: includes/elementor/widgets/ServicesListWidget.php:73
 #: includes/shortcodes/ServicesListShortcode.php:56
-#: assets/js/gutenberg-blocks.js:12444
+#: assets/js/gutenberg-blocks.js:12445
 msgid "Show service price."
 msgstr ""
 
 #: includes/divi/modules/ServicesListModule.php:67
 #: includes/elementor/widgets/ServicesListWidget.php:83
 #: includes/shortcodes/ServicesListShortcode.php:61
-#: assets/js/gutenberg-blocks.js:12452
+#: assets/js/gutenberg-blocks.js:12453
 msgid "Show service duration."
 msgstr ""
 
 #: includes/divi/modules/ServicesListModule.php:77
 #: includes/elementor/widgets/ServicesListWidget.php:93
 #: includes/shortcodes/ServicesListShortcode.php:66
-#: assets/js/gutenberg-blocks.js:12460
+#: assets/js/gutenberg-blocks.js:12461
 msgid "Show service capacity."
 msgstr ""
 
 #: includes/divi/modules/ServicesListModule.php:87
 #: includes/elementor/widgets/ServicesListWidget.php:103
 #: includes/shortcodes/ServicesListShortcode.php:71
-#: assets/js/gutenberg-blocks.js:12468
+#: assets/js/gutenberg-blocks.js:12469
 msgid "Show service employees."
 msgstr ""
 
@@ -3931,7 +2240,7 @@ msgstr ""
 #: includes/elementor/widgets/ServicesListWidget.php:116
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:61
 #: includes/shortcodes/ServicesListShortcode.php:76
-#: assets/js/gutenberg-blocks.js:12477
+#: assets/js/gutenberg-blocks.js:12478
 msgid "Comma-separated slugs or IDs of services that will be shown."
 msgstr ""
 
@@ -3939,7 +2248,7 @@ msgstr ""
 #: includes/elementor/widgets/ServicesListWidget.php:126
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:67
 #: includes/shortcodes/ServicesListShortcode.php:81
-#: assets/js/gutenberg-blocks.js:12486
+#: assets/js/gutenberg-blocks.js:12487
 msgid "Comma-separated slugs or IDs of employees that perform these services."
 msgstr ""
 
@@ -3947,7 +2256,7 @@ msgstr ""
 #: includes/elementor/widgets/ServicesListWidget.php:143
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:78
 #: includes/post-types/ServicePostType.php:210
-#: assets/js/gutenberg-blocks.js:12503
+#: assets/js/gutenberg-blocks.js:12504
 msgid "Tags"
 msgstr "Теги"
 
@@ -4046,7 +2355,7 @@ msgstr ""
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:105
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:75
 #: includes/shortcodes/ServiceCategoriesShortcode.php:74
-#: assets/js/gutenberg-blocks.js:12154
+#: assets/js/gutenberg-blocks.js:12155
 msgid "Hide terms not assigned to any posts."
 msgstr ""
 
@@ -4075,17 +2384,17 @@ msgid "Other Recipients"
 msgstr ""
 
 #: includes/emails/AbstractEmail.php:325
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:98
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:94
 msgid "You can use multiple comma-separated email addresses."
 msgstr ""
 
 #: includes/emails/AbstractEmail.php:331
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:135
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:131
 msgid "Subject"
 msgstr "Тема"
 
 #: includes/emails/AbstractEmail.php:338
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:146
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:142
 msgid "Header"
 msgstr "Заголовок"
 
@@ -5151,15 +3460,15 @@ msgstr ""
 msgid "Employee Google Calendar"
 msgstr ""
 
-#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:75
+#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:73
 msgid "Connected"
 msgstr ""
 
-#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:79
+#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:77
 msgid "Disconnect Calendar"
 msgstr ""
 
-#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:87
+#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:85
 msgid "Connect to Calendar"
 msgstr ""
 
@@ -5193,28 +3502,28 @@ msgstr ""
 msgid "Time at which the notification must be sent (only for daily ones)."
 msgstr ""
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:84
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:82
 msgid "Custom Contacts"
 msgstr ""
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:97
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:93
 msgid "Custom Email Addresses"
 msgstr ""
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:108
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:104
 msgid "Custom Phone Numbers"
 msgstr ""
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:109
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:105
 msgid "You can use multiple comma-separated phone numbers in international format."
 msgstr ""
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:119
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:157
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:115
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:153
 msgid "Message"
 msgstr "Сообщение"
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:123
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:119
 msgid "{service_name} on {reservation_date} at {start_time} has been booked. {employee_name} is waiting for you at {location_name}"
 msgstr ""
 
@@ -7905,18 +6214,18 @@ msgstr ""
 msgid "Card"
 msgstr "Карта"
 
-#: assets/js/divi-modules.js:10142
+#: assets/js/divi-modules.js:10143
 #: assets/js/edit-post.js:7706
-#: assets/js/elementor-widgets.js:10142
-#: assets/js/gutenberg-blocks.js:10581
-#: assets/js/public.js:10142
+#: assets/js/elementor-widgets.js:10143
+#: assets/js/gutenberg-blocks.js:10582
+#: assets/js/public.js:10143
 msgid "Sorry, but we were unable to allocate time slots for the date you selected."
 msgstr ""
 
-#: assets/js/divi-modules.js:10789
-#: assets/js/elementor-widgets.js:10789
-#: assets/js/gutenberg-blocks.js:11228
-#: assets/js/public.js:10789
+#: assets/js/divi-modules.js:10790
+#: assets/js/elementor-widgets.js:10790
+#: assets/js/gutenberg-blocks.js:11229
+#: assets/js/public.js:10790
 msgid "Sorry, there are no services, employees or locations to book."
 msgstr ""
 
@@ -7937,19 +6246,19 @@ msgstr ""
 msgid "Colors"
 msgstr ""
 
-#: assets/js/gutenberg-blocks.js:11412
-#: assets/js/gutenberg-blocks.js:11722
-#: assets/js/gutenberg-blocks.js:11993
-#: assets/js/gutenberg-blocks.js:12296
-#: assets/js/gutenberg-blocks.js:12650
-#: assets/js/gutenberg-blocks.js:12773
-#: assets/js/gutenberg-blocks.js:12896
-#: assets/js/gutenberg-blocks.js:13019
-#: assets/js/gutenberg-blocks.js:13142
-#: assets/js/gutenberg-blocks.js:13265
-#: assets/js/gutenberg-blocks.js:13388
-#: assets/js/gutenberg-blocks.js:13511
-#: assets/js/gutenberg-blocks.js:13634
+#: assets/js/gutenberg-blocks.js:11413
+#: assets/js/gutenberg-blocks.js:11723
+#: assets/js/gutenberg-blocks.js:11994
+#: assets/js/gutenberg-blocks.js:12297
+#: assets/js/gutenberg-blocks.js:12651
+#: assets/js/gutenberg-blocks.js:12774
+#: assets/js/gutenberg-blocks.js:12897
+#: assets/js/gutenberg-blocks.js:13020
+#: assets/js/gutenberg-blocks.js:13143
+#: assets/js/gutenberg-blocks.js:13266
+#: assets/js/gutenberg-blocks.js:13389
+#: assets/js/gutenberg-blocks.js:13512
+#: assets/js/gutenberg-blocks.js:13635
 msgid "appointment"
 msgstr ""
 

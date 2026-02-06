@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2025-07-08 11:46",
+    "translation-revision-date": "2025-12-05 14:10",
     "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/gutenberg-blocks.js",
     "domain": "messages",
@@ -13,8 +13,8 @@
             "Settings": [
                 "\u041d\u0430\u043b\u0430\u0448\u0442\u0443\u0432\u0430\u043d\u043d\u044f"
             ],
-            "Price": [
-                "\u0426\u0456\u043d\u0430"
+            "ID": [
+                "ID"
             ],
             "Services": [
                 "\u041f\u043e\u0441\u043b\u0443\u0433\u0438"
@@ -27,6 +27,12 @@
             ],
             "Employee": [
                 "\u041f\u0440\u0430\u0446\u0456\u0432\u043d\u0438\u043a"
+            ],
+            "Price": [
+                "\u0426\u0456\u043d\u0430"
+            ],
+            "Order": [
+                "\u041f\u043e\u0440\u044f\u0434\u043e\u043a"
             ],
             "Location": [
                 "\u041c\u0456\u0441\u0446\u0435\u0437\u043d\u0430\u0445\u043e\u0434\u0436\u0435\u043d\u043d\u044f"
@@ -57,9 +63,6 @@
             ],
             "Example: 5px 10px": [
                 "\u041f\u0440\u0438\u043a\u043b\u0430\u0434: 5px 10px"
-            ],
-            "ID": [
-                "ID"
             ],
             "Appointment Form": [
                 "\u0424\u043e\u0440\u043c\u0430 \u0431\u0440\u043e\u043d\u044e\u0432\u0430\u043d\u043d\u044f"
@@ -259,9 +262,6 @@
             "Page order and post title": [
                 "\u041f\u043e\u0440\u044f\u0434\u043e\u043a \u0441\u0442\u043e\u0440\u0456\u043d\u043e\u043a \u0456 \u043d\u0430\u0437\u0432\u0430"
             ],
-            "Order": [
-                "\u041f\u043e\u0440\u044f\u0434\u043e\u043a"
-            ],
             "DESC": [
                 "DESC"
             ],
@@ -374,7 +374,7 @@
                 "\u041f\u0440\u0438\u0445\u043e\u0432\u0430\u0442\u0438 \u0442\u0435\u0440\u043c\u0456\u043d\u0438, \u043d\u0435 \u043f\u0440\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u0456 \u0436\u043e\u0434\u043d\u0438\u043c \u043f\u0443\u0431\u043b\u0456\u043a\u0430\u0446\u0456\u044f\u043c."
             ],
             "Left to pay": [
-                ""
+                "\u0417\u0430\u043b\u0438\u0448\u0438\u043b\u043e\u0441\u044c \u0441\u043f\u043b\u0430\u0442\u0438\u0442\u0438"
             ],
             "Clients": [
                 "\u041a\u043b\u0456\u0454\u043d\u0442\u0438"

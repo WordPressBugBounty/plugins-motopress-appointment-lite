@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2025-07-08 11:47",
+    "translation-revision-date": "2025-12-05 14:10",
     "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/gutenberg-blocks.js",
     "domain": "messages",
@@ -13,8 +13,8 @@
             "Settings": [
                 "Configuraci\u00f3n"
             ],
-            "Price": [
-                "Precio"
+            "ID": [
+                "Identidad"
             ],
             "Services": [
                 "Servicios"
@@ -27,6 +27,12 @@
             ],
             "Employee": [
                 "Empleado"
+            ],
+            "Price": [
+                "Precio"
+            ],
+            "Order": [
+                "Pida"
             ],
             "Location": [
                 "Ubicaci\u00f3n"
@@ -57,9 +63,6 @@
             ],
             "Example: 5px 10px": [
                 ""
-            ],
-            "ID": [
-                "Identidad"
             ],
             "Appointment Form": [
                 "Formulario de cita"
@@ -259,9 +262,6 @@
             "Page order and post title": [
                 "Orden de las p\u00e1ginas y t\u00edtulo de los mensajes"
             ],
-            "Order": [
-                "Pida"
-            ],
             "DESC": [
                 "DESC"
             ],
@@ -374,7 +374,7 @@
                 "Ocultar t\u00e9rminos no asignados a ning\u00fan mensaje."
             ],
             "Left to pay": [
-                ""
+                "Restante por pagar"
             ],
             "Clients": [
                 "Clientes"

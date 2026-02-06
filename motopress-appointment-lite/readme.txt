@@ -5,7 +5,7 @@ Tags: appointment, booking, calendar, reservation, schedule, scheduling, online 
 Requires at least: 5.3
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 2.4.2
+Stable tag: 2.4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -314,6 +314,11 @@ MotoPress Appointment Booking plugin, Copyright (C) 2020, MotoPress https://moto
 MotoPress Appointment Booking plugin is distributed under the terms of the GNU GPL.
 
 == Changelog ==
+
+= 2.4.3, Dec 5 2025 =
+* Bug fix: fixed an issue where free services might not be bookable with the PayPal payment gateway.
+* Bug fix: fixed an issue with connecting to Google Calendar.
+* Improvement: optimized plugin translations.
 
 = 2.4.2, Sep 18 2025 =
 * Bug fix: fixed an issue where the appointment form was not working in the WordPress Legacy widget.

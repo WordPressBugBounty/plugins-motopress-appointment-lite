@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2025-07-08 11:54",
+    "translation-revision-date": "2025-12-05 14:10",
     "generator": "WP-CLI\/2.11.0",
     "source": "assets\/js\/gutenberg-blocks.js",
     "domain": "messages",
@@ -13,8 +13,8 @@
             "Settings": [
                 "Einstellungen"
             ],
-            "Price": [
-                "Preis"
+            "ID": [
+                "ID"
             ],
             "Services": [
                 "Dienstleistungen"
@@ -27,6 +27,12 @@
             ],
             "Employee": [
                 "Mitarbeiter"
+            ],
+            "Price": [
+                "Preis"
+            ],
+            "Order": [
+                "Reihenfolge"
             ],
             "Location": [
                 "Standort \/ Filiale"
@@ -57,9 +63,6 @@
             ],
             "Example: 5px 10px": [
                 ""
-            ],
-            "ID": [
-                "ID"
             ],
             "Appointment Form": [
                 "Termin-Formular"
@@ -259,9 +262,6 @@
             "Page order and post title": [
                 "Seitenreihenfolge und Titel des Beitrags"
             ],
-            "Order": [
-                "Reihenfolge"
-            ],
             "DESC": [
                 "DESC"
             ],
@@ -374,7 +374,7 @@
                 "Begriffe verbergen, die mit keinem Post verbunden sind."
             ],
             "Left to pay": [
-                ""
+                "Offener Betrag"
             ],
             "Clients": [
                 "Kunden"
