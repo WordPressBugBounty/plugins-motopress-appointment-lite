@@ -442,6 +442,7 @@ class Assets {
 	 */
 	protected function getLocalizeData( string $handle ): array {
 		$newData = [];
+
 		foreach ( $this->localizeData[ $handle ] as $object_name => $data ) {
 			if ( ! $this->isNewLocalizeData( $handle, $object_name, $data ) ) {
 				$newData[ $object_name ] = $data;
@@ -463,13 +464,13 @@ class Assets {
 
 		foreach ( $localizeData as $objectName => $data ) {
 			$encodedData = rawurlencode( wp_json_encode( $data ) );
-			$js          .= sprintf(
+			$js .= sprintf(
 				" if (typeof %s.%s !== 'undefined') {
-                var newData = JSON.parse(decodeURIComponent('%s'));
-                %s.%s = {...%s.%s, ...newData};
-            } else {
-                %s.%s = JSON.parse(decodeURIComponent('%s'));
-            }",
+					var newData = JSON.parse(decodeURIComponent('%s'));
+					%s.%s = {...%s.%s, ...newData};
+				} else {
+					%s.%s = JSON.parse(decodeURIComponent('%s'));
+				}",
 				self::MPA_LOCALIZED_DATA_OBJECT, $objectName,
 				$encodedData,
 				self::MPA_LOCALIZED_DATA_OBJECT, $objectName, self::MPA_LOCALIZED_DATA_OBJECT, $objectName,

@@ -49,18 +49,20 @@ class BookingService {
 		}
 
 		// Use preset booking ID
-		$bookingId = isset( $order['payment_details']['booking_id'] )
-			? ParseUtils::parseId( $order['payment_details']['booking_id'] )
-			: 0;
+		$bookingId = 0;
+
+		if ( mpapp()->settings()->isPaymentsEnabled()
+			&& isset( $order['payment_details']['booking_id'] )
+		) {
+			$bookingId = ParseUtils::parseId( $order['payment_details']['booking_id'] );
+		}
 
 		// If booking already had a reservations and need update reservation list, then
 		// delete all previously reservations because we do not want to duplicate some of them
 		if ( $bookingId && isset( $order['items'] ) ) {
-
 			$draftBooking = mpapp()->repositories()->booking()->findById( $bookingId, true );
 
 			if ( null !== $draftBooking && ! empty( $draftBooking->getReservations() ) ) {
-
 				foreach ( $draftBooking->getReservations() as $storedReservation ) {
 					wp_delete_post( $storedReservation->getId(), true );
 				}

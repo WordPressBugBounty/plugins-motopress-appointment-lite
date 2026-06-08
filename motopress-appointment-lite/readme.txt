@@ -3,9 +3,9 @@ Contributors: MotoPress
 Donate link: https://motopress.com/
 Tags: appointment, booking, calendar, reservation, schedule, scheduling, online booking system, reservation calendar, booking calendar, booking system, appointment booking, group booking, tickets
 Requires at least: 5.3
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.4.3
+Stable tag: 2.4.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -314,6 +314,9 @@ MotoPress Appointment Booking plugin, Copyright (C) 2020, MotoPress https://moto
 MotoPress Appointment Booking plugin is distributed under the terms of the GNU GPL.
 
 == Changelog ==
+
+= 2.4.4, Jun 4 2026 =
+* Security: Enhanced permission validation when reading bookings.
 
 = 2.4.3, Dec 5 2025 =
 * Bug fix: fixed an issue where free services might not be bookable with the PayPal payment gateway.

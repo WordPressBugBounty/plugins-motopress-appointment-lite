@@ -201,19 +201,19 @@ msgstr "Salva cambiamenti"
 #: includes/elementor/widgets/ServicesListWidget.php:35
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:26
 #: templates/private/pages/wizard.php:12
-#: assets/js/gutenberg-blocks.js:3292
-#: assets/js/gutenberg-blocks.js:11519
-#: assets/js/gutenberg-blocks.js:11814
-#: assets/js/gutenberg-blocks.js:12100
-#: assets/js/gutenberg-blocks.js:12418
-#: assets/js/gutenberg-blocks.js:12699
-#: assets/js/gutenberg-blocks.js:12822
-#: assets/js/gutenberg-blocks.js:12945
-#: assets/js/gutenberg-blocks.js:13068
-#: assets/js/gutenberg-blocks.js:13191
-#: assets/js/gutenberg-blocks.js:13314
-#: assets/js/gutenberg-blocks.js:13437
-#: assets/js/gutenberg-blocks.js:13560
+#: assets/js/gutenberg-blocks.js:3245
+#: assets/js/gutenberg-blocks.js:11482
+#: assets/js/gutenberg-blocks.js:11777
+#: assets/js/gutenberg-blocks.js:12063
+#: assets/js/gutenberg-blocks.js:12381
+#: assets/js/gutenberg-blocks.js:12662
+#: assets/js/gutenberg-blocks.js:12785
+#: assets/js/gutenberg-blocks.js:12908
+#: assets/js/gutenberg-blocks.js:13031
+#: assets/js/gutenberg-blocks.js:13154
+#: assets/js/gutenberg-blocks.js:13277
+#: assets/js/gutenberg-blocks.js:13400
+#: assets/js/gutenberg-blocks.js:13523
 msgid "Settings"
 msgstr "Impostazioni"
 
@@ -235,10 +235,6 @@ msgstr ""
 
 #: includes/admin-pages/manage/ManageBookingsPage.php:237
 msgid "Filtered bookings for customer"
-msgstr ""
-
-#: includes/admin-pages/manage/ManageBookingsPage.php:468
-msgid "Scheduled For"
 msgstr ""
 
 #: includes/admin-pages/manage/ManageBookingsPage.php:486
@@ -280,14 +276,14 @@ msgstr ""
 #: includes/elementor/widgets/EmployeeServicesListWidget.php:43
 #: includes/elementor/widgets/EmployeeSocialNetworksWidget.php:44
 #: includes/elementor/widgets/EmployeeTitleWidget.php:44
-#: assets/js/gutenberg-blocks.js:12702
-#: assets/js/gutenberg-blocks.js:12825
-#: assets/js/gutenberg-blocks.js:12948
-#: assets/js/gutenberg-blocks.js:13071
-#: assets/js/gutenberg-blocks.js:13194
-#: assets/js/gutenberg-blocks.js:13317
-#: assets/js/gutenberg-blocks.js:13440
-#: assets/js/gutenberg-blocks.js:13563
+#: assets/js/gutenberg-blocks.js:12665
+#: assets/js/gutenberg-blocks.js:12788
+#: assets/js/gutenberg-blocks.js:12911
+#: assets/js/gutenberg-blocks.js:13034
+#: assets/js/gutenberg-blocks.js:13157
+#: assets/js/gutenberg-blocks.js:13280
+#: assets/js/gutenberg-blocks.js:13403
+#: assets/js/gutenberg-blocks.js:13526
 msgid "ID"
 msgstr "ID"
 
@@ -301,7 +297,7 @@ msgstr "ID"
 #: includes/post-types/ServicePostType.php:117
 #: assets/js/analytics-page.js:33399
 #: assets/js/calendar-page.js:45376
-#: assets/js/gutenberg-blocks.js:12477
+#: assets/js/gutenberg-blocks.js:12440
 msgid "Services"
 msgstr "Servizi"
 
@@ -325,10 +321,10 @@ msgstr "Servizi"
 #: templates/shortcodes/booking/step-admin-cart.php:33
 #: templates/shortcodes/booking/step-service-form.php:102
 #: assets/js/calendar-page.js:38165
-#: assets/js/edit-post.js:9034
+#: assets/js/edit-post.js:8987
+#: assets/js/gutenberg-blocks.js:3256
 #: assets/js/gutenberg-blocks.js:3303
-#: assets/js/gutenberg-blocks.js:3350
-#: assets/js/widgets-manage-page.js:3023
+#: assets/js/widgets-manage-page.js:2976
 msgid "Service"
 msgstr "Servizio"
 
@@ -360,8 +356,8 @@ msgstr "Ora"
 #: includes/post-types/EmployeePostType.php:52
 #: assets/js/analytics-page.js:33437
 #: assets/js/calendar-page.js:45414
-#: assets/js/gutenberg-blocks.js:11570
-#: assets/js/gutenberg-blocks.js:12486
+#: assets/js/gutenberg-blocks.js:11533
+#: assets/js/gutenberg-blocks.js:12449
 msgid "Employees"
 msgstr "Dipendenti"
 
@@ -390,8 +386,8 @@ msgstr "Dipendenti"
 #: templates/shortcodes/booking/step-cart.php:55
 #: templates/shortcodes/booking/step-service-form.php:167
 #: assets/js/calendar-page.js:38174
-#: assets/js/gutenberg-blocks.js:3370
-#: assets/js/gutenberg-blocks.js:3414
+#: assets/js/gutenberg-blocks.js:3323
+#: assets/js/gutenberg-blocks.js:3367
 msgid "Employee"
 msgstr "Dipendente"
 
@@ -407,7 +403,7 @@ msgstr "Dipendente"
 #: templates/service/price.php:19
 #: templates/shortcodes/booking/step-admin-cart.php:36
 #: templates/shortcodes/booking/step-cart.php:64
-#: assets/js/gutenberg-blocks.js:12572
+#: assets/js/gutenberg-blocks.js:12535
 msgid "Price"
 msgstr "Prezzo"
 
@@ -424,7 +420,7 @@ msgstr "Stato"
 #: includes/admin-pages/manage/ManageBookingsPage.php:596
 #: includes/admin-pages/manage/ManageNotificationsPage.php:214
 #: includes/list-tables/emails/CustomerEmailsListTable.php:32
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:86
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:82
 #: templates/private/pages/customer-edit.php:20
 #: assets/js/calendar-page.js:38114
 msgid "Customer"
@@ -432,6 +428,7 @@ msgstr "Cliente"
 
 #. Translators: %s: Paid amount.
 #: includes/admin-pages/manage/ManageBookingsPage.php:695
+#, php-format
 msgid "Paid: %s"
 msgstr "Pagato: %s"
 
@@ -445,12 +442,14 @@ msgstr "Duplicare"
 #. Translators: %s: Post ID.
 #: includes/admin-pages/manage/ManageEmployeesPage.php:86
 #: includes/admin-pages/manage/ManageSchedulesPage.php:78
+#, php-format
 msgid "Duplication failed, could not find original post with ID = %s"
 msgstr "La duplicazione è fallita, impossibile trovare il post originale con ID = %s"
 
 #. translators: title of the post that was copied
 #: includes/admin-pages/manage/ManageEmployeesPage.php:104
 #: includes/admin-pages/manage/ManageSchedulesPage.php:93
+#, php-format
 msgid "Copy of %s"
 msgstr "Copia di %s"
 
@@ -474,10 +473,10 @@ msgstr ""
 #: includes/elementor/widgets/ServicesListWidget.php:202
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:67
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:62
-#: assets/js/gutenberg-blocks.js:11647
-#: assets/js/gutenberg-blocks.js:11918
-#: assets/js/gutenberg-blocks.js:12227
-#: assets/js/gutenberg-blocks.js:12575
+#: assets/js/gutenberg-blocks.js:11610
+#: assets/js/gutenberg-blocks.js:11881
+#: assets/js/gutenberg-blocks.js:12190
+#: assets/js/gutenberg-blocks.js:12538
 msgid "Order"
 msgstr "Ordine"
 
@@ -487,11 +486,13 @@ msgstr ""
 
 #. translators: %s: Last execution time, like "3:08 pm, July 21, 2022".
 #: includes/admin-pages/manage/ManageNotificationsPage.php:92
+#, php-format
 msgid "Last execution was at %s. No new notifications were sent."
 msgstr ""
 
 #. Translators: %d: Number of notifications.
 #: includes/admin-pages/manage/ManageNotificationsPage.php:99
+#, php-format
 msgid "%d notification"
 msgid_plural "%d notifications"
 msgstr[0] ""
@@ -499,11 +500,13 @@ msgstr[1] ""
 
 #. Translators: 1: Last execution time, like "3:08 pm, July 21, 2022", 2: Number of notifications
 #: includes/admin-pages/manage/ManageNotificationsPage.php:103
+#, php-format
 msgid "Last execution was at %1$s. %2$s were sent."
 msgstr ""
 
 #. Translators: %s: Next execution time, like "3:08 pm, July 21, 2022".
 #: includes/admin-pages/manage/ManageNotificationsPage.php:118
+#, php-format
 msgid "Next execution is scheduled for — %s."
 msgstr ""
 
@@ -513,6 +516,7 @@ msgstr ""
 
 #. Translators: %s: Cron task, like "*/15 * * * * ...".
 #: includes/admin-pages/manage/ManageNotificationsPage.php:140
+#, php-format
 msgid "You can set up a real cron task in your server admin panel: %s"
 msgstr ""
 
@@ -613,8 +617,8 @@ msgstr "ID di transazione"
 #: templates/shortcodes/booking/step-cart.php:39
 #: templates/shortcodes/booking/step-service-form.php:134
 #: assets/js/calendar-page.js:38183
-#: assets/js/gutenberg-blocks.js:3360
-#: assets/js/gutenberg-blocks.js:3406
+#: assets/js/gutenberg-blocks.js:3313
+#: assets/js/gutenberg-blocks.js:3359
 msgid "Location"
 msgstr "Località"
 
@@ -768,6 +772,7 @@ msgstr ""
 
 #. translators: %s is the {cancelation_details} tag
 #: includes/bundles/SettingsBundle.php:182
+#, php-format
 msgid "A customer cancelation email template must contain the %s tag."
 msgstr ""
 
@@ -820,6 +825,7 @@ msgstr ""
 
 #. translators: %s shortcode name
 #: includes/bundles/SettingsBundle.php:218
+#, php-format
 msgid "Use the %s shortcode on this page."
 msgstr ""
 
@@ -839,9 +845,9 @@ msgstr "Seleziona il Paese di residenza"
 #: includes/metaboxes/shortcode/AppointmentFormLabelsMetabox.php:68
 #: includes/shortcodes/AppointmentFormShortcode.php:94
 #: includes/widgets/AppointmentFormWidget.php:191
-#: assets/js/edit-post.js:9084
-#: assets/js/gutenberg-blocks.js:3380
-#: assets/js/widgets-manage-page.js:3116
+#: assets/js/edit-post.js:9037
+#: assets/js/gutenberg-blocks.js:3333
+#: assets/js/widgets-manage-page.js:3069
 msgid "— Select —"
 msgstr "— Selezionare —"
 
@@ -948,6 +954,7 @@ msgstr ""
 
 #. translators: %s - is a URL to the plugin's Extensions menu page
 #: includes/bundles/SettingsBundle.php:405
+#, php-format
 msgid "To be able to send SMS notifications, you need to <a href=\"%s\">install the extension</a> that integrates an SMS service."
 msgstr ""
 
@@ -1008,117 +1015,163 @@ msgstr "Pagina per la transazione non riuscita"
 msgid "Page to redirect the customer to on failed transaction."
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:523
+#. translators: %s is the link to Google Developers Console
+#: includes/bundles/SettingsBundle.php:500
+#, php-format
+msgid "Locate the Client's credentials in the %s."
+msgstr ""
+
+#: includes/bundles/SettingsBundle.php:505
+msgid "Open Google Developer Console and select or create a project."
+msgstr ""
+
+#: includes/bundles/SettingsBundle.php:506
+msgid "Enable the Google Calendar API for the project."
+msgstr ""
+
+#: includes/bundles/SettingsBundle.php:507
+msgid "Create OAuth credentials for \"user data\"."
+msgstr ""
+
+#: includes/bundles/SettingsBundle.php:508
+msgid "Set \"OAuth client ID\" as the credential type and choose \"Web application\"."
+msgstr ""
+
+#. translators: %s is the URL
+#: includes/bundles/SettingsBundle.php:511
+#, php-format
+msgid "Add %s to the \"Authorized redirect URIs\"."
+msgstr ""
+
+#: includes/bundles/SettingsBundle.php:513
+msgid "Get your Client ID and Client Secret."
+msgstr ""
+
+#. translators: %1$s and %2$s are HTML anchor tags
+#: includes/bundles/SettingsBundle.php:517
+#, php-format
+msgid "For more detailed instructions, %1$s visit our documentation %2$s."
+msgstr ""
+
+#: includes/bundles/SettingsBundle.php:531
+msgid "Client ID"
+msgstr "Identificativo cliente"
+
+#: includes/bundles/SettingsBundle.php:538
+msgid "Client Secret"
+msgstr "Segreto Client"
+
+#: includes/bundles/SettingsBundle.php:566
 msgid "Default Form Styles"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:524
+#: includes/bundles/SettingsBundle.php:567
 msgid "These default styles apply to all booking forms, but you can customize each one separately."
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:528
+#: includes/bundles/SettingsBundle.php:571
 msgid "Calendar Theme"
 msgstr "Stile di Calendario"
 
-#: includes/bundles/SettingsBundle.php:530
+#: includes/bundles/SettingsBundle.php:573
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:42
 #: templates/private/pages/shortcodes-list.php:30
 msgid "Default"
 msgstr "Predefinito"
 
-#: includes/bundles/SettingsBundle.php:531
+#: includes/bundles/SettingsBundle.php:574
 msgid "Dark"
 msgstr "Scuro"
 
-#: includes/bundles/SettingsBundle.php:532
+#: includes/bundles/SettingsBundle.php:575
 msgid "Material Blue"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:533
+#: includes/bundles/SettingsBundle.php:576
 msgid "Material Green"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:534
+#: includes/bundles/SettingsBundle.php:577
 msgid "Material Red"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:535
+#: includes/bundles/SettingsBundle.php:578
 msgid "Material Orange"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:536
+#: includes/bundles/SettingsBundle.php:579
 msgid "Airbnb"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:537
+#: includes/bundles/SettingsBundle.php:580
 msgid "Confetti"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:547
+#: includes/bundles/SettingsBundle.php:590
 #: includes/divi/modules/AppointmentFormModule.php:239
 #: includes/elementor/widgets/AppointmentFormWidget.php:326
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:23
 #: includes/widgets/AppointmentFormWidget.php:262
-#: assets/js/gutenberg-blocks.js:3478
+#: assets/js/gutenberg-blocks.js:3431
 msgid "Form Width"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:549
+#: includes/bundles/SettingsBundle.php:592
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:24
 #: includes/widgets/AppointmentFormWidget.php:263
-#: assets/js/gutenberg-blocks.js:3479
+#: assets/js/gutenberg-blocks.js:3432
 msgid "Example: 100%"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:553
+#: includes/bundles/SettingsBundle.php:596
 #: includes/divi/modules/AppointmentFormModule.php:215
 #: includes/elementor/widgets/AppointmentFormWidget.php:346
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:28
 #: includes/widgets/AppointmentFormWidget.php:267
-#: assets/js/gutenberg-blocks.js:3451
+#: assets/js/gutenberg-blocks.js:3404
 msgid "Primary Text Color"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:558
+#: includes/bundles/SettingsBundle.php:601
 #: includes/divi/modules/AppointmentFormModule.php:221
 #: includes/elementor/widgets/AppointmentFormWidget.php:357
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:33
 #: includes/widgets/AppointmentFormWidget.php:272
-#: assets/js/gutenberg-blocks.js:3459
+#: assets/js/gutenberg-blocks.js:3412
 msgid "Primary Background Color"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:563
+#: includes/bundles/SettingsBundle.php:606
 #: includes/divi/modules/AppointmentFormModule.php:227
 #: includes/elementor/widgets/AppointmentFormWidget.php:368
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:38
 #: includes/widgets/AppointmentFormWidget.php:277
-#: assets/js/gutenberg-blocks.js:3467
+#: assets/js/gutenberg-blocks.js:3420
 msgid "Secondary Text Color"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:568
+#: includes/bundles/SettingsBundle.php:611
 #: includes/divi/modules/AppointmentFormModule.php:233
 #: includes/elementor/widgets/AppointmentFormWidget.php:379
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:43
 #: includes/widgets/AppointmentFormWidget.php:282
-#: assets/js/gutenberg-blocks.js:3475
+#: assets/js/gutenberg-blocks.js:3428
 msgid "Secondary Background Color"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:573
+#: includes/bundles/SettingsBundle.php:616
 #: includes/divi/modules/AppointmentFormModule.php:247
 #: includes/elementor/widgets/AppointmentFormWidget.php:390
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:48
 #: includes/widgets/AppointmentFormWidget.php:287
-#: assets/js/gutenberg-blocks.js:3487
+#: assets/js/gutenberg-blocks.js:3440
 msgid "Buttons Padding"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:574
+#: includes/bundles/SettingsBundle.php:617
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:49
 #: includes/widgets/AppointmentFormWidget.php:288
-#: assets/js/gutenberg-blocks.js:3488
+#: assets/js/gutenberg-blocks.js:3441
 msgid "Example: 5px 10px"
 msgstr ""
 
@@ -1225,7 +1278,7 @@ msgstr "Prenotazione Ricevuta"
 #: includes/shortcodes/AppointmentFormShortcode.php:32
 #: includes/widgets/AppointmentFormWidget.php:32
 #: includes/widgets/AppointmentFormWidget.php:139
-#: assets/js/gutenberg-blocks.js:11371
+#: assets/js/gutenberg-blocks.js:11334
 msgid "Appointment Form"
 msgstr "Modulo per gli appuntamenti"
 
@@ -1236,7 +1289,7 @@ msgstr "Modulo per gli appuntamenti"
 #: includes/metaboxes/shortcode/AppointmentFormDefaultsMetabox.php:37
 #: includes/widgets/AppointmentFormWidget.php:132
 #: includes/widgets/AppointmentFormWidget.php:133
-#: assets/js/gutenberg-blocks.js:3250
+#: assets/js/gutenberg-blocks.js:3203
 msgid "— Unselected —"
 msgstr "— Deselezionato —"
 
@@ -1244,20 +1297,20 @@ msgstr "— Deselezionato —"
 #: includes/elementor/widgets/AppointmentFormWidget.php:79
 #: includes/metaboxes/shortcode/AppointmentFormMetabox.php:46
 #: includes/widgets/AppointmentFormWidget.php:144
-#: assets/js/gutenberg-blocks.js:3295
+#: assets/js/gutenberg-blocks.js:3248
 msgid "Form Title"
 msgstr "Titolo del modulo"
 
 #: includes/divi/modules/AppointmentFormModule.php:65
 #: includes/elementor/widgets/AppointmentFormWidget.php:89
 #: includes/shortcodes/AppointmentFormShortcode.php:110
-#: assets/js/gutenberg-blocks.js:3304
+#: assets/js/gutenberg-blocks.js:3257
 msgid "ID of the selected service."
 msgstr "ID del servizio selezionato."
 
 #: includes/divi/modules/AppointmentFormModule.php:72
 #: includes/elementor/widgets/AppointmentFormWidget.php:99
-#: assets/js/gutenberg-blocks.js:3254
+#: assets/js/gutenberg-blocks.js:3207
 msgid "Show Category?"
 msgstr "Mostrare categoria?"
 
@@ -1265,7 +1318,7 @@ msgstr "Mostrare categoria?"
 #: includes/elementor/widgets/AppointmentFormWidget.php:100
 #: includes/elementor/widgets/AppointmentFormWidget.php:111
 #: includes/shortcodes/AppointmentFormShortcode.php:48
-#: assets/js/gutenberg-blocks.js:3255
+#: assets/js/gutenberg-blocks.js:3208
 msgid "Show the service category field in the form."
 msgstr "Mostra il campo della categoria servizio nel modulo."
 
@@ -1333,46 +1386,46 @@ msgstr "No"
 
 #: includes/divi/modules/AppointmentFormModule.php:83
 #: includes/elementor/widgets/AppointmentFormWidget.php:110
-#: assets/js/gutenberg-blocks.js:3267
-#: assets/js/gutenberg-blocks.js:3274
+#: assets/js/gutenberg-blocks.js:3220
+#: assets/js/gutenberg-blocks.js:3227
 msgid "Show Service?"
 msgstr ""
 
 #: includes/divi/modules/AppointmentFormModule.php:84
 #: includes/shortcodes/AppointmentFormShortcode.php:53
-#: assets/js/gutenberg-blocks.js:3275
+#: assets/js/gutenberg-blocks.js:3228
 msgid "Show the service field in the form."
 msgstr ""
 
 #: includes/divi/modules/AppointmentFormModule.php:94
 #: includes/elementor/widgets/AppointmentFormWidget.php:121
-#: assets/js/gutenberg-blocks.js:3311
+#: assets/js/gutenberg-blocks.js:3264
 msgid "Show Location?"
 msgstr "Mostrare la posizione?"
 
 #: includes/divi/modules/AppointmentFormModule.php:95
 #: includes/elementor/widgets/AppointmentFormWidget.php:122
 #: includes/shortcodes/AppointmentFormShortcode.php:58
-#: assets/js/gutenberg-blocks.js:3312
+#: assets/js/gutenberg-blocks.js:3265
 msgid "Show the location field in the form."
 msgstr "Mostra il campo della posizione nel modulo."
 
 #: includes/divi/modules/AppointmentFormModule.php:105
 #: includes/elementor/widgets/AppointmentFormWidget.php:132
-#: assets/js/gutenberg-blocks.js:3320
+#: assets/js/gutenberg-blocks.js:3273
 msgid "Show Employee?"
 msgstr "Mostrare il dipendente?"
 
 #: includes/divi/modules/AppointmentFormModule.php:106
 #: includes/elementor/widgets/AppointmentFormWidget.php:133
 #: includes/shortcodes/AppointmentFormShortcode.php:63
-#: assets/js/gutenberg-blocks.js:3321
+#: assets/js/gutenberg-blocks.js:3274
 msgid "Show the employee field in the form."
 msgstr "Mostra il campo del dipendente nel modulo."
 
 #: includes/divi/modules/AppointmentFormModule.php:116
 #: includes/elementor/widgets/AppointmentFormWidget.php:143
-#: assets/js/gutenberg-blocks.js:3338
+#: assets/js/gutenberg-blocks.js:3291
 msgid "Category Field Label"
 msgstr "Etichetta del campo della categoria"
 
@@ -1391,54 +1444,54 @@ msgstr "Etichetta del campo della categoria"
 #: includes/widgets/AppointmentFormWidget.php:166
 #: includes/widgets/AppointmentFormWidget.php:208
 #: templates/shortcodes/booking/step-service-form.php:76
-#: assets/js/gutenberg-blocks.js:3340
-#: assets/js/gutenberg-blocks.js:3398
+#: assets/js/gutenberg-blocks.js:3293
+#: assets/js/gutenberg-blocks.js:3351
 msgid "Service Category"
 msgstr "Categoria servizio"
 
 #: includes/divi/modules/AppointmentFormModule.php:120
 #: includes/elementor/widgets/AppointmentFormWidget.php:147
 #: includes/shortcodes/AppointmentFormShortcode.php:68
-#: assets/js/gutenberg-blocks.js:3339
+#: assets/js/gutenberg-blocks.js:3292
 msgid "Custom label for the service category field."
 msgstr "Etichetta personalizzata per il campo della categoria servizio."
 
 #: includes/divi/modules/AppointmentFormModule.php:123
 #: includes/elementor/widgets/AppointmentFormWidget.php:154
-#: assets/js/gutenberg-blocks.js:3348
+#: assets/js/gutenberg-blocks.js:3301
 msgid "Service Field Label"
 msgstr "Etichetta del campo del servizio"
 
 #: includes/divi/modules/AppointmentFormModule.php:127
 #: includes/elementor/widgets/AppointmentFormWidget.php:158
 #: includes/shortcodes/AppointmentFormShortcode.php:74
-#: assets/js/gutenberg-blocks.js:3349
+#: assets/js/gutenberg-blocks.js:3302
 msgid "Custom label for the service field."
 msgstr "Etichetta personalizzata per il campo del servizio."
 
 #: includes/divi/modules/AppointmentFormModule.php:130
 #: includes/elementor/widgets/AppointmentFormWidget.php:165
-#: assets/js/gutenberg-blocks.js:3358
+#: assets/js/gutenberg-blocks.js:3311
 msgid "Location Field Label"
 msgstr "Etichetta del campo della posizione"
 
 #: includes/divi/modules/AppointmentFormModule.php:134
 #: includes/elementor/widgets/AppointmentFormWidget.php:169
 #: includes/shortcodes/AppointmentFormShortcode.php:80
-#: assets/js/gutenberg-blocks.js:3359
+#: assets/js/gutenberg-blocks.js:3312
 msgid "Custom label for the location field."
 msgstr "Etichetta personalizzata per il campo della posizione."
 
 #: includes/divi/modules/AppointmentFormModule.php:137
 #: includes/elementor/widgets/AppointmentFormWidget.php:176
-#: assets/js/gutenberg-blocks.js:3368
+#: assets/js/gutenberg-blocks.js:3321
 msgid "Employee Field Label"
 msgstr "Etichetta del campo del dipendente"
 
 #: includes/divi/modules/AppointmentFormModule.php:141
 #: includes/elementor/widgets/AppointmentFormWidget.php:180
 #: includes/shortcodes/AppointmentFormShortcode.php:86
-#: assets/js/gutenberg-blocks.js:3369
+#: assets/js/gutenberg-blocks.js:3322
 msgid "Custom label for the employee field."
 msgstr "Etichetta personalizzata per il campo del dipendente."
 
@@ -1446,7 +1499,7 @@ msgstr "Etichetta personalizzata per il campo del dipendente."
 #: includes/elementor/widgets/AppointmentFormWidget.php:187
 #: includes/metaboxes/shortcode/AppointmentFormLabelsMetabox.php:66
 #: includes/widgets/AppointmentFormWidget.php:189
-#: assets/js/gutenberg-blocks.js:3378
+#: assets/js/gutenberg-blocks.js:3331
 msgid "Unselected Service"
 msgstr "Deseleziona il servizio"
 
@@ -1455,7 +1508,7 @@ msgstr "Deseleziona il servizio"
 #: includes/metaboxes/shortcode/AppointmentFormLabelsMetabox.php:67
 #: includes/shortcodes/AppointmentFormShortcode.php:92
 #: includes/widgets/AppointmentFormWidget.php:190
-#: assets/js/gutenberg-blocks.js:3379
+#: assets/js/gutenberg-blocks.js:3332
 msgid "Custom label for the unselected service field."
 msgstr "Etichetta personalizzata per il campo del servizio deselezionato."
 
@@ -1463,7 +1516,7 @@ msgstr "Etichetta personalizzata per il campo del servizio deselezionato."
 #: includes/elementor/widgets/AppointmentFormWidget.php:198
 #: includes/metaboxes/shortcode/AppointmentFormLabelsMetabox.php:74
 #: includes/widgets/AppointmentFormWidget.php:196
-#: assets/js/gutenberg-blocks.js:3388
+#: assets/js/gutenberg-blocks.js:3341
 msgid "Unselected Option"
 msgstr "Opzione deselezionata"
 
@@ -1473,12 +1526,12 @@ msgstr "Opzione deselezionata"
 #: includes/metaboxes/shortcode/AppointmentFormLabelsMetabox.php:76
 #: includes/shortcodes/AppointmentFormShortcode.php:100
 #: includes/widgets/AppointmentFormWidget.php:198
-#: assets/js/edit-post.js:9086
-#: assets/js/gutenberg-blocks.js:3249
-#: assets/js/gutenberg-blocks.js:3251
-#: assets/js/gutenberg-blocks.js:3252
-#: assets/js/gutenberg-blocks.js:3390
-#: assets/js/widgets-manage-page.js:3118
+#: assets/js/edit-post.js:9039
+#: assets/js/gutenberg-blocks.js:3202
+#: assets/js/gutenberg-blocks.js:3204
+#: assets/js/gutenberg-blocks.js:3205
+#: assets/js/gutenberg-blocks.js:3343
+#: assets/js/widgets-manage-page.js:3071
 msgid "— Any —"
 msgstr "— Qualsiasi —"
 
@@ -1487,40 +1540,40 @@ msgstr "— Qualsiasi —"
 #: includes/elementor/widgets/ServicesListWidget.php:146
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:79
 #: includes/shortcodes/ServicesListShortcode.php:91
-#: assets/js/gutenberg-blocks.js:12505
+#: assets/js/gutenberg-blocks.js:12468
 msgid "Comma-separated slugs or IDs of tags that will be shown."
 msgstr "Slug di attributi separati da virgola o ID dei tag che appariranno."
 
 #: includes/divi/modules/AppointmentFormModule.php:159
 #: includes/elementor/widgets/AppointmentFormWidget.php:210
 #: includes/shortcodes/AppointmentFormShortcode.php:104
-#: assets/js/gutenberg-blocks.js:3399
+#: assets/js/gutenberg-blocks.js:3352
 msgid "Slug of the selected service category."
 msgstr "Slug della categoria del servizio selezionata."
 
 #: includes/divi/modules/AppointmentFormModule.php:167
 #: includes/elementor/widgets/AppointmentFormWidget.php:222
 #: includes/shortcodes/AppointmentFormShortcode.php:116
-#: assets/js/gutenberg-blocks.js:3407
+#: assets/js/gutenberg-blocks.js:3360
 msgid "ID of the selected location."
 msgstr "ID della posizione selezionata."
 
 #: includes/divi/modules/AppointmentFormModule.php:175
 #: includes/elementor/widgets/AppointmentFormWidget.php:233
 #: includes/shortcodes/AppointmentFormShortcode.php:122
-#: assets/js/gutenberg-blocks.js:3415
+#: assets/js/gutenberg-blocks.js:3368
 msgid "ID of the selected employee."
 msgstr "ID del dipendente selezionato."
 
 #: includes/divi/modules/AppointmentFormModule.php:182
 #: includes/elementor/widgets/AppointmentFormWidget.php:244
-#: assets/js/gutenberg-blocks.js:3422
+#: assets/js/gutenberg-blocks.js:3375
 msgid "Timepicker Columns Count"
 msgstr "Conteggio delle colonne del selettore temporale"
 
 #: includes/divi/modules/AppointmentFormModule.php:193
 #: includes/elementor/widgets/AppointmentFormWidget.php:257
-#: assets/js/gutenberg-blocks.js:3431
+#: assets/js/gutenberg-blocks.js:3384
 msgid "Show End Time?"
 msgstr "Mostrare la data di fine?"
 
@@ -1529,7 +1582,7 @@ msgstr "Mostrare la data di fine?"
 #: includes/metaboxes/shortcode/AppointmentFormTimepicker.php:50
 #: includes/shortcodes/AppointmentFormShortcode.php:133
 #: includes/widgets/AppointmentFormWidget.php:246
-#: assets/js/gutenberg-blocks.js:3432
+#: assets/js/gutenberg-blocks.js:3385
 msgid "Show the time when the appointment ends."
 msgstr "Mostra l'orario al termine dell'appuntamento."
 
@@ -1537,14 +1590,14 @@ msgstr "Mostra l'orario al termine dell'appuntamento."
 #: includes/elementor/widgets/AppointmentFormWidget.php:268
 #: includes/shortcodes/AppointmentFormShortcode.php:138
 #: includes/widgets/AppointmentFormWidget.php:251
-#: assets/js/gutenberg-blocks.js:3329
+#: assets/js/gutenberg-blocks.js:3282
 msgid "Show 'Add to Your Calendar?' section."
 msgstr ""
 
 #: includes/divi/modules/AppointmentFormModule.php:205
 #: includes/elementor/widgets/AppointmentFormWidget.php:269
 #: includes/widgets/AppointmentFormWidget.php:252
-#: assets/js/gutenberg-blocks.js:3330
+#: assets/js/gutenberg-blocks.js:3283
 msgid "Allow customers to add an appointment to their own Google, Apple, Outlook, or Yahoo calendar."
 msgstr ""
 
@@ -1564,7 +1617,7 @@ msgstr ""
 #: includes/divi/modules/EmployeeAdditionalInfoModule.php:20
 #: includes/elementor/widgets/EmployeeAdditionalInfoWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeAdditionalInfoShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13617
+#: assets/js/gutenberg-blocks.js:13580
 msgid "Employee Additional Information"
 msgstr "Informazioni aggiuntive sul dipendente"
 
@@ -1585,49 +1638,49 @@ msgstr "Informazioni aggiuntive sul dipendente"
 #: includes/elementor/widgets/EmployeeSocialNetworksWidget.php:47
 #: includes/elementor/widgets/EmployeeTitleWidget.php:47
 #: includes/shortcodes/single-employee/AbstractSingleEmployeeShortcode.php:25
-#: assets/js/gutenberg-blocks.js:12703
-#: assets/js/gutenberg-blocks.js:12826
-#: assets/js/gutenberg-blocks.js:12949
-#: assets/js/gutenberg-blocks.js:13072
-#: assets/js/gutenberg-blocks.js:13195
-#: assets/js/gutenberg-blocks.js:13318
-#: assets/js/gutenberg-blocks.js:13441
-#: assets/js/gutenberg-blocks.js:13564
+#: assets/js/gutenberg-blocks.js:12666
+#: assets/js/gutenberg-blocks.js:12789
+#: assets/js/gutenberg-blocks.js:12912
+#: assets/js/gutenberg-blocks.js:13035
+#: assets/js/gutenberg-blocks.js:13158
+#: assets/js/gutenberg-blocks.js:13281
+#: assets/js/gutenberg-blocks.js:13404
+#: assets/js/gutenberg-blocks.js:13527
 msgid "Post ID of an employee to display content from. Note: this parameter automatically uses the current post ID when a shortcode is inside the employee's post and is required otherwise."
 msgstr "ID del post di un dipendente da cui visualizzare il contenuto. Nota: questo parametro utilizza automaticamente l'ID del post corrente quando uno shortcode è all'interno del post del dipendente ed è richiesto altrimenti."
 
 #: includes/divi/modules/EmployeeContactsModule.php:20
 #: includes/elementor/widgets/EmployeeContactsWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeContactsShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13371
+#: assets/js/gutenberg-blocks.js:13334
 msgid "Employee Contact Information"
 msgstr "Informazioni di contatto del dipendente"
 
 #: includes/divi/modules/EmployeeContentModule.php:20
 #: includes/elementor/widgets/EmployeeContentWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeContentShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13248
+#: assets/js/gutenberg-blocks.js:13211
 msgid "Employee Content"
 msgstr "Contenuto del Dipendente"
 
 #: includes/divi/modules/EmployeeImageModule.php:20
 #: includes/elementor/widgets/EmployeeImageWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeImageShortcode.php:29
-#: assets/js/gutenberg-blocks.js:12756
+#: assets/js/gutenberg-blocks.js:12719
 msgid "Employee Image"
 msgstr "Immagine del Dipendente"
 
 #: includes/divi/modules/EmployeeScheduleModule.php:20
 #: includes/elementor/widgets/EmployeeScheduleWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeScheduleShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13125
+#: assets/js/gutenberg-blocks.js:13088
 msgid "Employee Schedule"
 msgstr "Programmi per turni di lavoro"
 
 #: includes/divi/modules/EmployeeServicesListModule.php:20
 #: includes/elementor/widgets/EmployeeServicesListWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeServicesListShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13002
+#: assets/js/gutenberg-blocks.js:12965
 msgid "Employee Services List"
 msgstr "Elenco servizi dei dipendenti"
 
@@ -1635,7 +1688,7 @@ msgstr "Elenco servizi dei dipendenti"
 #: includes/elementor/widgets/EmployeesListWidget.php:25
 #: includes/metaboxes/shortcode/EmployeesListMetabox.php:29
 #: includes/shortcodes/EmployeesListShortcode.php:29
-#: assets/js/gutenberg-blocks.js:11705
+#: assets/js/gutenberg-blocks.js:11668
 msgid "Employees List"
 msgstr "Elenco dipendenti"
 
@@ -1651,10 +1704,10 @@ msgstr "Elenco dipendenti"
 #: includes/shortcodes/LocationsListShortcode.php:41
 #: includes/shortcodes/ServiceCategoriesShortcode.php:43
 #: includes/shortcodes/ServicesListShortcode.php:41
-#: assets/js/gutenberg-blocks.js:11522
-#: assets/js/gutenberg-blocks.js:11817
-#: assets/js/gutenberg-blocks.js:12103
-#: assets/js/gutenberg-blocks.js:12421
+#: assets/js/gutenberg-blocks.js:11485
+#: assets/js/gutenberg-blocks.js:11780
+#: assets/js/gutenberg-blocks.js:12066
+#: assets/js/gutenberg-blocks.js:12384
 msgid "Show featured image."
 msgstr "Mostra immagine in evidenza."
 
@@ -1667,9 +1720,9 @@ msgstr "Mostra immagine in evidenza."
 #: includes/shortcodes/EmployeesListShortcode.php:46
 #: includes/shortcodes/LocationsListShortcode.php:46
 #: includes/shortcodes/ServicesListShortcode.php:46
-#: assets/js/gutenberg-blocks.js:11530
-#: assets/js/gutenberg-blocks.js:11825
-#: assets/js/gutenberg-blocks.js:12429
+#: assets/js/gutenberg-blocks.js:11493
+#: assets/js/gutenberg-blocks.js:11788
+#: assets/js/gutenberg-blocks.js:12392
 msgid "Show post title."
 msgstr "Mostra titolo del post."
 
@@ -1682,30 +1735,30 @@ msgstr "Mostra titolo del post."
 #: includes/shortcodes/EmployeesListShortcode.php:51
 #: includes/shortcodes/LocationsListShortcode.php:51
 #: includes/shortcodes/ServicesListShortcode.php:51
-#: assets/js/gutenberg-blocks.js:11538
-#: assets/js/gutenberg-blocks.js:11833
-#: assets/js/gutenberg-blocks.js:12437
+#: assets/js/gutenberg-blocks.js:11501
+#: assets/js/gutenberg-blocks.js:11796
+#: assets/js/gutenberg-blocks.js:12400
 msgid "Show post excerpt."
 msgstr "Mostra un estratto del post."
 
 #: includes/divi/modules/EmployeesListModule.php:57
 #: includes/elementor/widgets/EmployeesListWidget.php:74
 #: includes/shortcodes/EmployeesListShortcode.php:56
-#: assets/js/gutenberg-blocks.js:11546
+#: assets/js/gutenberg-blocks.js:11509
 msgid "Show contact information."
 msgstr "Mostra informazioni di contatto."
 
 #: includes/divi/modules/EmployeesListModule.php:67
 #: includes/elementor/widgets/EmployeesListWidget.php:84
 #: includes/shortcodes/EmployeesListShortcode.php:61
-#: assets/js/gutenberg-blocks.js:11554
+#: assets/js/gutenberg-blocks.js:11517
 msgid "Show social networks."
 msgstr "Mostra Reti Sociali."
 
 #: includes/divi/modules/EmployeesListModule.php:77
 #: includes/elementor/widgets/EmployeesListWidget.php:94
 #: includes/shortcodes/EmployeesListShortcode.php:66
-#: assets/js/gutenberg-blocks.js:11562
+#: assets/js/gutenberg-blocks.js:11525
 msgid "Show additional information."
 msgstr "Mostra informazioni aggiuntive."
 
@@ -1713,7 +1766,7 @@ msgstr "Mostra informazioni aggiuntive."
 #: includes/elementor/widgets/EmployeesListWidget.php:107
 #: includes/metaboxes/shortcode/EmployeesListMetabox.php:60
 #: includes/shortcodes/EmployeesListShortcode.php:71
-#: assets/js/gutenberg-blocks.js:11571
+#: assets/js/gutenberg-blocks.js:11534
 msgid "Comma-separated slugs or IDs of employees that will be shown."
 msgstr "Chiavi o identificatori separate da virgole o ID dei dipendenti che verranno visualizzati."
 
@@ -1727,8 +1780,8 @@ msgstr "Chiavi o identificatori separate da virgole o ID dei dipendenti che verr
 #: includes/post-types/LocationPostType.php:77
 #: assets/js/analytics-page.js:33420
 #: assets/js/calendar-page.js:45397
-#: assets/js/gutenberg-blocks.js:11579
-#: assets/js/gutenberg-blocks.js:11841
+#: assets/js/gutenberg-blocks.js:11542
+#: assets/js/gutenberg-blocks.js:11804
 msgid "Locations"
 msgstr "Posizioni"
 
@@ -1736,8 +1789,8 @@ msgstr "Posizioni"
 #: includes/elementor/widgets/EmployeesListWidget.php:117
 #: includes/metaboxes/shortcode/EmployeesListMetabox.php:66
 #: includes/shortcodes/EmployeesListShortcode.php:76
-#: assets/js/gutenberg-blocks.js:11580
-#: assets/js/gutenberg-blocks.js:11842
+#: assets/js/gutenberg-blocks.js:11543
+#: assets/js/gutenberg-blocks.js:11805
 msgid "Comma-separated slugs or IDs of locations."
 msgstr "Chiavi o identificatori separate da virgole o ID delle posizioni."
 
@@ -1750,9 +1803,9 @@ msgstr "Chiavi o identificatori separate da virgole o ID delle posizioni."
 #: includes/metaboxes/shortcode/EmployeesListMetabox.php:71
 #: includes/metaboxes/shortcode/LocationsListMetabox.php:68
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:84
-#: assets/js/gutenberg-blocks.js:11588
-#: assets/js/gutenberg-blocks.js:11859
-#: assets/js/gutenberg-blocks.js:12513
+#: assets/js/gutenberg-blocks.js:11551
+#: assets/js/gutenberg-blocks.js:11822
+#: assets/js/gutenberg-blocks.js:12476
 msgid "Posts Per Page"
 msgstr "Post per pagina"
 
@@ -1770,10 +1823,10 @@ msgstr "Post per pagina"
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:96
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:91
 #: includes/widgets/AppointmentFormWidget.php:237
-#: assets/js/gutenberg-blocks.js:11597
-#: assets/js/gutenberg-blocks.js:11868
-#: assets/js/gutenberg-blocks.js:12183
-#: assets/js/gutenberg-blocks.js:12522
+#: assets/js/gutenberg-blocks.js:11560
+#: assets/js/gutenberg-blocks.js:11831
+#: assets/js/gutenberg-blocks.js:12146
+#: assets/js/gutenberg-blocks.js:12485
 msgid "Columns Count"
 msgstr "Conteggio colonne"
 
@@ -1791,10 +1844,10 @@ msgstr "Conteggio colonne"
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:92
 #: includes/shortcodes/AbstractPostsListShortcode.php:29
 #: includes/shortcodes/AbstractTermsListShortcode.php:30
-#: assets/js/gutenberg-blocks.js:11598
-#: assets/js/gutenberg-blocks.js:11869
-#: assets/js/gutenberg-blocks.js:12184
-#: assets/js/gutenberg-blocks.js:12523
+#: assets/js/gutenberg-blocks.js:11561
+#: assets/js/gutenberg-blocks.js:11832
+#: assets/js/gutenberg-blocks.js:12147
+#: assets/js/gutenberg-blocks.js:12486
 msgid "The number of columns in the grid."
 msgstr "Il numero di colonne della griglia."
 
@@ -1808,10 +1861,10 @@ msgstr "Il numero di colonne della griglia."
 #: includes/elementor/widgets/ServicesListWidget.php:178
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:59
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:54
-#: assets/js/gutenberg-blocks.js:11607
-#: assets/js/gutenberg-blocks.js:11878
-#: assets/js/gutenberg-blocks.js:12193
-#: assets/js/gutenberg-blocks.js:12532
+#: assets/js/gutenberg-blocks.js:11570
+#: assets/js/gutenberg-blocks.js:11841
+#: assets/js/gutenberg-blocks.js:12156
+#: assets/js/gutenberg-blocks.js:12495
 msgid "Order By"
 msgstr "Ordina per"
 
@@ -1825,10 +1878,10 @@ msgstr "Ordina per"
 #: includes/elementor/widgets/ServicesListWidget.php:182
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:39
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:40
-#: assets/js/gutenberg-blocks.js:11614
-#: assets/js/gutenberg-blocks.js:11885
-#: assets/js/gutenberg-blocks.js:12200
-#: assets/js/gutenberg-blocks.js:12539
+#: assets/js/gutenberg-blocks.js:11577
+#: assets/js/gutenberg-blocks.js:11848
+#: assets/js/gutenberg-blocks.js:12163
+#: assets/js/gutenberg-blocks.js:12502
 msgid "No order"
 msgstr "Nessun ordine"
 
@@ -1839,9 +1892,9 @@ msgstr "Nessun ordine"
 #: includes/elementor/widgets/LocationsListWidget.php:124
 #: includes/elementor/widgets/ServicesListWidget.php:183
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:40
-#: assets/js/gutenberg-blocks.js:11617
-#: assets/js/gutenberg-blocks.js:11888
-#: assets/js/gutenberg-blocks.js:12542
+#: assets/js/gutenberg-blocks.js:11580
+#: assets/js/gutenberg-blocks.js:11851
+#: assets/js/gutenberg-blocks.js:12505
 msgid "Post ID"
 msgstr "ID articolo"
 
@@ -1852,9 +1905,9 @@ msgstr "ID articolo"
 #: includes/elementor/widgets/LocationsListWidget.php:125
 #: includes/elementor/widgets/ServicesListWidget.php:184
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:41
-#: assets/js/gutenberg-blocks.js:11620
-#: assets/js/gutenberg-blocks.js:11891
-#: assets/js/gutenberg-blocks.js:12545
+#: assets/js/gutenberg-blocks.js:11583
+#: assets/js/gutenberg-blocks.js:11854
+#: assets/js/gutenberg-blocks.js:12508
 msgid "Post author"
 msgstr "Autore"
 
@@ -1868,9 +1921,9 @@ msgstr "Autore"
 #: includes/metaboxes/shortcode/LocationsListMetabox.php:49
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:49
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:42
-#: assets/js/gutenberg-blocks.js:11623
-#: assets/js/gutenberg-blocks.js:11894
-#: assets/js/gutenberg-blocks.js:12548
+#: assets/js/gutenberg-blocks.js:11586
+#: assets/js/gutenberg-blocks.js:11857
+#: assets/js/gutenberg-blocks.js:12511
 msgid "Post title"
 msgstr "Titolo del post"
 
@@ -1881,9 +1934,9 @@ msgstr "Titolo del post"
 #: includes/elementor/widgets/LocationsListWidget.php:127
 #: includes/elementor/widgets/ServicesListWidget.php:186
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:43
-#: assets/js/gutenberg-blocks.js:11626
-#: assets/js/gutenberg-blocks.js:11897
-#: assets/js/gutenberg-blocks.js:12551
+#: assets/js/gutenberg-blocks.js:11589
+#: assets/js/gutenberg-blocks.js:11860
+#: assets/js/gutenberg-blocks.js:12514
 msgid "Post name (post slug)"
 msgstr "Nome del post ( slug del post)"
 
@@ -1894,9 +1947,9 @@ msgstr "Nome del post ( slug del post)"
 #: includes/elementor/widgets/LocationsListWidget.php:128
 #: includes/elementor/widgets/ServicesListWidget.php:187
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:44
-#: assets/js/gutenberg-blocks.js:11629
-#: assets/js/gutenberg-blocks.js:11900
-#: assets/js/gutenberg-blocks.js:12554
+#: assets/js/gutenberg-blocks.js:11592
+#: assets/js/gutenberg-blocks.js:11863
+#: assets/js/gutenberg-blocks.js:12517
 msgid "Post date"
 msgstr "Data del post"
 
@@ -1907,9 +1960,9 @@ msgstr "Data del post"
 #: includes/elementor/widgets/LocationsListWidget.php:129
 #: includes/elementor/widgets/ServicesListWidget.php:188
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:45
-#: assets/js/gutenberg-blocks.js:11632
-#: assets/js/gutenberg-blocks.js:11903
-#: assets/js/gutenberg-blocks.js:12557
+#: assets/js/gutenberg-blocks.js:11595
+#: assets/js/gutenberg-blocks.js:11866
+#: assets/js/gutenberg-blocks.js:12520
 msgid "Last modified date"
 msgstr "Data dell'ultima modifica"
 
@@ -1920,9 +1973,9 @@ msgstr "Data dell'ultima modifica"
 #: includes/elementor/widgets/LocationsListWidget.php:130
 #: includes/elementor/widgets/ServicesListWidget.php:189
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:46
-#: assets/js/gutenberg-blocks.js:11635
-#: assets/js/gutenberg-blocks.js:11906
-#: assets/js/gutenberg-blocks.js:12560
+#: assets/js/gutenberg-blocks.js:11598
+#: assets/js/gutenberg-blocks.js:11869
+#: assets/js/gutenberg-blocks.js:12523
 msgid "Random order"
 msgstr "Ordine casuale"
 
@@ -1933,9 +1986,9 @@ msgstr "Ordine casuale"
 #: includes/elementor/widgets/LocationsListWidget.php:131
 #: includes/elementor/widgets/ServicesListWidget.php:190
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:47
-#: assets/js/gutenberg-blocks.js:11638
-#: assets/js/gutenberg-blocks.js:11909
-#: assets/js/gutenberg-blocks.js:12563
+#: assets/js/gutenberg-blocks.js:11601
+#: assets/js/gutenberg-blocks.js:11872
+#: assets/js/gutenberg-blocks.js:12526
 msgid "Relevance"
 msgstr "Pertinenza"
 
@@ -1949,10 +2002,10 @@ msgstr "Pertinenza"
 #: includes/elementor/widgets/ServicesListWidget.php:191
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:48
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:48
-#: assets/js/gutenberg-blocks.js:11641
-#: assets/js/gutenberg-blocks.js:11912
-#: assets/js/gutenberg-blocks.js:12224
-#: assets/js/gutenberg-blocks.js:12566
+#: assets/js/gutenberg-blocks.js:11604
+#: assets/js/gutenberg-blocks.js:11875
+#: assets/js/gutenberg-blocks.js:12187
+#: assets/js/gutenberg-blocks.js:12529
 msgid "Page order"
 msgstr "Ordine pagine"
 
@@ -1963,9 +2016,9 @@ msgstr "Ordine pagine"
 #: includes/elementor/widgets/LocationsListWidget.php:133
 #: includes/elementor/widgets/ServicesListWidget.php:192
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:49
-#: assets/js/gutenberg-blocks.js:11644
-#: assets/js/gutenberg-blocks.js:11915
-#: assets/js/gutenberg-blocks.js:12569
+#: assets/js/gutenberg-blocks.js:11607
+#: assets/js/gutenberg-blocks.js:11878
+#: assets/js/gutenberg-blocks.js:12532
 msgid "Page order and post title"
 msgstr "Ordine della pagina e titolo del post"
 
@@ -1977,10 +2030,10 @@ msgstr "Ordine della pagina e titolo del post"
 #: includes/elementor/widgets/LocationsListWidget.php:146
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:178
 #: includes/elementor/widgets/ServicesListWidget.php:206
-#: assets/js/gutenberg-blocks.js:11654
-#: assets/js/gutenberg-blocks.js:11925
-#: assets/js/gutenberg-blocks.js:12234
-#: assets/js/gutenberg-blocks.js:12582
+#: assets/js/gutenberg-blocks.js:11617
+#: assets/js/gutenberg-blocks.js:11888
+#: assets/js/gutenberg-blocks.js:12197
+#: assets/js/gutenberg-blocks.js:12545
 msgid "DESC"
 msgstr "DESC"
 
@@ -1994,24 +2047,24 @@ msgstr "DESC"
 #: includes/elementor/widgets/ServicesListWidget.php:207
 #: includes/shortcodes/AbstractPostsListShortcode.php:42
 #: includes/shortcodes/AbstractTermsListShortcode.php:43
-#: assets/js/gutenberg-blocks.js:11657
-#: assets/js/gutenberg-blocks.js:11928
-#: assets/js/gutenberg-blocks.js:12237
-#: assets/js/gutenberg-blocks.js:12585
+#: assets/js/gutenberg-blocks.js:11620
+#: assets/js/gutenberg-blocks.js:11891
+#: assets/js/gutenberg-blocks.js:12200
+#: assets/js/gutenberg-blocks.js:12548
 msgid "ASC"
 msgstr "ASC"
 
 #: includes/divi/modules/EmployeeSocialNetworksModule.php:20
 #: includes/elementor/widgets/EmployeeSocialNetworksWidget.php:25
 #: includes/shortcodes/single-employee/EmployeeSocialNetworksShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13494
+#: assets/js/gutenberg-blocks.js:13457
 msgid "Employee Social Networks"
 msgstr "Reti sociali dei dipendenti"
 
 #: includes/divi/modules/EmployeeTitleModule.php:20
 #: includes/elementor/widgets/EmployeeTitleWidget.php:25
 #: includes/shortcodes/single-employee/EmployeeTitleShortcode.php:29
-#: assets/js/gutenberg-blocks.js:12879
+#: assets/js/gutenberg-blocks.js:12842
 msgid "Employee Title"
 msgstr "Titolo del dipendente"
 
@@ -2019,7 +2072,7 @@ msgstr "Titolo del dipendente"
 #: includes/elementor/widgets/LocationsListWidget.php:25
 #: includes/metaboxes/shortcode/LocationsListMetabox.php:29
 #: includes/shortcodes/LocationsListShortcode.php:29
-#: assets/js/gutenberg-blocks.js:11976
+#: assets/js/gutenberg-blocks.js:11939
 msgid "Locations List"
 msgstr "Elenco delle posizioni"
 
@@ -2041,9 +2094,9 @@ msgstr "Chiavi o identificatori separate da virgole o ID delle posizioni che ver
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:72
 #: includes/post-types/LocationPostType.php:124
 #: includes/post-types/ServicePostType.php:164
-#: assets/js/gutenberg-blocks.js:11850
-#: assets/js/gutenberg-blocks.js:12136
-#: assets/js/gutenberg-blocks.js:12495
+#: assets/js/gutenberg-blocks.js:11813
+#: assets/js/gutenberg-blocks.js:12099
+#: assets/js/gutenberg-blocks.js:12458
 msgid "Categories"
 msgstr "Categorie"
 
@@ -2059,9 +2112,9 @@ msgstr "Categorie"
 #: includes/shortcodes/LocationsListShortcode.php:61
 #: includes/shortcodes/ServiceCategoriesShortcode.php:64
 #: includes/shortcodes/ServicesListShortcode.php:86
-#: assets/js/gutenberg-blocks.js:11851
-#: assets/js/gutenberg-blocks.js:12137
-#: assets/js/gutenberg-blocks.js:12496
+#: assets/js/gutenberg-blocks.js:11814
+#: assets/js/gutenberg-blocks.js:12100
+#: assets/js/gutenberg-blocks.js:12459
 msgid "Comma-separated slugs or IDs of categories that will be shown."
 msgstr "Chiavi o identificatori separate da virgole o ID delle categorie che verranno visualizzate."
 
@@ -2071,26 +2124,26 @@ msgstr "Chiavi o identificatori separate da virgole o ID delle categorie che ver
 #: includes/post-types/ServicePostType.php:149
 #: includes/post-types/ServicePostType.php:252
 #: includes/shortcodes/ServiceCategoriesShortcode.php:31
-#: assets/js/gutenberg-blocks.js:12285
+#: assets/js/gutenberg-blocks.js:12248
 msgid "Service Categories"
 msgstr "Categorie di servizi"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:37
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:53
-#: assets/js/gutenberg-blocks.js:12111
+#: assets/js/gutenberg-blocks.js:12074
 msgid "Show Services Count?"
 msgstr "Mostrare il conteggio dei servizi?"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:47
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:63
-#: assets/js/gutenberg-blocks.js:12119
+#: assets/js/gutenberg-blocks.js:12082
 msgid "Show Description?"
 msgstr "Mostrare la descrizione?"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:57
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:73
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:56
-#: assets/js/gutenberg-blocks.js:12127
+#: assets/js/gutenberg-blocks.js:12090
 msgid "Parent"
 msgstr "Superiore"
 
@@ -2098,14 +2151,14 @@ msgstr "Superiore"
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:76
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:57
 #: includes/shortcodes/ServiceCategoriesShortcode.php:58
-#: assets/js/gutenberg-blocks.js:12128
+#: assets/js/gutenberg-blocks.js:12091
 msgid "Parent term slug or ID to retrieve direct-child terms from."
 msgstr "Slug o ID del termine superiore da cui recuperare i termini diretti di categoria inferiore."
 
 #: includes/divi/modules/ServiceCategoriesModule.php:69
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:93
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:68
-#: assets/js/gutenberg-blocks.js:12145
+#: assets/js/gutenberg-blocks.js:12108
 msgid "Exclude Categories"
 msgstr "Escludi Categorie"
 
@@ -2113,21 +2166,21 @@ msgstr "Escludi Categorie"
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:96
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:69
 #: includes/shortcodes/ServiceCategoriesShortcode.php:69
-#: assets/js/gutenberg-blocks.js:12146
+#: assets/js/gutenberg-blocks.js:12109
 msgid "Comma-separated slugs or IDs of categories that will not be shown."
 msgstr "Chiavi o identificatori separate da virgole o ID delle categorie che non verranno visualizzate."
 
 #: includes/divi/modules/ServiceCategoriesModule.php:75
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:103
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:74
-#: assets/js/gutenberg-blocks.js:12154
+#: assets/js/gutenberg-blocks.js:12117
 msgid "Hide Empty"
 msgstr "Nascondi vuoti"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:85
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:114
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:80
-#: assets/js/gutenberg-blocks.js:12163
+#: assets/js/gutenberg-blocks.js:12126
 msgid "Depth"
 msgstr "Profondità"
 
@@ -2135,14 +2188,14 @@ msgstr "Profondità"
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:115
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:81
 #: includes/shortcodes/ServiceCategoriesShortcode.php:79
-#: assets/js/gutenberg-blocks.js:12164
+#: assets/js/gutenberg-blocks.js:12127
 msgid "Display depth of child categories."
 msgstr "Visualizza tutte le categorie inferiori."
 
 #: includes/divi/modules/ServiceCategoriesModule.php:97
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:127
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:88
-#: assets/js/gutenberg-blocks.js:12173
+#: assets/js/gutenberg-blocks.js:12136
 msgid "Number"
 msgstr "Numero"
 
@@ -2150,56 +2203,56 @@ msgstr "Numero"
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:128
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:89
 #: includes/shortcodes/AbstractTermsListShortcode.php:24
-#: assets/js/gutenberg-blocks.js:12174
+#: assets/js/gutenberg-blocks.js:12137
 msgid "Maximum number of categories to show."
 msgstr "Numero massimo di categorie da visualizzare."
 
 #: includes/divi/modules/ServiceCategoriesModule.php:126
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:158
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:41
-#: assets/js/gutenberg-blocks.js:12203
+#: assets/js/gutenberg-blocks.js:12166
 msgid "Term name"
 msgstr "Nome del termine"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:127
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:159
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:42
-#: assets/js/gutenberg-blocks.js:12206
+#: assets/js/gutenberg-blocks.js:12169
 msgid "Term slug"
 msgstr "Slug del termine"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:128
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:160
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:43
-#: assets/js/gutenberg-blocks.js:12209
+#: assets/js/gutenberg-blocks.js:12172
 msgid "Term ID"
 msgstr "ID termine"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:129
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:161
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:44
-#: assets/js/gutenberg-blocks.js:12212
+#: assets/js/gutenberg-blocks.js:12175
 msgid "Parent ID"
 msgstr "ID superiore"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:130
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:162
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:45
-#: assets/js/gutenberg-blocks.js:12215
+#: assets/js/gutenberg-blocks.js:12178
 msgid "Number of associated objects"
 msgstr "Numero di oggetti associati"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:131
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:163
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:46
-#: assets/js/gutenberg-blocks.js:12218
+#: assets/js/gutenberg-blocks.js:12181
 msgid "Keep the order of \"IDs\" parameter"
 msgstr "Mantieni l'ordine del parametro \"ID\""
 
 #: includes/divi/modules/ServiceCategoriesModule.php:132
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:164
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:47
-#: assets/js/gutenberg-blocks.js:12221
+#: assets/js/gutenberg-blocks.js:12184
 msgid "Term order"
 msgstr "Ordine del termine"
 
@@ -2207,35 +2260,35 @@ msgstr "Ordine del termine"
 #: includes/elementor/widgets/ServicesListWidget.php:24
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:29
 #: includes/shortcodes/ServicesListShortcode.php:29
-#: assets/js/gutenberg-blocks.js:12633
+#: assets/js/gutenberg-blocks.js:12596
 msgid "Services List"
 msgstr "Elenco dei servizi"
 
 #: includes/divi/modules/ServicesListModule.php:57
 #: includes/elementor/widgets/ServicesListWidget.php:73
 #: includes/shortcodes/ServicesListShortcode.php:56
-#: assets/js/gutenberg-blocks.js:12445
+#: assets/js/gutenberg-blocks.js:12408
 msgid "Show service price."
 msgstr "Mostra il prezzo dei servizi."
 
 #: includes/divi/modules/ServicesListModule.php:67
 #: includes/elementor/widgets/ServicesListWidget.php:83
 #: includes/shortcodes/ServicesListShortcode.php:61
-#: assets/js/gutenberg-blocks.js:12453
+#: assets/js/gutenberg-blocks.js:12416
 msgid "Show service duration."
 msgstr "Mostra la durata del servizio."
 
 #: includes/divi/modules/ServicesListModule.php:77
 #: includes/elementor/widgets/ServicesListWidget.php:93
 #: includes/shortcodes/ServicesListShortcode.php:66
-#: assets/js/gutenberg-blocks.js:12461
+#: assets/js/gutenberg-blocks.js:12424
 msgid "Show service capacity."
 msgstr "Mostra la capacità dei servizio."
 
 #: includes/divi/modules/ServicesListModule.php:87
 #: includes/elementor/widgets/ServicesListWidget.php:103
 #: includes/shortcodes/ServicesListShortcode.php:71
-#: assets/js/gutenberg-blocks.js:12469
+#: assets/js/gutenberg-blocks.js:12432
 msgid "Show service employees."
 msgstr "Mostra i dipendenti del servizio."
 
@@ -2243,7 +2296,7 @@ msgstr "Mostra i dipendenti del servizio."
 #: includes/elementor/widgets/ServicesListWidget.php:116
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:61
 #: includes/shortcodes/ServicesListShortcode.php:76
-#: assets/js/gutenberg-blocks.js:12478
+#: assets/js/gutenberg-blocks.js:12441
 msgid "Comma-separated slugs or IDs of services that will be shown."
 msgstr "Chiavi o identificatori separate da virgole o ID dei servizi che verranno visualizzati."
 
@@ -2251,7 +2304,7 @@ msgstr "Chiavi o identificatori separate da virgole o ID dei servizi che verrann
 #: includes/elementor/widgets/ServicesListWidget.php:126
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:67
 #: includes/shortcodes/ServicesListShortcode.php:81
-#: assets/js/gutenberg-blocks.js:12487
+#: assets/js/gutenberg-blocks.js:12450
 msgid "Comma-separated slugs or IDs of employees that perform these services."
 msgstr "Chiavi o identificatori separate da virgole o ID dei dipendenti che eseguiranno questi servizi."
 
@@ -2259,7 +2312,7 @@ msgstr "Chiavi o identificatori separate da virgole o ID dei dipendenti che eseg
 #: includes/elementor/widgets/ServicesListWidget.php:143
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:78
 #: includes/post-types/ServicePostType.php:210
-#: assets/js/gutenberg-blocks.js:12504
+#: assets/js/gutenberg-blocks.js:12467
 msgid "Tags"
 msgstr "Tag"
 
@@ -2267,7 +2320,7 @@ msgstr "Tag"
 #: includes/metaboxes/shortcode/AppointmentFormLabelsMetabox.php:75
 #: includes/shortcodes/AppointmentFormShortcode.php:98
 #: includes/widgets/AppointmentFormWidget.php:197
-#: assets/js/gutenberg-blocks.js:3389
+#: assets/js/gutenberg-blocks.js:3342
 msgid "Custom label for the unselected service category, location and employee fields."
 msgstr "Etichetta personalizzata per la categoria, la posizione e il dipendente del servizio deselezionato."
 
@@ -2351,14 +2404,14 @@ msgid "Style"
 msgstr "Stile"
 
 #: includes/elementor/widgets/AppointmentFormWidget.php:318
-#: assets/js/gutenberg-blocks.js:3441
+#: assets/js/gutenberg-blocks.js:3394
 msgid "These options only affect what you see on the front end."
 msgstr ""
 
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:105
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:75
 #: includes/shortcodes/ServiceCategoriesShortcode.php:74
-#: assets/js/gutenberg-blocks.js:12155
+#: assets/js/gutenberg-blocks.js:12118
 msgid "Hide terms not assigned to any posts."
 msgstr "Nascondi i termini non ancora assegnati ad alcun post."
 
@@ -2387,17 +2440,17 @@ msgid "Other Recipients"
 msgstr "Altri destinatari"
 
 #: includes/emails/AbstractEmail.php:325
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:94
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:98
 msgid "You can use multiple comma-separated email addresses."
 msgstr "Puoi utilizzare più indirizzi email separati da virgole."
 
 #: includes/emails/AbstractEmail.php:331
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:131
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:135
 msgid "Subject"
 msgstr "Oggetto"
 
 #: includes/emails/AbstractEmail.php:338
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:142
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:146
 msgid "Header"
 msgstr "Intestazione"
 
@@ -2523,51 +2576,61 @@ msgstr "La prenotazione #{booking_id} è stata ricevuta"
 
 #. Translators: %s: Email name, like "New Booking Email".
 #: includes/emails/EmailsDispatcher.php:369
+#, php-format
 msgid "\"%s\" email will not be sent: there are no recipients."
 msgstr "L'email \"%s\" non sarà inviata: non ci sono destinatari."
 
 #. Translators: %s: Notification post title.
 #: includes/emails/EmailsDispatcher.php:374
+#, php-format
 msgid "Notification \"%s\" will not be sent: there is no email address to send the notification to."
 msgstr "La notifica \"%s\" non verrà inviata: non è presente alcun indirizzo email a cui inviarla."
 
 #. Translators: %s: Email name, like "New Booking Email".
 #: includes/emails/EmailsDispatcher.php:393
+#, php-format
 msgid "\"%s\" email was sent to admin."
 msgstr "L'email \"%s\" è stata inviata all'amministratore."
 
 #. Translators: %s: Email name, like "New Booking Email".
 #: includes/emails/EmailsDispatcher.php:398
+#, php-format
 msgid "\"%s\" email was sent to customer."
 msgstr "L'email \"%s\" è stata inviata al cliente."
 
 #. Translators: %s: Notification post title.
 #: includes/emails/EmailsDispatcher.php:403
+#, php-format
 msgid "Notification \"%s\" was sent."
 msgstr "La notifica \"%s\" è stata inviata."
 
 #. Translators: %s: Email name, like "New Booking Email".
 #: includes/emails/EmailsDispatcher.php:409
+#, php-format
 msgid "\"%s\" email was sent."
 msgstr "L'email \"%s\" è stata inviata."
 
 #. Translators: %s: Email name, like "New Booking Email".
 #: includes/emails/EmailsDispatcher.php:416
+#, php-format
 msgid "\"%s\" mail sending to admin is failed."
 msgstr "\"%s\" l'invio della mail all'amministratore è fallito."
 
 #. Translators: %s: Email name, like "New Booking Email".
 #: includes/emails/EmailsDispatcher.php:421
+#, php-format
 msgid "\"%s\" mail sending to customer is failed."
 msgstr "L'invio dell'email \"%s\" al cliente è fallito."
 
 #. Translators: %s: Notification post title.
 #: includes/emails/EmailsDispatcher.php:426
+#, php-format
 msgid "Notification \"%s\" sending failed."
 msgstr "Invio della notifica \"%s\" non riuscito."
 
 #. Translators: %s: Email name, like "New Booking Email".
 #: includes/emails/EmailsDispatcher.php:432
+#, php-format
 msgid "\"%s\" mail sending is failed."
 msgstr "\"%s\" l'invio della mail è fallito."
 
@@ -2606,10 +2669,10 @@ msgstr "ID della prenotazione"
 #: includes/emails/tags/booking/BookingLeftToPayTag.php:19
 #: templates/emails/admin/admin-approved-booking-email.php:29
 #: templates/emails/customer/customer-approved-payment-email.php:24
-#: assets/js/divi-modules.js:6043
-#: assets/js/elementor-widgets.js:6043
-#: assets/js/gutenberg-blocks.js:6482
-#: assets/js/public.js:6043
+#: assets/js/divi-modules.js:6000
+#: assets/js/elementor-widgets.js:6000
+#: assets/js/gutenberg-blocks.js:6439
+#: assets/js/public.js:6000
 msgid "Left to pay"
 msgstr "Da pagare"
 
@@ -2756,6 +2819,7 @@ msgstr "Nome del servizio"
 #: includes/emails/tags/service/ServiceNotificationNotice2Tag.php:20
 #: includes/metaboxes/service/ServiceNoticesMetabox.php:30
 #: includes/metaboxes/service/ServiceNoticesMetabox.php:37
+#, php-format
 msgid "Notification notice %d"
 msgstr ""
 
@@ -2818,7 +2882,7 @@ msgstr "Utilizzato per il tag {reservations_details} nelle email del cliente."
 #: includes/entities/Customer.php:199
 #: includes/rest/controllers/motopress/appointment/v1/CustomersRestController.php:50
 #: includes/rest/controllers/motopress/appointment/v1/CustomersRestController.php:177
-#: includes/services/BookingService.php:112
+#: includes/services/BookingService.php:114
 msgid "Please provide a valid email address."
 msgstr "Per favore, fornisci un indirizzo email valido."
 
@@ -2852,6 +2916,7 @@ msgstr "Rimuovi immagine"
 #. translators: %s is phone number string
 #: includes/fields/basic/MultiplePhoneField.php:46
 #: includes/fields/basic/PhoneField.php:48
+#, php-format
 msgid "Phone number %s is invalid."
 msgstr ""
 
@@ -2896,7 +2961,7 @@ msgstr "Nessun articolo trovato"
 #: assets/js/divi-modules.js:3551
 #: assets/js/edit-post.js:2101
 #: assets/js/edit-post.js:4828
-#: assets/js/edit-post.js:8829
+#: assets/js/edit-post.js:8782
 #: assets/js/elementor-widgets.js:3551
 #: assets/js/gutenberg-blocks.js:1855
 #: assets/js/public.js:3551
@@ -2908,12 +2973,12 @@ msgstr "Tutto il giorno"
 #: includes/fields/complex/DaysOffField.php:100
 #: templates/shortcodes/booking/cart/admin-cart-item.php:113
 #: templates/shortcodes/booking/step-cart.php:72
-#: assets/js/divi-modules.js:6000
+#: assets/js/divi-modules.js:5957
 #: assets/js/edit-post.js:2051
 #: assets/js/edit-post.js:2283
-#: assets/js/elementor-widgets.js:6000
-#: assets/js/gutenberg-blocks.js:6439
-#: assets/js/public.js:6000
+#: assets/js/elementor-widgets.js:5957
+#: assets/js/gutenberg-blocks.js:6396
+#: assets/js/public.js:5957
 msgid "Remove"
 msgstr "Rimuovere"
 
@@ -3020,7 +3085,8 @@ msgstr "Annulla"
 
 #. Translators: %s: Location name, like "Barbershop".
 #: includes/fields/complex/TimetableField.php:241
-#: assets/js/edit-post.js:8844
+#: assets/js/edit-post.js:8797
+#, php-format,js-format
 msgctxt "Working at %s"
 msgid "at %s"
 msgstr "alle %s"
@@ -3081,6 +3147,7 @@ msgstr "Capacità"
 
 #. Translators: %d: Booking ID.
 #: includes/functions/misc.php:402
+#, php-format
 msgctxt "Product name for payment gateway"
 msgid "Booking #%d"
 msgstr "Prenotazione #%d"
@@ -3100,11 +3167,13 @@ msgstr "Necessario"
 
 #. Translators: %s: HTML tag.
 #: includes/functions/template.php:514
+#, php-format
 msgid "Required fields are followed by %s."
 msgstr "I campi obbligatori sono seguiti da %s."
 
 #. Translators: %d: The count of the associated employees.
 #: includes/functions/template.php:740
+#, php-format
 msgid "%d employee"
 msgid_plural "%d employees"
 msgstr[0] "%d dipendente"
@@ -3112,18 +3181,21 @@ msgstr[1] "%d dipendenti"
 
 #. Translators: %d: The amount of days.
 #: includes/functions/time.php:45
+#, php-format
 msgctxt "Duration (days)"
 msgid "%dd"
 msgstr "%dg"
 
 #. Translators: %d: The amount of hours.
 #: includes/functions/time.php:50
+#, php-format
 msgctxt "Duration (hours)"
 msgid "%dh"
 msgstr "%dh"
 
 #. Translators: %d: The amount of minutes.
 #: includes/functions/time.php:55
+#, php-format
 msgctxt "Duration (minutes)"
 msgid "%dm"
 msgstr "%dm"
@@ -3144,16 +3216,19 @@ msgstr ""
 
 #. translators: %1$d is a notification id and %2$d is a reservation id
 #: includes/handlers/notification/AbstractSMSNotificationSender.php:54
+#, php-format
 msgid "Could not send an SMS notification [id = %1$d] because the recipient's list is empty for reservation [id = %2$d]."
 msgstr ""
 
 #. translators: %1$s is the title of the notification, %2$s is a receiver key such as admin, customer, etc.
 #: includes/handlers/notification/AbstractSMSNotificationSender.php:110
+#, php-format
 msgid "SMS notification \"%1$s\" to %2$s was sent successfully."
 msgstr ""
 
 #. translators: %1$s is the title of the notification, %2$s is a receiver key such as admin, customer, etc.
 #: includes/handlers/notification/AbstractSMSNotificationSender.php:120
+#, php-format
 msgid "SMS notification \"%1$s\" to %2$s failed."
 msgstr ""
 
@@ -3265,6 +3340,7 @@ msgstr ""
 
 #. translators: %1$s is Placeholder for the draft page link.
 #: includes/handlers/WizardHandler.php:628
+#, php-format
 msgid "Your draft page with the form: %1$s"
 msgstr ""
 
@@ -3314,11 +3390,11 @@ msgstr ""
 
 #: includes/helpers/PriceCalculationHelper.php:50
 #: includes/helpers/PriceCalculationHelper.php:122
-#: assets/js/divi-modules.js:6081
+#: assets/js/divi-modules.js:6038
 #: assets/js/edit-post.js:1602
-#: assets/js/elementor-widgets.js:6081
-#: assets/js/gutenberg-blocks.js:6520
-#: assets/js/public.js:6081
+#: assets/js/elementor-widgets.js:6038
+#: assets/js/gutenberg-blocks.js:6477
+#: assets/js/public.js:6038
 msgctxt "Zero price"
 msgid "Free"
 msgstr "Liberamente"
@@ -3425,12 +3501,13 @@ msgstr "Prezzo della prenotazione"
 #. Translators: %d: Booking ID.
 #: includes/metaboxes/booking/BookingPriceMetabox.php:141
 #: includes/repositories/BookingRepository.php:113
+#, php-format
 msgid "Booking #%d"
 msgstr "Prenotazione #%d"
 
 #: includes/metaboxes/booking/BookingPriceMetabox.php:186
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:118
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:278
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:129
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:295
 msgid "Sorry, the selected time slot is already booked."
 msgstr ""
 
@@ -3537,6 +3614,7 @@ msgstr ""
 
 #. translators: %s is the employee's name
 #: includes/metaboxes/employee/EmployeeContactsMetabox.php:96
+#, php-format
 msgid "Invalid user email because another employee ( %s ) already has it!"
 msgstr ""
 
@@ -3544,15 +3622,15 @@ msgstr ""
 msgid "Employee Google Calendar"
 msgstr "Google Calendar del Dipendente"
 
-#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:73
+#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:75
 msgid "Connected"
 msgstr "Connesso"
 
-#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:77
+#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:79
 msgid "Disconnect Calendar"
 msgstr "Disconnetti Calendario"
 
-#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:85
+#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:87
 msgid "Connect to Calendar"
 msgstr "Collegati al Calendario"
 
@@ -3586,28 +3664,28 @@ msgstr ""
 msgid "Time at which the notification must be sent (only for daily ones)."
 msgstr ""
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:82
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:84
 msgid "Custom Contacts"
 msgstr ""
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:93
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:97
 msgid "Custom Email Addresses"
 msgstr "Indirizzi email personalizzati"
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:104
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:108
 msgid "Custom Phone Numbers"
 msgstr ""
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:105
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:109
 msgid "You can use multiple comma-separated phone numbers in international format."
 msgstr ""
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:115
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:153
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:119
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:157
 msgid "Message"
 msgstr "Messaggio"
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:119
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:123
 msgid "{service_name} on {reservation_date} at {start_time} has been booked. {employee_name} is waiting for you at {location_name}"
 msgstr ""
 
@@ -3621,6 +3699,7 @@ msgstr "Salva questa notifica e inviala all'amministratore."
 
 #. translators: %1$s, %2$s, %2$s - urls for admin pages
 #: includes/metaboxes/notification/TestNotificationMetabox.php:37
+#, php-format
 msgid "To be able to send a test notification, make sure you have at least one <a href=\"%1$s\">confirmed booking</a> and an administrator contact set in the <a href=\"%2$s\">Notification Settings</a>! If you want to test sending service notices in the Notification Message, make sure you have added Service Notice 1/Notice 2 to your <a href=\"%3$s\">Services</a>."
 msgstr ""
 
@@ -3630,6 +3709,7 @@ msgstr "Invia notifica di test"
 
 #. translators: %s is integer id of the notification
 #: includes/metaboxes/notification/TestNotificationMetabox.php:64
+#, php-format
 msgid "Could not send a notification [id = %s] because it was not found."
 msgstr ""
 
@@ -3901,6 +3981,7 @@ msgstr "Articolo"
 
 #. Translators: %s: The post type name, like "Service".
 #: includes/metaboxes/SubmitMetabox.php:177
+#, php-format
 msgid "Update %s"
 msgstr "Aggiorna %s"
 
@@ -4000,38 +4081,38 @@ msgstr "Carta di credito (Stripe)"
 msgid "Pay with your credit card via Stripe. Use the card number 4242424242424242 with CVC 123, a valid expiration date and random 5-digit ZIP-code to test a payment."
 msgstr "Paga con la tua carta di credito tramite Stripe. Utilizza il numero di carta 42424242424242 con CVC 123, una data di scadenza valida e CAP casuale a 5 cifre per testare un pagamento."
 
-#: assets/js/divi-modules.js:8409
-#: assets/js/elementor-widgets.js:8409
-#: assets/js/gutenberg-blocks.js:8848
-#: assets/js/public.js:8409
+#: assets/js/divi-modules.js:8366
+#: assets/js/elementor-widgets.js:8366
+#: assets/js/gutenberg-blocks.js:8805
+#: assets/js/public.js:8366
 msgid "Bancontact"
 msgstr "Bancontact"
 
-#: assets/js/divi-modules.js:8436
-#: assets/js/elementor-widgets.js:8436
-#: assets/js/gutenberg-blocks.js:8875
-#: assets/js/public.js:8436
+#: assets/js/divi-modules.js:8393
+#: assets/js/elementor-widgets.js:8393
+#: assets/js/gutenberg-blocks.js:8832
+#: assets/js/public.js:8393
 msgid "iDEAL"
 msgstr "iDEAL"
 
-#: assets/js/divi-modules.js:8474
-#: assets/js/elementor-widgets.js:8474
-#: assets/js/gutenberg-blocks.js:8913
-#: assets/js/public.js:8474
+#: assets/js/divi-modules.js:8431
+#: assets/js/elementor-widgets.js:8431
+#: assets/js/gutenberg-blocks.js:8870
+#: assets/js/public.js:8431
 msgid "Giropay"
 msgstr "Giropay"
 
-#: assets/js/divi-modules.js:8374
-#: assets/js/elementor-widgets.js:8374
-#: assets/js/gutenberg-blocks.js:8813
-#: assets/js/public.js:8374
+#: assets/js/divi-modules.js:8331
+#: assets/js/elementor-widgets.js:8331
+#: assets/js/gutenberg-blocks.js:8770
+#: assets/js/public.js:8331
 msgid "SEPA Direct Debit"
 msgstr "Addebito diretto SEPA"
 
-#: assets/js/divi-modules.js:8501
-#: assets/js/elementor-widgets.js:8501
-#: assets/js/gutenberg-blocks.js:8940
-#: assets/js/public.js:8501
+#: assets/js/divi-modules.js:8458
+#: assets/js/elementor-widgets.js:8458
+#: assets/js/gutenberg-blocks.js:8897
+#: assets/js/public.js:8458
 msgid "SOFORT"
 msgstr "SOFORT"
 
@@ -4049,31 +4130,37 @@ msgstr "Il pagamento viene rimborsato da parte di PayPal."
 
 #. Translators: %s: Stripe Payment Intent ID.
 #: includes/payments/gateways/webhooks/StripeWebhooksListener.php:142
+#, php-format
 msgid "Webhook received. Payment intent %s was canceled by customer."
 msgstr "Webhook ricevuto. Intento di pagamento %s annullato dal cliente."
 
 #. Translators: %s: Stripe Payment Intent ID.
 #: includes/payments/gateways/webhooks/StripeWebhooksListener.php:148
+#, php-format
 msgid "Webhook received. Payment intent %s failed and couldn't be processed."
 msgstr "Webhook ricevuto. L'intento di pagamento %s non è riuscito e non può essere elaborato."
 
 #. Translators: %s: Stripe Payment Intent ID.
 #: includes/payments/gateways/webhooks/StripeWebhooksListener.php:154
+#, php-format
 msgid "Webhook received. Payment intent %s is waiting for customer confirmation."
 msgstr "Webhook ricevuto. L'intento di pagamento %s è in attesa di conferma da parte del cliente."
 
 #. Translators: %s: Stripe Payment Intent ID.
 #: includes/payments/gateways/webhooks/StripeWebhooksListener.php:184
+#, php-format
 msgid "Webhook received. Payment intent %s succeeded."
 msgstr "Webhook ricevuto. L'intento di pagamento %s è riuscito."
 
 #. Translators: %s: Stripe Charge ID.
 #: includes/payments/gateways/webhooks/StripeWebhooksListener.php:206
+#, php-format
 msgid "Webhook received. Charge %s failed."
 msgstr "Webhook ricevuto. La ricerica %s non è riuscita."
 
 #. Translators: %s: Stripe Charge ID.
 #: includes/payments/gateways/webhooks/StripeWebhooksListener.php:212
+#, php-format
 msgid "Webhook received. Charge %s refunded."
 msgstr ""
 
@@ -4353,6 +4440,7 @@ msgstr ""
 
 #. Translators: %d: Payment ID.
 #: includes/post-types/PaymentPostType.php:66
+#, php-format
 msgid "Payment #%d"
 msgstr "Pagamento #%d"
 
@@ -4637,6 +4725,7 @@ msgstr "In attesa"
 #. Translators: %s: The posts count.
 #: includes/post-types/statuses/BookingStatuses.php:33
 #: includes/post-types/statuses/PaymentStatuses.php:40
+#, php-format
 msgid "Pending <span class=\"count\">(%s)</span>"
 msgid_plural "Pending <span class=\"count\">(%s)</span>"
 msgstr[0] "In attesa <span class=\"count\">(%s)</span>"
@@ -4649,6 +4738,7 @@ msgstr "Annullato"
 
 #. Translators: %s: The posts count.
 #: includes/post-types/statuses/BookingStatuses.php:42
+#, php-format
 msgid "Cancelled <span class=\"count\">(%s)</span>"
 msgid_plural "Cancelled <span class=\"count\">(%s)</span>"
 msgstr[0] "Annullati <span class=\"count\">(%s)</span>"
@@ -4662,6 +4752,7 @@ msgstr "Abbandonato"
 #. Translators: %s: The posts count.
 #: includes/post-types/statuses/BookingStatuses.php:51
 #: includes/post-types/statuses/PaymentStatuses.php:76
+#, php-format
 msgid "Abandoned <span class=\"count\">(%s)</span>"
 msgid_plural "Abandoned <span class=\"count\">(%s)</span>"
 msgstr[0] "Abbandonati <span class=\"count\">(%s)</span>"
@@ -4674,6 +4765,7 @@ msgstr "Confermato"
 
 #. Translators: %s: The posts count.
 #: includes/post-types/statuses/BookingStatuses.php:60
+#, php-format
 msgid "Confirmed <span class=\"count\">(%s)</span>"
 msgid_plural "Confirmed <span class=\"count\">(%s)</span>"
 msgstr[0] "Confermati <span class=\"count\">(%s)</span>"
@@ -4682,6 +4774,7 @@ msgstr[1] "Confermati <span class=\"count\">(%s)</span>"
 #. Translators: 1: Old status name (like "Pending"), 2: New status name.
 #: includes/post-types/statuses/BookingStatuses.php:80
 #: includes/post-types/statuses/PaymentStatuses.php:133
+#, php-format
 msgid "Status changed from %1$s to %2$s."
 msgstr "Stato cambiato da %1$s a %2$s."
 
@@ -4707,6 +4800,7 @@ msgstr "In attesa"
 
 #. Translators: %s: The posts count.
 #: includes/post-types/statuses/PaymentStatuses.php:49
+#, php-format
 msgid "On Hold <span class=\"count\">(%s)</span>"
 msgid_plural "On Hold <span class=\"count\">(%s)</span>"
 msgstr[0] "In attesa <span class=\"count\">(%s)</span>"
@@ -4719,6 +4813,7 @@ msgstr "Completato"
 
 #. Translators: %s: The posts count.
 #: includes/post-types/statuses/PaymentStatuses.php:58
+#, php-format
 msgid "Completed <span class=\"count\">(%s)</span>"
 msgid_plural "Completed <span class=\"count\">(%s)</span>"
 msgstr[0] "Completati <span class=\"count\">(%s)</span>"
@@ -4731,6 +4826,7 @@ msgstr "Annullato"
 
 #. Translators: %s: The posts count.
 #: includes/post-types/statuses/PaymentStatuses.php:67
+#, php-format
 msgid "Canceled <span class=\"count\">(%s)</span>"
 msgid_plural "Canceled <span class=\"count\">(%s)</span>"
 msgstr[0] "<span class=\"count\">(%s)</span> annullato"
@@ -4748,6 +4844,7 @@ msgstr "Fallito"
 
 #. Translators: %s: The posts count.
 #: includes/post-types/statuses/PaymentStatuses.php:85
+#, php-format
 msgid "Failed <span class=\"count\">(%s)</span>"
 msgid_plural "Failed <span class=\"count\">(%s)</span>"
 msgstr[0] "Falliti <span class=\"count\">(%s)</span>"
@@ -4760,6 +4857,7 @@ msgstr "Rimborsato"
 
 #. Translators: %s: The posts count.
 #: includes/post-types/statuses/PaymentStatuses.php:94
+#, php-format
 msgid "Refunded <span class=\"count\">(%s)</span>"
 msgid_plural "Refunded <span class=\"count\">(%s)</span>"
 msgstr[0] "Rimborsati <span class=\"count\">(%s)</span>"
@@ -4767,6 +4865,7 @@ msgstr[1] "Rimborsati <span class=\"count\">(%s)</span>"
 
 #. Translators: %s: Payment gateway name, like "Pay Afterwards".
 #: includes/post-types/statuses/PaymentStatuses.php:182
+#, php-format
 msgid "Payment (%s) for this booking is on hold."
 msgstr "Il pagamento (%s) per questa prenotazione è in attesa."
 
@@ -4780,31 +4879,32 @@ msgstr ""
 
 #. Translators: %d: Reservation ID.
 #: includes/repositories/ReservationRepository.php:132
+#, php-format
 msgid "Reservation #%d"
 msgstr "Prenotazione #%d"
 
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:126
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:142
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:137
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:153
 #: includes/rest/controllers/motopress/appointment/v1/PaymentsRestController.php:121
 #: includes/rest/controllers/motopress/appointment/v1/PaymentsRestController.php:170
 msgid "Sorry! Failed to make a reservation at the moment."
 msgstr "Al momento non è possibile effettuare la prenotazione."
 
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:155
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:166
 msgid "You've successfully made a booking. Thank you!"
 msgstr ""
 
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:157
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:168
 msgid "Your reservation request has been received and is waiting for our confirmation. Thank you!"
 msgstr "La tua richiesta di prenotazione è stata ricevuta ed è in attesa di una nostra conferma. Grazie!"
 
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:316
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:332
 #: includes/rest/controllers/motopress/appointment/v1/CalendarRestController.php:90
 #: includes/rest/controllers/motopress/appointment/v1/ServicesRestController.php:65
 msgid "Invalid parameter: service ID is not set."
 msgstr "Parametro non valido: l'ID del servizio non è impostato."
 
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:318
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:334
 #: includes/rest/controllers/motopress/appointment/v1/CalendarRestController.php:97
 msgid "Invalid parameter: date range is not set."
 msgstr "Parametro non valido: l'intervallo di date non è impostato."
@@ -4817,22 +4917,22 @@ msgid "Invalid request: services not found."
 msgstr "Richiesta non valida: servizi non trovati."
 
 #: includes/rest/controllers/motopress/appointment/v1/CouponRestController.php:47
-#: includes/services/BookingService.php:394
+#: includes/services/BookingService.php:396
 msgid "Invalid parameter: coupon ID or code are not set."
 msgstr "Parametro non valido: l'ID o il codice del coupon non sono impostati."
 
 #: includes/rest/controllers/motopress/appointment/v1/CouponRestController.php:53
-#: includes/services/BookingService.php:398
+#: includes/services/BookingService.php:400
 msgid "Coupon not found."
 msgstr "Coupon non trovato."
 
 #: includes/rest/controllers/motopress/appointment/v1/CouponRestController.php:57
-#: includes/services/BookingService.php:402
+#: includes/services/BookingService.php:404
 msgid "This coupon has expired."
 msgstr "Questo coupon è scaduto."
 
 #: includes/rest/controllers/motopress/appointment/v1/CouponRestController.php:61
-#: includes/services/BookingService.php:406
+#: includes/services/BookingService.php:408
 msgid "Coupon usage limit has been reached."
 msgstr "È stato raggiunto il limite di utilizzo dei coupon."
 
@@ -4896,32 +4996,33 @@ msgid "Invalid parameter: service ID is not valid."
 msgstr "Parametro non valido: l'ID del servizio non è valido."
 
 #: includes/services/BookingService.php:32
-#: includes/services/BookingService.php:85
+#: includes/services/BookingService.php:87
 msgid "Unable to make a reservation. Your order seems to be empty."
 msgstr "Impossibile effettuare una prenotazione. Il tuo ordine sembra essere vuoto."
 
-#: includes/services/BookingService.php:204
+#: includes/services/BookingService.php:206
 msgid "Unable to make a reservation. Your order misses some of the required data."
 msgstr "Impossibile effettuare una prenotazione. Sembra che nel tuo ordine manchino dei dati."
 
 #. Translators: %d: ID of the post.
-#: includes/services/BookingService.php:222
+#: includes/services/BookingService.php:224
+#, php-format
 msgid "Unable to make a reservation. There is no such service with ID #%d."
 msgstr "Impossibile effettuare una prenotazione. Non esiste un servizio con ID #%d."
 
-#: includes/services/BookingService.php:240
+#: includes/services/BookingService.php:242
 msgid "Unable to make a reservation. The date value is broken."
 msgstr "Impossibile effettuare una prenotazione. Il valore della data è interrotto."
 
-#: includes/services/BookingService.php:258
+#: includes/services/BookingService.php:260
 msgid "Unable to make a reservation. The time value is broken."
 msgstr "Impossibile effettuare una prenotazione. Il valore dell'orario è interrotto."
 
-#: includes/services/BookingService.php:308
+#: includes/services/BookingService.php:310
 msgid "Unable to make a reservation. No employee found for your request."
 msgstr "Impossibile effettuare una prenotazione. Non sono stati trovati dipendenti per la tua richiesta."
 
-#: includes/services/BookingService.php:339
+#: includes/services/BookingService.php:341
 msgid "Unable to make a reservation. No places left for this service."
 msgstr "Impossibile effettuare la prenotazione. Non sono disponibili altri posti per questo servizio."
 
@@ -4955,7 +5056,7 @@ msgid "name"
 msgstr "nome"
 
 #: includes/shortcodes/AppointmentFormShortcode.php:128
-#: assets/js/gutenberg-blocks.js:3423
+#: assets/js/gutenberg-blocks.js:3376
 msgid "The number of columns in the timepicker."
 msgstr "Il numero di colonne del selettore temporale."
 
@@ -5021,6 +5122,7 @@ msgstr "Dettagli"
 
 #. Translators: %s: Widget name, like "Appointment Form".
 #: includes/widgets/AbstractWidget.php:83
+#, php-format
 msgid "Display %s"
 msgstr "Visualizza %s"
 
@@ -5037,6 +5139,7 @@ msgstr ""
 
 #. translators: %1$s - <a ... link to demo website>, %2$s - </a>, %3$s - <strong>, %4$s - </strong>
 #: includes/admin-pages/custom/UpgradeToPremiumPage.php:103
+#, php-format
 msgid "Want to see and test the PRO features first-hand on the backend? %3$s %1$s Start a free trial %2$s with the PRO plugin version. %4$s"
 msgstr "Vuoi vedere e testare le caratteristiche PRO di prima mano sul backend? %3$s %1$s Avvia una prova gratuita %2$s con la versione del plugin PRO. %4$s"
 
@@ -5122,11 +5225,13 @@ msgstr ""
 
 #. translators: %s - is link to the Upgrade to Premium page in admin area.
 #: includes/functions.php:36
+#, php-format
 msgid "<a href=\"%s\">Upgrade to Premium</a> to enable this feature."
 msgstr "<a href=\"%s\">Passa a Premium</a> per utilizzare questa funzione."
 
 #. translators: $1$s - Plugin name: Appointment Booking Lite, $2$s - WP.org review link, $3$s - WP.org review link.
 #: includes/functions.php:88
+#, php-format
 msgid "Please rate %1$s <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href=\"%3$s\" target=\"_blank\" rel=\"noopener\">WordPress.org</a> to make it available to more users. Thank you!"
 msgstr ""
 
@@ -5258,6 +5363,7 @@ msgstr "Resta in contatto."
 
 #. Translators: %s: Customer name.
 #: templates/emails/notification/default-notification.php:15
+#, php-format
 msgid "Dear %s,"
 msgstr ""
 
@@ -5268,6 +5374,7 @@ msgstr ""
 #. Translators: %d: "Notice 1", "Notice 2" etc.
 #: templates/emails/notification/default-notification.php:24
 #: templates/emails/notification/default-notification.php:30
+#, php-format
 msgid "Service Notice %d"
 msgstr ""
 
@@ -5386,6 +5493,7 @@ msgstr ""
 
 #. Translators: %d: Just a number.
 #: templates/service/employees.php:78
+#, php-format
 msgid "+%d"
 msgstr "+%d"
 
@@ -5396,6 +5504,7 @@ msgstr "Modifica"
 
 #. translators: %s is the Terms page link.
 #: templates/shortcodes/booking/sections/accept-terms.php:23
+#, php-format
 msgid "I've read and accept the <a class=\"mpa-terms-and-conditions-link\" href=\"%s\" target=\"_blank\"> terms &amp; conditions</a>"
 msgstr ""
 
@@ -5450,10 +5559,10 @@ msgid "Edit Reservations"
 msgstr "Modifica Prenotazioni"
 
 #: templates/shortcodes/booking/step-booking.php:24
-#: assets/js/divi-modules.js:5674
-#: assets/js/elementor-widgets.js:5674
-#: assets/js/gutenberg-blocks.js:6113
-#: assets/js/public.js:5674
+#: assets/js/divi-modules.js:5627
+#: assets/js/elementor-widgets.js:5627
+#: assets/js/gutenberg-blocks.js:6066
+#: assets/js/public.js:5627
 msgid "Making a reservation..."
 msgstr "Prenotazione in corso..."
 
@@ -5471,6 +5580,7 @@ msgstr "Il carrello è vuoto."
 
 #. Translators: %s: total price, like "$199".
 #: templates/shortcodes/booking/step-cart.php:90
+#, php-format
 msgid "Total: %s"
 msgstr "Totale: %s"
 
@@ -5739,6 +5849,7 @@ msgstr "Non ci sono eventi in questo intervallo."
 
 #. Translators: %d: Count of hide calendar events.
 #: assets/js/calendar-page.js:45457
+#, js-format
 msgid "+%d more"
 msgstr "+%d in più"
 
@@ -6164,189 +6275,197 @@ msgid "December"
 msgstr "Dicembre"
 
 #: assets/js/customers-page.js:497
-#: assets/js/divi-modules.js:6675
+#: assets/js/divi-modules.js:6632
 #: assets/js/edit-post.js:1100
-#: assets/js/elementor-widgets.js:6675
-#: assets/js/gutenberg-blocks.js:7114
-#: assets/js/public.js:6675
+#: assets/js/elementor-widgets.js:6632
+#: assets/js/gutenberg-blocks.js:7071
+#: assets/js/public.js:6632
 #: assets/js/settings-page.js:685
-#: assets/js/widgets-manage-page.js:2958
+#: assets/js/widgets-manage-page.js:2911
 msgid "Phone number is invalid."
 msgstr ""
 
-#: assets/js/divi-modules.js:5774
-#: assets/js/divi-modules.js:7658
-#: assets/js/elementor-widgets.js:5774
-#: assets/js/elementor-widgets.js:7658
-#: assets/js/gutenberg-blocks.js:6213
-#: assets/js/gutenberg-blocks.js:8097
-#: assets/js/public.js:5774
-#: assets/js/public.js:7658
+#: assets/js/divi-modules.js:5731
+#: assets/js/divi-modules.js:7615
+#: assets/js/elementor-widgets.js:5731
+#: assets/js/elementor-widgets.js:7615
+#: assets/js/gutenberg-blocks.js:6170
+#: assets/js/gutenberg-blocks.js:8054
+#: assets/js/public.js:5731
+#: assets/js/public.js:7615
 msgid "You will be redirected to a secure page to complete the payment."
 msgstr "Sarai reindirizzato ad una pagina sicura per completare il pagamento."
 
-#: assets/js/divi-modules.js:5985
-#: assets/js/elementor-widgets.js:5985
-#: assets/js/gutenberg-blocks.js:6424
-#: assets/js/public.js:5985
+#: assets/js/divi-modules.js:5942
+#: assets/js/elementor-widgets.js:5942
+#: assets/js/gutenberg-blocks.js:6381
+#: assets/js/public.js:5942
 msgid "Subtotal"
 msgstr "Subtotale"
 
 #. Translators: %s: Coupon code.
-#: assets/js/divi-modules.js:5995
-#: assets/js/elementor-widgets.js:5995
-#: assets/js/gutenberg-blocks.js:6434
-#: assets/js/public.js:5995
+#: assets/js/divi-modules.js:5952
+#: assets/js/elementor-widgets.js:5952
+#: assets/js/gutenberg-blocks.js:6391
+#: assets/js/public.js:5952
+#, js-format
 msgid "Coupon: %s"
 msgstr "Codice: %s"
 
-#: assets/js/divi-modules.js:6007
-#: assets/js/divi-modules.js:8160
-#: assets/js/divi-modules.js:8675
-#: assets/js/elementor-widgets.js:6007
-#: assets/js/elementor-widgets.js:8160
-#: assets/js/elementor-widgets.js:8675
-#: assets/js/gutenberg-blocks.js:6446
-#: assets/js/gutenberg-blocks.js:8599
-#: assets/js/gutenberg-blocks.js:9114
-#: assets/js/public.js:6007
-#: assets/js/public.js:8160
-#: assets/js/public.js:8675
+#: assets/js/divi-modules.js:5964
+#: assets/js/divi-modules.js:8117
+#: assets/js/divi-modules.js:8632
+#: assets/js/elementor-widgets.js:5964
+#: assets/js/elementor-widgets.js:8117
+#: assets/js/elementor-widgets.js:8632
+#: assets/js/gutenberg-blocks.js:6403
+#: assets/js/gutenberg-blocks.js:8556
+#: assets/js/gutenberg-blocks.js:9071
+#: assets/js/public.js:5964
+#: assets/js/public.js:8117
+#: assets/js/public.js:8632
 msgid "Total"
 msgstr "Totale"
 
-#: assets/js/divi-modules.js:6030
-#: assets/js/elementor-widgets.js:6030
-#: assets/js/gutenberg-blocks.js:6469
-#: assets/js/public.js:6030
+#: assets/js/divi-modules.js:5987
+#: assets/js/elementor-widgets.js:5987
+#: assets/js/gutenberg-blocks.js:6426
+#: assets/js/public.js:5987
 msgid "Deposit"
 msgstr "Deposito"
 
-#: assets/js/divi-modules.js:6035
-#: assets/js/elementor-widgets.js:6035
-#: assets/js/gutenberg-blocks.js:6474
-#: assets/js/public.js:6035
+#: assets/js/divi-modules.js:5992
+#: assets/js/elementor-widgets.js:5992
+#: assets/js/gutenberg-blocks.js:6431
+#: assets/js/public.js:5992
 msgid "Paying now"
 msgstr ""
 
-#: assets/js/divi-modules.js:6573
-#: assets/js/elementor-widgets.js:6573
-#: assets/js/gutenberg-blocks.js:7012
-#: assets/js/public.js:6573
+#: assets/js/divi-modules.js:6530
+#: assets/js/elementor-widgets.js:6530
+#: assets/js/gutenberg-blocks.js:6969
+#: assets/js/public.js:6530
 msgid "Coupon code is empty."
 msgstr "Codice sconto vuoto."
 
-#: assets/js/divi-modules.js:6582
-#: assets/js/elementor-widgets.js:6582
-#: assets/js/gutenberg-blocks.js:7021
-#: assets/js/public.js:6582
+#: assets/js/divi-modules.js:6539
+#: assets/js/elementor-widgets.js:6539
+#: assets/js/gutenberg-blocks.js:6978
+#: assets/js/public.js:6539
 msgid "Coupon code applied successfully."
 msgstr "Codice coupon applicato con successo."
 
-#: assets/js/divi-modules.js:6584
-#: assets/js/elementor-widgets.js:6584
-#: assets/js/gutenberg-blocks.js:7023
-#: assets/js/public.js:6584
+#: assets/js/divi-modules.js:6541
+#: assets/js/elementor-widgets.js:6541
+#: assets/js/gutenberg-blocks.js:6980
+#: assets/js/public.js:6541
 msgid "Sorry, your booking is not eligible for this coupon."
 msgstr "Ci dispiace, la tua prenotazione non è idonea per questo coupon."
 
 #. Translators: %s: Business name.
-#: assets/js/divi-modules.js:7588
-#: assets/js/elementor-widgets.js:7588
-#: assets/js/gutenberg-blocks.js:8027
-#: assets/js/public.js:7588
+#: assets/js/divi-modules.js:7545
+#: assets/js/elementor-widgets.js:7545
+#: assets/js/gutenberg-blocks.js:7984
+#: assets/js/public.js:7545
+#, js-format
 msgid "By providing your IBAN and confirming this payment, you authorise (A) %s and Stripe, our payment service provider, to send instructions to your bank to debit your account and (B) your bank to debit your account in accordance with those instructions. You are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited."
 msgstr "Fornendo il tuo IBAN e confermando questo pagamento, autorizzi (A) %s e Stripe, il nostro fornitore di servizi di pagamento, a inviare istruzioni alla tua banca per addebitare il tuo conto e (B) la tua banca ad addebitare il tuo conto in conformità con tali istruzioni. Hai diritto a un rimborso dalla tua banca in base ai termini e alle condizioni del tuo accordo con la tua banca. Un rimborso deve essere richiesto entro 8 settimane dalla data in cui il tuo conto è stato addebitato."
 
-#: assets/js/divi-modules.js:7609
-#: assets/js/elementor-widgets.js:7609
-#: assets/js/gutenberg-blocks.js:8048
-#: assets/js/public.js:7609
+#: assets/js/divi-modules.js:7566
+#: assets/js/elementor-widgets.js:7566
+#: assets/js/gutenberg-blocks.js:8005
+#: assets/js/public.js:7566
 msgid "Credit or debit card"
 msgstr "Carta di credito o di debito"
 
-#: assets/js/divi-modules.js:7613
-#: assets/js/elementor-widgets.js:7613
-#: assets/js/gutenberg-blocks.js:8052
-#: assets/js/public.js:7613
+#: assets/js/divi-modules.js:7570
+#: assets/js/elementor-widgets.js:7570
+#: assets/js/gutenberg-blocks.js:8009
+#: assets/js/public.js:7570
 msgid "or"
 msgstr "o"
 
-#: assets/js/divi-modules.js:7628
-#: assets/js/elementor-widgets.js:7628
-#: assets/js/gutenberg-blocks.js:8067
-#: assets/js/public.js:7628
+#: assets/js/divi-modules.js:7585
+#: assets/js/elementor-widgets.js:7585
+#: assets/js/gutenberg-blocks.js:8024
+#: assets/js/public.js:7585
 msgid "Select iDEAL Bank"
 msgstr "Seleziona iDEAL Bank"
 
-#: assets/js/divi-modules.js:7643
-#: assets/js/elementor-widgets.js:7643
-#: assets/js/gutenberg-blocks.js:8082
-#: assets/js/public.js:7643
+#: assets/js/divi-modules.js:7600
+#: assets/js/elementor-widgets.js:7600
+#: assets/js/gutenberg-blocks.js:8039
+#: assets/js/public.js:7600
 msgid "IBAN"
 msgstr "IBAN"
 
-#: assets/js/divi-modules.js:7907
-#: assets/js/elementor-widgets.js:7907
-#: assets/js/gutenberg-blocks.js:8346
-#: assets/js/public.js:7907
+#: assets/js/divi-modules.js:7864
+#: assets/js/elementor-widgets.js:7864
+#: assets/js/gutenberg-blocks.js:8303
+#: assets/js/public.js:7864
 msgid "Payment methods"
 msgstr ""
 
-#: assets/js/divi-modules.js:8119
-#: assets/js/elementor-widgets.js:8119
-#: assets/js/gutenberg-blocks.js:8558
-#: assets/js/public.js:8119
+#: assets/js/divi-modules.js:8076
+#: assets/js/elementor-widgets.js:8076
+#: assets/js/gutenberg-blocks.js:8515
+#: assets/js/public.js:8076
 msgid "Card"
 msgstr "Carta"
 
-#: assets/js/divi-modules.js:10143
-#: assets/js/edit-post.js:7706
-#: assets/js/elementor-widgets.js:10143
-#: assets/js/gutenberg-blocks.js:10582
-#: assets/js/public.js:10143
+#: assets/js/divi-modules.js:10106
+#: assets/js/edit-post.js:7659
+#: assets/js/elementor-widgets.js:10106
+#: assets/js/gutenberg-blocks.js:10545
+#: assets/js/public.js:10106
 msgid "Sorry, but we were unable to allocate time slots for the date you selected."
 msgstr "Siamo spiacenti, ma non siamo stati in grado di assegnare le fasce orarie per la data selezionata."
 
-#: assets/js/divi-modules.js:10790
-#: assets/js/elementor-widgets.js:10790
-#: assets/js/gutenberg-blocks.js:11229
-#: assets/js/public.js:10790
+#: assets/js/divi-modules.js:10753
+#: assets/js/elementor-widgets.js:10753
+#: assets/js/gutenberg-blocks.js:11192
+#: assets/js/public.js:10753
 msgid "Sorry, there are no services, employees or locations to book."
 msgstr "Siamo spiacenti, non ci sono servizi, dipendenti o luoghi da prenotare."
 
 #. Translators: %s: Checkbox label.
-#: assets/js/edit-post.js:9034
-#: assets/js/gutenberg-blocks.js:3267
-#: assets/js/widgets-manage-page.js:3023
+#: assets/js/edit-post.js:8987
+#: assets/js/gutenberg-blocks.js:3220
+#: assets/js/widgets-manage-page.js:2976
+#, js-format
 msgid "To enable this option, you need to check the '%s' box."
 msgstr ""
 
-#: assets/js/edit-post.js:9035
-#: assets/js/gutenberg-blocks.js:3285
-#: assets/js/widgets-manage-page.js:3024
+#: assets/js/edit-post.js:8988
+#: assets/js/gutenberg-blocks.js:3238
+#: assets/js/widgets-manage-page.js:2977
 msgid "To enable booking for the specific service only, select the service below first, then uncheck the 'Service' box here."
 msgstr ""
 
-#: assets/js/gutenberg-blocks.js:3443
+#: assets/js/gutenberg-blocks.js:3396
 msgid "Colors"
 msgstr ""
 
-#: assets/js/gutenberg-blocks.js:11413
-#: assets/js/gutenberg-blocks.js:11723
-#: assets/js/gutenberg-blocks.js:11994
-#: assets/js/gutenberg-blocks.js:12297
-#: assets/js/gutenberg-blocks.js:12651
-#: assets/js/gutenberg-blocks.js:12774
-#: assets/js/gutenberg-blocks.js:12897
-#: assets/js/gutenberg-blocks.js:13020
-#: assets/js/gutenberg-blocks.js:13143
-#: assets/js/gutenberg-blocks.js:13266
-#: assets/js/gutenberg-blocks.js:13389
-#: assets/js/gutenberg-blocks.js:13512
-#: assets/js/gutenberg-blocks.js:13635
+#: assets/js/gutenberg-blocks.js:11376
+#: assets/js/gutenberg-blocks.js:11686
+#: assets/js/gutenberg-blocks.js:11957
+#: assets/js/gutenberg-blocks.js:12260
+#: assets/js/gutenberg-blocks.js:12614
+#: assets/js/gutenberg-blocks.js:12737
+#: assets/js/gutenberg-blocks.js:12860
+#: assets/js/gutenberg-blocks.js:12983
+#: assets/js/gutenberg-blocks.js:13106
+#: assets/js/gutenberg-blocks.js:13229
+#: assets/js/gutenberg-blocks.js:13352
+#: assets/js/gutenberg-blocks.js:13475
+#: assets/js/gutenberg-blocks.js:13598
 msgid "appointment"
 msgstr "appuntamento"
+
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:107
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:273
+msgid "Unable to make a reservation. Your request did not pass the security check."
+msgstr ""
 
 #. Plugin Name of the plugin
 #: motopress-appointment.php

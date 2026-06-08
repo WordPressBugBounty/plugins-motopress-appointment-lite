@@ -1,4 +1,4 @@
-(function (date, mpaData, intlTelInput) {
+(function (date, mpaData$1, intlTelInput) {
 	'use strict';
 
 	/**
@@ -3655,53 +3655,6 @@
 	 */
 	class ReservationRepository extends AbstractRepository {
 	  /**
-	   * @param {Number} serviceId
-	   * @param {Object} args Optional.
-	   *     @param {Date|String} args['from_date']
-	   *     @param {Date|String} args['to_date']
-	   * @return {Promise}
-	   *
-	   * @since 1.0
-	   */
-	  findAllByService(serviceId, args = {}) {
-	    let restArgs = {
-	      service_id: serviceId
-	    };
-
-	    // Add date range
-	    if (args.from_date != undefined) {
-	      restArgs['from_date'] = mpa_format_date(args.from_date, 'internal');
-	    }
-	    if (args.to_date != undefined) {
-	      restArgs['to_date'] = mpa_format_date(args.to_date, 'internal');
-	    }
-
-	    // Request reservations
-	    let findPromise = mpa_rest_get('/bookings/reservations', restArgs)
-
-	    // Save entities
-	    .then(reservations => {
-	      let entities = [];
-	      for (let reservation of reservations) {
-	        let entity = this.mapRestDataToEntity(reservation);
-
-	        // Save entities
-	        this.saveEntity(entity.id, entity);
-	        entities.push(entity);
-	      }
-	      return entities;
-	    })
-
-	    // Log error
-	    .catch(error => {
-	      console.error('No reservations found.', error.message);
-	      return []; // Always return array
-	    });
-
-	    return findPromise;
-	  }
-
-	  /**
 	   * @param {Object} entityData
 	   * @return {Reservation}
 	   *
@@ -5726,7 +5679,11 @@
 	   */
 	  createBooking() {
 	    // Book services
-	    mpa_rest_post('/bookings', wp.hooks.applyFilters('mpa_booking_cart_data', this.cart.toArray())).then(response => {
+	    const requestData = {
+	      ...wp.hooks.applyFilters('mpa_booking_cart_data', this.cart.toArray()),
+	      nonce: mpaData.nonces.mpa_create_booking
+	    };
+	    mpa_rest_post('/bookings', requestData).then(response => {
 	      if (this.isRedirectNeeded()) {
 	        this.redirectPayment();
 	        return;
@@ -6677,9 +6634,9 @@
 	  $phoneInputElement.after('<br>', $phoneErrorElement);
 	  const iti = intlTelInput($phoneInputElement[0], {
 	    separateDialCode: true,
-	    initialCountry: mpaData.settings.country,
+	    initialCountry: mpaData$1.settings.country,
 	    hiddenInput: $phoneInputElement.attr('name'),
-	    utilsScript: mpaData.urls.plugin + 'assets/js/intl-tel-input-17.0.19/js/utils.js'
+	    utilsScript: mpaData$1.urls.plugin + 'assets/js/intl-tel-input-17.0.19/js/utils.js'
 	  });
 	  iti.promise.then(() => {
 	    if ($phoneInputElement.val()) {
@@ -6746,19 +6703,19 @@
 	      // Actually for mode: 'Customer account creation' = 'create_automatically'
 	      this.setProperty('createAccount', this.$createAccount.prop('checked'));
 	    }
-	    if (mpaData && mpaData.currentCustomer && mpaData.currentCustomer.name) {
-	      this.setProperty('name', mpaData.currentCustomer.name);
-	      this.$name.val(mpaData.currentCustomer.name);
+	    if (mpaData$1 && mpaData$1.currentCustomer && mpaData$1.currentCustomer.name) {
+	      this.setProperty('name', mpaData$1.currentCustomer.name);
+	      this.$name.val(mpaData$1.currentCustomer.name);
 	    }
-	    if (mpaData && mpaData.currentCustomer && mpaData.currentCustomer.email) {
-	      this.setProperty('email', mpaData.currentCustomer.email);
-	      this.$email.val(mpaData.currentCustomer.email);
+	    if (mpaData$1 && mpaData$1.currentCustomer && mpaData$1.currentCustomer.email) {
+	      this.setProperty('email', mpaData$1.currentCustomer.email);
+	      this.$email.val(mpaData$1.currentCustomer.email);
 	    }
-	    if (mpaData && mpaData.currentCustomer && mpaData.currentCustomer.phone !== 'undefined') {
-	      this.setProperty('phone', mpaData.currentCustomer.phone);
+	    if (mpaData$1 && mpaData$1.currentCustomer && mpaData$1.currentCustomer.phone !== 'undefined') {
+	      this.setProperty('phone', mpaData$1.currentCustomer.phone);
 
 	      // set phone number through intl-tel-input to remove country code from number if it is there
-	      this.phoneValidator.setNumber(mpaData.currentCustomer.phone);
+	      this.phoneValidator.setNumber(mpaData$1.currentCustomer.phone);
 	      // send event to validate phone number
 	      this.$phone.trigger('input');
 	    }
@@ -9392,15 +9349,21 @@
 	   * @return {Promise}
 	   */
 	  loadDrafts() {
-	    let cartData = this.cart.toArray();
-	    cartData.payment = true;
-	    return mpa_rest_post('/bookings/draft', wp.hooks.applyFilters('mpa_booking_draft_data', cartData)).then(drafts => {
+	    const cartData = {
+	      ...this.cart.toArray(),
+	      payment: true
+	    };
+	    const requestData = {
+	      ...wp.hooks.applyFilters('mpa_booking_draft_data', cartData),
+	      nonce: mpaData.nonces.mpa_create_drafts
+	    };
+	    return mpa_rest_post('/bookings/draft', requestData).then(drafts => {
 	      this.bookingDetails = drafts;
-	      /**
-	       * @todo: param paymentDetails[payment_id] need only for backward compatibility with a mpa-woocommerce addon v1.0.0
-	       */
 	      const paymentDetails = {
 	        booking_id: drafts.booking_id,
+	        // TODO: Param paymentDetails[payment_id] need only for
+	        // backward compatibility with a mpa-woocommerce addon
+	        // v1.0.0
 	        payment_id: drafts.payment_id
 	      };
 	      this.cart.setPaymentDetails(paymentDetails);

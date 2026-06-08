@@ -2,9 +2,11 @@
 
 namespace MotoPress\Appointment\REST\Controllers\Motopress\Appointment\V1;
 
+use MotoPress\Appointment\Crons\DeleteDraftBookingsCron;
 use MotoPress\Appointment\Entities\Reservation;
 use MotoPress\Appointment\Helpers\AvailabilityHelper;
 use MotoPress\Appointment\PostTypes\Statuses\BookingStatuses;
+use MotoPress\Appointment\Rest\ApiHelper;
 use MotoPress\Appointment\Services\BookingService;
 use WP_Error;
 use WP_REST_Request;
@@ -70,7 +72,9 @@ class BookingsRestController extends AbstractRestController {
 			array(
 				'methods'             => WP_REST_Server::READABLE,
 				'callback'            => array( $this, 'getReservations' ),
-				'permission_callback' => '__return_true',
+				'permission_callback' => function () {
+					return ApiHelper::checkPostPermissions( 'mpa_reservation', 'read' ); // MPI-14413
+				},
 				'args'                => array(
 					'service_id' => array(
 						'default'           => array(),
@@ -97,10 +101,17 @@ class BookingsRestController extends AbstractRestController {
 	 */
 	public function createBooking( $request ) {
 		$order = $request->get_params();
+		$nonce = $order['nonce'] ?? null;
+
+		if ( ! $nonce || ! wp_verify_nonce( $nonce, 'mpa_create_booking' ) ) {
+			return new WP_Error( 'failed_request', esc_html__( 'Unable to make a reservation. Your request did not pass the security check.', 'motopress-appointment' ) );
+		}
 
 		$booking = null;
 
-		if ( isset( $order['payment_details']['booking_id'] ) ) {
+		if ( mpapp()->settings()->isPaymentsEnabled()
+			&& isset( $order['payment_details']['booking_id'] )
+		) {
 			$booking = mpapp()->repositories()->booking()->findById( $order['payment_details']['booking_id'] );
 		}
 
@@ -235,6 +246,7 @@ class BookingsRestController extends AbstractRestController {
 		 * Relevant only for confirmation upon payment mode and multi-booking mode at the same time.
 		 */
 		$draftEntities = $this->findDrafts( $order, $isPaymentsEnabled );
+
 		if ( count( $draftEntities ) ) {
 			return array(
 				'booking_id'  => $draftEntities['booking']->getId(),
@@ -254,8 +266,13 @@ class BookingsRestController extends AbstractRestController {
 	 * @return WP_REST_Response|WP_Error
 	 */
 	public function createDrafts( $request ) {
+		$order = $request->get_params();
+		$nonce = $order['nonce'] ?? null;
 
-		$order             = $request->get_params();
+		if ( ! $nonce || ! wp_verify_nonce( $nonce, 'mpa_create_drafts' ) ) {
+			return new WP_Error( 'failed_request', esc_html__( 'Unable to make a reservation. Your request did not pass the security check.', 'motopress-appointment' ) );
+		}
+
 		$isPaymentsEnabled = mpapp()->settings()->isPaymentsEnabled();
 		$drafts            = $this->createDraftsArray( $order, $isPaymentsEnabled );
 
@@ -286,13 +303,12 @@ class BookingsRestController extends AbstractRestController {
 
 		// If the booking will abandoned, we need unblocking reserved time slot.
 		// Therefore we are adding actions of auto delete expired draft bookings.
-		\MotoPress\Appointment\Crons\DeleteDraftBookingsCron::schedule();
+		DeleteDraftBookingsCron::schedule();
 
-		/**
-		 * todo: response param $response[payment_id] need only for backward compatibility with a mpa-woocommerce addon v1.0.0
-		 */
 		$response = array(
 			'booking_id' => $drafts['booking_id'],
+			// TODO: Response param $response[payment_id] need only for backward
+			// compatibility with a mpa-woocommerce addon v1.0.0
 			'payment_id' => $drafts['payment_id'],
 		);
 

@@ -236,10 +236,11 @@ class AppointmentFormShortcode extends AbstractPostShortcode {
 
 		wp_add_inline_style( 'mpa-public', $this->generateCSS( $args ) );
 
-		// define customer data for autocompletion on the frontend
+		// Define customer data for autocompletion on the frontend
 		if ( is_user_logged_in() ) {
 			$userId   = get_current_user_id();
 			$customer = mpapp()->repositories()->customer()->findByUserId( $userId );
+
 			if ( $customer ) {
 				mpa_assets()->addLocalizeData(
 					'mpa-public',
@@ -250,9 +251,17 @@ class AppointmentFormShortcode extends AbstractPostShortcode {
 						'phone' => $customer->getPhone(),
 					)
 				);
-
 			}
 		}
+
+		mpa_assets()->addLocalizeData(
+			'mpa-public',
+			'nonces',
+			array(
+				'mpa_create_booking' => wp_create_nonce( 'mpa_create_booking' ),
+				'mpa_create_drafts'  => wp_create_nonce( 'mpa_create_drafts' ),
+			)
+		);
 
 		mpa_assets()->enqueueBundle( 'mpa-public' );
 

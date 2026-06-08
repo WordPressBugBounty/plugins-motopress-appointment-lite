@@ -1724,53 +1724,6 @@
 	 */
 	class ReservationRepository extends AbstractRepository {
 	  /**
-	   * @param {Number} serviceId
-	   * @param {Object} args Optional.
-	   *     @param {Date|String} args['from_date']
-	   *     @param {Date|String} args['to_date']
-	   * @return {Promise}
-	   *
-	   * @since 1.0
-	   */
-	  findAllByService(serviceId, args = {}) {
-	    let restArgs = {
-	      service_id: serviceId
-	    };
-
-	    // Add date range
-	    if (args.from_date != undefined) {
-	      restArgs['from_date'] = mpa_format_date(args.from_date, 'internal');
-	    }
-	    if (args.to_date != undefined) {
-	      restArgs['to_date'] = mpa_format_date(args.to_date, 'internal');
-	    }
-
-	    // Request reservations
-	    let findPromise = mpa_rest_get('/bookings/reservations', restArgs)
-
-	    // Save entities
-	    .then(reservations => {
-	      let entities = [];
-	      for (let reservation of reservations) {
-	        let entity = this.mapRestDataToEntity(reservation);
-
-	        // Save entities
-	        this.saveEntity(entity.id, entity);
-	        entities.push(entity);
-	      }
-	      return entities;
-	    })
-
-	    // Log error
-	    .catch(error => {
-	      console.error('No reservations found.', error.message);
-	      return []; // Always return array
-	    });
-
-	    return findPromise;
-	  }
-
-	  /**
 	   * @param {Object} entityData
 	   * @return {Reservation}
 	   *

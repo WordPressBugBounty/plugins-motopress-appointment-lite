@@ -1,4 +1,4 @@
-(function (react, date, wp_i18n, mpaData, intlTelInput) {
+(function (react, date, wp_i18n, mpaData$1, intlTelInput) {
 	'use strict';
 
 	const attributes$c = {
@@ -1958,53 +1958,6 @@
 	 * @since 1.0
 	 */
 	class ReservationRepository extends AbstractRepository {
-	  /**
-	   * @param {Number} serviceId
-	   * @param {Object} args Optional.
-	   *     @param {Date|String} args['from_date']
-	   *     @param {Date|String} args['to_date']
-	   * @return {Promise}
-	   *
-	   * @since 1.0
-	   */
-	  findAllByService(serviceId, args = {}) {
-	    let restArgs = {
-	      service_id: serviceId
-	    };
-
-	    // Add date range
-	    if (args.from_date != undefined) {
-	      restArgs['from_date'] = mpa_format_date(args.from_date, 'internal');
-	    }
-	    if (args.to_date != undefined) {
-	      restArgs['to_date'] = mpa_format_date(args.to_date, 'internal');
-	    }
-
-	    // Request reservations
-	    let findPromise = mpa_rest_get('/bookings/reservations', restArgs)
-
-	    // Save entities
-	    .then(reservations => {
-	      let entities = [];
-	      for (let reservation of reservations) {
-	        let entity = this.mapRestDataToEntity(reservation);
-
-	        // Save entities
-	        this.saveEntity(entity.id, entity);
-	        entities.push(entity);
-	      }
-	      return entities;
-	    })
-
-	    // Log error
-	    .catch(error => {
-	      console.error('No reservations found.', error.message);
-	      return []; // Always return array
-	    });
-
-	    return findPromise;
-	  }
-
 	  /**
 	   * @param {Object} entityData
 	   * @return {Reservation}
@@ -6165,7 +6118,11 @@
 	   */
 	  createBooking() {
 	    // Book services
-	    mpa_rest_post('/bookings', wp.hooks.applyFilters('mpa_booking_cart_data', this.cart.toArray())).then(response => {
+	    const requestData = {
+	      ...wp.hooks.applyFilters('mpa_booking_cart_data', this.cart.toArray()),
+	      nonce: mpaData.nonces.mpa_create_booking
+	    };
+	    mpa_rest_post('/bookings', requestData).then(response => {
 	      if (this.isRedirectNeeded()) {
 	        this.redirectPayment();
 	        return;
@@ -7116,9 +7073,9 @@
 	  $phoneInputElement.after('<br>', $phoneErrorElement);
 	  const iti = intlTelInput($phoneInputElement[0], {
 	    separateDialCode: true,
-	    initialCountry: mpaData.settings.country,
+	    initialCountry: mpaData$1.settings.country,
 	    hiddenInput: $phoneInputElement.attr('name'),
-	    utilsScript: mpaData.urls.plugin + 'assets/js/intl-tel-input-17.0.19/js/utils.js'
+	    utilsScript: mpaData$1.urls.plugin + 'assets/js/intl-tel-input-17.0.19/js/utils.js'
 	  });
 	  iti.promise.then(() => {
 	    if ($phoneInputElement.val()) {
@@ -7185,19 +7142,19 @@
 	      // Actually for mode: 'Customer account creation' = 'create_automatically'
 	      this.setProperty('createAccount', this.$createAccount.prop('checked'));
 	    }
-	    if (mpaData && mpaData.currentCustomer && mpaData.currentCustomer.name) {
-	      this.setProperty('name', mpaData.currentCustomer.name);
-	      this.$name.val(mpaData.currentCustomer.name);
+	    if (mpaData$1 && mpaData$1.currentCustomer && mpaData$1.currentCustomer.name) {
+	      this.setProperty('name', mpaData$1.currentCustomer.name);
+	      this.$name.val(mpaData$1.currentCustomer.name);
 	    }
-	    if (mpaData && mpaData.currentCustomer && mpaData.currentCustomer.email) {
-	      this.setProperty('email', mpaData.currentCustomer.email);
-	      this.$email.val(mpaData.currentCustomer.email);
+	    if (mpaData$1 && mpaData$1.currentCustomer && mpaData$1.currentCustomer.email) {
+	      this.setProperty('email', mpaData$1.currentCustomer.email);
+	      this.$email.val(mpaData$1.currentCustomer.email);
 	    }
-	    if (mpaData && mpaData.currentCustomer && mpaData.currentCustomer.phone !== 'undefined') {
-	      this.setProperty('phone', mpaData.currentCustomer.phone);
+	    if (mpaData$1 && mpaData$1.currentCustomer && mpaData$1.currentCustomer.phone !== 'undefined') {
+	      this.setProperty('phone', mpaData$1.currentCustomer.phone);
 
 	      // set phone number through intl-tel-input to remove country code from number if it is there
-	      this.phoneValidator.setNumber(mpaData.currentCustomer.phone);
+	      this.phoneValidator.setNumber(mpaData$1.currentCustomer.phone);
 	      // send event to validate phone number
 	      this.$phone.trigger('input');
 	    }
@@ -9831,15 +9788,21 @@
 	   * @return {Promise}
 	   */
 	  loadDrafts() {
-	    let cartData = this.cart.toArray();
-	    cartData.payment = true;
-	    return mpa_rest_post('/bookings/draft', wp.hooks.applyFilters('mpa_booking_draft_data', cartData)).then(drafts => {
+	    const cartData = {
+	      ...this.cart.toArray(),
+	      payment: true
+	    };
+	    const requestData = {
+	      ...wp.hooks.applyFilters('mpa_booking_draft_data', cartData),
+	      nonce: mpaData.nonces.mpa_create_drafts
+	    };
+	    return mpa_rest_post('/bookings/draft', requestData).then(drafts => {
 	      this.bookingDetails = drafts;
-	      /**
-	       * @todo: param paymentDetails[payment_id] need only for backward compatibility with a mpa-woocommerce addon v1.0.0
-	       */
 	      const paymentDetails = {
 	        booking_id: drafts.booking_id,
+	        // TODO: Param paymentDetails[payment_id] need only for
+	        // backward compatibility with a mpa-woocommerce addon
+	        // v1.0.0
 	        payment_id: drafts.payment_id
 	      };
 	      this.cart.setPaymentDetails(paymentDetails);
@@ -11717,7 +11680,7 @@
 	  }), wp.element.createElement("path", {
 	    d: "M2,14c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S3.1,14,2,14L2,14z"
 	  }), wp.element.createElement("path", {
-	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5 c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2 c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
+	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5\r c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2\r c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
 	  })),
 	  category: 'mpa-gutenberg-blocks',
 	  keywords: [wp_i18n.__('appointment', 'motopress-appointment')],
@@ -12291,7 +12254,7 @@
 	  }, wp.element.createElement("path", {
 	    d: "M7.17,2l1.41,1.41L9.17,4H10h12v18H2V2H7.17 M8,0H0v2v22h24V2H10L8,0L8,0z"
 	  }), wp.element.createElement("path", {
-	    d: "M17.59,14.18l-1.02-0.8c0.01-0.11,0.02-0.24,0.02-0.38s-0.01-0.27-0.02-0.38l1.02-0.8c0.26-0.21,0.32-0.57,0.16-0.85 l-1.12-1.92c-0.16-0.29-0.51-0.41-0.82-0.3l-1.2,0.48c-0.21-0.15-0.43-0.27-0.65-0.38l-0.18-1.28C13.73,7.24,13.45,7,13.12,7h-2.25 c-0.33,0-0.61,0.24-0.65,0.56l-0.18,1.28C9.81,8.95,9.59,9.08,9.38,9.22l-1.2-0.48c-0.31-0.12-0.65,0-0.81,0.29l-1.13,1.94 c-0.16,0.28-0.09,0.65,0.16,0.85l1.02,0.8C7.41,12.76,7.41,12.88,7.41,13s0,0.24,0.02,0.38l-1.03,0.8 c-0.25,0.21-0.32,0.57-0.16,0.85l1.12,1.92c0.16,0.29,0.51,0.41,0.82,0.29l1.2-0.48c0.21,0.15,0.43,0.27,0.65,0.38l0.18,1.28 c0.04,0.33,0.32,0.57,0.65,0.57h2.25c0.33,0,0.61-0.24,0.65-0.56l0.18-1.28c0.23-0.11,0.45-0.24,0.65-0.38l1.21,0.48 c0.31,0.12,0.65,0,0.81-0.29l1.13-1.95C17.92,14.73,17.85,14.38,17.59,14.18z M12,15.5c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5 s2.5,1.12,2.5,2.5S13.38,15.5,12,15.5z"
+	    d: "M17.59,14.18l-1.02-0.8c0.01-0.11,0.02-0.24,0.02-0.38s-0.01-0.27-0.02-0.38l1.02-0.8c0.26-0.21,0.32-0.57,0.16-0.85\r l-1.12-1.92c-0.16-0.29-0.51-0.41-0.82-0.3l-1.2,0.48c-0.21-0.15-0.43-0.27-0.65-0.38l-0.18-1.28C13.73,7.24,13.45,7,13.12,7h-2.25\r c-0.33,0-0.61,0.24-0.65,0.56l-0.18,1.28C9.81,8.95,9.59,9.08,9.38,9.22l-1.2-0.48c-0.31-0.12-0.65,0-0.81,0.29l-1.13,1.94\r c-0.16,0.28-0.09,0.65,0.16,0.85l1.02,0.8C7.41,12.76,7.41,12.88,7.41,13s0,0.24,0.02,0.38l-1.03,0.8\r c-0.25,0.21-0.32,0.57-0.16,0.85l1.12,1.92c0.16,0.29,0.51,0.41,0.82,0.29l1.2-0.48c0.21,0.15,0.43,0.27,0.65,0.38l0.18,1.28\r c0.04,0.33,0.32,0.57,0.65,0.57h2.25c0.33,0,0.61-0.24,0.65-0.56l0.18-1.28c0.23-0.11,0.45-0.24,0.65-0.38l1.21,0.48\r c0.31,0.12,0.65,0,0.81-0.29l1.13-1.95C17.92,14.73,17.85,14.38,17.59,14.18z M12,15.5c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5\r s2.5,1.12,2.5,2.5S13.38,15.5,12,15.5z"
 	  })),
 	  category: 'mpa-gutenberg-blocks',
 	  keywords: [wp_i18n.__('appointment', 'motopress-appointment')],
@@ -12645,7 +12608,7 @@
 	  }), wp.element.createElement("path", {
 	    d: "M2,14c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S3.1,14,2,14L2,14z"
 	  }), wp.element.createElement("path", {
-	    d: "M17.59,7.18l-1.02-0.8c0.01-0.11,0.02-0.24,0.02-0.38s-0.01-0.27-0.02-0.38l1.02-0.8c0.26-0.21,0.32-0.57,0.16-0.85 l-1.12-1.92c-0.16-0.29-0.51-0.41-0.82-0.3l-1.2,0.48c-0.21-0.15-0.43-0.27-0.65-0.38l-0.18-1.28C13.73,0.24,13.45,0,13.12,0h-2.25 c-0.33,0-0.61,0.24-0.65,0.56l-0.18,1.28C9.81,1.95,9.59,2.08,9.38,2.22l-1.2-0.48c-0.31-0.12-0.65,0-0.81,0.29L6.24,3.97 C6.08,4.25,6.15,4.62,6.4,4.82l1.02,0.8C7.41,5.76,7.41,5.88,7.41,6s0,0.24,0.02,0.38L6.4,7.18C6.15,7.39,6.08,7.75,6.24,8.03 l1.12,1.92c0.16,0.29,0.51,0.41,0.82,0.29l1.2-0.48c0.21,0.15,0.43,0.27,0.65,0.38l0.18,1.28c0.04,0.33,0.32,0.57,0.65,0.57h2.25 c0.33,0,0.61-0.24,0.65-0.56l0.18-1.28c0.23-0.11,0.45-0.24,0.65-0.38l1.21,0.48c0.31,0.12,0.65,0,0.81-0.29l1.13-1.95 C17.92,7.73,17.85,7.38,17.59,7.18z M12,8.5c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5s2.5,1.12,2.5,2.5S13.38,8.5,12,8.5z"
+	    d: "M17.59,7.18l-1.02-0.8c0.01-0.11,0.02-0.24,0.02-0.38s-0.01-0.27-0.02-0.38l1.02-0.8c0.26-0.21,0.32-0.57,0.16-0.85\r l-1.12-1.92c-0.16-0.29-0.51-0.41-0.82-0.3l-1.2,0.48c-0.21-0.15-0.43-0.27-0.65-0.38l-0.18-1.28C13.73,0.24,13.45,0,13.12,0h-2.25\r c-0.33,0-0.61,0.24-0.65,0.56l-0.18,1.28C9.81,1.95,9.59,2.08,9.38,2.22l-1.2-0.48c-0.31-0.12-0.65,0-0.81,0.29L6.24,3.97\r C6.08,4.25,6.15,4.62,6.4,4.82l1.02,0.8C7.41,5.76,7.41,5.88,7.41,6s0,0.24,0.02,0.38L6.4,7.18C6.15,7.39,6.08,7.75,6.24,8.03\r l1.12,1.92c0.16,0.29,0.51,0.41,0.82,0.29l1.2-0.48c0.21,0.15,0.43,0.27,0.65,0.38l0.18,1.28c0.04,0.33,0.32,0.57,0.65,0.57h2.25\r c0.33,0,0.61-0.24,0.65-0.56l0.18-1.28c0.23-0.11,0.45-0.24,0.65-0.38l1.21,0.48c0.31,0.12,0.65,0,0.81-0.29l1.13-1.95\r C17.92,7.73,17.85,7.38,17.59,7.18z M12,8.5c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5s2.5,1.12,2.5,2.5S13.38,8.5,12,8.5z"
 	  })),
 	  category: 'mpa-gutenberg-blocks',
 	  keywords: [wp_i18n.__('appointment', 'motopress-appointment')],
@@ -12768,7 +12731,7 @@
 	  }), wp.element.createElement("path", {
 	    d: "M2,14c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S3.1,14,2,14L2,14z"
 	  }), wp.element.createElement("path", {
-	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5 c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2 c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
+	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5\r c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2\r c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
 	  })),
 	  category: 'mpa-gutenberg-blocks',
 	  keywords: [wp_i18n.__('appointment', 'motopress-appointment')],
@@ -12891,7 +12854,7 @@
 	  }), wp.element.createElement("path", {
 	    d: "M2,14c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S3.1,14,2,14L2,14z"
 	  }), wp.element.createElement("path", {
-	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5 c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2 c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
+	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5\r c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2\r c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
 	  })),
 	  category: 'mpa-gutenberg-blocks',
 	  keywords: [wp_i18n.__('appointment', 'motopress-appointment')],
@@ -13014,7 +12977,7 @@
 	  }), wp.element.createElement("path", {
 	    d: "M2,14c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S3.1,14,2,14L2,14z"
 	  }), wp.element.createElement("path", {
-	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5 c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2 c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
+	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5\r c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2\r c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
 	  })),
 	  category: 'mpa-gutenberg-blocks',
 	  keywords: [wp_i18n.__('appointment', 'motopress-appointment')],
@@ -13137,7 +13100,7 @@
 	  }), wp.element.createElement("path", {
 	    d: "M2,14c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S3.1,14,2,14L2,14z"
 	  }), wp.element.createElement("path", {
-	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5 c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2 c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
+	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5\r c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2\r c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
 	  })),
 	  category: 'mpa-gutenberg-blocks',
 	  keywords: [wp_i18n.__('appointment', 'motopress-appointment')],
@@ -13260,7 +13223,7 @@
 	  }), wp.element.createElement("path", {
 	    d: "M2,14c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S3.1,14,2,14L2,14z"
 	  }), wp.element.createElement("path", {
-	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5 c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2 c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
+	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5\r c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2\r c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
 	  })),
 	  category: 'mpa-gutenberg-blocks',
 	  keywords: [wp_i18n.__('appointment', 'motopress-appointment')],
@@ -13383,7 +13346,7 @@
 	  }), wp.element.createElement("path", {
 	    d: "M2,14c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S3.1,14,2,14L2,14z"
 	  }), wp.element.createElement("path", {
-	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5 c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2 c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
+	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5\r c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2\r c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
 	  })),
 	  category: 'mpa-gutenberg-blocks',
 	  keywords: [wp_i18n.__('appointment', 'motopress-appointment')],
@@ -13506,7 +13469,7 @@
 	  }), wp.element.createElement("path", {
 	    d: "M2,14c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S3.1,14,2,14L2,14z"
 	  }), wp.element.createElement("path", {
-	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5 c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2 c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
+	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5\r c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2\r c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
 	  })),
 	  category: 'mpa-gutenberg-blocks',
 	  keywords: [wp_i18n.__('appointment', 'motopress-appointment')],
@@ -13629,7 +13592,7 @@
 	  }), wp.element.createElement("path", {
 	    d: "M2,14c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S3.1,14,2,14L2,14z"
 	  }), wp.element.createElement("path", {
-	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5 c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2 c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
+	    d: "M14.93,6.7C15.59,5.99,16,5.05,16,4c0-2.21-1.79-4-4-4S8,1.79,8,4c0,1.05,0.41,1.99,1.07,2.7C6.95,7.78,5.5,9.97,5.5,12.5\r c0,0.17,0.01,0.33,0.03,0.5H6h1.55h8.9H17h1.47c0.01-0.17,0.03-0.33,0.03-0.5C18.5,9.97,17.05,7.78,14.93,6.7z M12,2\r c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S10.9,2,12,2z M12,8c1.95,0,3.6,1.26,4.22,3H7.78C8.4,9.26,10.05,8,12,8z"
 	  })),
 	  category: 'mpa-gutenberg-blocks',
 	  keywords: [wp_i18n.__('appointment', 'motopress-appointment')],

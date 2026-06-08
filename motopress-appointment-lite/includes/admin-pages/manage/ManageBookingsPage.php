@@ -465,7 +465,7 @@ class ManageBookingsPage extends ManagePostsPage {
 
 	private function echoBookingsTableFilters() {
 
-		echo( '<div class="mpa-entity-table-filter">' . esc_html__( 'Scheduled For', 'motopress-appointment' ) . ':&nbsp;' );
+		echo '<div class="mpa-entity-table-filter">';
 
 		// phpcs:ignore
 		echo FieldsFactory::createField(
