@@ -3,7 +3,7 @@
  * Plugin Name: Appointment Booking Lite
  * Plugin URI: https://motopress.com/products/appointment-booking/
  * Description: MotoPress Appointment Booking makes it easy for time and service-based businesses to accept bookings and appointments online.
- * Version: 2.4.4
+ * Version: 2.4.5
  * Requires at least: 5.3
  * Requires PHP: 7.4
  * Author: MotoPress
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( ! defined( 'MotoPress\Appointment\VERSION' ) ) {
 
-	define( 'MotoPress\Appointment\VERSION', '2.4.4' );
+	define( 'MotoPress\Appointment\VERSION', '2.4.5' );
 	define( 'MotoPress\Appointment\PLUGIN_FILE', __FILE__ );
 
 	require 'includes/defines.php';

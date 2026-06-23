@@ -202,18 +202,18 @@ msgstr "Зберегти зміни"
 #: includes/metaboxes/notification/NotificationSettingsMetabox.php:26
 #: templates/private/pages/wizard.php:12
 #: assets/js/gutenberg-blocks.js:3245
-#: assets/js/gutenberg-blocks.js:11482
-#: assets/js/gutenberg-blocks.js:11777
-#: assets/js/gutenberg-blocks.js:12063
-#: assets/js/gutenberg-blocks.js:12381
-#: assets/js/gutenberg-blocks.js:12662
-#: assets/js/gutenberg-blocks.js:12785
-#: assets/js/gutenberg-blocks.js:12908
-#: assets/js/gutenberg-blocks.js:13031
-#: assets/js/gutenberg-blocks.js:13154
-#: assets/js/gutenberg-blocks.js:13277
-#: assets/js/gutenberg-blocks.js:13400
-#: assets/js/gutenberg-blocks.js:13523
+#: assets/js/gutenberg-blocks.js:11506
+#: assets/js/gutenberg-blocks.js:11801
+#: assets/js/gutenberg-blocks.js:12087
+#: assets/js/gutenberg-blocks.js:12405
+#: assets/js/gutenberg-blocks.js:12686
+#: assets/js/gutenberg-blocks.js:12809
+#: assets/js/gutenberg-blocks.js:12932
+#: assets/js/gutenberg-blocks.js:13055
+#: assets/js/gutenberg-blocks.js:13178
+#: assets/js/gutenberg-blocks.js:13301
+#: assets/js/gutenberg-blocks.js:13424
+#: assets/js/gutenberg-blocks.js:13547
 msgid "Settings"
 msgstr "Налаштування"
 
@@ -276,14 +276,14 @@ msgstr "Скасувати експорт"
 #: includes/elementor/widgets/EmployeeServicesListWidget.php:43
 #: includes/elementor/widgets/EmployeeSocialNetworksWidget.php:44
 #: includes/elementor/widgets/EmployeeTitleWidget.php:44
-#: assets/js/gutenberg-blocks.js:12665
-#: assets/js/gutenberg-blocks.js:12788
-#: assets/js/gutenberg-blocks.js:12911
-#: assets/js/gutenberg-blocks.js:13034
-#: assets/js/gutenberg-blocks.js:13157
-#: assets/js/gutenberg-blocks.js:13280
-#: assets/js/gutenberg-blocks.js:13403
-#: assets/js/gutenberg-blocks.js:13526
+#: assets/js/gutenberg-blocks.js:12689
+#: assets/js/gutenberg-blocks.js:12812
+#: assets/js/gutenberg-blocks.js:12935
+#: assets/js/gutenberg-blocks.js:13058
+#: assets/js/gutenberg-blocks.js:13181
+#: assets/js/gutenberg-blocks.js:13304
+#: assets/js/gutenberg-blocks.js:13427
+#: assets/js/gutenberg-blocks.js:13550
 msgid "ID"
 msgstr "ID"
 
@@ -297,7 +297,7 @@ msgstr "ID"
 #: includes/post-types/ServicePostType.php:117
 #: assets/js/analytics-page.js:33399
 #: assets/js/calendar-page.js:45376
-#: assets/js/gutenberg-blocks.js:12440
+#: assets/js/gutenberg-blocks.js:12464
 msgid "Services"
 msgstr "Послуги"
 
@@ -321,7 +321,7 @@ msgstr "Послуги"
 #: templates/shortcodes/booking/step-admin-cart.php:33
 #: templates/shortcodes/booking/step-service-form.php:102
 #: assets/js/calendar-page.js:38165
-#: assets/js/edit-post.js:8987
+#: assets/js/edit-post.js:9005
 #: assets/js/gutenberg-blocks.js:3256
 #: assets/js/gutenberg-blocks.js:3303
 #: assets/js/widgets-manage-page.js:2976
@@ -356,8 +356,8 @@ msgstr "Час"
 #: includes/post-types/EmployeePostType.php:52
 #: assets/js/analytics-page.js:33437
 #: assets/js/calendar-page.js:45414
-#: assets/js/gutenberg-blocks.js:11533
-#: assets/js/gutenberg-blocks.js:12449
+#: assets/js/gutenberg-blocks.js:11557
+#: assets/js/gutenberg-blocks.js:12473
 msgid "Employees"
 msgstr "Працівники"
 
@@ -403,7 +403,7 @@ msgstr "Працівник"
 #: templates/service/price.php:19
 #: templates/shortcodes/booking/step-admin-cart.php:36
 #: templates/shortcodes/booking/step-cart.php:64
-#: assets/js/gutenberg-blocks.js:12535
+#: assets/js/gutenberg-blocks.js:12559
 msgid "Price"
 msgstr "Ціна"
 
@@ -420,7 +420,7 @@ msgstr "Статус"
 #: includes/admin-pages/manage/ManageBookingsPage.php:596
 #: includes/admin-pages/manage/ManageNotificationsPage.php:214
 #: includes/list-tables/emails/CustomerEmailsListTable.php:32
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:82
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:86
 #: templates/private/pages/customer-edit.php:20
 #: assets/js/calendar-page.js:38114
 msgid "Customer"
@@ -473,10 +473,10 @@ msgstr "Контакти"
 #: includes/elementor/widgets/ServicesListWidget.php:202
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:67
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:62
-#: assets/js/gutenberg-blocks.js:11610
-#: assets/js/gutenberg-blocks.js:11881
-#: assets/js/gutenberg-blocks.js:12190
-#: assets/js/gutenberg-blocks.js:12538
+#: assets/js/gutenberg-blocks.js:11634
+#: assets/js/gutenberg-blocks.js:11905
+#: assets/js/gutenberg-blocks.js:12214
+#: assets/js/gutenberg-blocks.js:12562
 msgid "Order"
 msgstr "Порядок"
 
@@ -847,7 +847,7 @@ msgstr "Країна проживання за замовчуванням"
 #: includes/metaboxes/shortcode/AppointmentFormLabelsMetabox.php:68
 #: includes/shortcodes/AppointmentFormShortcode.php:94
 #: includes/widgets/AppointmentFormWidget.php:191
-#: assets/js/edit-post.js:9037
+#: assets/js/edit-post.js:9055
 #: assets/js/gutenberg-blocks.js:3333
 #: assets/js/widgets-manage-page.js:3069
 msgid "— Select —"
@@ -1017,99 +1017,53 @@ msgstr "Сторінка невдалої транзакції"
 msgid "Page to redirect the customer to on failed transaction."
 msgstr "Сторінка, на яку перенаправлятиметься клієнт у разі невдалої транзакції."
 
-#. translators: %s is the link to Google Developers Console
-#: includes/bundles/SettingsBundle.php:500
-#, php-format
-msgid "Locate the Client's credentials in the %s."
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:505
-msgid "Open Google Developer Console and select or create a project."
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:506
-msgid "Enable the Google Calendar API for the project."
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:507
-msgid "Create OAuth credentials for \"user data\"."
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:508
-msgid "Set \"OAuth client ID\" as the credential type and choose \"Web application\"."
-msgstr ""
-
-#. translators: %s is the URL
-#: includes/bundles/SettingsBundle.php:511
-#, php-format
-msgid "Add %s to the \"Authorized redirect URIs\"."
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:513
-msgid "Get your Client ID and Client Secret."
-msgstr ""
-
-#. translators: %1$s and %2$s are HTML anchor tags
-#: includes/bundles/SettingsBundle.php:517
-#, php-format
-msgid "For more detailed instructions, %1$s visit our documentation %2$s."
-msgstr ""
-
-#: includes/bundles/SettingsBundle.php:531
-msgid "Client ID"
-msgstr "ID клієнта"
-
-#: includes/bundles/SettingsBundle.php:538
-msgid "Client Secret"
-msgstr "Секретний ключ"
-
-#: includes/bundles/SettingsBundle.php:566
+#: includes/bundles/SettingsBundle.php:523
 msgid "Default Form Styles"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:567
+#: includes/bundles/SettingsBundle.php:524
 msgid "These default styles apply to all booking forms, but you can customize each one separately."
 msgstr "Ці стилі за замовчуванням застосовуються до всіх форм бронювання, але ви можете налаштувати кожен з них окремо."
 
-#: includes/bundles/SettingsBundle.php:571
+#: includes/bundles/SettingsBundle.php:528
 msgid "Calendar Theme"
 msgstr "Тема календаря"
 
-#: includes/bundles/SettingsBundle.php:573
+#: includes/bundles/SettingsBundle.php:530
 #: includes/metaboxes/service/ServiceSettingsMetabox.php:42
 #: templates/private/pages/shortcodes-list.php:30
 msgid "Default"
 msgstr "За замовчуванням"
 
-#: includes/bundles/SettingsBundle.php:574
+#: includes/bundles/SettingsBundle.php:531
 msgid "Dark"
 msgstr "Темна"
 
-#: includes/bundles/SettingsBundle.php:575
+#: includes/bundles/SettingsBundle.php:532
 msgid "Material Blue"
 msgstr "Синій матеріал"
 
-#: includes/bundles/SettingsBundle.php:576
+#: includes/bundles/SettingsBundle.php:533
 msgid "Material Green"
 msgstr "Зелений матеріал"
 
-#: includes/bundles/SettingsBundle.php:577
+#: includes/bundles/SettingsBundle.php:534
 msgid "Material Red"
 msgstr "Червоний матеріал"
 
-#: includes/bundles/SettingsBundle.php:578
+#: includes/bundles/SettingsBundle.php:535
 msgid "Material Orange"
 msgstr "Матеріал Помаранчевий"
 
-#: includes/bundles/SettingsBundle.php:579
+#: includes/bundles/SettingsBundle.php:536
 msgid "Airbnb"
 msgstr ""
 
-#: includes/bundles/SettingsBundle.php:580
+#: includes/bundles/SettingsBundle.php:537
 msgid "Confetti"
 msgstr "Конфетті"
 
-#: includes/bundles/SettingsBundle.php:590
+#: includes/bundles/SettingsBundle.php:547
 #: includes/divi/modules/AppointmentFormModule.php:239
 #: includes/elementor/widgets/AppointmentFormWidget.php:326
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:23
@@ -1118,14 +1072,14 @@ msgstr "Конфетті"
 msgid "Form Width"
 msgstr "Ширина форми"
 
-#: includes/bundles/SettingsBundle.php:592
+#: includes/bundles/SettingsBundle.php:549
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:24
 #: includes/widgets/AppointmentFormWidget.php:263
 #: assets/js/gutenberg-blocks.js:3432
 msgid "Example: 100%"
 msgstr "Приклад: 100%"
 
-#: includes/bundles/SettingsBundle.php:596
+#: includes/bundles/SettingsBundle.php:553
 #: includes/divi/modules/AppointmentFormModule.php:215
 #: includes/elementor/widgets/AppointmentFormWidget.php:346
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:28
@@ -1134,7 +1088,7 @@ msgstr "Приклад: 100%"
 msgid "Primary Text Color"
 msgstr "Основний колір тексту"
 
-#: includes/bundles/SettingsBundle.php:601
+#: includes/bundles/SettingsBundle.php:558
 #: includes/divi/modules/AppointmentFormModule.php:221
 #: includes/elementor/widgets/AppointmentFormWidget.php:357
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:33
@@ -1143,7 +1097,7 @@ msgstr "Основний колір тексту"
 msgid "Primary Background Color"
 msgstr "Основний колір фону"
 
-#: includes/bundles/SettingsBundle.php:606
+#: includes/bundles/SettingsBundle.php:563
 #: includes/divi/modules/AppointmentFormModule.php:227
 #: includes/elementor/widgets/AppointmentFormWidget.php:368
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:38
@@ -1152,7 +1106,7 @@ msgstr "Основний колір фону"
 msgid "Secondary Text Color"
 msgstr "Колір другорядного тексту"
 
-#: includes/bundles/SettingsBundle.php:611
+#: includes/bundles/SettingsBundle.php:568
 #: includes/divi/modules/AppointmentFormModule.php:233
 #: includes/elementor/widgets/AppointmentFormWidget.php:379
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:43
@@ -1161,7 +1115,7 @@ msgstr "Колір другорядного тексту"
 msgid "Secondary Background Color"
 msgstr "Вторинний колір фону"
 
-#: includes/bundles/SettingsBundle.php:616
+#: includes/bundles/SettingsBundle.php:573
 #: includes/divi/modules/AppointmentFormModule.php:247
 #: includes/elementor/widgets/AppointmentFormWidget.php:390
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:48
@@ -1170,7 +1124,7 @@ msgstr "Вторинний колір фону"
 msgid "Buttons Padding"
 msgstr "Внутрішній відступ кнопки"
 
-#: includes/bundles/SettingsBundle.php:617
+#: includes/bundles/SettingsBundle.php:574
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:49
 #: includes/widgets/AppointmentFormWidget.php:288
 #: assets/js/gutenberg-blocks.js:3441
@@ -1280,7 +1234,7 @@ msgstr "Бронювання отримане"
 #: includes/shortcodes/AppointmentFormShortcode.php:32
 #: includes/widgets/AppointmentFormWidget.php:32
 #: includes/widgets/AppointmentFormWidget.php:139
-#: assets/js/gutenberg-blocks.js:11334
+#: assets/js/gutenberg-blocks.js:11358
 msgid "Appointment Form"
 msgstr "Форма бронювання"
 
@@ -1528,7 +1482,7 @@ msgstr "Невибраний параметр"
 #: includes/metaboxes/shortcode/AppointmentFormLabelsMetabox.php:76
 #: includes/shortcodes/AppointmentFormShortcode.php:100
 #: includes/widgets/AppointmentFormWidget.php:198
-#: assets/js/edit-post.js:9039
+#: assets/js/edit-post.js:9057
 #: assets/js/gutenberg-blocks.js:3202
 #: assets/js/gutenberg-blocks.js:3204
 #: assets/js/gutenberg-blocks.js:3205
@@ -1542,7 +1496,7 @@ msgstr "— Будь-яке —"
 #: includes/elementor/widgets/ServicesListWidget.php:146
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:79
 #: includes/shortcodes/ServicesListShortcode.php:91
-#: assets/js/gutenberg-blocks.js:12468
+#: assets/js/gutenberg-blocks.js:12492
 msgid "Comma-separated slugs or IDs of tags that will be shown."
 msgstr "Розділені комами слаґи або ID тегів, які будуть показані."
 
@@ -1619,7 +1573,7 @@ msgstr "Стилі форми призначення"
 #: includes/divi/modules/EmployeeAdditionalInfoModule.php:20
 #: includes/elementor/widgets/EmployeeAdditionalInfoWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeAdditionalInfoShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13580
+#: assets/js/gutenberg-blocks.js:13604
 msgid "Employee Additional Information"
 msgstr "Додаткова інформація про співробітника"
 
@@ -1640,49 +1594,49 @@ msgstr "Додаткова інформація про співробітник�
 #: includes/elementor/widgets/EmployeeSocialNetworksWidget.php:47
 #: includes/elementor/widgets/EmployeeTitleWidget.php:47
 #: includes/shortcodes/single-employee/AbstractSingleEmployeeShortcode.php:25
-#: assets/js/gutenberg-blocks.js:12666
-#: assets/js/gutenberg-blocks.js:12789
-#: assets/js/gutenberg-blocks.js:12912
-#: assets/js/gutenberg-blocks.js:13035
-#: assets/js/gutenberg-blocks.js:13158
-#: assets/js/gutenberg-blocks.js:13281
-#: assets/js/gutenberg-blocks.js:13404
-#: assets/js/gutenberg-blocks.js:13527
+#: assets/js/gutenberg-blocks.js:12690
+#: assets/js/gutenberg-blocks.js:12813
+#: assets/js/gutenberg-blocks.js:12936
+#: assets/js/gutenberg-blocks.js:13059
+#: assets/js/gutenberg-blocks.js:13182
+#: assets/js/gutenberg-blocks.js:13305
+#: assets/js/gutenberg-blocks.js:13428
+#: assets/js/gutenberg-blocks.js:13551
 msgid "Post ID of an employee to display content from. Note: this parameter automatically uses the current post ID when a shortcode is inside the employee's post and is required otherwise."
 msgstr "ID поста працівника з якого відображати вміст. Примітка: цей параметр автоматично використовує поточний ID, коли шорткод знаходиться всередині поста працівника і обов'язковий в іншому випадку."
 
 #: includes/divi/modules/EmployeeContactsModule.php:20
 #: includes/elementor/widgets/EmployeeContactsWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeContactsShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13334
+#: assets/js/gutenberg-blocks.js:13358
 msgid "Employee Contact Information"
 msgstr "Контактна інформація про співробітника"
 
 #: includes/divi/modules/EmployeeContentModule.php:20
 #: includes/elementor/widgets/EmployeeContentWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeContentShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13211
+#: assets/js/gutenberg-blocks.js:13235
 msgid "Employee Content"
 msgstr "Зміст співробітника"
 
 #: includes/divi/modules/EmployeeImageModule.php:20
 #: includes/elementor/widgets/EmployeeImageWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeImageShortcode.php:29
-#: assets/js/gutenberg-blocks.js:12719
+#: assets/js/gutenberg-blocks.js:12743
 msgid "Employee Image"
 msgstr "Зображення співробітника"
 
 #: includes/divi/modules/EmployeeScheduleModule.php:20
 #: includes/elementor/widgets/EmployeeScheduleWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeScheduleShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13088
+#: assets/js/gutenberg-blocks.js:13112
 msgid "Employee Schedule"
 msgstr "Розклад співробітника"
 
 #: includes/divi/modules/EmployeeServicesListModule.php:20
 #: includes/elementor/widgets/EmployeeServicesListWidget.php:24
 #: includes/shortcodes/single-employee/EmployeeServicesListShortcode.php:29
-#: assets/js/gutenberg-blocks.js:12965
+#: assets/js/gutenberg-blocks.js:12989
 msgid "Employee Services List"
 msgstr "Список послуг співробітника"
 
@@ -1690,7 +1644,7 @@ msgstr "Список послуг співробітника"
 #: includes/elementor/widgets/EmployeesListWidget.php:25
 #: includes/metaboxes/shortcode/EmployeesListMetabox.php:29
 #: includes/shortcodes/EmployeesListShortcode.php:29
-#: assets/js/gutenberg-blocks.js:11668
+#: assets/js/gutenberg-blocks.js:11692
 msgid "Employees List"
 msgstr "Список співробітників"
 
@@ -1706,10 +1660,10 @@ msgstr "Список співробітників"
 #: includes/shortcodes/LocationsListShortcode.php:41
 #: includes/shortcodes/ServiceCategoriesShortcode.php:43
 #: includes/shortcodes/ServicesListShortcode.php:41
-#: assets/js/gutenberg-blocks.js:11485
-#: assets/js/gutenberg-blocks.js:11780
-#: assets/js/gutenberg-blocks.js:12066
-#: assets/js/gutenberg-blocks.js:12384
+#: assets/js/gutenberg-blocks.js:11509
+#: assets/js/gutenberg-blocks.js:11804
+#: assets/js/gutenberg-blocks.js:12090
+#: assets/js/gutenberg-blocks.js:12408
 msgid "Show featured image."
 msgstr "Відображати головне зображення."
 
@@ -1722,9 +1676,9 @@ msgstr "Відображати головне зображення."
 #: includes/shortcodes/EmployeesListShortcode.php:46
 #: includes/shortcodes/LocationsListShortcode.php:46
 #: includes/shortcodes/ServicesListShortcode.php:46
-#: assets/js/gutenberg-blocks.js:11493
-#: assets/js/gutenberg-blocks.js:11788
-#: assets/js/gutenberg-blocks.js:12392
+#: assets/js/gutenberg-blocks.js:11517
+#: assets/js/gutenberg-blocks.js:11812
+#: assets/js/gutenberg-blocks.js:12416
 msgid "Show post title."
 msgstr "Відображати заголовок."
 
@@ -1737,30 +1691,30 @@ msgstr "Відображати заголовок."
 #: includes/shortcodes/EmployeesListShortcode.php:51
 #: includes/shortcodes/LocationsListShortcode.php:51
 #: includes/shortcodes/ServicesListShortcode.php:51
-#: assets/js/gutenberg-blocks.js:11501
-#: assets/js/gutenberg-blocks.js:11796
-#: assets/js/gutenberg-blocks.js:12400
+#: assets/js/gutenberg-blocks.js:11525
+#: assets/js/gutenberg-blocks.js:11820
+#: assets/js/gutenberg-blocks.js:12424
 msgid "Show post excerpt."
 msgstr "Відображати короткий зміст."
 
 #: includes/divi/modules/EmployeesListModule.php:57
 #: includes/elementor/widgets/EmployeesListWidget.php:74
 #: includes/shortcodes/EmployeesListShortcode.php:56
-#: assets/js/gutenberg-blocks.js:11509
+#: assets/js/gutenberg-blocks.js:11533
 msgid "Show contact information."
 msgstr "Відображати контактну інформацію."
 
 #: includes/divi/modules/EmployeesListModule.php:67
 #: includes/elementor/widgets/EmployeesListWidget.php:84
 #: includes/shortcodes/EmployeesListShortcode.php:61
-#: assets/js/gutenberg-blocks.js:11517
+#: assets/js/gutenberg-blocks.js:11541
 msgid "Show social networks."
 msgstr "Відображати соціальні мережі."
 
 #: includes/divi/modules/EmployeesListModule.php:77
 #: includes/elementor/widgets/EmployeesListWidget.php:94
 #: includes/shortcodes/EmployeesListShortcode.php:66
-#: assets/js/gutenberg-blocks.js:11525
+#: assets/js/gutenberg-blocks.js:11549
 msgid "Show additional information."
 msgstr "Відображати додаткову інформацію."
 
@@ -1768,7 +1722,7 @@ msgstr "Відображати додаткову інформацію."
 #: includes/elementor/widgets/EmployeesListWidget.php:107
 #: includes/metaboxes/shortcode/EmployeesListMetabox.php:60
 #: includes/shortcodes/EmployeesListShortcode.php:71
-#: assets/js/gutenberg-blocks.js:11534
+#: assets/js/gutenberg-blocks.js:11558
 msgid "Comma-separated slugs or IDs of employees that will be shown."
 msgstr "Розділені комами слаґи або ID співробітників які будуть показані."
 
@@ -1782,8 +1736,8 @@ msgstr "Розділені комами слаґи або ID співробіт�
 #: includes/post-types/LocationPostType.php:77
 #: assets/js/analytics-page.js:33420
 #: assets/js/calendar-page.js:45397
-#: assets/js/gutenberg-blocks.js:11542
-#: assets/js/gutenberg-blocks.js:11804
+#: assets/js/gutenberg-blocks.js:11566
+#: assets/js/gutenberg-blocks.js:11828
 msgid "Locations"
 msgstr "Місцезнаходження"
 
@@ -1791,8 +1745,8 @@ msgstr "Місцезнаходження"
 #: includes/elementor/widgets/EmployeesListWidget.php:117
 #: includes/metaboxes/shortcode/EmployeesListMetabox.php:66
 #: includes/shortcodes/EmployeesListShortcode.php:76
-#: assets/js/gutenberg-blocks.js:11543
-#: assets/js/gutenberg-blocks.js:11805
+#: assets/js/gutenberg-blocks.js:11567
+#: assets/js/gutenberg-blocks.js:11829
 msgid "Comma-separated slugs or IDs of locations."
 msgstr "Розділені комами слаґи або ID місцезнаходжень."
 
@@ -1805,9 +1759,9 @@ msgstr "Розділені комами слаґи або ID місцезнах�
 #: includes/metaboxes/shortcode/EmployeesListMetabox.php:71
 #: includes/metaboxes/shortcode/LocationsListMetabox.php:68
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:84
-#: assets/js/gutenberg-blocks.js:11551
-#: assets/js/gutenberg-blocks.js:11822
-#: assets/js/gutenberg-blocks.js:12476
+#: assets/js/gutenberg-blocks.js:11575
+#: assets/js/gutenberg-blocks.js:11846
+#: assets/js/gutenberg-blocks.js:12500
 msgid "Posts Per Page"
 msgstr "Кількість повідомлень на сторінці"
 
@@ -1825,10 +1779,10 @@ msgstr "Кількість повідомлень на сторінці"
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:96
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:91
 #: includes/widgets/AppointmentFormWidget.php:237
-#: assets/js/gutenberg-blocks.js:11560
-#: assets/js/gutenberg-blocks.js:11831
-#: assets/js/gutenberg-blocks.js:12146
-#: assets/js/gutenberg-blocks.js:12485
+#: assets/js/gutenberg-blocks.js:11584
+#: assets/js/gutenberg-blocks.js:11855
+#: assets/js/gutenberg-blocks.js:12170
+#: assets/js/gutenberg-blocks.js:12509
 msgid "Columns Count"
 msgstr "Кількість стовпців"
 
@@ -1846,10 +1800,10 @@ msgstr "Кількість стовпців"
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:92
 #: includes/shortcodes/AbstractPostsListShortcode.php:29
 #: includes/shortcodes/AbstractTermsListShortcode.php:30
-#: assets/js/gutenberg-blocks.js:11561
-#: assets/js/gutenberg-blocks.js:11832
-#: assets/js/gutenberg-blocks.js:12147
-#: assets/js/gutenberg-blocks.js:12486
+#: assets/js/gutenberg-blocks.js:11585
+#: assets/js/gutenberg-blocks.js:11856
+#: assets/js/gutenberg-blocks.js:12171
+#: assets/js/gutenberg-blocks.js:12510
 msgid "The number of columns in the grid."
 msgstr "Кількість стовпців у сітці."
 
@@ -1863,10 +1817,10 @@ msgstr "Кількість стовпців у сітці."
 #: includes/elementor/widgets/ServicesListWidget.php:178
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:59
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:54
-#: assets/js/gutenberg-blocks.js:11570
-#: assets/js/gutenberg-blocks.js:11841
-#: assets/js/gutenberg-blocks.js:12156
-#: assets/js/gutenberg-blocks.js:12495
+#: assets/js/gutenberg-blocks.js:11594
+#: assets/js/gutenberg-blocks.js:11865
+#: assets/js/gutenberg-blocks.js:12180
+#: assets/js/gutenberg-blocks.js:12519
 msgid "Order By"
 msgstr "Сортувати за"
 
@@ -1880,10 +1834,10 @@ msgstr "Сортувати за"
 #: includes/elementor/widgets/ServicesListWidget.php:182
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:39
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:40
-#: assets/js/gutenberg-blocks.js:11577
-#: assets/js/gutenberg-blocks.js:11848
-#: assets/js/gutenberg-blocks.js:12163
-#: assets/js/gutenberg-blocks.js:12502
+#: assets/js/gutenberg-blocks.js:11601
+#: assets/js/gutenberg-blocks.js:11872
+#: assets/js/gutenberg-blocks.js:12187
+#: assets/js/gutenberg-blocks.js:12526
 msgid "No order"
 msgstr "Без сортування"
 
@@ -1894,9 +1848,9 @@ msgstr "Без сортування"
 #: includes/elementor/widgets/LocationsListWidget.php:124
 #: includes/elementor/widgets/ServicesListWidget.php:183
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:40
-#: assets/js/gutenberg-blocks.js:11580
-#: assets/js/gutenberg-blocks.js:11851
-#: assets/js/gutenberg-blocks.js:12505
+#: assets/js/gutenberg-blocks.js:11604
+#: assets/js/gutenberg-blocks.js:11875
+#: assets/js/gutenberg-blocks.js:12529
 msgid "Post ID"
 msgstr "ID запису"
 
@@ -1907,9 +1861,9 @@ msgstr "ID запису"
 #: includes/elementor/widgets/LocationsListWidget.php:125
 #: includes/elementor/widgets/ServicesListWidget.php:184
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:41
-#: assets/js/gutenberg-blocks.js:11583
-#: assets/js/gutenberg-blocks.js:11854
-#: assets/js/gutenberg-blocks.js:12508
+#: assets/js/gutenberg-blocks.js:11607
+#: assets/js/gutenberg-blocks.js:11878
+#: assets/js/gutenberg-blocks.js:12532
 msgid "Post author"
 msgstr "Автор запису"
 
@@ -1923,9 +1877,9 @@ msgstr "Автор запису"
 #: includes/metaboxes/shortcode/LocationsListMetabox.php:49
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:49
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:42
-#: assets/js/gutenberg-blocks.js:11586
-#: assets/js/gutenberg-blocks.js:11857
-#: assets/js/gutenberg-blocks.js:12511
+#: assets/js/gutenberg-blocks.js:11610
+#: assets/js/gutenberg-blocks.js:11881
+#: assets/js/gutenberg-blocks.js:12535
 msgid "Post title"
 msgstr "Заголовок запису"
 
@@ -1936,9 +1890,9 @@ msgstr "Заголовок запису"
 #: includes/elementor/widgets/LocationsListWidget.php:127
 #: includes/elementor/widgets/ServicesListWidget.php:186
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:43
-#: assets/js/gutenberg-blocks.js:11589
-#: assets/js/gutenberg-blocks.js:11860
-#: assets/js/gutenberg-blocks.js:12514
+#: assets/js/gutenberg-blocks.js:11613
+#: assets/js/gutenberg-blocks.js:11884
+#: assets/js/gutenberg-blocks.js:12538
 msgid "Post name (post slug)"
 msgstr "Назва запису (слаг запису)"
 
@@ -1949,9 +1903,9 @@ msgstr "Назва запису (слаг запису)"
 #: includes/elementor/widgets/LocationsListWidget.php:128
 #: includes/elementor/widgets/ServicesListWidget.php:187
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:44
-#: assets/js/gutenberg-blocks.js:11592
-#: assets/js/gutenberg-blocks.js:11863
-#: assets/js/gutenberg-blocks.js:12517
+#: assets/js/gutenberg-blocks.js:11616
+#: assets/js/gutenberg-blocks.js:11887
+#: assets/js/gutenberg-blocks.js:12541
 msgid "Post date"
 msgstr "Дата запису"
 
@@ -1962,9 +1916,9 @@ msgstr "Дата запису"
 #: includes/elementor/widgets/LocationsListWidget.php:129
 #: includes/elementor/widgets/ServicesListWidget.php:188
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:45
-#: assets/js/gutenberg-blocks.js:11595
-#: assets/js/gutenberg-blocks.js:11866
-#: assets/js/gutenberg-blocks.js:12520
+#: assets/js/gutenberg-blocks.js:11619
+#: assets/js/gutenberg-blocks.js:11890
+#: assets/js/gutenberg-blocks.js:12544
 msgid "Last modified date"
 msgstr "Дата останньої зміни"
 
@@ -1975,9 +1929,9 @@ msgstr "Дата останньої зміни"
 #: includes/elementor/widgets/LocationsListWidget.php:130
 #: includes/elementor/widgets/ServicesListWidget.php:189
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:46
-#: assets/js/gutenberg-blocks.js:11598
-#: assets/js/gutenberg-blocks.js:11869
-#: assets/js/gutenberg-blocks.js:12523
+#: assets/js/gutenberg-blocks.js:11622
+#: assets/js/gutenberg-blocks.js:11893
+#: assets/js/gutenberg-blocks.js:12547
 msgid "Random order"
 msgstr "Випадковий порядок"
 
@@ -1988,9 +1942,9 @@ msgstr "Випадковий порядок"
 #: includes/elementor/widgets/LocationsListWidget.php:131
 #: includes/elementor/widgets/ServicesListWidget.php:190
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:47
-#: assets/js/gutenberg-blocks.js:11601
-#: assets/js/gutenberg-blocks.js:11872
-#: assets/js/gutenberg-blocks.js:12526
+#: assets/js/gutenberg-blocks.js:11625
+#: assets/js/gutenberg-blocks.js:11896
+#: assets/js/gutenberg-blocks.js:12550
 msgid "Relevance"
 msgstr "Релевантність"
 
@@ -2004,10 +1958,10 @@ msgstr "Релевантність"
 #: includes/elementor/widgets/ServicesListWidget.php:191
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:48
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:48
-#: assets/js/gutenberg-blocks.js:11604
-#: assets/js/gutenberg-blocks.js:11875
-#: assets/js/gutenberg-blocks.js:12187
-#: assets/js/gutenberg-blocks.js:12529
+#: assets/js/gutenberg-blocks.js:11628
+#: assets/js/gutenberg-blocks.js:11899
+#: assets/js/gutenberg-blocks.js:12211
+#: assets/js/gutenberg-blocks.js:12553
 msgid "Page order"
 msgstr "Послідовність сторінок"
 
@@ -2018,9 +1972,9 @@ msgstr "Послідовність сторінок"
 #: includes/elementor/widgets/LocationsListWidget.php:133
 #: includes/elementor/widgets/ServicesListWidget.php:192
 #: includes/metaboxes/shortcode/ShortcodeOrderMetabox.php:49
-#: assets/js/gutenberg-blocks.js:11607
-#: assets/js/gutenberg-blocks.js:11878
-#: assets/js/gutenberg-blocks.js:12532
+#: assets/js/gutenberg-blocks.js:11631
+#: assets/js/gutenberg-blocks.js:11902
+#: assets/js/gutenberg-blocks.js:12556
 msgid "Page order and post title"
 msgstr "Порядок сторінок і назва"
 
@@ -2032,10 +1986,10 @@ msgstr "Порядок сторінок і назва"
 #: includes/elementor/widgets/LocationsListWidget.php:146
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:178
 #: includes/elementor/widgets/ServicesListWidget.php:206
-#: assets/js/gutenberg-blocks.js:11617
-#: assets/js/gutenberg-blocks.js:11888
-#: assets/js/gutenberg-blocks.js:12197
-#: assets/js/gutenberg-blocks.js:12545
+#: assets/js/gutenberg-blocks.js:11641
+#: assets/js/gutenberg-blocks.js:11912
+#: assets/js/gutenberg-blocks.js:12221
+#: assets/js/gutenberg-blocks.js:12569
 msgid "DESC"
 msgstr "DESC"
 
@@ -2049,24 +2003,24 @@ msgstr "DESC"
 #: includes/elementor/widgets/ServicesListWidget.php:207
 #: includes/shortcodes/AbstractPostsListShortcode.php:42
 #: includes/shortcodes/AbstractTermsListShortcode.php:43
-#: assets/js/gutenberg-blocks.js:11620
-#: assets/js/gutenberg-blocks.js:11891
-#: assets/js/gutenberg-blocks.js:12200
-#: assets/js/gutenberg-blocks.js:12548
+#: assets/js/gutenberg-blocks.js:11644
+#: assets/js/gutenberg-blocks.js:11915
+#: assets/js/gutenberg-blocks.js:12224
+#: assets/js/gutenberg-blocks.js:12572
 msgid "ASC"
 msgstr "ASC"
 
 #: includes/divi/modules/EmployeeSocialNetworksModule.php:20
 #: includes/elementor/widgets/EmployeeSocialNetworksWidget.php:25
 #: includes/shortcodes/single-employee/EmployeeSocialNetworksShortcode.php:29
-#: assets/js/gutenberg-blocks.js:13457
+#: assets/js/gutenberg-blocks.js:13481
 msgid "Employee Social Networks"
 msgstr "Соціальні мережі співробітника"
 
 #: includes/divi/modules/EmployeeTitleModule.php:20
 #: includes/elementor/widgets/EmployeeTitleWidget.php:25
 #: includes/shortcodes/single-employee/EmployeeTitleShortcode.php:29
-#: assets/js/gutenberg-blocks.js:12842
+#: assets/js/gutenberg-blocks.js:12866
 msgid "Employee Title"
 msgstr "Назва співробітника"
 
@@ -2074,7 +2028,7 @@ msgstr "Назва співробітника"
 #: includes/elementor/widgets/LocationsListWidget.php:25
 #: includes/metaboxes/shortcode/LocationsListMetabox.php:29
 #: includes/shortcodes/LocationsListShortcode.php:29
-#: assets/js/gutenberg-blocks.js:11939
+#: assets/js/gutenberg-blocks.js:11963
 msgid "Locations List"
 msgstr "Список місцезнаходжень"
 
@@ -2096,9 +2050,9 @@ msgstr "Розділені комами слаґи або ID місцезнах�
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:72
 #: includes/post-types/LocationPostType.php:124
 #: includes/post-types/ServicePostType.php:164
-#: assets/js/gutenberg-blocks.js:11813
-#: assets/js/gutenberg-blocks.js:12099
-#: assets/js/gutenberg-blocks.js:12458
+#: assets/js/gutenberg-blocks.js:11837
+#: assets/js/gutenberg-blocks.js:12123
+#: assets/js/gutenberg-blocks.js:12482
 msgid "Categories"
 msgstr "Категорії"
 
@@ -2114,9 +2068,9 @@ msgstr "Категорії"
 #: includes/shortcodes/LocationsListShortcode.php:61
 #: includes/shortcodes/ServiceCategoriesShortcode.php:64
 #: includes/shortcodes/ServicesListShortcode.php:86
-#: assets/js/gutenberg-blocks.js:11814
-#: assets/js/gutenberg-blocks.js:12100
-#: assets/js/gutenberg-blocks.js:12459
+#: assets/js/gutenberg-blocks.js:11838
+#: assets/js/gutenberg-blocks.js:12124
+#: assets/js/gutenberg-blocks.js:12483
 msgid "Comma-separated slugs or IDs of categories that will be shown."
 msgstr "Розділені комами слаґи або ID категорій, які будуть показані."
 
@@ -2126,26 +2080,26 @@ msgstr "Розділені комами слаґи або ID категорій,
 #: includes/post-types/ServicePostType.php:149
 #: includes/post-types/ServicePostType.php:252
 #: includes/shortcodes/ServiceCategoriesShortcode.php:31
-#: assets/js/gutenberg-blocks.js:12248
+#: assets/js/gutenberg-blocks.js:12272
 msgid "Service Categories"
 msgstr "Категорії послуг"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:37
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:53
-#: assets/js/gutenberg-blocks.js:12074
+#: assets/js/gutenberg-blocks.js:12098
 msgid "Show Services Count?"
 msgstr "Показати кількість послуг?"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:47
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:63
-#: assets/js/gutenberg-blocks.js:12082
+#: assets/js/gutenberg-blocks.js:12106
 msgid "Show Description?"
 msgstr "Показати опис?"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:57
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:73
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:56
-#: assets/js/gutenberg-blocks.js:12090
+#: assets/js/gutenberg-blocks.js:12114
 msgid "Parent"
 msgstr "Батьківський елемент"
 
@@ -2153,14 +2107,14 @@ msgstr "Батьківський елемент"
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:76
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:57
 #: includes/shortcodes/ServiceCategoriesShortcode.php:58
-#: assets/js/gutenberg-blocks.js:12091
+#: assets/js/gutenberg-blocks.js:12115
 msgid "Parent term slug or ID to retrieve direct-child terms from."
 msgstr "Slug батьківського терміну або ID для отримання прямих дочірніх термінів."
 
 #: includes/divi/modules/ServiceCategoriesModule.php:69
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:93
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:68
-#: assets/js/gutenberg-blocks.js:12108
+#: assets/js/gutenberg-blocks.js:12132
 msgid "Exclude Categories"
 msgstr "Виключити категорії"
 
@@ -2168,21 +2122,21 @@ msgstr "Виключити категорії"
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:96
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:69
 #: includes/shortcodes/ServiceCategoriesShortcode.php:69
-#: assets/js/gutenberg-blocks.js:12109
+#: assets/js/gutenberg-blocks.js:12133
 msgid "Comma-separated slugs or IDs of categories that will not be shown."
 msgstr "Розділені комами слаґи або ID категорій, які не будуть показані."
 
 #: includes/divi/modules/ServiceCategoriesModule.php:75
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:103
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:74
-#: assets/js/gutenberg-blocks.js:12117
+#: assets/js/gutenberg-blocks.js:12141
 msgid "Hide Empty"
 msgstr "Сховати пусті"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:85
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:114
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:80
-#: assets/js/gutenberg-blocks.js:12126
+#: assets/js/gutenberg-blocks.js:12150
 msgid "Depth"
 msgstr "Глибина"
 
@@ -2190,14 +2144,14 @@ msgstr "Глибина"
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:115
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:81
 #: includes/shortcodes/ServiceCategoriesShortcode.php:79
-#: assets/js/gutenberg-blocks.js:12127
+#: assets/js/gutenberg-blocks.js:12151
 msgid "Display depth of child categories."
 msgstr "Показувати глибину дочірніх категорій."
 
 #: includes/divi/modules/ServiceCategoriesModule.php:97
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:127
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:88
-#: assets/js/gutenberg-blocks.js:12136
+#: assets/js/gutenberg-blocks.js:12160
 msgid "Number"
 msgstr "Число"
 
@@ -2205,56 +2159,56 @@ msgstr "Число"
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:128
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:89
 #: includes/shortcodes/AbstractTermsListShortcode.php:24
-#: assets/js/gutenberg-blocks.js:12137
+#: assets/js/gutenberg-blocks.js:12161
 msgid "Maximum number of categories to show."
 msgstr "Максимальна кількість категорій для відображення."
 
 #: includes/divi/modules/ServiceCategoriesModule.php:126
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:158
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:41
-#: assets/js/gutenberg-blocks.js:12166
+#: assets/js/gutenberg-blocks.js:12190
 msgid "Term name"
 msgstr "Назва терміну"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:127
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:159
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:42
-#: assets/js/gutenberg-blocks.js:12169
+#: assets/js/gutenberg-blocks.js:12193
 msgid "Term slug"
 msgstr "Слаг терміну"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:128
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:160
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:43
-#: assets/js/gutenberg-blocks.js:12172
+#: assets/js/gutenberg-blocks.js:12196
 msgid "Term ID"
 msgstr "Ідентифікатор значення"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:129
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:161
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:44
-#: assets/js/gutenberg-blocks.js:12175
+#: assets/js/gutenberg-blocks.js:12199
 msgid "Parent ID"
 msgstr "Батьківський ID"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:130
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:162
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:45
-#: assets/js/gutenberg-blocks.js:12178
+#: assets/js/gutenberg-blocks.js:12202
 msgid "Number of associated objects"
 msgstr "Кількість пов'язаних об'єктів"
 
 #: includes/divi/modules/ServiceCategoriesModule.php:131
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:163
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:46
-#: assets/js/gutenberg-blocks.js:12181
+#: assets/js/gutenberg-blocks.js:12205
 msgid "Keep the order of \"IDs\" parameter"
 msgstr "Залишити порядок параметра \"IDs\""
 
 #: includes/divi/modules/ServiceCategoriesModule.php:132
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:164
 #: includes/metaboxes/shortcode/ShortcodeTermsOrderMetabox.php:47
-#: assets/js/gutenberg-blocks.js:12184
+#: assets/js/gutenberg-blocks.js:12208
 msgid "Term order"
 msgstr "Порядок терміну"
 
@@ -2262,35 +2216,35 @@ msgstr "Порядок терміну"
 #: includes/elementor/widgets/ServicesListWidget.php:24
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:29
 #: includes/shortcodes/ServicesListShortcode.php:29
-#: assets/js/gutenberg-blocks.js:12596
+#: assets/js/gutenberg-blocks.js:12620
 msgid "Services List"
 msgstr "Список послуг"
 
 #: includes/divi/modules/ServicesListModule.php:57
 #: includes/elementor/widgets/ServicesListWidget.php:73
 #: includes/shortcodes/ServicesListShortcode.php:56
-#: assets/js/gutenberg-blocks.js:12408
+#: assets/js/gutenberg-blocks.js:12432
 msgid "Show service price."
 msgstr "Показувати вартість послуги."
 
 #: includes/divi/modules/ServicesListModule.php:67
 #: includes/elementor/widgets/ServicesListWidget.php:83
 #: includes/shortcodes/ServicesListShortcode.php:61
-#: assets/js/gutenberg-blocks.js:12416
+#: assets/js/gutenberg-blocks.js:12440
 msgid "Show service duration."
 msgstr "Показувати тривалість послуги."
 
 #: includes/divi/modules/ServicesListModule.php:77
 #: includes/elementor/widgets/ServicesListWidget.php:93
 #: includes/shortcodes/ServicesListShortcode.php:66
-#: assets/js/gutenberg-blocks.js:12424
+#: assets/js/gutenberg-blocks.js:12448
 msgid "Show service capacity."
 msgstr "Показувати місткість послуги."
 
 #: includes/divi/modules/ServicesListModule.php:87
 #: includes/elementor/widgets/ServicesListWidget.php:103
 #: includes/shortcodes/ServicesListShortcode.php:71
-#: assets/js/gutenberg-blocks.js:12432
+#: assets/js/gutenberg-blocks.js:12456
 msgid "Show service employees."
 msgstr "Показувати працівників послуги."
 
@@ -2298,7 +2252,7 @@ msgstr "Показувати працівників послуги."
 #: includes/elementor/widgets/ServicesListWidget.php:116
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:61
 #: includes/shortcodes/ServicesListShortcode.php:76
-#: assets/js/gutenberg-blocks.js:12441
+#: assets/js/gutenberg-blocks.js:12465
 msgid "Comma-separated slugs or IDs of services that will be shown."
 msgstr "Розділені комами слаґи або ID послуг які будуть показані."
 
@@ -2306,7 +2260,7 @@ msgstr "Розділені комами слаґи або ID послуг які
 #: includes/elementor/widgets/ServicesListWidget.php:126
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:67
 #: includes/shortcodes/ServicesListShortcode.php:81
-#: assets/js/gutenberg-blocks.js:12450
+#: assets/js/gutenberg-blocks.js:12474
 msgid "Comma-separated slugs or IDs of employees that perform these services."
 msgstr "Розділені комами слаги або ID працівників які виконують ці послуги."
 
@@ -2314,7 +2268,7 @@ msgstr "Розділені комами слаги або ID працівник�
 #: includes/elementor/widgets/ServicesListWidget.php:143
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:78
 #: includes/post-types/ServicePostType.php:210
-#: assets/js/gutenberg-blocks.js:12467
+#: assets/js/gutenberg-blocks.js:12491
 msgid "Tags"
 msgstr "Позначки"
 
@@ -2413,7 +2367,7 @@ msgstr "Ці параметри впливають тільки на те, що 
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:105
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:75
 #: includes/shortcodes/ServiceCategoriesShortcode.php:74
-#: assets/js/gutenberg-blocks.js:12118
+#: assets/js/gutenberg-blocks.js:12142
 msgid "Hide terms not assigned to any posts."
 msgstr "Приховати терміни, не призначені жодним публікаціям."
 
@@ -2442,17 +2396,17 @@ msgid "Other Recipients"
 msgstr "Інші одержувачі"
 
 #: includes/emails/AbstractEmail.php:325
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:98
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:94
 msgid "You can use multiple comma-separated email addresses."
 msgstr "Ви можете використовувати кілька розділених комами email адресів."
 
 #: includes/emails/AbstractEmail.php:331
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:135
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:131
 msgid "Subject"
 msgstr "Тема"
 
 #: includes/emails/AbstractEmail.php:338
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:146
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:142
 msgid "Header"
 msgstr "Заголовок"
 
@@ -2671,10 +2625,10 @@ msgstr "ID бронювання"
 #: includes/emails/tags/booking/BookingLeftToPayTag.php:19
 #: templates/emails/admin/admin-approved-booking-email.php:29
 #: templates/emails/customer/customer-approved-payment-email.php:24
-#: assets/js/divi-modules.js:6000
-#: assets/js/elementor-widgets.js:6000
-#: assets/js/gutenberg-blocks.js:6439
-#: assets/js/public.js:6000
+#: assets/js/divi-modules.js:6018
+#: assets/js/elementor-widgets.js:6018
+#: assets/js/gutenberg-blocks.js:6457
+#: assets/js/public.js:6018
 msgid "Left to pay"
 msgstr "Залишилось сплатити"
 
@@ -2894,11 +2848,11 @@ msgstr "Будь ласка, вкажіть дійсну e-mail адресу."
 #: templates/shortcodes/booking/step-cart.php:48
 #: templates/shortcodes/template-parts/booking-details.php:51
 #: assets/js/calendar-page.js:38070
-#: assets/js/divi-modules.js:2840
-#: assets/js/edit-post.js:4296
-#: assets/js/elementor-widgets.js:2840
+#: assets/js/divi-modules.js:2858
+#: assets/js/edit-post.js:4314
+#: assets/js/elementor-widgets.js:2858
 #: assets/js/gutenberg-blocks.js:431
-#: assets/js/public.js:2840
+#: assets/js/public.js:2858
 #: assets/js/widgets-manage-page.js:300
 msgid "Clients"
 msgstr "Клієнти"
@@ -2960,13 +2914,13 @@ msgstr "Товари не знайдено"
 #: includes/fields/complex/TimetableField.php:313
 #: includes/structures/TimePeriod.php:294
 #: assets/js/calendar-page.js:38145
-#: assets/js/divi-modules.js:3551
+#: assets/js/divi-modules.js:3569
 #: assets/js/edit-post.js:2101
-#: assets/js/edit-post.js:4828
-#: assets/js/edit-post.js:8782
-#: assets/js/elementor-widgets.js:3551
+#: assets/js/edit-post.js:4846
+#: assets/js/edit-post.js:8800
+#: assets/js/elementor-widgets.js:3569
 #: assets/js/gutenberg-blocks.js:1855
-#: assets/js/public.js:3551
+#: assets/js/public.js:3569
 #: assets/js/widgets-manage-page.js:1620
 msgid "All day"
 msgstr "Увесь день"
@@ -2975,12 +2929,12 @@ msgstr "Увесь день"
 #: includes/fields/complex/DaysOffField.php:100
 #: templates/shortcodes/booking/cart/admin-cart-item.php:113
 #: templates/shortcodes/booking/step-cart.php:72
-#: assets/js/divi-modules.js:5957
+#: assets/js/divi-modules.js:5975
 #: assets/js/edit-post.js:2051
 #: assets/js/edit-post.js:2283
-#: assets/js/elementor-widgets.js:5957
-#: assets/js/gutenberg-blocks.js:6396
-#: assets/js/public.js:5957
+#: assets/js/elementor-widgets.js:5975
+#: assets/js/gutenberg-blocks.js:6414
+#: assets/js/public.js:5975
 msgid "Remove"
 msgstr "Видалити"
 
@@ -3087,7 +3041,7 @@ msgstr "Скасувати"
 
 #. Translators: %s: Location name, like "Barbershop".
 #: includes/fields/complex/TimetableField.php:241
-#: assets/js/edit-post.js:8797
+#: assets/js/edit-post.js:8815
 #, php-format,js-format
 msgctxt "Working at %s"
 msgid "at %s"
@@ -3398,11 +3352,11 @@ msgstr ""
 
 #: includes/helpers/PriceCalculationHelper.php:50
 #: includes/helpers/PriceCalculationHelper.php:122
-#: assets/js/divi-modules.js:6038
+#: assets/js/divi-modules.js:6056
 #: assets/js/edit-post.js:1602
-#: assets/js/elementor-widgets.js:6038
-#: assets/js/gutenberg-blocks.js:6477
-#: assets/js/public.js:6038
+#: assets/js/elementor-widgets.js:6056
+#: assets/js/gutenberg-blocks.js:6495
+#: assets/js/public.js:6056
 msgctxt "Zero price"
 msgid "Free"
 msgstr "Вільне"
@@ -3514,7 +3468,7 @@ msgid "Booking #%d"
 msgstr "Бронювання #%d"
 
 #: includes/metaboxes/booking/BookingPriceMetabox.php:186
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:129
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:144
 #: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:295
 msgid "Sorry, the selected time slot is already booked."
 msgstr "Обраний часовий проміжок вже заброньовано."
@@ -3630,15 +3584,15 @@ msgstr "Невірний email користувача, тому що інший 
 msgid "Employee Google Calendar"
 msgstr "Google Календар співробітника"
 
-#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:75
+#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:73
 msgid "Connected"
 msgstr "Підключено"
 
-#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:79
+#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:77
 msgid "Disconnect Calendar"
 msgstr "Відключити календар"
 
-#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:87
+#: includes/metaboxes/employee/EmployeeGoogleCalendarMetabox.php:85
 msgid "Connect to Calendar"
 msgstr "Підключити до календаря"
 
@@ -3672,28 +3626,28 @@ msgstr "Час надсилання"
 msgid "Time at which the notification must be sent (only for daily ones)."
 msgstr "Час, в який має бути надіслано сповіщення (тільки для щоденних)."
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:84
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:82
 msgid "Custom Contacts"
 msgstr "Власні контакти"
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:97
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:93
 msgid "Custom Email Addresses"
 msgstr "Власні email-адреси"
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:108
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:104
 msgid "Custom Phone Numbers"
 msgstr "Власні телефонні номери"
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:109
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:105
 msgid "You can use multiple comma-separated phone numbers in international format."
 msgstr "Ви можете використовувати кілька телефонних номерів у міжнародному форматі, розділених комами."
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:119
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:157
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:115
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:153
 msgid "Message"
 msgstr "Повідомлення"
 
-#: includes/metaboxes/notification/NotificationSettingsMetabox.php:123
+#: includes/metaboxes/notification/NotificationSettingsMetabox.php:119
 msgid "{service_name} on {reservation_date} at {start_time} has been booked. {employee_name} is waiting for you at {location_name}"
 msgstr ""
 
@@ -4089,38 +4043,38 @@ msgstr "Картка (Stripe)"
 msgid "Pay with your credit card via Stripe. Use the card number 4242424242424242 with CVC 123, a valid expiration date and random 5-digit ZIP-code to test a payment."
 msgstr "Сплатіть за допомогою своєї картки через Stripe. Використайте номер картки 4242424242424242 з CVC 123, дійсним терміном дії та випадковим 5-значним поштовим кодом для тестового платежу."
 
-#: assets/js/divi-modules.js:8366
-#: assets/js/elementor-widgets.js:8366
-#: assets/js/gutenberg-blocks.js:8805
-#: assets/js/public.js:8366
+#: assets/js/divi-modules.js:8384
+#: assets/js/elementor-widgets.js:8384
+#: assets/js/gutenberg-blocks.js:8823
+#: assets/js/public.js:8384
 msgid "Bancontact"
 msgstr "Bancontact"
 
-#: assets/js/divi-modules.js:8393
-#: assets/js/elementor-widgets.js:8393
-#: assets/js/gutenberg-blocks.js:8832
-#: assets/js/public.js:8393
+#: assets/js/divi-modules.js:8411
+#: assets/js/elementor-widgets.js:8411
+#: assets/js/gutenberg-blocks.js:8850
+#: assets/js/public.js:8411
 msgid "iDEAL"
 msgstr "iDEAL"
 
-#: assets/js/divi-modules.js:8431
-#: assets/js/elementor-widgets.js:8431
-#: assets/js/gutenberg-blocks.js:8870
-#: assets/js/public.js:8431
+#: assets/js/divi-modules.js:8449
+#: assets/js/elementor-widgets.js:8449
+#: assets/js/gutenberg-blocks.js:8888
+#: assets/js/public.js:8449
 msgid "Giropay"
 msgstr "Giropay"
 
-#: assets/js/divi-modules.js:8331
-#: assets/js/elementor-widgets.js:8331
-#: assets/js/gutenberg-blocks.js:8770
-#: assets/js/public.js:8331
+#: assets/js/divi-modules.js:8349
+#: assets/js/elementor-widgets.js:8349
+#: assets/js/gutenberg-blocks.js:8788
+#: assets/js/public.js:8349
 msgid "SEPA Direct Debit"
 msgstr "SEPA Direct Debit"
 
-#: assets/js/divi-modules.js:8458
-#: assets/js/elementor-widgets.js:8458
-#: assets/js/gutenberg-blocks.js:8897
-#: assets/js/public.js:8458
+#: assets/js/divi-modules.js:8476
+#: assets/js/elementor-widgets.js:8476
+#: assets/js/gutenberg-blocks.js:8915
+#: assets/js/public.js:8476
 msgid "SOFORT"
 msgstr "SOFORT"
 
@@ -4909,28 +4863,28 @@ msgstr "Ви не можете видалити клієнта, якщо у нь
 msgid "Reservation #%d"
 msgstr "Бронювання #%d"
 
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:137
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:153
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:152
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:168
 #: includes/rest/controllers/motopress/appointment/v1/PaymentsRestController.php:121
 #: includes/rest/controllers/motopress/appointment/v1/PaymentsRestController.php:170
 msgid "Sorry! Failed to make a reservation at the moment."
 msgstr "Вибачте! В даний момент не вдалося зробити бронювання."
 
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:166
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:181
 msgid "You've successfully made a booking. Thank you!"
 msgstr "Ви успішно оформили бронювання. Дякуємо!"
 
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:168
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:183
 msgid "Your reservation request has been received and is waiting for our confirmation. Thank you!"
 msgstr "Ваш запит на бронювання отримано та чекає підтвердження. Дякуємо!"
 
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:332
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:333
 #: includes/rest/controllers/motopress/appointment/v1/CalendarRestController.php:90
 #: includes/rest/controllers/motopress/appointment/v1/ServicesRestController.php:65
 msgid "Invalid parameter: service ID is not set."
 msgstr "Некоректний параметр: ID послуги не встановлено."
 
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:334
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:335
 #: includes/rest/controllers/motopress/appointment/v1/CalendarRestController.php:97
 msgid "Invalid parameter: date range is not set."
 msgstr "Некоректний параметр: діапазон дат не встановлено."
@@ -5585,10 +5539,10 @@ msgid "Edit Reservations"
 msgstr "Редагувати бронювання"
 
 #: templates/shortcodes/booking/step-booking.php:24
-#: assets/js/divi-modules.js:5627
-#: assets/js/elementor-widgets.js:5627
-#: assets/js/gutenberg-blocks.js:6066
-#: assets/js/public.js:5627
+#: assets/js/divi-modules.js:5645
+#: assets/js/elementor-widgets.js:5645
+#: assets/js/gutenberg-blocks.js:6084
+#: assets/js/public.js:5645
 msgid "Making a reservation..."
 msgstr "Здійснення бронювання..."
 
@@ -6301,168 +6255,168 @@ msgid "December"
 msgstr "Грудень"
 
 #: assets/js/customers-page.js:497
-#: assets/js/divi-modules.js:6632
+#: assets/js/divi-modules.js:6650
 #: assets/js/edit-post.js:1100
-#: assets/js/elementor-widgets.js:6632
-#: assets/js/gutenberg-blocks.js:7071
-#: assets/js/public.js:6632
+#: assets/js/elementor-widgets.js:6650
+#: assets/js/gutenberg-blocks.js:7089
+#: assets/js/public.js:6650
 #: assets/js/settings-page.js:685
 #: assets/js/widgets-manage-page.js:2911
 msgid "Phone number is invalid."
 msgstr "Номер телефону недійсний."
 
-#: assets/js/divi-modules.js:5731
-#: assets/js/divi-modules.js:7615
-#: assets/js/elementor-widgets.js:5731
-#: assets/js/elementor-widgets.js:7615
-#: assets/js/gutenberg-blocks.js:6170
-#: assets/js/gutenberg-blocks.js:8054
-#: assets/js/public.js:5731
-#: assets/js/public.js:7615
+#: assets/js/divi-modules.js:5749
+#: assets/js/divi-modules.js:7633
+#: assets/js/elementor-widgets.js:5749
+#: assets/js/elementor-widgets.js:7633
+#: assets/js/gutenberg-blocks.js:6188
+#: assets/js/gutenberg-blocks.js:8072
+#: assets/js/public.js:5749
+#: assets/js/public.js:7633
 msgid "You will be redirected to a secure page to complete the payment."
 msgstr "Ви будете перенаправлені на безпечну сторінку для завершення оплати."
 
-#: assets/js/divi-modules.js:5942
-#: assets/js/elementor-widgets.js:5942
-#: assets/js/gutenberg-blocks.js:6381
-#: assets/js/public.js:5942
+#: assets/js/divi-modules.js:5960
+#: assets/js/elementor-widgets.js:5960
+#: assets/js/gutenberg-blocks.js:6399
+#: assets/js/public.js:5960
 msgid "Subtotal"
 msgstr "Проміжний підсумок"
 
 #. Translators: %s: Coupon code.
-#: assets/js/divi-modules.js:5952
-#: assets/js/elementor-widgets.js:5952
-#: assets/js/gutenberg-blocks.js:6391
-#: assets/js/public.js:5952
+#: assets/js/divi-modules.js:5970
+#: assets/js/elementor-widgets.js:5970
+#: assets/js/gutenberg-blocks.js:6409
+#: assets/js/public.js:5970
 #, js-format
 msgid "Coupon: %s"
 msgstr "Купон: %s"
 
-#: assets/js/divi-modules.js:5964
-#: assets/js/divi-modules.js:8117
-#: assets/js/divi-modules.js:8632
-#: assets/js/elementor-widgets.js:5964
-#: assets/js/elementor-widgets.js:8117
-#: assets/js/elementor-widgets.js:8632
-#: assets/js/gutenberg-blocks.js:6403
-#: assets/js/gutenberg-blocks.js:8556
-#: assets/js/gutenberg-blocks.js:9071
-#: assets/js/public.js:5964
-#: assets/js/public.js:8117
-#: assets/js/public.js:8632
+#: assets/js/divi-modules.js:5982
+#: assets/js/divi-modules.js:8135
+#: assets/js/divi-modules.js:8650
+#: assets/js/elementor-widgets.js:5982
+#: assets/js/elementor-widgets.js:8135
+#: assets/js/elementor-widgets.js:8650
+#: assets/js/gutenberg-blocks.js:6421
+#: assets/js/gutenberg-blocks.js:8574
+#: assets/js/gutenberg-blocks.js:9089
+#: assets/js/public.js:5982
+#: assets/js/public.js:8135
+#: assets/js/public.js:8650
 msgid "Total"
 msgstr "Загалом"
 
-#: assets/js/divi-modules.js:5987
-#: assets/js/elementor-widgets.js:5987
-#: assets/js/gutenberg-blocks.js:6426
-#: assets/js/public.js:5987
+#: assets/js/divi-modules.js:6005
+#: assets/js/elementor-widgets.js:6005
+#: assets/js/gutenberg-blocks.js:6444
+#: assets/js/public.js:6005
 msgid "Deposit"
 msgstr "Завдаток"
 
-#: assets/js/divi-modules.js:5992
-#: assets/js/elementor-widgets.js:5992
-#: assets/js/gutenberg-blocks.js:6431
-#: assets/js/public.js:5992
+#: assets/js/divi-modules.js:6010
+#: assets/js/elementor-widgets.js:6010
+#: assets/js/gutenberg-blocks.js:6449
+#: assets/js/public.js:6010
 msgid "Paying now"
 msgstr "Оплатити зараз"
 
-#: assets/js/divi-modules.js:6530
-#: assets/js/elementor-widgets.js:6530
-#: assets/js/gutenberg-blocks.js:6969
-#: assets/js/public.js:6530
+#: assets/js/divi-modules.js:6548
+#: assets/js/elementor-widgets.js:6548
+#: assets/js/gutenberg-blocks.js:6987
+#: assets/js/public.js:6548
 msgid "Coupon code is empty."
 msgstr "Пустий код купону."
 
-#: assets/js/divi-modules.js:6539
-#: assets/js/elementor-widgets.js:6539
-#: assets/js/gutenberg-blocks.js:6978
-#: assets/js/public.js:6539
+#: assets/js/divi-modules.js:6557
+#: assets/js/elementor-widgets.js:6557
+#: assets/js/gutenberg-blocks.js:6996
+#: assets/js/public.js:6557
 msgid "Coupon code applied successfully."
 msgstr "Купон було успішно застосовано."
 
-#: assets/js/divi-modules.js:6541
-#: assets/js/elementor-widgets.js:6541
-#: assets/js/gutenberg-blocks.js:6980
-#: assets/js/public.js:6541
+#: assets/js/divi-modules.js:6559
+#: assets/js/elementor-widgets.js:6559
+#: assets/js/gutenberg-blocks.js:6998
+#: assets/js/public.js:6559
 msgid "Sorry, your booking is not eligible for this coupon."
 msgstr "На жаль, ваше бронювання не підходить для цього купона."
 
 #. Translators: %s: Business name.
-#: assets/js/divi-modules.js:7545
-#: assets/js/elementor-widgets.js:7545
-#: assets/js/gutenberg-blocks.js:7984
-#: assets/js/public.js:7545
+#: assets/js/divi-modules.js:7563
+#: assets/js/elementor-widgets.js:7563
+#: assets/js/gutenberg-blocks.js:8002
+#: assets/js/public.js:7563
 #, js-format
 msgid "By providing your IBAN and confirming this payment, you authorise (A) %s and Stripe, our payment service provider, to send instructions to your bank to debit your account and (B) your bank to debit your account in accordance with those instructions. You are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited."
 msgstr "Надаючи ваш IBAN та підтверджуючи цей платіж, ви авторизуєте (A) %s та Stripe, нашого провайдера онлайн-платежів, надіслати розпорядження вашому банку списати з вашого рахунку і (B) ваш банк спише з вашого рахунку у відповідності до цього розпорядження. Ви маєте право на повернення коштів від вашого банку відповідно до правил та умов угоди з вашим банком. Запит на повернення має бути зроблено протягом 8 тижнів від дати списання з вашого рахунку."
 
-#: assets/js/divi-modules.js:7566
-#: assets/js/elementor-widgets.js:7566
-#: assets/js/gutenberg-blocks.js:8005
-#: assets/js/public.js:7566
+#: assets/js/divi-modules.js:7584
+#: assets/js/elementor-widgets.js:7584
+#: assets/js/gutenberg-blocks.js:8023
+#: assets/js/public.js:7584
 msgid "Credit or debit card"
 msgstr "Кредитна або дебетова картка"
 
-#: assets/js/divi-modules.js:7570
-#: assets/js/elementor-widgets.js:7570
-#: assets/js/gutenberg-blocks.js:8009
-#: assets/js/public.js:7570
+#: assets/js/divi-modules.js:7588
+#: assets/js/elementor-widgets.js:7588
+#: assets/js/gutenberg-blocks.js:8027
+#: assets/js/public.js:7588
 msgid "or"
 msgstr "або"
 
-#: assets/js/divi-modules.js:7585
-#: assets/js/elementor-widgets.js:7585
-#: assets/js/gutenberg-blocks.js:8024
-#: assets/js/public.js:7585
+#: assets/js/divi-modules.js:7603
+#: assets/js/elementor-widgets.js:7603
+#: assets/js/gutenberg-blocks.js:8042
+#: assets/js/public.js:7603
 msgid "Select iDEAL Bank"
 msgstr "Обрати iDEAL Bank"
 
-#: assets/js/divi-modules.js:7600
-#: assets/js/elementor-widgets.js:7600
-#: assets/js/gutenberg-blocks.js:8039
-#: assets/js/public.js:7600
+#: assets/js/divi-modules.js:7618
+#: assets/js/elementor-widgets.js:7618
+#: assets/js/gutenberg-blocks.js:8057
+#: assets/js/public.js:7618
 msgid "IBAN"
 msgstr "IBAN"
 
-#: assets/js/divi-modules.js:7864
-#: assets/js/elementor-widgets.js:7864
-#: assets/js/gutenberg-blocks.js:8303
-#: assets/js/public.js:7864
+#: assets/js/divi-modules.js:7882
+#: assets/js/elementor-widgets.js:7882
+#: assets/js/gutenberg-blocks.js:8321
+#: assets/js/public.js:7882
 msgid "Payment methods"
 msgstr "Способи оплати"
 
-#: assets/js/divi-modules.js:8076
-#: assets/js/elementor-widgets.js:8076
-#: assets/js/gutenberg-blocks.js:8515
-#: assets/js/public.js:8076
+#: assets/js/divi-modules.js:8094
+#: assets/js/elementor-widgets.js:8094
+#: assets/js/gutenberg-blocks.js:8533
+#: assets/js/public.js:8094
 msgid "Card"
 msgstr "Картка"
 
-#: assets/js/divi-modules.js:10106
-#: assets/js/edit-post.js:7659
-#: assets/js/elementor-widgets.js:10106
-#: assets/js/gutenberg-blocks.js:10545
-#: assets/js/public.js:10106
+#: assets/js/divi-modules.js:10130
+#: assets/js/edit-post.js:7677
+#: assets/js/elementor-widgets.js:10130
+#: assets/js/gutenberg-blocks.js:10569
+#: assets/js/public.js:10130
 msgid "Sorry, but we were unable to allocate time slots for the date you selected."
 msgstr "Вибачте, але ми не змогли виділити час на вибрану вами дату."
 
-#: assets/js/divi-modules.js:10753
-#: assets/js/elementor-widgets.js:10753
-#: assets/js/gutenberg-blocks.js:11192
-#: assets/js/public.js:10753
+#: assets/js/divi-modules.js:10777
+#: assets/js/elementor-widgets.js:10777
+#: assets/js/gutenberg-blocks.js:11216
+#: assets/js/public.js:10777
 msgid "Sorry, there are no services, employees or locations to book."
 msgstr "На жаль, немає послуг, працівників чи місцезнаходжень для бронювання."
 
 #. Translators: %s: Checkbox label.
-#: assets/js/edit-post.js:8987
+#: assets/js/edit-post.js:9005
 #: assets/js/gutenberg-blocks.js:3220
 #: assets/js/widgets-manage-page.js:2976
 #, js-format
 msgid "To enable this option, you need to check the '%s' box."
 msgstr "Щоб увімкнути цю опцію, вам потрібно встановити прапорець \"%s\"."
 
-#: assets/js/edit-post.js:8988
+#: assets/js/edit-post.js:9006
 #: assets/js/gutenberg-blocks.js:3238
 #: assets/js/widgets-manage-page.js:2977
 msgid "To enable booking for the specific service only, select the service below first, then uncheck the 'Service' box here."
@@ -6472,23 +6426,23 @@ msgstr ""
 msgid "Colors"
 msgstr "Кольори"
 
-#: assets/js/gutenberg-blocks.js:11376
-#: assets/js/gutenberg-blocks.js:11686
-#: assets/js/gutenberg-blocks.js:11957
-#: assets/js/gutenberg-blocks.js:12260
-#: assets/js/gutenberg-blocks.js:12614
-#: assets/js/gutenberg-blocks.js:12737
-#: assets/js/gutenberg-blocks.js:12860
-#: assets/js/gutenberg-blocks.js:12983
-#: assets/js/gutenberg-blocks.js:13106
-#: assets/js/gutenberg-blocks.js:13229
-#: assets/js/gutenberg-blocks.js:13352
-#: assets/js/gutenberg-blocks.js:13475
-#: assets/js/gutenberg-blocks.js:13598
+#: assets/js/gutenberg-blocks.js:11400
+#: assets/js/gutenberg-blocks.js:11710
+#: assets/js/gutenberg-blocks.js:11981
+#: assets/js/gutenberg-blocks.js:12284
+#: assets/js/gutenberg-blocks.js:12638
+#: assets/js/gutenberg-blocks.js:12761
+#: assets/js/gutenberg-blocks.js:12884
+#: assets/js/gutenberg-blocks.js:13007
+#: assets/js/gutenberg-blocks.js:13130
+#: assets/js/gutenberg-blocks.js:13253
+#: assets/js/gutenberg-blocks.js:13376
+#: assets/js/gutenberg-blocks.js:13499
+#: assets/js/gutenberg-blocks.js:13622
 msgid "appointment"
 msgstr "бронювання"
 
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:107
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:124
 #: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:273
 msgid "Unable to make a reservation. Your request did not pass the security check."
 msgstr ""

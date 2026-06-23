@@ -3,7 +3,7 @@
 namespace MotoPress\Appointment\REST\Controllers\Motopress\Appointment\V1;
 
 use MotoPress\Appointment\Crons\DeleteDraftBookingsCron;
-use MotoPress\Appointment\Entities\Reservation;
+use MotoPress\Appointment\Entities\{ Booking, Payment, Reservation };
 use MotoPress\Appointment\Helpers\AvailabilityHelper;
 use MotoPress\Appointment\PostTypes\Statuses\BookingStatuses;
 use MotoPress\Appointment\Rest\ApiHelper;
@@ -101,18 +101,33 @@ class BookingsRestController extends AbstractRestController {
 	 */
 	public function createBooking( $request ) {
 		$order = $request->get_params();
-		$nonce = $order['nonce'] ?? null;
 
-		if ( ! $nonce || ! wp_verify_nonce( $nonce, 'mpa_create_booking' ) ) {
+		$bookingId = 0; // Auto-draft ID, if exists (only with payments)
+
+		if ( mpapp()->settings()->isPaymentsEnabled()
+			&& isset( $order['payment_details']['booking_id'] )
+		) {
+			$bookingId = absint( $order['payment_details']['booking_id'] );
+		}
+
+		$nonceOk = false;
+
+		if ( isset( $order['nonce'] ) ) {
+			if ( mpapp()->settings()->isPaymentsEnabled() ) {
+				$nonceOk = wp_verify_nonce( $order['nonce'], "mpa_create_booking_{$bookingId}" );
+			} else {
+				$nonceOk = wp_verify_nonce( $order['nonce'], 'mpa_create_booking' );
+			}
+		}
+
+		if ( ! $nonceOk ) {
 			return new WP_Error( 'failed_request', esc_html__( 'Unable to make a reservation. Your request did not pass the security check.', 'motopress-appointment' ) );
 		}
 
 		$booking = null;
 
-		if ( mpapp()->settings()->isPaymentsEnabled()
-			&& isset( $order['payment_details']['booking_id'] )
-		) {
-			$booking = mpapp()->repositories()->booking()->findById( $order['payment_details']['booking_id'] );
+		if ( $bookingId ) {
+			$booking = mpapp()->repositories()->booking()->findById( $bookingId );
 		}
 
 		// Prevent processing of already processed bookings
@@ -181,50 +196,29 @@ class BookingsRestController extends AbstractRestController {
 
 
 	/**
-	 * @param $order
-	 * @param $isPaymentsEnabled
-	 *
-	 * @return array [
-	 * 'booking' => $booking,
-	 * 'payment' => $payment
-	 * ]
-	 *
 	 * @since 1.23.0
+	 *
+	 * @param array $order
+	 * @return array {
+	 *     @type Booking $booking
+	 *     @type Payment $payment
+	 * }
 	 */
-	protected function findDrafts( $order, $isPaymentsEnabled ) {
+	protected function findDrafts( $order ) {
 		if ( ! isset( $order['payment_details']['booking_id'] ) ) {
 			return array();
 		}
 
-		$bookingId = intval( $order['payment_details']['booking_id'] );
-
-		if ( ! $bookingId ||
-			absint( $bookingId ) !== absint( $order['payment_details']['booking_id'] )
-		) {
-			return array();
-		}
-
+		$bookingId = absint( $order['payment_details']['booking_id'] );
 		$booking = mpapp()->repositories()->booking()->findById( $bookingId );
 
-		if ( ! $booking ) {
-			return array();
-		}
-
-		if ( $booking->getStatus() !== 'auto-draft' ) {
-			return array();
-		}
-
-		if ( ! $isPaymentsEnabled ) {
+		if ( ! $booking || $booking->getStatus() !== 'auto-draft' ) {
 			return array();
 		}
 
 		$payment = $booking->getExpectingPayment();
 
-		if ( ! $payment ) {
-			return array();
-		}
-
-		if ( $payment->getStatus() !== 'auto-draft' ) {
+		if ( ! $payment || $payment->getStatus() !== 'auto-draft' ) {
 			return array();
 		}
 
@@ -235,25 +229,31 @@ class BookingsRestController extends AbstractRestController {
 	}
 
 	/**
-	 * @param $order
-	 * @param $isPaymentsEnabled
-	 *
-	 * @return array
 	 * @since 1.23.0
+	 *
+	 * @param array $order
+	 * @param bool $isPaymentsEnabled
+	 * @return array {
+	 *     @type int    $booking_id
+	 *     @type string $booking_uid
+	 *     @type int    $payment_id
+	 *     @type string $payment_uid
+	 * }
 	 */
 	protected function createDraftsArray( $order, $isPaymentsEnabled ) {
-		/**
-		 * Relevant only for confirmation upon payment mode and multi-booking mode at the same time.
-		 */
-		$draftEntities = $this->findDrafts( $order, $isPaymentsEnabled );
+		if ( $isPaymentsEnabled ) {
+			// Relevant only for confirmation upon payment mode and
+			// multi-booking mode at the same time
+			$draftEntities = $this->findDrafts( $order );
 
-		if ( count( $draftEntities ) ) {
-			return array(
-				'booking_id'  => $draftEntities['booking']->getId(),
-				'booking_uid' => $draftEntities['booking']->getUid(),
-				'payment_id'  => $draftEntities['payment']->getId(),
-				'payment_uid' => $draftEntities['payment']->getUid(),
-			);
+			if ( ! empty( $draftEntities ) ) {
+				return array(
+					'booking_id'  => $draftEntities['booking']->getId(),
+					'booking_uid' => $draftEntities['booking']->getUid(),
+					'payment_id'  => $draftEntities['payment']->getId(),
+					'payment_uid' => $draftEntities['payment']->getUid(),
+				);
+			}
 		}
 
 		return mpa_draft_booking( array( 'payment' => $isPaymentsEnabled ) );
@@ -276,7 +276,7 @@ class BookingsRestController extends AbstractRestController {
 		$isPaymentsEnabled = mpapp()->settings()->isPaymentsEnabled();
 		$drafts            = $this->createDraftsArray( $order, $isPaymentsEnabled );
 
-		$order['payment_details']['booking_id'] = $drafts['booking_id'];
+		$order['payment_details']['booking_id'] = $bookingId = $drafts['booking_id'];
 
 		$bookingService = new BookingService();
 		$booking        = $bookingService->createBooking( $order );
@@ -306,10 +306,11 @@ class BookingsRestController extends AbstractRestController {
 		DeleteDraftBookingsCron::schedule();
 
 		$response = array(
-			'booking_id' => $drafts['booking_id'],
+			'booking_id'    => $bookingId,
+			'booking_nonce' => wp_create_nonce( "mpa_create_booking_{$bookingId}" ),
 			// TODO: Response param $response[payment_id] need only for backward
 			// compatibility with a mpa-woocommerce addon v1.0.0
-			'payment_id' => $drafts['payment_id'],
+			'payment_id'    => $drafts['payment_id'],
 		);
 
 		return rest_ensure_response( $response );

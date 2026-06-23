@@ -1,4 +1,4 @@
-(function (date, intlTelInput, mpaData) {
+(function (date, intlTelInput, mpaData$1) {
 	'use strict';
 
 	/**
@@ -1102,9 +1102,9 @@
 	  $phoneInputElement.after('<br>', $phoneErrorElement);
 	  const iti = intlTelInput($phoneInputElement[0], {
 	    separateDialCode: true,
-	    initialCountry: mpaData.settings.country,
+	    initialCountry: mpaData$1.settings.country,
 	    hiddenInput: $phoneInputElement.attr('name'),
-	    utilsScript: mpaData.urls.plugin + 'assets/js/intl-tel-input-17.0.19/js/utils.js'
+	    utilsScript: mpaData$1.urls.plugin + 'assets/js/intl-tel-input-17.0.19/js/utils.js'
 	  });
 	  iti.promise.then(() => {
 	    if ($phoneInputElement.val()) {
@@ -3653,6 +3653,10 @@
 	     * @var {Coupon|Null}
 	     */
 	    this.coupon = null;
+
+	    // Later, StepPayment will replace the nonce with
+	    // "mpa_create_booking_{$bookingId}"
+	    this.bookingNonce = mpaData.nonces.mpa_create_booking;
 	  }
 
 	  /**
@@ -4041,6 +4045,20 @@
 	    if (this.hasCoupon() && !this.coupon.isApplicableForCart(this)) {
 	      this.removeCoupon();
 	    }
+	  }
+
+	  /**
+	   * @return {String}
+	   */
+	  getBookingNonce() {
+	    return this.bookingNonce;
+	  }
+
+	  /**
+	   * @param {String}
+	   */
+	  setBookingNonce(bookingNonce) {
+	    this.bookingNonce = bookingNonce;
 	  }
 	}
 

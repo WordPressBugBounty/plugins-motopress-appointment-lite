@@ -5,7 +5,7 @@ Tags: appointment, booking, calendar, reservation, schedule, scheduling, online 
 Requires at least: 5.3
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.4.4
+Stable tag: 2.4.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -315,7 +315,7 @@ MotoPress Appointment Booking plugin is distributed under the terms of the GNU G
 
 == Changelog ==
 
-= 2.4.4, Jun 4 2026 =
+= 2.4.5, Jun 23 2026 =
 * Security: Enhanced permission validation when reading bookings.
 
 = 2.4.3, Dec 5 2025 =

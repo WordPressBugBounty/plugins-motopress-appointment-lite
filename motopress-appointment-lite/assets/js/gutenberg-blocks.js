@@ -4773,6 +4773,10 @@
 	     * @var {Coupon|Null}
 	     */
 	    this.coupon = null;
+
+	    // Later, StepPayment will replace the nonce with
+	    // "mpa_create_booking_{$bookingId}"
+	    this.bookingNonce = mpaData.nonces.mpa_create_booking;
 	  }
 
 	  /**
@@ -5161,6 +5165,20 @@
 	    if (this.hasCoupon() && !this.coupon.isApplicableForCart(this)) {
 	      this.removeCoupon();
 	    }
+	  }
+
+	  /**
+	   * @return {String}
+	   */
+	  getBookingNonce() {
+	    return this.bookingNonce;
+	  }
+
+	  /**
+	   * @param {String}
+	   */
+	  setBookingNonce(bookingNonce) {
+	    this.bookingNonce = bookingNonce;
 	  }
 	}
 
@@ -6120,7 +6138,7 @@
 	    // Book services
 	    const requestData = {
 	      ...wp.hooks.applyFilters('mpa_booking_cart_data', this.cart.toArray()),
-	      nonce: mpaData.nonces.mpa_create_booking
+	      nonce: this.cart.getBookingNonce()
 	    };
 	    mpa_rest_post('/bookings', requestData).then(response => {
 	      if (this.isRedirectNeeded()) {
@@ -9421,7 +9439,7 @@
 	    this.gatewayId = '';
 	    this.gateways = {}; // {Gateway ID: Gateway object}
 
-	    this.bookingDetails = {}; // Booking and payment ID/UID
+	    this.bookingDetails = {}; // Booking and payment ID
 
 	    this.$form = this.$element.find('.mpa-checkout-form');
 	    this.$order = this.$element.find('.mpa-order');
@@ -9797,7 +9815,10 @@
 	      nonce: mpaData.nonces.mpa_create_drafts
 	    };
 	    return mpa_rest_post('/bookings/draft', requestData).then(drafts => {
-	      this.bookingDetails = drafts;
+	      this.bookingDetails = {
+	        booking_id: drafts.booking_id,
+	        payment_id: drafts.payment_id
+	      };
 	      const paymentDetails = {
 	        booking_id: drafts.booking_id,
 	        // TODO: Param paymentDetails[payment_id] need only for
@@ -9806,6 +9827,9 @@
 	        payment_id: drafts.payment_id
 	      };
 	      this.cart.setPaymentDetails(paymentDetails);
+
+	      // "mpa_create_booking_{$bookingId}"
+	      this.cart.setBookingNonce(drafts.booking_nonce);
 	    }, error => {
 	      this.setErrorMessage(error.message);
 	    }).then(() => {
