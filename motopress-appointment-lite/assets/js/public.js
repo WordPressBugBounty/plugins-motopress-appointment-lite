@@ -2161,6 +2161,7 @@
 	   * @access protected
 	   */
 	  setupProperties() {
+	    var _mpaData$nonces$mpa_c;
 	    /**
 	     * @since 1.0
 	     * @var {Map}
@@ -2200,7 +2201,7 @@
 
 	    // Later, StepPayment will replace the nonce with
 	    // "mpa_create_booking_{$bookingId}"
-	    this.bookingNonce = mpaData.nonces.mpa_create_booking;
+	    this.bookingNonce = (_mpaData$nonces$mpa_c = mpaData?.nonces?.mpa_create_booking) !== null && _mpaData$nonces$mpa_c !== void 0 ? _mpaData$nonces$mpa_c : ''; // Missing for blocks
 	  }
 
 	  /**

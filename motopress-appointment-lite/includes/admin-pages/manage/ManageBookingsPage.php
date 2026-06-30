@@ -307,8 +307,16 @@ class ManageBookingsPage extends ManagePostsPage {
 
 								$searchLikeParam = '%' . $wpdb->esc_like( $search_param ) . '%';
 
-								$subquery = "(SELECT id FROM {$wpdb->prefix}mpa_customers AS c WHERE c.name LIKE '{$searchLikeParam}' OR c.email LIKE '{$searchLikeParam}' OR c.phone LIKE '{$searchLikeParam}')";
-								$where   .= " OR ({$wpdb->prefix}postmeta.meta_key = '_mpa_customer_id' AND {$wpdb->prefix}postmeta.meta_value IN ({$subquery}))";
+								$where .= $wpdb->prepare(
+									" OR ({$wpdb->postmeta}.meta_key = %s AND {$wpdb->postmeta}.meta_value IN (
+										SELECT id FROM {$wpdb->prefix}mpa_customers AS c
+										WHERE c.name LIKE %s OR c.email LIKE %s OR c.phone LIKE %s
+									))",
+									'_mpa_customer_id',
+									$searchLikeParam,
+									$searchLikeParam,
+									$searchLikeParam
+								);
 							}
 
 							return $where;

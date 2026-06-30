@@ -41,8 +41,9 @@ class BookingPriceMetabox extends FieldsMetabox {
 
 		return array(
 			'total_price'       => array(
-				'type'  => 'price',
-				'label' => esc_html__( 'Total Price', 'motopress-appointment' ),
+				'type'     => 'price',
+				'label'    => esc_html__( 'Total Price', 'motopress-appointment' ),
+				'disabled' => true,
 			),
 			'coupon_id'         => array(
 				'type'    => 'select',

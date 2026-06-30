@@ -49,4 +49,21 @@ class EditBookingPage extends EditNoCommentsPage {
 			do_action( 'mpa_booking_placed_by_admin', $booking );
 		}
 	}
+
+	/**
+	 * @access protected
+	 */
+	public function enqueueScripts() {
+		// The booking editor reuses cart code that expects mpaData.nonces
+		mpa_assets()->addLocalizeData(
+			'mpa-edit-post',
+			'nonces',
+			array(
+				'mpa_create_booking' => wp_create_nonce( 'mpa_create_booking' ),
+				'mpa_create_drafts'  => wp_create_nonce( 'mpa_create_drafts' ),
+			)
+		);
+
+		parent::enqueueScripts();
+	}
 }
