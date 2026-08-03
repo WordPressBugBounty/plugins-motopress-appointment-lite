@@ -44,6 +44,9 @@ class BookingsRestController extends AbstractRestController {
 					'order'           => array(
 						'default' => array(),
 					),
+					'nonce'           => array(
+						'type' => 'string',
+					),
 				),
 			)
 		);
@@ -60,6 +63,9 @@ class BookingsRestController extends AbstractRestController {
 					'payment_details' => array(
 						'type'       => 'object',
 						'properties' => array(),
+					),
+					'nonce'           => array(
+						'type' => 'string',
 					),
 				),
 			)

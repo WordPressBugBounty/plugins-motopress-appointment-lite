@@ -2428,6 +2428,16 @@
 	  }
 
 	  /**
+	   * @return {Object}
+	   */
+	  getNoncedPaymentDetails() {
+	    return {
+	      ...this.getPaymentDetails(),
+	      nonce: this.getBookingNonce()
+	    };
+	  }
+
+	  /**
 	   * @since 1.0
 	   * @since 1.4.0 added the <code>fields</code> argument.
 	   *
@@ -7207,7 +7217,7 @@
 	   */
 	  processPayment(cart, bookingDetails) {
 	    return mpa_rest_post('/payments/prepare', {
-	      payment_details: cart.paymentDetails
+	      payment_details: cart.getNoncedPaymentDetails()
 	    });
 	  }
 
@@ -7826,7 +7836,7 @@
 	      if (paymentMethod.error) {
 	        throw new Error(paymentMethod.error.message);
 	      }
-	      const paymentDetails = jQuery.extend(cart.paymentDetails, {
+	      const paymentDetails = jQuery.extend({}, cart.getNoncedPaymentDetails(), {
 	        payment_method_id: paymentMethod.paymentMethod.id
 	      });
 	      return mpa_rest_post('/payments/prepare', {
@@ -7982,7 +7992,7 @@
 	  processPayment(cart, paymentDetails, processArgs) {
 	    // Step 1: create payment method on the client side
 	    return mpa_rest_post('/payments/prepare', {
-	      payment_details: cart.paymentDetails
+	      payment_details: cart.getNoncedPaymentDetails()
 	    })
 	    // Step 2: confirm payment intent on the client side
 	    .then(({
@@ -8256,7 +8266,7 @@
 	        this.paymentRequestButtonEvent.complete('fail');
 	        throw new Error(paymentMethod.error.message);
 	      }
-	      const paymentDetails = jQuery.extend(cart.paymentDetails, {
+	      const paymentDetails = jQuery.extend({}, cart.getNoncedPaymentDetails(), {
 	        payment_method_id: paymentMethod.paymentMethod.id
 	      });
 	      return mpa_rest_post('/payments/prepare', {
@@ -8904,7 +8914,7 @@
 	        self.$errorWrapper.addClass('mpa-hide');
 	        self.$gatewayPreloader.removeClass('mpa-hide');
 	        return mpa_rest_post('/payments/prepare', {
-	          payment_details: self.cart.paymentDetails
+	          payment_details: self.cart.getNoncedPaymentDetails()
 	        }).then(orderId => {
 	          self.$gatewayPreloader.addClass('mpa-hide');
 	          return orderId;

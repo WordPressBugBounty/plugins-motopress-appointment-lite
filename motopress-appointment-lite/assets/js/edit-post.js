@@ -3884,6 +3884,16 @@
 	  }
 
 	  /**
+	   * @return {Object}
+	   */
+	  getNoncedPaymentDetails() {
+	    return {
+	      ...this.getPaymentDetails(),
+	      nonce: this.getBookingNonce()
+	    };
+	  }
+
+	  /**
 	   * @since 1.0
 	   * @since 1.4.0 added the <code>fields</code> argument.
 	   *

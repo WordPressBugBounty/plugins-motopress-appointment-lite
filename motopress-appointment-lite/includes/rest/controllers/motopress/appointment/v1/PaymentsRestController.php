@@ -78,6 +78,9 @@ class PaymentsRestController extends AbstractRestController {
 								'default' => true,
 								'context' => array( 'edit' ),
 							),
+							'nonce'       => array(
+								'type' => 'string',
+							),
 						),
 					),
 				),
@@ -115,7 +118,13 @@ class PaymentsRestController extends AbstractRestController {
 		}
 
 		$bookingId = absint( $paymentDetails['booking_id'] );
-		$booking   = mpapp()->repositories()->booking()->findById( $bookingId );
+		$nonce = $paymentDetails['nonce'] ?? null;
+
+		if ( ! $nonce || ! wp_verify_nonce( $nonce, "mpa_create_booking_{$bookingId}" ) ) {
+			return new WP_Error( 'failed_request', esc_html__( 'Unable to make a reservation. Your request did not pass the security check.', 'motopress-appointment' ) );
+		}
+
+		$booking = mpapp()->repositories()->booking()->findById( $bookingId );
 
 		if ( ! $booking ) {
 			return mpa_rest_failure_error( esc_html__( 'Sorry! Failed to make a reservation at the moment.', 'motopress-appointment' ) );
