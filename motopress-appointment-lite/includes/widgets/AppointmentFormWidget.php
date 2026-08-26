@@ -101,6 +101,16 @@ class AppointmentFormWidget extends AbstractWidget {
 	 * @since 1.15.2
 	 */
 	protected function enqueueScripts( $instanceArgs ) {
+		// The booking editor reuses cart code that expects mpaData.nonces
+		mpa_assets()->addLocalizeData(
+			'mpa-public',
+			'nonces',
+			array(
+				'mpa_create_booking' => wp_create_nonce( 'mpa_create_booking' ),
+				'mpa_create_drafts'  => wp_create_nonce( 'mpa_create_drafts' ),
+			)
+		);
+
 		mpa_assets()->enqueueBundle( 'mpa-public' );
 
 		if ( ! $this->isGlobalStyleAdded ) {

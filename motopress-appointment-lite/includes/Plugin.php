@@ -12,6 +12,7 @@ use MotoPress\Appointment\Handlers\NotificationHandler;
 use MotoPress\Appointment\PostTypes\Logs\CustomCommentsFix;
 use MotoPress\Appointment\DirectLinkActions\DirectLinkActions;
 use MotoPress\Appointment\Handlers\WizardHandler;
+use MotoPress\Appointment\Session\Session;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -78,6 +79,8 @@ class Plugin {
 	 */
 	private $notificationHandler = null;
 
+	private ?Session $session = null;
+
 	/**
 	 * @since 1.0
 	 */
@@ -104,9 +107,12 @@ class Plugin {
 		// Setup only basics at this point and leave others for 'plugins_loaded'
 		// and 'init' actions
 		$this->i18n              = new Plugin\I18n();
+		$this->session           = new Session();
 		$this->settings          = new Plugin\Settings();
 		$this->emailsDispatcher  = new Emails\EmailsDispatcher();
 		$this->directLinkActions = new DirectLinkActions();
+
+		require 'session/wp-session-management.php';
 
 		// Setup request-specific sections
 		if ( ! wp_doing_ajax() && ! wp_doing_cron() ) {
@@ -474,6 +480,8 @@ class Plugin {
 	public function deactivate() {
 
 		CronsHandler::unschedule_crons_before_plugin_deactivation();
+
+		wp_clear_scheduled_hook( 'mpa_wp_session_garbage_collection' );
 	}
 
 	/**
@@ -546,5 +554,9 @@ class Plugin {
 	 */
 	public function getNotificationHandler() {
 		return $this->notificationHandler;
+	}
+
+	public function getSession(): Session {
+		return $this->session;
 	}
 }

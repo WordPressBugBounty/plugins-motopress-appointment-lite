@@ -222,6 +222,14 @@ class BookingsRestController extends AbstractRestController {
 			return array();
 		}
 
+		// $bookingId is not 0 and the booking exists. Now check the ownership —
+		// don't allow to use the booking created by other user (see MPI-14559).
+		$ownedBookingId = mpapp()->getSession()->get( 'last_issued_booking_id' );
+
+		if ( $ownedBookingId === null || $bookingId !== absint( $ownedBookingId ) ) {
+			return array(); // Not allowed
+		}
+
 		$payment = $booking->getExpectingPayment();
 
 		if ( ! $payment || $payment->getStatus() !== 'auto-draft' ) {
@@ -285,7 +293,9 @@ class BookingsRestController extends AbstractRestController {
 		$order['payment_details']['booking_id'] = $bookingId = $drafts['booking_id'];
 
 		$bookingService = new BookingService();
-		$booking        = $bookingService->createBooking( $order );
+
+		/** @var Booking|WP_Error $booking */
+		$booking = $bookingService->createBooking( $order );
 
 		if ( is_wp_error( $booking ) ) {
 			return $booking;
@@ -318,6 +328,8 @@ class BookingsRestController extends AbstractRestController {
 			// compatibility with a mpa-woocommerce addon v1.0.0
 			'payment_id'    => $drafts['payment_id'],
 		);
+
+		mpapp()->getSession()->set( 'last_issued_booking_id', $booking->getId() );
 
 		return rest_ensure_response( $response );
 	}

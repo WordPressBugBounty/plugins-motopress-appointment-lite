@@ -20,7 +20,7 @@ msgstr ""
 "X-Crowdin-File-ID: 46\n"
 
 #: includes/functions/plugin.php:106
-#: includes/Plugin.php:499
+#: includes/Plugin.php:507
 msgid "Appointment Booking"
 msgstr ""
 
@@ -313,10 +313,10 @@ msgstr "Послуги"
 #: includes/metaboxes/shortcode/AppointmentFormMetabox.php:56
 #: includes/post-types/ServicePostType.php:88
 #: includes/shortcodes/AppointmentFormShortcode.php:76
-#: includes/widgets/AppointmentFormWidget.php:152
-#: includes/widgets/AppointmentFormWidget.php:171
-#: includes/widgets/AppointmentFormWidget.php:172
-#: includes/widgets/AppointmentFormWidget.php:214
+#: includes/widgets/AppointmentFormWidget.php:162
+#: includes/widgets/AppointmentFormWidget.php:181
+#: includes/widgets/AppointmentFormWidget.php:182
+#: includes/widgets/AppointmentFormWidget.php:224
 #: templates/private/pages/wizard.php:11
 #: templates/shortcodes/booking/step-admin-cart.php:33
 #: templates/shortcodes/booking/step-service-form.php:102
@@ -376,10 +376,10 @@ msgstr "Працівники"
 #: includes/metaboxes/shortcode/AppointmentFormMetabox.php:58
 #: includes/post-types/EmployeePostType.php:32
 #: includes/shortcodes/AppointmentFormShortcode.php:88
-#: includes/widgets/AppointmentFormWidget.php:154
-#: includes/widgets/AppointmentFormWidget.php:183
-#: includes/widgets/AppointmentFormWidget.php:184
-#: includes/widgets/AppointmentFormWidget.php:226
+#: includes/widgets/AppointmentFormWidget.php:164
+#: includes/widgets/AppointmentFormWidget.php:193
+#: includes/widgets/AppointmentFormWidget.php:194
+#: includes/widgets/AppointmentFormWidget.php:236
 #: templates/private/fields/service-variations-field.php:35
 #: templates/private/pages/wizard.php:10
 #: templates/shortcodes/booking/step-admin-cart.php:34
@@ -610,10 +610,10 @@ msgstr "ID транзакції"
 #: includes/metaboxes/shortcode/AppointmentFormMetabox.php:57
 #: includes/post-types/LocationPostType.php:48
 #: includes/shortcodes/AppointmentFormShortcode.php:82
-#: includes/widgets/AppointmentFormWidget.php:153
-#: includes/widgets/AppointmentFormWidget.php:177
-#: includes/widgets/AppointmentFormWidget.php:178
-#: includes/widgets/AppointmentFormWidget.php:220
+#: includes/widgets/AppointmentFormWidget.php:163
+#: includes/widgets/AppointmentFormWidget.php:187
+#: includes/widgets/AppointmentFormWidget.php:188
+#: includes/widgets/AppointmentFormWidget.php:230
 #: templates/private/pages/wizard.php:9
 #: templates/shortcodes/booking/step-admin-cart.php:35
 #: templates/shortcodes/booking/step-cart.php:39
@@ -703,7 +703,7 @@ msgstr "Ліцензія"
 #: includes/bundles/SettingsBundle.php:75
 #: includes/bundles/SettingsBundle.php:349
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:16
-#: includes/widgets/AppointmentFormWidget.php:258
+#: includes/widgets/AppointmentFormWidget.php:268
 msgid "Styles"
 msgstr "Стилі"
 
@@ -846,7 +846,7 @@ msgstr "Країна проживання за замовчуванням"
 #: includes/metaboxes/payment/PaymentDetailsMetabox.php:90
 #: includes/metaboxes/shortcode/AppointmentFormLabelsMetabox.php:68
 #: includes/shortcodes/AppointmentFormShortcode.php:94
-#: includes/widgets/AppointmentFormWidget.php:191
+#: includes/widgets/AppointmentFormWidget.php:201
 #: assets/js/edit-post.js:9066
 #: assets/js/gutenberg-blocks.js:3333
 #: assets/js/widgets-manage-page.js:3069
@@ -1067,14 +1067,14 @@ msgstr "Конфетті"
 #: includes/divi/modules/AppointmentFormModule.php:239
 #: includes/elementor/widgets/AppointmentFormWidget.php:326
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:23
-#: includes/widgets/AppointmentFormWidget.php:262
+#: includes/widgets/AppointmentFormWidget.php:272
 #: assets/js/gutenberg-blocks.js:3431
 msgid "Form Width"
 msgstr "Ширина форми"
 
 #: includes/bundles/SettingsBundle.php:549
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:24
-#: includes/widgets/AppointmentFormWidget.php:263
+#: includes/widgets/AppointmentFormWidget.php:273
 #: assets/js/gutenberg-blocks.js:3432
 msgid "Example: 100%"
 msgstr "Приклад: 100%"
@@ -1083,7 +1083,7 @@ msgstr "Приклад: 100%"
 #: includes/divi/modules/AppointmentFormModule.php:215
 #: includes/elementor/widgets/AppointmentFormWidget.php:346
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:28
-#: includes/widgets/AppointmentFormWidget.php:267
+#: includes/widgets/AppointmentFormWidget.php:277
 #: assets/js/gutenberg-blocks.js:3404
 msgid "Primary Text Color"
 msgstr "Основний колір тексту"
@@ -1092,7 +1092,7 @@ msgstr "Основний колір тексту"
 #: includes/divi/modules/AppointmentFormModule.php:221
 #: includes/elementor/widgets/AppointmentFormWidget.php:357
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:33
-#: includes/widgets/AppointmentFormWidget.php:272
+#: includes/widgets/AppointmentFormWidget.php:282
 #: assets/js/gutenberg-blocks.js:3412
 msgid "Primary Background Color"
 msgstr "Основний колір фону"
@@ -1101,7 +1101,7 @@ msgstr "Основний колір фону"
 #: includes/divi/modules/AppointmentFormModule.php:227
 #: includes/elementor/widgets/AppointmentFormWidget.php:368
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:38
-#: includes/widgets/AppointmentFormWidget.php:277
+#: includes/widgets/AppointmentFormWidget.php:287
 #: assets/js/gutenberg-blocks.js:3420
 msgid "Secondary Text Color"
 msgstr "Колір другорядного тексту"
@@ -1110,7 +1110,7 @@ msgstr "Колір другорядного тексту"
 #: includes/divi/modules/AppointmentFormModule.php:233
 #: includes/elementor/widgets/AppointmentFormWidget.php:379
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:43
-#: includes/widgets/AppointmentFormWidget.php:282
+#: includes/widgets/AppointmentFormWidget.php:292
 #: assets/js/gutenberg-blocks.js:3428
 msgid "Secondary Background Color"
 msgstr "Вторинний колір фону"
@@ -1119,14 +1119,14 @@ msgstr "Вторинний колір фону"
 #: includes/divi/modules/AppointmentFormModule.php:247
 #: includes/elementor/widgets/AppointmentFormWidget.php:390
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:48
-#: includes/widgets/AppointmentFormWidget.php:287
+#: includes/widgets/AppointmentFormWidget.php:297
 #: assets/js/gutenberg-blocks.js:3440
 msgid "Buttons Padding"
 msgstr "Внутрішній відступ кнопки"
 
 #: includes/bundles/SettingsBundle.php:574
 #: includes/metaboxes/shortcode/AppointmentFormStylesMetabox.php:49
-#: includes/widgets/AppointmentFormWidget.php:288
+#: includes/widgets/AppointmentFormWidget.php:298
 #: assets/js/gutenberg-blocks.js:3441
 msgid "Example: 5px 10px"
 msgstr "Приклад: 5px 10px"
@@ -1233,7 +1233,7 @@ msgstr "Бронювання отримане"
 #: includes/metaboxes/shortcode/AppointmentFormMetabox.php:29
 #: includes/shortcodes/AppointmentFormShortcode.php:32
 #: includes/widgets/AppointmentFormWidget.php:32
-#: includes/widgets/AppointmentFormWidget.php:139
+#: includes/widgets/AppointmentFormWidget.php:149
 #: assets/js/gutenberg-blocks.js:11369
 msgid "Appointment Form"
 msgstr "Форма бронювання"
@@ -1243,8 +1243,8 @@ msgstr "Форма бронювання"
 #: includes/gutenberg/Init.php:65
 #: includes/metaboxes/shortcode/AppointmentFormDefaultsMetabox.php:36
 #: includes/metaboxes/shortcode/AppointmentFormDefaultsMetabox.php:37
-#: includes/widgets/AppointmentFormWidget.php:132
-#: includes/widgets/AppointmentFormWidget.php:133
+#: includes/widgets/AppointmentFormWidget.php:142
+#: includes/widgets/AppointmentFormWidget.php:143
 #: assets/js/gutenberg-blocks.js:3203
 msgid "— Unselected —"
 msgstr "— Не вибрано —"
@@ -1252,7 +1252,7 @@ msgstr "— Не вибрано —"
 #: includes/divi/modules/AppointmentFormModule.php:58
 #: includes/elementor/widgets/AppointmentFormWidget.php:79
 #: includes/metaboxes/shortcode/AppointmentFormMetabox.php:46
-#: includes/widgets/AppointmentFormWidget.php:144
+#: includes/widgets/AppointmentFormWidget.php:154
 #: assets/js/gutenberg-blocks.js:3248
 msgid "Form Title"
 msgstr "Заголовок форми"
@@ -1395,10 +1395,10 @@ msgstr "Назва поля категорії"
 #: includes/metaboxes/shortcode/AppointmentFormMetabox.php:55
 #: includes/post-types/ServicePostType.php:150
 #: includes/shortcodes/AppointmentFormShortcode.php:70
-#: includes/widgets/AppointmentFormWidget.php:151
-#: includes/widgets/AppointmentFormWidget.php:165
-#: includes/widgets/AppointmentFormWidget.php:166
-#: includes/widgets/AppointmentFormWidget.php:208
+#: includes/widgets/AppointmentFormWidget.php:161
+#: includes/widgets/AppointmentFormWidget.php:175
+#: includes/widgets/AppointmentFormWidget.php:176
+#: includes/widgets/AppointmentFormWidget.php:218
 #: templates/shortcodes/booking/step-service-form.php:76
 #: assets/js/gutenberg-blocks.js:3293
 #: assets/js/gutenberg-blocks.js:3351
@@ -1454,7 +1454,7 @@ msgstr "Користувацька назва для поля співробіт
 #: includes/divi/modules/AppointmentFormModule.php:144
 #: includes/elementor/widgets/AppointmentFormWidget.php:187
 #: includes/metaboxes/shortcode/AppointmentFormLabelsMetabox.php:66
-#: includes/widgets/AppointmentFormWidget.php:189
+#: includes/widgets/AppointmentFormWidget.php:199
 #: assets/js/gutenberg-blocks.js:3331
 msgid "Unselected Service"
 msgstr "Не обрана послуга"
@@ -1463,7 +1463,7 @@ msgstr "Не обрана послуга"
 #: includes/elementor/widgets/AppointmentFormWidget.php:191
 #: includes/metaboxes/shortcode/AppointmentFormLabelsMetabox.php:67
 #: includes/shortcodes/AppointmentFormShortcode.php:92
-#: includes/widgets/AppointmentFormWidget.php:190
+#: includes/widgets/AppointmentFormWidget.php:200
 #: assets/js/gutenberg-blocks.js:3332
 msgid "Custom label for the unselected service field."
 msgstr "Користувацька назва для поля не обраної послуги."
@@ -1471,7 +1471,7 @@ msgstr "Користувацька назва для поля не обрано�
 #: includes/divi/modules/AppointmentFormModule.php:151
 #: includes/elementor/widgets/AppointmentFormWidget.php:198
 #: includes/metaboxes/shortcode/AppointmentFormLabelsMetabox.php:74
-#: includes/widgets/AppointmentFormWidget.php:196
+#: includes/widgets/AppointmentFormWidget.php:206
 #: assets/js/gutenberg-blocks.js:3341
 msgid "Unselected Option"
 msgstr "Невибраний параметр"
@@ -1481,7 +1481,7 @@ msgstr "Невибраний параметр"
 #: includes/functions/misc.php:22
 #: includes/metaboxes/shortcode/AppointmentFormLabelsMetabox.php:76
 #: includes/shortcodes/AppointmentFormShortcode.php:100
-#: includes/widgets/AppointmentFormWidget.php:198
+#: includes/widgets/AppointmentFormWidget.php:208
 #: assets/js/edit-post.js:9068
 #: assets/js/gutenberg-blocks.js:3202
 #: assets/js/gutenberg-blocks.js:3204
@@ -1537,7 +1537,7 @@ msgstr "Показувати час завершення?"
 #: includes/elementor/widgets/AppointmentFormWidget.php:258
 #: includes/metaboxes/shortcode/AppointmentFormTimepicker.php:50
 #: includes/shortcodes/AppointmentFormShortcode.php:133
-#: includes/widgets/AppointmentFormWidget.php:246
+#: includes/widgets/AppointmentFormWidget.php:256
 #: assets/js/gutenberg-blocks.js:3385
 msgid "Show the time when the appointment ends."
 msgstr "Показувати час, коли завершується бронювання сервісу."
@@ -1545,14 +1545,14 @@ msgstr "Показувати час, коли завершується брон�
 #: includes/divi/modules/AppointmentFormModule.php:204
 #: includes/elementor/widgets/AppointmentFormWidget.php:268
 #: includes/shortcodes/AppointmentFormShortcode.php:138
-#: includes/widgets/AppointmentFormWidget.php:251
+#: includes/widgets/AppointmentFormWidget.php:261
 #: assets/js/gutenberg-blocks.js:3282
 msgid "Show 'Add to Your Calendar?' section."
 msgstr "Показати розділ \"Додати до календаря?\"."
 
 #: includes/divi/modules/AppointmentFormModule.php:205
 #: includes/elementor/widgets/AppointmentFormWidget.php:269
-#: includes/widgets/AppointmentFormWidget.php:252
+#: includes/widgets/AppointmentFormWidget.php:262
 #: assets/js/gutenberg-blocks.js:3283
 msgid "Allow customers to add an appointment to their own Google, Apple, Outlook, or Yahoo calendar."
 msgstr ""
@@ -1778,7 +1778,7 @@ msgstr "Кількість повідомлень на сторінці"
 #: includes/metaboxes/shortcode/LocationsListMetabox.php:75
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:96
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:91
-#: includes/widgets/AppointmentFormWidget.php:237
+#: includes/widgets/AppointmentFormWidget.php:247
 #: assets/js/gutenberg-blocks.js:11595
 #: assets/js/gutenberg-blocks.js:11866
 #: assets/js/gutenberg-blocks.js:12181
@@ -2275,7 +2275,7 @@ msgstr "Позначки"
 #: includes/elementor/widgets/AppointmentFormWidget.php:202
 #: includes/metaboxes/shortcode/AppointmentFormLabelsMetabox.php:75
 #: includes/shortcodes/AppointmentFormShortcode.php:98
-#: includes/widgets/AppointmentFormWidget.php:197
+#: includes/widgets/AppointmentFormWidget.php:207
 #: assets/js/gutenberg-blocks.js:3342
 msgid "Custom label for the unselected service category, location and employee fields."
 msgstr "Власна назва поля для невибраної категорії послуг, розташування та працівника."
@@ -2294,7 +2294,7 @@ msgstr "Власна назва поля для невибраної катег�
 #: includes/elementor/widgets/ServiceCategoriesWidget.php:190
 #: includes/elementor/widgets/ServicesListWidget.php:218
 #: includes/metaboxes/shortcode/ShortcodeAdvancedMetabox.php:43
-#: includes/widgets/AppointmentFormWidget.php:297
+#: includes/widgets/AppointmentFormWidget.php:307
 msgid "HTML Anchor"
 msgstr "HTML якір"
 
@@ -2313,7 +2313,7 @@ msgstr "HTML якір"
 #: includes/elementor/widgets/ServicesListWidget.php:226
 #: includes/metaboxes/shortcode/ShortcodeAdvancedMetabox.php:44
 #: includes/shortcodes/AbstractShortcode.php:65
-#: includes/widgets/AppointmentFormWidget.php:298
+#: includes/widgets/AppointmentFormWidget.php:308
 msgid "HTML Anchor. Anchors lets you link directly to a section on a page. <a href=\"https://wordpress.org/support/article/page-jumps/\" target=\"_blank\">Learn more about anchors.</a>"
 msgstr "HTML якір. Якір дозволяє виконувати посилання безпосередньо на розділ на сторінці. <a href=\"https://wordpress.org/support/article/page-jumps/\" target=\"_blank\">Дізнайтеся більше.</a>"
 
@@ -2332,7 +2332,7 @@ msgstr "HTML якір. Якір дозволяє виконувати посил
 #: includes/elementor/widgets/ServicesListWidget.php:233
 #: includes/fields/complex/AttributesField.php:80
 #: includes/metaboxes/shortcode/ShortcodeAdvancedMetabox.php:49
-#: includes/widgets/AppointmentFormWidget.php:303
+#: includes/widgets/AppointmentFormWidget.php:313
 msgid "CSS Class(es)"
 msgstr "CSS клас(и)"
 
@@ -2351,7 +2351,7 @@ msgstr "CSS клас(и)"
 #: includes/elementor/widgets/ServicesListWidget.php:240
 #: includes/metaboxes/shortcode/ShortcodeAdvancedMetabox.php:50
 #: includes/shortcodes/AbstractShortcode.php:70
-#: includes/widgets/AppointmentFormWidget.php:304
+#: includes/widgets/AppointmentFormWidget.php:314
 msgid "Additional CSS Class(es). Separate multiple classes with spaces."
 msgstr "Додаткові CSS класи. Розділяйте кілька класів пробілами."
 
@@ -3469,7 +3469,7 @@ msgstr "Бронювання #%d"
 
 #: includes/metaboxes/booking/BookingPriceMetabox.php:187
 #: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:150
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:301
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:311
 msgid "Sorry, the selected time slot is already booked."
 msgstr "Обраний часовий проміжок вже заброньовано."
 
@@ -3836,12 +3836,12 @@ msgid "Service Settings"
 msgstr "Налаштування послуги"
 
 #: includes/metaboxes/shortcode/AppointmentFormDefaultsMetabox.php:26
-#: includes/widgets/AppointmentFormWidget.php:204
+#: includes/widgets/AppointmentFormWidget.php:214
 msgid "Default Values"
 msgstr "За замовчуванням"
 
 #: includes/metaboxes/shortcode/AppointmentFormLabelsMetabox.php:26
-#: includes/widgets/AppointmentFormWidget.php:161
+#: includes/widgets/AppointmentFormWidget.php:171
 msgid "Labels"
 msgstr "Мітки"
 
@@ -3850,7 +3850,7 @@ msgstr "Мітки"
 #: includes/metaboxes/shortcode/LocationsListMetabox.php:45
 #: includes/metaboxes/shortcode/ServiceCategoriesMetabox.php:45
 #: includes/metaboxes/shortcode/ServicesListMetabox.php:45
-#: includes/widgets/AppointmentFormWidget.php:149
+#: includes/widgets/AppointmentFormWidget.php:159
 msgid "Show Items"
 msgstr "Показати елементи"
 
@@ -3859,12 +3859,12 @@ msgid "Show or hide form fields."
 msgstr "Показати або приховати поля форми."
 
 #: includes/metaboxes/shortcode/AppointmentFormTimepicker.php:29
-#: includes/widgets/AppointmentFormWidget.php:233
+#: includes/widgets/AppointmentFormWidget.php:243
 msgid "Timepicker"
 msgstr "Вибір часу"
 
 #: includes/metaboxes/shortcode/AppointmentFormTimepicker.php:49
-#: includes/widgets/AppointmentFormWidget.php:245
+#: includes/widgets/AppointmentFormWidget.php:255
 msgid "Show End Time"
 msgstr "Показувати час завершення"
 
@@ -3894,7 +3894,7 @@ msgid "Services count"
 msgstr "Кількість послуг"
 
 #: includes/metaboxes/shortcode/ShortcodeAdvancedMetabox.php:31
-#: includes/widgets/AppointmentFormWidget.php:293
+#: includes/widgets/AppointmentFormWidget.php:303
 msgid "Advanced"
 msgstr "Додатково"
 
@@ -3972,7 +3972,7 @@ msgid "Sandbox can be used to test payments."
 msgstr "Використовуйте пісочницю для тестування платежів."
 
 #: includes/payments/gateways/AbstractPaymentGateway.php:228
-#: includes/widgets/AppointmentFormWidget.php:138
+#: includes/widgets/AppointmentFormWidget.php:148
 msgid "Title"
 msgstr "Назва"
 
@@ -4877,13 +4877,13 @@ msgstr "Ви успішно оформили бронювання. Дякуєм�
 msgid "Your reservation request has been received and is waiting for our confirmation. Thank you!"
 msgstr "Ваш запит на бронювання отримано та чекає підтвердження. Дякуємо!"
 
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:339
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:351
 #: includes/rest/controllers/motopress/appointment/v1/CalendarRestController.php:90
 #: includes/rest/controllers/motopress/appointment/v1/ServicesRestController.php:65
 msgid "Invalid parameter: service ID is not set."
 msgstr "Некоректний параметр: ID послуги не встановлено."
 
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:341
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:353
 #: includes/rest/controllers/motopress/appointment/v1/CalendarRestController.php:97
 msgid "Invalid parameter: date range is not set."
 msgstr "Некоректний параметр: діапазон дат не встановлено."
@@ -6345,7 +6345,7 @@ msgid "appointment"
 msgstr "бронювання"
 
 #: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:130
-#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:279
+#: includes/rest/controllers/motopress/appointment/v1/BookingsRestController.php:287
 #: includes/rest/controllers/motopress/appointment/v1/PaymentsRestController.php:124
 msgid "Unable to make a reservation. Your request did not pass the security check."
 msgstr ""
